@@ -1,0 +1,9 @@
+{
+  "citationExportFormat": "biblatex",
+  "literatureNoteTitleTemplate": "{{title}} {{authorString}} {{year}}",
+  "literatureNoteFolder": "Literatur",
+  "literatureNoteContentTemplate": "---\nTitel: {{title}}\nAutor: \"[[{{authorString}}]]\"\nHerausgeber:  {{publisher}}\nErscheinungsjahr: {{year}}\nSeiten: {{page}}\nVerbindung zu Zotero: {{zoteroSelectURI}}\n---\n# {{title}} - {{authorString}}\n\n## Zusammenfassung\n### Abstract:\n> [!ABSTRACT]-\n> {{abstract}}\n\n---\n## Notizen\n\n\n---\n\n## Originalquelle:\n- [PDF]({{citekey}}.pdf)\n- [Zotero-Link]({{zoteroSelectURI}})\n- {{URL}}\n",
+  "markdownCitationTemplate": "[@{{citekey}}]",
+  "alternativeMarkdownCitationTemplate": "@{{citekey}}",
+  "citationExportPath": "HisQu_Literatur.bib"
+}

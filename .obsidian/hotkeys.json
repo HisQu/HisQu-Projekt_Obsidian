@@ -1,0 +1,21 @@
+{
+  "obsidian-auto-link-title:enhance-url-with-title": [],
+  "obsidian-zotero-desktop-connector:zdc-insert-notes": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "obsidian-citation-plugin:open-literature-note": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ]
+}
