@@ -11,24 +11,10 @@
             "id": "a21cb6e104e4b48c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graphansicht"
             }
           },
           {
@@ -147,12 +133,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977 öffnen"
+              "title": "Ausgehende Links"
             }
           },
           {
@@ -197,7 +182,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -225,7 +209,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977"
+              "title": "Graphansicht"
             }
           }
         ]
@@ -249,12 +233,12 @@
   },
   "active": "a21cb6e104e4b48c",
   "lastOpenFiles": [
+    "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
     "repository",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "PDFs/BrowningOrdinarymenReservePoliceBattalion101finalsolutionPoland.pdf",
-    "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
     "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
     "Literatur/Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995.md",
     "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
@@ -283,7 +267,6 @@
     "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
     "Literatur/Deutsches Patriziat 1430-1740 Hellmuth Rößler 1968.md",
     "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
-    "Literatur/Wandlungen d. Konnubiums im Adel des 15. Und 16. Jhds Friedrich W. Euler 1965.md",
-    "PDFs/BuckMittelalterzwischenVorstellungundWirklichkeitProblemePerspektivenundAnstoessefuerUnterrichtspraxis.pdf"
+    "Literatur/Wandlungen d. Konnubiums im Adel des 15. Und 16. Jhds Friedrich W. Euler 1965.md"
   ]
 }
