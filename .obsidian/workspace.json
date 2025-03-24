@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
+                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -38,10 +38,36 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980"
+              "title": "Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977"
+            }
+          },
+          {
+            "id": "ec8154f61dfaad25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Testnote.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Testnote"
             }
           }
-        ]
+        ],
+        "currentTab": 2,
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -133,11 +159,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Testnote.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links"
+              "title": "Ausgehende Links von Testnote öffnen"
             }
           },
           {
@@ -168,9 +195,19 @@
               "icon": "lucide-list",
               "title": "Gliederung"
             }
+          },
+          {
+            "id": "7a238b2d0e04629b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       },
       {
         "id": "90e5484812b210aa",
@@ -182,6 +219,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Testnote.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -209,7 +247,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graphansicht"
+              "title": "Graph von Testnote"
             }
           }
         ]
@@ -231,17 +269,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a21cb6e104e4b48c",
+  "active": "ec8154f61dfaad25",
   "lastOpenFiles": [
     "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
-    "repository",
+    "Testnote.md",
+    "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
+    "Literatur/Libertas scholastica und negotium scholare. Entstehung und Sozialprestige des Akademikerstandes im Mittelalter Laetitia Boehm 1970.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
+    "repository",
     "PDFs/BrowningOrdinarymenReservePoliceBattalion101finalsolutionPoland.pdf",
     "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
     "Literatur/Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995.md",
-    "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
     "Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR 1995.md",
     "Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995.md",
     "Literatur/Zur Sozialgeschichte der ostdeutschen Gelehrtenschaft (1945-1970) Ralph Jessen 1995.md",
@@ -266,7 +306,6 @@
     "Literatur/Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001.md",
     "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
     "Literatur/Deutsches Patriziat 1430-1740 Hellmuth Rößler 1968.md",
-    "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
-    "Literatur/Wandlungen d. Konnubiums im Adel des 15. Und 16. Jhds Friedrich W. Euler 1965.md"
+    "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md"
   ]
 }
