@@ -16,7 +16,7 @@ Seiten:
 
 Darin u.a.:
 
-[[Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977]]
+[[Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977]]
 
 Siehe auch: [[Stadt und Universität  1994]]
 

@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
+                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -38,7 +38,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977"
+              "title": "Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977"
             }
           },
           {
@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Testnote.md",
+                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -62,7 +62,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Testnote"
+              "title": "Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977"
             }
           }
         ],
@@ -159,12 +159,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Testnote.md",
+                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von Testnote öffnen"
+              "title": "Ausgehende Links von Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977 öffnen"
             }
           },
           {
@@ -219,7 +219,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Testnote.md",
+                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -247,7 +247,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Testnote"
+              "title": "Graph von Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977"
             }
           }
         ]
@@ -271,8 +271,8 @@
   },
   "active": "ec8154f61dfaad25",
   "lastOpenFiles": [
-    "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
     "Testnote.md",
+    "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
     "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
     "Literatur/Libertas scholastica und negotium scholare. Entstehung und Sozialprestige des Akademikerstandes im Mittelalter Laetitia Boehm 1970.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
