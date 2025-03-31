@@ -2,5 +2,10 @@
   "cssTheme": "Minimal",
   "theme": "obsidian",
   "accentColor": "#741c06",
-  "interfaceFontFamily": "American Typewriter"
+  "interfaceFontFamily": "American Typewriter",
+  "enabledCssSnippets": [
+    "Dashboard",
+    "readable line lengh",
+    "dashboard"
+  ]
 }

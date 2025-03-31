@@ -40,9 +40,33 @@
               "icon": "lucide-file",
               "title": "Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977"
             }
+          },
+          {
+            "id": "94c0f4264110db52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
           }
         ],
-        "currentTab": 1,
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -195,7 +219,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
+                "file": "Home.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -223,7 +247,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -245,10 +269,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e82db17cc7b9cf86",
+  "active": "94c0f4264110db52",
   "lastOpenFiles": [
-    "Testnote.md",
+    "HisQU.png",
     "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
+    "Home.md",
+    "Testnote.md",
     "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
     "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
     "Literatur/Libertas scholastica und negotium scholare. Entstehung und Sozialprestige des Akademikerstandes im Mittelalter Laetitia Boehm 1970.md",
@@ -280,8 +306,6 @@
     "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
     "Literatur/Spätmittelalterlicher deutscher Niederadel Joachim Schneider 2003.md",
     "Literatur/Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001.md",
-    "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
-    "Literatur/Deutsches Patriziat 1430-1740 Hellmuth Rößler 1968.md",
-    "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md"
+    "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md"
   ]
 }
