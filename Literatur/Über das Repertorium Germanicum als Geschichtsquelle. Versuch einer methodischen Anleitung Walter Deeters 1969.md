@@ -1,10 +1,12 @@
 ---
 Titel: Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung
 Autor: "[[Walter Deeters]]"
-Herausgeber:  
+Herausgeber: 
 Erscheinungsjahr: 1969
 Seiten: 27
 Verbindung zu Zotero: zotero://select/items/@DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung
+tags:
+  - Favorit
 ---
 # Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung - Walter Deeters
 

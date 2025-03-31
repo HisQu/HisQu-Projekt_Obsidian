@@ -1,55 +1,21 @@
 {
   "main": {
-    "id": "1b0c5e64226ed0a9",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "4bb6c670b43b219a",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "a21cb6e104e4b48c",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graphansicht"
-            }
-          },
-          {
-            "id": "e82db17cc7b9cf86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977"
-            }
-          },
-          {
-            "id": "94c0f4264110db52",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Home.md",
-                "mode": "source",
-                "source": true,
+                "mode": "preview",
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -65,9 +31,7 @@
               "title": "Home"
             }
           }
-        ],
-        "currentTab": 2,
-        "stacked": true
+        ]
       }
     ],
     "direction": "vertical"
@@ -266,14 +230,17 @@
       "command-palette:Befehlspalette öffnen": false,
       "publish:Änderungen veröffentlichen": false,
       "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "94c0f4264110db52",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "HisQU.png",
-    "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
+    "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
     "Home.md",
+    "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
+    "Protokolle",
+    "HisQU.png",
     "Testnote.md",
     "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
     "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
@@ -295,7 +262,6 @@
     "Literatur/Spätmittelalterlicher deutscher Niederadel. Ein landschaftlicher Vergleich Joachim Schneider 2003.md",
     "PDFs/KarlFerdinandWernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/ElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1 1.pdf",
-    "PDFs/ElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
     "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
     "Literatur/Soziale Genese und Aufstiegsformen kleiner niederadliger Geschlechter im südöstlichen Niedersachsen Lutz Fenske 1984.md",
