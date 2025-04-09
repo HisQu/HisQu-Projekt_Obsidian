@@ -106,5 +106,21 @@
       ],
       "key": "D"
     }
+  ],
+  "templater-obsidian:replace-in-file-templater": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
+  ],
+  "templater-obsidian:Vorlagen/Vorlage Autoren.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
+    }
   ]
 }

@@ -32,14 +32,14 @@
             }
           },
           {
-            "id": "7890210d0cd887bd",
+            "id": "74db85ef56c51305",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vorlage Autoren.md",
+                "file": "Vorlagen/Vorlage Autoren.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -54,9 +54,33 @@
               "icon": "lucide-file",
               "title": "Vorlage Autoren"
             }
+          },
+          {
+            "id": "6d71d929c99490e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Gustav Droysen.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Gustav Droysen"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -208,7 +232,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Vorlage Autoren.md",
+                "file": "Gustav Droysen.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -236,7 +260,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Vorlage Autoren"
+              "title": "Graph von Gustav Droysen"
             }
           }
         ]
@@ -259,10 +283,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7890210d0cd887bd",
+  "active": "6d71d929c99490e7",
   "lastOpenFiles": [
     "Organisation von Obsidian/Home.md",
-    "Vorlage Autoren.md",
+    "Vorlagen/Vorlage Autoren.md",
+    "Gustav Droysen.md",
     "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
     "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
     "Organisation von Obsidian/Allgemeine Einführung.md",
@@ -297,8 +322,6 @@
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1 1.pdf",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung 1.pdf",
     "Literatur/Vom Lehnhof zur Reichsritterschaft. Strukturen des fränkischen Niederadels am Übergang vom späten Mittelalter zur frühen Neuzeit Cord Ulrichs 1997.md",
-    "Literatur/Spätmittelalterlicher deutscher Niederadel. Ein landschaftlicher Vergleich Joachim Schneider 2003.md",
-    "PDFs/KarlFerdinandWernerAdelMehrzweckElitevorModerne.pdf",
-    "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md"
+    "PDFs/KarlFerdinandWernerAdelMehrzweckElitevorModerne.pdf"
   ]
 }
