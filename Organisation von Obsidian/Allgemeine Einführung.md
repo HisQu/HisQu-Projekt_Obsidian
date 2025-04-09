@@ -1,6 +1,6 @@
-## 📚 HisQu-Vault – README
+# 📚 HisQu-Vault – 
 
-### Zweck dieses Vaults
+### Zweck dieser Vaults
 
 Dieser Obsidian Vault dient der **zentralen Dokumentation und strukturierten Vernetzung von wissenschaftlicher Literatur**, die im Rahmen des **HisQu-Projekts** verwendet wird. Ziel ist es, die Vielzahl an verwendeten Literaturtiteln nicht nur zu sammeln, sondern **systematisch miteinander in Beziehung zu setzen** – durch strukturierte Notizen, Metadaten und interne Verlinkungen.
 
@@ -26,6 +26,9 @@ Durch das Prinzip der **geteilten Notizen** wird das gemeinsame wissenschaftlich
 		- Wenn in Zotero der Titel von dem Untertitel mit einm `:` abgetrennt wird, erscheint eine Fehlermeldung!
 			- Lösche nun die Notiz aus über die drei Punkte oder mit `Alt+D`
 			- Verändere den Titel in Zotero und trenne Titel und Untertitel mit einem Punkt. `.` 
+		- Dein Zoterodokument besitzt eigentlich eine verknüpfte PDF, doch nun ist sie nicht in Obsidian migriert.
+			- Keine Sorge, das legt nicht an Dir, sondern an dem geringen Speicher, den Zotero anbietet, wende Dich einfach an @Luca Nauschütz, ich kann die PDF hinzufügen.
+		- 
     
 - Vergib Tags (z. B. `#Begriffsgeschichte`, `#Quellenkritik`) für bessere Filterbarkeit.
     

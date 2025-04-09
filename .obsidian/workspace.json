@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f1bce818b8c8a94b",
+        "id": "32bdf65446e64571",
         "type": "tabs",
         "children": [
           {
-            "id": "7f69306d244619e1",
+            "id": "2268d3343b3a39d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
+                "file": "Organisation von Obsidian/Home.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983"
+              "title": "Home"
             }
           },
           {
-            "id": "4861b475e04b6477",
+            "id": "7890210d0cd887bd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Allgemeine Einführung.md",
+                "file": "Vorlage Autoren.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,31 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Allgemeine Einführung"
-            }
-          },
-          {
-            "id": "6be19e70303aa1a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Der Adel in Franken Hanns Hubert Hofmann 1965"
+              "title": "Vorlage Autoren"
             }
           }
         ],
@@ -232,7 +208,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Allgemeine Einführung.md",
+                "file": "Vorlage Autoren.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -260,7 +236,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Allgemeine Einführung"
+              "title": "Graph von Vorlage Autoren"
             }
           }
         ]
@@ -283,12 +259,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4861b475e04b6477",
+  "active": "7890210d0cd887bd",
   "lastOpenFiles": [
-    "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
+    "Organisation von Obsidian/Home.md",
+    "Vorlage Autoren.md",
     "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
-    "Allgemeine Einführung.md",
-    "Home.md",
+    "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
+    "Organisation von Obsidian/Allgemeine Einführung.md",
+    "Organisation von Obsidian",
     "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
     "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
@@ -298,9 +276,9 @@
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
-    "Banner.md",
-    "BannerHisQu.png",
-    "HisQU.png",
+    "Organisation von Obsidian/Banner.md",
+    "Organisation von Obsidian/BannerHisQu.png",
+    "Organisation von Obsidian/HisQU.png",
     "cf07ae28-1054-4737-8ca6-9639d7ea2469.png",
     "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
     "Protokolle",
@@ -321,8 +299,6 @@
     "Literatur/Vom Lehnhof zur Reichsritterschaft. Strukturen des fränkischen Niederadels am Übergang vom späten Mittelalter zur frühen Neuzeit Cord Ulrichs 1997.md",
     "Literatur/Spätmittelalterlicher deutscher Niederadel. Ein landschaftlicher Vergleich Joachim Schneider 2003.md",
     "PDFs/KarlFerdinandWernerAdelMehrzweckElitevorModerne.pdf",
-    "PDFs/ElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1 1.pdf",
-    "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
-    "Literatur/Soziale Genese und Aufstiegsformen kleiner niederadliger Geschlechter im südöstlichen Niedersachsen Lutz Fenske 1984.md"
+    "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md"
   ]
 }
