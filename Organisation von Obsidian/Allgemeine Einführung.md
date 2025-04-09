@@ -22,14 +22,20 @@ Durch das Prinzip der **geteilten Notizen** wird das gemeinsame wissenschaftlich
 ## 🧭 Nutzungshinweise
 
 - Nutze beim Erstellen neuer Einträge das bereitgestellte Template nutze bitte den Shortcut `Strg+Shift+c` , dann wällst Du die Literaturnotiz aus, die in der Zoterobibilothek liegt. 
+	- Autornotiz:
+		- Bei der Übertragung von Zotero zu Obsidian werden auch die Autoren übernommen und als Notiz vorangelegt. Durch das klicken auf den Namen entsteht eine verlinkte Notiz
+			- Beispiel: ![[Beispiel Autor.png]]
+		- Diese Notiz sollte durch den Shortcut `Alt+A` durch eine Vorlage ergänzt werden, die dann weiter bearbeitet werden kann
+		- 
 	- ❗**ACHTUNG** ❗
-		- Wenn in Zotero der Titel von dem Untertitel mit einm `:` abgetrennt wird, erscheint eine Fehlermeldung!
+		- Wenn in Zotero der Titel von dem Untertitel mit einem `:` abgetrennt wird, erscheint eine Fehlermeldung!
 			- Lösche nun die Notiz aus über die drei Punkte oder mit `Alt+D`
 			- Verändere den Titel in Zotero und trenne Titel und Untertitel mit einem Punkt. `.` 
 		- Dein Zoterodokument besitzt eigentlich eine verknüpfte PDF, doch nun ist sie nicht in Obsidian migriert.
-			- Keine Sorge, das legt nicht an Dir, sondern an dem geringen Speicher, den Zotero anbietet, wende Dich einfach an @Luca Nauschütz, ich kann die PDF hinzufügen.
-		- 
-    
+			- Keine Sorge, das legt nicht an Dir, sondern an dem geringen Speicher, den Zotero anbietet, wende Dich einfach an @Luca Nauschütz, ich kann die PDF hinzufügen.    
+		- Bei der Übertragung der Autoren kann es zu Fehlern kommen, diese müssen zur automatisierten Verlinkung verhindert werden
+			- Darstellung: ![[mögliche Fehler Autor.png]]
+			- eine gute 
 - Vergib Tags (z. B. `#Begriffsgeschichte`, `#Quellenkritik`) für bessere Filterbarkeit.
     
 - Verlinke andere Titel oder Notizen durch Doppelteckige Klammern `[[Titel des Eintrags]]`. Der Titel des Eintrages folgt dem Citationkey aus Zotero, also in der Regel: `[Titel] [Vor- und Zuname des Autors] [Erscheinungsjahr]` 

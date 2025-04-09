@@ -1,7 +1,9 @@
 ---
 Titel: Classen, Studium und Gesellschaft
-Autor: "[[Peter Classen, Johannes Fried]]"
-Herausgeber:  
+Autor: 
+- "[[Peter Classen]]"
+- "[[Johannes Fried]]"
+Herausgeber: 
 Erscheinungsjahr: 1983
 Seiten: 
 Verbindung zu Zotero: zotero://select/items/@ClassenClassenStudiumundGesellschaft
