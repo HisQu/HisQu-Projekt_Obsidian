@@ -22,9 +22,14 @@ Durch das Prinzip der **geteilten Notizen** wird das gemeinsame wissenschaftlich
 ## 🧭 Nutzungshinweise
 
 - Nutze beim Erstellen neuer Einträge das bereitgestellte Template nutze bitte den Shortcut `Strg+Shift+c` , dann wällst Du die Literaturnotiz aus, die in der Zoterobibilothek liegt. 
+	- ❗**ACHTUNG** ❗
+		- Wenn in Zotero der Titel von dem Untertitel mit einm `:` abgetrennt wird, erscheint eine Fehlermeldung!
+			- Lösche nun die Notiz aus über die drei Punkte oder mit `Alt+D`
+			- Verändere den Titel in Zotero und trenne Titel und Untertitel mit einem Punkt. `.` 
     
 - Vergib Tags (z. B. `#Begriffsgeschichte`, `#Quellenkritik`) für bessere Filterbarkeit.
     
-- Verlinke andere Titel oder Notizen durch Doppelteckige Klammern `[[Titel des Eintrags]]`.
+- Verlinke andere Titel oder Notizen durch Doppelteckige Klammern `[[Titel des Eintrags]]`. Der Titel des Eintrages folgt dem Citationkey aus Zotero, also in der Regel: `[Titel] [Vor- und Zuname des Autors] [Erscheinungsjahr]` 
+	- Hier ein Beispiel [[Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969]] 
     
 - Trage dich ggf. im YAML-Header als Bearbeiter:in ein (`author:`), um Transparenz zu schaffen.
