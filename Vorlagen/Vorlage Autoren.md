@@ -1,10 +1,14 @@
 ---
 tags: 
 aliases:
+  - <% tp.file.title %>
+  - <% tp.file.title %>s
 ---
 ```dataview
 list from ""
-where contains(file.outlinks, [[Author]])
+where contains(file.outlinks, [[<% tp.file.title %>]])
 ```
 
- <%* if (tp.file.title.charAt) %>
+
+# <% tp.file.title %>
+

@@ -61,9 +61,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gustav Droysen.md",
-                "mode": "source",
-                "source": false,
+                "file": "Vorlagen/Vorlage Autoren.md",
+                "mode": "preview",
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Gustav Droysen"
+              "title": "Vorlage Autoren"
             }
           }
         ],
@@ -232,7 +232,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Gustav Droysen.md",
+                "file": "Vorlagen/Vorlage Autoren.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -260,7 +260,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Gustav Droysen"
+              "title": "Graph von Vorlage Autoren"
             }
           }
         ]
@@ -286,8 +286,8 @@
   "active": "6d71d929c99490e7",
   "lastOpenFiles": [
     "Gustav Droysen.md",
-    "Organisation von Obsidian/Home.md",
     "Vorlagen/Vorlage Autoren.md",
+    "Organisation von Obsidian/Home.md",
     "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
     "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
     "Organisation von Obsidian/Allgemeine Einführung.md",
