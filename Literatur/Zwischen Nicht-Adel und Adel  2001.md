@@ -1,7 +1,7 @@
 ---
 Titel: Zwischen Nicht-Adel und Adel
 Autor: "[[]]"
-Herausgeber:  
+Herausgeber: Kurt Andermann
 Erscheinungsjahr: 2001
 Seiten: 
 Verbindung zu Zotero: zotero://select/items/@AndermannZwischenNichtAdelundAdel

@@ -51,7 +51,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Dateiexplorer"
@@ -185,9 +185,9 @@
               "state": {
                 "file": "Home.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -222,6 +222,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "homepage:Open homepage": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graphen-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -230,24 +231,33 @@
       "command-palette:Befehlspalette öffnen": false,
       "publish:Änderungen veröffentlichen": false,
       "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false,
-      "homepage:Open homepage": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
     "Home.md",
+    "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
+    "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
+    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+    "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
+    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
+    "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
+    "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
+    "Allgemeine Einführung.md",
+    "Banner.md",
+    "BannerHisQu.png",
+    "HisQU.png",
+    "cf07ae28-1054-4737-8ca6-9639d7ea2469.png",
     "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
     "Protokolle",
-    "HisQU.png",
     "Testnote.md",
     "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
     "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
     "Literatur/Libertas scholastica und negotium scholare. Entstehung und Sozialprestige des Akademikerstandes im Mittelalter Laetitia Boehm 1970.md",
-    "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
-    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "repository",
     "PDFs/BrowningOrdinarymenReservePoliceBattalion101finalsolutionPoland.pdf",
     "Literatur/Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995.md",
@@ -255,7 +265,6 @@
     "Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995.md",
     "Literatur/Zur Sozialgeschichte der ostdeutschen Gelehrtenschaft (1945-1970) Ralph Jessen 1995.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1 1.pdf",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung 1.pdf",
     "Literatur/Vom Lehnhof zur Reichsritterschaft. Strukturen des fränkischen Niederadels am Übergang vom späten Mittelalter zur frühen Neuzeit Cord Ulrichs 1997.md",
@@ -263,15 +272,8 @@
     "PDFs/KarlFerdinandWernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/ElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1 1.pdf",
     "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
-    "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
     "Literatur/Soziale Genese und Aufstiegsformen kleiner niederadliger Geschlechter im südöstlichen Niedersachsen Lutz Fenske 1984.md",
     "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
-    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
-    "RosslerDeutscherAdel14301555.md",
-    "Spätmittelalterlicher deutscher Niederadel Joachim Schneider 2003.md",
-    "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
-    "Literatur/Spätmittelalterlicher deutscher Niederadel Joachim Schneider 2003.md",
-    "Literatur/Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001.md",
-    "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md"
+    "RosslerDeutscherAdel14301555.md"
   ]
 }

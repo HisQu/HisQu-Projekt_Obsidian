@@ -1,5 +1,9 @@
 ---
-cssclasses: dashboard
+cssclasses:
+  - dashboard
+
+banner: "![[BannerHisQu.png]]"
+banner_y: 0.452
 ---
 
 
@@ -18,3 +22,6 @@ cssclasses: dashboard
 - 〽️ Stats
     - File Count: `$=dv.pages().length`
     - Anzahl der Literaturtitel: `$=dv.pages('"Literatur"').length`**
+- Kurzanleitung
+	- [[Allgemeine Einführung]]
+	- [[Shortcuts]]
