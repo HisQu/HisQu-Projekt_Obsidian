@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Deutscher Adel 1430-1555 Hellmuth Rößler 1965"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Deutscher Adel 1430-1555 Hellmuth Rößler 1965"
             }
           }
         ]
@@ -236,17 +236,17 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Literatur/Autoren/Johannes Rogalla von Bieberstein.md",
+    "Literatur/Autoren/Gustav Droysen.md",
+    "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
     "Organisation_von_Obsidian/Home.md",
     "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "README.md",
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
-    "Literatur/Autoren/Johannes Rogalla von Bieberstein.md",
     "Literatur/Autoren/Georges Duby.md",
-    "Literatur/Autoren/Gustav Droysen.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
     "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
-    "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder",
