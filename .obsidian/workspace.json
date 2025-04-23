@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "32bdf65446e64571",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "2268d3343b3a39d2",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,83 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Deutscher Adel 1430-1555 Hellmuth Rößler 1965"
-            }
-          },
-          {
-            "id": "158929ca304e12a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983"
-            }
-          },
-          {
-            "id": "d3d88c14e7d20eda",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Organisation von Obsidian/Allgemeine Einführung.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Allgemeine Einführung"
-            }
-          },
-          {
-            "id": "6d71d929c99490e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Literatur/Autoren/Gustav Droysen.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Gustav Droysen"
+              "title": "Home"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -256,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -284,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -307,19 +234,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "158929ca304e12a5",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Organisation von Obsidian/Allgemeine Einführung.md",
+    "Organisation_von_Obsidian/Home.md",
+    "Organisation_von_Obsidian/Allgemeine_Einführung.md",
+    "README.md",
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
-    "Vorlagen/Vorlage Autoren.md",
-    "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
-    "Organisation von Obsidian/Home.md",
-    "mögliche Fehler Autor.png",
+    "Literatur/Autoren/Johannes Rogalla von Bieberstein.md",
+    "Literatur/Autoren/Georges Duby.md",
     "Literatur/Autoren/Gustav Droysen.md",
-    "Beispiel Autor.png",
+    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+    "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
+    "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
+    "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
+    "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
+    "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
+    "Organisation_von_Obsidian/Bilder",
+    "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
+    "Vorlagen/Vorlage Autoren.md",
+    "Organisation_von_Obsidian/Bilder/mögliche Fehler Autor.png",
     "Literatur/Autoren",
     "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
-    "Organisation von Obsidian",
+    "Organisation_von_Obsidian",
     "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
     "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
     "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
@@ -328,9 +264,8 @@
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
-    "Organisation von Obsidian/Banner.md",
-    "Organisation von Obsidian/BannerHisQu.png",
-    "Organisation von Obsidian/HisQU.png",
+    "Organisation_von_Obsidian/Banner.md",
+    "Organisation_von_Obsidian/Bilder/HisQU.png",
     "cf07ae28-1054-4737-8ca6-9639d7ea2469.png",
     "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
     "Protokolle",
@@ -342,12 +277,6 @@
     "repository",
     "PDFs/BrowningOrdinarymenReservePoliceBattalion101finalsolutionPoland.pdf",
     "Literatur/Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995.md",
-    "Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR 1995.md",
-    "Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995.md",
-    "Literatur/Zur Sozialgeschichte der ostdeutschen Gelehrtenschaft (1945-1970) Ralph Jessen 1995.md",
-    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
-    "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1 1.pdf",
-    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung 1.pdf",
-    "Literatur/Vom Lehnhof zur Reichsritterschaft. Strukturen des fränkischen Niederadels am Übergang vom späten Mittelalter zur frühen Neuzeit Cord Ulrichs 1997.md"
+    "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1 1.pdf"
   ]
 }
