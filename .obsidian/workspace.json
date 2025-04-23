@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
-                "mode": "source",
+                "file": "Literatur/Autoren/Johannes Rogalla von Bieberstein.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Deutscher Adel 1430-1555 Hellmuth Rößler 1965"
+              "title": "Johannes Rogalla von Bieberstein"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+                "file": "Literatur/Autoren/Johannes Rogalla von Bieberstein.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -206,12 +206,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.36288736930121385,
+                  "scale": 0.2588386562181643,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Deutscher Adel 1430-1555 Hellmuth Rößler 1965"
+              "title": "Graph von Johannes Rogalla von Bieberstein"
             }
           }
         ]
@@ -236,13 +236,14 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Vorlagen/Vorlage Autoren.md",
+    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
     "Literatur/Autoren/Johannes Rogalla von Bieberstein.md",
     "Literatur/Autoren/Gustav Droysen.md",
     "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
     "Organisation_von_Obsidian/Home.md",
     "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "README.md",
-    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
     "Literatur/Autoren/Georges Duby.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
@@ -251,7 +252,6 @@
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
-    "Vorlagen/Vorlage Autoren.md",
     "Organisation_von_Obsidian/Bilder/mögliche Fehler Autor.png",
     "Literatur/Autoren",
     "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
