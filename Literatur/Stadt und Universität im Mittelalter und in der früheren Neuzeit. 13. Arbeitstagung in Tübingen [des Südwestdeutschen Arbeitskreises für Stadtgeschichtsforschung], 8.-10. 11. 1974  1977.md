@@ -13,7 +13,7 @@ Seiten:
 
 ---
 ## Notizen
-
+### [[RGS§300]]
 Darin u.a.:
 
 [[Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977]]

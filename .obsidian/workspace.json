@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Autoren/Johannes Rogalla von Bieberstein.md",
-                "mode": "preview",
-                "source": true,
+                "file": "Organisation_von_Obsidian/Home.md",
+                "mode": "source",
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Johannes Rogalla von Bieberstein"
+              "title": "Home"
             }
           }
         ]
@@ -183,14 +183,14 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Autoren/Johannes Rogalla von Bieberstein.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
-                  "localJumps": 2,
+                  "localJumps": 4,
                   "localBacklinks": true,
                   "localForelinks": true,
-                  "localInterlinks": false,
+                  "localInterlinks": true,
                   "showTags": false,
                   "showAttachments": false,
                   "hideUnresolved": false,
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Johannes Rogalla von Bieberstein"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -236,17 +236,23 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "RGS Nummern/RGS§300.md",
+    "RGS Nummern",
+    "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
+    "Literatur/Stadt und Universität  1994.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+    "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
+    "Organisation_von_Obsidian/Home.md",
+    "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
+    "Literatur/Autoren/Georges Duby.md",
     "Literatur/Autoren/Johannes Rogalla von Bieberstein.md",
     "Vorlagen/Vorlage Autoren.md",
-    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
     "Literatur/Autoren/Gustav Droysen.md",
     "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
-    "Organisation_von_Obsidian/Home.md",
     "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "README.md",
-    "Literatur/Autoren/Georges Duby.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
-    "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
     "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
@@ -254,12 +260,10 @@
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
     "Organisation_von_Obsidian/Bilder/mögliche Fehler Autor.png",
     "Literatur/Autoren",
-    "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
     "Organisation_von_Obsidian",
     "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
     "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
     "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
@@ -270,13 +274,8 @@
     "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
     "Protokolle",
     "Testnote.md",
-    "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
-    "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
-    "Literatur/Libertas scholastica und negotium scholare. Entstehung und Sozialprestige des Akademikerstandes im Mittelalter Laetitia Boehm 1970.md",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "repository",
-    "PDFs/BrowningOrdinarymenReservePoliceBattalion101finalsolutionPoland.pdf",
-    "Literatur/Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995.md",
-    "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1 1.pdf"
+    "PDFs/BrowningOrdinarymenReservePoliceBattalion101finalsolutionPoland.pdf"
   ]
 }
