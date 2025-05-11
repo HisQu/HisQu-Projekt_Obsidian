@@ -42,3 +42,5 @@ Durch das Prinzip der **geteilten Notizen** wird das gemeinsame wissenschaftlich
 	- Hier ein Beispiel [[Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969]] 
     
 - Trage dich ggf. im YAML-Header als Bearbeiter:in ein (`author:`), um Transparenz zu schaffen.
+
+[Zurück zu Übersicht](https://github.com/HisQu)
