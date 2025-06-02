@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Stadt und Universität  1994.md",
+                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Stadt und Universität  1994"
+              "title": "Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Stadt und Universität  1994.md",
+                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Stadt und Universität  1994"
+              "title": "Graph von Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
             }
           }
         ]
@@ -222,6 +222,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
       "homepage:Open homepage": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graphen-Ansicht öffnen": false,
@@ -237,10 +238,14 @@
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Organisation_von_Obsidian/Home.md",
-    "RGS Nummern/RGS§300.md",
-    "RGS Nummern",
+    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+    "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
+    "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
+    "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
     "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
+    "RGS Nummern/RGS§300.md",
     "Literatur/Stadt und Universität  1994.md",
+    "RGS Nummern",
     "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
     "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
@@ -252,7 +257,6 @@
     "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
     "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "README.md",
-    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
@@ -266,15 +270,12 @@
     "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
     "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
-    "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
     "Organisation_von_Obsidian/Banner.md",
     "Organisation_von_Obsidian/Bilder/HisQU.png",
     "cf07ae28-1054-4737-8ca6-9639d7ea2469.png",
-    "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
     "Protokolle",
     "Testnote.md",
-    "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "repository",
     "PDFs/BrowningOrdinarymenReservePoliceBattalion101finalsolutionPoland.pdf"
   ]

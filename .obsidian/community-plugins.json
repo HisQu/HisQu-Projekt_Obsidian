@@ -10,5 +10,7 @@
   "dataview",
   "homepage",
   "obsidian-banners",
-  "obsidian-emoji-toolbar"
+  "obsidian-emoji-toolbar",
+  "obsidian-excalidraw-plugin",
+  "excalibrain"
 ]
