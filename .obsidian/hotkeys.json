@@ -129,5 +129,13 @@
       ],
       "key": "T"
     }
+  ],
+  "excalibrain:excalibrain-start": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "G"
+    }
   ]
 }
