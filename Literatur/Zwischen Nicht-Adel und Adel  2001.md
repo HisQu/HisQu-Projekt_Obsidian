@@ -15,9 +15,7 @@ Verbindung zu Zotero: zotero://select/items/@AndermannZwischenNichtAdelundAdel
 
 ---
 ## Notizen
-enthalten u.a.:
-
-[[Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001]]
+enthält unter anderem:: [[Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001]]
 
 ---
 

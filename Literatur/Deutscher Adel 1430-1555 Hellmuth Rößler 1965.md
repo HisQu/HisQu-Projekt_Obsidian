@@ -16,13 +16,10 @@ Verbindung zu Zotero: zotero://select/items/@RosslerDeutscherAdel14301555
 ---
 ## Notizen
 enthalten u.a.
-
-- [[Wandlungen d. Konnubiums im Adel des 15. Und 16. Jhds Friedrich W. Euler 1965]]
-- [[Der Adel in Franken Hanns Hubert Hofmann 1965]]
+enthält unter anderem:: - [[Wandlungen d. Konnubiums im Adel des 15. Und 16. Jhds Friedrich W. Euler 1965]] - [[Der Adel in Franken Hanns Hubert Hofmann 1965]]
 
 siehe auch:
-
-- [[Spätmittelalterlicher deutscher Niederadel. Ein landschaftlicher Vergleich Joachim Schneider 2003]]
+siehe auch:: - [[Spätmittelalterlicher deutscher Niederadel. Ein landschaftlicher Vergleich Joachim Schneider 2003]]
 
 
 ---

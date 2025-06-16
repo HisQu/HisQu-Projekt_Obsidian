@@ -1,0 +1,169 @@
+# 📚 HisQu-Vault - Einführung
+
+### Zweck dieses Vaults
+
+Dieser Obsidian Vault dient der **zentralen Dokumentation und strukturierten Vernetzung von wissenschaftlicher Literatur**, die im Rahmen des **HisQu-Projekts** verwendet wird. Ziel ist es, die Vielzahl an verwendeten Literaturtiteln nicht nur zu sammeln, sondern **systematisch miteinander in Beziehung zu setzen** – durch strukturierte Notizen, Metadaten und interne Verlinkungen.
+
+Der Vault erfüllt damit zwei **zentrale Funktionen**:
+
+1. **Literaturübersicht**: Jede verwendete Quelle erhält eine eigene Seite, auf der bibliographische Angaben sowie inhaltliche Kurzzusammenfassungen (Abstracts, Argumentationslinien, Relevanz für das Projekt etc.) dokumentiert werden.
+
+2. **Vernetzung**: Literaturtitel werden inhaltlich miteinander verknüpft – etwa durch thematische Überschneidungen, methodische Gemeinsamkeiten oder Zitationsbezüge. Diese Hyperstruktur ermöglicht eine schnelle Orientierung in der Forschungslandschaft des Projekts.
+   
+
+### Warum ist das sinnvoll?
+
+Durch das Prinzip der **geteilten Notizen** wird das gemeinsame wissenschaftliche Arbeiten erleichtert. Nicht jede:r im Team muss jedes Werk vollständig lesen – stattdessen können Lesearbeiten arbeitsteilig erfolgen und durch präzise, gut auffindbare Notizen transparent gemacht werden. Dies beschleunigt unter anderem:
+
+- die Konzeption und Ausarbeitung von wissenschaftlichen Texten (z. B. Aufsätzen, Anträgen, Vorträgen),
+- die Diskussion innerhalb des Forschungsteams,
+- sowie die nachhaltige Sicherung des Wissens im Projektkontext.
+---
+## 🧭 Nutzungshinweise
+
+- Nutze beim Erstellen neuer Einträge das bereitgestellte Template nutze bitte den Shortcut `Strg+Shift+c` , dann wällst Du die Literaturnotiz aus, die in der Zoterobibilothek liegt. 
+	- Autornotiz:
+		- Bei der Übertragung von Zotero zu Obsidian werden auch die Autoren übernommen und als Notiz vorangelegt. Durch das klicken auf den Namen entsteht eine verlinkte Notiz
+			- Beispiel: ![[Beispiel Autor.png]]
+		- Diese Notiz sollte durch den Shortcut `Alt+A` durch eine Vorlage ergänzt werden, die dann weiter bearbeitet werden kann. Alternativ kann man auch über das Befehlsmenü `Strg+P` und der Suche nach '*Autor* ' die Vorlage einfügen
+		- 
+	- ❗**ACHTUNG** ❗
+		- Wenn in Zotero der Titel von dem Untertitel mit einem `:` abgetrennt wird, erscheint eine Fehlermeldung!
+			- Lösche nun die Notiz aus über die drei Punkte oder mit `Alt+D`
+			- Verändere den Titel in Zotero und trenne Titel und Untertitel mit einem Punkt. `.` 
+		- Dein Zoterodokument besitzt eigentlich eine verknüpfte PDF, doch nun ist sie nicht in Obsidian migriert.
+			- Keine Sorge, das liegt nicht an Dir, sondern an dem geringen Speicher, den Zotero anbietet, wende Dich einfach an @Luca Nauschütz, ich kann die PDF hinzufügen.    
+		- Bei der Übertragung der Autoren kann es zu Fehlern kommen, diese müssen zur automatisierten Verlinkung verhindert werden
+			- Darstellung: ![[mögliche Fehler Autor.png]]
+			- besser ist: ![[Verbesserung Fehler Autor mehrere Autoren.png]]
+- Vergib Tags (z. B. `#Begriffsgeschichte`, `#Quellenkritik`) für bessere Filterbarkeit.
+    
+- Verlinke andere Titel oder Notizen durch Doppelteckige Klammern `[[Titel des Eintrags]]`. Der Titel des Eintr---
+tags:
+  - "#Autoren"
+aliases:
+  - Allgemeine_Einführung
+  - Allgemeine_Einführungs
+  - Allgemeine_Einführung
+  - Allgemeine_Einführungs
+Autor: Allgemeine_Einführung
+---
+```dataview
+list from ""
+where contains(file.outlinks, [[Allgemeine_Einführung]])
+```
+
+
+# Allgemeine_Einführung
+
+## 📚 weiter Angaben
+
+- Siehe auch: `[[...]]`
+- Methodische Nähe zu: `[[...]]`
+- Wird zitiert in: `[[...]]`
+
+## ✍️ Bearbeitungsvermerk
+
+- Notizen erstellt von: `@...`
+- Letzte Bearbeitung: 2025-05-23
+
+
+---
+tags:
+  - "#Autoren"
+aliases:
+  - Allgemeine_Einführung
+  - Allgemeine_Einführungs
+  - Allgemeine_Einführung
+  - Allgemeine_Einführungs
+Autor: Allgemeine_Einführung
+---
+```dataview
+list from ""
+where contains(file.outlinks, [[Allgemeine_Einführung]])
+```
+
+
+# Allgemeine_Einführung
+
+## 📚 weiter Angaben
+
+- Siehe auch: `[[...]]`
+- Methodische Nähe zu: `[[...]]`
+- Wird zitiert in: `[[...]]`
+
+## ✍️ Bearbeitungsvermerk
+
+- Notizen erstellt von: `@...`
+- Letzte Bearbeitung: 2025-05-23
+
+
+---
+tags:
+  - "#Autoren"
+aliases:
+  - Allgemeine_Einführung
+  - Allgemeine_Einführungs
+  - Allgemeine_Einführung
+  - Allgemeine_Einführungs
+Autor: Allgemeine_Einführung
+---
+```dataview
+list from ""
+where contains(file.outlinks, [[Allgemeine_Einführung]])
+```
+
+
+# Allgemeine_Einführung
+
+## 📚 weiter Angaben
+
+- Siehe auch: `[[...]]`
+- Methodische Nähe zu: `[[...]]`
+- Wird zitiert in: `[[...]]`
+
+## ✍️ Bearbeitungsvermerk
+
+- Notizen erstellt von: `@...`
+- Letzte Bearbeitung: 2025-05-23
+
+
+---
+tags:
+  - "#Autoren"
+aliases:
+  - Allgemeine_Einführung
+  - Allgemeine_Einführungs
+  - Allgemeine_Einführung
+  - Allgemeine_Einführungs
+Autor: Allgemeine_Einführung
+---
+```dataview
+list from ""
+where contains(file.outlinks, [[Allgemeine_Einführung]])
+```
+
+
+# Allgemeine_Einführung
+
+## 📚 weiter Angaben
+
+- Siehe auch: `[[...]]`
+- Methodische Nähe zu: `[[...]]`
+- Wird zitiert in: `[[...]]`
+
+## ✍️ Bearbeitungsvermerk
+
+- Notizen erstellt von: `@...`
+- Letzte Bearbeitung: 2025-05-23
+
+
+ges folgt dem Citationkey aus Zotero, also in der Regel: `[Titel] [Vor- und Zuname des Autors] [Erscheinungsjahr]` 
+	- Hier ein Beispiel [[Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969]] 
+    
+- Trage dich ggf. im YAML-Header als Bearbeiter:in ein (`author:`), um Transparenz zu schaffen.
+- Zur Erstellung eines übersichtlichen Wissensgraphen
+	- Nutze den Shortcut  `Alt + G` 
+	- 
+
+[Zurück zu Übersicht](https://github.com/HisQu)

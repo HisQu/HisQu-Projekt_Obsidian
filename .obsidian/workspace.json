@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
+              "title": "Home"
+            }
+          },
+          {
+            "id": "d6da84065e56de26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,7 +208,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+                "file": "conflict-files-obsidian-git.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +236,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
+              "title": "Graph von conflict-files-obsidian-git"
             }
           }
         ]
@@ -235,8 +260,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "d6da84065e56de26",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Literatur/Autoren/Hellmuth Rössler.md",
+    "Literatur/Autoren/Allgemeine_Einführung.md",
     "Organisation_von_Obsidian/Home.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
@@ -271,11 +299,9 @@
     "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
-    "Organisation_von_Obsidian/Banner.md",
     "Organisation_von_Obsidian/Bilder/HisQU.png",
     "cf07ae28-1054-4737-8ca6-9639d7ea2469.png",
     "Protokolle",
-    "Testnote.md",
     "repository",
     "PDFs/BrowningOrdinarymenReservePoliceBattalion101finalsolutionPoland.pdf"
   ]

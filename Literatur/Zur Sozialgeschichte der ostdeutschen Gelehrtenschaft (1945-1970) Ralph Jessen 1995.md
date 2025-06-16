@@ -16,7 +16,7 @@ Verbindung zu Zotero: zotero://select/items/@JessenZurSozialgeschichteostdeutsch
 ---
 ## Notizen
 
-
+Teil von:: [[Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995]] S. 121-143.
 ---
 
 ## Originalquelle:

@@ -15,7 +15,8 @@ Verbindung zu Zotero: zotero://select/items/@ClassenGenossenschaftLehrendenundLe
 
 ---
 ## Notizen
-zur „Kulturfamilie“ s.a.: [[Zur Sozialgeschichte der ostdeutschen Gelehrtenschaft (1945-1970) Ralph Jessen 1995]], in: [[Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995]] S. 121-143.
+zur „[[Kulturfamilie]]“ 
+:siehe auch::   [[Zur Sozialgeschichte der ostdeutschen Gelehrtenschaft (1945-1970) Ralph Jessen 1995]], in: [[Historische Forschung und sozialistische Diktatur. Beiträge zur Geschichtswissenschaft der DDR  1995]] S. 121-143.
 
 ---
 
