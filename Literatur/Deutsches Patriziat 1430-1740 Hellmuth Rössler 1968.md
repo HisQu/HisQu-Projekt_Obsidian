@@ -1,7 +1,8 @@
 ---
 Titel: Deutsches Patriziat 1430-1740
-Autor: "[[Hellmuth Rößler]]"
-Herausgeber:  
+Autor:
+  - "[[Hellmuth Rössler]]"
+Herausgeber: 
 Erscheinungsjahr: 1968
 Seiten: 
 Verbindung zu Zotero: zotero://select/items/@RosslerDeutschesPatriziat14301740

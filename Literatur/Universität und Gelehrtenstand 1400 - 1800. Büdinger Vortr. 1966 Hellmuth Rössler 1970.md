@@ -22,7 +22,7 @@ enthält unter anderem:: [[Libertas scholastica und negotium scholare. Entstehun
 
 ## Weitere Bände dieser Reihe
 
-weitere Bände der Reihe::  Band 2  [[Deutscher Adel 1430-1555 Hellmuth Rößler 1965]], Band 3 [[Deutsches Patriziat 1430-1740 Hellmuth Rößler 1968]],  Band 5 [[Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972]]
+weitere Bände der Reihe::  Band 2  [[Deutscher Adel 1430-1555 Hellmuth Rößler 1965]], Band 3 [[Deutsches Patriziat 1430-1740 Hellmuth Rössler 1968]],  Band 5 [[Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972]]
 
 ## siehe auch:
 siehe auch::  - [[Zwischen Nicht-Adel und Adel  2001]]
