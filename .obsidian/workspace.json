@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,25 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6157c305a6197a68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd0930f51768366d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "excalibrain.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "excalibrain"
             }
           }
         ]
@@ -184,7 +202,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -212,7 +230,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023"
             }
           }
         ]
@@ -238,9 +256,16 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Kulturfamilie.md",
+    "Literatur/Die römischen Repertorien. Neue Perspektiven für die Erforschung von Kirche und Kurie des Spätmittelalters (1378–1484) Claudia Märtl, Irmgard Fees, Andreas Rehberg, Jörg Voigt 2023.md",
+    "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
+    "Literatur/Autoren/Robert Gramsch-Stehfest.md",
+    "Literatur/Autoren/Jörg Voigt.md",
+    "Literatur/Autoren/Andreas Rehberg.md",
+    "Literatur/Autoren/Irmgard Fees.md",
+    "Literatur/Autoren/Claudia Märtl.md",
     "Organisation_von_Obsidian/Home.md",
     "excalibrain.md",
+    "Kulturfamilie.md",
     "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
     "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
@@ -257,13 +282,6 @@
     "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
     "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
     "Literatur/Autoren/Eva Pleticha.md",
-    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
-    "Literatur/Autoren/Johannes Fried.md",
-    "Literatur/Autoren/Peter Classen.md",
-    "Literatur/Zur Sozialgeschichte der ostdeutschen Gelehrtenschaft (1945-1970) Ralph Jessen 1995.md",
-    "conflict-files-obsidian-git.md",
-    "Literatur/Autoren/Hellmuth Rössler.md",
-    "Literatur/Autoren/Allgemeine_Einführung.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "RGS Nummern",

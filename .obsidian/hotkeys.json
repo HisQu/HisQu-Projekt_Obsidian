@@ -137,5 +137,13 @@
       ],
       "key": "G"
     }
+  ],
+  "editor:save-file": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
   ]
 }
