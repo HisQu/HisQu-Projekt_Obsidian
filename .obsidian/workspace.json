@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kulturfamilie.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Kulturfamilie"
+              "title": "Home"
             }
           }
         ]
@@ -184,7 +184,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Kulturfamilie.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -212,7 +212,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Kulturfamilie"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -238,13 +238,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Kulturfamilie.md",
     "Organisation_von_Obsidian/Home.md",
     "excalibrain.md",
     "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
     "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
     "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
-    "Kulturfamilie.md",
     "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
     "Literatur/Autoren/Friedrich W. Euler.md",
