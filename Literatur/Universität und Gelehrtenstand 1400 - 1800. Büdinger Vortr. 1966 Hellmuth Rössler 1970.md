@@ -7,7 +7,7 @@ Seiten:
 Verbindung zu Zotero: zotero://select/items/@RoesslerUniversitaetundGelehrtenstand14001800BuedingerVortr1966
 ---
 # Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 - Hellmuth Rössler
-
+#Favorit 
 ## Zusammenfassung
 ### Abstract:
 > [!ABSTRACT]-

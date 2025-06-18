@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brigide Schwarz.md",
+                "file": "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,79 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Brigide Schwarz"
+              "title": "Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970"
+            }
+          },
+          {
+            "id": "8e5e2b0b2310fc6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993"
+            }
+          },
+          {
+            "id": "1ba037634c0fb9f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pfründenmarkt.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Pfründenmarkt"
+            }
+          },
+          {
+            "id": "21ca0c7a12106727",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Literatur/Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997"
             }
           }
         ],
@@ -251,7 +323,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Brigide Schwarz.md",
+                "file": "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -279,7 +351,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Brigide Schwarz"
+              "title": "Graph von Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970"
             }
           }
         ]
@@ -305,8 +377,15 @@
   },
   "active": "d9730275f6ec7c04",
   "lastOpenFiles": [
-    "Brigide Schwarz.md",
     "Literatur/Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991.md",
+    "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
+    "Pfründenmarkt.md",
+    "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
+    "Literatur/Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997.md",
+    "Literatur/Autoren/Ulrich Schwarz.md",
+    "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",
+    "excalibrain.md",
+    "Literatur/Autoren/Brigide Schwarz.md",
     "Literatur/Stadt und Universität  1994.md",
     "Unbenannt 2.md",
     "Stadt und Universität  1994.md",
@@ -314,7 +393,6 @@
     "Unbenannt.md",
     "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
     "Organisation_von_Obsidian/Home.md",
-    "excalibrain.md",
     "Literatur/Autoren/Allgemeine_Einführung.md",
     "Literatur/Die römischen Repertorien. Neue Perspektiven für die Erforschung von Kirche und Kurie des Spätmittelalters (1378–1484) Claudia Märtl, Irmgard Fees, Andreas Rehberg, Jörg Voigt 2023.md",
     "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
@@ -326,11 +404,6 @@
     "Kulturfamilie.md",
     "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
-    "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
-    "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
-    "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
-    "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
-    "Literatur/Autoren/Friedrich W. Euler.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "RGS Nummern",
@@ -345,7 +418,6 @@
     "Organisation_von_Obsidian/Bilder/HisQU.png",
     "cf07ae28-1054-4737-8ca6-9639d7ea2469.png",
     "Protokolle",
-    "repository",
-    "PDFs/BrowningOrdinarymenReservePoliceBattalion101finalsolutionPoland.pdf"
+    "repository"
   ]
 }
