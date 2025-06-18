@@ -14,7 +14,7 @@ Verbindung zu Zotero: zotero://select/items/@MartlromischenRepertorienNeuePerspe
 
 ## Zusammenfassung
 ### Abstract:
-> [!ABSTRACT]-
+> [!ABSTRACT] Das „Repertorium Germanicum" (RG) gehört zu den Pfeilern der am Deutschen Historischen Institut (DHI) Rom betriebenen Grundlagenforschung. In seiner über 100-jährigen Geschichte hat es sich von einem Findmittel zu einem komplexen Regestenwerk zur Kirchen- und Kuriengeschichte entwickelt, das – in Verbindung mit dem Tochterunternehmen „Repertorium Poenitentiariae Germanicum" (RPG) – gestiegenen Ansprüchen gerecht wird. Der Sammelband greift neue Fragestellungen an die Repertorien auf. Die Auswahl reicht von Netzwerkanalysen bis hin zu kulturgeschichtlichen Themen wie Heraldik und Gerontologie. Gezeigt wird auch der Nutzen für die Erhellung grenzüberschreitender Verflechtungen und die methodische Reflexion historischer Elitenforschung. Die neuen digitalen Techniken sowie die Zusammenarbeit mit der „Germania Sacra" und dem „Repertorium Academicum Germanicum" eröffnen weitere Potentiale für künftige Forschungen
 > 
 
 ---

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,25 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023"
-            }
-          }
-        ]
-      },
-      {
-        "id": "6157c305a6197a68",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "dd0930f51768366d",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "excalibrain.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "excalibrain"
+              "title": "Home"
             }
           }
         ]
@@ -202,7 +184,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -230,7 +212,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023"
+              "title": "Graph von Home"
             }
           }
         ]
