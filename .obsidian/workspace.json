@@ -8,14 +8,14 @@
         "type": "tabs",
         "children": [
           {
-            "id": "911b28f4fd4175c4",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991.md",
+                "file": "Vorlagen/Vorlage Autoren.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,64 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991"
+              "title": "Vorlage Autoren"
             }
           },
           {
-            "id": "d9730275f6ec7c04",
+            "id": "35dbb7a23deb7f4f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970"
-            }
-          },
-          {
-            "id": "8e5e2b0b2310fc6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993"
-            }
-          },
-          {
-            "id": "1ba037634c0fb9f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Pfründenmarkt.md",
+                "file": "Konzepte/Pfründenmarkt.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -101,73 +53,6 @@
               },
               "icon": "lucide-file",
               "title": "Pfründenmarkt"
-            }
-          },
-          {
-            "id": "21ca0c7a12106727",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Literatur/Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "31f802f5d17acfef",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "47192578ab75a775",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Literatur/Autoren/Allgemeine_Einführung.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Allgemeine_Einführung"
-            }
-          },
-          {
-            "id": "e7a7b303c61786dc",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "excalibrain.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "excalibrain"
             }
           }
         ],
@@ -323,7 +208,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+                "file": "Konzepte/Pfründenmarkt.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -351,7 +236,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970"
+              "title": "Graph von Pfründenmarkt"
             }
           }
         ]
@@ -375,11 +260,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d9730275f6ec7c04",
+  "active": "35dbb7a23deb7f4f",
   "lastOpenFiles": [
+    "Vorlagen/Vorlage_Konzept.md",
+    "Konzepte/Pfründenmarkt.md",
+    "Konzepte/Kulturfamilie.md",
+    "Konzepte",
+    "Vorlagen/Unbenannt.md",
+    "Vorlagen 1/Vorlage Autoren.md",
+    "Vorlagen 1",
+    "Vorlagen/Vorlage Autoren.md",
+    "Organisation_von_Obsidian/Home.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991.md",
     "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
-    "Pfründenmarkt.md",
     "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
     "Literatur/Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997.md",
     "Literatur/Autoren/Ulrich Schwarz.md",
@@ -392,18 +286,11 @@
     "Unbenannt 1.md",
     "Unbenannt.md",
     "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
-    "Organisation_von_Obsidian/Home.md",
     "Literatur/Autoren/Allgemeine_Einführung.md",
     "Literatur/Die römischen Repertorien. Neue Perspektiven für die Erforschung von Kirche und Kurie des Spätmittelalters (1378–1484) Claudia Märtl, Irmgard Fees, Andreas Rehberg, Jörg Voigt 2023.md",
     "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
     "Literatur/Autoren/Robert Gramsch-Stehfest.md",
     "Literatur/Autoren/Jörg Voigt.md",
-    "Literatur/Autoren/Andreas Rehberg.md",
-    "Literatur/Autoren/Irmgard Fees.md",
-    "Literatur/Autoren/Claudia Märtl.md",
-    "Kulturfamilie.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
-    "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "RGS Nummern",
@@ -416,8 +303,6 @@
     "Organisation_von_Obsidian",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "Organisation_von_Obsidian/Bilder/HisQU.png",
-    "cf07ae28-1054-4737-8ca6-9639d7ea2469.png",
-    "Protokolle",
-    "repository"
+    "cf07ae28-1054-4737-8ca6-9639d7ea2469.png"
   ]
 }
