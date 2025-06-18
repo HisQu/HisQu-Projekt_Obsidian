@@ -13,31 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vorlagen/Vorlage Autoren.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Vorlage Autoren"
-            }
-          },
-          {
-            "id": "35dbb7a23deb7f4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Konzepte/Pfründenmarkt.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Pfründenmarkt"
+              "title": "Home"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -208,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Konzepte/Pfründenmarkt.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -236,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Pfründenmarkt"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -260,10 +235,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "35dbb7a23deb7f4f",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Vorlagen/Vorlage_Konzept.md",
     "Konzepte/Pfründenmarkt.md",
+    "Vorlagen/Vorlage_Konzept.md",
     "Konzepte/Kulturfamilie.md",
     "Konzepte",
     "Vorlagen/Unbenannt.md",
