@@ -14,11 +14,9 @@ Seiten:
 ---
 ## Notizen
 ### [[RGS§300]]
-Darin u.a.:
+enthält unter anderem:: [[Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977]]
 
-[[Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977]]
-
-Siehe auch: [[Stadt und Universität  1994]]
+siehe auch::  [[Stadt und Universität  1994]]
 
 
 ---

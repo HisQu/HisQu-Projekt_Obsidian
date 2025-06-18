@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "911b28f4fd4175c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,78 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991"
+            }
+          },
+          {
+            "id": "d9730275f6ec7c04",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brigide Schwarz.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Brigide Schwarz"
             }
           }
-        ]
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "31f802f5d17acfef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47192578ab75a775",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Literatur/Autoren/Allgemeine_Einführung.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Allgemeine_Einführung"
+            }
+          },
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "excalibrain.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "excalibrain"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,8 +152,7 @@
               "title": "Lesezeichen"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -184,7 +251,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Brigide Schwarz.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -212,7 +279,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Brigide Schwarz"
             }
           }
         ]
@@ -236,8 +303,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "d9730275f6ec7c04",
   "lastOpenFiles": [
+    "Brigide Schwarz.md",
+    "Literatur/Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991.md",
+    "Literatur/Stadt und Universität  1994.md",
+    "Unbenannt 2.md",
+    "Stadt und Universität  1994.md",
+    "Unbenannt 1.md",
+    "Unbenannt.md",
+    "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
+    "Organisation_von_Obsidian/Home.md",
+    "excalibrain.md",
+    "Literatur/Autoren/Allgemeine_Einführung.md",
     "Literatur/Die römischen Repertorien. Neue Perspektiven für die Erforschung von Kirche und Kurie des Spätmittelalters (1378–1484) Claudia Märtl, Irmgard Fees, Andreas Rehberg, Jörg Voigt 2023.md",
     "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
     "Literatur/Autoren/Robert Gramsch-Stehfest.md",
@@ -245,8 +323,6 @@
     "Literatur/Autoren/Andreas Rehberg.md",
     "Literatur/Autoren/Irmgard Fees.md",
     "Literatur/Autoren/Claudia Märtl.md",
-    "Organisation_von_Obsidian/Home.md",
-    "excalibrain.md",
     "Kulturfamilie.md",
     "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
@@ -255,15 +331,6 @@
     "Literatur/Genossenschaft der Lehrenden und Lernenden. Das mittelalterliche Selbstverständnis der Universität Peter Classen 1980.md",
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
     "Literatur/Autoren/Friedrich W. Euler.md",
-    "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
-    "Literatur/Deutsches Patriziat 1430-1740 Hellmuth Rössler 1968.md",
-    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
-    "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
-    "Literatur/Autoren/Hanns Hubert Hofmann.md",
-    "Literatur/Classen, Studium und Gesellschaft Peter Classen, Johannes Fried 1983.md",
-    "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
-    "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
-    "Literatur/Autoren/Eva Pleticha.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "RGS Nummern",
