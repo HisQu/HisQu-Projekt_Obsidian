@@ -57,7 +57,6 @@
       "weitere Bände der Reihe"
     ],
     "rightFriends": [
-      "",
       "builds on",
       "cons",
       "disadvantages",
@@ -67,14 +66,16 @@
     ],
     "previous": [
       "After",
+      "Autor",
       "e",
       "East",
       "n",
       "Next",
-      "Position",
-      "rez"
+      "Position"
     ],
-    "next": [],
+    "next": [
+      "Rezension"
+    ],
     "hidden": [
       "hidden"
     ]
@@ -233,16 +234,19 @@
     "darin": {},
     "ist teil von Reihe": {},
     "weitere Bände der Reihe": {},
-    "": {},
     "builds on": {},
     "siehe auch": {},
     "Position": {},
-    "rez": {}
+    "Rezension": {},
+    "Autor": {}
   },
   "navigationHistory": [
     "Literatur/Zur Sozialgeschichte der ostdeutschen Gelehrtenschaft (1945-1970) Ralph Jessen 1995.md",
     "Organisation_von_Obsidian/Home.md",
-    "Literatur/Autoren/Allgemeine_Einführung.md"
+    "Literatur/Autoren/Allgemeine_Einführung.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
+    "Literatur/Autoren/Friedrich W. Euler.md"
   ],
   "allowOntologySuggester": true,
   "ontologySuggesterParentTrigger": "::teil:",

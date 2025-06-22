@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,14 +211,15 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Deutscher Adel 1430-1555 Hellmuth Rößler 1965"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,6 +238,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+    "excalibrain.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "Organisation_von_Obsidian/Home.md",
+    "Literatur/Autoren/Friedrich W. Euler.md",
+    "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
     "Konzepte/Pfründenmarkt.md",
     "Vorlagen/Vorlage_Konzept.md",
     "Konzepte/Kulturfamilie.md",
@@ -245,15 +252,12 @@
     "Vorlagen 1/Vorlage Autoren.md",
     "Vorlagen 1",
     "Vorlagen/Vorlage Autoren.md",
-    "Organisation_von_Obsidian/Home.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991.md",
     "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
     "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
     "Literatur/Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997.md",
     "Literatur/Autoren/Ulrich Schwarz.md",
     "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",
-    "excalibrain.md",
     "Literatur/Autoren/Brigide Schwarz.md",
     "Literatur/Stadt und Universität  1994.md",
     "Unbenannt 2.md",
@@ -263,9 +267,6 @@
     "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
     "Literatur/Autoren/Allgemeine_Einführung.md",
     "Literatur/Die römischen Repertorien. Neue Perspektiven für die Erforschung von Kirche und Kurie des Spätmittelalters (1378–1484) Claudia Märtl, Irmgard Fees, Andreas Rehberg, Jörg Voigt 2023.md",
-    "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
-    "Literatur/Autoren/Robert Gramsch-Stehfest.md",
-    "Literatur/Autoren/Jörg Voigt.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "RGS Nummern",
