@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,25 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
+            }
+          }
+        ]
+      },
+      {
+        "id": "84707a620ca58734",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cc6a83168ada0d3",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "excalibrain.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "excalibrain"
             }
           }
         ]
@@ -238,10 +256,20 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+    "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
+    "Literatur/Das _Repertorium Germanicum_. Perspektiven einer Digitalen Prosopographie Jörg Hörnschemeyer, Jörg Voigt 2023.md",
+    "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
+    "Literatur/Uno spoglio moderno dette fonti vaticane. Il Repertorium Germanicum e il Repertorium Poenitentiariae Ludwig Schmugge, Jörg Hörnschemeyer 2015.md",
+    "Literatur/Autoren/Jörg Hörnschemeyer.md",
+    "Unbenannt 1.md",
+    "Literatur/GRACEFUL17. A Knowledge Graph for Papal Documents of Apostolic Provisions Christoph Sander, Naomi Beutler, Filippo Sarra, Valentino Verdone, Andrea Cicerchia, Bruno Boute, Jörg Hörnschemeyer 2025.md",
+    "PDFs/SanderGRACEFUL17KnowledgeGraphPapalDocumentsApostolicProvisions.pdf",
     "excalibrain.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Organisation_von_Obsidian/Home.md",
+    "Literatur/Autoren/Christoph Sander.md",
+    "Unbenannt.md",
+    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Autoren/Friedrich W. Euler.md",
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
     "Konzepte/Pfründenmarkt.md",
@@ -254,19 +282,10 @@
     "Vorlagen/Vorlage Autoren.md",
     "Literatur/Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991.md",
     "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
-    "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
     "Literatur/Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997.md",
     "Literatur/Autoren/Ulrich Schwarz.md",
     "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",
     "Literatur/Autoren/Brigide Schwarz.md",
-    "Literatur/Stadt und Universität  1994.md",
-    "Unbenannt 2.md",
-    "Stadt und Universität  1994.md",
-    "Unbenannt 1.md",
-    "Unbenannt.md",
-    "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
-    "Literatur/Autoren/Allgemeine_Einführung.md",
-    "Literatur/Die römischen Repertorien. Neue Perspektiven für die Erforschung von Kirche und Kurie des Spätmittelalters (1378–1484) Claudia Märtl, Irmgard Fees, Andreas Rehberg, Jörg Voigt 2023.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "RGS Nummern",
@@ -277,7 +296,6 @@
     "Organisation_von_Obsidian/Bilder/mögliche Fehler Autor.png",
     "Literatur/Autoren",
     "Organisation_von_Obsidian",
-    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "Organisation_von_Obsidian/Bilder/HisQU.png",
     "cf07ae28-1054-4737-8ca6-9639d7ea2469.png"
   ]
