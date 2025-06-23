@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,25 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
-            }
-          }
-        ]
-      },
-      {
-        "id": "84707a620ca58734",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6cc6a83168ada0d3",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "excalibrain.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "excalibrain"
+              "title": "Home"
             }
           }
         ]
@@ -256,6 +238,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
     "Literatur/Das _Repertorium Germanicum_. Perspektiven einer Digitalen Prosopographie Jörg Hörnschemeyer, Jörg Voigt 2023.md",
     "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
@@ -285,7 +268,6 @@
     "Literatur/Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997.md",
     "Literatur/Autoren/Ulrich Schwarz.md",
     "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",
-    "Literatur/Autoren/Brigide Schwarz.md",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "RGS Nummern",
