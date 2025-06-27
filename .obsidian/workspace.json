@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+                "file": "Literatur/Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,15 +211,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Deutscher Adel 1430-1555 Hellmuth Rößler 1965"
+              "title": "Graph von Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,6 +237,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "PDFs/OrlandiDigitalHumanitiesHeritagePoliticalIdeasMedievalBologna.pdf",
+    "Literatur/Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025.md",
+    "Literatur/Autoren/Rosa Smurra.md",
+    "Literatur/Autoren/Marco Orlandi.md",
     "Organisation_von_Obsidian/Home.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
@@ -263,10 +266,6 @@
     "Vorlagen 1/Vorlage Autoren.md",
     "Vorlagen 1",
     "Vorlagen/Vorlage Autoren.md",
-    "Literatur/Klerikerkarrieren und Pfründenmarkt. Perspektiven einer sozialgeschichtlichen Auswertung des Repertorium Germanicum Brigide Schwarz 1991.md",
-    "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
-    "Literatur/Petenten, Pfründen und die Kurie. Norddeutsche Beispiele aus dem Repertorium Germanicum Ulrich Schwarz 1997.md",
-    "Literatur/Autoren/Ulrich Schwarz.md",
     "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
@@ -277,7 +276,6 @@
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
     "Organisation_von_Obsidian/Bilder/mögliche Fehler Autor.png",
     "Literatur/Autoren",
-    "Organisation_von_Obsidian",
     "Organisation_von_Obsidian/Bilder/HisQU.png",
     "cf07ae28-1054-4737-8ca6-9639d7ea2469.png"
   ]
