@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Organisation_von_Obsidian/Allgemeine_Einführung.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Allgemeine_Einführung"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Organisation_von_Obsidian/Allgemeine_Einführung.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Allgemeine_Einführung"
             }
           }
         ]
@@ -237,6 +237,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Organisation_von_Obsidian/Allgemeine_Einführung.md",
+    "Organisation_von_Obsidian/Home.md",
     "excalibrain.md",
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
     "Literatur/Autoren/Hellmuth Rössler.md",
@@ -248,7 +250,6 @@
     "Literatur/Autoren/Jörg Hörnschemeyer.md",
     "Literatur/GRACEFUL17. A Knowledge Graph for Papal Documents of Apostolic Provisions Christoph Sander, Naomi Beutler, Filippo Sarra, Valentino Verdone, Andrea Cicerchia, Bruno Boute, Jörg Hörnschemeyer 2025.md",
     "Literatur/Autoren/Christoph Sander.md",
-    "Organisation_von_Obsidian/Home.md",
     "Literatur/Autoren/Andrea Cicerchia.md",
     "Literatur/Autoren/Filippo Sarra.md",
     "Literatur/Autoren/Naomi Beutler.md",
@@ -264,7 +265,6 @@
     "Literatur/Autoren/Marco Orlandi.md",
     "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
     "Literatur/Uno spoglio moderno dette fonti vaticane. Il Repertorium Germanicum e il Repertorium Poenitentiariae Ludwig Schmugge, Jörg Hörnschemeyer 2015.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Konzepte",
     "Vorlagen 1",
     "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",

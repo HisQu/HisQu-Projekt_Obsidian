@@ -43,4 +43,49 @@ Durch das Prinzip der **geteilten Notizen** wird das gemeinsame wissenschaftlich
     
 - Trage dich ggf. im YAML-Header als Bearbeiter:in ein (`author:`), um Transparenz zu schaffen.
 
+## Excali-Brain 🧠
+- ### Wozu Excalibrain?
+- Macht semantische Beziehungen zwischen Werken, Autor:innen, Konzepten und Rezensionen sofort sichtbar.  
+- Zeichnet **Eltern-Kind-Linien** (z. B. Reihe → Band) und verschiedene **Freundschafts-Linien** (Querverweise, Zitate, Themen) in separaten Layern.  
+- Ermöglicht interaktive **Export**-Funktionen (Excalidraw) und **Max-Hops**-Einstellungen für tiefere Verknüpfungen.
+
+---
+
+### Unsere Rollen & Trigger
+
+| Rolle                    | Abschnittsüberschrift     | Trigger  | Excalibrain-Kategorie | Wichtige Synonyme (erkannt als Header) |
+|--------------------------|---------------------------|----------|-----------------------|-----------------------------------------|
+| **Eltern (Parent)**      | `## Teil von`             | `::teil:`  | parent                | Eltern, inception, origin, source, Teil von, thema, up, … |
+| **Kinder (Child)**       | `## Darin u.a.`           | `::darin:` | child                 | Darin u.a., enthält unter anderem, contributes_to, down, … |
+| **Linke Freunde (Peers)**| `## Reihen-Bände`         | `::Reihenteil:` | friend (left)     | advantages, alternatives, ist teil von Reihe, weitere Bände der Reihe, … |
+| **Rechte Freunde (Related)**| `## Siehe hierzu auch`| `::siehe:`  | friend (right)        | siehe auch, builds on, cons, disadvantages, … |
+| **Vorherige Freunde**    | `## Autor`                | `::autor:`  | friend (prev)         | Autor, After, Next, Position, … |
+| **Nächste Freunde**      | `## Rezension`            | `::rez:`    | friend (next)         | Rezension, review_of, … |
+
+> **Tipp:** In den Excalibrain-Einstellungen (⚙️ → Ontologie-Vorschläge) haben wir genau diese Trigger (`::teil:`, `::darin:`, …) eingetragen. Jeder dieser Kürzel + **Space** (oder Tab) öffnet automatisch den Feld-Vorschlag.
+
+---
+
+### Shortcuts für Graphen
+
+- **Alt + G** → **Excalibrain-Graph** (semantisch, mit Eltern/Freund-Layern)  
+- **Ctrl + G** → **Obsidian-Graph** (Vault-weit, einfacher Netzwerk-Überblick)
+
+---
+
+### So funktioniert’s in der Praxis
+
+1. **Zotero-Note öffnen** → Frontmatter bleibt unangetastet.  
+2. Unterhalb des Headers **Trigger** eingeben: z. B.  
+
+   '::teil: 〈Space〉' 
+   [[Series/Repertorium_Germanicum]]
+   
+Listen von Wikilinks unter Ihren sektionierten Überschriften einfügen.
+
+Speichern → Alt + G drücken → Ihr persönlicher Literatur-Graph erscheint.
+
+Mit Expand-Buttons oder Max Hops können tiefere Ebenen eingeblendet werden.
+
+
 [Zurück zu Übersicht](https://github.com/HisQu)
