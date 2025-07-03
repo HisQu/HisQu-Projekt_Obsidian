@@ -47,7 +47,7 @@ Durch das Prinzip der **geteilten Notizen** wird das gemeinsame wissenschaftlich
 - ### Wozu Excalibrain?
 - Macht semantische Beziehungen zwischen Werken, Autor:innen, Konzepten und Rezensionen sofort sichtbar.  
 - Zeichnet **Eltern-Kind-Linien** (z. B. Reihe → Band) und verschiedene **Freundschafts-Linien** (Querverweise, Zitate, Themen) in separaten Layern.  
-- Ermöglicht interaktive **Export**-Funktionen (Excalidraw) und **Max-Hops**-Einstellungen für tiefere Verknüpfungen.
+- Ermöglicht interaktive **Export**-Funktionen (Excalidraw) und **Max-Hops**-Einstellungen für tiefergehende Verknüpfungen.
 
 ---
 
@@ -62,7 +62,7 @@ Durch das Prinzip der **geteilten Notizen** wird das gemeinsame wissenschaftlich
 | **Vorherige Freunde**    | `## Autor`                | `::autor:`  | friend (prev)         | Autor, After, Next, Position, … |
 | **Nächste Freunde**      | `## Rezension`            | `::rez:`    | friend (next)         | Rezension, review_of, … |
 
-> **Tipp:** In den Excalibrain-Einstellungen (⚙️ → Ontologie-Vorschläge) haben wir genau diese Trigger (`::teil:`, `::darin:`, …) eingetragen. Jeder dieser Kürzel + **Space** (oder Tab) öffnet automatisch den Feld-Vorschlag.
+> **Tipp:** In den Excalibrain-Einstellungen (⚙️ → Ontologie-Vorschläge) haben wir genau diese Trigger (`::teil:`, `::darin:`, …) eingetragen. Jeder dieser Kürzel + **Space** (oder Tab) öffnet automatisch den Feld-Vorschlag, das macht die Vergabe bedeutend schneller.
 
 ---
 
@@ -81,11 +81,11 @@ Durch das Prinzip der **geteilten Notizen** wird das gemeinsame wissenschaftlich
    '::teil: 〈Space〉' 
    [[Series/Repertorium_Germanicum]]
    
-Listen von Wikilinks unter Ihren sektionierten Überschriften einfügen.
+3. Listen von Wikilinks unter Ihren sektionierten Überschriften einfügen.
 
-Speichern → Alt + G drücken → Ihr persönlicher Literatur-Graph erscheint.
+4. Speichern → Alt + G drücken → Ihr persönlicher Literatur-Graph erscheint.
 
-Mit Expand-Buttons oder Max Hops können tiefere Ebenen eingeblendet werden.
+5. Mit Expand-Buttons oder Max Hops können tiefere Ebenen eingeblendet werden.
 
 
 [Zurück zu Übersicht](https://github.com/HisQu)
