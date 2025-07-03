@@ -2,20 +2,19 @@
 tags:
   - "#Autoren"
 aliases:
-  - Hellmuth Rössler
-  - Hellmuth Rösslers
-  - Rössler
-  - Rösslers
-  - Hellmuth Rößler
-Autor: Hellmuth Rössler
+  - Bruno Boute
+  - Bruno Boutes
+  - Boute
+  - Boutes
+Autor: Bruno Boute
 ---
 ```dataview
 list from ""
-where contains(file.outlinks, [[Hellmuth Rössler]])
+where contains(file.outlinks, [[Bruno Boute]])
 ```
 
-#Autoren 
-# Hellmuth Rössler
+
+# Bruno Boute
 
 ## 📚 weiter Angaben
 
@@ -26,6 +25,6 @@ where contains(file.outlinks, [[Hellmuth Rössler]])
 ## ✍️ Bearbeitungsvermerk
 
 - Notizen erstellt von: `@...`
-- Letzte Bearbeitung: 2025-06-16
+- Letzte Bearbeitung: 2025-06-30
 
 

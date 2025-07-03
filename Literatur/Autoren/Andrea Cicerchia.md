@@ -2,20 +2,19 @@
 tags:
   - "#Autoren"
 aliases:
-  - Hellmuth Rössler
-  - Hellmuth Rösslers
-  - Rössler
-  - Rösslers
-  - Hellmuth Rößler
-Autor: Hellmuth Rössler
+  - Andrea Cicerchia
+  - Andrea Cicerchias
+  - Cicerchia
+  - Cicerchias
+Autor: Andrea Cicerchia
 ---
 ```dataview
 list from ""
-where contains(file.outlinks, [[Hellmuth Rössler]])
+where contains(file.outlinks, [[Andrea Cicerchia]])
 ```
 
-#Autoren 
-# Hellmuth Rössler
+
+# Andrea Cicerchia
 
 ## 📚 weiter Angaben
 
@@ -26,6 +25,6 @@ where contains(file.outlinks, [[Hellmuth Rössler]])
 ## ✍️ Bearbeitungsvermerk
 
 - Notizen erstellt von: `@...`
-- Letzte Bearbeitung: 2025-06-16
+- Letzte Bearbeitung: 2025-06-30
 
 

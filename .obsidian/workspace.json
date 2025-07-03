@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025"
+              "title": "Home"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -237,35 +237,36 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "excalibrain.md",
+    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+    "Literatur/Autoren/Hellmuth Rössler.md",
+    "Literatur/Autoren/Hellmuth Rößler.md",
+    "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
+    "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
+    "Literatur/Das _Repertorium Germanicum_. Perspektiven einer Digitalen Prosopographie Jörg Hörnschemeyer, Jörg Voigt 2023.md",
+    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+    "Literatur/Autoren/Jörg Hörnschemeyer.md",
+    "Literatur/GRACEFUL17. A Knowledge Graph for Papal Documents of Apostolic Provisions Christoph Sander, Naomi Beutler, Filippo Sarra, Valentino Verdone, Andrea Cicerchia, Bruno Boute, Jörg Hörnschemeyer 2025.md",
+    "Literatur/Autoren/Christoph Sander.md",
+    "Organisation_von_Obsidian/Home.md",
+    "Literatur/Autoren/Andrea Cicerchia.md",
+    "Literatur/Autoren/Filippo Sarra.md",
+    "Literatur/Autoren/Naomi Beutler.md",
+    "Literatur/Autoren/Karl Ferdinand Werner.md",
+    "Literatur/Autoren/Bruno Boute.md",
+    "Literatur/Autoren/Valentino Verdone.md",
+    "PDFs/SanderGRACEFUL17KnowledgeGraphPapalDocumentsApostolicProvisions.pdf",
+    "Unbenannt 1.md",
+    "Unbenannt.md",
     "PDFs/OrlandiDigitalHumanitiesHeritagePoliticalIdeasMedievalBologna.pdf",
     "Literatur/Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025.md",
     "Literatur/Autoren/Rosa Smurra.md",
     "Literatur/Autoren/Marco Orlandi.md",
-    "Organisation_von_Obsidian/Home.md",
-    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
-    "Literatur/Das _Repertorium Germanicum_. Perspektiven einer Digitalen Prosopographie Jörg Hörnschemeyer, Jörg Voigt 2023.md",
-    "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
     "Literatur/Uno spoglio moderno dette fonti vaticane. Il Repertorium Germanicum e il Repertorium Poenitentiariae Ludwig Schmugge, Jörg Hörnschemeyer 2015.md",
-    "Literatur/Autoren/Jörg Hörnschemeyer.md",
-    "Unbenannt 1.md",
-    "Literatur/GRACEFUL17. A Knowledge Graph for Papal Documents of Apostolic Provisions Christoph Sander, Naomi Beutler, Filippo Sarra, Valentino Verdone, Andrea Cicerchia, Bruno Boute, Jörg Hörnschemeyer 2025.md",
-    "PDFs/SanderGRACEFUL17KnowledgeGraphPapalDocumentsApostolicProvisions.pdf",
-    "excalibrain.md",
-    "Literatur/Autoren/Christoph Sander.md",
-    "Unbenannt.md",
-    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
     "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
-    "Literatur/Autoren/Friedrich W. Euler.md",
-    "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
-    "Konzepte/Pfründenmarkt.md",
-    "Vorlagen/Vorlage_Konzept.md",
-    "Konzepte/Kulturfamilie.md",
     "Konzepte",
-    "Vorlagen/Unbenannt.md",
-    "Vorlagen 1/Vorlage Autoren.md",
     "Vorlagen 1",
-    "Vorlagen/Vorlage Autoren.md",
     "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",

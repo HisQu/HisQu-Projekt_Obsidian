@@ -1,7 +1,7 @@
 ---
 Titel: Deutscher Adel 1430-1555
-Autor: "[[Hellmuth Rößler]]"
-Herausgeber:  
+Autor: "[[Hellmuth Rössler]]"
+Herausgeber: 
 Erscheinungsjahr: 1965
 Seiten: 
 Verbindung zu Zotero: zotero://select/items/@RosslerDeutscherAdel14301555

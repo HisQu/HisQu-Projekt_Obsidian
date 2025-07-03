@@ -8,7 +8,7 @@ Erscheinungsjahr: 2023
 Seiten: 135–158
 Verbindung zu Zotero: zotero://select/items/@HornschemeyerRepertoriumGermanicumPerspektivenDigitalenProsopographie
 ---
-# Das "Repertorium Germanicum". Perspektiven einer Digitalen Prosopographie - Jörg Hörnschemeyer, Jörg Voigt
+# Das "Repertorium Germanicum". Perspektiven einer Digitalen Prosopographie - [[Jörg Hörnschemeyer]], Jörg Voigt
 
 ## Zusammenfassung
 ### Abstract:

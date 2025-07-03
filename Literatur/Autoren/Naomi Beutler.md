@@ -2,20 +2,19 @@
 tags:
   - "#Autoren"
 aliases:
-  - Hellmuth Rössler
-  - Hellmuth Rösslers
-  - Rössler
-  - Rösslers
-  - Hellmuth Rößler
-Autor: Hellmuth Rössler
+  - Naomi Beutler
+  - Naomi Beutlers
+  - Beutler
+  - Beutlers
+Autor: Naomi Beutler
 ---
 ```dataview
 list from ""
-where contains(file.outlinks, [[Hellmuth Rössler]])
+where contains(file.outlinks, [[Naomi Beutler]])
 ```
 
-#Autoren 
-# Hellmuth Rössler
+
+# Naomi Beutler
 
 ## 📚 weiter Angaben
 
@@ -26,6 +25,6 @@ where contains(file.outlinks, [[Hellmuth Rössler]])
 ## ✍️ Bearbeitungsvermerk
 
 - Notizen erstellt von: `@...`
-- Letzte Bearbeitung: 2025-06-16
+- Letzte Bearbeitung: 2025-06-30
 
 
