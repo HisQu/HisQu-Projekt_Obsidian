@@ -1,4 +1,74 @@
 Dies ist eine Anleitung zur Nutzung des Obsidian-Vaults. 
-Hier können die Funktionen auch eingesehen werden
+## Zweck dieses Vaults:
+Dieser Obsidian Vault dient der zentralen Dokumentation und strukturierten Vernetzung von wissenschaftlicher Literatur, die im Rahmen des HisQu-Projekts verwendet wird. Ziel ist es, die Vielzahl an verwendeten Literaturtiteln nicht nur zu sammeln, sondern systematisch miteinander in Beziehung zu setzen – durch strukturierte Notizen, Metadaten und interne Verlinkungen.
 
-[Allgemeine Einführung](./Organisation_von_Obsidian/Allgemeine_Einfuehrung.md)  
+Der Vault erfüllt damit **zwei zentrale Funktionen**:
+- **1. Literaturübersicht**: Jede verwendete Quelle erhält eine eigene Seite, auf der bibliographische Angaben sowie inhaltliche Kurzzusammenfassungen (Abstracts, Argumentationslinien, Relevanz für das Projekt etc.) dokumentiert werden.
+- **2. Vernetzung**: Literaturtitel werden inhaltlich miteinander verknüpft – etwa durch thematische Überschneidungen, methodische Gemeinsamkeiten oder Zitationsbezüge. Diese Hyperstruktur ermöglicht eine schnelle Orientierung in der Forschungslandschaft des Projekts.
+
+Warum ist das sinnvoll?
+Durch das Prinzip der geteilten Notizen wird das gemeinsame wissenschaftliche Arbeiten erleichtert. Nicht jede:r im Team muss jedes Werk vollständig lesen – stattdessen können Lesearbeiten arbeitsteilig erfolgen und durch präzise, gut auffindbare Notizen transparent gemacht werden. Dies beschleunigt unter anderem:
+
+- die Konzeption und Ausarbeitung von wissenschaftlichen Texten (z. B. Aufsätzen, Anträgen, Vorträgen),
+- die Diskussion innerhalb des Forschungsteams,
+- sowie die nachhaltige Sicherung des Wissens im Projektkontext.
+## 🧭 Nutzungshinweise
+Nutze beim Erstellen neuer Einträge das bereitgestellte Template nutze bitte den Shortcut 'Strg+Shift+c' , dann wällst Du die Literaturnotiz aus, die in der Zoterobibilothek liegt.
+- Autornotiz:
+  - Bei der Übertragung von Zotero zu Obsidian werden auch die Autoren übernommen und als Notiz vorangelegt. Durch das klicken auf den Namen entsteht eine verlinkte Notiz
+  - Diese Notiz sollte durch den Shortcut `Alt+A` durch eine Vorlage ergänzt werden, die dann weiter bearbeitet werden kann. Alternativ kann man auch über das Befehlsmenü `Strg+P` und der Suche nach '*Autor* ' die Vorlage einfügen
+  - ❗**ACHTUNG** ❗
+		- Wenn in Zotero der Titel von dem Untertitel mit einem `:` abgetrennt wird, erscheint eine Fehlermeldung!
+      -  Lösche nun die Notiz aus über die drei Punkte oder mit `Alt+D`
+			- Verändere den Titel in Zotero und trenne Titel und Untertitel mit einem Punkt. `.
+    -  Dein Zoterodokument besitzt eigentlich eine verknüpfte PDF, doch nun ist sie nicht in Obsidian migriert.
+      - Keine Sorge, das liegt nicht an Dir, sondern an dem geringen Speicher, den Zotero anbietet, wende Dich einfach an @Luca Nauschütz, ich kann die PDF hinzufügen.    
+    -  Bei der Übertragung der Autoren kann es zu Fehlern kommen, diese müssen zur automatisierten Verlinkung verhindert werden (siehe hierfür unter [[Allgemeine Einführung nach]])
+-  Vergib Tags (z. B. `#Begriffsgeschichte`, `#Quellenkritik`) für bessere Filterbarkeit.
+-  Verlinke andere Titel oder Notizen durch Doppelteckige Klammern `[[Titel des Eintrags]]`. Der Titel des Eintrages folgt dem Citationkey aus Zotero, also in der Regel: `[Titel] [Vor- und Zuname des Autors] [Erscheinungsjahr]`
+  - Hier ein Beispiel [[Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969]]
+- Trage dich ggf. im YAML-Header als Bearbeiter:in ein (`author:`), um Transparenz zu schaffen.
+
+## Excali-Brain 🧠
+- ### Wozu Excalibrain?
+- Macht semantische Beziehungen zwischen Werken, Autor:innen, Konzepten und Rezensionen sofort sichtbar.  
+- Zeichnet **Eltern-Kind-Linien** (z. B. Reihe → Band) und verschiedene **Freundschafts-Linien** (Querverweise, Zitate, Themen) in separaten Layern.  
+- Ermöglicht interaktive **Export**-Funktionen (Excalidraw) und **Max-Hops**-Einstellungen für tiefere Verknüpfungen.
+
+---
+
+### Unsere Rollen & Trigger
+
+| Rolle                    | Abschnittsüberschrift     | Trigger  | Excalibrain-Kategorie | Wichtige Synonyme (erkannt als Header) |
+|--------------------------|---------------------------|----------|-----------------------|-----------------------------------------|
+| **Eltern (Parent)**      | `## Teil von`             | `::teil:`  | parent                | Eltern, inception, origin, source, Teil von, thema, up, … |
+| **Kinder (Child)**       | `## Darin u.a.`           | `::darin:` | child                 | Darin u.a., enthält unter anderem, contributes_to, down, … |
+| **Linke Freunde (Peers)**| `## Reihen-Bände`         | `::Reihenteil:` | friend (left)     | advantages, alternatives, ist teil von Reihe, weitere Bände der Reihe, … |
+| **Rechte Freunde (Related)**| `## Siehe hierzu auch`| `::siehe:`  | friend (right)        | siehe auch, builds on, cons, disadvantages, … |
+| **Vorherige Freunde**    | `## Autor`                | `::autor:`  | friend (prev)         | Autor, After, Next, Position, … |
+| **Nächste Freunde**      | `## Rezension`            | `::rez:`    | friend (next)         | Rezension, review_of, … |
+
+> **Tipp:** In den Excalibrain-Einstellungen (⚙️ → Ontologie-Vorschläge) haben wir genau diese Trigger (`::teil:`, `::darin:`, …) eingetragen. Jeder dieser Kürzel + **Space** (oder Tab) öffnet automatisch den Feld-Vorschlag.
+
+---
+
+### Shortcuts für Graphen
+
+- **Alt + G** → **Excalibrain-Graph** (semantisch, mit Eltern/Freund-Layern)  
+- **Ctrl + G** → **Obsidian-Graph** (Vault-weit, einfacher Netzwerk-Überblick)
+
+---
+
+### So funktioniert’s in der Praxis
+
+1. **Zotero-Note öffnen** → Frontmatter bleibt unangetastet.  
+2. Unterhalb des Headers **Trigger** eingeben: z. B.  
+
+   '::teil: 〈Space〉' 
+   [[Series/Repertorium_Germanicum]]
+   
+Listen von Wikilinks unter Ihren sektionierten Überschriften einfügen.
+
+Speichern → Alt + G drücken → Ihr persönlicher Literatur-Graph erscheint.
+
+Mit Expand-Buttons oder Max Hops können tiefere Ebenen eingeblendet werden.
