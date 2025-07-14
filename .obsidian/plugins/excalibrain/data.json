@@ -255,9 +255,9 @@
     "Bruno Boute.md",
     "Literatur/Autoren/Jörg Hörnschemeyer.md",
     "Literatur/Das _Repertorium Germanicum_. Perspektiven einer Digitalen Prosopographie Jörg Hörnschemeyer, Jörg Voigt 2023.md",
-    "Organisation_von_Obsidian/Home.md",
     "Literatur/GRACEFUL17. A Knowledge Graph for Papal Documents of Apostolic Provisions Christoph Sander, Naomi Beutler, Filippo Sarra, Valentino Verdone, Andrea Cicerchia, Bruno Boute, Jörg Hörnschemeyer 2025.md",
-    "Literatur/Autoren/Christoph Sander.md"
+    "Literatur/Autoren/Christoph Sander.md",
+    "Organisation_von_Obsidian/Home.md"
   ],
   "allowOntologySuggester": true,
   "ontologySuggesterParentTrigger": "::teil:",

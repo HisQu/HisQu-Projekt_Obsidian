@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Zwischen Nicht-Adel und Adel  2001"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -206,12 +206,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.2588386562181643,
+                  "scale": 0.5087618855792625,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Zwischen Nicht-Adel und Adel  2001"
             }
           }
         ]
@@ -237,9 +237,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Organisation_von_Obsidian/Home.md",
-    "Organisation_von_Obsidian/Allgemeine_Einführung.md",
+    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "excalibrain.md",
+    "Organisation_von_Obsidian/Home.md",
+    "README.md",
+    "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
     "Literatur/Autoren/Hellmuth Rössler.md",
     "Literatur/Autoren/Hellmuth Rößler.md",
@@ -263,8 +265,6 @@
     "Literatur/Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025.md",
     "Literatur/Autoren/Rosa Smurra.md",
     "Literatur/Autoren/Marco Orlandi.md",
-    "Literatur/Das Repertorium Germanicum Brigide Schwarz 2003.md",
-    "Literatur/Uno spoglio moderno dette fonti vaticane. Il Repertorium Germanicum e il Repertorium Poenitentiariae Ludwig Schmugge, Jörg Hörnschemeyer 2015.md",
     "Konzepte",
     "Vorlagen 1",
     "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",
