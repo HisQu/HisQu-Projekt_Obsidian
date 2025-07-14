@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Zwischen Nicht-Adel und Adel  2001"
+              "title": "Home"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Zwischen Nicht-Adel und Adel  2001"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -237,6 +237,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "excalibrain.md",
     "Organisation_von_Obsidian/Home.md",
@@ -276,7 +277,6 @@
     "Organisation_von_Obsidian/Bilder",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
     "Organisation_von_Obsidian/Bilder/mögliche Fehler Autor.png",
-    "Literatur/Autoren",
     "Organisation_von_Obsidian/Bilder/HisQU.png",
     "cf07ae28-1054-4737-8ca6-9639d7ea2469.png"
   ]
