@@ -72,3 +72,5 @@ Listen von Wikilinks unter Ihren sektionierten Überschriften einfügen.
 Speichern → Alt + G drücken → Ihr persönlicher Literatur-Graph erscheint.
 
 Mit Expand-Buttons oder Max Hops können tiefere Ebenen eingeblendet werden.
+
+[Zurück zu Übersicht](https://github.com/HisQu)
