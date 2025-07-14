@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022"
+            }
+          },
+          {
+            "id": "8c91919e655a9966",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Literatur/Autoren/Adam Mertel.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +52,67 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Adam Mertel"
+            }
+          },
+          {
+            "id": "3686ea3f997bbc8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Literatur/Autoren/David Zbíral.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "David Zbíral"
+            }
+          },
+          {
+            "id": "edc986a1a896cd08",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDFs/ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords"
+            }
+          },
+          {
+            "id": "9382b51140c2905c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Literatur/Autoren/Tomáš Hampejs.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Tomáš Hampejs"
             }
           }
         ]
@@ -183,7 +267,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -206,12 +290,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5087618855792625,
+                  "scale": 0.2588386562181646,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022"
             }
           }
         ]
@@ -237,10 +321,24 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "PDFs/ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf",
+    "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
+    "PDFs/ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf",
+    "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
+    "Literatur/Autoren/Tomáš Hampejs.md",
+    "Literatur/Autoren/David Zbíral.md",
+    "Literatur/Autoren/Adam Mertel.md",
+    "Literatur/Autoren/Kaarel Sikk.md",
+    "Literatur/Autoren/Robert L. J. Shaw.md",
+    "Organisation_von_Obsidian/Home.md",
+    "Literatur/Autoren/D Zbíral.md",
+    "Literatur/Autoren/K Sikk.md",
+    "Literatur/Autoren/R Shaw.md",
+    "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records D Zbíral, K Sikk, R Shaw 2025.md",
+    "ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf.md",
     "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "excalibrain.md",
-    "Organisation_von_Obsidian/Home.md",
     "README.md",
     "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
@@ -251,30 +349,15 @@
     "Literatur/Das _Repertorium Germanicum_. Perspektiven einer Digitalen Prosopographie Jörg Hörnschemeyer, Jörg Voigt 2023.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "Literatur/Autoren/Jörg Hörnschemeyer.md",
-    "Literatur/GRACEFUL17. A Knowledge Graph for Papal Documents of Apostolic Provisions Christoph Sander, Naomi Beutler, Filippo Sarra, Valentino Verdone, Andrea Cicerchia, Bruno Boute, Jörg Hörnschemeyer 2025.md",
-    "Literatur/Autoren/Christoph Sander.md",
-    "Literatur/Autoren/Andrea Cicerchia.md",
-    "Literatur/Autoren/Filippo Sarra.md",
-    "Literatur/Autoren/Naomi Beutler.md",
-    "Literatur/Autoren/Karl Ferdinand Werner.md",
-    "Literatur/Autoren/Bruno Boute.md",
-    "Literatur/Autoren/Valentino Verdone.md",
     "PDFs/SanderGRACEFUL17KnowledgeGraphPapalDocumentsApostolicProvisions.pdf",
-    "Unbenannt 1.md",
-    "Unbenannt.md",
     "PDFs/OrlandiDigitalHumanitiesHeritagePoliticalIdeasMedievalBologna.pdf",
-    "Literatur/Digital Humanities for the Heritage of Political Ideas in Medieval Bologna Marco Orlandi, Rosa Smurra 2025.md",
-    "Literatur/Autoren/Rosa Smurra.md",
-    "Literatur/Autoren/Marco Orlandi.md",
     "Konzepte",
     "Vorlagen 1",
     "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
-    "RGS Nummern",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
-    "Organisation_von_Obsidian/Bilder",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
     "Organisation_von_Obsidian/Bilder/mögliche Fehler Autor.png",
     "Organisation_von_Obsidian/Bilder/HisQU.png",
