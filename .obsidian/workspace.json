@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Allgemeine_Einführung.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Allgemeine_Einführung"
+              "title": "Home"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Allgemeine_Einführung.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Allgemeine_Einführung"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -237,8 +237,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "Organisation_von_Obsidian/Home.md",
+    "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "excalibrain.md",
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
     "Literatur/Autoren/Hellmuth Rössler.md",
