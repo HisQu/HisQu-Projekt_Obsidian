@@ -1,0 +1,25 @@
+---
+Titel: Modeling Open World Cognition as On demand Synthesis of Probabilistic Models
+Autor: "[[Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller]]"
+Herausgeber:  arXiv
+Erscheinungsjahr: 2025
+Seiten: 
+Verbindung zu Zotero: zotero://select/items/@WongModelingOpenWorldCognitiondemandSynthesisProbabilisticModels
+---
+# Modeling Open World Cognition as On demand Synthesis of Probabilistic Models - Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller
+
+## Zusammenfassung
+### Abstract:
+> [!ABSTRACT]-
+> When faced with novel situations, people are able to marshal relevant considerations from a wide range of background knowledge and put these to use in inferences and predictions. What permits us to draw in globally relevant information and reason over it coherently? Here, we explore the hypothesis that people use a combination of distributed and symbolic representations to construct bespoke mental models tailored to novel situations. We propose a computational implementation of this idea – a “Model Synthesis Architecture” (MSA) – using language models to implement global relevance-based retrieval and model synthesis and probabilistic programs to implement bespoke, coherent world models. We evaluate our MSA as a model of human judgments on a novel reasoning dataset. The dataset – built around a `Model Olympics` domain of sports vignettes – tests models' capacity for human-like, open-ended reasoning by requiring (i) judgments about novel causal structures described in language; (ii) drawing on large bodies of background knowledge; and (iii) doing both in light of observations that introduce arbitrary novel variables. Our MSA approach captures human judgments better than language model-only baselines, under both direct and chain-of-thought generations from the LM that supports model synthesis. These results suggest that MSAs can be implemented in a way that mirrors people's ability to deliver locally coherent reasoning over globally relevant variables, offering a path to understanding and replicating human reasoning in open-ended domains.
+
+---
+## Notizen
+
+
+---
+
+## Originalquelle:
+- [PDF](WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.pdf)
+- [Zotero-Link](zotero://select/items/@WongModelingOpenWorldCognitiondemandSynthesisProbabilisticModels)
+- 

@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025"
             }
           }
         ]
@@ -237,9 +237,17 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "PDFs/WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.pdf",
+    "Literatur/Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025.md",
+    "WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.md",
+    "WongModelingOpenWorldCognitiondemandSynthesisProbabilisticModels.pdf.md",
     "Organisation_von_Obsidian/Home.md",
-    "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
+    "Literatur/Autoren/ColPali. Efficient Document Retrieval with Vision Language Models Manuel Faysse, Hugues Sibille, Tony Wu, Bilel Omrani, Gautier Viaud, Céline Hudelot, Pierre Colombo 2025.md",
+    "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels.pdf",
+    "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels 1.pdf",
     "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
+    "Literatur/Vatikanische Aktenstücke zur Schweizerischen Kirchengeschichte aus der Zeit Clemens V. M. B. 1909.md",
+    "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
     "PDFs/ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf",
     "PDFs/ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf",
     "Literatur/Autoren/Tomáš Hampejs.md",
@@ -260,18 +268,10 @@
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
     "Literatur/Autoren/Hellmuth Rössler.md",
     "Literatur/Autoren/Hellmuth Rößler.md",
-    "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
-    "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
-    "Literatur/Das _Repertorium Germanicum_. Perspektiven einer Digitalen Prosopographie Jörg Hörnschemeyer, Jörg Voigt 2023.md",
-    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
-    "Literatur/Autoren/Jörg Hörnschemeyer.md",
     "PDFs/SanderGRACEFUL17KnowledgeGraphPapalDocumentsApostolicProvisions.pdf",
     "PDFs/OrlandiDigitalHumanitiesHeritagePoliticalIdeasMedievalBologna.pdf",
     "Konzepte",
     "Vorlagen 1",
-    "Seminar - Sprachwandel und Schule - Jäger Hesse - 02.pdf",
-    "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
-    "PDFs/HudemannElitenDeutschlandundFrankreichim19und20JahrhundertElitesFranceAllemagneauxXIXemeXXemesieclesBand1.pdf",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
