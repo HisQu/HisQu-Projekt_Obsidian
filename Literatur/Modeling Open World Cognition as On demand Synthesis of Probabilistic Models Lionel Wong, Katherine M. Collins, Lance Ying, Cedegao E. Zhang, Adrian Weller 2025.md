@@ -1,6 +1,11 @@
 ---
 Titel: Modeling Open World Cognition as On demand Synthesis of Probabilistic Models
-Autor: "[[Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller]]"
+Autor: 
+- "[[Lionel Wong]]"
+- "[[Katherine M. Collins]]"
+- "[[Lance Ying]]"
+- "[[Cedegao E. Zhang]]"
+- "[[Adrian Weller]]"
 Herausgeber:  arXiv
 Erscheinungsjahr: 2025
 Seiten: 
