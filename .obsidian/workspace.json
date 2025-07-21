@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
-                "mode": "source",
+                "file": "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025"
             }
           }
         ]
@@ -237,6 +237,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Organisation_von_Obsidian/Home.md",
     "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
     "PDFs/ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf",
     "PDFs/ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf",
@@ -246,7 +247,6 @@
     "Literatur/Autoren/Adam Mertel.md",
     "Literatur/Autoren/Kaarel Sikk.md",
     "Literatur/Autoren/Robert L. J. Shaw.md",
-    "Organisation_von_Obsidian/Home.md",
     "Literatur/Autoren/D Zbíral.md",
     "Literatur/Autoren/K Sikk.md",
     "Literatur/Autoren/R Shaw.md",
