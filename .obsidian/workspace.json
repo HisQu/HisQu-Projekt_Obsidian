@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025.md",
-                "mode": "preview",
+                "file": "Organisation_von_Obsidian/Home.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025"
+              "title": "Home"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -237,16 +237,19 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "PDFs/WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.pdf",
     "Literatur/Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025.md",
+    "Organisation_von_Obsidian/Home.md",
+    "Literatur/Vatikanische Aktenstücke zur Schweizerischen Kirchengeschichte aus der Zeit Clemens V. M. B. 1909.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
+    "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
+    "PDFs/WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.pdf",
     "WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.md",
     "WongModelingOpenWorldCognitiondemandSynthesisProbabilisticModels.pdf.md",
-    "Organisation_von_Obsidian/Home.md",
     "Literatur/Autoren/ColPali. Efficient Document Retrieval with Vision Language Models Manuel Faysse, Hugues Sibille, Tony Wu, Bilel Omrani, Gautier Viaud, Céline Hudelot, Pierre Colombo 2025.md",
     "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels.pdf",
     "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels 1.pdf",
     "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
-    "Literatur/Vatikanische Aktenstücke zur Schweizerischen Kirchengeschichte aus der Zeit Clemens V. M. B. 1909.md",
     "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
     "PDFs/ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf",
     "PDFs/ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf",
@@ -266,8 +269,6 @@
     "README.md",
     "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
-    "Literatur/Autoren/Hellmuth Rössler.md",
-    "Literatur/Autoren/Hellmuth Rößler.md",
     "PDFs/SanderGRACEFUL17KnowledgeGraphPapalDocumentsApostolicProvisions.pdf",
     "PDFs/OrlandiDigitalHumanitiesHeritagePoliticalIdeasMedievalBologna.pdf",
     "Konzepte",
