@@ -23,7 +23,7 @@ banner_y: 0.452
     - File Count: `$=dv.pages().length`
     - Anzahl der Literaturtitel: `$=dv.pages('"Literatur"').length`**
 - Kurzanleitung
-	- [[Allgemeine_Einführung]]
+	- [[Organisation_von_Obsidian/Allgemeine_Einführung]]
 	- [[Shortcuts]]
 # Links
 - [Forschungsdateninfrastruktur Historische Quellen · GitHub](https://github.com/HisQu)

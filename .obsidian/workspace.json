@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
-                "mode": "source",
+                "file": "Organisation_von_Obsidian/Allgemeine_Einführung 1.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Allgemeine_Einführung 1"
             }
           }
         ]
@@ -183,7 +183,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Organisation_von_Obsidian/Allgemeine_Einführung 1.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Allgemeine_Einführung 1"
             }
           }
         ]
@@ -235,8 +235,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "96410f8167f4437d",
   "lastOpenFiles": [
+    "Literatur/ColPali. Efficient Document Retrieval with Vision Language Models Manuel Faysse, Hugues Sibille, Tony Wu, Bilel Omrani, Gautier Viaud, Céline Hudelot, Pierre Colombo 2025.md",
     "Organisation_von_Obsidian/Home.md",
     "Literatur/Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025.md",
     "Literatur/Vatikanische Aktenstücke zur Schweizerischen Kirchengeschichte aus der Zeit Clemens V. M. B. 1909.md",
@@ -246,7 +247,6 @@
     "PDFs/WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.pdf",
     "WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.md",
     "WongModelingOpenWorldCognitiondemandSynthesisProbabilisticModels.pdf.md",
-    "Literatur/Autoren/ColPali. Efficient Document Retrieval with Vision Language Models Manuel Faysse, Hugues Sibille, Tony Wu, Bilel Omrani, Gautier Viaud, Céline Hudelot, Pierre Colombo 2025.md",
     "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels.pdf",
     "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels 1.pdf",
     "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
