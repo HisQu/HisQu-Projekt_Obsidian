@@ -1,0 +1,22 @@
+{
+  "pluginList": [
+    "different-ai/note-companion"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "different-ai/note-companion",
+      "version": "latest"
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false
+}

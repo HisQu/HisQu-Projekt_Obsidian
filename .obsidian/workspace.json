@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
-                "mode": "source",
+                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,10 +28,21 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
+            }
+          },
+          {
+            "id": "a2b97eb33913bca6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Neuer Tab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +115,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rückverweise für Deutsches Studium und deutsche Studenten an europäischen Hochschulen (Frankreich, Italien) und die nachfolgende Tätigkeit in Stadt, Kirche und Territorium in Deutschland Winfried Dotzauer 1977"
+              "title": "Rückverweis"
             }
           },
           {
@@ -123,12 +133,21 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Literatur/Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von Deutsches Studium und deutsche Studenten an europäischen Hochschulen  Winfried Dotzauer 1977 öffnen"
+              "title": "Ausgehende Links"
+            }
+          },
+          {
+            "id": "dfe52a084a7fe93d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -159,19 +178,9 @@
               "icon": "lucide-list",
               "title": "Gliederung"
             }
-          },
-          {
-            "id": "7a238b2d0e04629b",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       },
       {
         "id": "90e5484812b210aa",
@@ -183,7 +192,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,14 +219,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graphansicht"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 500.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,14 +240,29 @@
       "command-palette:Befehlspalette öffnen": false,
       "publish:Änderungen veröffentlichen": false,
       "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian42-brat:BRAT": false,
+      "fileorganizer2000:Note Companion": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "a2b97eb33913bca6",
   "lastOpenFiles": [
+    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+    "_NoteCompanion/Templates/research_paper.md",
+    "Organisation_von_Obsidian/Home.md",
+    "_NoteCompanion/Templates/enhance.md",
+    "_NoteCompanion/Templates/youtube_video.md",
+    "_NoteCompanion/Templates/meeting_note.md",
+    "_NoteCompanion/Backups",
+    "_NoteCompanion/Fabric",
+    "_NoteCompanion/Templates",
+    "_NoteCompanion/Logs",
+    "_NoteCompanion/Processed/Attachments",
+    "_NoteCompanion/Processed",
+    "_NoteCompanion/Inbox",
+    "_NoteCompanion",
     "Organisation_von_Obsidian/Allgemeine_Einführung 1.md",
     "Organisation_von_Obsidian/Allgemeine_Einführung.md",
-    "Organisation_von_Obsidian/Home.md",
     "Literatur/ColPali. Efficient Document Retrieval with Vision Language Models Manuel Faysse, Hugues Sibille, Tony Wu, Bilel Omrani, Gautier Viaud, Céline Hudelot, Pierre Colombo 2025.md",
     "Literatur/Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025.md",
     "Literatur/Vatikanische Aktenstücke zur Schweizerischen Kirchengeschichte aus der Zeit Clemens V. M. B. 1909.md",
@@ -250,11 +273,8 @@
     "WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.md",
     "WongModelingOpenWorldCognitiondemandSynthesisProbabilisticModels.pdf.md",
     "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels.pdf",
-    "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels 1.pdf",
     "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
     "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
-    "PDFs/ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf",
-    "PDFs/ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf",
     "Literatur/Autoren/Tomáš Hampejs.md",
     "Literatur/Autoren/David Zbíral.md",
     "Literatur/Autoren/Adam Mertel.md",
@@ -263,16 +283,6 @@
     "Literatur/Autoren/D Zbíral.md",
     "Literatur/Autoren/K Sikk.md",
     "Literatur/Autoren/R Shaw.md",
-    "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records D Zbíral, K Sikk, R Shaw 2025.md",
-    "ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf.md",
-    "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
-    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
-    "excalibrain.md",
-    "README.md",
-    "PDFs/SanderGRACEFUL17KnowledgeGraphPapalDocumentsApostolicProvisions.pdf",
-    "PDFs/OrlandiDigitalHumanitiesHeritagePoliticalIdeasMedievalBologna.pdf",
-    "Konzepte",
-    "Vorlagen 1",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
