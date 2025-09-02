@@ -316,6 +316,18 @@
   annotation = {http://opac.regesta-imperii.de/id/1055633}
 }
 
+@article{ChanRetrievalaugmentedreasoningleanlanguagemodels,
+  title = {Retrieval-Augmented Reasoning with Lean Language Models},
+  author = {Chan, Ryan Sze-Yin and Nanni, Federico and Lazauskas, Tomas and Wood, Rosie and Yong, Penelope and Tarassenko, Lionel and Girolami, Mark and Geddes, James and Duncan, Andrew},
+  year = {2025},
+  month = jul,
+  doi = {10.5281/ZENODO.16408412},
+  urldate = {2025-08-15},
+  abstract = {This technical report details a novel approach to combining reasoning and retrieval augmented generation (RAG) within a single, lean language model architecture. While existing RAG systems typically rely on large-scale models and external APIs, our work addresses the increasing demand for performant and privacy-preserving solutions deployable in resource-constrained or secure environments. Building on recent developments in test-time scaling and small-scale reasoning models, we develop a retrieval augmented conversational agent capable of interpreting complex, domain-specific queries using a lightweight~backbone model. Our system integrates a dense retriever with fine-tuned Qwen2.5-Instruct models, using synthetic query generation and reasoning traces derived from frontier models (e.g., DeepSeek-R1) over a curated corpus---in this case, the NHS A-to-Z condition pages. We explore the impact of summarisation-based document compression, synthetic data design, and reasoning-aware \vphantom\{\}ne-tuning on model performance. Evaluation against both non-reasoning and general-purpose lean models demonstrates that our domain-specific fine-tuning approach yields substantial gains in answer accuracy and~consistency, approaching frontier-level performance while remaining feasible for local deployment. All implementation details and code are publicly released to support reproducibility and adaptation across domains.},
+  copyright = {Creative Commons Attribution Share Alike 4.0 International, Copyright (c) The Alan Turing Institute},
+  keywords = {Large language models,Reasoning models,Retrieval augmented generation,synthetic query generation,Test time scaling}
+}
+
 @article{ChenOWL2VecembeddingOWLontologies,
   title = {{{OWL2Vec}}*: Embedding of {{OWL}} Ontologies},
   shorttitle = {{{OWL2Vec}}*},
@@ -1451,6 +1463,20 @@
   author = {Lothar, Bauer},
   year = {1963},
   journal = {Bericht / Historischer Verein Bamberg f{\"u}r die Pflege der Geschichte des Ehemaligen F{\"u}rstbistums}
+}
+
+@inproceedings{LuoChatKBQAGeneratethenRetrieveFrameworkKnowledgeBaseQuestionAnsweringFinetunedLargeLanguageModels,
+  title = {{{ChatKBQA}}: {{A Generate-then-Retrieve Framework}} for {{Knowledge Base Question Answering}} with {{Fine-tuned Large Language Models}}},
+  shorttitle = {{{ChatKBQA}}},
+  booktitle = {Findings of the {{Association}} for {{Computational Linguistics ACL}} 2024},
+  author = {Luo, Haoran and E, Haihong and Tang, Zichen and Peng, Shiyao and Guo, Yikai and Zhang, Wentai and Ma, Chenghao and Dong, Guanting and Song, Meina and Lin, Wei and Zhu, Yifan and Luu, Anh Tuan},
+  year = {2024},
+  pages = {2039--2056},
+  publisher = {Association for Computational Linguistics},
+  address = {Bangkok, Thailand and virtual meeting},
+  doi = {10.18653/v1/2024.findings-acl.122},
+  urldate = {2025-08-15},
+  langid = {english}
 }
 
 @article{MahlingRepertoriumGermanicumundhybrideEditionLivEstundKurlandischenUrkundenbuchs,
@@ -2652,6 +2678,24 @@
   langid = {english},
   keywords = {computer-assisted data collection,data collection from texts,data model,digital source criticism,history,Linked Data,semantic text modelling,semantic triple},
   file = {C:\Users\lucan\Zotero\storage\KCYAQ4LC\ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf}
+}
+
+@misc{ZhangLeanRAGKnowledgeGraphBasedGenerationSemanticAggregationHierarchicalRetrieval,
+  title = {{{LeanRAG}}: {{Knowledge-Graph-Based Generation}} with {{Semantic Aggregation}} and {{Hierarchical Retrieval}}},
+  shorttitle = {{{LeanRAG}}},
+  author = {Zhang, Yaoze and Wu, Rong and Cai, Pinlong and Wang, Xiaoman and Yan, Guohang and Mao, Song and Wang, Ding and Shi, Botian},
+  year = {2025},
+  month = aug,
+  number = {arXiv:2508.10391},
+  eprint = {2508.10391},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2508.10391},
+  urldate = {2025-08-22},
+  abstract = {Retrieval-Augmented Generation (RAG) plays a crucial role in grounding Large Language Models by leveraging external knowledge, whereas the effectiveness is often compromised by the retrieval of contextually flawed or incomplete information. To address this, knowledge graph-based RAG methods have evolved towards hierarchical structures, organizing knowledge into multi-level summaries. However, these approaches still suffer from two critical, unaddressed challenges: high-level conceptual summaries exist as disconnected ``semantic islands'', lacking the explicit relations needed for cross-community reasoning; and the retrieval process itself remains structurally unaware, often degenerating into an inefficient flat search that fails to exploit the graph's rich topology. To overcome these limitations, we introduce LeanRAG, a framework that features a deeply collaborative design combining knowledge aggregation and retrieval strategies. LeanRAG first employs a novel semantic aggregation algorithm that forms entity clusters and constructs new explicit relations among aggregation-level summaries, creating a fully navigable semantic network. Then, a bottom-up, structure-guided retrieval strategy anchors queries to the most relevant fine-grained entities and then systematically traverses the graph's semantic pathways to gather concise yet contextually comprehensive evidence sets. The LeanRAG can mitigate the substantial overhead associated with path retrieval on graphs and minimizes redundant information retrieval. Extensive experiments on four challenging QA benchmarks with different domains demonstrate that LeanRAG significantly outperforming existing methods in response quality while reducing 46{\textbackslash}\% retrieval redundancy. Code is available at: https://github.com/RaZzzyz/LeanRAG},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Hoerarchical,Knowledge Graphs,LLM,RAG},
+  file = {C\:\\Users\\lucan\\Zotero\\storage\\4VMZVK8A\\Zhang et al. - 2025 - LeanRAG Knowledge-Graph-Based Generation with Sem.pdf;C\:\\Users\\lucan\\Zotero\\storage\\N55RW7PK\\2508.html}
 }
 
 @article{zotero-item-3623,
