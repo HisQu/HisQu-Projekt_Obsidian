@@ -303,7 +303,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 500.5
+    "width": 500.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -323,7 +324,7 @@
       "fileorganizer2000:Note Companion": false
     }
   },
-  "active": "dfe52a084a7fe93d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Alsayed Algergawy.md",
     "Literatur/The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023.md",
