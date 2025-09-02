@@ -13,8 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023.md",
                 "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023"
+            }
+          },
+          {
+            "id": "8136b586d5dfe738",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alsayed Algergawy.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +52,55 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Alsayed Algergawy"
+            }
+          },
+          {
+            "id": "25bfbb2ad5dee6b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brigitta König-Ries.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Brigitta König-Ries"
+            }
+          },
+          {
+            "id": "8c99a2e6d318bb43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sheeba Samuel.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Sheeba Samuel"
             }
           }
         ]
@@ -183,7 +255,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       },
       {
         "id": "90e5484812b210aa",
@@ -196,7 +268,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,7 +296,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023"
             }
           }
         ]
@@ -251,11 +323,18 @@
       "fileorganizer2000:Note Companion": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "dfe52a084a7fe93d",
   "lastOpenFiles": [
+    "Alsayed Algergawy.md",
+    "Literatur/The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023.md",
+    "Brigitta König-Ries.md",
+    "Sheeba Samuel.md",
+    "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
+    "Organisation_von_Obsidian/Home.md",
+    "Unbenannt 1.md",
+    "Unbenannt.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "_NoteCompanion/Templates/research_paper.md",
-    "Organisation_von_Obsidian/Home.md",
     "_NoteCompanion/Templates/enhance.md",
     "_NoteCompanion/Templates/youtube_video.md",
     "_NoteCompanion/Templates/meeting_note.md",
@@ -278,17 +357,10 @@
     "PDFs/WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.pdf",
     "WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.md",
     "WongModelingOpenWorldCognitiondemandSynthesisProbabilisticModels.pdf.md",
-    "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels.pdf",
     "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
     "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
     "Literatur/Autoren/Tomáš Hampejs.md",
     "Literatur/Autoren/David Zbíral.md",
-    "Literatur/Autoren/Adam Mertel.md",
-    "Literatur/Autoren/Kaarel Sikk.md",
-    "Literatur/Autoren/Robert L. J. Shaw.md",
-    "Literatur/Autoren/D Zbíral.md",
-    "Literatur/Autoren/K Sikk.md",
-    "Literatur/Autoren/R Shaw.md",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
