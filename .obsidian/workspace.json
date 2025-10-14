@@ -30,33 +30,8 @@
               "icon": "lucide-file",
               "title": "Home"
             }
-          },
-          {
-            "id": "8daf6e212bd0d678",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -221,7 +196,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -249,7 +224,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von conflict-files-obsidian-git"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -276,10 +251,10 @@
       "fileorganizer2000:Note Companion": false
     }
   },
-  "active": "8daf6e212bd0d678",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Organisation_von_Obsidian/Home.md",
     "conflict-files-obsidian-git.md",
+    "Organisation_von_Obsidian/Home.md",
     "README.md",
     "Unbenannt 1.md",
     "Unbenannt.md",
