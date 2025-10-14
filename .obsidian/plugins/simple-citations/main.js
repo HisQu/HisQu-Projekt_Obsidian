@@ -27,7 +27,7 @@ __export(main_exports, {
   default: () => SimpleCitations
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian5 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 var import_child_process = require("child_process");
 
 // src/settings/settings.ts
@@ -40,6 +40,7 @@ var DEFAULT_SETTINGS = {
   includeAbstract: false,
   templatePath: "",
   autoAddCitations: false,
+  autoUpdateCitations: false,
   jsonUpdatedTime: new Date().getTime(),
   inputPandocPath: "",
   pandocOutputPath: "",
@@ -120,6 +121,10 @@ var SimpleCitationsSettingTab = class extends import_obsidian2.PluginSettingTab 
       this.plugin.settings.autoAddCitations = value;
       await this.plugin.saveSettings();
     }));
+    new import_obsidian2.Setting(containerEl).setName("Auto update citations").setDesc("When enabled, automatically updates citation notes when opened.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autoUpdateCitations).onChange(async (value) => {
+      this.plugin.settings.autoUpdateCitations = value;
+      await this.plugin.saveSettings();
+    }));
     containerEl.createEl("h2", { text: "Additional Properties" });
     new import_obsidian2.Setting(containerEl).setName("Include author tag").setDesc("When enabled, adds a tag with the first author's name.").addToggle((toggle) => toggle.setValue(this.plugin.settings.includeAuthorTag).onChange(async (value) => {
       this.plugin.settings.includeAuthorTag = value;
@@ -187,6 +192,9 @@ function autoAddCitations(app, settings, file) {
   }
 }
 
+// src/commands/updateCitations.ts
+var import_obsidian5 = require("obsidian");
+
 // src/utils/parseFrontmatter.ts
 function parseFrontmatter(fileContent) {
   if (!fileContent.startsWith("---\n")) {
@@ -243,6 +251,78 @@ async function updateContent(app, targetFile, template, abstract) {
   });
 }
 
+// src/utils/updateFrontMatter.ts
+async function updateFrontMatter(app, settings, targetFile, item) {
+  await app.fileManager.processFrontMatter(targetFile, (fm) => {
+    fm.aliases = [];
+    if (!Array.isArray(fm.tags)) {
+      fm.tags = fm.tags ? [fm.tags] : [];
+    }
+    fm.title = item["title"];
+    if (item["author"] && Array.isArray(item["author"])) {
+      fm.authors = Array.from(new Set(
+        item["author"].map(
+          (author) => {
+            var _a, _b;
+            return (author.literal || `${(_a = author.given) != null ? _a : ""} ${(_b = author.family) != null ? _b : ""}`).trim();
+          }
+        )
+      ));
+    }
+    if (item["issued"] && Array.isArray(item["issued"]["date-parts"]) && item["issued"]["date-parts"][0] && !isNaN(item["issued"]["date-parts"][0][0])) {
+      fm.year = Number(item["issued"]["date-parts"][0][0]);
+    }
+    fm.journal = item["container-title"];
+    fm.doi = item["DOI"] ? `https://doi.org/${item["DOI"]}` : "";
+    fm.zotero = "zotero://select/items/@" + item["id"];
+    if (fm.authors && fm.authors.length > 0 && fm.journal && fm.year) {
+      fm.aliases.push(`${fm.authors[0]}. ${fm.journal}. ${fm.year}`);
+    }
+    fm.aliases.push(item["title"]);
+    if (fm.authors && fm.authors.length > 0) {
+      let authorTag = fm.authors[0].replace(/[&:;,'"\\?!<>|()\[\]{}\.\s]/g, "_").replace(/_+/g, "_").replace(/^_+|_+$/g, "");
+      authorTag = `author/${authorTag}`;
+      if (settings.includeAuthorTag) {
+        if (!fm.tags.includes(authorTag)) {
+          fm.tags.push(authorTag);
+        }
+      } else {
+        const index = fm.tags.indexOf(authorTag);
+        if (index > -1) {
+          fm.tags.splice(index, 1);
+        }
+      }
+    }
+    if (fm.journal) {
+      let journalTag = fm.journal.replace(/[&:;,'"\\?!<>|()\[\]{}\.\s]/g, "_").replace(/_+/g, "_").replace(/^_+|_+$/g, "");
+      journalTag = `journal/${journalTag}`;
+      if (settings.includeJournalTag) {
+        if (!fm.tags.includes(journalTag)) {
+          fm.tags.push(journalTag);
+        }
+      } else {
+        const index = fm.tags.indexOf(journalTag);
+        if (index > -1) {
+          fm.tags.splice(index, 1);
+        }
+      }
+    }
+    if (settings.optionalFields) {
+      const optionalFields = settings.optionalFields.split("\n").map((f) => f.trim()).filter(Boolean);
+      for (const field of optionalFields) {
+        if (item[field] !== void 0) {
+          const value = item[field];
+          if (typeof value === "string" || typeof value === "number" || Array.isArray(value) && value.every(
+            (v) => typeof v === "string" || typeof v === "number"
+          )) {
+            fm[field] = value;
+          }
+        }
+      }
+    }
+  });
+}
+
 // src/utils/checkRequiredFiles.ts
 var import_obsidian4 = require("obsidian");
 function checkRequiredFiles(app, settings) {
@@ -294,55 +374,153 @@ citekey must not contain #, ^, [, ], |, \\, /, :`);
   return true;
 }
 
-// src/main.ts
-var SimpleCitations = class extends import_obsidian5.Plugin {
-  async onload() {
-    await this.loadSettings();
-    this.addCommand({
+// src/commands/updateCitations.ts
+var UpdateCitations = class {
+  constructor(app, settings) {
+    this.app = app;
+    this.settings = settings;
+  }
+  registerCommands(plugin) {
+    plugin.addCommand({
       id: "update-citations",
       name: "Update literature notes",
       callback: async () => {
-        var _a;
-        const startTime = performance.now();
-        const { jsonFile, folder, templateFile } = checkRequiredFiles(this.app, this.settings);
-        if (!jsonFile || !folder)
-          return;
-        const jsonContents = await this.app.vault.cachedRead(jsonFile);
-        const jsonData = JSON.parse(jsonContents);
-        const files = new Map(folder.children.map((file) => [file.name, file]));
-        let templateContent = templateFile ? await this.app.vault.cachedRead(templateFile) : "";
-        let fileCount = 0;
-        let notice = new import_obsidian5.Notice(`0 file(s) updated.`, 0);
-        const intervalId = setInterval(() => {
-          notice.setMessage(`${fileCount} file(s) updated.`);
-        }, 200);
-        for (let i = 0; i < jsonData.length; i++) {
-          const citekey = (_a = jsonData[i]) == null ? void 0 : _a["citation-key"];
-          if (!validateCitekey(citekey))
-            continue;
-          const targetFileName = "@" + citekey + ".md";
-          const targetFile = files.get(targetFileName);
-          if (targetFile && targetFile instanceof import_obsidian5.TFile) {
-            await this.updateFrontMatter(targetFile, jsonData[i]);
-            await updateContent(
-              this.app,
-              targetFile,
-              templateContent,
-              this.settings.includeAbstract ? jsonData[i]["abstract"] : ""
-            );
-            fileCount++;
-          }
-        }
-        clearInterval(intervalId);
-        const endTime = performance.now();
-        const elapsedTime = ((endTime - startTime) / 1e3).toFixed(1);
-        notice.setMessage(`${fileCount} file(s) updated.
-Time taken: ${elapsedTime} seconds`);
-        setTimeout(() => {
-          notice.hide();
-        }, 3e3);
+        await this.updateCitations();
       }
     });
+    plugin.addCommand({
+      id: "update-citations-active",
+      name: "Update literature note (active file)",
+      callback: async () => {
+        await this.updateCitationsActive();
+      }
+    });
+  }
+  async updateCitations() {
+    var _a;
+    const startTime = performance.now();
+    const { jsonFile, folder, templateFile } = checkRequiredFiles(this.app, this.settings);
+    if (!jsonFile || !folder)
+      return;
+    const jsonContents = await this.app.vault.cachedRead(jsonFile);
+    const jsonData = JSON.parse(jsonContents);
+    const files = new Map(folder.children.map((file) => [file.name, file]));
+    let templateContent = templateFile ? await this.app.vault.cachedRead(templateFile) : "";
+    let fileCount = 0;
+    let notice = new import_obsidian5.Notice(`0 file(s) updated.`, 0);
+    const intervalId = setInterval(() => {
+      notice.setMessage(`${fileCount} file(s) updated.`);
+    }, 200);
+    for (let i = 0; i < jsonData.length; i++) {
+      const citekey = (_a = jsonData[i]) == null ? void 0 : _a["citation-key"];
+      if (!validateCitekey(citekey))
+        continue;
+      const targetFileName = "@" + citekey + ".md";
+      const targetFile = files.get(targetFileName);
+      if (targetFile && targetFile instanceof import_obsidian5.TFile) {
+        await updateFrontMatter(this.app, this.settings, targetFile, jsonData[i]);
+        await updateContent(
+          this.app,
+          targetFile,
+          templateContent,
+          this.settings.includeAbstract ? jsonData[i]["abstract"] : ""
+        );
+        fileCount++;
+      }
+    }
+    clearInterval(intervalId);
+    const endTime = performance.now();
+    const elapsedTime = ((endTime - startTime) / 1e3).toFixed(1);
+    notice.setMessage(`${fileCount} file(s) updated.
+Time taken: ${elapsedTime} seconds`);
+    setTimeout(() => {
+      notice.hide();
+    }, 3e3);
+  }
+  async updateCitationsActive() {
+    const activeFile = this.app.workspace.getActiveFile();
+    if (!activeFile) {
+      new import_obsidian5.Notice("No active file.");
+      return;
+    }
+    if (!activeFile.name.startsWith("@") || !activeFile.name.endsWith(".md")) {
+      new import_obsidian5.Notice("Active file is not a citation note.");
+      return;
+    }
+    const { jsonFile, folder, templateFile } = checkRequiredFiles(this.app, this.settings);
+    if (!jsonFile || !folder)
+      return;
+    if (activeFile.parent !== folder) {
+      new import_obsidian5.Notice("Active file is not in the configured literature notes folder.");
+      return;
+    }
+    const citekey = activeFile.name.slice(1, -3);
+    const jsonContents = await this.app.vault.cachedRead(jsonFile);
+    const jsonData = JSON.parse(jsonContents);
+    let templateContent = templateFile ? await this.app.vault.cachedRead(templateFile) : "";
+    const matchingEntry = jsonData.find((item) => (item == null ? void 0 : item["citation-key"]) === citekey);
+    if (!matchingEntry) {
+      new import_obsidian5.Notice(`No citation data found for "${citekey}" in JSON file.`);
+      return;
+    }
+    if (!validateCitekey(matchingEntry["citation-key"])) {
+      new import_obsidian5.Notice(`Invalid citation key: "${matchingEntry["citation-key"]}"`);
+      return;
+    }
+    await updateFrontMatter(this.app, this.settings, activeFile, matchingEntry);
+    await updateContent(
+      this.app,
+      activeFile,
+      templateContent,
+      this.settings.includeAbstract ? matchingEntry["abstract"] : ""
+    );
+    new import_obsidian5.Notice("Active file updated.");
+  }
+  async autoUpdateCitations(file) {
+    if (!file)
+      return;
+    if (!this.settings.autoUpdateCitations)
+      return;
+    if (!file.name.startsWith("@") || !file.name.endsWith(".md")) {
+      return;
+    }
+    const { jsonFile, folder, templateFile } = checkRequiredFiles(this.app, this.settings);
+    if (!jsonFile || !folder)
+      return;
+    if (file.parent !== folder) {
+      return;
+    }
+    const citekey = file.name.slice(1, -3);
+    const jsonContents = await this.app.vault.cachedRead(jsonFile);
+    const jsonData = JSON.parse(jsonContents);
+    let templateContent = templateFile ? await this.app.vault.cachedRead(templateFile) : "";
+    const matchingEntry = jsonData.find((item) => (item == null ? void 0 : item["citation-key"]) === citekey);
+    if (!matchingEntry) {
+      return;
+    }
+    if (!validateCitekey(matchingEntry["citation-key"])) {
+      return;
+    }
+    await updateFrontMatter(this.app, this.settings, file, matchingEntry);
+    await updateContent(
+      this.app,
+      file,
+      templateContent,
+      this.settings.includeAbstract ? matchingEntry["abstract"] : ""
+    );
+    console.log(`Auto update citations completed for: ${file.name}`);
+  }
+};
+
+// src/main.ts
+var SimpleCitations = class extends import_obsidian6.Plugin {
+  async onload() {
+    await this.loadSettings();
+    this.updateCitations = new UpdateCitations(
+      this.app,
+      this.settings
+    );
+    this.updateCitations.registerCommands(this);
     this.addCommand({
       id: "add-citations",
       name: "Add literature notes",
@@ -367,7 +545,7 @@ Time taken: ${elapsedTime} seconds`);
           const targetFile = files.get(targetFileName);
           if (!targetFile) {
             const newFile = await this.app.vault.create(`${folder.path}/${targetFileName}`, "");
-            await this.updateFrontMatter(newFile, jsonData[i]);
+            await updateFrontMatter(this.app, this.settings, newFile, jsonData[i]);
             await updateContent(
               this.app,
               newFile,
@@ -376,7 +554,7 @@ Time taken: ${elapsedTime} seconds`);
             );
             fileCount++;
             if (fileCount === 1) {
-              notice = new import_obsidian5.Notice(`${fileCount} file(s) added.`, 0);
+              notice = new import_obsidian6.Notice(`${fileCount} file(s) added.`, 0);
               intervalId = setInterval(() => {
                 notice == null ? void 0 : notice.setMessage(`${fileCount} file(s) added.`);
               }, 200);
@@ -406,7 +584,7 @@ Time taken: ${elapsedTime} seconds`);
       callback: async () => {
         const activeFile = this.app.workspace.getActiveFile();
         if (!activeFile) {
-          new import_obsidian5.Notice("No active file.");
+          new import_obsidian6.Notice("No active file.");
           return;
         }
         const content = await this.app.vault.read(activeFile);
@@ -416,18 +594,18 @@ Time taken: ${elapsedTime} seconds`);
         newContent = newContent.replace(/(\.)\s*?(\[@.*?\])/g, "$2$1 ");
         await this.app.vault.modify(activeFile, newContent);
         const BasePath = this.app.vault.adapter.getBasePath();
-        const PandocPath = (0, import_obsidian5.normalizePath)(this.settings.inputPandocPath) || "pandoc";
-        const CurrentFilePath = (0, import_obsidian5.normalizePath)(activeFile.path);
+        const PandocPath = (0, import_obsidian6.normalizePath)(this.settings.inputPandocPath) || "pandoc";
+        const CurrentFilePath = (0, import_obsidian6.normalizePath)(activeFile.path);
         const CurrentFileFolder = CurrentFilePath.split("/").slice(0, -1).join("/");
         const CurrentFileName = CurrentFilePath.split("/").pop();
         const PandocInputFile = BasePath + "/" + CurrentFilePath;
-        const PandocOutputPath = this.settings.pandocOutputPath ? (0, import_obsidian5.normalizePath)(this.settings.pandocOutputPath) : BasePath + "/" + CurrentFileFolder;
+        const PandocOutputPath = this.settings.pandocOutputPath ? (0, import_obsidian6.normalizePath)(this.settings.pandocOutputPath) : BasePath + "/" + CurrentFileFolder;
         const PandocOutputFile = PandocOutputPath + "/" + (CurrentFileName == null ? void 0 : CurrentFileName.replace(/\.md$/, ".docx"));
         const PandocExtraArgs = this.settings.pandocArgs ? this.settings.pandocArgs.split(/[\s\n]+/) : [];
         const PandocArgs = [
           "--citeproc",
           "--bibliography",
-          BasePath + "/" + (0, import_obsidian5.normalizePath)(this.settings.jsonPath),
+          BasePath + "/" + (0, import_obsidian6.normalizePath)(this.settings.jsonPath),
           ...PandocExtraArgs
         ];
         try {
@@ -437,18 +615,18 @@ Time taken: ${elapsedTime} seconds`);
             { env: process.env }
           );
           pandocProcess.on("error", (err) => {
-            new import_obsidian5.Notice(`Pandoc execution failed: ${err.message}`);
+            new import_obsidian6.Notice(`Pandoc execution failed: ${err.message}`);
           });
           pandocProcess.on("close", async (code) => {
             if (code === 0) {
-              new import_obsidian5.Notice("Pandoc execution completed successfully.");
+              new import_obsidian6.Notice("Pandoc execution completed successfully.");
             } else {
-              new import_obsidian5.Notice(`Pandoc execution failed with code: ${code}`);
+              new import_obsidian6.Notice(`Pandoc execution failed with code: ${code}`);
             }
             await this.app.vault.modify(activeFile, content);
           });
         } catch (error) {
-          new import_obsidian5.Notice(`An error occurred: ${error.message}`);
+          new import_obsidian6.Notice(`An error occurred: ${error.message}`);
           await this.app.vault.modify(activeFile, content);
         }
       }
@@ -462,25 +640,28 @@ Time taken: ${elapsedTime} seconds`);
           return;
         const jsonContents = await this.app.vault.cachedRead(jsonFile);
         const jsonData = JSON.parse(jsonContents);
-        const files = folder.children.filter((file) => file instanceof import_obsidian5.TFile);
+        const files = folder.children.filter((file) => file instanceof import_obsidian6.TFile);
         const fileNames = files.map((file) => file.name.replace(/\.md$/, ""));
         const citationKeys = new Set(jsonData.map((entry) => entry["citation-key"]));
         const missingFiles = fileNames.filter((fileName) => !citationKeys.has(fileName.slice(1)));
         if (missingFiles.length === 0) {
-          new import_obsidian5.Notice("No missing notes found.");
+          new import_obsidian6.Notice("No missing notes found.");
           return;
         }
         const missingLinks = missingFiles.map((fileName) => `[[${fileName}]]`).join("\n");
         await navigator.clipboard.writeText(missingLinks);
-        new import_obsidian5.Notice("Copied missing note links to clipboard!");
+        new import_obsidian6.Notice("Copied missing note links to clipboard!");
       }
     });
     this.addSettingTab(new SimpleCitationsSettingTab(this.app, this));
     this.registerEvent(this.app.vault.on("modify", (file) => {
       autoAddCitations(this.app, this.settings, file);
     }));
+    this.registerEvent(this.app.workspace.on("file-open", (file) => {
+      this.updateCitations.autoUpdateCitations(file);
+    }));
     this.app.workspace.onLayoutReady(() => {
-      autoAddCitations(this.app, this.settings, this.app.vault.getFileByPath((0, import_obsidian5.normalizePath)(this.settings.jsonPath)));
+      autoAddCitations(this.app, this.settings, this.app.vault.getFileByPath((0, import_obsidian6.normalizePath)(this.settings.jsonPath)));
     });
   }
   onunload() {
@@ -490,76 +671,6 @@ Time taken: ${elapsedTime} seconds`);
   }
   async saveSettings() {
     await this.saveData(this.settings);
-  }
-  async updateFrontMatter(targetFile, item) {
-    await this.app.fileManager.processFrontMatter(targetFile, (fm) => {
-      fm.aliases = [];
-      if (!Array.isArray(fm.tags)) {
-        fm.tags = fm.tags ? [fm.tags] : [];
-      }
-      fm.title = item["title"];
-      if (item["author"] && Array.isArray(item["author"])) {
-        fm.authors = Array.from(new Set(
-          item["author"].map(
-            (author) => {
-              var _a, _b;
-              return (author.literal || `${(_a = author.given) != null ? _a : ""} ${(_b = author.family) != null ? _b : ""}`).trim();
-            }
-          )
-        ));
-      }
-      if (item["issued"] && Array.isArray(item["issued"]["date-parts"]) && item["issued"]["date-parts"][0] && !isNaN(item["issued"]["date-parts"][0][0])) {
-        fm.year = Number(item["issued"]["date-parts"][0][0]);
-      }
-      fm.journal = item["container-title"];
-      fm.doi = item["DOI"] ? `https://doi.org/${item["DOI"]}` : "";
-      fm.zotero = "zotero://select/items/@" + item["id"];
-      if (fm.authors && fm.authors.length > 0 && fm.journal && fm.year) {
-        fm.aliases.push(`${fm.authors[0]}. ${fm.journal}. ${fm.year}`);
-      }
-      fm.aliases.push(item["title"]);
-      if (fm.authors && fm.authors.length > 0) {
-        let authorTag = fm.authors[0].replace(/[&:;,'"\\?!<>|()\[\]{}\.\s]/g, "_").replace(/_+/g, "_").replace(/^_+|_+$/g, "");
-        authorTag = `author/${authorTag}`;
-        if (this.settings.includeAuthorTag) {
-          if (!fm.tags.includes(authorTag)) {
-            fm.tags.push(authorTag);
-          }
-        } else {
-          const index = fm.tags.indexOf(authorTag);
-          if (index > -1) {
-            fm.tags.splice(index, 1);
-          }
-        }
-      }
-      if (fm.journal) {
-        let journalTag = fm.journal.replace(/[&:;,'"\\?!<>|()\[\]{}\.\s]/g, "_").replace(/_+/g, "_").replace(/^_+|_+$/g, "");
-        journalTag = `journal/${journalTag}`;
-        if (this.settings.includeJournalTag) {
-          if (!fm.tags.includes(journalTag)) {
-            fm.tags.push(journalTag);
-          }
-        } else {
-          const index = fm.tags.indexOf(journalTag);
-          if (index > -1) {
-            fm.tags.splice(index, 1);
-          }
-        }
-      }
-      if (this.settings.optionalFields) {
-        const optionalFields = this.settings.optionalFields.split("\n").map((f) => f.trim()).filter(Boolean);
-        for (const field of optionalFields) {
-          if (item[field] !== void 0) {
-            const value = item[field];
-            if (typeof value === "string" || typeof value === "number" || Array.isArray(value) && value.every(
-              (v) => typeof v === "string" || typeof v === "number"
-            )) {
-              fm[field] = value;
-            }
-          }
-        }
-      }
-    });
   }
 };
 

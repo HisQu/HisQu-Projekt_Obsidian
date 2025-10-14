@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Organisation_von_Obsidian/Home.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "Home"
             }
+          },
+          {
+            "id": "8daf6e212bd0d678",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.5
+    "width": 200
   },
   "right": {
     "id": "ca5c770b999f1f46",
@@ -196,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023.md",
+                "file": "conflict-files-obsidian-git.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,15 +249,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023"
+              "title": "Graph von conflict-files-obsidian-git"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 500.5,
-    "collapsed": true
+    "width": 500.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -252,16 +276,19 @@
       "fileorganizer2000:Note Companion": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "8daf6e212bd0d678",
   "lastOpenFiles": [
-    "Literatur/The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023.md",
-    "Alsayed Algergawy.md",
-    "Brigitta König-Ries.md",
-    "Sheeba Samuel.md",
-    "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
     "Organisation_von_Obsidian/Home.md",
+    "conflict-files-obsidian-git.md",
+    "README.md",
     "Unbenannt 1.md",
     "Unbenannt.md",
+    "excalibrain.md",
+    "Literatur/Autoren/Brigitta König-Ries.md",
+    "Literatur/Autoren/Sheeba Samuel.md",
+    "Literatur/Autoren/Alsayed Algergawy.md",
+    "Literatur/The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023.md",
+    "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "_NoteCompanion/Templates/research_paper.md",
     "_NoteCompanion/Templates/enhance.md",
@@ -287,9 +314,6 @@
     "WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.md",
     "WongModelingOpenWorldCognitiondemandSynthesisProbabilisticModels.pdf.md",
     "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
-    "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
-    "Literatur/Autoren/Tomáš Hampejs.md",
-    "Literatur/Autoren/David Zbíral.md",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
