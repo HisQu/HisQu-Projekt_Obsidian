@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Organisation_von_Obsidian/Home.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -253,8 +253,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Organisation_von_Obsidian/Home.md",
+    "conflict-files-obsidian-git.md",
     "README.md",
     "Unbenannt 1.md",
     "Unbenannt.md",
