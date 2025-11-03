@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983"
+            }
+          },
+          {
+            "id": "b5cf6117922bd224",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Literatur/Autoren/Rudolf Holbach.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Rudolf Holbach"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Autoren/Rudolf Holbach.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,7 +249,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Rudolf Holbach"
             }
           }
         ]
@@ -251,9 +276,24 @@
       "fileorganizer2000:Note Companion": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "b5cf6117922bd224",
   "lastOpenFiles": [
+    "Literatur/Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001.md",
+    "Literatur/Autoren/Rudolf Holbach.md",
+    "Literatur/Autoren/Jörg Voigt.md",
+    "Literatur/Die römischen Repertorien. Neue Perspektiven für die Erforschung von Kirche und Kurie des Spätmittelalters (1378–1484) Claudia Märtl, Irmgard Fees, Andreas Rehberg, Jörg Voigt 2023.md",
+    "Literatur/Autoren/Jörg Hörnschemeyer.md",
+    "Literatur/Uno spoglio moderno dette fonti vaticane. Il Repertorium Germanicum e il Repertorium Poenitentiariae Ludwig Schmugge, Jörg Hörnschemeyer 2015.md",
+    "Literatur/Soziale Genese und Aufstiegsformen kleiner niederadliger Geschlechter im südöstlichen Niedersachsen Lutz Fenske 1984.md",
+    "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
+    "Literatur/Autoren/Eva Pleticha.md",
+    "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
+    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+    "Organisation_von_Obsidian/Allgemeine_Einführung 1.md",
+    "Organisation_von_Obsidian/Banner.md",
     "Organisation_von_Obsidian/Home.md",
+    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
+    "RGS Nummern/RGS§300.md",
     "conflict-files-obsidian-git.md",
     "README.md",
     "Unbenannt 1.md",
@@ -264,11 +304,8 @@
     "Literatur/Autoren/Alsayed Algergawy.md",
     "Literatur/The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023.md",
     "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
-    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "_NoteCompanion/Templates/research_paper.md",
     "_NoteCompanion/Templates/enhance.md",
-    "_NoteCompanion/Templates/youtube_video.md",
-    "_NoteCompanion/Templates/meeting_note.md",
     "_NoteCompanion/Backups",
     "_NoteCompanion/Fabric",
     "_NoteCompanion/Templates",
@@ -277,18 +314,6 @@
     "_NoteCompanion/Processed",
     "_NoteCompanion/Inbox",
     "_NoteCompanion",
-    "Organisation_von_Obsidian/Allgemeine_Einführung 1.md",
-    "Organisation_von_Obsidian/Allgemeine_Einführung.md",
-    "Literatur/ColPali. Efficient Document Retrieval with Vision Language Models Manuel Faysse, Hugues Sibille, Tony Wu, Bilel Omrani, Gautier Viaud, Céline Hudelot, Pierre Colombo 2025.md",
-    "Literatur/Modeling Open World Cognition as On demand Synthesis of Probabilistic Models Lionel Wong, Katherine M. Collins, Lance Ying, Cedegao E. Zhang, Adrian Weller 2025.md",
-    "Literatur/Vatikanische Aktenstücke zur Schweizerischen Kirchengeschichte aus der Zeit Clemens V. M. B. 1909.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
-    "Literatur/Stadt und Universität im Mittelalter und in der früheren Neuzeit. 13. Arbeitstagung in Tübingen [des Südwestdeutschen Arbeitskreises für Stadtgeschichtsforschung], 8.-10. 11. 1974  1977.md",
-    "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
-    "PDFs/WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.pdf",
-    "WongModelingOpenWorldCognitionOnDemandSynthesisProbabilisticModelsa.md",
-    "WongModelingOpenWorldCognitiondemandSynthesisProbabilisticModels.pdf.md",
-    "Literatur/Model the source first! Towards Computer-Assisted Semantic Text Modelling and source criticism 2.0 David Zbíral, Robert L. J. Shaw, Tomáš Hampejs, Adam Mertel 2022.md",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
