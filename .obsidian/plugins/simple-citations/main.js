@@ -591,7 +591,7 @@ Time taken: ${elapsedTime} seconds`);
         let newContent = await content.replace(/\[\[(.*?)\|.*?\]\]/g, "[[$1]]");
         newContent = newContent.replace(/\[\[@(.*?)\]\]/g, "[@$1]");
         newContent = newContent.replace(/\](\s*?)\[@/g, ";@");
-        newContent = newContent.replace(/(\.)\s*?(\[@.*?\])/g, "$2$1 ");
+        newContent = newContent.replace(/(\.)\s*?(\[@.*?\])/g, " $2$1 ");
         await this.app.vault.modify(activeFile, newContent);
         const BasePath = this.app.vault.adapter.getBasePath();
         const PandocPath = (0, import_obsidian6.normalizePath)(this.settings.inputPandocPath) || "pandoc";
