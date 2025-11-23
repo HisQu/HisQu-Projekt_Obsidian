@@ -221,7 +221,26 @@ function parseFrontmatter(fileContent) {
 // src/utils/trimContent.ts
 function trimContent(fileContent) {
   const parsed = parseFrontmatter(fileContent);
-  return parsed.frontmatter + parsed.content.trim();
+  const lines = parsed.content.split("\n");
+  while (lines.length && lines[0].trim() === "") {
+    lines.shift();
+  }
+  while (lines.length && lines[lines.length - 1].trim() === "") {
+    lines.pop();
+  }
+  const normalizedContent = lines.join("\n");
+  const hasFrontmatter = parsed.frontmatter.length > 0;
+  const hasContent = normalizedContent.length > 0;
+  if (!hasFrontmatter) {
+    return hasContent ? `${normalizedContent}
+` : "";
+  }
+  if (!hasContent) {
+    return parsed.frontmatter;
+  }
+  return `${parsed.frontmatter}
+${normalizedContent}
+`;
 }
 
 // src/utils/addAfterFrontmatter.ts

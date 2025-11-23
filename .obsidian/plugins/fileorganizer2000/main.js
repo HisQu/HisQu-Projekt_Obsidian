@@ -817,7 +817,7 @@ var require_scheduler = __commonJS({
 var require_react_dom_production = __commonJS({
   "../../node_modules/react-dom/cjs/react-dom.production.js"(exports2) {
     "use strict";
-    var React64 = require_react();
+    var React77 = require_react();
     function formatProdErrorMessage(code2) {
       var url = "https://react.dev/errors/" + code2;
       if (1 < arguments.length) {
@@ -857,7 +857,7 @@ var require_react_dom_production = __commonJS({
         implementation
       };
     }
-    var ReactSharedInternals = React64.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+    var ReactSharedInternals = React77.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
     function getCrossOriginStringAs(as, input) {
       if ("font" === as)
         return "";
@@ -997,7 +997,7 @@ var require_react_dom_client_production = __commonJS({
   "../../node_modules/react-dom/cjs/react-dom-client.production.js"(exports2) {
     "use strict";
     var Scheduler = require_scheduler();
-    var React64 = require_react();
+    var React77 = require_react();
     var ReactDOM3 = require_react_dom();
     function formatProdErrorMessage(code2) {
       var url = "https://react.dev/errors/" + code2;
@@ -1083,7 +1083,7 @@ var require_react_dom_client_production = __commonJS({
         }
       return null;
     }
-    var ReactSharedInternals = React64.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+    var ReactSharedInternals = React77.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
     var assign = Object.assign;
     var prefix;
     var suffix;
@@ -12265,7 +12265,7 @@ var require_react_dom_client_production = __commonJS({
         0 === i && attemptExplicitHydrationTarget(target);
       }
     };
-    var isomorphicReactPackageVersion$jscomp$inline_1686 = React64.version;
+    var isomorphicReactPackageVersion$jscomp$inline_1686 = React77.version;
     if ("19.0.0" !== isomorphicReactPackageVersion$jscomp$inline_1686)
       throw Error(
         formatProdErrorMessage(
@@ -22046,17 +22046,17 @@ var require_secure_json_parse = __commonJS({
 var require_use_sync_external_store_shim_production = __commonJS({
   "../../node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js"(exports2) {
     "use strict";
-    var React64 = require_react();
+    var React77 = require_react();
     function is2(x, y) {
       return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
     }
     var objectIs = "function" === typeof Object.is ? Object.is : is2;
-    var useState50 = React64.useState;
-    var useEffect39 = React64.useEffect;
-    var useLayoutEffect4 = React64.useLayoutEffect;
-    var useDebugValue3 = React64.useDebugValue;
+    var useState58 = React77.useState;
+    var useEffect40 = React77.useEffect;
+    var useLayoutEffect4 = React77.useLayoutEffect;
+    var useDebugValue3 = React77.useDebugValue;
     function useSyncExternalStore$2(subscribe, getSnapshot) {
-      var value = getSnapshot(), _useState = useState50({ inst: { value, getSnapshot } }), inst = _useState[0].inst, forceUpdate = _useState[1];
+      var value = getSnapshot(), _useState = useState58({ inst: { value, getSnapshot } }), inst = _useState[0].inst, forceUpdate = _useState[1];
       useLayoutEffect4(
         function() {
           inst.value = value;
@@ -22065,7 +22065,7 @@ var require_use_sync_external_store_shim_production = __commonJS({
         },
         [subscribe, value, getSnapshot]
       );
-      useEffect39(
+      useEffect40(
         function() {
           checkIfSnapshotChanged(inst) && forceUpdate({ inst });
           return subscribe(function() {
@@ -22091,7 +22091,7 @@ var require_use_sync_external_store_shim_production = __commonJS({
       return getSnapshot();
     }
     var shim2 = "undefined" === typeof window || "undefined" === typeof window.document || "undefined" === typeof window.document.createElement ? useSyncExternalStore$1 : useSyncExternalStore$2;
-    exports2.useSyncExternalStore = void 0 !== React64.useSyncExternalStore ? React64.useSyncExternalStore : shim2;
+    exports2.useSyncExternalStore = void 0 !== React77.useSyncExternalStore ? React77.useSyncExternalStore : shim2;
   }
 });
 
@@ -43046,42 +43046,42 @@ var require_image_q = __commonJS({
           }
         }
       }
-      static _volumeFloat(cube, moment5) {
-        return moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] - moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] + moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+      static _volumeFloat(cube, moment4) {
+        return moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] - moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] + moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
       }
-      static _volume(cube, moment5) {
-        return _WuQuant._volumeFloat(cube, moment5) | 0;
+      static _volume(cube, moment4) {
+        return _WuQuant._volumeFloat(cube, moment4) | 0;
       }
-      static _top(cube, direction, position3, moment5) {
+      static _top(cube, direction, position3, moment4) {
         let result;
         switch (direction) {
           case _WuQuant._alpha:
-            result = moment5[position3][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] - moment5[position3][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment5[position3][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment5[position3][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (moment5[position3][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment5[position3][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment5[position3][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment5[position3][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            result = moment4[position3][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] - moment4[position3][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment4[position3][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment4[position3][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (moment4[position3][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment4[position3][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment4[position3][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment4[position3][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
             break;
           case _WuQuant._red:
-            result = moment5[cube.alphaMaximum][position3][cube.greenMaximum][cube.blueMaximum] - moment5[cube.alphaMaximum][position3][cube.greenMinimum][cube.blueMaximum] - moment5[cube.alphaMinimum][position3][cube.greenMaximum][cube.blueMaximum] + moment5[cube.alphaMinimum][position3][cube.greenMinimum][cube.blueMaximum] - (moment5[cube.alphaMaximum][position3][cube.greenMaximum][cube.blueMinimum] - moment5[cube.alphaMaximum][position3][cube.greenMinimum][cube.blueMinimum] - moment5[cube.alphaMinimum][position3][cube.greenMaximum][cube.blueMinimum] + moment5[cube.alphaMinimum][position3][cube.greenMinimum][cube.blueMinimum]);
+            result = moment4[cube.alphaMaximum][position3][cube.greenMaximum][cube.blueMaximum] - moment4[cube.alphaMaximum][position3][cube.greenMinimum][cube.blueMaximum] - moment4[cube.alphaMinimum][position3][cube.greenMaximum][cube.blueMaximum] + moment4[cube.alphaMinimum][position3][cube.greenMinimum][cube.blueMaximum] - (moment4[cube.alphaMaximum][position3][cube.greenMaximum][cube.blueMinimum] - moment4[cube.alphaMaximum][position3][cube.greenMinimum][cube.blueMinimum] - moment4[cube.alphaMinimum][position3][cube.greenMaximum][cube.blueMinimum] + moment4[cube.alphaMinimum][position3][cube.greenMinimum][cube.blueMinimum]);
             break;
           case _WuQuant._green:
-            result = moment5[cube.alphaMaximum][cube.redMaximum][position3][cube.blueMaximum] - moment5[cube.alphaMaximum][cube.redMinimum][position3][cube.blueMaximum] - moment5[cube.alphaMinimum][cube.redMaximum][position3][cube.blueMaximum] + moment5[cube.alphaMinimum][cube.redMinimum][position3][cube.blueMaximum] - (moment5[cube.alphaMaximum][cube.redMaximum][position3][cube.blueMinimum] - moment5[cube.alphaMaximum][cube.redMinimum][position3][cube.blueMinimum] - moment5[cube.alphaMinimum][cube.redMaximum][position3][cube.blueMinimum] + moment5[cube.alphaMinimum][cube.redMinimum][position3][cube.blueMinimum]);
+            result = moment4[cube.alphaMaximum][cube.redMaximum][position3][cube.blueMaximum] - moment4[cube.alphaMaximum][cube.redMinimum][position3][cube.blueMaximum] - moment4[cube.alphaMinimum][cube.redMaximum][position3][cube.blueMaximum] + moment4[cube.alphaMinimum][cube.redMinimum][position3][cube.blueMaximum] - (moment4[cube.alphaMaximum][cube.redMaximum][position3][cube.blueMinimum] - moment4[cube.alphaMaximum][cube.redMinimum][position3][cube.blueMinimum] - moment4[cube.alphaMinimum][cube.redMaximum][position3][cube.blueMinimum] + moment4[cube.alphaMinimum][cube.redMinimum][position3][cube.blueMinimum]);
             break;
           case _WuQuant._blue:
-            result = moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][position3] - moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][position3] - moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][position3] + moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][position3] - (moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][position3] - moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][position3] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][position3] + moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][position3]);
+            result = moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][position3] - moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][position3] - moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][position3] + moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][position3] - (moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][position3] - moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][position3] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][position3] + moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][position3]);
             break;
           default:
             throw new Error("impossible");
         }
         return result | 0;
       }
-      static _bottom(cube, direction, moment5) {
+      static _bottom(cube, direction, moment4) {
         switch (direction) {
           case _WuQuant._alpha:
-            return -moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] + moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            return -moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] + moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
           case _WuQuant._red:
-            return -moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] + moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] + moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            return -moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] + moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] + moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
           case _WuQuant._green:
-            return -moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] + moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] + moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            return -moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] + moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] + moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
           case _WuQuant._blue:
-            return -moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment5[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment5[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] - (-moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment5[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment5[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            return -moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment4[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment4[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] - (-moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment4[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment4[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
           default:
             return 0;
         }
@@ -45512,7 +45512,7 @@ __export(plugin_exports, {
   default: () => FileOrganizer
 });
 module.exports = __toCommonJS(plugin_exports);
-var import_obsidian35 = require("obsidian");
+var import_obsidian50 = require("obsidian");
 
 // services/logger.ts
 var LoggerService = class {
@@ -46286,6 +46286,18 @@ var LoaderCircle = createLucideIcon("LoaderCircle", [
   ["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]
 ]);
 
+// node_modules/lucide-react/dist/esm/icons/loader.js
+var Loader = createLucideIcon("Loader", [
+  ["path", { d: "M12 2v4", key: "3427ic" }],
+  ["path", { d: "m16.2 7.8 2.9-2.9", key: "r700ao" }],
+  ["path", { d: "M18 12h4", key: "wj9ykh" }],
+  ["path", { d: "m16.2 16.2 2.9 2.9", key: "1bxg5t" }],
+  ["path", { d: "M12 18v4", key: "jadmvz" }],
+  ["path", { d: "m4.9 19.1 2.9-2.9", key: "bwix9q" }],
+  ["path", { d: "M2 12h4", key: "j09sii" }],
+  ["path", { d: "m4.9 4.9 2.9 2.9", key: "giyufr" }]
+]);
+
 // node_modules/lucide-react/dist/esm/icons/mic.js
 var Mic = createLucideIcon("Mic", [
   ["path", { d: "M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z", key: "131961" }],
@@ -46296,6 +46308,12 @@ var Mic = createLucideIcon("Mic", [
 // node_modules/lucide-react/dist/esm/icons/play.js
 var Play = createLucideIcon("Play", [
   ["polygon", { points: "6 3 20 12 6 21 6 3", key: "1oa8hb" }]
+]);
+
+// node_modules/lucide-react/dist/esm/icons/plus.js
+var Plus = createLucideIcon("Plus", [
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "M12 5v14", key: "s699le" }]
 ]);
 
 // node_modules/lucide-react/dist/esm/icons/refresh-cw.js
@@ -46331,6 +46349,12 @@ var Sparkles = createLucideIcon("Sparkles", [
   ["path", { d: "M22 5h-4", key: "1gvqau" }],
   ["path", { d: "M4 17v2", key: "vumght" }],
   ["path", { d: "M5 18H3", key: "zchphs" }]
+]);
+
+// node_modules/lucide-react/dist/esm/icons/undo-2.js
+var Undo2 = createLucideIcon("Undo2", [
+  ["path", { d: "M9 14 4 9l5-5", key: "102s5s" }],
+  ["path", { d: "M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11", key: "f3b9sd" }]
 ]);
 
 // views/settings/file-config-tab.tsx
@@ -47203,6 +47227,9 @@ var ExperimentTab = ({ plugin }) => {
   const [enableDeepSearch, setEnableDeepSearch] = (0, import_react11.useState)(
     plugin.settings.enableDeepSearch
   );
+  const [showSyncTab, setShowSyncTab] = (0, import_react11.useState)(
+    plugin.settings.showSyncTab
+  );
   const handleToggleChange = async (value, setter, settingKey) => {
     setter(value);
     plugin.settings[settingKey] = value;
@@ -47332,7 +47359,23 @@ var ExperimentTab = ({ plugin }) => {
               onChange: (value) => handleToggleChange(value, setEnableFabric, "enableFabric")
             }
           ),
-          enableFabric && /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "ml-4 p-4 bg-[--background-primary-alt] rounded-lg border-l-2 border-[--text-accent]", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(FabricPromptManager, { plugin }) })
+          enableFabric && /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "ml-4 p-4 bg-[--background-primary-alt] rounded-lg border-l-2 border-[--text-accent]", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(FabricPromptManager, { plugin }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+            ToggleSetting3,
+            {
+              name: "Show Sync Tab (Advanced)",
+              description: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "space-y-2", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { children: "Enable the Sync tab in the Assistant sidebar for mobile app file synchronization." }),
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "mt-2 p-3 bg-[--background-secondary] rounded text-sm space-y-1", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-[--text-warning]", children: "\u26A0\uFE0F Advanced Feature" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-[--text-muted]", children: "This feature is designed for users of the Note Companion mobile app who want to sync files between mobile and desktop." }),
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-xs text-[--text-faint]", children: "Requires Note Companion mobile app setup" })
+                ] })
+              ] }),
+              value: showSyncTab,
+              onChange: (value) => handleToggleChange(value, setShowSyncTab, "showSyncTab")
+            }
+          )
         ] }) })
       ] })
     ] })
@@ -47425,8 +47468,8 @@ var FileOrganizerSettingTab = class extends import_obsidian5.PluginSettingTab {
 };
 
 // views/assistant/view.tsx
-var import_obsidian28 = require("obsidian");
-var React57 = __toESM(require_react());
+var import_obsidian43 = require("obsidian");
+var React70 = __toESM(require_react());
 var import_client2 = __toESM(require_client());
 
 // views/assistant/organizer/organizer.tsx
@@ -47434,11 +47477,2501 @@ var React22 = __toESM(require_react());
 var import_obsidian13 = require("obsidian");
 var import_lodash = __toESM(require_lodash());
 
+// ../../node_modules/clsx/dist/clsx.mjs
+function r(e2) {
+  var t2, f, n2 = "";
+  if ("string" == typeof e2 || "number" == typeof e2)
+    n2 += e2;
+  else if ("object" == typeof e2)
+    if (Array.isArray(e2)) {
+      var o = e2.length;
+      for (t2 = 0; t2 < o; t2++)
+        e2[t2] && (f = r(e2[t2])) && (n2 && (n2 += " "), n2 += f);
+    } else
+      for (f in e2)
+        e2[f] && (n2 && (n2 += " "), n2 += f);
+  return n2;
+}
+function clsx() {
+  for (var e2, t2, f = 0, n2 = "", o = arguments.length; f < o; f++)
+    (e2 = arguments[f]) && (t2 = r(e2)) && (n2 && (n2 += " "), n2 += t2);
+  return n2;
+}
+
+// ../../node_modules/tailwind-merge/dist/bundle-mjs.mjs
+var CLASS_PART_SEPARATOR = "-";
+var createClassGroupUtils = (config) => {
+  const classMap = createClassMap(config);
+  const {
+    conflictingClassGroups,
+    conflictingClassGroupModifiers
+  } = config;
+  const getClassGroupId = (className) => {
+    const classParts = className.split(CLASS_PART_SEPARATOR);
+    if (classParts[0] === "" && classParts.length !== 1) {
+      classParts.shift();
+    }
+    return getGroupRecursive(classParts, classMap) || getGroupIdForArbitraryProperty(className);
+  };
+  const getConflictingClassGroupIds = (classGroupId, hasPostfixModifier) => {
+    const conflicts = conflictingClassGroups[classGroupId] || [];
+    if (hasPostfixModifier && conflictingClassGroupModifiers[classGroupId]) {
+      return [...conflicts, ...conflictingClassGroupModifiers[classGroupId]];
+    }
+    return conflicts;
+  };
+  return {
+    getClassGroupId,
+    getConflictingClassGroupIds
+  };
+};
+var getGroupRecursive = (classParts, classPartObject) => {
+  var _a17;
+  if (classParts.length === 0) {
+    return classPartObject.classGroupId;
+  }
+  const currentClassPart = classParts[0];
+  const nextClassPartObject = classPartObject.nextPart.get(currentClassPart);
+  const classGroupFromNextClassPart = nextClassPartObject ? getGroupRecursive(classParts.slice(1), nextClassPartObject) : void 0;
+  if (classGroupFromNextClassPart) {
+    return classGroupFromNextClassPart;
+  }
+  if (classPartObject.validators.length === 0) {
+    return void 0;
+  }
+  const classRest = classParts.join(CLASS_PART_SEPARATOR);
+  return (_a17 = classPartObject.validators.find(({
+    validator: validator3
+  }) => validator3(classRest))) == null ? void 0 : _a17.classGroupId;
+};
+var arbitraryPropertyRegex = /^\[(.+)\]$/;
+var getGroupIdForArbitraryProperty = (className) => {
+  if (arbitraryPropertyRegex.test(className)) {
+    const arbitraryPropertyClassName = arbitraryPropertyRegex.exec(className)[1];
+    const property = arbitraryPropertyClassName == null ? void 0 : arbitraryPropertyClassName.substring(0, arbitraryPropertyClassName.indexOf(":"));
+    if (property) {
+      return "arbitrary.." + property;
+    }
+  }
+};
+var createClassMap = (config) => {
+  const {
+    theme,
+    prefix
+  } = config;
+  const classMap = {
+    nextPart: /* @__PURE__ */ new Map(),
+    validators: []
+  };
+  const prefixedClassGroupEntries = getPrefixedClassGroupEntries(Object.entries(config.classGroups), prefix);
+  prefixedClassGroupEntries.forEach(([classGroupId, classGroup]) => {
+    processClassesRecursively(classGroup, classMap, classGroupId, theme);
+  });
+  return classMap;
+};
+var processClassesRecursively = (classGroup, classPartObject, classGroupId, theme) => {
+  classGroup.forEach((classDefinition) => {
+    if (typeof classDefinition === "string") {
+      const classPartObjectToEdit = classDefinition === "" ? classPartObject : getPart(classPartObject, classDefinition);
+      classPartObjectToEdit.classGroupId = classGroupId;
+      return;
+    }
+    if (typeof classDefinition === "function") {
+      if (isThemeGetter(classDefinition)) {
+        processClassesRecursively(classDefinition(theme), classPartObject, classGroupId, theme);
+        return;
+      }
+      classPartObject.validators.push({
+        validator: classDefinition,
+        classGroupId
+      });
+      return;
+    }
+    Object.entries(classDefinition).forEach(([key, classGroup2]) => {
+      processClassesRecursively(classGroup2, getPart(classPartObject, key), classGroupId, theme);
+    });
+  });
+};
+var getPart = (classPartObject, path) => {
+  let currentClassPartObject = classPartObject;
+  path.split(CLASS_PART_SEPARATOR).forEach((pathPart) => {
+    if (!currentClassPartObject.nextPart.has(pathPart)) {
+      currentClassPartObject.nextPart.set(pathPart, {
+        nextPart: /* @__PURE__ */ new Map(),
+        validators: []
+      });
+    }
+    currentClassPartObject = currentClassPartObject.nextPart.get(pathPart);
+  });
+  return currentClassPartObject;
+};
+var isThemeGetter = (func) => func.isThemeGetter;
+var getPrefixedClassGroupEntries = (classGroupEntries, prefix) => {
+  if (!prefix) {
+    return classGroupEntries;
+  }
+  return classGroupEntries.map(([classGroupId, classGroup]) => {
+    const prefixedClassGroup = classGroup.map((classDefinition) => {
+      if (typeof classDefinition === "string") {
+        return prefix + classDefinition;
+      }
+      if (typeof classDefinition === "object") {
+        return Object.fromEntries(Object.entries(classDefinition).map(([key, value]) => [prefix + key, value]));
+      }
+      return classDefinition;
+    });
+    return [classGroupId, prefixedClassGroup];
+  });
+};
+var createLruCache = (maxCacheSize) => {
+  if (maxCacheSize < 1) {
+    return {
+      get: () => void 0,
+      set: () => {
+      }
+    };
+  }
+  let cacheSize = 0;
+  let cache2 = /* @__PURE__ */ new Map();
+  let previousCache = /* @__PURE__ */ new Map();
+  const update = (key, value) => {
+    cache2.set(key, value);
+    cacheSize++;
+    if (cacheSize > maxCacheSize) {
+      cacheSize = 0;
+      previousCache = cache2;
+      cache2 = /* @__PURE__ */ new Map();
+    }
+  };
+  return {
+    get(key) {
+      let value = cache2.get(key);
+      if (value !== void 0) {
+        return value;
+      }
+      if ((value = previousCache.get(key)) !== void 0) {
+        update(key, value);
+        return value;
+      }
+    },
+    set(key, value) {
+      if (cache2.has(key)) {
+        cache2.set(key, value);
+      } else {
+        update(key, value);
+      }
+    }
+  };
+};
+var IMPORTANT_MODIFIER = "!";
+var createParseClassName = (config) => {
+  const {
+    separator,
+    experimentalParseClassName
+  } = config;
+  const isSeparatorSingleCharacter = separator.length === 1;
+  const firstSeparatorCharacter = separator[0];
+  const separatorLength = separator.length;
+  const parseClassName = (className) => {
+    const modifiers2 = [];
+    let bracketDepth = 0;
+    let modifierStart = 0;
+    let postfixModifierPosition;
+    for (let index2 = 0; index2 < className.length; index2++) {
+      let currentCharacter = className[index2];
+      if (bracketDepth === 0) {
+        if (currentCharacter === firstSeparatorCharacter && (isSeparatorSingleCharacter || className.slice(index2, index2 + separatorLength) === separator)) {
+          modifiers2.push(className.slice(modifierStart, index2));
+          modifierStart = index2 + separatorLength;
+          continue;
+        }
+        if (currentCharacter === "/") {
+          postfixModifierPosition = index2;
+          continue;
+        }
+      }
+      if (currentCharacter === "[") {
+        bracketDepth++;
+      } else if (currentCharacter === "]") {
+        bracketDepth--;
+      }
+    }
+    const baseClassNameWithImportantModifier = modifiers2.length === 0 ? className : className.substring(modifierStart);
+    const hasImportantModifier = baseClassNameWithImportantModifier.startsWith(IMPORTANT_MODIFIER);
+    const baseClassName = hasImportantModifier ? baseClassNameWithImportantModifier.substring(1) : baseClassNameWithImportantModifier;
+    const maybePostfixModifierPosition = postfixModifierPosition && postfixModifierPosition > modifierStart ? postfixModifierPosition - modifierStart : void 0;
+    return {
+      modifiers: modifiers2,
+      hasImportantModifier,
+      baseClassName,
+      maybePostfixModifierPosition
+    };
+  };
+  if (experimentalParseClassName) {
+    return (className) => experimentalParseClassName({
+      className,
+      parseClassName
+    });
+  }
+  return parseClassName;
+};
+var sortModifiers = (modifiers2) => {
+  if (modifiers2.length <= 1) {
+    return modifiers2;
+  }
+  const sortedModifiers = [];
+  let unsortedModifiers = [];
+  modifiers2.forEach((modifier) => {
+    const isArbitraryVariant = modifier[0] === "[";
+    if (isArbitraryVariant) {
+      sortedModifiers.push(...unsortedModifiers.sort(), modifier);
+      unsortedModifiers = [];
+    } else {
+      unsortedModifiers.push(modifier);
+    }
+  });
+  sortedModifiers.push(...unsortedModifiers.sort());
+  return sortedModifiers;
+};
+var createConfigUtils = (config) => ({
+  cache: createLruCache(config.cacheSize),
+  parseClassName: createParseClassName(config),
+  ...createClassGroupUtils(config)
+});
+var SPLIT_CLASSES_REGEX = /\s+/;
+var mergeClassList = (classList, configUtils) => {
+  const {
+    parseClassName,
+    getClassGroupId,
+    getConflictingClassGroupIds
+  } = configUtils;
+  const classGroupsInConflict = [];
+  const classNames = classList.trim().split(SPLIT_CLASSES_REGEX);
+  let result = "";
+  for (let index2 = classNames.length - 1; index2 >= 0; index2 -= 1) {
+    const originalClassName = classNames[index2];
+    const {
+      modifiers: modifiers2,
+      hasImportantModifier,
+      baseClassName,
+      maybePostfixModifierPosition
+    } = parseClassName(originalClassName);
+    let hasPostfixModifier = Boolean(maybePostfixModifierPosition);
+    let classGroupId = getClassGroupId(hasPostfixModifier ? baseClassName.substring(0, maybePostfixModifierPosition) : baseClassName);
+    if (!classGroupId) {
+      if (!hasPostfixModifier) {
+        result = originalClassName + (result.length > 0 ? " " + result : result);
+        continue;
+      }
+      classGroupId = getClassGroupId(baseClassName);
+      if (!classGroupId) {
+        result = originalClassName + (result.length > 0 ? " " + result : result);
+        continue;
+      }
+      hasPostfixModifier = false;
+    }
+    const variantModifier = sortModifiers(modifiers2).join(":");
+    const modifierId = hasImportantModifier ? variantModifier + IMPORTANT_MODIFIER : variantModifier;
+    const classId = modifierId + classGroupId;
+    if (classGroupsInConflict.includes(classId)) {
+      continue;
+    }
+    classGroupsInConflict.push(classId);
+    const conflictGroups = getConflictingClassGroupIds(classGroupId, hasPostfixModifier);
+    for (let i = 0; i < conflictGroups.length; ++i) {
+      const group = conflictGroups[i];
+      classGroupsInConflict.push(modifierId + group);
+    }
+    result = originalClassName + (result.length > 0 ? " " + result : result);
+  }
+  return result;
+};
+function twJoin() {
+  let index2 = 0;
+  let argument;
+  let resolvedValue;
+  let string3 = "";
+  while (index2 < arguments.length) {
+    if (argument = arguments[index2++]) {
+      if (resolvedValue = toValue(argument)) {
+        string3 && (string3 += " ");
+        string3 += resolvedValue;
+      }
+    }
+  }
+  return string3;
+}
+var toValue = (mix3) => {
+  if (typeof mix3 === "string") {
+    return mix3;
+  }
+  let resolvedValue;
+  let string3 = "";
+  for (let k = 0; k < mix3.length; k++) {
+    if (mix3[k]) {
+      if (resolvedValue = toValue(mix3[k])) {
+        string3 && (string3 += " ");
+        string3 += resolvedValue;
+      }
+    }
+  }
+  return string3;
+};
+function createTailwindMerge(createConfigFirst, ...createConfigRest) {
+  let configUtils;
+  let cacheGet;
+  let cacheSet;
+  let functionToCall = initTailwindMerge;
+  function initTailwindMerge(classList) {
+    const config = createConfigRest.reduce((previousConfig, createConfigCurrent) => createConfigCurrent(previousConfig), createConfigFirst());
+    configUtils = createConfigUtils(config);
+    cacheGet = configUtils.cache.get;
+    cacheSet = configUtils.cache.set;
+    functionToCall = tailwindMerge;
+    return tailwindMerge(classList);
+  }
+  function tailwindMerge(classList) {
+    const cachedResult2 = cacheGet(classList);
+    if (cachedResult2) {
+      return cachedResult2;
+    }
+    const result = mergeClassList(classList, configUtils);
+    cacheSet(classList, result);
+    return result;
+  }
+  return function callTailwindMerge() {
+    return functionToCall(twJoin.apply(null, arguments));
+  };
+}
+var fromTheme = (key) => {
+  const themeGetter = (theme) => theme[key] || [];
+  themeGetter.isThemeGetter = true;
+  return themeGetter;
+};
+var arbitraryValueRegex = /^\[(?:([a-z-]+):)?(.+)\]$/i;
+var fractionRegex = /^\d+\/\d+$/;
+var stringLengths = /* @__PURE__ */ new Set(["px", "full", "screen"]);
+var tshirtUnitRegex = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/;
+var lengthUnitRegex = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/;
+var colorFunctionRegex = /^(rgba?|hsla?|hwb|(ok)?(lab|lch))\(.+\)$/;
+var shadowRegex = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/;
+var imageRegex = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/;
+var isLength = (value) => isNumber(value) || stringLengths.has(value) || fractionRegex.test(value);
+var isArbitraryLength = (value) => getIsArbitraryValue(value, "length", isLengthOnly);
+var isNumber = (value) => Boolean(value) && !Number.isNaN(Number(value));
+var isArbitraryNumber = (value) => getIsArbitraryValue(value, "number", isNumber);
+var isInteger = (value) => Boolean(value) && Number.isInteger(Number(value));
+var isPercent = (value) => value.endsWith("%") && isNumber(value.slice(0, -1));
+var isArbitraryValue = (value) => arbitraryValueRegex.test(value);
+var isTshirtSize = (value) => tshirtUnitRegex.test(value);
+var sizeLabels = /* @__PURE__ */ new Set(["length", "size", "percentage"]);
+var isArbitrarySize = (value) => getIsArbitraryValue(value, sizeLabels, isNever);
+var isArbitraryPosition = (value) => getIsArbitraryValue(value, "position", isNever);
+var imageLabels = /* @__PURE__ */ new Set(["image", "url"]);
+var isArbitraryImage = (value) => getIsArbitraryValue(value, imageLabels, isImage);
+var isArbitraryShadow = (value) => getIsArbitraryValue(value, "", isShadow);
+var isAny = () => true;
+var getIsArbitraryValue = (value, label, testValue) => {
+  const result = arbitraryValueRegex.exec(value);
+  if (result) {
+    if (result[1]) {
+      return typeof label === "string" ? result[1] === label : label.has(result[1]);
+    }
+    return testValue(result[2]);
+  }
+  return false;
+};
+var isLengthOnly = (value) => (
+  // `colorFunctionRegex` check is necessary because color functions can have percentages in them which which would be incorrectly classified as lengths.
+  // For example, `hsl(0 0% 0%)` would be classified as a length without this check.
+  // I could also use lookbehind assertion in `lengthUnitRegex` but that isn't supported widely enough.
+  lengthUnitRegex.test(value) && !colorFunctionRegex.test(value)
+);
+var isNever = () => false;
+var isShadow = (value) => shadowRegex.test(value);
+var isImage = (value) => imageRegex.test(value);
+var getDefaultConfig = () => {
+  const colors = fromTheme("colors");
+  const spacing = fromTheme("spacing");
+  const blur2 = fromTheme("blur");
+  const brightness = fromTheme("brightness");
+  const borderColor = fromTheme("borderColor");
+  const borderRadius = fromTheme("borderRadius");
+  const borderSpacing = fromTheme("borderSpacing");
+  const borderWidth = fromTheme("borderWidth");
+  const contrast = fromTheme("contrast");
+  const grayscale = fromTheme("grayscale");
+  const hueRotate = fromTheme("hueRotate");
+  const invert = fromTheme("invert");
+  const gap = fromTheme("gap");
+  const gradientColorStops = fromTheme("gradientColorStops");
+  const gradientColorStopPositions = fromTheme("gradientColorStopPositions");
+  const inset = fromTheme("inset");
+  const margin = fromTheme("margin");
+  const opacity = fromTheme("opacity");
+  const padding = fromTheme("padding");
+  const saturate2 = fromTheme("saturate");
+  const scale2 = fromTheme("scale");
+  const sepia = fromTheme("sepia");
+  const skew = fromTheme("skew");
+  const space2 = fromTheme("space");
+  const translate = fromTheme("translate");
+  const getOverscroll = () => ["auto", "contain", "none"];
+  const getOverflow = () => ["auto", "hidden", "clip", "visible", "scroll"];
+  const getSpacingWithAutoAndArbitrary = () => ["auto", isArbitraryValue, spacing];
+  const getSpacingWithArbitrary = () => [isArbitraryValue, spacing];
+  const getLengthWithEmptyAndArbitrary = () => ["", isLength, isArbitraryLength];
+  const getNumberWithAutoAndArbitrary = () => ["auto", isNumber, isArbitraryValue];
+  const getPositions = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"];
+  const getLineStyles = () => ["solid", "dashed", "dotted", "double", "none"];
+  const getBlendModes = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"];
+  const getAlign = () => ["start", "end", "center", "between", "around", "evenly", "stretch"];
+  const getZeroAndEmpty = () => ["", "0", isArbitraryValue];
+  const getBreaks = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"];
+  const getNumberAndArbitrary = () => [isNumber, isArbitraryValue];
+  return {
+    cacheSize: 500,
+    separator: ":",
+    theme: {
+      colors: [isAny],
+      spacing: [isLength, isArbitraryLength],
+      blur: ["none", "", isTshirtSize, isArbitraryValue],
+      brightness: getNumberAndArbitrary(),
+      borderColor: [colors],
+      borderRadius: ["none", "", "full", isTshirtSize, isArbitraryValue],
+      borderSpacing: getSpacingWithArbitrary(),
+      borderWidth: getLengthWithEmptyAndArbitrary(),
+      contrast: getNumberAndArbitrary(),
+      grayscale: getZeroAndEmpty(),
+      hueRotate: getNumberAndArbitrary(),
+      invert: getZeroAndEmpty(),
+      gap: getSpacingWithArbitrary(),
+      gradientColorStops: [colors],
+      gradientColorStopPositions: [isPercent, isArbitraryLength],
+      inset: getSpacingWithAutoAndArbitrary(),
+      margin: getSpacingWithAutoAndArbitrary(),
+      opacity: getNumberAndArbitrary(),
+      padding: getSpacingWithArbitrary(),
+      saturate: getNumberAndArbitrary(),
+      scale: getNumberAndArbitrary(),
+      sepia: getZeroAndEmpty(),
+      skew: getNumberAndArbitrary(),
+      space: getSpacingWithArbitrary(),
+      translate: getSpacingWithArbitrary()
+    },
+    classGroups: {
+      // Layout
+      /**
+       * Aspect Ratio
+       * @see https://tailwindcss.com/docs/aspect-ratio
+       */
+      aspect: [{
+        aspect: ["auto", "square", "video", isArbitraryValue]
+      }],
+      /**
+       * Container
+       * @see https://tailwindcss.com/docs/container
+       */
+      container: ["container"],
+      /**
+       * Columns
+       * @see https://tailwindcss.com/docs/columns
+       */
+      columns: [{
+        columns: [isTshirtSize]
+      }],
+      /**
+       * Break After
+       * @see https://tailwindcss.com/docs/break-after
+       */
+      "break-after": [{
+        "break-after": getBreaks()
+      }],
+      /**
+       * Break Before
+       * @see https://tailwindcss.com/docs/break-before
+       */
+      "break-before": [{
+        "break-before": getBreaks()
+      }],
+      /**
+       * Break Inside
+       * @see https://tailwindcss.com/docs/break-inside
+       */
+      "break-inside": [{
+        "break-inside": ["auto", "avoid", "avoid-page", "avoid-column"]
+      }],
+      /**
+       * Box Decoration Break
+       * @see https://tailwindcss.com/docs/box-decoration-break
+       */
+      "box-decoration": [{
+        "box-decoration": ["slice", "clone"]
+      }],
+      /**
+       * Box Sizing
+       * @see https://tailwindcss.com/docs/box-sizing
+       */
+      box: [{
+        box: ["border", "content"]
+      }],
+      /**
+       * Display
+       * @see https://tailwindcss.com/docs/display
+       */
+      display: ["block", "inline-block", "inline", "flex", "inline-flex", "table", "inline-table", "table-caption", "table-cell", "table-column", "table-column-group", "table-footer-group", "table-header-group", "table-row-group", "table-row", "flow-root", "grid", "inline-grid", "contents", "list-item", "hidden"],
+      /**
+       * Floats
+       * @see https://tailwindcss.com/docs/float
+       */
+      float: [{
+        float: ["right", "left", "none", "start", "end"]
+      }],
+      /**
+       * Clear
+       * @see https://tailwindcss.com/docs/clear
+       */
+      clear: [{
+        clear: ["left", "right", "both", "none", "start", "end"]
+      }],
+      /**
+       * Isolation
+       * @see https://tailwindcss.com/docs/isolation
+       */
+      isolation: ["isolate", "isolation-auto"],
+      /**
+       * Object Fit
+       * @see https://tailwindcss.com/docs/object-fit
+       */
+      "object-fit": [{
+        object: ["contain", "cover", "fill", "none", "scale-down"]
+      }],
+      /**
+       * Object Position
+       * @see https://tailwindcss.com/docs/object-position
+       */
+      "object-position": [{
+        object: [...getPositions(), isArbitraryValue]
+      }],
+      /**
+       * Overflow
+       * @see https://tailwindcss.com/docs/overflow
+       */
+      overflow: [{
+        overflow: getOverflow()
+      }],
+      /**
+       * Overflow X
+       * @see https://tailwindcss.com/docs/overflow
+       */
+      "overflow-x": [{
+        "overflow-x": getOverflow()
+      }],
+      /**
+       * Overflow Y
+       * @see https://tailwindcss.com/docs/overflow
+       */
+      "overflow-y": [{
+        "overflow-y": getOverflow()
+      }],
+      /**
+       * Overscroll Behavior
+       * @see https://tailwindcss.com/docs/overscroll-behavior
+       */
+      overscroll: [{
+        overscroll: getOverscroll()
+      }],
+      /**
+       * Overscroll Behavior X
+       * @see https://tailwindcss.com/docs/overscroll-behavior
+       */
+      "overscroll-x": [{
+        "overscroll-x": getOverscroll()
+      }],
+      /**
+       * Overscroll Behavior Y
+       * @see https://tailwindcss.com/docs/overscroll-behavior
+       */
+      "overscroll-y": [{
+        "overscroll-y": getOverscroll()
+      }],
+      /**
+       * Position
+       * @see https://tailwindcss.com/docs/position
+       */
+      position: ["static", "fixed", "absolute", "relative", "sticky"],
+      /**
+       * Top / Right / Bottom / Left
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      inset: [{
+        inset: [inset]
+      }],
+      /**
+       * Right / Left
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      "inset-x": [{
+        "inset-x": [inset]
+      }],
+      /**
+       * Top / Bottom
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      "inset-y": [{
+        "inset-y": [inset]
+      }],
+      /**
+       * Start
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      start: [{
+        start: [inset]
+      }],
+      /**
+       * End
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      end: [{
+        end: [inset]
+      }],
+      /**
+       * Top
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      top: [{
+        top: [inset]
+      }],
+      /**
+       * Right
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      right: [{
+        right: [inset]
+      }],
+      /**
+       * Bottom
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      bottom: [{
+        bottom: [inset]
+      }],
+      /**
+       * Left
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */
+      left: [{
+        left: [inset]
+      }],
+      /**
+       * Visibility
+       * @see https://tailwindcss.com/docs/visibility
+       */
+      visibility: ["visible", "invisible", "collapse"],
+      /**
+       * Z-Index
+       * @see https://tailwindcss.com/docs/z-index
+       */
+      z: [{
+        z: ["auto", isInteger, isArbitraryValue]
+      }],
+      // Flexbox and Grid
+      /**
+       * Flex Basis
+       * @see https://tailwindcss.com/docs/flex-basis
+       */
+      basis: [{
+        basis: getSpacingWithAutoAndArbitrary()
+      }],
+      /**
+       * Flex Direction
+       * @see https://tailwindcss.com/docs/flex-direction
+       */
+      "flex-direction": [{
+        flex: ["row", "row-reverse", "col", "col-reverse"]
+      }],
+      /**
+       * Flex Wrap
+       * @see https://tailwindcss.com/docs/flex-wrap
+       */
+      "flex-wrap": [{
+        flex: ["wrap", "wrap-reverse", "nowrap"]
+      }],
+      /**
+       * Flex
+       * @see https://tailwindcss.com/docs/flex
+       */
+      flex: [{
+        flex: ["1", "auto", "initial", "none", isArbitraryValue]
+      }],
+      /**
+       * Flex Grow
+       * @see https://tailwindcss.com/docs/flex-grow
+       */
+      grow: [{
+        grow: getZeroAndEmpty()
+      }],
+      /**
+       * Flex Shrink
+       * @see https://tailwindcss.com/docs/flex-shrink
+       */
+      shrink: [{
+        shrink: getZeroAndEmpty()
+      }],
+      /**
+       * Order
+       * @see https://tailwindcss.com/docs/order
+       */
+      order: [{
+        order: ["first", "last", "none", isInteger, isArbitraryValue]
+      }],
+      /**
+       * Grid Template Columns
+       * @see https://tailwindcss.com/docs/grid-template-columns
+       */
+      "grid-cols": [{
+        "grid-cols": [isAny]
+      }],
+      /**
+       * Grid Column Start / End
+       * @see https://tailwindcss.com/docs/grid-column
+       */
+      "col-start-end": [{
+        col: ["auto", {
+          span: ["full", isInteger, isArbitraryValue]
+        }, isArbitraryValue]
+      }],
+      /**
+       * Grid Column Start
+       * @see https://tailwindcss.com/docs/grid-column
+       */
+      "col-start": [{
+        "col-start": getNumberWithAutoAndArbitrary()
+      }],
+      /**
+       * Grid Column End
+       * @see https://tailwindcss.com/docs/grid-column
+       */
+      "col-end": [{
+        "col-end": getNumberWithAutoAndArbitrary()
+      }],
+      /**
+       * Grid Template Rows
+       * @see https://tailwindcss.com/docs/grid-template-rows
+       */
+      "grid-rows": [{
+        "grid-rows": [isAny]
+      }],
+      /**
+       * Grid Row Start / End
+       * @see https://tailwindcss.com/docs/grid-row
+       */
+      "row-start-end": [{
+        row: ["auto", {
+          span: [isInteger, isArbitraryValue]
+        }, isArbitraryValue]
+      }],
+      /**
+       * Grid Row Start
+       * @see https://tailwindcss.com/docs/grid-row
+       */
+      "row-start": [{
+        "row-start": getNumberWithAutoAndArbitrary()
+      }],
+      /**
+       * Grid Row End
+       * @see https://tailwindcss.com/docs/grid-row
+       */
+      "row-end": [{
+        "row-end": getNumberWithAutoAndArbitrary()
+      }],
+      /**
+       * Grid Auto Flow
+       * @see https://tailwindcss.com/docs/grid-auto-flow
+       */
+      "grid-flow": [{
+        "grid-flow": ["row", "col", "dense", "row-dense", "col-dense"]
+      }],
+      /**
+       * Grid Auto Columns
+       * @see https://tailwindcss.com/docs/grid-auto-columns
+       */
+      "auto-cols": [{
+        "auto-cols": ["auto", "min", "max", "fr", isArbitraryValue]
+      }],
+      /**
+       * Grid Auto Rows
+       * @see https://tailwindcss.com/docs/grid-auto-rows
+       */
+      "auto-rows": [{
+        "auto-rows": ["auto", "min", "max", "fr", isArbitraryValue]
+      }],
+      /**
+       * Gap
+       * @see https://tailwindcss.com/docs/gap
+       */
+      gap: [{
+        gap: [gap]
+      }],
+      /**
+       * Gap X
+       * @see https://tailwindcss.com/docs/gap
+       */
+      "gap-x": [{
+        "gap-x": [gap]
+      }],
+      /**
+       * Gap Y
+       * @see https://tailwindcss.com/docs/gap
+       */
+      "gap-y": [{
+        "gap-y": [gap]
+      }],
+      /**
+       * Justify Content
+       * @see https://tailwindcss.com/docs/justify-content
+       */
+      "justify-content": [{
+        justify: ["normal", ...getAlign()]
+      }],
+      /**
+       * Justify Items
+       * @see https://tailwindcss.com/docs/justify-items
+       */
+      "justify-items": [{
+        "justify-items": ["start", "end", "center", "stretch"]
+      }],
+      /**
+       * Justify Self
+       * @see https://tailwindcss.com/docs/justify-self
+       */
+      "justify-self": [{
+        "justify-self": ["auto", "start", "end", "center", "stretch"]
+      }],
+      /**
+       * Align Content
+       * @see https://tailwindcss.com/docs/align-content
+       */
+      "align-content": [{
+        content: ["normal", ...getAlign(), "baseline"]
+      }],
+      /**
+       * Align Items
+       * @see https://tailwindcss.com/docs/align-items
+       */
+      "align-items": [{
+        items: ["start", "end", "center", "baseline", "stretch"]
+      }],
+      /**
+       * Align Self
+       * @see https://tailwindcss.com/docs/align-self
+       */
+      "align-self": [{
+        self: ["auto", "start", "end", "center", "stretch", "baseline"]
+      }],
+      /**
+       * Place Content
+       * @see https://tailwindcss.com/docs/place-content
+       */
+      "place-content": [{
+        "place-content": [...getAlign(), "baseline"]
+      }],
+      /**
+       * Place Items
+       * @see https://tailwindcss.com/docs/place-items
+       */
+      "place-items": [{
+        "place-items": ["start", "end", "center", "baseline", "stretch"]
+      }],
+      /**
+       * Place Self
+       * @see https://tailwindcss.com/docs/place-self
+       */
+      "place-self": [{
+        "place-self": ["auto", "start", "end", "center", "stretch"]
+      }],
+      // Spacing
+      /**
+       * Padding
+       * @see https://tailwindcss.com/docs/padding
+       */
+      p: [{
+        p: [padding]
+      }],
+      /**
+       * Padding X
+       * @see https://tailwindcss.com/docs/padding
+       */
+      px: [{
+        px: [padding]
+      }],
+      /**
+       * Padding Y
+       * @see https://tailwindcss.com/docs/padding
+       */
+      py: [{
+        py: [padding]
+      }],
+      /**
+       * Padding Start
+       * @see https://tailwindcss.com/docs/padding
+       */
+      ps: [{
+        ps: [padding]
+      }],
+      /**
+       * Padding End
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pe: [{
+        pe: [padding]
+      }],
+      /**
+       * Padding Top
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pt: [{
+        pt: [padding]
+      }],
+      /**
+       * Padding Right
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pr: [{
+        pr: [padding]
+      }],
+      /**
+       * Padding Bottom
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pb: [{
+        pb: [padding]
+      }],
+      /**
+       * Padding Left
+       * @see https://tailwindcss.com/docs/padding
+       */
+      pl: [{
+        pl: [padding]
+      }],
+      /**
+       * Margin
+       * @see https://tailwindcss.com/docs/margin
+       */
+      m: [{
+        m: [margin]
+      }],
+      /**
+       * Margin X
+       * @see https://tailwindcss.com/docs/margin
+       */
+      mx: [{
+        mx: [margin]
+      }],
+      /**
+       * Margin Y
+       * @see https://tailwindcss.com/docs/margin
+       */
+      my: [{
+        my: [margin]
+      }],
+      /**
+       * Margin Start
+       * @see https://tailwindcss.com/docs/margin
+       */
+      ms: [{
+        ms: [margin]
+      }],
+      /**
+       * Margin End
+       * @see https://tailwindcss.com/docs/margin
+       */
+      me: [{
+        me: [margin]
+      }],
+      /**
+       * Margin Top
+       * @see https://tailwindcss.com/docs/margin
+       */
+      mt: [{
+        mt: [margin]
+      }],
+      /**
+       * Margin Right
+       * @see https://tailwindcss.com/docs/margin
+       */
+      mr: [{
+        mr: [margin]
+      }],
+      /**
+       * Margin Bottom
+       * @see https://tailwindcss.com/docs/margin
+       */
+      mb: [{
+        mb: [margin]
+      }],
+      /**
+       * Margin Left
+       * @see https://tailwindcss.com/docs/margin
+       */
+      ml: [{
+        ml: [margin]
+      }],
+      /**
+       * Space Between X
+       * @see https://tailwindcss.com/docs/space
+       */
+      "space-x": [{
+        "space-x": [space2]
+      }],
+      /**
+       * Space Between X Reverse
+       * @see https://tailwindcss.com/docs/space
+       */
+      "space-x-reverse": ["space-x-reverse"],
+      /**
+       * Space Between Y
+       * @see https://tailwindcss.com/docs/space
+       */
+      "space-y": [{
+        "space-y": [space2]
+      }],
+      /**
+       * Space Between Y Reverse
+       * @see https://tailwindcss.com/docs/space
+       */
+      "space-y-reverse": ["space-y-reverse"],
+      // Sizing
+      /**
+       * Width
+       * @see https://tailwindcss.com/docs/width
+       */
+      w: [{
+        w: ["auto", "min", "max", "fit", "svw", "lvw", "dvw", isArbitraryValue, spacing]
+      }],
+      /**
+       * Min-Width
+       * @see https://tailwindcss.com/docs/min-width
+       */
+      "min-w": [{
+        "min-w": [isArbitraryValue, spacing, "min", "max", "fit"]
+      }],
+      /**
+       * Max-Width
+       * @see https://tailwindcss.com/docs/max-width
+       */
+      "max-w": [{
+        "max-w": [isArbitraryValue, spacing, "none", "full", "min", "max", "fit", "prose", {
+          screen: [isTshirtSize]
+        }, isTshirtSize]
+      }],
+      /**
+       * Height
+       * @see https://tailwindcss.com/docs/height
+       */
+      h: [{
+        h: [isArbitraryValue, spacing, "auto", "min", "max", "fit", "svh", "lvh", "dvh"]
+      }],
+      /**
+       * Min-Height
+       * @see https://tailwindcss.com/docs/min-height
+       */
+      "min-h": [{
+        "min-h": [isArbitraryValue, spacing, "min", "max", "fit", "svh", "lvh", "dvh"]
+      }],
+      /**
+       * Max-Height
+       * @see https://tailwindcss.com/docs/max-height
+       */
+      "max-h": [{
+        "max-h": [isArbitraryValue, spacing, "min", "max", "fit", "svh", "lvh", "dvh"]
+      }],
+      /**
+       * Size
+       * @see https://tailwindcss.com/docs/size
+       */
+      size: [{
+        size: [isArbitraryValue, spacing, "auto", "min", "max", "fit"]
+      }],
+      // Typography
+      /**
+       * Font Size
+       * @see https://tailwindcss.com/docs/font-size
+       */
+      "font-size": [{
+        text: ["base", isTshirtSize, isArbitraryLength]
+      }],
+      /**
+       * Font Smoothing
+       * @see https://tailwindcss.com/docs/font-smoothing
+       */
+      "font-smoothing": ["antialiased", "subpixel-antialiased"],
+      /**
+       * Font Style
+       * @see https://tailwindcss.com/docs/font-style
+       */
+      "font-style": ["italic", "not-italic"],
+      /**
+       * Font Weight
+       * @see https://tailwindcss.com/docs/font-weight
+       */
+      "font-weight": [{
+        font: ["thin", "extralight", "light", "normal", "medium", "semibold", "bold", "extrabold", "black", isArbitraryNumber]
+      }],
+      /**
+       * Font Family
+       * @see https://tailwindcss.com/docs/font-family
+       */
+      "font-family": [{
+        font: [isAny]
+      }],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-normal": ["normal-nums"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-ordinal": ["ordinal"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-slashed-zero": ["slashed-zero"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-figure": ["lining-nums", "oldstyle-nums"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-spacing": ["proportional-nums", "tabular-nums"],
+      /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */
+      "fvn-fraction": ["diagonal-fractions", "stacked-fractions"],
+      /**
+       * Letter Spacing
+       * @see https://tailwindcss.com/docs/letter-spacing
+       */
+      tracking: [{
+        tracking: ["tighter", "tight", "normal", "wide", "wider", "widest", isArbitraryValue]
+      }],
+      /**
+       * Line Clamp
+       * @see https://tailwindcss.com/docs/line-clamp
+       */
+      "line-clamp": [{
+        "line-clamp": ["none", isNumber, isArbitraryNumber]
+      }],
+      /**
+       * Line Height
+       * @see https://tailwindcss.com/docs/line-height
+       */
+      leading: [{
+        leading: ["none", "tight", "snug", "normal", "relaxed", "loose", isLength, isArbitraryValue]
+      }],
+      /**
+       * List Style Image
+       * @see https://tailwindcss.com/docs/list-style-image
+       */
+      "list-image": [{
+        "list-image": ["none", isArbitraryValue]
+      }],
+      /**
+       * List Style Type
+       * @see https://tailwindcss.com/docs/list-style-type
+       */
+      "list-style-type": [{
+        list: ["none", "disc", "decimal", isArbitraryValue]
+      }],
+      /**
+       * List Style Position
+       * @see https://tailwindcss.com/docs/list-style-position
+       */
+      "list-style-position": [{
+        list: ["inside", "outside"]
+      }],
+      /**
+       * Placeholder Color
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/placeholder-color
+       */
+      "placeholder-color": [{
+        placeholder: [colors]
+      }],
+      /**
+       * Placeholder Opacity
+       * @see https://tailwindcss.com/docs/placeholder-opacity
+       */
+      "placeholder-opacity": [{
+        "placeholder-opacity": [opacity]
+      }],
+      /**
+       * Text Alignment
+       * @see https://tailwindcss.com/docs/text-align
+       */
+      "text-alignment": [{
+        text: ["left", "center", "right", "justify", "start", "end"]
+      }],
+      /**
+       * Text Color
+       * @see https://tailwindcss.com/docs/text-color
+       */
+      "text-color": [{
+        text: [colors]
+      }],
+      /**
+       * Text Opacity
+       * @see https://tailwindcss.com/docs/text-opacity
+       */
+      "text-opacity": [{
+        "text-opacity": [opacity]
+      }],
+      /**
+       * Text Decoration
+       * @see https://tailwindcss.com/docs/text-decoration
+       */
+      "text-decoration": ["underline", "overline", "line-through", "no-underline"],
+      /**
+       * Text Decoration Style
+       * @see https://tailwindcss.com/docs/text-decoration-style
+       */
+      "text-decoration-style": [{
+        decoration: [...getLineStyles(), "wavy"]
+      }],
+      /**
+       * Text Decoration Thickness
+       * @see https://tailwindcss.com/docs/text-decoration-thickness
+       */
+      "text-decoration-thickness": [{
+        decoration: ["auto", "from-font", isLength, isArbitraryLength]
+      }],
+      /**
+       * Text Underline Offset
+       * @see https://tailwindcss.com/docs/text-underline-offset
+       */
+      "underline-offset": [{
+        "underline-offset": ["auto", isLength, isArbitraryValue]
+      }],
+      /**
+       * Text Decoration Color
+       * @see https://tailwindcss.com/docs/text-decoration-color
+       */
+      "text-decoration-color": [{
+        decoration: [colors]
+      }],
+      /**
+       * Text Transform
+       * @see https://tailwindcss.com/docs/text-transform
+       */
+      "text-transform": ["uppercase", "lowercase", "capitalize", "normal-case"],
+      /**
+       * Text Overflow
+       * @see https://tailwindcss.com/docs/text-overflow
+       */
+      "text-overflow": ["truncate", "text-ellipsis", "text-clip"],
+      /**
+       * Text Wrap
+       * @see https://tailwindcss.com/docs/text-wrap
+       */
+      "text-wrap": [{
+        text: ["wrap", "nowrap", "balance", "pretty"]
+      }],
+      /**
+       * Text Indent
+       * @see https://tailwindcss.com/docs/text-indent
+       */
+      indent: [{
+        indent: getSpacingWithArbitrary()
+      }],
+      /**
+       * Vertical Alignment
+       * @see https://tailwindcss.com/docs/vertical-align
+       */
+      "vertical-align": [{
+        align: ["baseline", "top", "middle", "bottom", "text-top", "text-bottom", "sub", "super", isArbitraryValue]
+      }],
+      /**
+       * Whitespace
+       * @see https://tailwindcss.com/docs/whitespace
+       */
+      whitespace: [{
+        whitespace: ["normal", "nowrap", "pre", "pre-line", "pre-wrap", "break-spaces"]
+      }],
+      /**
+       * Word Break
+       * @see https://tailwindcss.com/docs/word-break
+       */
+      break: [{
+        break: ["normal", "words", "all", "keep"]
+      }],
+      /**
+       * Hyphens
+       * @see https://tailwindcss.com/docs/hyphens
+       */
+      hyphens: [{
+        hyphens: ["none", "manual", "auto"]
+      }],
+      /**
+       * Content
+       * @see https://tailwindcss.com/docs/content
+       */
+      content: [{
+        content: ["none", isArbitraryValue]
+      }],
+      // Backgrounds
+      /**
+       * Background Attachment
+       * @see https://tailwindcss.com/docs/background-attachment
+       */
+      "bg-attachment": [{
+        bg: ["fixed", "local", "scroll"]
+      }],
+      /**
+       * Background Clip
+       * @see https://tailwindcss.com/docs/background-clip
+       */
+      "bg-clip": [{
+        "bg-clip": ["border", "padding", "content", "text"]
+      }],
+      /**
+       * Background Opacity
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/background-opacity
+       */
+      "bg-opacity": [{
+        "bg-opacity": [opacity]
+      }],
+      /**
+       * Background Origin
+       * @see https://tailwindcss.com/docs/background-origin
+       */
+      "bg-origin": [{
+        "bg-origin": ["border", "padding", "content"]
+      }],
+      /**
+       * Background Position
+       * @see https://tailwindcss.com/docs/background-position
+       */
+      "bg-position": [{
+        bg: [...getPositions(), isArbitraryPosition]
+      }],
+      /**
+       * Background Repeat
+       * @see https://tailwindcss.com/docs/background-repeat
+       */
+      "bg-repeat": [{
+        bg: ["no-repeat", {
+          repeat: ["", "x", "y", "round", "space"]
+        }]
+      }],
+      /**
+       * Background Size
+       * @see https://tailwindcss.com/docs/background-size
+       */
+      "bg-size": [{
+        bg: ["auto", "cover", "contain", isArbitrarySize]
+      }],
+      /**
+       * Background Image
+       * @see https://tailwindcss.com/docs/background-image
+       */
+      "bg-image": [{
+        bg: ["none", {
+          "gradient-to": ["t", "tr", "r", "br", "b", "bl", "l", "tl"]
+        }, isArbitraryImage]
+      }],
+      /**
+       * Background Color
+       * @see https://tailwindcss.com/docs/background-color
+       */
+      "bg-color": [{
+        bg: [colors]
+      }],
+      /**
+       * Gradient Color Stops From Position
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-from-pos": [{
+        from: [gradientColorStopPositions]
+      }],
+      /**
+       * Gradient Color Stops Via Position
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-via-pos": [{
+        via: [gradientColorStopPositions]
+      }],
+      /**
+       * Gradient Color Stops To Position
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-to-pos": [{
+        to: [gradientColorStopPositions]
+      }],
+      /**
+       * Gradient Color Stops From
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-from": [{
+        from: [gradientColorStops]
+      }],
+      /**
+       * Gradient Color Stops Via
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-via": [{
+        via: [gradientColorStops]
+      }],
+      /**
+       * Gradient Color Stops To
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */
+      "gradient-to": [{
+        to: [gradientColorStops]
+      }],
+      // Borders
+      /**
+       * Border Radius
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      rounded: [{
+        rounded: [borderRadius]
+      }],
+      /**
+       * Border Radius Start
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-s": [{
+        "rounded-s": [borderRadius]
+      }],
+      /**
+       * Border Radius End
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-e": [{
+        "rounded-e": [borderRadius]
+      }],
+      /**
+       * Border Radius Top
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-t": [{
+        "rounded-t": [borderRadius]
+      }],
+      /**
+       * Border Radius Right
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-r": [{
+        "rounded-r": [borderRadius]
+      }],
+      /**
+       * Border Radius Bottom
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-b": [{
+        "rounded-b": [borderRadius]
+      }],
+      /**
+       * Border Radius Left
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-l": [{
+        "rounded-l": [borderRadius]
+      }],
+      /**
+       * Border Radius Start Start
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-ss": [{
+        "rounded-ss": [borderRadius]
+      }],
+      /**
+       * Border Radius Start End
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-se": [{
+        "rounded-se": [borderRadius]
+      }],
+      /**
+       * Border Radius End End
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-ee": [{
+        "rounded-ee": [borderRadius]
+      }],
+      /**
+       * Border Radius End Start
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-es": [{
+        "rounded-es": [borderRadius]
+      }],
+      /**
+       * Border Radius Top Left
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-tl": [{
+        "rounded-tl": [borderRadius]
+      }],
+      /**
+       * Border Radius Top Right
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-tr": [{
+        "rounded-tr": [borderRadius]
+      }],
+      /**
+       * Border Radius Bottom Right
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-br": [{
+        "rounded-br": [borderRadius]
+      }],
+      /**
+       * Border Radius Bottom Left
+       * @see https://tailwindcss.com/docs/border-radius
+       */
+      "rounded-bl": [{
+        "rounded-bl": [borderRadius]
+      }],
+      /**
+       * Border Width
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w": [{
+        border: [borderWidth]
+      }],
+      /**
+       * Border Width X
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-x": [{
+        "border-x": [borderWidth]
+      }],
+      /**
+       * Border Width Y
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-y": [{
+        "border-y": [borderWidth]
+      }],
+      /**
+       * Border Width Start
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-s": [{
+        "border-s": [borderWidth]
+      }],
+      /**
+       * Border Width End
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-e": [{
+        "border-e": [borderWidth]
+      }],
+      /**
+       * Border Width Top
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-t": [{
+        "border-t": [borderWidth]
+      }],
+      /**
+       * Border Width Right
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-r": [{
+        "border-r": [borderWidth]
+      }],
+      /**
+       * Border Width Bottom
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-b": [{
+        "border-b": [borderWidth]
+      }],
+      /**
+       * Border Width Left
+       * @see https://tailwindcss.com/docs/border-width
+       */
+      "border-w-l": [{
+        "border-l": [borderWidth]
+      }],
+      /**
+       * Border Opacity
+       * @see https://tailwindcss.com/docs/border-opacity
+       */
+      "border-opacity": [{
+        "border-opacity": [opacity]
+      }],
+      /**
+       * Border Style
+       * @see https://tailwindcss.com/docs/border-style
+       */
+      "border-style": [{
+        border: [...getLineStyles(), "hidden"]
+      }],
+      /**
+       * Divide Width X
+       * @see https://tailwindcss.com/docs/divide-width
+       */
+      "divide-x": [{
+        "divide-x": [borderWidth]
+      }],
+      /**
+       * Divide Width X Reverse
+       * @see https://tailwindcss.com/docs/divide-width
+       */
+      "divide-x-reverse": ["divide-x-reverse"],
+      /**
+       * Divide Width Y
+       * @see https://tailwindcss.com/docs/divide-width
+       */
+      "divide-y": [{
+        "divide-y": [borderWidth]
+      }],
+      /**
+       * Divide Width Y Reverse
+       * @see https://tailwindcss.com/docs/divide-width
+       */
+      "divide-y-reverse": ["divide-y-reverse"],
+      /**
+       * Divide Opacity
+       * @see https://tailwindcss.com/docs/divide-opacity
+       */
+      "divide-opacity": [{
+        "divide-opacity": [opacity]
+      }],
+      /**
+       * Divide Style
+       * @see https://tailwindcss.com/docs/divide-style
+       */
+      "divide-style": [{
+        divide: getLineStyles()
+      }],
+      /**
+       * Border Color
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color": [{
+        border: [borderColor]
+      }],
+      /**
+       * Border Color X
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-x": [{
+        "border-x": [borderColor]
+      }],
+      /**
+       * Border Color Y
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-y": [{
+        "border-y": [borderColor]
+      }],
+      /**
+       * Border Color S
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-s": [{
+        "border-s": [borderColor]
+      }],
+      /**
+       * Border Color E
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-e": [{
+        "border-e": [borderColor]
+      }],
+      /**
+       * Border Color Top
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-t": [{
+        "border-t": [borderColor]
+      }],
+      /**
+       * Border Color Right
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-r": [{
+        "border-r": [borderColor]
+      }],
+      /**
+       * Border Color Bottom
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-b": [{
+        "border-b": [borderColor]
+      }],
+      /**
+       * Border Color Left
+       * @see https://tailwindcss.com/docs/border-color
+       */
+      "border-color-l": [{
+        "border-l": [borderColor]
+      }],
+      /**
+       * Divide Color
+       * @see https://tailwindcss.com/docs/divide-color
+       */
+      "divide-color": [{
+        divide: [borderColor]
+      }],
+      /**
+       * Outline Style
+       * @see https://tailwindcss.com/docs/outline-style
+       */
+      "outline-style": [{
+        outline: ["", ...getLineStyles()]
+      }],
+      /**
+       * Outline Offset
+       * @see https://tailwindcss.com/docs/outline-offset
+       */
+      "outline-offset": [{
+        "outline-offset": [isLength, isArbitraryValue]
+      }],
+      /**
+       * Outline Width
+       * @see https://tailwindcss.com/docs/outline-width
+       */
+      "outline-w": [{
+        outline: [isLength, isArbitraryLength]
+      }],
+      /**
+       * Outline Color
+       * @see https://tailwindcss.com/docs/outline-color
+       */
+      "outline-color": [{
+        outline: [colors]
+      }],
+      /**
+       * Ring Width
+       * @see https://tailwindcss.com/docs/ring-width
+       */
+      "ring-w": [{
+        ring: getLengthWithEmptyAndArbitrary()
+      }],
+      /**
+       * Ring Width Inset
+       * @see https://tailwindcss.com/docs/ring-width
+       */
+      "ring-w-inset": ["ring-inset"],
+      /**
+       * Ring Color
+       * @see https://tailwindcss.com/docs/ring-color
+       */
+      "ring-color": [{
+        ring: [colors]
+      }],
+      /**
+       * Ring Opacity
+       * @see https://tailwindcss.com/docs/ring-opacity
+       */
+      "ring-opacity": [{
+        "ring-opacity": [opacity]
+      }],
+      /**
+       * Ring Offset Width
+       * @see https://tailwindcss.com/docs/ring-offset-width
+       */
+      "ring-offset-w": [{
+        "ring-offset": [isLength, isArbitraryLength]
+      }],
+      /**
+       * Ring Offset Color
+       * @see https://tailwindcss.com/docs/ring-offset-color
+       */
+      "ring-offset-color": [{
+        "ring-offset": [colors]
+      }],
+      // Effects
+      /**
+       * Box Shadow
+       * @see https://tailwindcss.com/docs/box-shadow
+       */
+      shadow: [{
+        shadow: ["", "inner", "none", isTshirtSize, isArbitraryShadow]
+      }],
+      /**
+       * Box Shadow Color
+       * @see https://tailwindcss.com/docs/box-shadow-color
+       */
+      "shadow-color": [{
+        shadow: [isAny]
+      }],
+      /**
+       * Opacity
+       * @see https://tailwindcss.com/docs/opacity
+       */
+      opacity: [{
+        opacity: [opacity]
+      }],
+      /**
+       * Mix Blend Mode
+       * @see https://tailwindcss.com/docs/mix-blend-mode
+       */
+      "mix-blend": [{
+        "mix-blend": [...getBlendModes(), "plus-lighter", "plus-darker"]
+      }],
+      /**
+       * Background Blend Mode
+       * @see https://tailwindcss.com/docs/background-blend-mode
+       */
+      "bg-blend": [{
+        "bg-blend": getBlendModes()
+      }],
+      // Filters
+      /**
+       * Filter
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/filter
+       */
+      filter: [{
+        filter: ["", "none"]
+      }],
+      /**
+       * Blur
+       * @see https://tailwindcss.com/docs/blur
+       */
+      blur: [{
+        blur: [blur2]
+      }],
+      /**
+       * Brightness
+       * @see https://tailwindcss.com/docs/brightness
+       */
+      brightness: [{
+        brightness: [brightness]
+      }],
+      /**
+       * Contrast
+       * @see https://tailwindcss.com/docs/contrast
+       */
+      contrast: [{
+        contrast: [contrast]
+      }],
+      /**
+       * Drop Shadow
+       * @see https://tailwindcss.com/docs/drop-shadow
+       */
+      "drop-shadow": [{
+        "drop-shadow": ["", "none", isTshirtSize, isArbitraryValue]
+      }],
+      /**
+       * Grayscale
+       * @see https://tailwindcss.com/docs/grayscale
+       */
+      grayscale: [{
+        grayscale: [grayscale]
+      }],
+      /**
+       * Hue Rotate
+       * @see https://tailwindcss.com/docs/hue-rotate
+       */
+      "hue-rotate": [{
+        "hue-rotate": [hueRotate]
+      }],
+      /**
+       * Invert
+       * @see https://tailwindcss.com/docs/invert
+       */
+      invert: [{
+        invert: [invert]
+      }],
+      /**
+       * Saturate
+       * @see https://tailwindcss.com/docs/saturate
+       */
+      saturate: [{
+        saturate: [saturate2]
+      }],
+      /**
+       * Sepia
+       * @see https://tailwindcss.com/docs/sepia
+       */
+      sepia: [{
+        sepia: [sepia]
+      }],
+      /**
+       * Backdrop Filter
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/backdrop-filter
+       */
+      "backdrop-filter": [{
+        "backdrop-filter": ["", "none"]
+      }],
+      /**
+       * Backdrop Blur
+       * @see https://tailwindcss.com/docs/backdrop-blur
+       */
+      "backdrop-blur": [{
+        "backdrop-blur": [blur2]
+      }],
+      /**
+       * Backdrop Brightness
+       * @see https://tailwindcss.com/docs/backdrop-brightness
+       */
+      "backdrop-brightness": [{
+        "backdrop-brightness": [brightness]
+      }],
+      /**
+       * Backdrop Contrast
+       * @see https://tailwindcss.com/docs/backdrop-contrast
+       */
+      "backdrop-contrast": [{
+        "backdrop-contrast": [contrast]
+      }],
+      /**
+       * Backdrop Grayscale
+       * @see https://tailwindcss.com/docs/backdrop-grayscale
+       */
+      "backdrop-grayscale": [{
+        "backdrop-grayscale": [grayscale]
+      }],
+      /**
+       * Backdrop Hue Rotate
+       * @see https://tailwindcss.com/docs/backdrop-hue-rotate
+       */
+      "backdrop-hue-rotate": [{
+        "backdrop-hue-rotate": [hueRotate]
+      }],
+      /**
+       * Backdrop Invert
+       * @see https://tailwindcss.com/docs/backdrop-invert
+       */
+      "backdrop-invert": [{
+        "backdrop-invert": [invert]
+      }],
+      /**
+       * Backdrop Opacity
+       * @see https://tailwindcss.com/docs/backdrop-opacity
+       */
+      "backdrop-opacity": [{
+        "backdrop-opacity": [opacity]
+      }],
+      /**
+       * Backdrop Saturate
+       * @see https://tailwindcss.com/docs/backdrop-saturate
+       */
+      "backdrop-saturate": [{
+        "backdrop-saturate": [saturate2]
+      }],
+      /**
+       * Backdrop Sepia
+       * @see https://tailwindcss.com/docs/backdrop-sepia
+       */
+      "backdrop-sepia": [{
+        "backdrop-sepia": [sepia]
+      }],
+      // Tables
+      /**
+       * Border Collapse
+       * @see https://tailwindcss.com/docs/border-collapse
+       */
+      "border-collapse": [{
+        border: ["collapse", "separate"]
+      }],
+      /**
+       * Border Spacing
+       * @see https://tailwindcss.com/docs/border-spacing
+       */
+      "border-spacing": [{
+        "border-spacing": [borderSpacing]
+      }],
+      /**
+       * Border Spacing X
+       * @see https://tailwindcss.com/docs/border-spacing
+       */
+      "border-spacing-x": [{
+        "border-spacing-x": [borderSpacing]
+      }],
+      /**
+       * Border Spacing Y
+       * @see https://tailwindcss.com/docs/border-spacing
+       */
+      "border-spacing-y": [{
+        "border-spacing-y": [borderSpacing]
+      }],
+      /**
+       * Table Layout
+       * @see https://tailwindcss.com/docs/table-layout
+       */
+      "table-layout": [{
+        table: ["auto", "fixed"]
+      }],
+      /**
+       * Caption Side
+       * @see https://tailwindcss.com/docs/caption-side
+       */
+      caption: [{
+        caption: ["top", "bottom"]
+      }],
+      // Transitions and Animation
+      /**
+       * Tranisition Property
+       * @see https://tailwindcss.com/docs/transition-property
+       */
+      transition: [{
+        transition: ["none", "all", "", "colors", "opacity", "shadow", "transform", isArbitraryValue]
+      }],
+      /**
+       * Transition Duration
+       * @see https://tailwindcss.com/docs/transition-duration
+       */
+      duration: [{
+        duration: getNumberAndArbitrary()
+      }],
+      /**
+       * Transition Timing Function
+       * @see https://tailwindcss.com/docs/transition-timing-function
+       */
+      ease: [{
+        ease: ["linear", "in", "out", "in-out", isArbitraryValue]
+      }],
+      /**
+       * Transition Delay
+       * @see https://tailwindcss.com/docs/transition-delay
+       */
+      delay: [{
+        delay: getNumberAndArbitrary()
+      }],
+      /**
+       * Animation
+       * @see https://tailwindcss.com/docs/animation
+       */
+      animate: [{
+        animate: ["none", "spin", "ping", "pulse", "bounce", isArbitraryValue]
+      }],
+      // Transforms
+      /**
+       * Transform
+       * @see https://tailwindcss.com/docs/transform
+       */
+      transform: [{
+        transform: ["", "gpu", "none"]
+      }],
+      /**
+       * Scale
+       * @see https://tailwindcss.com/docs/scale
+       */
+      scale: [{
+        scale: [scale2]
+      }],
+      /**
+       * Scale X
+       * @see https://tailwindcss.com/docs/scale
+       */
+      "scale-x": [{
+        "scale-x": [scale2]
+      }],
+      /**
+       * Scale Y
+       * @see https://tailwindcss.com/docs/scale
+       */
+      "scale-y": [{
+        "scale-y": [scale2]
+      }],
+      /**
+       * Rotate
+       * @see https://tailwindcss.com/docs/rotate
+       */
+      rotate: [{
+        rotate: [isInteger, isArbitraryValue]
+      }],
+      /**
+       * Translate X
+       * @see https://tailwindcss.com/docs/translate
+       */
+      "translate-x": [{
+        "translate-x": [translate]
+      }],
+      /**
+       * Translate Y
+       * @see https://tailwindcss.com/docs/translate
+       */
+      "translate-y": [{
+        "translate-y": [translate]
+      }],
+      /**
+       * Skew X
+       * @see https://tailwindcss.com/docs/skew
+       */
+      "skew-x": [{
+        "skew-x": [skew]
+      }],
+      /**
+       * Skew Y
+       * @see https://tailwindcss.com/docs/skew
+       */
+      "skew-y": [{
+        "skew-y": [skew]
+      }],
+      /**
+       * Transform Origin
+       * @see https://tailwindcss.com/docs/transform-origin
+       */
+      "transform-origin": [{
+        origin: ["center", "top", "top-right", "right", "bottom-right", "bottom", "bottom-left", "left", "top-left", isArbitraryValue]
+      }],
+      // Interactivity
+      /**
+       * Accent Color
+       * @see https://tailwindcss.com/docs/accent-color
+       */
+      accent: [{
+        accent: ["auto", colors]
+      }],
+      /**
+       * Appearance
+       * @see https://tailwindcss.com/docs/appearance
+       */
+      appearance: [{
+        appearance: ["none", "auto"]
+      }],
+      /**
+       * Cursor
+       * @see https://tailwindcss.com/docs/cursor
+       */
+      cursor: [{
+        cursor: ["auto", "default", "pointer", "wait", "text", "move", "help", "not-allowed", "none", "context-menu", "progress", "cell", "crosshair", "vertical-text", "alias", "copy", "no-drop", "grab", "grabbing", "all-scroll", "col-resize", "row-resize", "n-resize", "e-resize", "s-resize", "w-resize", "ne-resize", "nw-resize", "se-resize", "sw-resize", "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "zoom-in", "zoom-out", isArbitraryValue]
+      }],
+      /**
+       * Caret Color
+       * @see https://tailwindcss.com/docs/just-in-time-mode#caret-color-utilities
+       */
+      "caret-color": [{
+        caret: [colors]
+      }],
+      /**
+       * Pointer Events
+       * @see https://tailwindcss.com/docs/pointer-events
+       */
+      "pointer-events": [{
+        "pointer-events": ["none", "auto"]
+      }],
+      /**
+       * Resize
+       * @see https://tailwindcss.com/docs/resize
+       */
+      resize: [{
+        resize: ["none", "y", "x", ""]
+      }],
+      /**
+       * Scroll Behavior
+       * @see https://tailwindcss.com/docs/scroll-behavior
+       */
+      "scroll-behavior": [{
+        scroll: ["auto", "smooth"]
+      }],
+      /**
+       * Scroll Margin
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-m": [{
+        "scroll-m": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin X
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-mx": [{
+        "scroll-mx": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Y
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-my": [{
+        "scroll-my": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Start
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-ms": [{
+        "scroll-ms": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin End
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-me": [{
+        "scroll-me": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Top
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-mt": [{
+        "scroll-mt": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Right
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-mr": [{
+        "scroll-mr": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Bottom
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-mb": [{
+        "scroll-mb": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Margin Left
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */
+      "scroll-ml": [{
+        "scroll-ml": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-p": [{
+        "scroll-p": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding X
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-px": [{
+        "scroll-px": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Y
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-py": [{
+        "scroll-py": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Start
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-ps": [{
+        "scroll-ps": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding End
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pe": [{
+        "scroll-pe": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Top
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pt": [{
+        "scroll-pt": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Right
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pr": [{
+        "scroll-pr": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Bottom
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pb": [{
+        "scroll-pb": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Padding Left
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */
+      "scroll-pl": [{
+        "scroll-pl": getSpacingWithArbitrary()
+      }],
+      /**
+       * Scroll Snap Align
+       * @see https://tailwindcss.com/docs/scroll-snap-align
+       */
+      "snap-align": [{
+        snap: ["start", "end", "center", "align-none"]
+      }],
+      /**
+       * Scroll Snap Stop
+       * @see https://tailwindcss.com/docs/scroll-snap-stop
+       */
+      "snap-stop": [{
+        snap: ["normal", "always"]
+      }],
+      /**
+       * Scroll Snap Type
+       * @see https://tailwindcss.com/docs/scroll-snap-type
+       */
+      "snap-type": [{
+        snap: ["none", "x", "y", "both"]
+      }],
+      /**
+       * Scroll Snap Type Strictness
+       * @see https://tailwindcss.com/docs/scroll-snap-type
+       */
+      "snap-strictness": [{
+        snap: ["mandatory", "proximity"]
+      }],
+      /**
+       * Touch Action
+       * @see https://tailwindcss.com/docs/touch-action
+       */
+      touch: [{
+        touch: ["auto", "none", "manipulation"]
+      }],
+      /**
+       * Touch Action X
+       * @see https://tailwindcss.com/docs/touch-action
+       */
+      "touch-x": [{
+        "touch-pan": ["x", "left", "right"]
+      }],
+      /**
+       * Touch Action Y
+       * @see https://tailwindcss.com/docs/touch-action
+       */
+      "touch-y": [{
+        "touch-pan": ["y", "up", "down"]
+      }],
+      /**
+       * Touch Action Pinch Zoom
+       * @see https://tailwindcss.com/docs/touch-action
+       */
+      "touch-pz": ["touch-pinch-zoom"],
+      /**
+       * User Select
+       * @see https://tailwindcss.com/docs/user-select
+       */
+      select: [{
+        select: ["none", "text", "all", "auto"]
+      }],
+      /**
+       * Will Change
+       * @see https://tailwindcss.com/docs/will-change
+       */
+      "will-change": [{
+        "will-change": ["auto", "scroll", "contents", "transform", isArbitraryValue]
+      }],
+      // SVG
+      /**
+       * Fill
+       * @see https://tailwindcss.com/docs/fill
+       */
+      fill: [{
+        fill: [colors, "none"]
+      }],
+      /**
+       * Stroke Width
+       * @see https://tailwindcss.com/docs/stroke-width
+       */
+      "stroke-w": [{
+        stroke: [isLength, isArbitraryLength, isArbitraryNumber]
+      }],
+      /**
+       * Stroke
+       * @see https://tailwindcss.com/docs/stroke
+       */
+      stroke: [{
+        stroke: [colors, "none"]
+      }],
+      // Accessibility
+      /**
+       * Screen Readers
+       * @see https://tailwindcss.com/docs/screen-readers
+       */
+      sr: ["sr-only", "not-sr-only"],
+      /**
+       * Forced Color Adjust
+       * @see https://tailwindcss.com/docs/forced-color-adjust
+       */
+      "forced-color-adjust": [{
+        "forced-color-adjust": ["auto", "none"]
+      }]
+    },
+    conflictingClassGroups: {
+      overflow: ["overflow-x", "overflow-y"],
+      overscroll: ["overscroll-x", "overscroll-y"],
+      inset: ["inset-x", "inset-y", "start", "end", "top", "right", "bottom", "left"],
+      "inset-x": ["right", "left"],
+      "inset-y": ["top", "bottom"],
+      flex: ["basis", "grow", "shrink"],
+      gap: ["gap-x", "gap-y"],
+      p: ["px", "py", "ps", "pe", "pt", "pr", "pb", "pl"],
+      px: ["pr", "pl"],
+      py: ["pt", "pb"],
+      m: ["mx", "my", "ms", "me", "mt", "mr", "mb", "ml"],
+      mx: ["mr", "ml"],
+      my: ["mt", "mb"],
+      size: ["w", "h"],
+      "font-size": ["leading"],
+      "fvn-normal": ["fvn-ordinal", "fvn-slashed-zero", "fvn-figure", "fvn-spacing", "fvn-fraction"],
+      "fvn-ordinal": ["fvn-normal"],
+      "fvn-slashed-zero": ["fvn-normal"],
+      "fvn-figure": ["fvn-normal"],
+      "fvn-spacing": ["fvn-normal"],
+      "fvn-fraction": ["fvn-normal"],
+      "line-clamp": ["display", "overflow"],
+      rounded: ["rounded-s", "rounded-e", "rounded-t", "rounded-r", "rounded-b", "rounded-l", "rounded-ss", "rounded-se", "rounded-ee", "rounded-es", "rounded-tl", "rounded-tr", "rounded-br", "rounded-bl"],
+      "rounded-s": ["rounded-ss", "rounded-es"],
+      "rounded-e": ["rounded-se", "rounded-ee"],
+      "rounded-t": ["rounded-tl", "rounded-tr"],
+      "rounded-r": ["rounded-tr", "rounded-br"],
+      "rounded-b": ["rounded-br", "rounded-bl"],
+      "rounded-l": ["rounded-tl", "rounded-bl"],
+      "border-spacing": ["border-spacing-x", "border-spacing-y"],
+      "border-w": ["border-w-s", "border-w-e", "border-w-t", "border-w-r", "border-w-b", "border-w-l"],
+      "border-w-x": ["border-w-r", "border-w-l"],
+      "border-w-y": ["border-w-t", "border-w-b"],
+      "border-color": ["border-color-s", "border-color-e", "border-color-t", "border-color-r", "border-color-b", "border-color-l"],
+      "border-color-x": ["border-color-r", "border-color-l"],
+      "border-color-y": ["border-color-t", "border-color-b"],
+      "scroll-m": ["scroll-mx", "scroll-my", "scroll-ms", "scroll-me", "scroll-mt", "scroll-mr", "scroll-mb", "scroll-ml"],
+      "scroll-mx": ["scroll-mr", "scroll-ml"],
+      "scroll-my": ["scroll-mt", "scroll-mb"],
+      "scroll-p": ["scroll-px", "scroll-py", "scroll-ps", "scroll-pe", "scroll-pt", "scroll-pr", "scroll-pb", "scroll-pl"],
+      "scroll-px": ["scroll-pr", "scroll-pl"],
+      "scroll-py": ["scroll-pt", "scroll-pb"],
+      touch: ["touch-x", "touch-y", "touch-pz"],
+      "touch-x": ["touch"],
+      "touch-y": ["touch"],
+      "touch-pz": ["touch"]
+    },
+    conflictingClassGroupModifiers: {
+      "font-size": ["leading"]
+    }
+  };
+};
+var twMerge = /* @__PURE__ */ createTailwindMerge(getDefaultConfig);
+
+// lib/utils.ts
+function cn(...inputs) {
+  return twMerge(clsx(inputs));
+}
+function tw(...classNames) {
+  return cn(...classNames);
+}
+
 // views/assistant/section-header.tsx
 var import_jsx_runtime13 = __toESM(require_jsx_runtime());
 var SectionHeader = ({ text: text6, icon }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("h6", { className: "text-sm font-medium ", children: [
-    icon && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", { className: "assistant-section-icon", children: icon }),
+  return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("h6", { className: tw("text-xs font-semibold text-[--text-muted] uppercase tracking-wide mt-5 mb-2 px-3"), children: [
+    icon && /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("span", { className: tw("mr-1.5"), children: icon }),
     text6
   ] });
 };
@@ -55386,11 +57919,10 @@ var SkeletonItem = ({
 }) => /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(
   motion.div,
   {
-    className: "skeleton-item",
     style: {
       width,
       height,
-      backgroundColor: "#e0e0e0",
+      backgroundColor: "var(--background-modifier-border)",
       borderRadius: "12px"
     }
   }
@@ -55398,17 +57930,44 @@ var SkeletonItem = ({
 
 // views/assistant/organizer/components/suggestion-buttons.tsx
 var import_jsx_runtime20 = __toESM(require_jsx_runtime());
-var BaseFolderButton = ({ folder, onClick, className, score, reason }) => /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(
+var ConfidenceBadge = ({ score }) => {
+  const getConfidenceColor = (score2) => {
+    if (score2 >= 80)
+      return "bg-[--text-success] text-white";
+    if (score2 >= 60)
+      return "bg-[--text-warning] text-white";
+    return "bg-[--text-muted] text-white";
+  };
+  const getConfidenceLabel = (score2) => {
+    if (score2 >= 80)
+      return "High";
+    if (score2 >= 60)
+      return "Med";
+    return "Low";
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(
+    "span",
+    {
+      className: `ml-2 px-1.5 py-0.5 rounded text-[10px] font-semibold ${getConfidenceColor(score)}`,
+      title: `Confidence: ${score}%`,
+      children: getConfidenceLabel(score)
+    }
+  );
+};
+var BaseFolderButton = ({ folder, onClick, className, score, reason }) => /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)(
   motion.button,
   {
-    className: `px-3 py-1 rounded-md transition-colors duration-200 shadow-none ${className}`,
+    className: `px-3 py-1 transition-colors duration-200 ${className} flex items-center justify-between`,
     onClick: () => onClick(folder),
     initial: { opacity: 0, scale: 0.8 },
     animate: { opacity: 1, scale: 1 },
     exit: { opacity: 0, scale: 0.8 },
     transition: { duration: 0.2 },
-    title: `Score: ${score}, Reason: ${reason}`,
-    children: folder
+    title: `Reason: ${reason}`,
+    children: [
+      /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("span", { children: folder }),
+      score !== void 0 && /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(ConfidenceBadge, { score })
+    ]
   }
 );
 var ExistingFolderButton = (props) => /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(
@@ -55509,7 +58068,7 @@ var SimilarTags = ({
       }
     );
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "bg-[--background-primary-alt] text-[--text-normal] p-4 rounded-lg shadow-md", children: renderContent() });
+  return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("div", { className: "bg-[--background-primary-alt] text-[--text-normal] p-4 border-b border-[--background-modifier-border]", children: renderContent() });
 };
 
 // views/assistant/organizer/chunks.tsx
@@ -55577,7 +58136,7 @@ var AtomicNotes = ({ plugin, activeFile, refreshKey }) => {
       }
     });
   }, [chunks, renderMarkdown]);
-  const renderChunk = (chunk, index2) => /* @__PURE__ */ (0, import_jsx_runtime22.jsxs)("div", { className: "chunk-container p-4 border rounded-md mb-2", children: [
+  const renderChunk = (chunk, index2) => /* @__PURE__ */ (0, import_jsx_runtime22.jsxs)("div", { className: "chunk-container p-4 border mb-2", children: [
     /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(
       "div",
       {
@@ -59735,7 +62294,7 @@ var RenameSuggestion = ({
       setLoading(false);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("div", { className: "bg-[--background-primary-alt] text-[--text-normal] p-4 rounded-lg shadow-md", children: loading ? /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(SkeletonLoader, { count: 3, rows: 4, width: "70%" }) : error ? /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(ErrorDisplay, { message: error.message, onRetry: suggestTitles }) : !suggestions.length ? /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("div", { children: "No title suggestions available" }) : /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("div", { className: "bg-[--background-primary-alt] text-[--text-normal] p-4 border-b border-[--background-modifier-border]", children: loading ? /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(SkeletonLoader, { count: 3, rows: 4, width: "70%" }) : error ? /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(ErrorDisplay, { message: error.message, onRetry: suggestTitles }) : !suggestions.length ? /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("div", { children: "No title suggestions available" }) : /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(
     motion.div,
     {
       className: "flex flex-wrap gap-2",
@@ -59847,7 +62406,7 @@ var SimilarFolderBox = ({
     {
       initial: { opacity: 0, y: -10 },
       animate: { opacity: 1, y: 0 },
-      className: "space-y-3 rounded-md  border-opacity-20",
+      className: "space-y-3  border-opacity-20",
       children: [
         /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("div", { className: "flex items-start justify-between", children: /* @__PURE__ */ (0, import_jsx_runtime24.jsxs)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("div", { className: "text-[--text-error] font-medium mb-1", children: "Error: Failed to fetch" }),
@@ -59917,7 +62476,7 @@ var SimilarFolderBox = ({
       }
     );
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("div", { className: "bg-[--background-primary-alt] text-[--text-normal] p-4 rounded-lg shadow-md", children: renderContent() });
+  return /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("div", { className: "bg-[--background-primary-alt] text-[--text-normal] p-4 border-b border-[--background-modifier-border]", children: renderContent() });
 };
 
 // views/assistant/organizer/components/refresh-button.tsx
@@ -59943,7 +62502,7 @@ var RefreshButton = ({ onRefresh }) => {
       },
       whileHover: { scale: 1.05 },
       whileTap: { scale: 0.95 },
-      className: "text-accent shadow-sm px-2 py-1",
+      className: "text-accent px-2 py-1",
       onClick: handleRefresh,
       disabled: loading,
       children: [
@@ -60543,7 +63102,7 @@ var UserTemplates = ({
   };
   const renderContent = () => {
     if (contentLoadStatus === "error" || classificationStatus === "error") {
-      return /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "text-[--text-error] p-2 rounded-md bg-[--background-modifier-error]", children: "Unable to process the content. Please try again later." });
+      return /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "text-[--text-error] p-2 bg-[--background-modifier-error]", children: "Unable to process the content. Please try again later." });
     }
     if (classificationStatus === "loading") {
       return /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "text-[--text-muted] p-2", children: "Classifying content..." });
@@ -60553,7 +63112,7 @@ var UserTemplates = ({
         /* @__PURE__ */ (0, import_jsx_runtime26.jsxs)(
           "button",
           {
-            className: "w-full flex items-center justify-between px-3 py-2 bg-[--background-secondary] text-[--text-normal] rounded-md hover:bg-[--background-modifier-hover] transition-colors duration-200",
+            className: "w-full flex items-center justify-between px-3 py-2 bg-[--background-secondary] text-[--text-normal] hover:bg-[--background-modifier-hover] transition-colors duration-200",
             onClick: () => setShowDropdown(!showDropdown),
             children: [
               /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("span", { children: getDisplayText() }),
@@ -60579,7 +63138,7 @@ var UserTemplates = ({
             ]
           }
         ),
-        showDropdown && /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "absolute z-10 w-full mt-1 bg-[--background-primary] border border-[--background-modifier-border] rounded-md", children: dropdownTemplates.length > 0 ? dropdownTemplates.map((templateName, index2) => /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(
+        showDropdown && /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "absolute z-10 w-full mt-1 bg-[--background-primary] border border-[--background-modifier-border]", children: dropdownTemplates.length > 0 ? dropdownTemplates.map((templateName, index2) => /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(
           "div",
           {
             className: "px-3 py-2 cursor-pointer hover:bg-[--background-modifier-hover] text-[--text-normal]",
@@ -60592,11 +63151,11 @@ var UserTemplates = ({
           index2
         )) : /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "px-3 py-2 text-[--text-muted]", children: "No templates available" }) })
       ] }),
-      isFileTooLarge && /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "text-[--text-error] p-2 rounded-md bg-[--background-modifier-error]", children: "File is too large to format." }),
+      isFileTooLarge && /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", { className: "text-[--text-error] p-2 bg-[--background-modifier-error]", children: "File is too large to format." }),
       /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(
         "button",
         {
-          className: `px-4 py-2 rounded-md transition-colors duration-200 ${!selectedTemplateName || formatting ? "bg-[--background-modifier-border] text-[--text-muted] cursor-not-allowed" : "bg-[--interactive-accent] text-white hover:bg-[--interactive-accent-hover]"}`,
+          className: `px-4 py-2 transition-colors duration-200 ${!selectedTemplateName || formatting ? "bg-[--background-modifier-border] text-[--text-muted] cursor-not-allowed" : "bg-[--interactive-accent] text-white hover:bg-[--interactive-accent-hover]"}`,
           disabled: !selectedTemplateName || formatting || isFileTooLarge,
           onClick: handleFormatClick,
           children: formatting ? "Applying..." : "Apply"
@@ -60793,14 +63352,14 @@ var FabricClassificationBox = ({ plugin, file, content: content3, refreshKey, on
   );
   const renderFabricContent = () => {
     if (loadStatus === "error") {
-      return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "text-[--text-error] p-2 rounded-md bg-[--background-modifier-error]", children: "Unable to load Fabric patterns. Please download them from the customization tab." });
+      return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "text-[--text-error] p-2 bg-[--background-modifier-error]", children: "Unable to load Fabric patterns. Please download them from the customization tab." });
     }
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "flex flex-col space-y-2", children: [
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "relative", ref: fabricDropdownRef, children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(
           "button",
           {
-            className: "w-full flex items-center justify-between px-3 py-2 bg-[--background-secondary] text-[--text-normal] rounded-md hover:bg-[--background-modifier-hover] transition-colors duration-200",
+            className: "w-full flex items-center justify-between px-3 py-2 bg-[--background-secondary] text-[--text-normal] hover:bg-[--background-modifier-hover] transition-colors duration-200",
             onClick: () => setShowFabricDropdown(!showFabricDropdown),
             children: [
               /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: getFabricDisplayText() }),
@@ -60826,7 +63385,7 @@ var FabricClassificationBox = ({ plugin, file, content: content3, refreshKey, on
             ]
           }
         ),
-        showFabricDropdown && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "absolute z-10 w-full mt-1 bg-[--background-primary] border border-[--background-modifier-border] rounded-md shadow-lg", children: availableFabricPatterns.length > 0 ? availableFabricPatterns.map((pattern, index2) => /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
+        showFabricDropdown && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "absolute z-10 w-full mt-1 bg-[--background-primary] border border-[--background-modifier-border]", children: availableFabricPatterns.length > 0 ? availableFabricPatterns.map((pattern, index2) => /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
           "div",
           {
             className: "px-3 py-2 cursor-pointer hover:bg-[--background-modifier-hover] text-[--text-normal]",
@@ -60842,7 +63401,7 @@ var FabricClassificationBox = ({ plugin, file, content: content3, refreshKey, on
       /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
         "button",
         {
-          className: `px-4 py-2 rounded-md transition-colors duration-200 ${!selectedFabricPattern || isFormatting ? "bg-[--background-modifier-border] text-[--text-muted] cursor-not-allowed" : "bg-[--interactive-accent] text-white hover:bg-[--interactive-accent-hover]"}`,
+          className: `px-4 py-2  transition-colors duration-200 ${!selectedFabricPattern || isFormatting ? "bg-[--background-modifier-border] text-[--text-muted] cursor-not-allowed" : "bg-[--interactive-accent] text-white hover:bg-[--interactive-accent-hover]"}`,
           disabled: !selectedFabricPattern || isFormatting,
           onClick: handleApplyFabricClick,
           children: isFormatting ? "Applying..." : "Apply"
@@ -60858,7 +63417,7 @@ var FabricClassificationBox = ({ plugin, file, content: content3, refreshKey, on
   return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "", children: [
     /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "font-semibold pb-2", children: "Fabric" }),
     renderFabricContent(),
-    errorMessage && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "mt-2 text-[--text-error] p-2 rounded-md bg-[--background-modifier-error]", children: errorMessage })
+    errorMessage && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "mt-2 text-[--text-error] p-2 bg-[--background-modifier-error]", children: errorMessage })
   ] });
 };
 
@@ -60916,8 +63475,12 @@ var FileOrganizerSettings = class {
     this.hasCatalystAccess = null;
     this.hasRunOnboarding = false;
     this.pdfPageLimit = 10;
+    // default to 10 pages
+    this.enableProcessingNotifications = true;
+    // Show toast notifications during file processing
+    this.showSyncTab = false;
   }
-  // default to 10 pages
+  // Show Sync tab in assistant (experimental mobile sync feature)
 };
 var DEFAULT_SETTINGS = new FileOrganizerSettings();
 
@@ -61005,7 +63568,7 @@ var ClassificationContainer = ({
   };
   return /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)("div", { children: [
     /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("div", { className: "font-semibold my-3", children: "\u{1F5F3}\uFE0F AI Templates" }),
-    /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)("div", { className: "bg-[--background-primary-alt] text-[--text-normal] p-4 rounded-lg space-y-4 shadow-lg", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)("div", { className: "bg-[--background-primary-alt] text-[--text-normal] p-4 space-y-4 border-b border-[--background-modifier-border]", children: [
       /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)("div", { className: "flex items-center space-x-2", children: [
         /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("label", { htmlFor: "formatBehavior", className: "font-medium", children: "Format Behavior:" }),
         /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)(
@@ -61014,7 +63577,7 @@ var ClassificationContainer = ({
             id: "formatBehavior",
             value: formatBehavior,
             onChange: handleFormatBehaviorChange,
-            className: "px-2 py-1 rounded-md border border-[--background-modifier-border]",
+            className: "px-2 py-1 border border-[--background-modifier-border]",
             children: [
               /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("option", { value: "override", children: "Replace" }),
               /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("option", { value: "newFile", children: "New File" }),
@@ -61026,7 +63589,7 @@ var ClassificationContainer = ({
           "button",
           {
             onClick: handleRevert,
-            className: "px-3 py-1 text-sm rounded-md bg-[--background-modifier-error] text-[--text-on-accent] hover:opacity-90 transition-opacity",
+            className: "px-3 py-1 text-sm bg-[--background-modifier-error] text-[--text-on-accent] hover:opacity-90 transition-opacity",
             children: "Revert"
           }
         ) })
@@ -61100,7 +63663,7 @@ var TranscriptionButton = ({ plugin, file, content: content3 }) => {
   return /* @__PURE__ */ (0, import_jsx_runtime29.jsx)(
     "button",
     {
-      className: "flex items-center gap-2 bg-[--interactive-accent] text-[--text-on-accent] px-4 py-2 rounded-md hover:bg-[--interactive-accent-hover] disabled:opacity-50",
+      className: "flex items-center gap-2 bg-[--interactive-accent] text-[--text-on-accent] px-4 py-2 hover:bg-[--interactive-accent-hover] disabled:opacity-50",
       onClick: handleTranscribe,
       disabled: transcribing,
       children: transcribing ? /* @__PURE__ */ (0, import_jsx_runtime29.jsxs)(import_jsx_runtime29.Fragment, { children: [
@@ -61120,7 +63683,7 @@ var EmptyState = ({
   showDelete = false,
   onDelete
 }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime30.jsxs)("div", { className: "flex flex-col items-center justify-center p-6 bg-[--background-primary-alt] rounded-lg w-full max-w-md mx-auto", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime30.jsxs)("div", { className: "flex flex-col items-center justify-center p-6 bg-[--background-primary-alt] border-b border-[--background-modifier-border] w-full max-w-md mx-auto", children: [
     /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(
       motion.div,
       {
@@ -61149,7 +63712,7 @@ var EmptyState = ({
           animate: { opacity: 1, y: 0 },
           transition: { delay: 0.4 },
           onClick: onRefresh,
-          className: "flex items-center space-x-2 px-4 py-2 rounded-md bg-[--interactive-normal] hover:bg-[--interactive-hover] text-[--text-normal]",
+          className: "flex items-center space-x-2 px-4 py-2 bg-[--interactive-normal] hover:bg-[--interactive-hover] text-[--text-normal]",
           children: [
             /* @__PURE__ */ (0, import_jsx_runtime30.jsxs)("svg", { className: "w-4 h-4", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", children: [
               /* @__PURE__ */ (0, import_jsx_runtime30.jsx)("path", { d: "M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }),
@@ -61166,7 +63729,7 @@ var EmptyState = ({
           animate: { opacity: 1, y: 0 },
           transition: { delay: 0.4 },
           onClick: onDelete,
-          className: "flex items-center space-x-2 px-4 py-2 rounded-md bg-[--background-modifier-error] hover:bg-[--background-modifier-error-hover] text-[--text-on-accent]",
+          className: "flex items-center space-x-2 px-4 py-2 bg-[--background-modifier-error] hover:bg-[--background-modifier-error-hover] text-[--text-on-accent]",
           children: [
             /* @__PURE__ */ (0, import_jsx_runtime30.jsx)("svg", { className: "w-4 h-4", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", children: /* @__PURE__ */ (0, import_jsx_runtime30.jsx)("path", { d: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" }) }),
             /* @__PURE__ */ (0, import_jsx_runtime30.jsx)("span", { children: "Delete" })
@@ -61192,7 +63755,7 @@ var ErrorBox = ({
     {
       initial: { opacity: 0, y: -10 },
       animate: { opacity: 1, y: 0 },
-      className: "p-4 bg-[--background-primary-alt] rounded-lg shadow-md",
+      className: "p-4 bg-[--background-primary-alt] border-b border-[--background-modifier-border]",
       children: /* @__PURE__ */ (0, import_jsx_runtime31.jsxs)("div", { className: "space-y-3", children: [
         /* @__PURE__ */ (0, import_jsx_runtime31.jsx)("div", { className: "flex items-start justify-between", children: /* @__PURE__ */ (0, import_jsx_runtime31.jsxs)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_runtime31.jsx)("div", { className: "text-[--text-error] font-medium mb-1", children: message }),
@@ -61312,2496 +63875,6 @@ var isValidExtension = (extension2) => {
   return isSupported;
 };
 
-// ../../node_modules/clsx/dist/clsx.mjs
-function r(e2) {
-  var t2, f, n2 = "";
-  if ("string" == typeof e2 || "number" == typeof e2)
-    n2 += e2;
-  else if ("object" == typeof e2)
-    if (Array.isArray(e2)) {
-      var o = e2.length;
-      for (t2 = 0; t2 < o; t2++)
-        e2[t2] && (f = r(e2[t2])) && (n2 && (n2 += " "), n2 += f);
-    } else
-      for (f in e2)
-        e2[f] && (n2 && (n2 += " "), n2 += f);
-  return n2;
-}
-function clsx() {
-  for (var e2, t2, f = 0, n2 = "", o = arguments.length; f < o; f++)
-    (e2 = arguments[f]) && (t2 = r(e2)) && (n2 && (n2 += " "), n2 += t2);
-  return n2;
-}
-
-// ../../node_modules/tailwind-merge/dist/bundle-mjs.mjs
-var CLASS_PART_SEPARATOR = "-";
-var createClassGroupUtils = (config) => {
-  const classMap = createClassMap(config);
-  const {
-    conflictingClassGroups,
-    conflictingClassGroupModifiers
-  } = config;
-  const getClassGroupId = (className) => {
-    const classParts = className.split(CLASS_PART_SEPARATOR);
-    if (classParts[0] === "" && classParts.length !== 1) {
-      classParts.shift();
-    }
-    return getGroupRecursive(classParts, classMap) || getGroupIdForArbitraryProperty(className);
-  };
-  const getConflictingClassGroupIds = (classGroupId, hasPostfixModifier) => {
-    const conflicts = conflictingClassGroups[classGroupId] || [];
-    if (hasPostfixModifier && conflictingClassGroupModifiers[classGroupId]) {
-      return [...conflicts, ...conflictingClassGroupModifiers[classGroupId]];
-    }
-    return conflicts;
-  };
-  return {
-    getClassGroupId,
-    getConflictingClassGroupIds
-  };
-};
-var getGroupRecursive = (classParts, classPartObject) => {
-  var _a17;
-  if (classParts.length === 0) {
-    return classPartObject.classGroupId;
-  }
-  const currentClassPart = classParts[0];
-  const nextClassPartObject = classPartObject.nextPart.get(currentClassPart);
-  const classGroupFromNextClassPart = nextClassPartObject ? getGroupRecursive(classParts.slice(1), nextClassPartObject) : void 0;
-  if (classGroupFromNextClassPart) {
-    return classGroupFromNextClassPart;
-  }
-  if (classPartObject.validators.length === 0) {
-    return void 0;
-  }
-  const classRest = classParts.join(CLASS_PART_SEPARATOR);
-  return (_a17 = classPartObject.validators.find(({
-    validator: validator3
-  }) => validator3(classRest))) == null ? void 0 : _a17.classGroupId;
-};
-var arbitraryPropertyRegex = /^\[(.+)\]$/;
-var getGroupIdForArbitraryProperty = (className) => {
-  if (arbitraryPropertyRegex.test(className)) {
-    const arbitraryPropertyClassName = arbitraryPropertyRegex.exec(className)[1];
-    const property = arbitraryPropertyClassName == null ? void 0 : arbitraryPropertyClassName.substring(0, arbitraryPropertyClassName.indexOf(":"));
-    if (property) {
-      return "arbitrary.." + property;
-    }
-  }
-};
-var createClassMap = (config) => {
-  const {
-    theme,
-    prefix
-  } = config;
-  const classMap = {
-    nextPart: /* @__PURE__ */ new Map(),
-    validators: []
-  };
-  const prefixedClassGroupEntries = getPrefixedClassGroupEntries(Object.entries(config.classGroups), prefix);
-  prefixedClassGroupEntries.forEach(([classGroupId, classGroup]) => {
-    processClassesRecursively(classGroup, classMap, classGroupId, theme);
-  });
-  return classMap;
-};
-var processClassesRecursively = (classGroup, classPartObject, classGroupId, theme) => {
-  classGroup.forEach((classDefinition) => {
-    if (typeof classDefinition === "string") {
-      const classPartObjectToEdit = classDefinition === "" ? classPartObject : getPart(classPartObject, classDefinition);
-      classPartObjectToEdit.classGroupId = classGroupId;
-      return;
-    }
-    if (typeof classDefinition === "function") {
-      if (isThemeGetter(classDefinition)) {
-        processClassesRecursively(classDefinition(theme), classPartObject, classGroupId, theme);
-        return;
-      }
-      classPartObject.validators.push({
-        validator: classDefinition,
-        classGroupId
-      });
-      return;
-    }
-    Object.entries(classDefinition).forEach(([key, classGroup2]) => {
-      processClassesRecursively(classGroup2, getPart(classPartObject, key), classGroupId, theme);
-    });
-  });
-};
-var getPart = (classPartObject, path) => {
-  let currentClassPartObject = classPartObject;
-  path.split(CLASS_PART_SEPARATOR).forEach((pathPart) => {
-    if (!currentClassPartObject.nextPart.has(pathPart)) {
-      currentClassPartObject.nextPart.set(pathPart, {
-        nextPart: /* @__PURE__ */ new Map(),
-        validators: []
-      });
-    }
-    currentClassPartObject = currentClassPartObject.nextPart.get(pathPart);
-  });
-  return currentClassPartObject;
-};
-var isThemeGetter = (func) => func.isThemeGetter;
-var getPrefixedClassGroupEntries = (classGroupEntries, prefix) => {
-  if (!prefix) {
-    return classGroupEntries;
-  }
-  return classGroupEntries.map(([classGroupId, classGroup]) => {
-    const prefixedClassGroup = classGroup.map((classDefinition) => {
-      if (typeof classDefinition === "string") {
-        return prefix + classDefinition;
-      }
-      if (typeof classDefinition === "object") {
-        return Object.fromEntries(Object.entries(classDefinition).map(([key, value]) => [prefix + key, value]));
-      }
-      return classDefinition;
-    });
-    return [classGroupId, prefixedClassGroup];
-  });
-};
-var createLruCache = (maxCacheSize) => {
-  if (maxCacheSize < 1) {
-    return {
-      get: () => void 0,
-      set: () => {
-      }
-    };
-  }
-  let cacheSize = 0;
-  let cache2 = /* @__PURE__ */ new Map();
-  let previousCache = /* @__PURE__ */ new Map();
-  const update = (key, value) => {
-    cache2.set(key, value);
-    cacheSize++;
-    if (cacheSize > maxCacheSize) {
-      cacheSize = 0;
-      previousCache = cache2;
-      cache2 = /* @__PURE__ */ new Map();
-    }
-  };
-  return {
-    get(key) {
-      let value = cache2.get(key);
-      if (value !== void 0) {
-        return value;
-      }
-      if ((value = previousCache.get(key)) !== void 0) {
-        update(key, value);
-        return value;
-      }
-    },
-    set(key, value) {
-      if (cache2.has(key)) {
-        cache2.set(key, value);
-      } else {
-        update(key, value);
-      }
-    }
-  };
-};
-var IMPORTANT_MODIFIER = "!";
-var createParseClassName = (config) => {
-  const {
-    separator,
-    experimentalParseClassName
-  } = config;
-  const isSeparatorSingleCharacter = separator.length === 1;
-  const firstSeparatorCharacter = separator[0];
-  const separatorLength = separator.length;
-  const parseClassName = (className) => {
-    const modifiers2 = [];
-    let bracketDepth = 0;
-    let modifierStart = 0;
-    let postfixModifierPosition;
-    for (let index2 = 0; index2 < className.length; index2++) {
-      let currentCharacter = className[index2];
-      if (bracketDepth === 0) {
-        if (currentCharacter === firstSeparatorCharacter && (isSeparatorSingleCharacter || className.slice(index2, index2 + separatorLength) === separator)) {
-          modifiers2.push(className.slice(modifierStart, index2));
-          modifierStart = index2 + separatorLength;
-          continue;
-        }
-        if (currentCharacter === "/") {
-          postfixModifierPosition = index2;
-          continue;
-        }
-      }
-      if (currentCharacter === "[") {
-        bracketDepth++;
-      } else if (currentCharacter === "]") {
-        bracketDepth--;
-      }
-    }
-    const baseClassNameWithImportantModifier = modifiers2.length === 0 ? className : className.substring(modifierStart);
-    const hasImportantModifier = baseClassNameWithImportantModifier.startsWith(IMPORTANT_MODIFIER);
-    const baseClassName = hasImportantModifier ? baseClassNameWithImportantModifier.substring(1) : baseClassNameWithImportantModifier;
-    const maybePostfixModifierPosition = postfixModifierPosition && postfixModifierPosition > modifierStart ? postfixModifierPosition - modifierStart : void 0;
-    return {
-      modifiers: modifiers2,
-      hasImportantModifier,
-      baseClassName,
-      maybePostfixModifierPosition
-    };
-  };
-  if (experimentalParseClassName) {
-    return (className) => experimentalParseClassName({
-      className,
-      parseClassName
-    });
-  }
-  return parseClassName;
-};
-var sortModifiers = (modifiers2) => {
-  if (modifiers2.length <= 1) {
-    return modifiers2;
-  }
-  const sortedModifiers = [];
-  let unsortedModifiers = [];
-  modifiers2.forEach((modifier) => {
-    const isArbitraryVariant = modifier[0] === "[";
-    if (isArbitraryVariant) {
-      sortedModifiers.push(...unsortedModifiers.sort(), modifier);
-      unsortedModifiers = [];
-    } else {
-      unsortedModifiers.push(modifier);
-    }
-  });
-  sortedModifiers.push(...unsortedModifiers.sort());
-  return sortedModifiers;
-};
-var createConfigUtils = (config) => ({
-  cache: createLruCache(config.cacheSize),
-  parseClassName: createParseClassName(config),
-  ...createClassGroupUtils(config)
-});
-var SPLIT_CLASSES_REGEX = /\s+/;
-var mergeClassList = (classList, configUtils) => {
-  const {
-    parseClassName,
-    getClassGroupId,
-    getConflictingClassGroupIds
-  } = configUtils;
-  const classGroupsInConflict = [];
-  const classNames = classList.trim().split(SPLIT_CLASSES_REGEX);
-  let result = "";
-  for (let index2 = classNames.length - 1; index2 >= 0; index2 -= 1) {
-    const originalClassName = classNames[index2];
-    const {
-      modifiers: modifiers2,
-      hasImportantModifier,
-      baseClassName,
-      maybePostfixModifierPosition
-    } = parseClassName(originalClassName);
-    let hasPostfixModifier = Boolean(maybePostfixModifierPosition);
-    let classGroupId = getClassGroupId(hasPostfixModifier ? baseClassName.substring(0, maybePostfixModifierPosition) : baseClassName);
-    if (!classGroupId) {
-      if (!hasPostfixModifier) {
-        result = originalClassName + (result.length > 0 ? " " + result : result);
-        continue;
-      }
-      classGroupId = getClassGroupId(baseClassName);
-      if (!classGroupId) {
-        result = originalClassName + (result.length > 0 ? " " + result : result);
-        continue;
-      }
-      hasPostfixModifier = false;
-    }
-    const variantModifier = sortModifiers(modifiers2).join(":");
-    const modifierId = hasImportantModifier ? variantModifier + IMPORTANT_MODIFIER : variantModifier;
-    const classId = modifierId + classGroupId;
-    if (classGroupsInConflict.includes(classId)) {
-      continue;
-    }
-    classGroupsInConflict.push(classId);
-    const conflictGroups = getConflictingClassGroupIds(classGroupId, hasPostfixModifier);
-    for (let i = 0; i < conflictGroups.length; ++i) {
-      const group = conflictGroups[i];
-      classGroupsInConflict.push(modifierId + group);
-    }
-    result = originalClassName + (result.length > 0 ? " " + result : result);
-  }
-  return result;
-};
-function twJoin() {
-  let index2 = 0;
-  let argument;
-  let resolvedValue;
-  let string3 = "";
-  while (index2 < arguments.length) {
-    if (argument = arguments[index2++]) {
-      if (resolvedValue = toValue(argument)) {
-        string3 && (string3 += " ");
-        string3 += resolvedValue;
-      }
-    }
-  }
-  return string3;
-}
-var toValue = (mix3) => {
-  if (typeof mix3 === "string") {
-    return mix3;
-  }
-  let resolvedValue;
-  let string3 = "";
-  for (let k = 0; k < mix3.length; k++) {
-    if (mix3[k]) {
-      if (resolvedValue = toValue(mix3[k])) {
-        string3 && (string3 += " ");
-        string3 += resolvedValue;
-      }
-    }
-  }
-  return string3;
-};
-function createTailwindMerge(createConfigFirst, ...createConfigRest) {
-  let configUtils;
-  let cacheGet;
-  let cacheSet;
-  let functionToCall = initTailwindMerge;
-  function initTailwindMerge(classList) {
-    const config = createConfigRest.reduce((previousConfig, createConfigCurrent) => createConfigCurrent(previousConfig), createConfigFirst());
-    configUtils = createConfigUtils(config);
-    cacheGet = configUtils.cache.get;
-    cacheSet = configUtils.cache.set;
-    functionToCall = tailwindMerge;
-    return tailwindMerge(classList);
-  }
-  function tailwindMerge(classList) {
-    const cachedResult2 = cacheGet(classList);
-    if (cachedResult2) {
-      return cachedResult2;
-    }
-    const result = mergeClassList(classList, configUtils);
-    cacheSet(classList, result);
-    return result;
-  }
-  return function callTailwindMerge() {
-    return functionToCall(twJoin.apply(null, arguments));
-  };
-}
-var fromTheme = (key) => {
-  const themeGetter = (theme) => theme[key] || [];
-  themeGetter.isThemeGetter = true;
-  return themeGetter;
-};
-var arbitraryValueRegex = /^\[(?:([a-z-]+):)?(.+)\]$/i;
-var fractionRegex = /^\d+\/\d+$/;
-var stringLengths = /* @__PURE__ */ new Set(["px", "full", "screen"]);
-var tshirtUnitRegex = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/;
-var lengthUnitRegex = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/;
-var colorFunctionRegex = /^(rgba?|hsla?|hwb|(ok)?(lab|lch))\(.+\)$/;
-var shadowRegex = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/;
-var imageRegex = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/;
-var isLength = (value) => isNumber(value) || stringLengths.has(value) || fractionRegex.test(value);
-var isArbitraryLength = (value) => getIsArbitraryValue(value, "length", isLengthOnly);
-var isNumber = (value) => Boolean(value) && !Number.isNaN(Number(value));
-var isArbitraryNumber = (value) => getIsArbitraryValue(value, "number", isNumber);
-var isInteger = (value) => Boolean(value) && Number.isInteger(Number(value));
-var isPercent = (value) => value.endsWith("%") && isNumber(value.slice(0, -1));
-var isArbitraryValue = (value) => arbitraryValueRegex.test(value);
-var isTshirtSize = (value) => tshirtUnitRegex.test(value);
-var sizeLabels = /* @__PURE__ */ new Set(["length", "size", "percentage"]);
-var isArbitrarySize = (value) => getIsArbitraryValue(value, sizeLabels, isNever);
-var isArbitraryPosition = (value) => getIsArbitraryValue(value, "position", isNever);
-var imageLabels = /* @__PURE__ */ new Set(["image", "url"]);
-var isArbitraryImage = (value) => getIsArbitraryValue(value, imageLabels, isImage);
-var isArbitraryShadow = (value) => getIsArbitraryValue(value, "", isShadow);
-var isAny = () => true;
-var getIsArbitraryValue = (value, label, testValue) => {
-  const result = arbitraryValueRegex.exec(value);
-  if (result) {
-    if (result[1]) {
-      return typeof label === "string" ? result[1] === label : label.has(result[1]);
-    }
-    return testValue(result[2]);
-  }
-  return false;
-};
-var isLengthOnly = (value) => (
-  // `colorFunctionRegex` check is necessary because color functions can have percentages in them which which would be incorrectly classified as lengths.
-  // For example, `hsl(0 0% 0%)` would be classified as a length without this check.
-  // I could also use lookbehind assertion in `lengthUnitRegex` but that isn't supported widely enough.
-  lengthUnitRegex.test(value) && !colorFunctionRegex.test(value)
-);
-var isNever = () => false;
-var isShadow = (value) => shadowRegex.test(value);
-var isImage = (value) => imageRegex.test(value);
-var getDefaultConfig = () => {
-  const colors = fromTheme("colors");
-  const spacing = fromTheme("spacing");
-  const blur2 = fromTheme("blur");
-  const brightness = fromTheme("brightness");
-  const borderColor = fromTheme("borderColor");
-  const borderRadius = fromTheme("borderRadius");
-  const borderSpacing = fromTheme("borderSpacing");
-  const borderWidth = fromTheme("borderWidth");
-  const contrast = fromTheme("contrast");
-  const grayscale = fromTheme("grayscale");
-  const hueRotate = fromTheme("hueRotate");
-  const invert = fromTheme("invert");
-  const gap = fromTheme("gap");
-  const gradientColorStops = fromTheme("gradientColorStops");
-  const gradientColorStopPositions = fromTheme("gradientColorStopPositions");
-  const inset = fromTheme("inset");
-  const margin = fromTheme("margin");
-  const opacity = fromTheme("opacity");
-  const padding = fromTheme("padding");
-  const saturate2 = fromTheme("saturate");
-  const scale2 = fromTheme("scale");
-  const sepia = fromTheme("sepia");
-  const skew = fromTheme("skew");
-  const space2 = fromTheme("space");
-  const translate = fromTheme("translate");
-  const getOverscroll = () => ["auto", "contain", "none"];
-  const getOverflow = () => ["auto", "hidden", "clip", "visible", "scroll"];
-  const getSpacingWithAutoAndArbitrary = () => ["auto", isArbitraryValue, spacing];
-  const getSpacingWithArbitrary = () => [isArbitraryValue, spacing];
-  const getLengthWithEmptyAndArbitrary = () => ["", isLength, isArbitraryLength];
-  const getNumberWithAutoAndArbitrary = () => ["auto", isNumber, isArbitraryValue];
-  const getPositions = () => ["bottom", "center", "left", "left-bottom", "left-top", "right", "right-bottom", "right-top", "top"];
-  const getLineStyles = () => ["solid", "dashed", "dotted", "double", "none"];
-  const getBlendModes = () => ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"];
-  const getAlign = () => ["start", "end", "center", "between", "around", "evenly", "stretch"];
-  const getZeroAndEmpty = () => ["", "0", isArbitraryValue];
-  const getBreaks = () => ["auto", "avoid", "all", "avoid-page", "page", "left", "right", "column"];
-  const getNumberAndArbitrary = () => [isNumber, isArbitraryValue];
-  return {
-    cacheSize: 500,
-    separator: ":",
-    theme: {
-      colors: [isAny],
-      spacing: [isLength, isArbitraryLength],
-      blur: ["none", "", isTshirtSize, isArbitraryValue],
-      brightness: getNumberAndArbitrary(),
-      borderColor: [colors],
-      borderRadius: ["none", "", "full", isTshirtSize, isArbitraryValue],
-      borderSpacing: getSpacingWithArbitrary(),
-      borderWidth: getLengthWithEmptyAndArbitrary(),
-      contrast: getNumberAndArbitrary(),
-      grayscale: getZeroAndEmpty(),
-      hueRotate: getNumberAndArbitrary(),
-      invert: getZeroAndEmpty(),
-      gap: getSpacingWithArbitrary(),
-      gradientColorStops: [colors],
-      gradientColorStopPositions: [isPercent, isArbitraryLength],
-      inset: getSpacingWithAutoAndArbitrary(),
-      margin: getSpacingWithAutoAndArbitrary(),
-      opacity: getNumberAndArbitrary(),
-      padding: getSpacingWithArbitrary(),
-      saturate: getNumberAndArbitrary(),
-      scale: getNumberAndArbitrary(),
-      sepia: getZeroAndEmpty(),
-      skew: getNumberAndArbitrary(),
-      space: getSpacingWithArbitrary(),
-      translate: getSpacingWithArbitrary()
-    },
-    classGroups: {
-      // Layout
-      /**
-       * Aspect Ratio
-       * @see https://tailwindcss.com/docs/aspect-ratio
-       */
-      aspect: [{
-        aspect: ["auto", "square", "video", isArbitraryValue]
-      }],
-      /**
-       * Container
-       * @see https://tailwindcss.com/docs/container
-       */
-      container: ["container"],
-      /**
-       * Columns
-       * @see https://tailwindcss.com/docs/columns
-       */
-      columns: [{
-        columns: [isTshirtSize]
-      }],
-      /**
-       * Break After
-       * @see https://tailwindcss.com/docs/break-after
-       */
-      "break-after": [{
-        "break-after": getBreaks()
-      }],
-      /**
-       * Break Before
-       * @see https://tailwindcss.com/docs/break-before
-       */
-      "break-before": [{
-        "break-before": getBreaks()
-      }],
-      /**
-       * Break Inside
-       * @see https://tailwindcss.com/docs/break-inside
-       */
-      "break-inside": [{
-        "break-inside": ["auto", "avoid", "avoid-page", "avoid-column"]
-      }],
-      /**
-       * Box Decoration Break
-       * @see https://tailwindcss.com/docs/box-decoration-break
-       */
-      "box-decoration": [{
-        "box-decoration": ["slice", "clone"]
-      }],
-      /**
-       * Box Sizing
-       * @see https://tailwindcss.com/docs/box-sizing
-       */
-      box: [{
-        box: ["border", "content"]
-      }],
-      /**
-       * Display
-       * @see https://tailwindcss.com/docs/display
-       */
-      display: ["block", "inline-block", "inline", "flex", "inline-flex", "table", "inline-table", "table-caption", "table-cell", "table-column", "table-column-group", "table-footer-group", "table-header-group", "table-row-group", "table-row", "flow-root", "grid", "inline-grid", "contents", "list-item", "hidden"],
-      /**
-       * Floats
-       * @see https://tailwindcss.com/docs/float
-       */
-      float: [{
-        float: ["right", "left", "none", "start", "end"]
-      }],
-      /**
-       * Clear
-       * @see https://tailwindcss.com/docs/clear
-       */
-      clear: [{
-        clear: ["left", "right", "both", "none", "start", "end"]
-      }],
-      /**
-       * Isolation
-       * @see https://tailwindcss.com/docs/isolation
-       */
-      isolation: ["isolate", "isolation-auto"],
-      /**
-       * Object Fit
-       * @see https://tailwindcss.com/docs/object-fit
-       */
-      "object-fit": [{
-        object: ["contain", "cover", "fill", "none", "scale-down"]
-      }],
-      /**
-       * Object Position
-       * @see https://tailwindcss.com/docs/object-position
-       */
-      "object-position": [{
-        object: [...getPositions(), isArbitraryValue]
-      }],
-      /**
-       * Overflow
-       * @see https://tailwindcss.com/docs/overflow
-       */
-      overflow: [{
-        overflow: getOverflow()
-      }],
-      /**
-       * Overflow X
-       * @see https://tailwindcss.com/docs/overflow
-       */
-      "overflow-x": [{
-        "overflow-x": getOverflow()
-      }],
-      /**
-       * Overflow Y
-       * @see https://tailwindcss.com/docs/overflow
-       */
-      "overflow-y": [{
-        "overflow-y": getOverflow()
-      }],
-      /**
-       * Overscroll Behavior
-       * @see https://tailwindcss.com/docs/overscroll-behavior
-       */
-      overscroll: [{
-        overscroll: getOverscroll()
-      }],
-      /**
-       * Overscroll Behavior X
-       * @see https://tailwindcss.com/docs/overscroll-behavior
-       */
-      "overscroll-x": [{
-        "overscroll-x": getOverscroll()
-      }],
-      /**
-       * Overscroll Behavior Y
-       * @see https://tailwindcss.com/docs/overscroll-behavior
-       */
-      "overscroll-y": [{
-        "overscroll-y": getOverscroll()
-      }],
-      /**
-       * Position
-       * @see https://tailwindcss.com/docs/position
-       */
-      position: ["static", "fixed", "absolute", "relative", "sticky"],
-      /**
-       * Top / Right / Bottom / Left
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      inset: [{
-        inset: [inset]
-      }],
-      /**
-       * Right / Left
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      "inset-x": [{
-        "inset-x": [inset]
-      }],
-      /**
-       * Top / Bottom
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      "inset-y": [{
-        "inset-y": [inset]
-      }],
-      /**
-       * Start
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      start: [{
-        start: [inset]
-      }],
-      /**
-       * End
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      end: [{
-        end: [inset]
-      }],
-      /**
-       * Top
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      top: [{
-        top: [inset]
-      }],
-      /**
-       * Right
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      right: [{
-        right: [inset]
-      }],
-      /**
-       * Bottom
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      bottom: [{
-        bottom: [inset]
-      }],
-      /**
-       * Left
-       * @see https://tailwindcss.com/docs/top-right-bottom-left
-       */
-      left: [{
-        left: [inset]
-      }],
-      /**
-       * Visibility
-       * @see https://tailwindcss.com/docs/visibility
-       */
-      visibility: ["visible", "invisible", "collapse"],
-      /**
-       * Z-Index
-       * @see https://tailwindcss.com/docs/z-index
-       */
-      z: [{
-        z: ["auto", isInteger, isArbitraryValue]
-      }],
-      // Flexbox and Grid
-      /**
-       * Flex Basis
-       * @see https://tailwindcss.com/docs/flex-basis
-       */
-      basis: [{
-        basis: getSpacingWithAutoAndArbitrary()
-      }],
-      /**
-       * Flex Direction
-       * @see https://tailwindcss.com/docs/flex-direction
-       */
-      "flex-direction": [{
-        flex: ["row", "row-reverse", "col", "col-reverse"]
-      }],
-      /**
-       * Flex Wrap
-       * @see https://tailwindcss.com/docs/flex-wrap
-       */
-      "flex-wrap": [{
-        flex: ["wrap", "wrap-reverse", "nowrap"]
-      }],
-      /**
-       * Flex
-       * @see https://tailwindcss.com/docs/flex
-       */
-      flex: [{
-        flex: ["1", "auto", "initial", "none", isArbitraryValue]
-      }],
-      /**
-       * Flex Grow
-       * @see https://tailwindcss.com/docs/flex-grow
-       */
-      grow: [{
-        grow: getZeroAndEmpty()
-      }],
-      /**
-       * Flex Shrink
-       * @see https://tailwindcss.com/docs/flex-shrink
-       */
-      shrink: [{
-        shrink: getZeroAndEmpty()
-      }],
-      /**
-       * Order
-       * @see https://tailwindcss.com/docs/order
-       */
-      order: [{
-        order: ["first", "last", "none", isInteger, isArbitraryValue]
-      }],
-      /**
-       * Grid Template Columns
-       * @see https://tailwindcss.com/docs/grid-template-columns
-       */
-      "grid-cols": [{
-        "grid-cols": [isAny]
-      }],
-      /**
-       * Grid Column Start / End
-       * @see https://tailwindcss.com/docs/grid-column
-       */
-      "col-start-end": [{
-        col: ["auto", {
-          span: ["full", isInteger, isArbitraryValue]
-        }, isArbitraryValue]
-      }],
-      /**
-       * Grid Column Start
-       * @see https://tailwindcss.com/docs/grid-column
-       */
-      "col-start": [{
-        "col-start": getNumberWithAutoAndArbitrary()
-      }],
-      /**
-       * Grid Column End
-       * @see https://tailwindcss.com/docs/grid-column
-       */
-      "col-end": [{
-        "col-end": getNumberWithAutoAndArbitrary()
-      }],
-      /**
-       * Grid Template Rows
-       * @see https://tailwindcss.com/docs/grid-template-rows
-       */
-      "grid-rows": [{
-        "grid-rows": [isAny]
-      }],
-      /**
-       * Grid Row Start / End
-       * @see https://tailwindcss.com/docs/grid-row
-       */
-      "row-start-end": [{
-        row: ["auto", {
-          span: [isInteger, isArbitraryValue]
-        }, isArbitraryValue]
-      }],
-      /**
-       * Grid Row Start
-       * @see https://tailwindcss.com/docs/grid-row
-       */
-      "row-start": [{
-        "row-start": getNumberWithAutoAndArbitrary()
-      }],
-      /**
-       * Grid Row End
-       * @see https://tailwindcss.com/docs/grid-row
-       */
-      "row-end": [{
-        "row-end": getNumberWithAutoAndArbitrary()
-      }],
-      /**
-       * Grid Auto Flow
-       * @see https://tailwindcss.com/docs/grid-auto-flow
-       */
-      "grid-flow": [{
-        "grid-flow": ["row", "col", "dense", "row-dense", "col-dense"]
-      }],
-      /**
-       * Grid Auto Columns
-       * @see https://tailwindcss.com/docs/grid-auto-columns
-       */
-      "auto-cols": [{
-        "auto-cols": ["auto", "min", "max", "fr", isArbitraryValue]
-      }],
-      /**
-       * Grid Auto Rows
-       * @see https://tailwindcss.com/docs/grid-auto-rows
-       */
-      "auto-rows": [{
-        "auto-rows": ["auto", "min", "max", "fr", isArbitraryValue]
-      }],
-      /**
-       * Gap
-       * @see https://tailwindcss.com/docs/gap
-       */
-      gap: [{
-        gap: [gap]
-      }],
-      /**
-       * Gap X
-       * @see https://tailwindcss.com/docs/gap
-       */
-      "gap-x": [{
-        "gap-x": [gap]
-      }],
-      /**
-       * Gap Y
-       * @see https://tailwindcss.com/docs/gap
-       */
-      "gap-y": [{
-        "gap-y": [gap]
-      }],
-      /**
-       * Justify Content
-       * @see https://tailwindcss.com/docs/justify-content
-       */
-      "justify-content": [{
-        justify: ["normal", ...getAlign()]
-      }],
-      /**
-       * Justify Items
-       * @see https://tailwindcss.com/docs/justify-items
-       */
-      "justify-items": [{
-        "justify-items": ["start", "end", "center", "stretch"]
-      }],
-      /**
-       * Justify Self
-       * @see https://tailwindcss.com/docs/justify-self
-       */
-      "justify-self": [{
-        "justify-self": ["auto", "start", "end", "center", "stretch"]
-      }],
-      /**
-       * Align Content
-       * @see https://tailwindcss.com/docs/align-content
-       */
-      "align-content": [{
-        content: ["normal", ...getAlign(), "baseline"]
-      }],
-      /**
-       * Align Items
-       * @see https://tailwindcss.com/docs/align-items
-       */
-      "align-items": [{
-        items: ["start", "end", "center", "baseline", "stretch"]
-      }],
-      /**
-       * Align Self
-       * @see https://tailwindcss.com/docs/align-self
-       */
-      "align-self": [{
-        self: ["auto", "start", "end", "center", "stretch", "baseline"]
-      }],
-      /**
-       * Place Content
-       * @see https://tailwindcss.com/docs/place-content
-       */
-      "place-content": [{
-        "place-content": [...getAlign(), "baseline"]
-      }],
-      /**
-       * Place Items
-       * @see https://tailwindcss.com/docs/place-items
-       */
-      "place-items": [{
-        "place-items": ["start", "end", "center", "baseline", "stretch"]
-      }],
-      /**
-       * Place Self
-       * @see https://tailwindcss.com/docs/place-self
-       */
-      "place-self": [{
-        "place-self": ["auto", "start", "end", "center", "stretch"]
-      }],
-      // Spacing
-      /**
-       * Padding
-       * @see https://tailwindcss.com/docs/padding
-       */
-      p: [{
-        p: [padding]
-      }],
-      /**
-       * Padding X
-       * @see https://tailwindcss.com/docs/padding
-       */
-      px: [{
-        px: [padding]
-      }],
-      /**
-       * Padding Y
-       * @see https://tailwindcss.com/docs/padding
-       */
-      py: [{
-        py: [padding]
-      }],
-      /**
-       * Padding Start
-       * @see https://tailwindcss.com/docs/padding
-       */
-      ps: [{
-        ps: [padding]
-      }],
-      /**
-       * Padding End
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pe: [{
-        pe: [padding]
-      }],
-      /**
-       * Padding Top
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pt: [{
-        pt: [padding]
-      }],
-      /**
-       * Padding Right
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pr: [{
-        pr: [padding]
-      }],
-      /**
-       * Padding Bottom
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pb: [{
-        pb: [padding]
-      }],
-      /**
-       * Padding Left
-       * @see https://tailwindcss.com/docs/padding
-       */
-      pl: [{
-        pl: [padding]
-      }],
-      /**
-       * Margin
-       * @see https://tailwindcss.com/docs/margin
-       */
-      m: [{
-        m: [margin]
-      }],
-      /**
-       * Margin X
-       * @see https://tailwindcss.com/docs/margin
-       */
-      mx: [{
-        mx: [margin]
-      }],
-      /**
-       * Margin Y
-       * @see https://tailwindcss.com/docs/margin
-       */
-      my: [{
-        my: [margin]
-      }],
-      /**
-       * Margin Start
-       * @see https://tailwindcss.com/docs/margin
-       */
-      ms: [{
-        ms: [margin]
-      }],
-      /**
-       * Margin End
-       * @see https://tailwindcss.com/docs/margin
-       */
-      me: [{
-        me: [margin]
-      }],
-      /**
-       * Margin Top
-       * @see https://tailwindcss.com/docs/margin
-       */
-      mt: [{
-        mt: [margin]
-      }],
-      /**
-       * Margin Right
-       * @see https://tailwindcss.com/docs/margin
-       */
-      mr: [{
-        mr: [margin]
-      }],
-      /**
-       * Margin Bottom
-       * @see https://tailwindcss.com/docs/margin
-       */
-      mb: [{
-        mb: [margin]
-      }],
-      /**
-       * Margin Left
-       * @see https://tailwindcss.com/docs/margin
-       */
-      ml: [{
-        ml: [margin]
-      }],
-      /**
-       * Space Between X
-       * @see https://tailwindcss.com/docs/space
-       */
-      "space-x": [{
-        "space-x": [space2]
-      }],
-      /**
-       * Space Between X Reverse
-       * @see https://tailwindcss.com/docs/space
-       */
-      "space-x-reverse": ["space-x-reverse"],
-      /**
-       * Space Between Y
-       * @see https://tailwindcss.com/docs/space
-       */
-      "space-y": [{
-        "space-y": [space2]
-      }],
-      /**
-       * Space Between Y Reverse
-       * @see https://tailwindcss.com/docs/space
-       */
-      "space-y-reverse": ["space-y-reverse"],
-      // Sizing
-      /**
-       * Width
-       * @see https://tailwindcss.com/docs/width
-       */
-      w: [{
-        w: ["auto", "min", "max", "fit", "svw", "lvw", "dvw", isArbitraryValue, spacing]
-      }],
-      /**
-       * Min-Width
-       * @see https://tailwindcss.com/docs/min-width
-       */
-      "min-w": [{
-        "min-w": [isArbitraryValue, spacing, "min", "max", "fit"]
-      }],
-      /**
-       * Max-Width
-       * @see https://tailwindcss.com/docs/max-width
-       */
-      "max-w": [{
-        "max-w": [isArbitraryValue, spacing, "none", "full", "min", "max", "fit", "prose", {
-          screen: [isTshirtSize]
-        }, isTshirtSize]
-      }],
-      /**
-       * Height
-       * @see https://tailwindcss.com/docs/height
-       */
-      h: [{
-        h: [isArbitraryValue, spacing, "auto", "min", "max", "fit", "svh", "lvh", "dvh"]
-      }],
-      /**
-       * Min-Height
-       * @see https://tailwindcss.com/docs/min-height
-       */
-      "min-h": [{
-        "min-h": [isArbitraryValue, spacing, "min", "max", "fit", "svh", "lvh", "dvh"]
-      }],
-      /**
-       * Max-Height
-       * @see https://tailwindcss.com/docs/max-height
-       */
-      "max-h": [{
-        "max-h": [isArbitraryValue, spacing, "min", "max", "fit", "svh", "lvh", "dvh"]
-      }],
-      /**
-       * Size
-       * @see https://tailwindcss.com/docs/size
-       */
-      size: [{
-        size: [isArbitraryValue, spacing, "auto", "min", "max", "fit"]
-      }],
-      // Typography
-      /**
-       * Font Size
-       * @see https://tailwindcss.com/docs/font-size
-       */
-      "font-size": [{
-        text: ["base", isTshirtSize, isArbitraryLength]
-      }],
-      /**
-       * Font Smoothing
-       * @see https://tailwindcss.com/docs/font-smoothing
-       */
-      "font-smoothing": ["antialiased", "subpixel-antialiased"],
-      /**
-       * Font Style
-       * @see https://tailwindcss.com/docs/font-style
-       */
-      "font-style": ["italic", "not-italic"],
-      /**
-       * Font Weight
-       * @see https://tailwindcss.com/docs/font-weight
-       */
-      "font-weight": [{
-        font: ["thin", "extralight", "light", "normal", "medium", "semibold", "bold", "extrabold", "black", isArbitraryNumber]
-      }],
-      /**
-       * Font Family
-       * @see https://tailwindcss.com/docs/font-family
-       */
-      "font-family": [{
-        font: [isAny]
-      }],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-normal": ["normal-nums"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-ordinal": ["ordinal"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-slashed-zero": ["slashed-zero"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-figure": ["lining-nums", "oldstyle-nums"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-spacing": ["proportional-nums", "tabular-nums"],
-      /**
-       * Font Variant Numeric
-       * @see https://tailwindcss.com/docs/font-variant-numeric
-       */
-      "fvn-fraction": ["diagonal-fractions", "stacked-fractions"],
-      /**
-       * Letter Spacing
-       * @see https://tailwindcss.com/docs/letter-spacing
-       */
-      tracking: [{
-        tracking: ["tighter", "tight", "normal", "wide", "wider", "widest", isArbitraryValue]
-      }],
-      /**
-       * Line Clamp
-       * @see https://tailwindcss.com/docs/line-clamp
-       */
-      "line-clamp": [{
-        "line-clamp": ["none", isNumber, isArbitraryNumber]
-      }],
-      /**
-       * Line Height
-       * @see https://tailwindcss.com/docs/line-height
-       */
-      leading: [{
-        leading: ["none", "tight", "snug", "normal", "relaxed", "loose", isLength, isArbitraryValue]
-      }],
-      /**
-       * List Style Image
-       * @see https://tailwindcss.com/docs/list-style-image
-       */
-      "list-image": [{
-        "list-image": ["none", isArbitraryValue]
-      }],
-      /**
-       * List Style Type
-       * @see https://tailwindcss.com/docs/list-style-type
-       */
-      "list-style-type": [{
-        list: ["none", "disc", "decimal", isArbitraryValue]
-      }],
-      /**
-       * List Style Position
-       * @see https://tailwindcss.com/docs/list-style-position
-       */
-      "list-style-position": [{
-        list: ["inside", "outside"]
-      }],
-      /**
-       * Placeholder Color
-       * @deprecated since Tailwind CSS v3.0.0
-       * @see https://tailwindcss.com/docs/placeholder-color
-       */
-      "placeholder-color": [{
-        placeholder: [colors]
-      }],
-      /**
-       * Placeholder Opacity
-       * @see https://tailwindcss.com/docs/placeholder-opacity
-       */
-      "placeholder-opacity": [{
-        "placeholder-opacity": [opacity]
-      }],
-      /**
-       * Text Alignment
-       * @see https://tailwindcss.com/docs/text-align
-       */
-      "text-alignment": [{
-        text: ["left", "center", "right", "justify", "start", "end"]
-      }],
-      /**
-       * Text Color
-       * @see https://tailwindcss.com/docs/text-color
-       */
-      "text-color": [{
-        text: [colors]
-      }],
-      /**
-       * Text Opacity
-       * @see https://tailwindcss.com/docs/text-opacity
-       */
-      "text-opacity": [{
-        "text-opacity": [opacity]
-      }],
-      /**
-       * Text Decoration
-       * @see https://tailwindcss.com/docs/text-decoration
-       */
-      "text-decoration": ["underline", "overline", "line-through", "no-underline"],
-      /**
-       * Text Decoration Style
-       * @see https://tailwindcss.com/docs/text-decoration-style
-       */
-      "text-decoration-style": [{
-        decoration: [...getLineStyles(), "wavy"]
-      }],
-      /**
-       * Text Decoration Thickness
-       * @see https://tailwindcss.com/docs/text-decoration-thickness
-       */
-      "text-decoration-thickness": [{
-        decoration: ["auto", "from-font", isLength, isArbitraryLength]
-      }],
-      /**
-       * Text Underline Offset
-       * @see https://tailwindcss.com/docs/text-underline-offset
-       */
-      "underline-offset": [{
-        "underline-offset": ["auto", isLength, isArbitraryValue]
-      }],
-      /**
-       * Text Decoration Color
-       * @see https://tailwindcss.com/docs/text-decoration-color
-       */
-      "text-decoration-color": [{
-        decoration: [colors]
-      }],
-      /**
-       * Text Transform
-       * @see https://tailwindcss.com/docs/text-transform
-       */
-      "text-transform": ["uppercase", "lowercase", "capitalize", "normal-case"],
-      /**
-       * Text Overflow
-       * @see https://tailwindcss.com/docs/text-overflow
-       */
-      "text-overflow": ["truncate", "text-ellipsis", "text-clip"],
-      /**
-       * Text Wrap
-       * @see https://tailwindcss.com/docs/text-wrap
-       */
-      "text-wrap": [{
-        text: ["wrap", "nowrap", "balance", "pretty"]
-      }],
-      /**
-       * Text Indent
-       * @see https://tailwindcss.com/docs/text-indent
-       */
-      indent: [{
-        indent: getSpacingWithArbitrary()
-      }],
-      /**
-       * Vertical Alignment
-       * @see https://tailwindcss.com/docs/vertical-align
-       */
-      "vertical-align": [{
-        align: ["baseline", "top", "middle", "bottom", "text-top", "text-bottom", "sub", "super", isArbitraryValue]
-      }],
-      /**
-       * Whitespace
-       * @see https://tailwindcss.com/docs/whitespace
-       */
-      whitespace: [{
-        whitespace: ["normal", "nowrap", "pre", "pre-line", "pre-wrap", "break-spaces"]
-      }],
-      /**
-       * Word Break
-       * @see https://tailwindcss.com/docs/word-break
-       */
-      break: [{
-        break: ["normal", "words", "all", "keep"]
-      }],
-      /**
-       * Hyphens
-       * @see https://tailwindcss.com/docs/hyphens
-       */
-      hyphens: [{
-        hyphens: ["none", "manual", "auto"]
-      }],
-      /**
-       * Content
-       * @see https://tailwindcss.com/docs/content
-       */
-      content: [{
-        content: ["none", isArbitraryValue]
-      }],
-      // Backgrounds
-      /**
-       * Background Attachment
-       * @see https://tailwindcss.com/docs/background-attachment
-       */
-      "bg-attachment": [{
-        bg: ["fixed", "local", "scroll"]
-      }],
-      /**
-       * Background Clip
-       * @see https://tailwindcss.com/docs/background-clip
-       */
-      "bg-clip": [{
-        "bg-clip": ["border", "padding", "content", "text"]
-      }],
-      /**
-       * Background Opacity
-       * @deprecated since Tailwind CSS v3.0.0
-       * @see https://tailwindcss.com/docs/background-opacity
-       */
-      "bg-opacity": [{
-        "bg-opacity": [opacity]
-      }],
-      /**
-       * Background Origin
-       * @see https://tailwindcss.com/docs/background-origin
-       */
-      "bg-origin": [{
-        "bg-origin": ["border", "padding", "content"]
-      }],
-      /**
-       * Background Position
-       * @see https://tailwindcss.com/docs/background-position
-       */
-      "bg-position": [{
-        bg: [...getPositions(), isArbitraryPosition]
-      }],
-      /**
-       * Background Repeat
-       * @see https://tailwindcss.com/docs/background-repeat
-       */
-      "bg-repeat": [{
-        bg: ["no-repeat", {
-          repeat: ["", "x", "y", "round", "space"]
-        }]
-      }],
-      /**
-       * Background Size
-       * @see https://tailwindcss.com/docs/background-size
-       */
-      "bg-size": [{
-        bg: ["auto", "cover", "contain", isArbitrarySize]
-      }],
-      /**
-       * Background Image
-       * @see https://tailwindcss.com/docs/background-image
-       */
-      "bg-image": [{
-        bg: ["none", {
-          "gradient-to": ["t", "tr", "r", "br", "b", "bl", "l", "tl"]
-        }, isArbitraryImage]
-      }],
-      /**
-       * Background Color
-       * @see https://tailwindcss.com/docs/background-color
-       */
-      "bg-color": [{
-        bg: [colors]
-      }],
-      /**
-       * Gradient Color Stops From Position
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-from-pos": [{
-        from: [gradientColorStopPositions]
-      }],
-      /**
-       * Gradient Color Stops Via Position
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-via-pos": [{
-        via: [gradientColorStopPositions]
-      }],
-      /**
-       * Gradient Color Stops To Position
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-to-pos": [{
-        to: [gradientColorStopPositions]
-      }],
-      /**
-       * Gradient Color Stops From
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-from": [{
-        from: [gradientColorStops]
-      }],
-      /**
-       * Gradient Color Stops Via
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-via": [{
-        via: [gradientColorStops]
-      }],
-      /**
-       * Gradient Color Stops To
-       * @see https://tailwindcss.com/docs/gradient-color-stops
-       */
-      "gradient-to": [{
-        to: [gradientColorStops]
-      }],
-      // Borders
-      /**
-       * Border Radius
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      rounded: [{
-        rounded: [borderRadius]
-      }],
-      /**
-       * Border Radius Start
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-s": [{
-        "rounded-s": [borderRadius]
-      }],
-      /**
-       * Border Radius End
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-e": [{
-        "rounded-e": [borderRadius]
-      }],
-      /**
-       * Border Radius Top
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-t": [{
-        "rounded-t": [borderRadius]
-      }],
-      /**
-       * Border Radius Right
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-r": [{
-        "rounded-r": [borderRadius]
-      }],
-      /**
-       * Border Radius Bottom
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-b": [{
-        "rounded-b": [borderRadius]
-      }],
-      /**
-       * Border Radius Left
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-l": [{
-        "rounded-l": [borderRadius]
-      }],
-      /**
-       * Border Radius Start Start
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-ss": [{
-        "rounded-ss": [borderRadius]
-      }],
-      /**
-       * Border Radius Start End
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-se": [{
-        "rounded-se": [borderRadius]
-      }],
-      /**
-       * Border Radius End End
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-ee": [{
-        "rounded-ee": [borderRadius]
-      }],
-      /**
-       * Border Radius End Start
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-es": [{
-        "rounded-es": [borderRadius]
-      }],
-      /**
-       * Border Radius Top Left
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-tl": [{
-        "rounded-tl": [borderRadius]
-      }],
-      /**
-       * Border Radius Top Right
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-tr": [{
-        "rounded-tr": [borderRadius]
-      }],
-      /**
-       * Border Radius Bottom Right
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-br": [{
-        "rounded-br": [borderRadius]
-      }],
-      /**
-       * Border Radius Bottom Left
-       * @see https://tailwindcss.com/docs/border-radius
-       */
-      "rounded-bl": [{
-        "rounded-bl": [borderRadius]
-      }],
-      /**
-       * Border Width
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w": [{
-        border: [borderWidth]
-      }],
-      /**
-       * Border Width X
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-x": [{
-        "border-x": [borderWidth]
-      }],
-      /**
-       * Border Width Y
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-y": [{
-        "border-y": [borderWidth]
-      }],
-      /**
-       * Border Width Start
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-s": [{
-        "border-s": [borderWidth]
-      }],
-      /**
-       * Border Width End
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-e": [{
-        "border-e": [borderWidth]
-      }],
-      /**
-       * Border Width Top
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-t": [{
-        "border-t": [borderWidth]
-      }],
-      /**
-       * Border Width Right
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-r": [{
-        "border-r": [borderWidth]
-      }],
-      /**
-       * Border Width Bottom
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-b": [{
-        "border-b": [borderWidth]
-      }],
-      /**
-       * Border Width Left
-       * @see https://tailwindcss.com/docs/border-width
-       */
-      "border-w-l": [{
-        "border-l": [borderWidth]
-      }],
-      /**
-       * Border Opacity
-       * @see https://tailwindcss.com/docs/border-opacity
-       */
-      "border-opacity": [{
-        "border-opacity": [opacity]
-      }],
-      /**
-       * Border Style
-       * @see https://tailwindcss.com/docs/border-style
-       */
-      "border-style": [{
-        border: [...getLineStyles(), "hidden"]
-      }],
-      /**
-       * Divide Width X
-       * @see https://tailwindcss.com/docs/divide-width
-       */
-      "divide-x": [{
-        "divide-x": [borderWidth]
-      }],
-      /**
-       * Divide Width X Reverse
-       * @see https://tailwindcss.com/docs/divide-width
-       */
-      "divide-x-reverse": ["divide-x-reverse"],
-      /**
-       * Divide Width Y
-       * @see https://tailwindcss.com/docs/divide-width
-       */
-      "divide-y": [{
-        "divide-y": [borderWidth]
-      }],
-      /**
-       * Divide Width Y Reverse
-       * @see https://tailwindcss.com/docs/divide-width
-       */
-      "divide-y-reverse": ["divide-y-reverse"],
-      /**
-       * Divide Opacity
-       * @see https://tailwindcss.com/docs/divide-opacity
-       */
-      "divide-opacity": [{
-        "divide-opacity": [opacity]
-      }],
-      /**
-       * Divide Style
-       * @see https://tailwindcss.com/docs/divide-style
-       */
-      "divide-style": [{
-        divide: getLineStyles()
-      }],
-      /**
-       * Border Color
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color": [{
-        border: [borderColor]
-      }],
-      /**
-       * Border Color X
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-x": [{
-        "border-x": [borderColor]
-      }],
-      /**
-       * Border Color Y
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-y": [{
-        "border-y": [borderColor]
-      }],
-      /**
-       * Border Color S
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-s": [{
-        "border-s": [borderColor]
-      }],
-      /**
-       * Border Color E
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-e": [{
-        "border-e": [borderColor]
-      }],
-      /**
-       * Border Color Top
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-t": [{
-        "border-t": [borderColor]
-      }],
-      /**
-       * Border Color Right
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-r": [{
-        "border-r": [borderColor]
-      }],
-      /**
-       * Border Color Bottom
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-b": [{
-        "border-b": [borderColor]
-      }],
-      /**
-       * Border Color Left
-       * @see https://tailwindcss.com/docs/border-color
-       */
-      "border-color-l": [{
-        "border-l": [borderColor]
-      }],
-      /**
-       * Divide Color
-       * @see https://tailwindcss.com/docs/divide-color
-       */
-      "divide-color": [{
-        divide: [borderColor]
-      }],
-      /**
-       * Outline Style
-       * @see https://tailwindcss.com/docs/outline-style
-       */
-      "outline-style": [{
-        outline: ["", ...getLineStyles()]
-      }],
-      /**
-       * Outline Offset
-       * @see https://tailwindcss.com/docs/outline-offset
-       */
-      "outline-offset": [{
-        "outline-offset": [isLength, isArbitraryValue]
-      }],
-      /**
-       * Outline Width
-       * @see https://tailwindcss.com/docs/outline-width
-       */
-      "outline-w": [{
-        outline: [isLength, isArbitraryLength]
-      }],
-      /**
-       * Outline Color
-       * @see https://tailwindcss.com/docs/outline-color
-       */
-      "outline-color": [{
-        outline: [colors]
-      }],
-      /**
-       * Ring Width
-       * @see https://tailwindcss.com/docs/ring-width
-       */
-      "ring-w": [{
-        ring: getLengthWithEmptyAndArbitrary()
-      }],
-      /**
-       * Ring Width Inset
-       * @see https://tailwindcss.com/docs/ring-width
-       */
-      "ring-w-inset": ["ring-inset"],
-      /**
-       * Ring Color
-       * @see https://tailwindcss.com/docs/ring-color
-       */
-      "ring-color": [{
-        ring: [colors]
-      }],
-      /**
-       * Ring Opacity
-       * @see https://tailwindcss.com/docs/ring-opacity
-       */
-      "ring-opacity": [{
-        "ring-opacity": [opacity]
-      }],
-      /**
-       * Ring Offset Width
-       * @see https://tailwindcss.com/docs/ring-offset-width
-       */
-      "ring-offset-w": [{
-        "ring-offset": [isLength, isArbitraryLength]
-      }],
-      /**
-       * Ring Offset Color
-       * @see https://tailwindcss.com/docs/ring-offset-color
-       */
-      "ring-offset-color": [{
-        "ring-offset": [colors]
-      }],
-      // Effects
-      /**
-       * Box Shadow
-       * @see https://tailwindcss.com/docs/box-shadow
-       */
-      shadow: [{
-        shadow: ["", "inner", "none", isTshirtSize, isArbitraryShadow]
-      }],
-      /**
-       * Box Shadow Color
-       * @see https://tailwindcss.com/docs/box-shadow-color
-       */
-      "shadow-color": [{
-        shadow: [isAny]
-      }],
-      /**
-       * Opacity
-       * @see https://tailwindcss.com/docs/opacity
-       */
-      opacity: [{
-        opacity: [opacity]
-      }],
-      /**
-       * Mix Blend Mode
-       * @see https://tailwindcss.com/docs/mix-blend-mode
-       */
-      "mix-blend": [{
-        "mix-blend": [...getBlendModes(), "plus-lighter", "plus-darker"]
-      }],
-      /**
-       * Background Blend Mode
-       * @see https://tailwindcss.com/docs/background-blend-mode
-       */
-      "bg-blend": [{
-        "bg-blend": getBlendModes()
-      }],
-      // Filters
-      /**
-       * Filter
-       * @deprecated since Tailwind CSS v3.0.0
-       * @see https://tailwindcss.com/docs/filter
-       */
-      filter: [{
-        filter: ["", "none"]
-      }],
-      /**
-       * Blur
-       * @see https://tailwindcss.com/docs/blur
-       */
-      blur: [{
-        blur: [blur2]
-      }],
-      /**
-       * Brightness
-       * @see https://tailwindcss.com/docs/brightness
-       */
-      brightness: [{
-        brightness: [brightness]
-      }],
-      /**
-       * Contrast
-       * @see https://tailwindcss.com/docs/contrast
-       */
-      contrast: [{
-        contrast: [contrast]
-      }],
-      /**
-       * Drop Shadow
-       * @see https://tailwindcss.com/docs/drop-shadow
-       */
-      "drop-shadow": [{
-        "drop-shadow": ["", "none", isTshirtSize, isArbitraryValue]
-      }],
-      /**
-       * Grayscale
-       * @see https://tailwindcss.com/docs/grayscale
-       */
-      grayscale: [{
-        grayscale: [grayscale]
-      }],
-      /**
-       * Hue Rotate
-       * @see https://tailwindcss.com/docs/hue-rotate
-       */
-      "hue-rotate": [{
-        "hue-rotate": [hueRotate]
-      }],
-      /**
-       * Invert
-       * @see https://tailwindcss.com/docs/invert
-       */
-      invert: [{
-        invert: [invert]
-      }],
-      /**
-       * Saturate
-       * @see https://tailwindcss.com/docs/saturate
-       */
-      saturate: [{
-        saturate: [saturate2]
-      }],
-      /**
-       * Sepia
-       * @see https://tailwindcss.com/docs/sepia
-       */
-      sepia: [{
-        sepia: [sepia]
-      }],
-      /**
-       * Backdrop Filter
-       * @deprecated since Tailwind CSS v3.0.0
-       * @see https://tailwindcss.com/docs/backdrop-filter
-       */
-      "backdrop-filter": [{
-        "backdrop-filter": ["", "none"]
-      }],
-      /**
-       * Backdrop Blur
-       * @see https://tailwindcss.com/docs/backdrop-blur
-       */
-      "backdrop-blur": [{
-        "backdrop-blur": [blur2]
-      }],
-      /**
-       * Backdrop Brightness
-       * @see https://tailwindcss.com/docs/backdrop-brightness
-       */
-      "backdrop-brightness": [{
-        "backdrop-brightness": [brightness]
-      }],
-      /**
-       * Backdrop Contrast
-       * @see https://tailwindcss.com/docs/backdrop-contrast
-       */
-      "backdrop-contrast": [{
-        "backdrop-contrast": [contrast]
-      }],
-      /**
-       * Backdrop Grayscale
-       * @see https://tailwindcss.com/docs/backdrop-grayscale
-       */
-      "backdrop-grayscale": [{
-        "backdrop-grayscale": [grayscale]
-      }],
-      /**
-       * Backdrop Hue Rotate
-       * @see https://tailwindcss.com/docs/backdrop-hue-rotate
-       */
-      "backdrop-hue-rotate": [{
-        "backdrop-hue-rotate": [hueRotate]
-      }],
-      /**
-       * Backdrop Invert
-       * @see https://tailwindcss.com/docs/backdrop-invert
-       */
-      "backdrop-invert": [{
-        "backdrop-invert": [invert]
-      }],
-      /**
-       * Backdrop Opacity
-       * @see https://tailwindcss.com/docs/backdrop-opacity
-       */
-      "backdrop-opacity": [{
-        "backdrop-opacity": [opacity]
-      }],
-      /**
-       * Backdrop Saturate
-       * @see https://tailwindcss.com/docs/backdrop-saturate
-       */
-      "backdrop-saturate": [{
-        "backdrop-saturate": [saturate2]
-      }],
-      /**
-       * Backdrop Sepia
-       * @see https://tailwindcss.com/docs/backdrop-sepia
-       */
-      "backdrop-sepia": [{
-        "backdrop-sepia": [sepia]
-      }],
-      // Tables
-      /**
-       * Border Collapse
-       * @see https://tailwindcss.com/docs/border-collapse
-       */
-      "border-collapse": [{
-        border: ["collapse", "separate"]
-      }],
-      /**
-       * Border Spacing
-       * @see https://tailwindcss.com/docs/border-spacing
-       */
-      "border-spacing": [{
-        "border-spacing": [borderSpacing]
-      }],
-      /**
-       * Border Spacing X
-       * @see https://tailwindcss.com/docs/border-spacing
-       */
-      "border-spacing-x": [{
-        "border-spacing-x": [borderSpacing]
-      }],
-      /**
-       * Border Spacing Y
-       * @see https://tailwindcss.com/docs/border-spacing
-       */
-      "border-spacing-y": [{
-        "border-spacing-y": [borderSpacing]
-      }],
-      /**
-       * Table Layout
-       * @see https://tailwindcss.com/docs/table-layout
-       */
-      "table-layout": [{
-        table: ["auto", "fixed"]
-      }],
-      /**
-       * Caption Side
-       * @see https://tailwindcss.com/docs/caption-side
-       */
-      caption: [{
-        caption: ["top", "bottom"]
-      }],
-      // Transitions and Animation
-      /**
-       * Tranisition Property
-       * @see https://tailwindcss.com/docs/transition-property
-       */
-      transition: [{
-        transition: ["none", "all", "", "colors", "opacity", "shadow", "transform", isArbitraryValue]
-      }],
-      /**
-       * Transition Duration
-       * @see https://tailwindcss.com/docs/transition-duration
-       */
-      duration: [{
-        duration: getNumberAndArbitrary()
-      }],
-      /**
-       * Transition Timing Function
-       * @see https://tailwindcss.com/docs/transition-timing-function
-       */
-      ease: [{
-        ease: ["linear", "in", "out", "in-out", isArbitraryValue]
-      }],
-      /**
-       * Transition Delay
-       * @see https://tailwindcss.com/docs/transition-delay
-       */
-      delay: [{
-        delay: getNumberAndArbitrary()
-      }],
-      /**
-       * Animation
-       * @see https://tailwindcss.com/docs/animation
-       */
-      animate: [{
-        animate: ["none", "spin", "ping", "pulse", "bounce", isArbitraryValue]
-      }],
-      // Transforms
-      /**
-       * Transform
-       * @see https://tailwindcss.com/docs/transform
-       */
-      transform: [{
-        transform: ["", "gpu", "none"]
-      }],
-      /**
-       * Scale
-       * @see https://tailwindcss.com/docs/scale
-       */
-      scale: [{
-        scale: [scale2]
-      }],
-      /**
-       * Scale X
-       * @see https://tailwindcss.com/docs/scale
-       */
-      "scale-x": [{
-        "scale-x": [scale2]
-      }],
-      /**
-       * Scale Y
-       * @see https://tailwindcss.com/docs/scale
-       */
-      "scale-y": [{
-        "scale-y": [scale2]
-      }],
-      /**
-       * Rotate
-       * @see https://tailwindcss.com/docs/rotate
-       */
-      rotate: [{
-        rotate: [isInteger, isArbitraryValue]
-      }],
-      /**
-       * Translate X
-       * @see https://tailwindcss.com/docs/translate
-       */
-      "translate-x": [{
-        "translate-x": [translate]
-      }],
-      /**
-       * Translate Y
-       * @see https://tailwindcss.com/docs/translate
-       */
-      "translate-y": [{
-        "translate-y": [translate]
-      }],
-      /**
-       * Skew X
-       * @see https://tailwindcss.com/docs/skew
-       */
-      "skew-x": [{
-        "skew-x": [skew]
-      }],
-      /**
-       * Skew Y
-       * @see https://tailwindcss.com/docs/skew
-       */
-      "skew-y": [{
-        "skew-y": [skew]
-      }],
-      /**
-       * Transform Origin
-       * @see https://tailwindcss.com/docs/transform-origin
-       */
-      "transform-origin": [{
-        origin: ["center", "top", "top-right", "right", "bottom-right", "bottom", "bottom-left", "left", "top-left", isArbitraryValue]
-      }],
-      // Interactivity
-      /**
-       * Accent Color
-       * @see https://tailwindcss.com/docs/accent-color
-       */
-      accent: [{
-        accent: ["auto", colors]
-      }],
-      /**
-       * Appearance
-       * @see https://tailwindcss.com/docs/appearance
-       */
-      appearance: [{
-        appearance: ["none", "auto"]
-      }],
-      /**
-       * Cursor
-       * @see https://tailwindcss.com/docs/cursor
-       */
-      cursor: [{
-        cursor: ["auto", "default", "pointer", "wait", "text", "move", "help", "not-allowed", "none", "context-menu", "progress", "cell", "crosshair", "vertical-text", "alias", "copy", "no-drop", "grab", "grabbing", "all-scroll", "col-resize", "row-resize", "n-resize", "e-resize", "s-resize", "w-resize", "ne-resize", "nw-resize", "se-resize", "sw-resize", "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "zoom-in", "zoom-out", isArbitraryValue]
-      }],
-      /**
-       * Caret Color
-       * @see https://tailwindcss.com/docs/just-in-time-mode#caret-color-utilities
-       */
-      "caret-color": [{
-        caret: [colors]
-      }],
-      /**
-       * Pointer Events
-       * @see https://tailwindcss.com/docs/pointer-events
-       */
-      "pointer-events": [{
-        "pointer-events": ["none", "auto"]
-      }],
-      /**
-       * Resize
-       * @see https://tailwindcss.com/docs/resize
-       */
-      resize: [{
-        resize: ["none", "y", "x", ""]
-      }],
-      /**
-       * Scroll Behavior
-       * @see https://tailwindcss.com/docs/scroll-behavior
-       */
-      "scroll-behavior": [{
-        scroll: ["auto", "smooth"]
-      }],
-      /**
-       * Scroll Margin
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-m": [{
-        "scroll-m": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin X
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-mx": [{
-        "scroll-mx": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Y
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-my": [{
-        "scroll-my": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Start
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-ms": [{
-        "scroll-ms": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin End
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-me": [{
-        "scroll-me": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Top
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-mt": [{
-        "scroll-mt": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Right
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-mr": [{
-        "scroll-mr": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Bottom
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-mb": [{
-        "scroll-mb": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Margin Left
-       * @see https://tailwindcss.com/docs/scroll-margin
-       */
-      "scroll-ml": [{
-        "scroll-ml": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-p": [{
-        "scroll-p": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding X
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-px": [{
-        "scroll-px": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Y
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-py": [{
-        "scroll-py": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Start
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-ps": [{
-        "scroll-ps": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding End
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pe": [{
-        "scroll-pe": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Top
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pt": [{
-        "scroll-pt": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Right
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pr": [{
-        "scroll-pr": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Bottom
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pb": [{
-        "scroll-pb": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Padding Left
-       * @see https://tailwindcss.com/docs/scroll-padding
-       */
-      "scroll-pl": [{
-        "scroll-pl": getSpacingWithArbitrary()
-      }],
-      /**
-       * Scroll Snap Align
-       * @see https://tailwindcss.com/docs/scroll-snap-align
-       */
-      "snap-align": [{
-        snap: ["start", "end", "center", "align-none"]
-      }],
-      /**
-       * Scroll Snap Stop
-       * @see https://tailwindcss.com/docs/scroll-snap-stop
-       */
-      "snap-stop": [{
-        snap: ["normal", "always"]
-      }],
-      /**
-       * Scroll Snap Type
-       * @see https://tailwindcss.com/docs/scroll-snap-type
-       */
-      "snap-type": [{
-        snap: ["none", "x", "y", "both"]
-      }],
-      /**
-       * Scroll Snap Type Strictness
-       * @see https://tailwindcss.com/docs/scroll-snap-type
-       */
-      "snap-strictness": [{
-        snap: ["mandatory", "proximity"]
-      }],
-      /**
-       * Touch Action
-       * @see https://tailwindcss.com/docs/touch-action
-       */
-      touch: [{
-        touch: ["auto", "none", "manipulation"]
-      }],
-      /**
-       * Touch Action X
-       * @see https://tailwindcss.com/docs/touch-action
-       */
-      "touch-x": [{
-        "touch-pan": ["x", "left", "right"]
-      }],
-      /**
-       * Touch Action Y
-       * @see https://tailwindcss.com/docs/touch-action
-       */
-      "touch-y": [{
-        "touch-pan": ["y", "up", "down"]
-      }],
-      /**
-       * Touch Action Pinch Zoom
-       * @see https://tailwindcss.com/docs/touch-action
-       */
-      "touch-pz": ["touch-pinch-zoom"],
-      /**
-       * User Select
-       * @see https://tailwindcss.com/docs/user-select
-       */
-      select: [{
-        select: ["none", "text", "all", "auto"]
-      }],
-      /**
-       * Will Change
-       * @see https://tailwindcss.com/docs/will-change
-       */
-      "will-change": [{
-        "will-change": ["auto", "scroll", "contents", "transform", isArbitraryValue]
-      }],
-      // SVG
-      /**
-       * Fill
-       * @see https://tailwindcss.com/docs/fill
-       */
-      fill: [{
-        fill: [colors, "none"]
-      }],
-      /**
-       * Stroke Width
-       * @see https://tailwindcss.com/docs/stroke-width
-       */
-      "stroke-w": [{
-        stroke: [isLength, isArbitraryLength, isArbitraryNumber]
-      }],
-      /**
-       * Stroke
-       * @see https://tailwindcss.com/docs/stroke
-       */
-      stroke: [{
-        stroke: [colors, "none"]
-      }],
-      // Accessibility
-      /**
-       * Screen Readers
-       * @see https://tailwindcss.com/docs/screen-readers
-       */
-      sr: ["sr-only", "not-sr-only"],
-      /**
-       * Forced Color Adjust
-       * @see https://tailwindcss.com/docs/forced-color-adjust
-       */
-      "forced-color-adjust": [{
-        "forced-color-adjust": ["auto", "none"]
-      }]
-    },
-    conflictingClassGroups: {
-      overflow: ["overflow-x", "overflow-y"],
-      overscroll: ["overscroll-x", "overscroll-y"],
-      inset: ["inset-x", "inset-y", "start", "end", "top", "right", "bottom", "left"],
-      "inset-x": ["right", "left"],
-      "inset-y": ["top", "bottom"],
-      flex: ["basis", "grow", "shrink"],
-      gap: ["gap-x", "gap-y"],
-      p: ["px", "py", "ps", "pe", "pt", "pr", "pb", "pl"],
-      px: ["pr", "pl"],
-      py: ["pt", "pb"],
-      m: ["mx", "my", "ms", "me", "mt", "mr", "mb", "ml"],
-      mx: ["mr", "ml"],
-      my: ["mt", "mb"],
-      size: ["w", "h"],
-      "font-size": ["leading"],
-      "fvn-normal": ["fvn-ordinal", "fvn-slashed-zero", "fvn-figure", "fvn-spacing", "fvn-fraction"],
-      "fvn-ordinal": ["fvn-normal"],
-      "fvn-slashed-zero": ["fvn-normal"],
-      "fvn-figure": ["fvn-normal"],
-      "fvn-spacing": ["fvn-normal"],
-      "fvn-fraction": ["fvn-normal"],
-      "line-clamp": ["display", "overflow"],
-      rounded: ["rounded-s", "rounded-e", "rounded-t", "rounded-r", "rounded-b", "rounded-l", "rounded-ss", "rounded-se", "rounded-ee", "rounded-es", "rounded-tl", "rounded-tr", "rounded-br", "rounded-bl"],
-      "rounded-s": ["rounded-ss", "rounded-es"],
-      "rounded-e": ["rounded-se", "rounded-ee"],
-      "rounded-t": ["rounded-tl", "rounded-tr"],
-      "rounded-r": ["rounded-tr", "rounded-br"],
-      "rounded-b": ["rounded-br", "rounded-bl"],
-      "rounded-l": ["rounded-tl", "rounded-bl"],
-      "border-spacing": ["border-spacing-x", "border-spacing-y"],
-      "border-w": ["border-w-s", "border-w-e", "border-w-t", "border-w-r", "border-w-b", "border-w-l"],
-      "border-w-x": ["border-w-r", "border-w-l"],
-      "border-w-y": ["border-w-t", "border-w-b"],
-      "border-color": ["border-color-s", "border-color-e", "border-color-t", "border-color-r", "border-color-b", "border-color-l"],
-      "border-color-x": ["border-color-r", "border-color-l"],
-      "border-color-y": ["border-color-t", "border-color-b"],
-      "scroll-m": ["scroll-mx", "scroll-my", "scroll-ms", "scroll-me", "scroll-mt", "scroll-mr", "scroll-mb", "scroll-ml"],
-      "scroll-mx": ["scroll-mr", "scroll-ml"],
-      "scroll-my": ["scroll-mt", "scroll-mb"],
-      "scroll-p": ["scroll-px", "scroll-py", "scroll-ps", "scroll-pe", "scroll-pt", "scroll-pr", "scroll-pb", "scroll-pl"],
-      "scroll-px": ["scroll-pr", "scroll-pl"],
-      "scroll-py": ["scroll-pt", "scroll-pb"],
-      touch: ["touch-x", "touch-y", "touch-pz"],
-      "touch-x": ["touch"],
-      "touch-y": ["touch"],
-      "touch-pz": ["touch"]
-    },
-    conflictingClassGroupModifiers: {
-      "font-size": ["leading"]
-    }
-  };
-};
-var twMerge = /* @__PURE__ */ createTailwindMerge(getDefaultConfig);
-
-// lib/utils.ts
-function cn(...inputs) {
-  return twMerge(clsx(inputs));
-}
-function tw(...classNames) {
-  return cn(...classNames);
-}
-
 // views/assistant/organizer/organizer.tsx
 var import_jsx_runtime33 = __toESM(require_jsx_runtime());
 var checkIfIsMediaFile = (file) => {
@@ -63894,53 +63967,53 @@ var AssistantView = ({
     }
   }, [activeFile, plugin.app.vault]);
   if (!isLicenseValid) {
-    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col gap-4"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-3 items-center"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
         LicenseValidator,
         {
           apiKey: plugin.settings.API_KEY,
           onValidationComplete: () => setIsLicenseValid(true),
           plugin
         }
-      )
+      ) })
     ] });
   }
   if (error) {
-    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col gap-4"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-3 items-center"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
         EmptyState,
         {
           message: `Error: ${error}. Click refresh to try again.`,
           showRefresh: false,
           onRefresh: refreshContext
         }
-      )
+      ) })
     ] });
   }
   if (!activeFile) {
-    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col gap-4"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-3 items-center"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(EmptyState, { message: "Open a file " })
+    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(EmptyState, { message: "Open a file " }) })
     ] });
   }
   if (isInIgnoredPatterns) {
-    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col gap-4"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-3 items-center"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(EmptyState, { message: "This file is part of an ignored folder and will not be processed." })
+    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(EmptyState, { message: "This file is part of an ignored folder and will not be processed." }) })
     ] });
   }
   if (isMediaFile) {
-    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col gap-4"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-3 items-center"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(EmptyState, { message: "To process an image or audio file, move it to the Note Companion Inbox Folder (e.g. for image text extraction or audio transcription)." })
+    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(EmptyState, { message: "To process an image or audio file, move it to the Note Companion Inbox Folder (e.g. for image text extraction or audio transcription)." }) })
     ] });
   }
   if (!noteContent.trim()) {
-    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col gap-4"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-3 items-center"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
         EmptyState,
         {
           message: "This file is empty. Add some content and click refresh to see AI suggestions.",
@@ -63949,44 +64022,18 @@ var AssistantView = ({
           showDelete: true,
           onDelete: handleDelete
         }
-      )
+      ) })
     ] });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col gap-4"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex gap-3 items-center"), children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col h-full overflow-y-auto"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border] bg-[--background-primary] sticky top-0 z-10"), children: [
       /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(RefreshButton, { onRefresh: refreshContext }),
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("text-accent"), children: activeFile.basename })
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)("div", { className: tw("text-xs text-[--text-normal] font-medium truncate"), children: activeFile.basename })
     ] }),
-    renderSection(
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
-        ClassificationContainer,
-        {
-          plugin,
-          file: activeFile,
-          content: noteContent,
-          refreshKey
-        }
-      ),
-      "Error loading classification"
-    ),
-    /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Tags", icon: "\u{1F3F7}\uFE0F " }),
-    renderSection(
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
-        SimilarTags,
-        {
-          plugin,
-          file: activeFile,
-          content: noteContent,
-          refreshKey
-        }
-      ),
-      "Error loading tags"
-    ),
-    plugin.settings.enableTitleSuggestions && /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)(import_jsx_runtime33.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Titles", icon: "\u{1F4A1} " }),
+    /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)("div", { className: tw("flex flex-col px-3"), children: [
       renderSection(
         /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
-          RenameSuggestion,
+          ClassificationContainer,
           {
             plugin,
             file: activeFile,
@@ -63994,42 +64041,70 @@ var AssistantView = ({
             refreshKey
           }
         ),
-        "Error loading title suggestions"
-      )
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Folders", icon: "\u{1F4C1} " }),
-    renderSection(
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
-        SimilarFolderBox,
-        {
-          plugin,
-          file: activeFile,
-          content: noteContent,
-          refreshKey
-        }
+        "Error loading classification"
       ),
-      "Error loading folder suggestions"
-    ),
-    plugin.settings.enableAtomicNotes && /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)(import_jsx_runtime33.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Atomic notes", icon: "\u2702\uFE0F " }),
-      renderSection(
-        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(AtomicNotes, { plugin, activeFile, refreshKey }),
-        "Error loading atomic notes"
-      )
-    ] }),
-    hasAudioEmbed(noteContent) && /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)(import_jsx_runtime33.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Audio Transcription", icon: "\u{1F399}\uFE0F " }),
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Tags", icon: "\u{1F3F7}\uFE0F " }),
       renderSection(
         /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
-          TranscriptionButton,
+          SimilarTags,
           {
             plugin,
             file: activeFile,
-            content: noteContent
+            content: noteContent,
+            refreshKey
           }
         ),
-        "Error loading transcription button"
-      )
+        "Error loading tags"
+      ),
+      plugin.settings.enableTitleSuggestions && /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)(import_jsx_runtime33.Fragment, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Titles", icon: "\u{1F4A1} " }),
+        renderSection(
+          /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
+            RenameSuggestion,
+            {
+              plugin,
+              file: activeFile,
+              content: noteContent,
+              refreshKey
+            }
+          ),
+          "Error loading title suggestions"
+        )
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Folders", icon: "\u{1F4C1} " }),
+      renderSection(
+        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
+          SimilarFolderBox,
+          {
+            plugin,
+            file: activeFile,
+            content: noteContent,
+            refreshKey
+          }
+        ),
+        "Error loading folder suggestions"
+      ),
+      plugin.settings.enableAtomicNotes && /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)(import_jsx_runtime33.Fragment, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Atomic notes", icon: "\u2702\uFE0F " }),
+        renderSection(
+          /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(AtomicNotes, { plugin, activeFile, refreshKey }),
+          "Error loading atomic notes"
+        )
+      ] }),
+      hasAudioEmbed(noteContent) && /* @__PURE__ */ (0, import_jsx_runtime33.jsxs)(import_jsx_runtime33.Fragment, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(SectionHeader, { text: "Audio Transcription", icon: "\u{1F399}\uFE0F " }),
+        renderSection(
+          /* @__PURE__ */ (0, import_jsx_runtime33.jsx)(
+            TranscriptionButton,
+            {
+              plugin,
+              file: activeFile,
+              content: noteContent
+            }
+          ),
+          "Error loading transcription button"
+        )
+      ] })
     ] })
   ] });
 };
@@ -64039,7 +64114,7 @@ var hasAudioEmbed = (content3) => {
 };
 
 // views/assistant/inbox-logs.tsx
-var React23 = __toESM(require_react());
+var React27 = __toESM(require_react());
 
 // inbox/services/record-manager.ts
 var import_obsidian14 = require("obsidian");
@@ -64412,17 +64487,453 @@ var usePlugin = () => {
 };
 
 // views/assistant/inbox-logs.tsx
-var import_obsidian15 = require("obsidian");
+var import_obsidian16 = require("obsidian");
+
+// components/ui/utils.tsx
 var import_jsx_runtime34 = __toESM(require_jsx_runtime());
+function cn2(...inputs) {
+  return twMerge(clsx(inputs));
+}
+function StyledContainer({
+  children,
+  className,
+  ...props
+}) {
+  return /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: cn2("fo-container h-full", className), ...props, children });
+}
+
+// views/assistant/organizer/components/processing-timeline.tsx
+var import_jsx_runtime35 = __toESM(require_jsx_runtime());
+var ProcessingTimeline = ({ record }) => {
+  const getSteps = () => {
+    const actionOrder = [
+      "Validating document..." /* VALIDATE */,
+      "Creating document container..." /* CONTAINER */,
+      "Moving attachments..." /* MOVING_ATTACHMENT */,
+      "Extracting content..." /* EXTRACT */,
+      "Cleaning up file..." /* CLEANUP */,
+      "Fetching YouTube transcript..." /* FETCH_YOUTUBE */,
+      "Analyzing document type..." /* CLASSIFY */,
+      "Moving to final location..." /* MOVING */,
+      "Renaming file..." /* RENAME */,
+      "Formatting content..." /* FORMATTING */,
+      "Appending content..." /* APPEND */,
+      "Generating tags..." /* TAGGING */,
+      "Processing completed" /* COMPLETED */
+    ];
+    return actionOrder.map((action) => {
+      const log = record.logs[action];
+      const getLabel = (action2) => {
+        const labels = {
+          ["Validating document..." /* VALIDATE */]: "Validate",
+          ["Creating document container..." /* CONTAINER */]: "Container",
+          ["Moving attachments..." /* MOVING_ATTACHMENT */]: "Attachments",
+          ["Extracting content..." /* EXTRACT */]: "Extract",
+          ["Cleaning up file..." /* CLEANUP */]: "Cleanup",
+          ["Fetching YouTube transcript..." /* FETCH_YOUTUBE */]: "YouTube",
+          ["Analyzing document type..." /* CLASSIFY */]: "Classify",
+          ["Moving to final location..." /* MOVING */]: "Move",
+          ["Renaming file..." /* RENAME */]: "Rename",
+          ["Formatting content..." /* FORMATTING */]: "Format",
+          ["Appending content..." /* APPEND */]: "Append",
+          ["Generating tags..." /* TAGGING */]: "Tags",
+          ["Processing completed" /* COMPLETED */]: "Complete"
+        };
+        return labels[action2] || action2.toString();
+      };
+      let status = "pending";
+      if (log) {
+        if (log.error)
+          status = "error";
+        else if (log.skipped)
+          status = "skipped";
+        else if (log.completed)
+          status = "completed";
+        else
+          status = "processing";
+      }
+      return {
+        action,
+        label: getLabel(action),
+        timestamp: log == null ? void 0 : log.timestamp,
+        status
+      };
+    }).filter((step) => step.status !== "pending");
+  };
+  const steps = getSteps();
+  const stepsWithDuration = steps.map((step, index2) => {
+    if (index2 === 0)
+      return { ...step, duration: 0 };
+    const prevStep = steps[index2 - 1];
+    if (step.timestamp && prevStep.timestamp) {
+      const duration = new Date(step.timestamp).getTime() - new Date(prevStep.timestamp).getTime();
+      return { ...step, duration };
+    }
+    return step;
+  });
+  const getStepIcon = (status) => {
+    switch (status) {
+      case "completed":
+        return /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(Check, { className: tw("w-4 h-4 text-[--text-success]") });
+      case "processing":
+        return /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(Loader, { className: tw("w-4 h-4 text-[--interactive-accent] animate-spin") });
+      case "error":
+        return /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(CircleAlert, { className: tw("w-4 h-4 text-[--text-error]") });
+      case "skipped":
+        return /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("div", { className: tw("w-4 h-4 rounded-full bg-[--background-modifier-border]") });
+      default:
+        return /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(Clock, { className: tw("w-4 h-4 text-[--text-muted]") });
+    }
+  };
+  const getStepColor = (status) => {
+    switch (status) {
+      case "completed":
+        return "bg-[--text-success]";
+      case "processing":
+        return "bg-[--interactive-accent]";
+      case "error":
+        return "bg-[--text-error]";
+      default:
+        return "bg-[--background-modifier-border]";
+    }
+  };
+  const formatDuration = (ms) => {
+    if (!ms)
+      return "";
+    if (ms < 1e3)
+      return `${ms}ms`;
+    return `${(ms / 1e3).toFixed(1)}s`;
+  };
+  const formatTime = (timestamp) => {
+    if (!timestamp)
+      return "";
+    const date = new Date(timestamp);
+    return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  };
+  if (steps.length === 0) {
+    return null;
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)(StyledContainer, { className: tw("bg-[--background-secondary] border-b border-[--background-modifier-border] p-4"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)("div", { className: tw("flex items-center justify-between mb-4"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("h4", { className: tw("text-sm font-medium text-[--text-normal]"), children: "Processing Timeline" }),
+      /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)("div", { className: tw("text-xs text-[--text-muted]"), children: [
+        record.status === "completed" && "\u2713 Completed",
+        record.status === "processing" && "\u23F3 In Progress",
+        record.status === "error" && "\u26A0 Error"
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("div", { className: tw("space-y-3"), children: stepsWithDuration.map((step, index2) => /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)("div", { className: tw("flex items-start gap-3"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)("div", { className: tw("flex flex-col items-center"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("div", { className: `w-8 h-8 rounded-full bg-[--background-primary] border-2 flex items-center justify-center ${step.status === "completed" ? "border-[--text-success]" : step.status === "error" ? "border-[--text-error]" : step.status === "processing" ? "border-[--interactive-accent]" : "border-[--background-modifier-border]"}`, children: getStepIcon(step.status) }),
+        index2 < stepsWithDuration.length - 1 && /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("div", { className: `w-0.5 h-6 mt-1 ${getStepColor(step.status)}` })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)("div", { className: tw("flex-1 pb-2"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)("div", { className: tw("flex items-center justify-between"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("span", { className: tw("text-sm font-medium text-[--text-normal]"), children: step.label }),
+          step.duration !== void 0 && step.duration > 0 && /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("span", { className: tw("text-xs text-[--text-muted] font-mono"), children: formatDuration(step.duration) })
+        ] }),
+        step.timestamp && /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("div", { className: tw("text-xs text-[--text-muted] mt-0.5"), children: formatTime(step.timestamp) }),
+        step.status === "skipped" && /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("div", { className: tw("text-xs text-[--text-muted] italic mt-1"), children: "Skipped" })
+      ] })
+    ] }, step.action)) }),
+    record.status === "completed" && stepsWithDuration.length > 1 && /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("div", { className: tw("mt-4 pt-4 border-t border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime35.jsxs)("div", { className: tw("flex items-center justify-between text-xs"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("span", { className: tw("text-[--text-muted]"), children: "Total time:" }),
+      /* @__PURE__ */ (0, import_jsx_runtime35.jsx)("span", { className: tw("text-[--text-normal] font-mono font-medium"), children: formatDuration(
+        stepsWithDuration.reduce((sum, step) => sum + (step.duration || 0), 0)
+      ) })
+    ] }) })
+  ] });
+};
+
+// views/assistant/organizer/components/undo-button.tsx
+var React26 = __toESM(require_react());
+
+// node_modules/@radix-ui/react-slot/dist/index.mjs
+var React24 = __toESM(require_react(), 1);
+
+// node_modules/@radix-ui/react-compose-refs/dist/index.mjs
+var React23 = __toESM(require_react(), 1);
+function setRef(ref, value) {
+  if (typeof ref === "function") {
+    return ref(value);
+  } else if (ref !== null && ref !== void 0) {
+    ref.current = value;
+  }
+}
+function composeRefs(...refs) {
+  return (node2) => {
+    let hasCleanup = false;
+    const cleanups = refs.map((ref) => {
+      const cleanup2 = setRef(ref, node2);
+      if (!hasCleanup && typeof cleanup2 == "function") {
+        hasCleanup = true;
+      }
+      return cleanup2;
+    });
+    if (hasCleanup) {
+      return () => {
+        for (let i = 0; i < cleanups.length; i++) {
+          const cleanup2 = cleanups[i];
+          if (typeof cleanup2 == "function") {
+            cleanup2();
+          } else {
+            setRef(refs[i], null);
+          }
+        }
+      };
+    }
+  };
+}
+
+// node_modules/@radix-ui/react-slot/dist/index.mjs
+var import_jsx_runtime36 = __toESM(require_jsx_runtime(), 1);
+function createSlot(ownerName) {
+  const SlotClone = /* @__PURE__ */ createSlotClone(ownerName);
+  const Slot2 = React24.forwardRef((props, forwardedRef) => {
+    const { children, ...slotProps } = props;
+    const childrenArray = React24.Children.toArray(children);
+    const slottable = childrenArray.find(isSlottable);
+    if (slottable) {
+      const newElement = slottable.props.children;
+      const newChildren = childrenArray.map((child) => {
+        if (child === slottable) {
+          if (React24.Children.count(newElement) > 1)
+            return React24.Children.only(null);
+          return React24.isValidElement(newElement) ? newElement.props.children : null;
+        } else {
+          return child;
+        }
+      });
+      return /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(SlotClone, { ...slotProps, ref: forwardedRef, children: React24.isValidElement(newElement) ? React24.cloneElement(newElement, void 0, newChildren) : null });
+    }
+    return /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(SlotClone, { ...slotProps, ref: forwardedRef, children });
+  });
+  Slot2.displayName = `${ownerName}.Slot`;
+  return Slot2;
+}
+var Slot = /* @__PURE__ */ createSlot("Slot");
+function createSlotClone(ownerName) {
+  const SlotClone = React24.forwardRef((props, forwardedRef) => {
+    const { children, ...slotProps } = props;
+    if (React24.isValidElement(children)) {
+      const childrenRef = getElementRef(children);
+      const props2 = mergeProps(slotProps, children.props);
+      if (children.type !== React24.Fragment) {
+        props2.ref = forwardedRef ? composeRefs(forwardedRef, childrenRef) : childrenRef;
+      }
+      return React24.cloneElement(children, props2);
+    }
+    return React24.Children.count(children) > 1 ? React24.Children.only(null) : null;
+  });
+  SlotClone.displayName = `${ownerName}.SlotClone`;
+  return SlotClone;
+}
+var SLOTTABLE_IDENTIFIER = Symbol("radix.slottable");
+function isSlottable(child) {
+  return React24.isValidElement(child) && typeof child.type === "function" && "__radixId" in child.type && child.type.__radixId === SLOTTABLE_IDENTIFIER;
+}
+function mergeProps(slotProps, childProps) {
+  const overrideProps = { ...childProps };
+  for (const propName in childProps) {
+    const slotPropValue = slotProps[propName];
+    const childPropValue = childProps[propName];
+    const isHandler = /^on[A-Z]/.test(propName);
+    if (isHandler) {
+      if (slotPropValue && childPropValue) {
+        overrideProps[propName] = (...args) => {
+          const result = childPropValue(...args);
+          slotPropValue(...args);
+          return result;
+        };
+      } else if (slotPropValue) {
+        overrideProps[propName] = slotPropValue;
+      }
+    } else if (propName === "style") {
+      overrideProps[propName] = { ...slotPropValue, ...childPropValue };
+    } else if (propName === "className") {
+      overrideProps[propName] = [slotPropValue, childPropValue].filter(Boolean).join(" ");
+    }
+  }
+  return { ...slotProps, ...overrideProps };
+}
+function getElementRef(element3) {
+  var _a17, _b;
+  let getter = (_a17 = Object.getOwnPropertyDescriptor(element3.props, "ref")) == null ? void 0 : _a17.get;
+  let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+  if (mayWarn) {
+    return element3.ref;
+  }
+  getter = (_b = Object.getOwnPropertyDescriptor(element3, "ref")) == null ? void 0 : _b.get;
+  mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+  if (mayWarn) {
+    return element3.props.ref;
+  }
+  return element3.props.ref || element3.ref;
+}
+
+// ../../node_modules/class-variance-authority/dist/index.mjs
+var falsyToString = (value) => typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
+var cx = clsx;
+var cva = (base2, config) => (props) => {
+  var _config_compoundVariants;
+  if ((config === null || config === void 0 ? void 0 : config.variants) == null)
+    return cx(base2, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+  const { variants, defaultVariants } = config;
+  const getVariantClassNames = Object.keys(variants).map((variant) => {
+    const variantProp = props === null || props === void 0 ? void 0 : props[variant];
+    const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
+    if (variantProp === null)
+      return null;
+    const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
+    return variants[variant][variantKey];
+  });
+  const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param) => {
+    let [key, value] = param;
+    if (value === void 0) {
+      return acc;
+    }
+    acc[key] = value;
+    return acc;
+  }, {});
+  const getCompoundVariantClassNames = config === null || config === void 0 ? void 0 : (_config_compoundVariants = config.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param) => {
+    let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
+    return Object.entries(compoundVariantOptions).every((param2) => {
+      let [key, value] = param2;
+      return Array.isArray(value) ? value.includes({
+        ...defaultVariants,
+        ...propsWithoutUndefined
+      }[key]) : {
+        ...defaultVariants,
+        ...propsWithoutUndefined
+      }[key] === value;
+    }) ? [
+      ...acc,
+      cvClass,
+      cvClassName
+    ] : acc;
+  }, []);
+  return cx(base2, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+};
+
+// components/ui/button.tsx
+var React25 = __toESM(require_react());
+var import_jsx_runtime37 = __toESM(require_jsx_runtime());
+var buttonVariants = cva(
+  "inline-flex items-center justify-center text-sm font-medium  border-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 rounded-lg",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground border-primary hover:bg-primary/90 hover:border-primary/90",
+        destructive: "bg-destructive text-destructive-foreground border-destructive hover:bg-destructive/90 hover:border-destructive/90",
+        outline: "bg-background text-foreground border-input hover:bg-accent/10 hover:text-accent-foreground",
+        secondary: "bg-secondary text-secondary-foreground border-secondary hover:bg-secondary/90 hover:border-secondary/90",
+        ghost: "border-transparent hover:bg-accent/10 hover:text-accent-foreground",
+        link: "text-primary underline-offset-4 hover:underline border-transparent"
+      },
+      size: {
+        default: "h-10 px-4 py-2",
+        sm: "h-9 px-3",
+        lg: "h-11 px-8",
+        icon: "h-10 w-10"
+      }
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default"
+    }
+  }
+);
+var Button2 = React25.forwardRef(
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button";
+    return /* @__PURE__ */ (0, import_jsx_runtime37.jsx)(
+      Comp,
+      {
+        className: cn(buttonVariants({ variant, size, className })),
+        ref,
+        ...props
+      }
+    );
+  }
+);
+Button2.displayName = "Button";
+
+// views/assistant/organizer/components/undo-button.tsx
+var import_obsidian15 = require("obsidian");
+var import_jsx_runtime38 = __toESM(require_jsx_runtime());
+var UndoButton = ({ record, plugin, onUndo }) => {
+  const [isUndoing, setIsUndoing] = React26.useState(false);
+  const canUndo = React26.useMemo(() => {
+    return record.status === "completed" && record.newPath && record.file;
+  }, [record]);
+  const handleUndo = async () => {
+    if (!record.file || !record.newPath) {
+      new import_obsidian15.Notice("Cannot undo: file information missing");
+      return;
+    }
+    setIsUndoing(true);
+    try {
+      const app = plugin.app;
+      const file = record.file;
+      const inboxPath = plugin.settings.pathToWatch;
+      const originalName = record.originalName.endsWith(".md") ? record.originalName : `${record.originalName}.md`;
+      const targetPath = `${inboxPath}/${originalName}`;
+      const existing = app.vault.getAbstractFileByPath(targetPath);
+      if (existing) {
+        new import_obsidian15.Notice(`Cannot undo: a file already exists at ${targetPath}`);
+        setIsUndoing(false);
+        return;
+      }
+      await app.fileManager.renameFile(file, targetPath);
+      if (record.tags && record.tags.length > 0) {
+        const content3 = await app.vault.read(file);
+        const lines = content3.split("\n");
+        const tagPattern = new RegExp(`tags:\\s*\\[${record.tags.map((t2) => `"${t2}"`).join(", ")}\\]`);
+        const filtered = lines.filter((line) => !tagPattern.test(line));
+        await app.vault.modify(file, filtered.join("\n"));
+      }
+      new import_obsidian15.Notice(`Undid processing for ${record.originalName}`);
+      if (onUndo) {
+        onUndo();
+      }
+    } catch (error) {
+      console.error("Error undoing file movement:", error);
+      new import_obsidian15.Notice(`Failed to undo: ${error.message}`);
+    } finally {
+      setIsUndoing(false);
+    }
+  };
+  if (!canUndo) {
+    return null;
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)(
+    Button2,
+    {
+      onClick: handleUndo,
+      disabled: isUndoing,
+      size: "sm",
+      variant: "outline",
+      className: tw("flex items-center gap-2 text-xs"),
+      title: "Undo file processing and move back to inbox",
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(Undo2, { className: tw(`w-3 h-3 ${isUndoing ? "animate-spin" : ""}`) }),
+        isUndoing ? "Undoing..." : "Undo"
+      ]
+    }
+  );
+};
+
+// views/assistant/inbox-logs.tsx
+var import_jsx_runtime39 = __toESM(require_jsx_runtime());
 var FileNameDisplay = ({ record }) => {
   const hasNewName = record.newName && record.originalName !== record.newName;
   if (!hasNewName) {
-    return /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-accent]", children: record.originalName || "No file" });
+    return /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-accent]", children: record.originalName || "No file" });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "flex items-center gap-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-muted] line-through", children: record.originalName }),
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-muted]", children: "\u2192" }),
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-accent]", children: record.newName })
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex items-center gap-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] line-through", children: record.originalName }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted]", children: "\u2192" }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-accent]", children: record.newName })
   ] });
 };
 var EssentialInfoDisplay = ({ record }) => {
@@ -64459,11 +64970,11 @@ var EssentialInfoDisplay = ({ record }) => {
   if (!hasRename && !hasMove && !hasTranscribedAudio && !hasProcessedImage && record.tags.length === 0 && !hasYouTubeTranscript && !hasFormatted) {
     return null;
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "space-y-2", children: [
-    hasRename && /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "text-sm", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "space-y-2", children: [
+    hasRename && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Renamed as",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "span",
         {
           className: "text-[--text-accent] cursor-pointer hover:underline",
@@ -64478,12 +64989,12 @@ var EssentialInfoDisplay = ({ record }) => {
         }
       ),
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(getActionTimestamp("RENAME_DONE")) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(getActionTimestamp("RENAME_DONE")) })
     ] }),
-    hasMove && /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "text-sm", children: [
+    hasMove && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Moved to",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "span",
         {
           className: "text-[--text-accent] cursor-pointer hover:underline",
@@ -64498,22 +65009,22 @@ var EssentialInfoDisplay = ({ record }) => {
         }
       ),
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(getActionTimestamp("MOVING_DONE")) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(getActionTimestamp("MOVING_DONE")) })
     ] }),
-    hasTranscribedAudio && /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "text-sm", children: [
+    hasTranscribedAudio && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Transcribed audio",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(audioTimestamp) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(audioTimestamp) })
     ] }),
-    hasProcessedImage && /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "text-sm", children: [
+    hasProcessedImage && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Processed image",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(imageTimestamp) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(imageTimestamp) })
     ] }),
-    hasFormatted && /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "text-sm", children: [
+    hasFormatted && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Note formatted as",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "span",
         {
           className: "text-[--text-accent] cursor-pointer hover:underline",
@@ -64524,7 +65035,7 @@ var EssentialInfoDisplay = ({ record }) => {
               if (templateFile) {
                 plugin.app.workspace.getLeaf().openFile(templateFile);
               } else {
-                new import_obsidian15.Notice(`Template file not found: ${templatePath}`);
+                new import_obsidian16.Notice(`Template file not found: ${templatePath}`);
               }
             }
           },
@@ -64532,47 +65043,61 @@ var EssentialInfoDisplay = ({ record }) => {
         }
       ),
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(formattingTimestamp) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(formattingTimestamp) })
     ] }),
-    record.tags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "text-sm", children: [
+    record.tags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Added tags:",
       " ",
       record.tags.join(", ")
     ] }),
-    hasYouTubeTranscript && /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "text-sm", children: [
+    hasYouTubeTranscript && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Extracted YouTube transcript",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(youtubeTimestamp) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(youtubeTimestamp) })
     ] })
   ] });
 };
 function FileCard({ record }) {
   const plugin = usePlugin();
-  return /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
-    motion.div,
+  const [isExpanded, setIsExpanded] = React27.useState(false);
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
+    "div",
     {
-      layout: true,
-      className: "bg-[--background-primary] border border-[--background-modifier-border] rounded-lg",
-      children: /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "p-4", children: /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "space-y-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "flex items-center justify-between gap-3", children: /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "flex items-center gap-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
-            "div",
-            {
-              className: "cursor-pointer",
-              onClick: () => {
-                var _a17, _b, _c;
-                return plugin.app.workspace.openLinkText(
-                  ((_a17 = record.file) == null ? void 0 : _a17.basename) || "",
-                  ((_c = (_b = record.file) == null ? void 0 : _b.parent) == null ? void 0 : _c.path) || ""
-                );
-              },
-              children: /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(FileNameDisplay, { record })
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(StatusBadge, { status: record.status })
-        ] }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(EssentialInfoDisplay, { record })
-      ] }) })
+      className: "border-b border-[--background-modifier-border] hover:bg-[--background-modifier-hover]",
+      children: /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
+        "div",
+        {
+          className: "px-3 py-2 cursor-pointer",
+          onClick: () => setIsExpanded(!isExpanded),
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex items-center justify-between gap-2", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "flex items-center gap-2 flex-1 min-w-0", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
+                "div",
+                {
+                  className: "cursor-pointer flex items-center gap-2 flex-1 min-w-0",
+                  onClick: (e2) => {
+                    var _a17, _b, _c;
+                    e2.stopPropagation();
+                    plugin.app.workspace.openLinkText(
+                      ((_a17 = record.file) == null ? void 0 : _a17.basename) || "",
+                      ((_c = (_b = record.file) == null ? void 0 : _b.parent) == null ? void 0 : _c.path) || ""
+                    );
+                  },
+                  children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(StatusBadge, { status: record.status }),
+                    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(FileNameDisplay, { record })
+                  ]
+                }
+              ) }),
+              /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(UndoButton, { record, plugin })
+            ] }),
+            isExpanded && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "mt-2 space-y-2", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(EssentialInfoDisplay, { record }),
+              (record.status === "processing" || record.status === "completed" || record.status === "error") && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "mt-3", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(ProcessingTimeline, { record }) })
+            ] })
+          ]
+        }
+      )
     }
   );
 }
@@ -64589,9 +65114,9 @@ var StatusBadge = ({ status }) => {
         return "bg-[--text-muted]";
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("span", { className: "inline-flex items-center", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("span", { className: "sr-only", children: status }),
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("span", { className: "inline-flex items-center", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "sr-only", children: status }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
       "span",
       {
         className: `w-2 h-2 rounded-full ${getStatusColor()}`,
@@ -64603,32 +65128,32 @@ var StatusBadge = ({ status }) => {
 var InboxAnalytics = ({ analytics }) => {
   const { byStatus } = analytics;
   const mainFlow = [
-    { status: "queued", icon: /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(Clock, { className: "w-4 h-4" }) },
-    { status: "processing", icon: /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(Play, { className: "w-4 h-4" }) },
-    { status: "completed", icon: /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(Check, { className: "w-4 h-4" }) }
+    { status: "queued", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Clock, { className: "w-4 h-4" }) },
+    { status: "processing", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Play, { className: "w-4 h-4" }) },
+    { status: "completed", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Check, { className: "w-4 h-4" }) }
   ];
   const exceptions = [
-    { status: "error", icon: /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(CircleAlert, { className: "w-4 h-4" }) },
-    { status: "bypassed", icon: /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(Ban, { className: "w-4 h-4" }) }
+    { status: "error", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(CircleAlert, { className: "w-4 h-4" }) },
+    { status: "bypassed", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Ban, { className: "w-4 h-4" }) }
   ];
   const StatusBox = ({
     status,
     icon
-  }) => /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
     "div",
     {
       className: "bg-[--background-primary] p-4 rounded text-center flex flex-col items-center",
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "text-sm capitalize", children: status }),
-        /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "font-semibold", children: byStatus[status] || 0 }),
-        /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "mt-1 text-[--text-muted]", children: icon })
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "text-sm capitalize", children: status }),
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "font-semibold", children: byStatus[status] || 0 }),
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "mt-1 text-[--text-muted]", children: icon })
       ]
     },
     status
   );
-  return /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "bg-[--background-secondary] rounded-lg ", children: /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "space-y-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "grid grid-cols-3 gap-2", children: mainFlow.map(({ status, icon }) => /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(StatusBox, { status, icon }, status)) }),
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "grid grid-cols-2 gap-2", children: exceptions.map(({ status, icon }) => /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(StatusBox, { status, icon }, status)) })
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "bg-[--background-secondary] ", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "space-y-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "grid grid-cols-3 gap-2", children: mainFlow.map(({ status, icon }) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(StatusBox, { status, icon }, status)) }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "grid grid-cols-2 gap-2", children: exceptions.map(({ status, icon }) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(StatusBox, { status, icon }, status)) })
   ] }) });
 };
 var DateFilterSelect = ({ value, onChange }) => {
@@ -64685,20 +65210,20 @@ var DateFilterSelect = ({ value, onChange }) => {
       ...dates
     });
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "flex items-center gap-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "relative flex items-center gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(Calendar, { className: "w-4 h-4 text-[--text-muted]" }),
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex items-center gap-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "relative flex items-center gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Calendar, { className: "w-4 h-4 text-[--text-muted]" }),
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "select",
         {
           value: value.range,
           onChange: (e2) => handleRangeChange(e2.target.value),
           className: "pl-2 pr-8 h-min py-2 bg-[--background-secondary] rounded-l border border-[--background-modifier-border] text-sm appearance-none",
-          children: ranges.map(({ value: value2, label }) => /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("option", { value: value2, children: label }, value2))
+          children: ranges.map(({ value: value2, label }) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("option", { value: value2, children: label }, value2))
         }
       )
     ] }),
-    value.range === "custom" && /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+    value.range === "custom" && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
       "input",
       {
         type: "date",
@@ -64717,7 +65242,7 @@ var SearchBar = ({
   selectedStatus,
   dateFilter
 }) => {
-  const [searchQuery, setSearchQuery] = React23.useState("");
+  const [searchQuery, setSearchQuery] = React27.useState("");
   const handleSearchChange = (e2) => {
     const query = e2.target.value;
     setSearchQuery(query);
@@ -64731,10 +65256,10 @@ var SearchBar = ({
     "error",
     "bypassed"
   ];
-  return /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "bg-[--background-primary] p-4 rounded-lg border border-[--background-modifier-border] space-y-3", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "pl-10 relative flex-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(Search, { className: "w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-[--text-muted]" }),
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "bg-[--background-primary] p-4 border border-[--background-modifier-border] space-y-3", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "pl-10 relative flex-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Search, { className: "w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-[--text-muted]" }),
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "input",
         {
           type: "text",
@@ -64745,20 +65270,20 @@ var SearchBar = ({
         }
       )
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "relative w-[200px]", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(Filter, { className: "w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-[--text-muted]" }),
-        /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex items-center gap-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "relative w-[200px]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(Filter, { className: "w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-[--text-muted]" }),
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
           "select",
           {
             value: selectedStatus,
             onChange: (e2) => onStatusFilter(e2.target.value),
             className: "w-full pl-9 pr-4 h-min py-2 bg-[--background-secondary] rounded border border-[--background-modifier-border] text-sm appearance-none",
-            children: statuses.map((status) => /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("option", { value: status, children: status ? status.charAt(0).toUpperCase() + status.slice(1) : "All Status" }, status))
+            children: statuses.map((status) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("option", { value: status, children: status ? status.charAt(0).toUpperCase() + status.slice(1) : "All Status" }, status))
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         DateFilterSelect,
         {
           value: dateFilter,
@@ -64770,17 +65295,17 @@ var SearchBar = ({
 };
 var InboxLogs = () => {
   const plugin = usePlugin();
-  const [records, setRecords] = React23.useState([]);
-  const [filteredRecords, setFilteredRecords] = React23.useState([]);
-  const [analytics, setAnalytics] = React23.useState();
-  const [searchQuery, setSearchQuery] = React23.useState("");
-  const [statusFilter, setStatusFilter] = React23.useState("");
-  const [dateFilter, setDateFilter] = React23.useState({
+  const [records, setRecords] = React27.useState([]);
+  const [filteredRecords, setFilteredRecords] = React27.useState([]);
+  const [analytics, setAnalytics] = React27.useState();
+  const [searchQuery, setSearchQuery] = React27.useState("");
+  const [statusFilter, setStatusFilter] = React27.useState("");
+  const [dateFilter, setDateFilter] = React27.useState({
     range: "today",
     startDate: (0, import_moment2.default)().format("YYYY-MM-DD"),
     endDate: (0, import_moment2.default)().format("YYYY-MM-DD")
   });
-  const filterRecords = React23.useCallback(
+  const filterRecords = React27.useCallback(
     (records2) => {
       return records2.filter((record) => {
         const matchesSearch = searchQuery.toLowerCase().split(" ").every(
@@ -64814,10 +65339,10 @@ var InboxLogs = () => {
       return newRecord.status !== oldRecord.status || newRecord.tags.length !== oldRecord.tags.length || Object.keys(newRecord.logs).length !== Object.keys(oldRecord.logs).length || newRecord.newName !== oldRecord.newName || newRecord.newPath !== oldRecord.newPath;
     });
   };
-  React23.useEffect(() => {
+  React27.useEffect(() => {
     setFilteredRecords(filterRecords(records));
   }, [filterRecords, records]);
-  React23.useEffect(() => {
+  React27.useEffect(() => {
     const fetchData = () => {
       const newFiles = plugin.inbox.getAllFiles();
       const newAnalytics = plugin.inbox.getAnalytics();
@@ -64841,9 +65366,9 @@ var InboxLogs = () => {
   const handleDateFilter = (filter2) => {
     setDateFilter(filter2);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)("div", { className: "space-y-4", children: [
-    analytics && /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(InboxAnalytics, { analytics }),
-    /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex flex-col h-full", children: [
+    analytics && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "border-b border-[--background-modifier-border]", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(InboxAnalytics, { analytics }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "border-b border-[--background-modifier-border] px-3 py-2", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
       SearchBar,
       {
         onSearch: handleSearch,
@@ -64852,26 +65377,23 @@ var InboxLogs = () => {
         selectedStatus: statusFilter,
         dateFilter
       }
-    ),
-    dateFilter.range !== "all" && /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "text-sm text-[--text-muted]", children: dateFilter.range === "custom" ? /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)(import_jsx_runtime34.Fragment, { children: [
-      "Showing records for ",
-      (0, import_moment2.default)(dateFilter.startDate).format("MMMM D, YYYY")
-    ] }) : /* @__PURE__ */ (0, import_jsx_runtime34.jsxs)(import_jsx_runtime34.Fragment, { children: [
-      "Showing records from",
-      " ",
-      (0, import_moment2.default)(dateFilter.startDate).format("MMM D, YYYY"),
-      dateFilter.startDate !== dateFilter.endDate && ` to ${(0, import_moment2.default)(dateFilter.endDate).format("MMM D, YYYY")}`
+    ) }),
+    dateFilter.range !== "all" && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "text-xs text-[--text-muted] px-3 py-1 border-b border-[--background-modifier-border]", children: dateFilter.range === "custom" ? /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_jsx_runtime39.Fragment, { children: (0, import_moment2.default)(dateFilter.startDate).format("MMM D, YYYY") }) : /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(import_jsx_runtime39.Fragment, { children: [
+      (0, import_moment2.default)(dateFilter.startDate).format("MMM D"),
+      dateFilter.startDate !== dateFilter.endDate && ` - ${(0, import_moment2.default)(dateFilter.endDate).format("MMM D")}`
     ] }) }),
-    filteredRecords.map((record) => /* @__PURE__ */ (0, import_jsx_runtime34.jsx)(FileCard, { record }, record.id)),
-    filteredRecords.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime34.jsx)("div", { className: "text-center py-8 text-[--text-muted]", children: records.length === 0 ? "No records found" : "No matching records" })
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex-1 overflow-y-auto", children: [
+      filteredRecords.map((record) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(FileCard, { record }, record.id)),
+      filteredRecords.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "flex items-center justify-center h-32 text-xs text-[--text-muted]", children: records.length === 0 ? "No records found" : "No matching records" })
+    ] })
   ] });
 };
 
 // views/assistant/ai-chat/container.tsx
-var import_react77 = __toESM(require_react());
+var import_react90 = __toESM(require_react());
 
 // views/assistant/ai-chat/chat.tsx
-var import_react75 = __toESM(require_react());
+var import_react88 = __toESM(require_react());
 
 // ../../node_modules/@ai-sdk/provider/dist/index.mjs
 var marker = "vercel.ai.error";
@@ -69199,216 +69721,6 @@ function useChat({
     addToolResult
   };
 }
-
-// node_modules/@radix-ui/react-slot/dist/index.mjs
-var React28 = __toESM(require_react(), 1);
-
-// node_modules/@radix-ui/react-compose-refs/dist/index.mjs
-var React27 = __toESM(require_react(), 1);
-function setRef(ref, value) {
-  if (typeof ref === "function") {
-    return ref(value);
-  } else if (ref !== null && ref !== void 0) {
-    ref.current = value;
-  }
-}
-function composeRefs(...refs) {
-  return (node2) => {
-    let hasCleanup = false;
-    const cleanups = refs.map((ref) => {
-      const cleanup2 = setRef(ref, node2);
-      if (!hasCleanup && typeof cleanup2 == "function") {
-        hasCleanup = true;
-      }
-      return cleanup2;
-    });
-    if (hasCleanup) {
-      return () => {
-        for (let i = 0; i < cleanups.length; i++) {
-          const cleanup2 = cleanups[i];
-          if (typeof cleanup2 == "function") {
-            cleanup2();
-          } else {
-            setRef(refs[i], null);
-          }
-        }
-      };
-    }
-  };
-}
-
-// node_modules/@radix-ui/react-slot/dist/index.mjs
-var import_jsx_runtime35 = __toESM(require_jsx_runtime(), 1);
-function createSlot(ownerName) {
-  const SlotClone = /* @__PURE__ */ createSlotClone(ownerName);
-  const Slot2 = React28.forwardRef((props, forwardedRef) => {
-    const { children, ...slotProps } = props;
-    const childrenArray = React28.Children.toArray(children);
-    const slottable = childrenArray.find(isSlottable);
-    if (slottable) {
-      const newElement = slottable.props.children;
-      const newChildren = childrenArray.map((child) => {
-        if (child === slottable) {
-          if (React28.Children.count(newElement) > 1)
-            return React28.Children.only(null);
-          return React28.isValidElement(newElement) ? newElement.props.children : null;
-        } else {
-          return child;
-        }
-      });
-      return /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(SlotClone, { ...slotProps, ref: forwardedRef, children: React28.isValidElement(newElement) ? React28.cloneElement(newElement, void 0, newChildren) : null });
-    }
-    return /* @__PURE__ */ (0, import_jsx_runtime35.jsx)(SlotClone, { ...slotProps, ref: forwardedRef, children });
-  });
-  Slot2.displayName = `${ownerName}.Slot`;
-  return Slot2;
-}
-var Slot = /* @__PURE__ */ createSlot("Slot");
-function createSlotClone(ownerName) {
-  const SlotClone = React28.forwardRef((props, forwardedRef) => {
-    const { children, ...slotProps } = props;
-    if (React28.isValidElement(children)) {
-      const childrenRef = getElementRef(children);
-      const props2 = mergeProps(slotProps, children.props);
-      if (children.type !== React28.Fragment) {
-        props2.ref = forwardedRef ? composeRefs(forwardedRef, childrenRef) : childrenRef;
-      }
-      return React28.cloneElement(children, props2);
-    }
-    return React28.Children.count(children) > 1 ? React28.Children.only(null) : null;
-  });
-  SlotClone.displayName = `${ownerName}.SlotClone`;
-  return SlotClone;
-}
-var SLOTTABLE_IDENTIFIER = Symbol("radix.slottable");
-function isSlottable(child) {
-  return React28.isValidElement(child) && typeof child.type === "function" && "__radixId" in child.type && child.type.__radixId === SLOTTABLE_IDENTIFIER;
-}
-function mergeProps(slotProps, childProps) {
-  const overrideProps = { ...childProps };
-  for (const propName in childProps) {
-    const slotPropValue = slotProps[propName];
-    const childPropValue = childProps[propName];
-    const isHandler = /^on[A-Z]/.test(propName);
-    if (isHandler) {
-      if (slotPropValue && childPropValue) {
-        overrideProps[propName] = (...args) => {
-          const result = childPropValue(...args);
-          slotPropValue(...args);
-          return result;
-        };
-      } else if (slotPropValue) {
-        overrideProps[propName] = slotPropValue;
-      }
-    } else if (propName === "style") {
-      overrideProps[propName] = { ...slotPropValue, ...childPropValue };
-    } else if (propName === "className") {
-      overrideProps[propName] = [slotPropValue, childPropValue].filter(Boolean).join(" ");
-    }
-  }
-  return { ...slotProps, ...overrideProps };
-}
-function getElementRef(element3) {
-  var _a17, _b;
-  let getter = (_a17 = Object.getOwnPropertyDescriptor(element3.props, "ref")) == null ? void 0 : _a17.get;
-  let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
-  if (mayWarn) {
-    return element3.ref;
-  }
-  getter = (_b = Object.getOwnPropertyDescriptor(element3, "ref")) == null ? void 0 : _b.get;
-  mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
-  if (mayWarn) {
-    return element3.props.ref;
-  }
-  return element3.props.ref || element3.ref;
-}
-
-// ../../node_modules/class-variance-authority/dist/index.mjs
-var falsyToString = (value) => typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
-var cx = clsx;
-var cva = (base2, config) => (props) => {
-  var _config_compoundVariants;
-  if ((config === null || config === void 0 ? void 0 : config.variants) == null)
-    return cx(base2, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
-  const { variants, defaultVariants } = config;
-  const getVariantClassNames = Object.keys(variants).map((variant) => {
-    const variantProp = props === null || props === void 0 ? void 0 : props[variant];
-    const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
-    if (variantProp === null)
-      return null;
-    const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
-    return variants[variant][variantKey];
-  });
-  const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param) => {
-    let [key, value] = param;
-    if (value === void 0) {
-      return acc;
-    }
-    acc[key] = value;
-    return acc;
-  }, {});
-  const getCompoundVariantClassNames = config === null || config === void 0 ? void 0 : (_config_compoundVariants = config.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param) => {
-    let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
-    return Object.entries(compoundVariantOptions).every((param2) => {
-      let [key, value] = param2;
-      return Array.isArray(value) ? value.includes({
-        ...defaultVariants,
-        ...propsWithoutUndefined
-      }[key]) : {
-        ...defaultVariants,
-        ...propsWithoutUndefined
-      }[key] === value;
-    }) ? [
-      ...acc,
-      cvClass,
-      cvClassName
-    ] : acc;
-  }, []);
-  return cx(base2, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
-};
-
-// components/ui/button.tsx
-var React29 = __toESM(require_react());
-var import_jsx_runtime36 = __toESM(require_jsx_runtime());
-var buttonVariants = cva(
-  "inline-flex items-center justify-center text-sm font-medium  border-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 rounded-lg",
-  {
-    variants: {
-      variant: {
-        default: "bg-primary text-primary-foreground border-primary hover:bg-primary/90 hover:border-primary/90",
-        destructive: "bg-destructive text-destructive-foreground border-destructive hover:bg-destructive/90 hover:border-destructive/90",
-        outline: "bg-background text-foreground border-input hover:bg-accent/10 hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground border-secondary hover:bg-secondary/90 hover:border-secondary/90",
-        ghost: "border-transparent hover:bg-accent/10 hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline border-transparent"
-      },
-      size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 px-3",
-        lg: "h-11 px-8",
-        icon: "h-10 w-10"
-      }
-    },
-    defaultVariants: {
-      variant: "default",
-      size: "default"
-    }
-  }
-);
-var Button2 = React29.forwardRef(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button";
-    return /* @__PURE__ */ (0, import_jsx_runtime36.jsx)(
-      Comp,
-      {
-        className: cn(buttonVariants({ variant, size, className })),
-        ref,
-        ...props
-      }
-    );
-  }
-);
-Button2.displayName = "Button";
 
 // ../../node_modules/orderedmap/dist/index.js
 function OrderedMap(content3) {
@@ -91253,16 +91565,16 @@ var Mention = Node2.create({
 
 // views/assistant/ai-chat/mentions.tsx
 var import_react46 = __toESM(require_react());
-var import_jsx_runtime37 = __toESM(require_jsx_runtime());
+var import_jsx_runtime40 = __toESM(require_jsx_runtime());
 var ItemIcon = ({ type }) => {
   const className = "w-4 h-4";
   switch (type) {
     case "file":
-      return /* @__PURE__ */ (0, import_jsx_runtime37.jsx)(FileText, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(FileText, { className });
     case "tag":
-      return /* @__PURE__ */ (0, import_jsx_runtime37.jsx)(Hash, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Hash, { className });
     case "folder":
-      return /* @__PURE__ */ (0, import_jsx_runtime37.jsx)(Folder, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(Folder, { className });
     default:
       return null;
   }
@@ -91308,26 +91620,26 @@ var Mentions = (0, import_react46.forwardRef)((props, ref) => {
   }));
   return props.items.length ? (
     // do not indent list
-    /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("ul", { className: "max-h-[300px] overflow-y-auto bg-[--background-secondary] list-none p-0", children: props.items.map((item, index2) => /* @__PURE__ */ (0, import_jsx_runtime37.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("ul", { className: "max-h-[300px] overflow-y-auto bg-[--background-secondary] list-none p-0", children: props.items.map((item, index2) => /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
       "li",
       {
         className: "list-none",
-        children: /* @__PURE__ */ (0, import_jsx_runtime37.jsxs)(
+        children: /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(
           "button",
           {
             className: `w-full text-left flex items-center gap-2 hover:bg-[--background-modifier-active-hover] ${index2 === selectedIndex ? "bg-[--background-modifier-active-hover] text-[--text-accent]" : "text-[--text-normal]"}`,
             onClick: () => selectItem(index2),
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("span", { className: "text-[--text-muted] flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime37.jsx)(ItemIcon, { type: item.type }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("div", { className: "flex-grow min-w-0", children: /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("div", { className: "font-medium truncate", children: item.title }) }),
-              item.type && /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("span", { className: "text-xs text-[--text-muted] bg-[--background-secondary] px-1.5 py-0.5 rounded-full flex-shrink-0", children: item.type })
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { className: "text-[--text-muted] flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(ItemIcon, { type: item.type }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "flex-grow min-w-0", children: /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "font-medium truncate", children: item.title }) }),
+              item.type && /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { className: "text-xs text-[--text-muted] bg-[--background-secondary] px-1.5 py-0.5 rounded-full flex-shrink-0", children: item.type })
             ]
           }
         )
       },
       item.path || item.title
     )) })
-  ) : /* @__PURE__ */ (0, import_jsx_runtime37.jsx)("div", { className: "px-4 py-3 text-sm text-[--text-muted] text-center", children: "No matching items found" });
+  ) : /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "px-4 py-3 text-sm text-[--text-muted] text-center", children: "No matching items found" });
 });
 var mentions_default = Mentions;
 
@@ -92778,8 +93090,8 @@ var createImpl = (createState3) => {
 var create = (createState3) => createState3 ? createImpl(createState3) : createImpl;
 
 // views/assistant/ai-chat/use-context-items.ts
-var import_obsidian16 = require("obsidian");
 var import_obsidian17 = require("obsidian");
+var import_obsidian18 = require("obsidian");
 var useContextItems = create((set, get3) => ({
   // Initial state
   files: {},
@@ -92903,14 +93215,35 @@ var useContextItems = create((set, get3) => ({
     includeCurrentFile: false,
     currentFile: null
   }),
+  // Clear only ephemeral context items
+  clearEphemeral: () => set((state) => ({
+    files: Object.fromEntries(
+      Object.entries(state.files).filter(([_, item]) => !item.ephemeral)
+    ),
+    folders: Object.fromEntries(
+      Object.entries(state.folders).filter(([_, item]) => !item.ephemeral)
+    ),
+    youtubeVideos: Object.fromEntries(
+      Object.entries(state.youtubeVideos).filter(([_, item]) => !item.ephemeral)
+    ),
+    tags: Object.fromEntries(
+      Object.entries(state.tags).filter(([_, item]) => !item.ephemeral)
+    ),
+    searchResults: Object.fromEntries(
+      Object.entries(state.searchResults).filter(([_, item]) => !item.ephemeral)
+    ),
+    textSelections: Object.fromEntries(
+      Object.entries(state.textSelections).filter(([_, item]) => !item.ephemeral)
+    )
+  })),
   // Add new processing methods
   processFolderFiles: async (app, folderPath) => {
     const folderRef = app.vault.getFolderByPath(folderPath);
     if (!folderRef)
       return [];
     const files = [];
-    import_obsidian17.Vault.recurseChildren(folderRef, (file) => {
-      if (file instanceof import_obsidian16.TFile) {
+    import_obsidian18.Vault.recurseChildren(folderRef, (file) => {
+      if (file instanceof import_obsidian17.TFile) {
         files.push(file);
       }
     });
@@ -92967,7 +93300,25 @@ var addFileContext = (file) => {
     title: file.title,
     content: file.content,
     reference: reference2,
-    createdAt: Date.now()
+    createdAt: Date.now(),
+    ephemeral: file.ephemeral
+  });
+};
+var addFileReference = (file) => {
+  const store = useContextItems.getState();
+  const reference2 = `File: ${file.path}`;
+  store.removeByReference(reference2);
+  store.addFile({
+    id: file.path,
+    type: "file",
+    path: file.path,
+    title: file.title,
+    content: file.contentPreview || "",
+    // Only preview stored
+    reference: reference2,
+    createdAt: Date.now(),
+    ephemeral: true
+    // Always ephemeral for references
   });
 };
 var addYouTubeContext = (video) => {
@@ -93014,9 +93365,12 @@ var addSearchContext = (query, results) => {
     id: `search-${Date.now()}`,
     type: "search",
     query,
+    resultCount: results.length,
     results,
     reference: `Search: "${query}"`,
-    createdAt: Date.now()
+    createdAt: Date.now(),
+    ephemeral: true
+    // Search results are ephemeral - cleared after next message
   });
 };
 var addTextSelectionContext = (params) => {
@@ -93030,6 +93384,9 @@ var addTextSelectionContext = (params) => {
     reference: reference2,
     createdAt: Date.now()
   });
+};
+var clearEphemeralContext = () => {
+  useContextItems.getState().clearEphemeral();
 };
 var getUniqueReferences = () => {
   const store = useContextItems.getState();
@@ -93056,7 +93413,7 @@ var getUniqueReferences = () => {
 
 // views/assistant/ai-chat/use-vault-items.ts
 var import_react49 = __toESM(require_react());
-var import_obsidian18 = require("obsidian");
+var import_obsidian19 = require("obsidian");
 function useVaultItems() {
   const plugin = usePlugin();
   return (0, import_react49.useMemo)(() => {
@@ -93095,7 +93452,7 @@ function useVaultItems() {
       // Helper to load file content when needed
       loadFileContent: async (path) => {
         const file = plugin.app.vault.getFileByPath(path);
-        if (file instanceof import_obsidian18.TFile) {
+        if (file instanceof import_obsidian19.TFile) {
           return await plugin.app.vault.read(file);
         }
         return null;
@@ -93105,7 +93462,7 @@ function useVaultItems() {
 }
 
 // views/assistant/ai-chat/tiptap.tsx
-var import_jsx_runtime38 = __toESM(require_jsx_runtime());
+var import_jsx_runtime41 = __toESM(require_jsx_runtime());
 var Tiptap = ({ value, onChange, onKeyDown }) => {
   const plugin = usePlugin();
   const { files, folders, tags, loadFileContent } = useVaultItems();
@@ -93156,11 +93513,11 @@ var Tiptap = ({ value, onChange, onKeyDown }) => {
       StarterKit,
       Mention.configure({
         HTMLAttributes: {
-          class: "bg-[--background-modifier-active-hover] text-[--text-accent] rounded-md px-1 py-0.5"
+          class: "bg-[--background-modifier-active-hover] text-[--text-accent]  px-1 py-0.5"
         },
         suggestion: {
           ...suggestion_default,
-          decorationClass: "bg-[--background-modifier-active-hover] text-[--text-accent] rounded-md px-1 py-0.5",
+          decorationClass: "bg-[--background-modifier-active-hover] text-[--text-accent]  px-1 py-0.5",
           items: ({ query, editor: editor2 }) => suggestion_default.items({ query, editor: editor2 }),
           command: handleMentionCommand
         }
@@ -93188,16 +93545,12 @@ var Tiptap = ({ value, onChange, onKeyDown }) => {
       editor.commands.setContent(value);
     }
   }, [value, editor]);
-  return /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "tiptap-editor", onKeyDown, children: /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(EditorContent, { editor }) });
+  return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "tiptap-editor", onKeyDown, children: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(EditorContent, { editor }) });
 };
 var tiptap_default = Tiptap;
 
-// views/assistant/ai-chat/avatar.tsx
-var import_jsx_runtime39 = __toESM(require_jsx_runtime());
-var Avatar = ({ role, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { ...props, className: `avatar ${role} ${props.className || ""}` });
-
 // views/assistant/ai-chat/ai-message-renderer.tsx
-var import_obsidian19 = require("obsidian");
+var import_obsidian20 = require("obsidian");
 
 // ../../node_modules/devlop/lib/default.js
 function ok() {
@@ -94822,11 +95175,11 @@ function addChildren(props, children) {
     }
   }
 }
-function productionCreate(_, jsx86, jsxs55) {
+function productionCreate(_, jsx100, jsxs69) {
   return create3;
   function create3(_2, type, props, key) {
     const isStaticChildren = Array.isArray(props.children);
-    const fn2 = isStaticChildren ? jsxs55 : jsx86;
+    const fn2 = isStaticChildren ? jsxs69 : jsx100;
     return key ? fn2(type, props, key) : fn2(type, props);
   }
 }
@@ -95073,7 +95426,7 @@ var urlAttributes = {
 };
 
 // ../../node_modules/react-markdown/lib/index.js
-var import_jsx_runtime40 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime42 = __toESM(require_jsx_runtime(), 1);
 var import_react52 = __toESM(require_react(), 1);
 
 // ../../node_modules/mdast-util-to-string/lib/index.js
@@ -102782,14 +103135,14 @@ function post(tree, options) {
   }
   visit(tree, transform);
   return toJsxRuntime(tree, {
-    Fragment: import_jsx_runtime40.Fragment,
+    Fragment: import_jsx_runtime42.Fragment,
     // @ts-expect-error
     // React components are allowed to return numbers,
     // but not according to the types in hast-util-to-jsx-runtime
     components,
     ignoreInvalidStyle: true,
-    jsx: import_jsx_runtime40.jsx,
-    jsxs: import_jsx_runtime40.jsxs,
+    jsx: import_jsx_runtime42.jsx,
+    jsxs: import_jsx_runtime42.jsxs,
     passKeys: true,
     passNode: true
   });
@@ -102847,7 +103200,7 @@ function defaultUrlTransform(value) {
 }
 
 // views/assistant/ai-chat/ai-message-renderer.tsx
-var import_jsx_runtime41 = __toESM(require_jsx_runtime());
+var import_jsx_runtime43 = __toESM(require_jsx_runtime());
 var AIMarkdown = ({ content: content3, app }) => {
   const plugin = usePlugin();
   const handleClick2 = (e2) => {
@@ -102859,16 +103212,16 @@ var AIMarkdown = ({ content: content3, app }) => {
     const href = link2.getAttribute("data-href");
     if (!href)
       return;
-    const linkpath = (0, import_obsidian19.getLinkpath)(href);
+    const linkpath = (0, import_obsidian20.getLinkpath)(href);
     plugin.app.workspace.openLinkText(linkpath, "", true);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "card", children: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "markdown-preview-view p-0", onClick: handleClick2, children: content3.split(/(\[\[.*?\]\])/g).map((part, i) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime43.jsx)("div", { className: "card", children: /* @__PURE__ */ (0, import_jsx_runtime43.jsx)("div", { className: "markdown-preview-view p-0", onClick: handleClick2, children: content3.split(/(\[\[.*?\]\])/g).map((part, i) => {
     if (part.startsWith("[[") && part.endsWith("]]")) {
       const inner = part.slice(2, -2);
       const [target, alias] = inner.split("|");
-      const linkpath = (0, import_obsidian19.getLinkpath)(target.trim());
+      const linkpath = (0, import_obsidian20.getLinkpath)(target.trim());
       const displayText = (alias == null ? void 0 : alias.trim()) || target.trim().replace(/\.(md|markdown)$/, "");
-      return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+      return /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
         "a",
         {
           href: linkpath,
@@ -102881,11 +103234,11 @@ var AIMarkdown = ({ content: content3, app }) => {
         i
       );
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
       Markdown,
       {
         components: {
-          code: ({ inline, children, ...props }) => inline ? /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("code", { ...props, className: "inline-code", children }) : /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("pre", { className: "code-block", children: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("code", { ...props, children }) })
+          code: ({ inline, children, ...props }) => inline ? /* @__PURE__ */ (0, import_jsx_runtime43.jsx)("code", { ...props, className: "inline-code", children }) : /* @__PURE__ */ (0, import_jsx_runtime43.jsx)("pre", { className: "code-block", children: /* @__PURE__ */ (0, import_jsx_runtime43.jsx)("code", { ...props, children }) })
         },
         children: part
       },
@@ -102896,8 +103249,8 @@ var AIMarkdown = ({ content: content3, app }) => {
 
 // views/assistant/ai-chat/shared/markdown-renderer.tsx
 var import_react53 = __toESM(require_react());
-var import_obsidian20 = require("obsidian");
-var import_jsx_runtime42 = __toESM(require_jsx_runtime());
+var import_obsidian21 = require("obsidian");
+var import_jsx_runtime44 = __toESM(require_jsx_runtime());
 var MarkdownContent = ({
   content: content3,
   className = "",
@@ -102946,8 +103299,8 @@ var MarkdownContent = ({
       try {
         const leaf = plugin.app.workspace.getMostRecentLeaf();
         const tempContainer = document.createElement("div");
-        if ((leaf == null ? void 0 : leaf.view) instanceof import_obsidian20.MarkdownView) {
-          await import_obsidian20.MarkdownRenderer.render(
+        if ((leaf == null ? void 0 : leaf.view) instanceof import_obsidian21.MarkdownView) {
+          await import_obsidian21.MarkdownRenderer.render(
             plugin.app,
             content3,
             tempContainer,
@@ -102955,7 +103308,7 @@ var MarkdownContent = ({
             leaf.view
           );
         } else {
-          await import_obsidian20.MarkdownRenderer.renderMarkdown(
+          await import_obsidian21.MarkdownRenderer.renderMarkdown(
             content3,
             tempContainer,
             "",
@@ -102978,9 +103331,9 @@ var MarkdownContent = ({
     const eventRef = plugin.app.workspace.on("file-open", updateActiveFile);
     return () => plugin.app.workspace.offref(eventRef);
   }, [plugin.app]);
-  return /* @__PURE__ */ (0, import_jsx_runtime42.jsxs)("div", { className: `markdown-content-wrapper ${className}`, children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime44.jsxs)("div", { className: `markdown-content-wrapper ${className}`, children: [
     children,
-    /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
       "div",
       {
         ref: contentRef,
@@ -102992,9 +103345,9 @@ var MarkdownContent = ({
 };
 
 // views/assistant/ai-chat/user-message-renderer.tsx
-var import_jsx_runtime43 = __toESM(require_jsx_runtime());
+var import_jsx_runtime45 = __toESM(require_jsx_runtime());
 var UserMarkdown = ({ content: content3 }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
     MarkdownContent,
     {
       content: content3,
@@ -103004,7 +103357,7 @@ var UserMarkdown = ({ content: content3 }) => {
 };
 
 // views/assistant/ai-chat/components/append-button.tsx
-var import_jsx_runtime44 = __toESM(require_jsx_runtime());
+var import_jsx_runtime46 = __toESM(require_jsx_runtime());
 var AppendButton = ({ content: content3 }) => {
   const plugin = usePlugin();
   const handleAppend = async () => {
@@ -103014,36 +103367,36 @@ var AppendButton = ({ content: content3 }) => {
     const fileContent = await plugin.app.vault.read(activeFile);
     await plugin.app.vault.modify(activeFile, fileContent + "\n\n" + content3);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
     "button",
     {
       onClick: handleAppend,
       className: "p-1 hover:bg-[--background-modifier-hover] rounded",
       title: "Append to current note",
-      children: /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(FileText, { size: 16, className: "text-[--text-muted]" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(FileText, { size: 16, className: "text-[--text-muted]" })
     }
   );
 };
 
 // views/assistant/ai-chat/components/copy-button.tsx
-var import_jsx_runtime45 = __toESM(require_jsx_runtime());
+var import_jsx_runtime47 = __toESM(require_jsx_runtime());
 var CopyButton = ({ content: content3 }) => {
   const handleCopy = async () => {
     await navigator.clipboard.writeText(content3);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
     "button",
     {
       onClick: handleCopy,
       className: "p-1 hover:bg-[--background-modifier-hover] rounded",
       title: "Copy to clipboard",
-      children: /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(Copy, { size: 16, className: "text-[--text-muted]" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(Copy, { size: 16, className: "text-[--text-muted]" })
     }
   );
 };
 
 // views/assistant/ai-chat/message-renderer.tsx
-var import_jsx_runtime46 = __toESM(require_jsx_runtime());
+var import_jsx_runtime48 = __toESM(require_jsx_runtime());
 var MessageRenderer = ({
   message
 }) => {
@@ -103054,43 +103407,43 @@ var MessageRenderer = ({
   if (message.content.length === 0) {
     return null;
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime46.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(
     motion.div,
     {
-      className: "flex items-start mb-4",
-      initial: { opacity: 0, y: 10 },
+      className: "flex items-start gap-2 py-1.5 group",
+      initial: { opacity: 0, y: 5 },
       animate: { opacity: 1, y: 0 },
-      transition: { duration: 0.3 },
+      transition: { duration: 0.2 },
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(Avatar, { role: message.role }),
-        /* @__PURE__ */ (0, import_jsx_runtime46.jsxs)("div", { className: "flex-grow", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(motion.div, { className: "rounded-lg text-[--text-normal] w-full", children: message.role === "user" ? /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(UserMarkdown, { content: message.content }) : /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(AIMarkdown, { content: message.content, app: plugin.app }) }),
-          message.role === "assistant" && /* @__PURE__ */ (0, import_jsx_runtime46.jsxs)("div", { className: "relative flex justify-end mt-2 space-x-2 mr-3", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(AppendButton, { content: message.content }),
-            /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(CopyButton, { content: message.content })
+        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "flex-shrink-0 w-4 text-xs text-[--text-faint] pt-0.5", children: message.role === "user" ? "You" : "AI" }),
+        /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "flex-1 min-w-0", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "text-sm text-[--text-normal]", children: message.role === "user" ? /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(UserMarkdown, { content: message.content }) : /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(AIMarkdown, { content: message.content, app: plugin.app }) }),
+          message.role === "assistant" && /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "flex gap-1 mt-1 opacity-0 group-hover:opacity-100 transition-opacity", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(AppendButton, { content: message.content }),
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(CopyButton, { content: message.content })
           ] }),
-          message.experimental_attachments && message.experimental_attachments.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime46.jsx)("div", { className: "mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4", children: message.experimental_attachments.map((attachment, index2) => {
+          message.experimental_attachments && message.experimental_attachments.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4", children: message.experimental_attachments.map((attachment, index2) => {
             var _a17;
-            return /* @__PURE__ */ (0, import_jsx_runtime46.jsxs)(
+            return /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(
               "div",
               {
                 className: "relative group",
                 children: [
-                  ((_a17 = attachment.contentType) == null ? void 0 : _a17.startsWith("image/")) ? /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
+                  ((_a17 = attachment.contentType) == null ? void 0 : _a17.startsWith("image/")) ? /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
                     "img",
                     {
                       src: attachment.url,
                       alt: attachment.name,
-                      className: "w-full h-32 object-cover rounded-lg"
+                      className: "w-full h-32 object-cover"
                     }
-                  ) : /* @__PURE__ */ (0, import_jsx_runtime46.jsx)("div", { className: "w-full h-32 flex items-center justify-center bg-[--background-secondary] rounded-lg", children: /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
+                  ) : /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "w-full h-32 flex items-center justify-center bg-[--background-secondary]", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
                     "svg",
                     {
                       className: "h-8 w-8 text-[--text-muted]",
                       fill: "none",
                       stroke: "currentColor",
                       viewBox: "0 0 24 24",
-                      children: /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
+                      children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
                         "path",
                         {
                           strokeLinecap: "round",
@@ -103101,7 +103454,7 @@ var MessageRenderer = ({
                       )
                     }
                   ) }),
-                  attachment.url && /* @__PURE__ */ (0, import_jsx_runtime46.jsx)("div", { className: "absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity flex items-center justify-center opacity-0 group-hover:opacity-100", children: /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
+                  attachment.url && /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity flex items-center justify-center opacity-0 group-hover:opacity-100", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
                     "a",
                     {
                       href: attachment.url,
@@ -103125,12 +103478,12 @@ var MessageRenderer = ({
 var import_react54 = __toESM(require_react());
 
 // views/assistant/ai-chat/youtube-transcript.ts
-var import_obsidian21 = require("obsidian");
+var import_obsidian22 = require("obsidian");
 async function getYouTubeTranscript(videoId) {
   var _a17, _b;
   try {
     const videoPageUrl = `https://www.youtube.com/watch?v=${videoId}`;
-    const videoPageResponse = await (0, import_obsidian21.requestUrl)(videoPageUrl);
+    const videoPageResponse = await (0, import_obsidian22.requestUrl)(videoPageUrl);
     const videoPageBody = videoPageResponse.text;
     const captionsJson = (_a17 = videoPageBody.split('"captions":')[1]) == null ? void 0 : _a17.split(',"videoDetails')[0];
     if (!captionsJson) {
@@ -103139,7 +103492,7 @@ async function getYouTubeTranscript(videoId) {
     logger.info("captionsJson", captionsJson);
     const captions = JSON.parse(captionsJson);
     const transcriptUrl = captions.playerCaptionsTracklistRenderer.captionTracks[0].baseUrl;
-    const transcriptResponse = await (0, import_obsidian21.requestUrl)(transcriptUrl);
+    const transcriptResponse = await (0, import_obsidian22.requestUrl)(transcriptUrl);
     const transcriptBody = transcriptResponse.text;
     logger.info("transcriptBody", transcriptBody);
     const transcript = (_b = transcriptBody.match(/<text[^>]*>(.*?)<\/text>/g)) == null ? void 0 : _b.map((line) => line.replace(/<[^>]*>/g, "")).join(" ");
@@ -103153,7 +103506,7 @@ async function getYouTubeTranscript(videoId) {
 async function getYouTubeVideoTitle(videoId) {
   try {
     const videoPageUrl = `https://www.youtube.com/watch?v=${videoId}`;
-    const videoPageResponse = await (0, import_obsidian21.requestUrl)(videoPageUrl);
+    const videoPageResponse = await (0, import_obsidian22.requestUrl)(videoPageUrl);
     const videoPageBody = videoPageResponse.text;
     const titleMatch = videoPageBody.match(/<title>(.+?)<\/title>/);
     if (titleMatch && titleMatch[1]) {
@@ -103168,7 +103521,7 @@ async function getYouTubeVideoTitle(videoId) {
 }
 
 // views/assistant/ai-chat/tool-handlers/youtube-handler.tsx
-var import_jsx_runtime47 = __toESM(require_jsx_runtime());
+var import_jsx_runtime49 = __toESM(require_jsx_runtime());
 function YouTubeHandler({
   toolInvocation,
   handleAddResult
@@ -103188,7 +103541,14 @@ function YouTubeHandler({
             title,
             transcript
           });
-          handleAddResult(JSON.stringify({ transcript, title, videoId }));
+          const wordCount = transcript.split(/\s+/).length;
+          handleAddResult(JSON.stringify({
+            success: true,
+            title,
+            videoId,
+            wordCount,
+            message: `Successfully retrieved YouTube transcript for "${title}" (${wordCount} words)`
+          }));
           setFetchSuccess(true);
         } catch (error) {
           logger.error("Error fetching YouTube transcript:", error);
@@ -103200,17 +103560,17 @@ function YouTubeHandler({
     handleYouTubeTranscript();
   }, [toolInvocation, handleAddResult]);
   if (fetchSuccess === null) {
-    return /* @__PURE__ */ (0, import_jsx_runtime47.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Fetching the video transcript..." });
+    return /* @__PURE__ */ (0, import_jsx_runtime49.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Fetching the video transcript..." });
   }
   if (fetchSuccess) {
-    return /* @__PURE__ */ (0, import_jsx_runtime47.jsx)("div", { className: "text-sm text-[--text-muted]", children: "YouTube transcript successfully retrieved" });
+    return /* @__PURE__ */ (0, import_jsx_runtime49.jsx)("div", { className: "text-sm text-[--text-muted]", children: "YouTube transcript successfully retrieved" });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime47.jsx)("div", { className: "text-sm text-[--text-error]", children: "Failed to fetch YouTube transcript" });
+  return /* @__PURE__ */ (0, import_jsx_runtime49.jsx)("div", { className: "text-sm text-[--text-error]", children: "Failed to fetch YouTube transcript" });
 }
 
 // views/assistant/ai-chat/tool-handlers/search-handler.tsx
 var import_react55 = __toESM(require_react());
-var import_jsx_runtime48 = __toESM(require_jsx_runtime());
+var import_jsx_runtime50 = __toESM(require_jsx_runtime());
 function SearchHandler({
   toolInvocation,
   handleAddResult,
@@ -103218,6 +103578,8 @@ function SearchHandler({
 }) {
   const hasFetchedRef = (0, import_react55.useRef)(false);
   const searchNotes = async (query) => {
+    const MAX_RESULTS = 10;
+    const PREVIEW_LENGTH = 500;
     const files = app.vault.getMarkdownFiles();
     const searchTerms = query.toLowerCase().split(/\s+/);
     const searchResults2 = await Promise.all(
@@ -103231,16 +103593,21 @@ function SearchHandler({
         if (allTermsPresent) {
           return {
             title: file.basename,
-            content: content3,
-            path: file.path
+            contentPreview: content3.slice(0, PREVIEW_LENGTH) + (content3.length > PREVIEW_LENGTH ? "..." : ""),
+            contentLength: content3.length,
+            wordCount: content3.split(/\s+/).length,
+            path: file.path,
+            // Keep full content for context UI, but don't send to AI
+            content: content3
           };
         }
         return null;
       })
     );
-    return searchResults2.filter(
+    const filteredResults = searchResults2.filter(
       (result) => result !== null
     );
+    return filteredResults.slice(0, MAX_RESULTS);
   };
   import_react55.default.useEffect(() => {
     const handleSearchNotes = async () => {
@@ -103249,8 +103616,9 @@ function SearchHandler({
         const { query } = toolInvocation.args;
         try {
           const searchResults2 = await searchNotes(query);
-          addSearchContext(query, searchResults2);
-          handleAddResult(JSON.stringify(searchResults2));
+          const contextResults = searchResults2.map(({ content: content3, ...metadata }) => metadata);
+          addSearchContext(query, contextResults);
+          handleAddResult(JSON.stringify(contextResults));
         } catch (error) {
           logger.error("Error searching notes:", error);
           handleAddResult(JSON.stringify({ error: error.message }));
@@ -103260,13 +103628,12 @@ function SearchHandler({
     handleSearchNotes();
   }, [toolInvocation, handleAddResult, app]);
   const searchResults = useContextItems((state) => state.searchResults);
-  return /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Searching through your notes..." : Object.keys(searchResults).length > 0 ? `Found ${Object.keys(searchResults).length} matching notes` : "No files matching that criteria were found" });
+  return /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Searching through your notes..." : Object.keys(searchResults).length > 0 ? `Found ${Object.keys(searchResults).length} matching notes` : "No files matching that criteria were found" });
 }
 
 // views/assistant/ai-chat/tool-handlers/date-range-handler.tsx
 var import_react56 = __toESM(require_react());
-var import_obsidian22 = require("obsidian");
-var import_jsx_runtime49 = __toESM(require_jsx_runtime());
+var import_jsx_runtime51 = __toESM(require_jsx_runtime());
 function DateRangeHandler({
   toolInvocation,
   handleAddResult,
@@ -103275,22 +103642,34 @@ function DateRangeHandler({
   const hasFetchedRef = (0, import_react56.useRef)(false);
   const clearAll = useContextItems((state) => state.clearAll);
   const filterNotesByDateRange = async (startDate, endDate) => {
-    const files = app.vault.getMarkdownFiles();
-    const start3 = (0, import_obsidian22.moment)(startDate).startOf("day");
-    const end2 = (0, import_obsidian22.moment)(endDate).endOf("day");
-    const filteredFiles = files.filter((file) => {
-      const fileDate = (0, import_obsidian22.moment)(file.stat.mtime);
+    const MAX_RESULTS = 50;
+    const PREVIEW_LENGTH = 300;
+    const files2 = app.vault.getMarkdownFiles();
+    const start3 = window.moment(startDate).startOf("day");
+    const end2 = window.moment(endDate).endOf("day");
+    const filteredFiles = files2.filter((file) => {
+      const fileDate = window.moment(file.stat.mtime);
       const isWithinDateRange = fileDate.isBetween(start3, end2, null, "[]");
       const isSystemFolder = file.path.startsWith(".") || file.path.includes("templates/") || file.path.includes("backup/");
       return isWithinDateRange && !isSystemFolder;
     });
+    const limitedFiles = filteredFiles.slice(0, MAX_RESULTS);
     return Promise.all(
-      filteredFiles.map(async (file) => ({
-        title: file.basename,
-        content: await app.vault.read(file),
-        path: file.path,
-        reference: `Date range: ${startDate} to ${endDate}`
-      }))
+      limitedFiles.map(async (file) => {
+        const content3 = await app.vault.read(file);
+        return {
+          title: file.basename,
+          content: content3,
+          // Keep for UI context
+          contentPreview: content3.slice(0, PREVIEW_LENGTH) + (content3.length > PREVIEW_LENGTH ? "..." : ""),
+          contentLength: content3.length,
+          wordCount: content3.split(/\s+/).length,
+          path: file.path,
+          modified: file.stat.mtime,
+          modifiedDate: new Date(file.stat.mtime).toLocaleString(),
+          reference: `Date range: ${startDate} to ${endDate}`
+        };
+      })
     );
   };
   import_react56.default.useEffect(() => {
@@ -103302,13 +103681,18 @@ function DateRangeHandler({
           const searchResults = await filterNotesByDateRange(startDate, endDate);
           clearAll();
           searchResults.forEach((file) => {
-            addFileContext({
+            addFileReference({
               path: file.path,
               title: file.title,
-              content: file.content
+              contentPreview: file.contentPreview,
+              contentLength: file.contentLength,
+              wordCount: file.wordCount,
+              modified: file.modified,
+              modifiedDate: file.modifiedDate
             });
           });
-          handleAddResult(JSON.stringify(searchResults));
+          const minimalResults = searchResults.map(({ content: content3, ...rest }) => rest);
+          handleAddResult(JSON.stringify(minimalResults));
         } catch (error) {
           logger.error("Error filtering notes by date:", error);
           handleAddResult(JSON.stringify({ error: error.message }));
@@ -103317,13 +103701,14 @@ function DateRangeHandler({
     };
     handleDateRangeSearch();
   }, [toolInvocation, handleAddResult, app, clearAll]);
-  const contextItems = useContextItems((state) => state.items);
-  return /* @__PURE__ */ (0, import_jsx_runtime49.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Filtering notes by date range..." : contextItems.length > 0 ? `Found ${contextItems.length} notes within the specified date range` : "No files found within the specified date range" });
+  const files = useContextItems((state) => state.files);
+  const fileCount = Object.keys(files).length;
+  return /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Filtering notes by date range..." : fileCount > 0 ? `Found ${fileCount} notes within the specified date range` : "No files found within the specified date range" });
 }
 
 // views/assistant/ai-chat/tool-handlers/last-modified-handler.tsx
 var import_react57 = __toESM(require_react());
-var import_jsx_runtime50 = __toESM(require_jsx_runtime());
+var import_jsx_runtime52 = __toESM(require_jsx_runtime());
 function LastModifiedHandler({
   toolInvocation,
   handleAddResult,
@@ -103333,16 +103718,28 @@ function LastModifiedHandler({
   const clearAll = useContextItems((state) => state.clearAll);
   const files = useContextItems((state) => state.files);
   const getLastModifiedFiles = async (count) => {
+    const MAX_FILES = 20;
+    const PREVIEW_LENGTH = 300;
+    const limitedCount = Math.min(count, MAX_FILES);
     const files2 = app.vault.getMarkdownFiles();
     const sortedFiles = files2.sort((a, b) => b.stat.mtime - a.stat.mtime);
-    const lastModifiedFiles = sortedFiles.slice(0, count);
+    const lastModifiedFiles = sortedFiles.slice(0, limitedCount);
     return Promise.all(
-      lastModifiedFiles.map(async (file) => ({
-        title: file.basename,
-        content: await app.vault.read(file),
-        path: file.path,
-        reference: `Last modified: ${new Date(file.stat.mtime).toLocaleString()}`
-      }))
+      lastModifiedFiles.map(async (file) => {
+        const content3 = await app.vault.read(file);
+        return {
+          title: file.basename,
+          content: content3,
+          // Keep for UI context
+          contentPreview: content3.slice(0, PREVIEW_LENGTH) + (content3.length > PREVIEW_LENGTH ? "..." : ""),
+          contentLength: content3.length,
+          wordCount: content3.split(/\s+/).length,
+          path: file.path,
+          modified: file.stat.mtime,
+          modifiedDate: new Date(file.stat.mtime).toLocaleString(),
+          reference: `Last modified: ${new Date(file.stat.mtime).toLocaleString()}`
+        };
+      })
     );
   };
   import_react57.default.useEffect(() => {
@@ -103354,15 +103751,20 @@ function LastModifiedHandler({
           const searchResults = await getLastModifiedFiles(count);
           clearAll();
           searchResults.forEach((file) => {
-            addFileContext({
+            addFileReference({
               path: file.path,
               title: file.title,
-              content: file.content
+              contentPreview: file.contentPreview,
+              contentLength: file.contentLength,
+              wordCount: file.wordCount,
+              modified: file.modified,
+              modifiedDate: file.modifiedDate
             });
           });
+          const minimalResults = searchResults.map(({ content: content3, ...rest }) => rest);
           handleAddResult(JSON.stringify({
             success: true,
-            files: searchResults,
+            files: minimalResults,
             count: searchResults.length
           }));
         } catch (error) {
@@ -103377,23 +103779,76 @@ function LastModifiedHandler({
     handleLastModifiedSearch();
   }, [toolInvocation, handleAddResult, app, clearAll]);
   const fileCount = Object.keys(files).length;
-  return /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Fetching last modified files..." : fileCount > 0 ? `Found ${fileCount} recently modified files` : "No recently modified files found" });
+  const result = "result" in toolInvocation ? JSON.parse(toolInvocation.result) : null;
+  const resultCount = (result == null ? void 0 : result.count) || 0;
+  return /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Fetching last modified files..." : resultCount > 0 ? `Found ${resultCount} recently modified files` : "No recently modified files found" });
+}
+
+// views/assistant/ai-chat/tool-handlers/open-file-handler.tsx
+var import_react58 = __toESM(require_react());
+var import_obsidian23 = require("obsidian");
+var import_jsx_runtime53 = __toESM(require_jsx_runtime());
+function OpenFileHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react58.useRef)(false);
+  import_react58.default.useEffect(() => {
+    const execute = async () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const args2 = toolInvocation.args;
+        try {
+          const file = app.vault.getAbstractFileByPath(args2.filePath);
+          if (!(file instanceof import_obsidian23.TFile)) {
+            handleAddResult(
+              JSON.stringify({
+                success: false,
+                message: `File not found: ${args2.filePath}`
+              })
+            );
+            return;
+          }
+          const leaf = app.workspace.getLeaf("tab");
+          await leaf.openFile(file);
+          handleAddResult(
+            JSON.stringify({
+              success: true,
+              message: `Opened ${file.basename}`
+            })
+          );
+        } catch (error) {
+          handleAddResult(
+            JSON.stringify({
+              success: false,
+              message: `Error opening file: ${error.message}`
+            })
+          );
+        }
+      }
+    };
+    execute();
+  }, [toolInvocation, handleAddResult, app]);
+  const args = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  return /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("div", { className: "text-sm text-[--text-muted]", children: !isComplete ? `Opening ${args.filePath}...` : `File opened` });
 }
 
 // views/assistant/ai-chat/tool-handlers/settings-update-handler.tsx
-var import_react58 = __toESM(require_react());
-var import_jsx_runtime51 = __toESM(require_jsx_runtime());
-var SettingUpdate = ({ setting, value, onValidate, isValidated }) => /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("div", { className: "flex items-center justify-between p-2 border border-[--background-modifier-border] rounded-md mb-2", children: [
-  /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("div", { className: "flex-1", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "font-medium text-[--text-normal]", children: setting }),
-    /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "text-sm text-[--text-muted] break-all", children: value })
+var import_react59 = __toESM(require_react());
+var import_jsx_runtime54 = __toESM(require_jsx_runtime());
+var SettingUpdate = ({ setting, value, onValidate, isValidated }) => /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("div", { className: "flex items-center justify-between p-2 border border-[--background-modifier-border] mb-2", children: [
+  /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("div", { className: "flex-1", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("div", { className: "font-medium text-[--text-normal]", children: setting }),
+    /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("div", { className: "text-sm text-[--text-muted] break-all", children: value })
   ] }),
-  /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
+  /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
     "button",
     {
       onClick: onValidate,
       disabled: isValidated,
-      className: `ml-2 px-3 py-1 rounded-md ${isValidated ? "bg-[--interactive-accent] text-[--text-on-accent]" : "bg-[--interactive-normal] hover:bg-[--interactive-hover] text-[--text-normal]"}`,
+      className: `ml-2 px-3 py-1  ${isValidated ? "bg-[--interactive-accent] text-[--text-on-accent]" : "bg-[--interactive-normal] hover:bg-[--interactive-hover] text-[--text-normal]"}`,
       children: isValidated ? "Applied" : "Apply"
     }
   )
@@ -103403,7 +103858,7 @@ function SettingsUpdateHandler({
   handleAddResult
 }) {
   const plugin = usePlugin();
-  const [validatedSettings, setValidatedSettings] = import_react58.default.useState(/* @__PURE__ */ new Set());
+  const [validatedSettings, setValidatedSettings] = import_react59.default.useState(/* @__PURE__ */ new Set());
   const settings = toolInvocation.args;
   const updateSetting = async (key, value) => {
     try {
@@ -103417,9 +103872,9 @@ function SettingsUpdateHandler({
       console.error(`Error updating ${key}:`, error);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("div", { className: "space-y-4", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "text-sm text-[--text-normal] mb-2", children: "Review and apply the suggested settings:" }),
-    Object.entries(settings).map(([key, value]) => /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("div", { className: "space-y-4", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("div", { className: "text-sm text-[--text-normal] mb-2", children: "Review and apply the suggested settings:" }),
+    Object.entries(settings).map(([key, value]) => /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
       SettingUpdate,
       {
         setting: key,
@@ -103433,22 +103888,22 @@ function SettingsUpdateHandler({
 }
 
 // views/assistant/ai-chat/tool-handlers/append-content-handler.tsx
-var import_react59 = __toESM(require_react());
-var import_obsidian23 = require("obsidian");
-var import_jsx_runtime52 = __toESM(require_jsx_runtime());
+var import_react60 = __toESM(require_react());
+var import_obsidian24 = require("obsidian");
+var import_jsx_runtime55 = __toESM(require_jsx_runtime());
 function AppendContentHandler({
   toolInvocation,
   handleAddResult
 }) {
   const plugin = usePlugin();
-  const [isValidated, setIsValidated] = import_react59.default.useState(false);
+  const [isValidated, setIsValidated] = import_react60.default.useState(false);
   const handleAppendContent = async () => {
     try {
       const { content: content3, fileName } = toolInvocation.args;
       const activeFile = fileName ? plugin.app.vault.getAbstractFileByPath(fileName) : plugin.app.workspace.getActiveFile();
       if (activeFile) {
         const currentContent = await plugin.app.vault.read(activeFile);
-        if (!(activeFile instanceof import_obsidian23.TFile)) {
+        if (!(activeFile instanceof import_obsidian24.TFile)) {
           throw new Error("Active file is not a TFile");
         }
         await plugin.app.vault.modify(
@@ -103480,19 +103935,19 @@ function AppendContentHandler({
       );
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border] rounded-md", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Would you like to append the following content?" }),
-    /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "bg-[--background-secondary] p-3 rounded-md", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("pre", { className: "text-sm text-[--text-muted] whitespace-pre-wrap", children: toolInvocation.args.content }) }),
-    !isValidated && /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex space-x-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Would you like to append the following content?" }),
+    /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "bg-[--background-secondary] p-3", children: /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("pre", { className: "text-sm text-[--text-muted] whitespace-pre-wrap", children: toolInvocation.args.content }) }),
+    !isValidated && /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { className: "flex space-x-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
         "button",
         {
           onClick: handleAppendContent,
-          className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] rounded-md hover:bg-[--interactive-accent-hover]",
+          className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] hover:bg-[--interactive-accent-hover]",
           children: "Append Content"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
         "button",
         {
           onClick: () => handleAddResult(
@@ -103501,7 +103956,7 @@ function AppendContentHandler({
               message: "User declined to append content"
             })
           ),
-          className: "px-4 py-2 bg-[--background-modifier-border] text-[--text-normal] rounded-md hover:bg-[--background-modifier-border-hover]",
+          className: "px-4 py-2 bg-[--background-modifier-border] text-[--text-normal] hover:bg-[--background-modifier-border-hover]",
           children: "Cancel"
         }
       )
@@ -103510,14 +103965,14 @@ function AppendContentHandler({
 }
 
 // views/assistant/ai-chat/tool-handlers/onboard-handler.tsx
-var import_react60 = __toESM(require_react());
-var import_jsx_runtime53 = __toESM(require_jsx_runtime());
+var import_react61 = __toESM(require_react());
+var import_jsx_runtime56 = __toESM(require_jsx_runtime());
 function OnboardHandler({
   toolInvocation,
   handleAddResult
 }) {
-  const [isAnalyzing, setIsAnalyzing] = (0, import_react60.useState)(false);
-  const [isValidated, setIsValidated] = (0, import_react60.useState)(false);
+  const [isAnalyzing, setIsAnalyzing] = (0, import_react61.useState)(false);
+  const [isValidated, setIsValidated] = (0, import_react61.useState)(false);
   const { toggleLightweightMode } = useContextItems();
   const plugin = usePlugin();
   const getFilesFromPath = (path) => {
@@ -103600,23 +104055,23 @@ function OnboardHandler({
       setIsAnalyzing(false);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("div", { className: "space-y-4", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "space-y-4", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
       "This will analyze your vault structure to suggest optimal organization and settings. The analysis will:",
-      /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("ul", { className: "list-disc ml-4 mt-2 space-y-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("li", { children: "Scan your folder hierarchy" }),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("li", { children: "Analyze file naming patterns" }),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("li", { children: "Identify common groupings" }),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("li", { children: "Generate recommended settings" })
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("ul", { className: "list-disc ml-4 mt-2 space-y-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("li", { children: "Scan your folder hierarchy" }),
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("li", { children: "Analyze file naming patterns" }),
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("li", { children: "Identify common groupings" }),
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("li", { children: "Generate recommended settings" })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("div", { className: "flex justify-end", children: /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "flex justify-end", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
       "button",
       {
         onClick: handleAnalyze,
         disabled: isAnalyzing,
         className: `
-                px-4 py-2 rounded-md
+                px-4 py-2 
                 ${isAnalyzing ? "bg-[--background-modifier-border] cursor-not-allowed" : "bg-[--interactive-accent] hover:bg-[--interactive-accent-hover]"}
                 text-[--text-on-accent]
                 transition-colors
@@ -103628,16 +104083,16 @@ function OnboardHandler({
 }
 
 // views/assistant/ai-chat/tool-handlers/move-files-handler.tsx
-var import_react61 = __toESM(require_react());
-var import_jsx_runtime54 = __toESM(require_jsx_runtime());
+var import_react62 = __toESM(require_react());
+var import_jsx_runtime57 = __toESM(require_jsx_runtime());
 function MoveFilesHandler({
   toolInvocation,
   handleAddResult
 }) {
   const plugin = usePlugin();
-  const [isValidated, setIsValidated] = (0, import_react61.useState)(false);
-  const [moveResults, setMoveResults] = (0, import_react61.useState)([]);
-  const [filesToMove, setFilesToMove] = (0, import_react61.useState)([]);
+  const [isValidated, setIsValidated] = (0, import_react62.useState)(false);
+  const [moveResults, setMoveResults] = (0, import_react62.useState)([]);
+  const [filesToMove, setFilesToMove] = (0, import_react62.useState)([]);
   const matchesPattern = (file, pattern) => {
     if (!pattern)
       return true;
@@ -103662,7 +104117,7 @@ function MoveFilesHandler({
       return file.path.startsWith(moveOp.sourcePath) && matchesPattern(file, moveOp.pattern);
     });
   };
-  import_react61.default.useEffect(() => {
+  import_react62.default.useEffect(() => {
     if (!isValidated && !filesToMove.length) {
       const { moves } = toolInvocation.args;
       const matchedFiles = moves.flatMap((move) => getMatchingFiles(move));
@@ -103693,22 +104148,22 @@ function MoveFilesHandler({
     setIsValidated(true);
     handleAddResult(JSON.stringify({ success: true, results }));
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border] rounded-md", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Ready to move files" }),
-    !isValidated && filesToMove.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Ready to move files" }),
+    !isValidated && filesToMove.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
       "Found ",
       filesToMove.length,
       " files to move:",
-      /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
-        filesToMove.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("li", { children: file.path }, i)),
-        filesToMove.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("li", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
+        filesToMove.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("li", { children: file.path }, i)),
+        filesToMove.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("li", { children: [
           "...and ",
           filesToMove.length - 5,
           " more"
         ] })
       ] })
     ] }),
-    moveResults.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("div", { className: "text-sm space-y-1", children: moveResults.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+    moveResults.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-sm space-y-1", children: moveResults.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
       "div",
       {
         className: `${result.startsWith("\u2705") ? "text-[--text-success]" : result.startsWith("\u2139\uFE0F") ? "text-[--text-muted]" : "text-[--text-error]"}`,
@@ -103716,12 +104171,12 @@ function MoveFilesHandler({
       },
       i
     )) }),
-    !isValidated && /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("div", { className: "flex space-x-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)(
+    !isValidated && /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex space-x-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
         "button",
         {
           onClick: handleMoveFiles,
-          className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] rounded-md hover:bg-[--interactive-accent-hover]",
+          className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] hover:bg-[--interactive-accent-hover]",
           children: [
             "Move ",
             filesToMove.length,
@@ -103729,7 +104184,7 @@ function MoveFilesHandler({
           ]
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
         "button",
         {
           onClick: () => handleAddResult(
@@ -103738,7 +104193,7 @@ function MoveFilesHandler({
               message: "User cancelled file movement"
             })
           ),
-          className: "px-4 py-2 bg-[--background-modifier-border] text-[--text-normal] rounded-md hover:bg-[--background-modifier-border-hover]",
+          className: "px-4 py-2 bg-[--background-modifier-border] text-[--text-normal] hover:bg-[--background-modifier-border-hover]",
           children: "Cancel"
         }
       )
@@ -103747,15 +104202,15 @@ function MoveFilesHandler({
 }
 
 // views/assistant/ai-chat/tool-handlers/rename-files-handler.tsx
-var import_react62 = __toESM(require_react());
-var import_obsidian24 = require("obsidian");
-var import_jsx_runtime55 = __toESM(require_jsx_runtime());
+var import_react63 = __toESM(require_react());
+var import_obsidian25 = require("obsidian");
+var import_jsx_runtime58 = __toESM(require_jsx_runtime());
 function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
   const plugin = usePlugin();
-  const [isDone, setIsDone] = (0, import_react62.useState)(false);
-  const [results, setResults] = (0, import_react62.useState)([]);
-  const [filesToRename, setFilesToRename] = (0, import_react62.useState)([]);
-  import_react62.default.useEffect(() => {
+  const [isDone, setIsDone] = (0, import_react63.useState)(false);
+  const [results, setResults] = (0, import_react63.useState)([]);
+  const [filesToRename, setFilesToRename] = (0, import_react63.useState)([]);
+  import_react63.default.useEffect(() => {
     if (!isDone && !filesToRename.length) {
       const { files } = toolInvocation.args;
       setFilesToRename(files);
@@ -103767,7 +104222,7 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
     for (const fileData of files) {
       try {
         const existingFile = plugin.app.vault.getAbstractFileByPath(fileData.oldPath);
-        if (existingFile && existingFile instanceof import_obsidian24.TFile) {
+        if (existingFile && existingFile instanceof import_obsidian25.TFile) {
           const newPath = existingFile.path.replace(existingFile.name, fileData.newName);
           await plugin.app.fileManager.renameFile(existingFile, newPath);
           renameResults.push(`\u2705 Renamed: ${existingFile.path} \u2192 ${newPath}`);
@@ -103782,26 +104237,26 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
     setIsDone(true);
     handleAddResult(JSON.stringify({ success: true, results: renameResults }));
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border] rounded-md", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Ready to rename files" }),
-    !isDone && filesToRename.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Ready to rename files" }),
+    !isDone && filesToRename.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
       "Found ",
       filesToRename.length,
       " files to rename:",
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
-        filesToRename.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("li", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
+        filesToRename.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("li", { children: [
           file.oldPath,
           " \u2192 ",
           file.newName
         ] }, i)),
-        filesToRename.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("li", { children: [
+        filesToRename.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("li", { children: [
           "...and ",
           filesToRename.length - 5,
           " more"
         ] })
       ] })
     ] }),
-    results.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "text-sm space-y-1", children: results.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+    results.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-sm space-y-1", children: results.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
       "div",
       {
         className: `${result.startsWith("\u2705") ? "text-[--text-success]" : "text-[--text-error]"}`,
@@ -103809,12 +104264,12 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
       },
       i
     )) }),
-    !isDone && /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { className: "flex space-x-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)(
+    !isDone && /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex space-x-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(
         "button",
         {
           onClick: handleRename,
-          className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] rounded-md hover:bg-[--interactive-accent-hover]",
+          className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] hover:bg-[--interactive-accent-hover]",
           children: [
             "Rename ",
             filesToRename.length,
@@ -103822,7 +104277,7 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
           ]
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
         "button",
         {
           onClick: () => handleAddResult(
@@ -103831,7 +104286,7 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
               message: "User cancelled file renaming"
             })
           ),
-          className: "px-4 py-2 bg-[--background-modifier-border] text-[--text-normal] rounded-md hover:bg-[--background-modifier-border-hover]",
+          className: "px-4 py-2 bg-[--background-modifier-border] text-[--text-normal] hover:bg-[--background-modifier-border-hover]",
           children: "Cancel"
         }
       )
@@ -103840,14 +104295,14 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
 }
 
 // views/assistant/ai-chat/tool-handlers/search-rename-handler.tsx
-var import_react63 = __toESM(require_react());
-var import_jsx_runtime56 = __toESM(require_jsx_runtime());
+var import_react64 = __toESM(require_react());
+var import_jsx_runtime59 = __toESM(require_jsx_runtime());
 var SearchRenameHandler = ({ toolInvocation, handleAddResult, app }) => {
   const plugin = usePlugin();
-  const [matchedFiles, setMatchedFiles] = (0, import_react63.useState)([]);
-  const [isSearching, setIsSearching] = (0, import_react63.useState)(true);
-  const [error, setError] = (0, import_react63.useState)(null);
-  (0, import_react63.useEffect)(() => {
+  const [matchedFiles, setMatchedFiles] = (0, import_react64.useState)([]);
+  const [isSearching, setIsSearching] = (0, import_react64.useState)(true);
+  const [error, setError] = (0, import_react64.useState)(null);
+  (0, import_react64.useEffect)(() => {
     if (isSearching) {
       try {
         const { query } = toolInvocation.args;
@@ -103878,41 +104333,41 @@ var SearchRenameHandler = ({ toolInvocation, handleAddResult, app }) => {
       results
     }));
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border] rounded-md", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "text-[--text-normal]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "text-[--text-normal]", children: [
       'Searching for files matching: "',
       toolInvocation.args.query,
       '"'
     ] }),
-    error && /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "text-[--text-error] text-sm", children: [
+    error && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "text-[--text-error] text-sm", children: [
       "Error: ",
       error
     ] }),
-    !isSearching && !error && /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)(import_jsx_runtime56.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
+    !isSearching && !error && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(import_jsx_runtime59.Fragment, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
         "Found ",
         matchedFiles.length,
         " matching files:",
-        matchedFiles.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
-          matchedFiles.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("li", { children: file.path }, i)),
-          matchedFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("li", { children: [
+        matchedFiles.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
+          matchedFiles.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("li", { children: file.path }, i)),
+          matchedFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("li", { children: [
             "...and ",
             matchedFiles.length - 5,
             " more"
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "flex space-x-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex space-x-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
           "button",
           {
             onClick: handleSearch,
-            className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] rounded-md hover:bg-[--interactive-accent-hover]",
+            className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] hover:bg-[--interactive-accent-hover]",
             disabled: matchedFiles.length === 0,
             children: "Use These Files"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
           "button",
           {
             onClick: () => handleAddResult(
@@ -103921,7 +104376,7 @@ var SearchRenameHandler = ({ toolInvocation, handleAddResult, app }) => {
                 message: "Search cancelled by user"
               })
             ),
-            className: "px-4 py-2 bg-[--background-modifier-border] text-[--text-normal] rounded-md hover:bg-[--background-modifier-border-hover]",
+            className: "px-4 py-2 bg-[--background-modifier-border] text-[--text-normal] hover:bg-[--background-modifier-border-hover]",
             children: "Cancel"
           }
         )
@@ -103931,13 +104386,13 @@ var SearchRenameHandler = ({ toolInvocation, handleAddResult, app }) => {
 };
 
 // views/assistant/ai-chat/tool-handlers/execute-actions-handler.tsx
-var import_react64 = __toESM(require_react());
-var import_jsx_runtime57 = __toESM(require_jsx_runtime());
+var import_react65 = __toESM(require_react());
+var import_jsx_runtime60 = __toESM(require_jsx_runtime());
 function ExecuteActionsHandler({ toolInvocation, handleAddResult, app }) {
   const plugin = usePlugin();
-  const [isDone, setIsDone] = (0, import_react64.useState)(false);
-  const [results, setResults] = (0, import_react64.useState)([]);
-  const [isProcessing, setIsProcessing] = (0, import_react64.useState)(false);
+  const [isDone, setIsDone] = (0, import_react65.useState)(false);
+  const [results, setResults] = (0, import_react65.useState)([]);
+  const [isProcessing, setIsProcessing] = (0, import_react65.useState)(false);
   const determineAction = (userPrompt) => {
     const prompt2 = userPrompt.toLowerCase();
     if (prompt2.includes("tag") || prompt2.includes("label")) {
@@ -104015,13 +104470,13 @@ function ExecuteActionsHandler({ toolInvocation, handleAddResult, app }) {
       setIsProcessing(false);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border] rounded-md", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "text-[--text-normal]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("div", { className: "text-[--text-normal]", children: [
       "Ready to process ",
       toolInvocation.args.filePaths.length,
       " file(s) based on content analysis"
     ] }),
-    results.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-sm space-y-1", children: results.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+    results.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("div", { className: "text-sm space-y-1", children: results.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
       "div",
       {
         className: result.startsWith("\u2705") ? "text-[--text-success]" : result.startsWith("\u2139\uFE0F") ? "text-[--text-muted]" : "text-[--text-error]",
@@ -104029,10 +104484,10 @@ function ExecuteActionsHandler({ toolInvocation, handleAddResult, app }) {
       },
       i
     )) }),
-    !isDone && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+    !isDone && /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
       "button",
       {
-        className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] rounded-md hover:bg-[--interactive-accent-hover] disabled:opacity-50",
+        className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] hover:bg-[--interactive-accent-hover] disabled:opacity-50",
         onClick: handleExecute,
         disabled: isProcessing,
         children: isProcessing ? "Processing..." : "Execute Actions"
@@ -104042,16 +104497,16 @@ function ExecuteActionsHandler({ toolInvocation, handleAddResult, app }) {
 }
 
 // views/assistant/ai-chat/tool-handlers/add-text-handler.tsx
-var import_react65 = __toESM(require_react());
-var import_jsx_runtime58 = __toESM(require_jsx_runtime());
+var import_react66 = __toESM(require_react());
+var import_jsx_runtime61 = __toESM(require_jsx_runtime());
 function AddTextHandler({
   toolInvocation,
   handleAddResult,
   app
 }) {
-  const hasFetchedRef = (0, import_react65.useRef)(false);
-  const [addSuccess, setAddSuccess] = (0, import_react65.useState)(null);
-  import_react65.default.useEffect(() => {
+  const hasFetchedRef = (0, import_react66.useRef)(false);
+  const [addSuccess, setAddSuccess] = (0, import_react66.useState)(null);
+  import_react66.default.useEffect(() => {
     const handleAddText = async () => {
       var _a17;
       if (!hasFetchedRef.current && !("result" in toolInvocation)) {
@@ -104091,30 +104546,30 @@ function AddTextHandler({
     handleAddText();
   }, [toolInvocation, handleAddResult, app]);
   if (addSuccess === null) {
-    return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Adding text to document..." });
+    return /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Adding text to document..." });
   }
   if (addSuccess) {
-    return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Text successfully added to document" });
+    return /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Text successfully added to document" });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-sm text-[--text-error]", children: "Failed to add text to document" });
+  return /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("div", { className: "text-sm text-[--text-error]", children: "Failed to add text to document" });
 }
 
 // views/assistant/ai-chat/tool-handlers/modify-text-handler.tsx
-var import_react66 = __toESM(require_react());
-var import_jsx_runtime59 = __toESM(require_jsx_runtime());
+var import_react67 = __toESM(require_react());
+var import_jsx_runtime62 = __toESM(require_jsx_runtime());
 function ModifyTextHandler({
   toolInvocation,
   handleAddResult,
   app
 }) {
-  const hasFetchedRef = (0, import_react66.useRef)(false);
-  const [modifySuccess, setModifySuccess] = (0, import_react66.useState)(null);
-  const [diff, setDiff] = (0, import_react66.useState)([]);
-  const [explanation, setExplanation] = (0, import_react66.useState)("");
-  const [isApplying, setIsApplying] = (0, import_react66.useState)(false);
-  const [pendingChanges, setPendingChanges] = (0, import_react66.useState)(null);
+  const hasFetchedRef = (0, import_react67.useRef)(false);
+  const [modifySuccess, setModifySuccess] = (0, import_react67.useState)(null);
+  const [diff, setDiff] = (0, import_react67.useState)([]);
+  const [explanation, setExplanation] = (0, import_react67.useState)("");
+  const [isApplying, setIsApplying] = (0, import_react67.useState)(false);
+  const [pendingChanges, setPendingChanges] = (0, import_react67.useState)(null);
   const plugin = usePlugin();
-  import_react66.default.useEffect(() => {
+  import_react67.default.useEffect(() => {
     const fetchModifications = async () => {
       var _a17;
       if (!hasFetchedRef.current && !("result" in toolInvocation)) {
@@ -104201,89 +104656,1759 @@ function ModifyTextHandler({
     setPendingChanges(null);
   };
   const renderDiff = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "font-mono text-xs leading-relaxed", children: diff.map((line, index2) => /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(
-      "div",
-      {
-        className: `py-1 px-2 flex items-start ${line.added ? "bg-[--background-modifier-success] bg-opacity-10" : line.removed ? "bg-[--background-modifier-error] bg-opacity-10" : "hover:bg-[--background-modifier-hover]"} ${line.removed ? "opacity-70" : ""}`,
-        children: [
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "select-none mr-3 text-[--text-muted] w-4 inline-block", children: line.added ? "+" : line.removed ? "-" : " " }),
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: line.removed ? "line-through" : "", children: line.value })
-        ]
-      },
-      index2
-    )) });
+    return /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "font-mono text-xs leading-snug", children: diff.map((line, index2) => {
+      if (!line.added && !line.removed && !line.value.trim()) {
+        return null;
+      }
+      let bgColor = "";
+      if (line.added) {
+        bgColor = "rgba(var(--color-green-rgb, 0, 255, 0), 0.15)";
+      } else if (line.removed) {
+        bgColor = "rgba(var(--color-red-rgb, 255, 0, 0), 0.15)";
+      }
+      return /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)(
+        "div",
+        {
+          style: bgColor ? { backgroundColor: bgColor } : {},
+          className: `py-0.5 px-2 flex items-start border-l-2 ${line.added ? "border-[--text-success]" : line.removed ? "border-[--text-error]" : "border-transparent"}`,
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { className: `select-none mr-2 w-4 flex-shrink-0 font-bold ${line.added ? "text-[--text-success]" : line.removed ? "text-[--text-error]" : "text-[--text-faint]"}`, children: line.added ? "+" : line.removed ? "\u2212" : "" }),
+            /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { className: `flex-1 whitespace-pre-wrap break-words ${line.removed ? "line-through opacity-75 text-[--text-error]" : ""} ${line.added ? "font-medium text-[--text-success]" : ""} ${!line.added && !line.removed ? "text-[--text-muted]" : ""}`, children: line.value })
+          ]
+        },
+        index2
+      );
+    }) });
   };
   if (modifySuccess === null && !pendingChanges) {
-    return /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "p-4 space-y-2 bg-[--background-secondary] rounded-lg animate-pulse", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "h-4 w-3/4 bg-[--background-modifier-border] rounded" }),
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "h-4 w-1/2 bg-[--background-modifier-border] rounded" })
-    ] });
+    return /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "p-2 text-sm text-[--text-muted]", children: "Analyzing changes..." });
   }
   if (pendingChanges && !modifySuccess) {
-    return /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "space-y-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center justify-between", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "text-sm font-medium text-[--text-normal]", children: "Review Changes" }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center space-x-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+    const addedCount = diff.filter((d) => d.added).length;
+    const removedCount = diff.filter((d) => d.removed).length;
+    const unchangedCount = diff.filter((d) => !d.added && !d.removed).length;
+    return /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "space-y-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "flex items-center justify-between border-b border-[--background-modifier-border] pb-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase", children: "Review Changes" }),
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "flex items-center gap-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
             "button",
             {
               onClick: handleDiscardChanges,
-              className: "px-3 py-1 text-sm rounded-md border border-[--background-modifier-border] hover:bg-[--background-modifier-hover] text-[--text-muted]",
+              className: "px-2 py-1 text-xs border border-[--background-modifier-border] hover:bg-[--background-modifier-hover] text-[--text-muted]",
               disabled: isApplying,
               children: "Discard"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
             "button",
             {
               onClick: handleApplyChanges,
               disabled: isApplying,
-              className: "px-3 py-1 text-sm bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] text-[--text-on-accent] rounded-md flex items-center space-x-1",
-              children: isApplying ? /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(import_jsx_runtime59.Fragment, { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "animate-spin", children: "\u27F3" }),
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { children: "Applying..." })
-              ] }) : /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(import_jsx_runtime59.Fragment, { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { children: "\u2713" }),
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { children: "Apply Changes" })
+              className: "px-2 py-1 text-xs bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] text-[--text-on-accent] flex items-center gap-1",
+              children: isApplying ? /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)(import_jsx_runtime62.Fragment, { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { className: "animate-spin", children: "\u27F3" }),
+                /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { children: "Applying..." })
+              ] }) : /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)(import_jsx_runtime62.Fragment, { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { children: "\u2713" }),
+                /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { children: "Apply" })
               ] })
             }
           )
         ] })
       ] }),
-      explanation && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "p-3 bg-[--background-primary] border border-[--background-modifier-border] rounded-md", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "text-xs font-medium text-[--text-muted] uppercase tracking-wide mb-1", children: "Summary of Changes" }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "text-sm text-[--text-normal]", children: explanation })
+      explanation && /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "p-2 border-b border-[--background-modifier-border]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase mb-1", children: "Summary" }),
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "text-xs text-[--text-normal]", children: explanation })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "border border-[--background-modifier-border] rounded-md overflow-hidden", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "bg-[--background-primary] border-b border-[--background-modifier-border] px-3 py-2", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "text-xs font-medium text-[--text-muted] uppercase tracking-wide", children: "Detailed Changes" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "max-h-[400px] overflow-y-auto bg-[--background-primary]", children: renderDiff() })
+      /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "border border-[--background-modifier-border]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "border-b border-[--background-modifier-border] px-2 py-1 flex items-center justify-between", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase", children: "Diff" }),
+          /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "flex items-center gap-3 text-xs", children: [
+            removedCount > 0 && /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("span", { className: "text-[--text-error] flex items-center gap-1", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { children: "\u2212" }),
+              /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("span", { children: [
+                removedCount,
+                " removed"
+              ] })
+            ] }),
+            addedCount > 0 && /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("span", { className: "text-[--text-success] flex items-center gap-1", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { children: "+" }),
+              /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("span", { children: [
+                addedCount,
+                " added"
+              ] })
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "max-h-[300px] overflow-y-auto", children: renderDiff() })
       ] })
     ] });
   }
   if (modifySuccess) {
-    return /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "p-4 space-y-3 bg-[--background-primary] border border-[--background-modifier-border] rounded-md", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center text-[--text-success] space-x-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-lg", children: "\u2713" }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "font-medium", children: "Changes Applied Successfully" })
+    return /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "p-3 space-y-2 border-b border-[--background-modifier-border]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "flex items-center text-[--text-success] space-x-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { className: "text-base", children: "\u2713" }),
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { className: "text-sm font-medium", children: "Changes Applied Successfully" })
       ] }),
-      explanation && /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "text-sm text-[--text-muted]", children: explanation })
+      explanation && /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "text-xs text-[--text-muted]", children: explanation })
     ] });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "p-4 space-y-3 bg-[--background-primary] border border-[--background-modifier-error] rounded-md", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center text-[--text-error] space-x-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-lg", children: "\u26A0" }),
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "font-medium", children: "Failed to Apply Changes" })
+  return /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "p-3 space-y-2 border-b border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "flex items-center text-[--text-error] space-x-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { className: "text-base", children: "\u26A0" }),
+      /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { className: "text-sm font-medium", children: "Failed to Apply Changes" })
     ] }),
-    explanation && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("strong", { children: "Attempted Changes:" }),
+    explanation && /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "text-xs text-[--text-muted]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("strong", { children: "Attempted Changes:" }),
       " ",
       explanation
     ] })
   ] });
 }
 
+// views/assistant/ai-chat/tool-handlers/metadata-handler.tsx
+var import_react68 = __toESM(require_react());
+var import_obsidian26 = require("obsidian");
+var import_obsidian27 = require("obsidian");
+var import_jsx_runtime63 = __toESM(require_jsx_runtime());
+function MetadataHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react68.useRef)(false);
+  const extractMetadata = async (filePath, options) => {
+    var _a17, _b;
+    const file = app.vault.getAbstractFileByPath(filePath);
+    if (!(file instanceof import_obsidian26.TFile))
+      return null;
+    const cache2 = app.metadataCache.getFileCache(file);
+    const metadata = {
+      path: file.path,
+      name: file.basename,
+      created: file.stat.ctime,
+      modified: file.stat.mtime,
+      size: file.stat.size
+    };
+    if (options.includeFrontmatter !== false && (cache2 == null ? void 0 : cache2.frontmatter)) {
+      metadata.frontmatter = cache2.frontmatter;
+    }
+    if (options.includeTags !== false && cache2) {
+      const tags = (0, import_obsidian27.getAllTags)(cache2);
+      if (tags) {
+        metadata.tags = tags;
+      }
+    }
+    if (options.includeLinks !== false && cache2) {
+      metadata.links = ((_a17 = cache2.links) == null ? void 0 : _a17.map((l) => l.link)) || [];
+      metadata.embeds = ((_b = cache2.embeds) == null ? void 0 : _b.map((e2) => e2.link)) || [];
+    }
+    if (options.includeBacklinks === true) {
+      const allBacklinks = [];
+      const resolvedLinks = app.metadataCache.resolvedLinks;
+      for (const [sourcePath, links] of Object.entries(resolvedLinks)) {
+        if (links[file.path]) {
+          allBacklinks.push(sourcePath);
+        }
+      }
+      metadata.backlinks = allBacklinks;
+    }
+    if (options.includeContent === true) {
+      metadata.content = await app.vault.read(file);
+    }
+    return metadata;
+  };
+  import_react68.default.useEffect(() => {
+    const execute = async () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const args2 = toolInvocation.args;
+        try {
+          const results = await Promise.all(
+            args2.filePaths.map(
+              (path) => extractMetadata(path, {
+                includeContent: args2.includeContent,
+                includeFrontmatter: args2.includeFrontmatter,
+                includeTags: args2.includeTags,
+                includeLinks: args2.includeLinks,
+                includeBacklinks: args2.includeBacklinks
+              })
+            )
+          );
+          const validResults = results.filter(
+            (r3) => r3 !== null
+          );
+          handleAddResult(JSON.stringify(validResults));
+        } catch (error) {
+          handleAddResult(
+            JSON.stringify({ error: error.message })
+          );
+        }
+      }
+    };
+    execute();
+  }, [toolInvocation, handleAddResult, app]);
+  const args = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  return /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("div", { className: "text-sm text-[--text-muted]", children: !isComplete ? `Extracting metadata from ${args.filePaths.length} file(s)...` : `Metadata extracted for ${args.filePaths.length} file(s)` });
+}
+
+// views/assistant/ai-chat/tool-handlers/frontmatter-handler.tsx
+var import_react69 = __toESM(require_react());
+var import_obsidian28 = require("obsidian");
+var import_jsx_runtime64 = __toESM(require_jsx_runtime());
+function FrontmatterHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react69.useRef)(false);
+  const updateFrontmatter = async (filePath, updates, deletions) => {
+    const file = app.vault.getAbstractFileByPath(filePath);
+    if (!(file instanceof import_obsidian28.TFile)) {
+      return {
+        success: false,
+        message: `File not found: ${filePath}`
+      };
+    }
+    try {
+      await app.fileManager.processFrontMatter(file, (frontmatter) => {
+        if (updates) {
+          Object.entries(updates).forEach(([key, value]) => {
+            frontmatter[key] = value;
+          });
+        }
+        if (deletions) {
+          deletions.forEach((key) => {
+            delete frontmatter[key];
+          });
+        }
+      });
+      const updatesList = [];
+      if (updates) {
+        Object.keys(updates).forEach((key) => updatesList.push(`updated ${key}`));
+      }
+      if (deletions) {
+        deletions.forEach((key) => updatesList.push(`removed ${key}`));
+      }
+      return {
+        success: true,
+        message: `Successfully ${updatesList.join(", ")} in ${file.basename}`
+      };
+    } catch (error) {
+      return {
+        success: false,
+        message: `Error updating frontmatter: ${error.message}`
+      };
+    }
+  };
+  import_react69.default.useEffect(() => {
+    const execute = async () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const args2 = toolInvocation.args;
+        try {
+          let updates;
+          if (args2.updatesJson) {
+            try {
+              const parsed = JSON.parse(args2.updatesJson);
+              updates = Object.keys(parsed).length > 0 ? parsed : void 0;
+            } catch (e2) {
+              updates = void 0;
+            }
+          }
+          const result = await updateFrontmatter(
+            args2.filePath,
+            updates,
+            args2.deletions
+          );
+          handleAddResult(JSON.stringify(result));
+        } catch (error) {
+          handleAddResult(
+            JSON.stringify({
+              success: false,
+              message: error.message
+            })
+          );
+        }
+      }
+    };
+    execute();
+  }, [toolInvocation, handleAddResult, app]);
+  const args = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  return /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "text-sm", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-[--text-muted] mb-1", children: args.message }),
+    /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-[--text-muted] text-xs", children: !isComplete ? `Updating frontmatter for ${args.filePath}...` : "Frontmatter updated successfully" })
+  ] });
+}
+
+// views/assistant/ai-chat/tool-handlers/tags-handler.tsx
+var import_react70 = __toESM(require_react());
+var import_obsidian29 = require("obsidian");
+var import_jsx_runtime65 = __toESM(require_jsx_runtime());
+function TagsHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react70.useRef)(false);
+  const addTags = async (filePaths2, tags2, location2, inlinePosition = "bottom") => {
+    const results = [];
+    for (const filePath of filePaths2) {
+      try {
+        const file = app.vault.getAbstractFileByPath(filePath);
+        if (!(file instanceof import_obsidian29.TFile)) {
+          results.push({
+            path: filePath,
+            success: false,
+            error: "File not found"
+          });
+          continue;
+        }
+        const normalizedTags = tags2.map(
+          (tag) => tag.startsWith("#") ? tag.slice(1) : tag
+        );
+        let frontmatterUpdated = false;
+        let inlineUpdated = false;
+        if (location2 === "frontmatter" || location2 === "both") {
+          try {
+            await app.fileManager.processFrontMatter(file, (fm) => {
+              const existingTags = fm.tags || [];
+              const tagsArray = Array.isArray(existingTags) ? existingTags : [existingTags];
+              const updatedTags = [
+                .../* @__PURE__ */ new Set([...tagsArray, ...normalizedTags])
+              ];
+              fm.tags = updatedTags;
+            });
+            frontmatterUpdated = true;
+          } catch (error) {
+            results.push({
+              path: filePath,
+              success: false,
+              error: `Failed to update frontmatter: ${error.message}`
+            });
+            continue;
+          }
+        }
+        if (location2 === "inline" || location2 === "both") {
+          try {
+            const content3 = await app.vault.read(file);
+            const tagLine = normalizedTags.map((tag) => `#${tag}`).join(" ");
+            let newContent;
+            if (inlinePosition === "top") {
+              const frontmatterMatch = content3.match(/^---\n[\s\S]*?\n---\n/);
+              if (frontmatterMatch) {
+                const frontmatter = frontmatterMatch[0];
+                const afterFrontmatter = content3.slice(frontmatter.length);
+                newContent = `${frontmatter}${tagLine}
+
+${afterFrontmatter}`;
+              } else {
+                newContent = `${tagLine}
+
+${content3}`;
+              }
+            } else {
+              newContent = `${content3}
+
+${tagLine}`;
+            }
+            await app.vault.modify(file, newContent);
+            inlineUpdated = true;
+          } catch (error) {
+            results.push({
+              path: filePath,
+              success: false,
+              error: `Failed to add inline tags: ${error.message}`
+            });
+            continue;
+          }
+        }
+        results.push({
+          path: filePath,
+          success: true,
+          frontmatterUpdated,
+          inlineUpdated,
+          tagsAdded: normalizedTags
+        });
+      } catch (error) {
+        results.push({
+          path: filePath,
+          success: false,
+          error: error.message
+        });
+      }
+    }
+    return results;
+  };
+  import_react70.default.useEffect(() => {
+    const handleAddTags = async () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const { filePaths: filePaths2, tags: tags2, location: location2, inlinePosition } = toolInvocation.args;
+        try {
+          const results = await addTags(
+            filePaths2,
+            tags2,
+            location2,
+            inlinePosition || "bottom"
+          );
+          handleAddResult(JSON.stringify(results));
+        } catch (error) {
+          handleAddResult(
+            JSON.stringify({ error: `Failed to add tags: ${error.message}` })
+          );
+        }
+      }
+    };
+    handleAddTags();
+  }, [toolInvocation, handleAddResult, app]);
+  const { filePaths, tags, location } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  return /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "text-[--text-muted]", children: [
+    "Adding tags ",
+    tags.map((t2) => `#${t2}`).join(", "),
+    " to",
+    " ",
+    filePaths.length,
+    " file(s) in ",
+    location,
+    "..."
+  ] }) : /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "text-[--text-normal]", children: [
+    "\u2713 Tags added to ",
+    filePaths.length,
+    " file(s)"
+  ] }) });
+}
+
+// views/assistant/ai-chat/tool-handlers/backlinks-handler.tsx
+var import_react71 = __toESM(require_react());
+var import_obsidian30 = require("obsidian");
+var import_jsx_runtime66 = __toESM(require_jsx_runtime());
+function BacklinksHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react71.useRef)(false);
+  const getBacklinks = (filePath, includeUnresolved) => {
+    const file = app.vault.getAbstractFileByPath(filePath);
+    if (!(file instanceof import_obsidian30.TFile)) {
+      return {
+        path: filePath,
+        success: false,
+        error: "File not found"
+      };
+    }
+    const backlinksForFile = app.metadataCache.getBacklinksForFile(file);
+    const resolved = backlinksForFile ? Array.from(backlinksForFile.keys()).map((path) => ({
+      path,
+      count: backlinksForFile.get(path) || 0
+    })) : [];
+    let unresolved = [];
+    if (includeUnresolved) {
+      const unresolvedLinks = app.metadataCache.unresolvedLinks;
+      unresolved = Object.entries(unresolvedLinks).filter(([, links]) => filePath in links).map(([path, links]) => ({
+        path,
+        count: links[filePath]
+      }));
+    }
+    return {
+      path: filePath,
+      success: true,
+      resolved,
+      unresolved,
+      totalResolved: resolved.length,
+      totalUnresolved: unresolved.length
+    };
+  };
+  import_react71.default.useEffect(() => {
+    const handleGetBacklinks = async () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const { filePaths: filePaths2, includeUnresolved } = toolInvocation.args;
+        try {
+          const results = filePaths2.map(
+            (path) => getBacklinks(path, includeUnresolved || false)
+          );
+          handleAddResult(JSON.stringify(results));
+        } catch (error) {
+          handleAddResult(
+            JSON.stringify({
+              error: `Failed to get backlinks: ${error.message}`
+            })
+          );
+        }
+      }
+    };
+    handleGetBacklinks();
+  }, [toolInvocation, handleAddResult, app]);
+  const { filePaths } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  return /* @__PURE__ */ (0, import_jsx_runtime66.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime66.jsxs)("div", { className: "text-[--text-muted]", children: [
+    "Finding backlinks for ",
+    filePaths.length,
+    " file(s)..."
+  ] }) : /* @__PURE__ */ (0, import_jsx_runtime66.jsxs)("div", { className: "text-[--text-normal]", children: [
+    "\u2713 Backlinks retrieved for ",
+    filePaths.length,
+    " file(s)"
+  ] }) });
+}
+
+// views/assistant/ai-chat/tool-handlers/outgoing-links-handler.tsx
+var import_react72 = __toESM(require_react());
+var import_obsidian31 = require("obsidian");
+var import_jsx_runtime67 = __toESM(require_jsx_runtime());
+function OutgoingLinksHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react72.useRef)(false);
+  const getOutgoingLinks = (filePath, includeEmbeds, resolvedOnly) => {
+    const file = app.vault.getAbstractFileByPath(filePath);
+    if (!(file instanceof import_obsidian31.TFile)) {
+      return {
+        path: filePath,
+        success: false,
+        error: "File not found"
+      };
+    }
+    const cache2 = app.metadataCache.getFileCache(file);
+    if (!cache2) {
+      return {
+        path: filePath,
+        success: true,
+        links: [],
+        embeds: [],
+        totalLinks: 0,
+        totalEmbeds: 0
+      };
+    }
+    const links = (cache2.links || []).map((link2) => ({
+      link: link2.link,
+      displayText: link2.displayText,
+      resolved: app.metadataCache.getFirstLinkpathDest(link2.link, filePath) !== null
+    }));
+    const filteredLinks = resolvedOnly ? links.filter((l) => l.resolved) : links;
+    let embeds = [];
+    if (includeEmbeds) {
+      embeds = (cache2.embeds || []).map((embed) => ({
+        link: embed.link,
+        displayText: embed.displayText,
+        resolved: app.metadataCache.getFirstLinkpathDest(embed.link, filePath) !== null
+      }));
+      if (resolvedOnly) {
+        embeds = embeds.filter((e2) => e2.resolved);
+      }
+    }
+    return {
+      path: filePath,
+      success: true,
+      links: filteredLinks,
+      embeds,
+      totalLinks: filteredLinks.length,
+      totalEmbeds: embeds.length
+    };
+  };
+  import_react72.default.useEffect(() => {
+    const handleGetOutgoingLinks = async () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const { filePaths: filePaths2, includeEmbeds, resolvedOnly } = toolInvocation.args;
+        try {
+          const results = filePaths2.map(
+            (path) => getOutgoingLinks(
+              path,
+              includeEmbeds !== false,
+              resolvedOnly || false
+            )
+          );
+          handleAddResult(JSON.stringify(results));
+        } catch (error) {
+          handleAddResult(
+            JSON.stringify({
+              error: `Failed to get outgoing links: ${error.message}`
+            })
+          );
+        }
+      }
+    };
+    handleGetOutgoingLinks();
+  }, [toolInvocation, handleAddResult, app]);
+  const { filePaths } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  return /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)("div", { className: "text-[--text-muted]", children: [
+    "Analyzing outgoing links for ",
+    filePaths.length,
+    " file(s)..."
+  ] }) : /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)("div", { className: "text-[--text-normal]", children: [
+    "\u2713 Outgoing links retrieved for ",
+    filePaths.length,
+    " file(s)"
+  ] }) });
+}
+
+// views/assistant/ai-chat/tool-handlers/headings-handler.tsx
+var import_react73 = __toESM(require_react());
+var import_obsidian32 = require("obsidian");
+var import_jsx_runtime68 = __toESM(require_jsx_runtime());
+function HeadingsHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react73.useRef)(false);
+  const getHeadings = (filePath, minLevel = 1, maxLevel = 6) => {
+    var _a17;
+    const file = app.vault.getAbstractFileByPath(filePath);
+    if (!(file instanceof import_obsidian32.TFile)) {
+      return {
+        path: filePath,
+        success: false,
+        error: "File not found"
+      };
+    }
+    const cache2 = app.metadataCache.getFileCache(file);
+    if (!cache2) {
+      return {
+        path: filePath,
+        success: true,
+        headings: [],
+        totalHeadings: 0
+      };
+    }
+    const headings = ((_a17 = cache2.headings) == null ? void 0 : _a17.filter((h) => h.level >= minLevel && h.level <= maxLevel).map((h) => ({
+      level: h.level,
+      heading: h.heading,
+      position: {
+        start: h.position.start,
+        end: h.position.end
+      }
+    }))) || [];
+    return {
+      path: filePath,
+      success: true,
+      headings,
+      totalHeadings: headings.length
+    };
+  };
+  import_react73.default.useEffect(() => {
+    const handleGetHeadings = async () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const { filePaths: filePaths2, minLevel, maxLevel } = toolInvocation.args;
+        try {
+          const results = filePaths2.map(
+            (path) => getHeadings(path, minLevel || 1, maxLevel || 6)
+          );
+          handleAddResult(JSON.stringify(results));
+        } catch (error) {
+          handleAddResult(
+            JSON.stringify({
+              error: `Failed to get headings: ${error.message}`
+            })
+          );
+        }
+      }
+    };
+    handleGetHeadings();
+  }, [toolInvocation, handleAddResult, app]);
+  const { filePaths } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  return /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime68.jsxs)("div", { className: "text-[--text-muted]", children: [
+    "Extracting headings from ",
+    filePaths.length,
+    " file(s)..."
+  ] }) : /* @__PURE__ */ (0, import_jsx_runtime68.jsxs)("div", { className: "text-[--text-normal]", children: [
+    "\u2713 Headings extracted from ",
+    filePaths.length,
+    " file(s)"
+  ] }) });
+}
+
+// views/assistant/ai-chat/tool-handlers/create-files-handler.tsx
+var import_react74 = __toESM(require_react());
+var import_obsidian33 = require("obsidian");
+var import_jsx_runtime69 = __toESM(require_jsx_runtime());
+function CreateFilesHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react74.useRef)(false);
+  const [createdFiles, setCreatedFiles] = (0, import_react74.useState)([]);
+  const [isCreating, setIsCreating] = (0, import_react74.useState)(false);
+  const createFiles = async (files2, linkInCurrentFile = true) => {
+    const results = [];
+    const createdPaths = [];
+    for (const fileData of files2) {
+      try {
+        const fileName = fileData.fileName.endsWith(".md") ? fileData.fileName : `${fileData.fileName}.md`;
+        const folder = fileData.folder || "";
+        const fullPath = folder ? `${folder}/${fileName}` : fileName;
+        if (folder) {
+          const folderExists = app.vault.getAbstractFileByPath(folder);
+          if (!folderExists) {
+            await app.vault.createFolder(folder);
+          }
+        }
+        const existingFile = app.vault.getAbstractFileByPath(fullPath);
+        if (existingFile) {
+          results.push({
+            path: fullPath,
+            success: false,
+            error: "File already exists"
+          });
+          continue;
+        }
+        await app.vault.create(fullPath, fileData.content);
+        createdPaths.push(fullPath);
+        results.push({
+          path: fullPath,
+          success: true
+        });
+      } catch (error) {
+        results.push({
+          path: fileData.fileName,
+          success: false,
+          error: error.message
+        });
+      }
+    }
+    if (linkInCurrentFile && createdPaths.length > 0) {
+      try {
+        const activeFile = app.workspace.getActiveFile();
+        if (activeFile) {
+          const currentContent = await app.vault.read(activeFile);
+          const links = createdPaths.map((path) => {
+            const linkText = path.replace(/\.md$/, "");
+            return `- [[${linkText}]]`;
+          }).join("\n");
+          const newContent = `${currentContent}
+
+${links}`;
+          await app.vault.modify(activeFile, newContent);
+        }
+      } catch (error) {
+        console.error("Error adding links to current file:", error);
+      }
+    }
+    return { results, createdPaths };
+  };
+  import_react74.default.useEffect(() => {
+    const handleCreateFiles = async () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const { files: files2, linkInCurrentFile, message: message2 } = toolInvocation.args;
+        setIsCreating(true);
+        try {
+          const { results, createdPaths } = await createFiles(
+            files2,
+            linkInCurrentFile !== false
+          );
+          setCreatedFiles(createdPaths);
+          const successCount = results.filter((r3) => r3.success).length;
+          const failCount = results.filter((r3) => !r3.success).length;
+          handleAddResult(
+            JSON.stringify({
+              success: true,
+              created: successCount,
+              failed: failCount,
+              files: results,
+              message: `Created ${successCount} file(s)${failCount > 0 ? `, ${failCount} failed` : ""}`
+            })
+          );
+          new import_obsidian33.Notice(
+            `Created ${successCount} file(s)${failCount > 0 ? `, ${failCount} failed` : ""}`
+          );
+        } catch (error) {
+          handleAddResult(
+            JSON.stringify({
+              success: false,
+              error: `Failed to create files: ${error.message}`
+            })
+          );
+          new import_obsidian33.Notice(`Error creating files: ${error.message}`);
+        } finally {
+          setIsCreating(false);
+        }
+      }
+    };
+    handleCreateFiles();
+  }, [toolInvocation, handleAddResult, app]);
+  const { files, message } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  return /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("div", { className: "text-[--text-muted] mb-1", children: message }),
+    !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)("div", { className: "text-[--text-muted] text-xs", children: [
+      "Creating ",
+      files.length,
+      " file(s)..."
+    ] }) : /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)("div", { className: "space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("div", { className: "text-[--text-success] text-xs", children: "\u2713 Files created successfully" }),
+      createdFiles.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("div", { className: "text-[--text-faint] text-xs", children: createdFiles.map((path) => /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)("div", { children: [
+        "\u2022 ",
+        path
+      ] }, path)) })
+    ] })
+  ] });
+}
+
+// views/assistant/ai-chat/tool-handlers/delete-files-handler.tsx
+var import_react75 = __toESM(require_react());
+var import_obsidian34 = require("obsidian");
+var import_jsx_runtime70 = __toESM(require_jsx_runtime());
+function DeleteFilesHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react75.useRef)(false);
+  const [isConfirmed, setIsConfirmed] = (0, import_react75.useState)(false);
+  const [isDone, setIsDone] = (0, import_react75.useState)(false);
+  const [validFiles, setValidFiles] = (0, import_react75.useState)([]);
+  const [invalidPaths, setInvalidPaths] = (0, import_react75.useState)([]);
+  import_react75.default.useEffect(() => {
+    const validateFiles = () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const { filePaths } = toolInvocation.args;
+        const valid2 = [];
+        const invalid = [];
+        filePaths.forEach((path) => {
+          const file = app.vault.getAbstractFileByPath(path);
+          if (file instanceof import_obsidian34.TFile) {
+            valid2.push(file);
+          } else {
+            invalid.push(path);
+          }
+        });
+        setValidFiles(valid2);
+        setInvalidPaths(invalid);
+      }
+    };
+    validateFiles();
+  }, [toolInvocation, app]);
+  const handleConfirmDelete = async () => {
+    const { permanentDelete: permanentDelete2 = false } = toolInvocation.args;
+    const results = [];
+    let deletedCount = 0;
+    let failedCount = 0;
+    for (const file of validFiles) {
+      try {
+        await app.vault.trash(file, permanentDelete2);
+        results.push({ path: file.path, success: true });
+        deletedCount++;
+      } catch (error) {
+        results.push({
+          path: file.path,
+          success: false,
+          error: error.message
+        });
+        failedCount++;
+      }
+    }
+    setIsDone(true);
+    const message = permanentDelete2 ? `Permanently deleted ${deletedCount} file(s)` : `Moved ${deletedCount} file(s) to trash`;
+    const resultMessage = failedCount > 0 ? `${message}, ${failedCount} failed` : message;
+    new import_obsidian34.Notice(resultMessage);
+    handleAddResult(
+      JSON.stringify({
+        success: true,
+        deleted: deletedCount,
+        failed: failedCount,
+        message: resultMessage,
+        errors: results.filter((r3) => !r3.success).map((r3) => `${r3.path}: ${r3.error}`)
+      })
+    );
+  };
+  const handleCancel = () => {
+    setIsDone(true);
+    handleAddResult(
+      JSON.stringify({
+        success: false,
+        message: "User cancelled deletion"
+      })
+    );
+  };
+  const { reason, permanentDelete = false } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  if (isComplete || isDone) {
+    return /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Deletion cancelled" : "\u2713 Files deleted" }) });
+  }
+  if (validFiles.length === 0 && invalidPaths.length > 0) {
+    return /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to delete. All paths were invalid." }) });
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("span", { className: "text-[--text-error] text-lg", children: "\u26A0" }),
+      /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Deletion" }),
+        /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
+        "Files to delete (",
+        validFiles.length,
+        ")"
+      ] }),
+      validFiles.slice(0, 5).map((file) => /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        "\u2022 ",
+        file.basename
+      ] }, file.path)),
+      validFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
+        "...and ",
+        validFiles.length - 5,
+        " more"
+      ] })
+    ] }),
+    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
+      "\u26A0 ",
+      invalidPaths.length,
+      " invalid path(s) will be skipped"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "p-2 bg-[--background-secondary] text-xs text-[--text-warning]", children: permanentDelete ? /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)(import_jsx_runtime70.Fragment, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("strong", { children: "\u26A0 Permanent deletion:" }),
+      " Files cannot be recovered"
+    ] }) : /* @__PURE__ */ (0, import_jsx_runtime70.jsx)(import_jsx_runtime70.Fragment, { children: "Files will be moved to trash (can be recovered)" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime70.jsx)(
+        "button",
+        {
+          onClick: handleCancel,
+          className: "flex-1 px-3 py-1.5 text-xs border border-[--background-modifier-border] hover:bg-[--background-modifier-hover] text-[--text-normal]",
+          children: "Cancel"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)(
+        "button",
+        {
+          onClick: () => {
+            setIsConfirmed(true);
+            handleConfirmDelete();
+          },
+          className: "flex-1 px-3 py-1.5 text-xs bg-[--text-error] hover:opacity-90 text-white",
+          children: [
+            "Delete ",
+            validFiles.length,
+            " File",
+            validFiles.length !== 1 ? "s" : ""
+          ]
+        }
+      )
+    ] })
+  ] });
+}
+
+// views/assistant/ai-chat/tool-handlers/merge-files-handler.tsx
+var import_react76 = __toESM(require_react());
+var import_obsidian35 = require("obsidian");
+var import_jsx_runtime71 = __toESM(require_jsx_runtime());
+function MergeFilesHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react76.useRef)(false);
+  const [isConfirmed, setIsConfirmed] = (0, import_react76.useState)(false);
+  const [isDone, setIsDone] = (0, import_react76.useState)(false);
+  const [validFiles, setValidFiles] = (0, import_react76.useState)([]);
+  const [invalidPaths, setInvalidPaths] = (0, import_react76.useState)([]);
+  import_react76.default.useEffect(() => {
+    const validateFiles = () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const { sourceFiles } = toolInvocation.args;
+        const valid2 = [];
+        const invalid = [];
+        sourceFiles.forEach((path) => {
+          const file = app.vault.getAbstractFileByPath(path);
+          if (file instanceof import_obsidian35.TFile) {
+            valid2.push(file);
+          } else {
+            invalid.push(path);
+          }
+        });
+        setValidFiles(valid2);
+        setInvalidPaths(invalid);
+      }
+    };
+    validateFiles();
+  }, [toolInvocation, app]);
+  const handleConfirmMerge = async () => {
+    const {
+      outputFileName: outputFileName2,
+      outputFolder = "",
+      separator = "\n\n---\n\n",
+      deleteSource: deleteSource2 = false
+    } = toolInvocation.args;
+    try {
+      const contents = [];
+      for (const file of validFiles) {
+        const content3 = await app.vault.read(file);
+        contents.push(content3);
+      }
+      const mergedContent = contents.join(separator);
+      const outputPath = outputFolder ? `${outputFolder}/${outputFileName2}.md` : `${outputFileName2}.md`;
+      const existingFile = app.vault.getAbstractFileByPath(outputPath);
+      if (existingFile instanceof import_obsidian35.TFile) {
+        const confirmOverwrite = confirm(
+          `File "${outputFileName2}.md" already exists. Overwrite?`
+        );
+        if (!confirmOverwrite) {
+          setIsDone(true);
+          handleAddResult(
+            JSON.stringify({
+              success: false,
+              message: "User cancelled merge (file already exists)"
+            })
+          );
+          return;
+        }
+        await app.vault.modify(existingFile, mergedContent);
+      } else {
+        await app.vault.create(outputPath, mergedContent);
+      }
+      if (deleteSource2) {
+        for (const file of validFiles) {
+          await app.vault.trash(file, false);
+        }
+      }
+      setIsDone(true);
+      const message = deleteSource2 ? `Merged ${validFiles.length} files into "${outputFileName2}.md" and deleted source files` : `Merged ${validFiles.length} files into "${outputFileName2}.md"`;
+      new import_obsidian35.Notice(message);
+      handleAddResult(
+        JSON.stringify({
+          success: true,
+          mergedFile: outputPath,
+          sourceFileCount: validFiles.length,
+          deletedSource: deleteSource2,
+          message
+        })
+      );
+    } catch (error) {
+      setIsDone(true);
+      new import_obsidian35.Notice(`Failed to merge files: ${error.message}`);
+      handleAddResult(
+        JSON.stringify({
+          success: false,
+          error: error.message
+        })
+      );
+    }
+  };
+  const handleCancel = () => {
+    setIsDone(true);
+    handleAddResult(
+      JSON.stringify({
+        success: false,
+        message: "User cancelled merge"
+      })
+    );
+  };
+  const {
+    message: reason,
+    outputFileName,
+    deleteSource = false
+  } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  if (isComplete || isDone) {
+    return /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Merge cancelled" : "\u2713 Files merged" }) });
+  }
+  if (validFiles.length === 0 && invalidPaths.length > 0) {
+    return /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to merge. All paths were invalid." }) });
+  }
+  if (validFiles.length < 2) {
+    return /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 Need at least 2 files to merge." }) });
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u26A1" }),
+      /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Merge" }),
+        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
+        "Files to merge (",
+        validFiles.length,
+        ")"
+      ] }),
+      validFiles.slice(0, 5).map((file) => /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        "\u2022 ",
+        file.basename
+      ] }, file.path)),
+      validFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
+        "...and ",
+        validFiles.length - 5,
+        " more"
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Output file" }),
+      /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        "\u{1F4C4} ",
+        outputFileName,
+        ".md"
+      ] })
+    ] }),
+    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
+      "\u26A0 ",
+      invalidPaths.length,
+      " invalid path(s) will be skipped"
+    ] }),
+    deleteSource && /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "p-2 bg-[--background-secondary] text-xs text-[--text-warning]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("strong", { children: "\u26A0 Warning:" }),
+      " Source files will be moved to trash after merge"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
+        "button",
+        {
+          onClick: handleCancel,
+          className: "flex-1 px-3 py-1.5 text-xs border border-[--background-modifier-border] hover:bg-[--background-modifier-hover] text-[--text-normal]",
+          children: "Cancel"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(
+        "button",
+        {
+          onClick: () => {
+            setIsConfirmed(true);
+            handleConfirmMerge();
+          },
+          className: "flex-1 px-3 py-1.5 text-xs bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] text-white",
+          children: [
+            "Merge ",
+            validFiles.length,
+            " Files"
+          ]
+        }
+      )
+    ] })
+  ] });
+}
+
+// views/assistant/ai-chat/tool-handlers/create-template-handler.tsx
+var import_react77 = __toESM(require_react());
+var import_obsidian36 = require("obsidian");
+var import_jsx_runtime72 = __toESM(require_jsx_runtime());
+function CreateTemplateHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react77.useRef)(false);
+  const [isConfirmed, setIsConfirmed] = (0, import_react77.useState)(false);
+  const [isDone, setIsDone] = (0, import_react77.useState)(false);
+  const handleConfirmCreate = async () => {
+    const {
+      templateName: templateName2,
+      templateContent: templateContent2,
+      templateFolder = "Templates",
+      description: description2
+    } = toolInvocation.args;
+    try {
+      const folderExists = app.vault.getAbstractFileByPath(templateFolder);
+      if (!folderExists) {
+        await app.vault.createFolder(templateFolder);
+      }
+      const templatePath = `${templateFolder}/${templateName2}.md`;
+      const existingFile = app.vault.getAbstractFileByPath(templatePath);
+      if (existingFile) {
+        const confirmOverwrite = confirm(
+          `Template "${templateName2}" already exists. Overwrite?`
+        );
+        if (!confirmOverwrite) {
+          setIsDone(true);
+          handleAddResult(
+            JSON.stringify({
+              success: false,
+              message: "User cancelled template creation (already exists)"
+            })
+          );
+          return;
+        }
+        await app.vault.modify(existingFile, templateContent2);
+      } else {
+        await app.vault.create(templatePath, templateContent2);
+      }
+      setIsDone(true);
+      const message = `Created template "${templateName2}" in ${templateFolder}/`;
+      new import_obsidian36.Notice(message);
+      handleAddResult(
+        JSON.stringify({
+          success: true,
+          templatePath,
+          message
+        })
+      );
+    } catch (error) {
+      setIsDone(true);
+      new import_obsidian36.Notice(`Failed to create template: ${error.message}`);
+      handleAddResult(
+        JSON.stringify({
+          success: false,
+          error: error.message
+        })
+      );
+    }
+  };
+  const handleCancel = () => {
+    setIsDone(true);
+    handleAddResult(
+      JSON.stringify({
+        success: false,
+        message: "User cancelled template creation"
+      })
+    );
+  };
+  const {
+    templateName,
+    templateContent,
+    description,
+    message: reason
+  } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  if (isComplete || isDone) {
+    return /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Template creation cancelled" : "\u2713 Template created" }) });
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u{1F4CB}" }),
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Create Template" }),
+        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Template Details" }),
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("strong", { children: "Name:" }),
+        " ",
+        templateName
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("strong", { children: "Description:" }),
+        " ",
+        description
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Template Preview" }),
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "p-2 bg-[--background-secondary] text-[--text-muted] font-mono text-xs max-h-32 overflow-y-auto whitespace-pre-wrap", children: [
+        templateContent.slice(0, 300),
+        templateContent.length > 300 && "..."
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
+        "button",
+        {
+          onClick: handleCancel,
+          className: "flex-1 px-3 py-1.5 text-xs border border-[--background-modifier-border] hover:bg-[--background-modifier-hover] text-[--text-normal]",
+          children: "Cancel"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
+        "button",
+        {
+          onClick: () => {
+            setIsConfirmed(true);
+            handleConfirmCreate();
+          },
+          className: "flex-1 px-3 py-1.5 text-xs bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] text-white",
+          children: "Create Template"
+        }
+      )
+    ] })
+  ] });
+}
+
+// views/assistant/ai-chat/tool-handlers/bulk-find-replace-handler.tsx
+var import_react78 = __toESM(require_react());
+var import_obsidian37 = require("obsidian");
+var import_jsx_runtime73 = __toESM(require_jsx_runtime());
+function BulkFindReplaceHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react78.useRef)(false);
+  const [isConfirmed, setIsConfirmed] = (0, import_react78.useState)(false);
+  const [isDone, setIsDone] = (0, import_react78.useState)(false);
+  const [validFiles, setValidFiles] = (0, import_react78.useState)([]);
+  const [invalidPaths, setInvalidPaths] = (0, import_react78.useState)([]);
+  const [matchCounts, setMatchCounts] = (0, import_react78.useState)([]);
+  import_react78.default.useEffect(() => {
+    const validateAndPreview = async () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const {
+          filePaths,
+          find: find3,
+          useRegex: useRegex2 = false,
+          caseSensitive = true
+        } = toolInvocation.args;
+        const valid2 = [];
+        const invalid = [];
+        const counts = [];
+        for (const path of filePaths) {
+          const file = app.vault.getAbstractFileByPath(path);
+          if (file instanceof import_obsidian37.TFile) {
+            valid2.push(file);
+            try {
+              const content3 = await app.vault.read(file);
+              let matchCount = 0;
+              if (useRegex2) {
+                const flags = caseSensitive ? "g" : "gi";
+                const regex = new RegExp(find3, flags);
+                const matches2 = content3.match(regex);
+                matchCount = matches2 ? matches2.length : 0;
+              } else {
+                const searchText = caseSensitive ? content3 : content3.toLowerCase();
+                const findText = caseSensitive ? find3 : find3.toLowerCase();
+                let pos = 0;
+                while ((pos = searchText.indexOf(findText, pos)) !== -1) {
+                  matchCount++;
+                  pos += findText.length;
+                }
+              }
+              counts.push({ path: file.path, count: matchCount });
+            } catch (error) {
+              counts.push({ path: file.path, count: 0 });
+            }
+          } else {
+            invalid.push(path);
+          }
+        }
+        setValidFiles(valid2);
+        setInvalidPaths(invalid);
+        setMatchCounts(counts);
+      }
+    };
+    validateAndPreview();
+  }, [toolInvocation, app]);
+  const handleConfirmReplace = async () => {
+    const {
+      find: find3,
+      replace: replace3,
+      useRegex: useRegex2 = false,
+      caseSensitive = true
+    } = toolInvocation.args;
+    let replacedCount = 0;
+    let filesModified = 0;
+    let totalMatches2 = 0;
+    const errors = [];
+    for (const file of validFiles) {
+      try {
+        const content3 = await app.vault.read(file);
+        let newContent;
+        let fileMatches = 0;
+        if (useRegex2) {
+          const flags = caseSensitive ? "g" : "gi";
+          const regex = new RegExp(find3, flags);
+          const matches2 = content3.match(regex);
+          fileMatches = matches2 ? matches2.length : 0;
+          newContent = content3.replace(regex, replace3);
+        } else {
+          const searchText = caseSensitive ? content3 : content3.toLowerCase();
+          const findText = caseSensitive ? find3 : find3.toLowerCase();
+          let pos = 0;
+          while ((pos = searchText.indexOf(findText, pos)) !== -1) {
+            fileMatches++;
+            pos += findText.length;
+          }
+          if (caseSensitive) {
+            newContent = content3.split(find3).join(replace3);
+          } else {
+            const regex = new RegExp(
+              find3.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
+              "gi"
+            );
+            newContent = content3.replace(regex, replace3);
+          }
+        }
+        if (newContent !== content3) {
+          await app.vault.modify(file, newContent);
+          filesModified++;
+          totalMatches2 += fileMatches;
+        }
+      } catch (error) {
+        errors.push(`${file.path}: ${error.message}`);
+      }
+    }
+    setIsDone(true);
+    const message = `Replaced ${totalMatches2} occurrence(s) in ${filesModified} file(s)`;
+    new import_obsidian37.Notice(message);
+    handleAddResult(
+      JSON.stringify({
+        success: true,
+        filesModified,
+        totalMatches: totalMatches2,
+        message,
+        errors: errors.length > 0 ? errors : void 0
+      })
+    );
+  };
+  const handleCancel = () => {
+    setIsDone(true);
+    handleAddResult(
+      JSON.stringify({
+        success: false,
+        message: "User cancelled find/replace"
+      })
+    );
+  };
+  const {
+    find: find2,
+    replace: replace2,
+    message: reason,
+    useRegex = false
+  } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  const totalMatches = matchCounts.reduce((sum, m) => sum + m.count, 0);
+  const filesWithMatches = matchCounts.filter((m) => m.count > 0).length;
+  if (isComplete || isDone) {
+    return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Find/Replace cancelled" : "\u2713 Find/Replace complete" }) });
+  }
+  if (validFiles.length === 0) {
+    return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to search." }) });
+  }
+  if (totalMatches === 0) {
+    return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-muted] text-xs", children: [
+      "No matches found in ",
+      validFiles.length,
+      " file(s)"
+    ] }) });
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u{1F50D}" }),
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Find & Replace" }),
+        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Operation" }),
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "p-2 bg-[--background-secondary] space-y-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("strong", { children: "Find:" }),
+          " ",
+          /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("code", { className: "px-1 bg-[--background-primary]", children: find2 }),
+          useRegex && /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "text-[--text-faint] ml-1", children: "(regex)" })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("strong", { children: "Replace:" }),
+          " ",
+          /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("code", { className: "px-1 bg-[--background-primary]", children: replace2 })
+        ] })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Impact" }),
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("strong", { children: totalMatches }),
+        " match(es) in ",
+        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("strong", { children: filesWithMatches }),
+        " file(s)"
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
+        "Files (",
+        filesWithMatches,
+        " with matches)"
+      ] }),
+      matchCounts.filter((m) => m.count > 0).slice(0, 5).map((item) => /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        "\u2022 ",
+        item.path.split("/").pop(),
+        " (",
+        item.count,
+        " match",
+        item.count !== 1 ? "es" : "",
+        ")"
+      ] }, item.path)),
+      filesWithMatches > 5 && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
+        "...and ",
+        filesWithMatches - 5,
+        " more file(s)"
+      ] })
+    ] }),
+    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
+      "\u26A0 ",
+      invalidPaths.length,
+      " invalid path(s) will be skipped"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
+        "button",
+        {
+          onClick: handleCancel,
+          className: "flex-1 px-3 py-1.5 text-xs border border-[--background-modifier-border] hover:bg-[--background-modifier-hover] text-[--text-normal]",
+          children: "Cancel"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(
+        "button",
+        {
+          onClick: () => {
+            setIsConfirmed(true);
+            handleConfirmReplace();
+          },
+          className: "flex-1 px-3 py-1.5 text-xs bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] text-white",
+          children: [
+            "Replace ",
+            totalMatches,
+            " Match",
+            totalMatches !== 1 ? "es" : ""
+          ]
+        }
+      )
+    ] })
+  ] });
+}
+
+// views/assistant/ai-chat/tool-handlers/export-to-format-handler.tsx
+var import_react79 = __toESM(require_react());
+var import_obsidian38 = require("obsidian");
+var import_jsx_runtime74 = __toESM(require_jsx_runtime());
+function ExportToFormatHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react79.useRef)(false);
+  const [isConfirmed, setIsConfirmed] = (0, import_react79.useState)(false);
+  const [isDone, setIsDone] = (0, import_react79.useState)(false);
+  const [validFiles, setValidFiles] = (0, import_react79.useState)([]);
+  const [invalidPaths, setInvalidPaths] = (0, import_react79.useState)([]);
+  import_react79.default.useEffect(() => {
+    const validateFiles = () => {
+      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
+        hasFetchedRef.current = true;
+        const { filePaths } = toolInvocation.args;
+        const valid2 = [];
+        const invalid = [];
+        filePaths.forEach((path) => {
+          const file = app.vault.getAbstractFileByPath(path);
+          if (file instanceof import_obsidian38.TFile) {
+            valid2.push(file);
+          } else {
+            invalid.push(path);
+          }
+        });
+        setValidFiles(valid2);
+        setInvalidPaths(invalid);
+      }
+    };
+    validateFiles();
+  }, [toolInvocation, app]);
+  const stripFrontmatter = (content3) => {
+    const frontmatterRegex = /^---\n[\s\S]*?\n---\n/;
+    return content3.replace(frontmatterRegex, "");
+  };
+  const handleConfirmExport = async () => {
+    const {
+      format: format3,
+      outputFolder: outputFolder2 = "Exports",
+      includeMetadata: includeMetadata2 = false
+    } = toolInvocation.args;
+    try {
+      const folderExists = app.vault.getAbstractFileByPath(outputFolder2);
+      if (!folderExists) {
+        await app.vault.createFolder(outputFolder2);
+      }
+      let exportedCount = 0;
+      const exportedFiles = [];
+      const errors = [];
+      for (const file of validFiles) {
+        try {
+          let content3 = await app.vault.read(file);
+          if (!includeMetadata2) {
+            content3 = stripFrontmatter(content3);
+          }
+          const baseName = file.basename;
+          let exportedContent = content3;
+          let extension2 = format3;
+          if (format3 === "html") {
+            exportedContent = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>${baseName}</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+    h1, h2, h3, h4, h5, h6 { margin-top: 24px; margin-bottom: 16px; font-weight: 600; }
+    code { background: #f6f8fa; padding: 2px 6px; border-radius: 3px; font-family: 'Courier New', monospace; }
+    pre { background: #f6f8fa; padding: 16px; border-radius: 6px; overflow-x: auto; }
+    blockquote { border-left: 4px solid #dfe2e5; padding-left: 16px; color: #6a737d; }
+  </style>
+</head>
+<body>
+${content3.replace(/\n/g, "<br>\n")}
+</body>
+</html>`;
+          } else if (format3 === "txt") {
+            exportedContent = content3.replace(/#{1,6}\s/g, "").replace(/\*\*(.+?)\*\*/g, "$1").replace(/\*(.+?)\*/g, "$1").replace(/\[(.+?)\]\(.+?\)/g, "$1").replace(/`(.+?)`/g, "$1");
+          } else if (format3 === "pdf") {
+            errors.push(
+              `${file.path}: PDF export requires external converter (not yet implemented)`
+            );
+            continue;
+          }
+          const exportPath = `${outputFolder2}/${baseName}.${extension2}`;
+          const existingExport = app.vault.getAbstractFileByPath(exportPath);
+          if (existingExport) {
+            await app.vault.modify(existingExport, exportedContent);
+          } else {
+            await app.vault.create(exportPath, exportedContent);
+          }
+          exportedFiles.push(exportPath);
+          exportedCount++;
+        } catch (error) {
+          errors.push(`${file.path}: ${error.message}`);
+        }
+      }
+      setIsDone(true);
+      const message = `Exported ${exportedCount} file(s) to ${format3.toUpperCase()}`;
+      new import_obsidian38.Notice(message);
+      handleAddResult(
+        JSON.stringify({
+          success: true,
+          exportedCount,
+          format: format3,
+          outputFolder: outputFolder2,
+          exportedFiles,
+          message,
+          errors: errors.length > 0 ? errors : void 0
+        })
+      );
+    } catch (error) {
+      setIsDone(true);
+      new import_obsidian38.Notice(`Export failed: ${error.message}`);
+      handleAddResult(
+        JSON.stringify({
+          success: false,
+          error: error.message
+        })
+      );
+    }
+  };
+  const handleCancel = () => {
+    setIsDone(true);
+    handleAddResult(
+      JSON.stringify({
+        success: false,
+        message: "User cancelled export"
+      })
+    );
+  };
+  const {
+    format: format2,
+    outputFolder = "Exports",
+    includeMetadata = false,
+    message: reason
+  } = toolInvocation.args;
+  const isComplete = "result" in toolInvocation;
+  if (isComplete || isDone) {
+    return /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Export cancelled" : "\u2713 Export complete" }) });
+  }
+  if (validFiles.length === 0) {
+    return /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to export." }) });
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u{1F4E4}" }),
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Export" }),
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Export Settings" }),
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "p-2 bg-[--background-secondary] space-y-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("strong", { children: "Format:" }),
+          " ",
+          format2.toUpperCase()
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("strong", { children: "Output:" }),
+          " ",
+          outputFolder,
+          "/"
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("strong", { children: "Metadata:" }),
+          " ",
+          includeMetadata ? "Included" : "Excluded"
+        ] })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
+        "Files to Export (",
+        validFiles.length,
+        ")"
+      ] }),
+      validFiles.slice(0, 5).map((file) => /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        "\u2022 ",
+        file.basename
+      ] }, file.path)),
+      validFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
+        "...and ",
+        validFiles.length - 5,
+        " more"
+      ] })
+    ] }),
+    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
+      "\u26A0 ",
+      invalidPaths.length,
+      " invalid path(s) will be skipped"
+    ] }),
+    format2 === "pdf" && /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "p-2 bg-[--background-secondary] text-xs text-[--text-warning]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("strong", { children: "\u26A0 Note:" }),
+      " PDF export is not yet fully implemented"
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
+        "button",
+        {
+          onClick: handleCancel,
+          className: "flex-1 px-3 py-1.5 text-xs border border-[--background-modifier-border] hover:bg-[--background-modifier-hover] text-[--text-normal]",
+          children: "Cancel"
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)(
+        "button",
+        {
+          onClick: () => {
+            setIsConfirmed(true);
+            handleConfirmExport();
+          },
+          className: "flex-1 px-3 py-1.5 text-xs bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] text-white",
+          children: [
+            "Export ",
+            validFiles.length,
+            " File",
+            validFiles.length !== 1 ? "s" : ""
+          ]
+        }
+      )
+    ] })
+  ] });
+}
+
 // views/assistant/ai-chat/tool-handlers/tool-invocation-handler.tsx
-var import_jsx_runtime60 = __toESM(require_jsx_runtime());
+var import_jsx_runtime75 = __toESM(require_jsx_runtime());
 function ToolInvocationHandler({
   toolInvocation,
   addToolResult,
@@ -104305,17 +106430,31 @@ function ToolInvocationHandler({
       moveFiles: "Moving Files",
       renameFiles: "Renaming Files",
       searchByName: "Search Files by Name",
+      openFile: "Opening File",
       executeActionsOnFileBasedOnPrompt: "Execute Actions on Files",
       addTextToDocument: "Adding Text to Document",
       modifyDocumentText: "Modifying Document Text",
-      onboardUser: "Onboarding User"
+      onboardUser: "Onboarding User",
+      // New Metadata & Analysis Tools
+      getFileMetadata: "File Metadata Extraction",
+      updateFrontmatter: "Update Frontmatter",
+      addTags: "Add Tags",
+      getBacklinks: "Get Backlinks",
+      getOutgoingLinks: "Get Outgoing Links",
+      getHeadings: "Get Document Structure",
+      createNewFiles: "Creating New Files",
+      deleteFiles: "Deleting Files",
+      mergeFiles: "Merging Files",
+      createTemplate: "Creating Template",
+      bulkFindReplace: "Find & Replace",
+      exportToFormat: "Exporting Files"
     };
     return toolTitles[toolName];
   };
   const renderContent = () => {
     var _a17;
     const handlers3 = {
-      getSearchQuery: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      getSearchQuery: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         SearchHandler,
         {
           toolInvocation,
@@ -104323,14 +106462,14 @@ function ToolInvocationHandler({
           app
         }
       ),
-      getYoutubeVideoId: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      getYoutubeVideoId: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         YouTubeHandler,
         {
           toolInvocation,
           handleAddResult
         }
       ),
-      getNotesForDateRange: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      getNotesForDateRange: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         DateRangeHandler,
         {
           toolInvocation,
@@ -104338,7 +106477,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      getLastModifiedFiles: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      getLastModifiedFiles: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         LastModifiedHandler,
         {
           toolInvocation,
@@ -104346,21 +106485,29 @@ function ToolInvocationHandler({
           app
         }
       ),
-      generateSettings: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      openFile: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        OpenFileHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      generateSettings: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         SettingsUpdateHandler,
         {
           toolInvocation,
           handleAddResult
         }
       ),
-      appendContentToFile: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      appendContentToFile: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         AppendContentHandler,
         {
           toolInvocation,
           handleAddResult
         }
       ),
-      analyzeVaultStructure: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      analyzeVaultStructure: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         OnboardHandler,
         {
           toolInvocation,
@@ -104368,7 +106515,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      moveFiles: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      moveFiles: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         MoveFilesHandler,
         {
           toolInvocation,
@@ -104376,7 +106523,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      renameFiles: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      renameFiles: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         RenameFilesHandler,
         {
           toolInvocation,
@@ -104384,7 +106531,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      searchByName: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      searchByName: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         SearchRenameHandler,
         {
           toolInvocation,
@@ -104392,7 +106539,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      executeActionsOnFileBasedOnPrompt: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      executeActionsOnFileBasedOnPrompt: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         ExecuteActionsHandler,
         {
           toolInvocation,
@@ -104400,7 +106547,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      addTextToDocument: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      addTextToDocument: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         AddTextHandler,
         {
           toolInvocation,
@@ -104408,8 +106555,105 @@ function ToolInvocationHandler({
           app
         }
       ),
-      modifyDocumentText: () => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      modifyDocumentText: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         ModifyTextHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      // New Metadata & Analysis Tools
+      getFileMetadata: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        MetadataHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      updateFrontmatter: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        FrontmatterHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      addTags: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        TagsHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      getBacklinks: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        BacklinksHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      getOutgoingLinks: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        OutgoingLinksHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      getHeadings: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        HeadingsHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      createNewFiles: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        CreateFilesHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      deleteFiles: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        DeleteFilesHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      mergeFiles: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        MergeFilesHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      createTemplate: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        CreateTemplateHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      bulkFindReplace: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        BulkFindReplaceHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      exportToFormat: () => /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+        ExportToFormatHandler,
         {
           toolInvocation,
           handleAddResult,
@@ -104419,7 +106663,7 @@ function ToolInvocationHandler({
     };
     return ((_a17 = handlers3[toolInvocation.toolName]) == null ? void 0 : _a17.call(handlers3)) || null;
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)(
     motion.div,
     {
       className: "card",
@@ -104427,8 +106671,8 @@ function ToolInvocationHandler({
       animate: { opacity: 1, y: 0 },
       transition: { duration: 0.3 },
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("h4", { className: "m-0 mb-2 text-[--text-normal] text-sm font-semibold", children: getToolTitle(toolInvocation.toolName) }),
-        /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("div", { className: "text-sm text-[--text-muted]", children: renderContent() })
+        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("h4", { className: "m-0 mb-2 text-[--text-normal] text-sm font-semibold", children: getToolTitle(toolInvocation.toolName) }),
+        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-sm text-[--text-muted]", children: renderContent() })
       ]
     }
   );
@@ -110069,8 +112313,8 @@ function createOllama(options = {}) {
 var ollama = createOllama();
 
 // views/assistant/ai-chat/components/SourcesSection.tsx
-var import_react67 = __toESM(require_react());
-var import_jsx_runtime61 = __toESM(require_jsx_runtime());
+var import_react80 = __toESM(require_react());
+var import_jsx_runtime76 = __toESM(require_jsx_runtime());
 function extractDomainFromUrl(url) {
   try {
     const domain = new URL(url).hostname.replace("www.", "");
@@ -110084,7 +112328,7 @@ function getFaviconUrl(domain) {
 }
 function SourcesSection({ groundingMetadata }) {
   var _a17;
-  const [showAll, setShowAll] = (0, import_react67.useState)(false);
+  const [showAll, setShowAll] = (0, import_react80.useState)(false);
   if (!groundingMetadata)
     return null;
   const sources = ((_a17 = groundingMetadata.groundingSupports) == null ? void 0 : _a17.map((support, index2) => {
@@ -110100,46 +112344,46 @@ function SourcesSection({ groundingMetadata }) {
     };
   })) || [];
   const displayedSources = showAll ? sources : sources.slice(0, 3);
-  return /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "mt-6 space-y-4 m-2 z-50", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "flex justify-between items-center", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("h3", { className: "text-base font-medium text-gray-900 dark:text-gray-100", children: "Sources" }),
-      sources.length > 3 && /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "mt-6 space-y-4 m-2 z-50", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "flex justify-between items-center", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("h3", { className: "text-base font-medium text-[--text-normal]", children: "Sources" }),
+      sources.length > 3 && /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
         "button",
         {
           onClick: () => setShowAll(!showAll),
-          className: "text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300",
+          className: "text-sm text-[--text-accent] hover:text-[--text-accent-hover]",
           children: showAll ? "Show less" : "Show all"
         }
       )
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4", children: displayedSources.map((source) => /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)(
+    /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4", children: displayedSources.map((source) => /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)(
       "div",
       {
-        className: "flex items-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-colors",
+        className: "flex items-center p-4 bg-[--background-primary] border border-[--background-modifier-border] hover:border-[--background-modifier-border-hover] transition-colors",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("div", { className: "flex-shrink-0 mr-4", children: /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "relative", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "flex-shrink-0 mr-4", children: /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "relative", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
               "img",
               {
                 src: getFaviconUrl(source.domain),
                 alt: source.domain,
-                className: "w-8 h-8 rounded-lg"
+                className: "w-8 h-8"
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("div", { className: "absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center bg-blue-100 dark:bg-blue-900 rounded-full text-xs font-medium text-blue-600 dark:text-blue-400", children: source.id })
+            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center bg-[--background-secondary] border border-[--background-modifier-border] rounded-full text-xs font-medium text-[--text-accent]", children: source.id })
           ] }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "flex-grow min-w-0", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("h4", { className: "font-medium text-sm text-gray-900 dark:text-gray-100 truncate", children: /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "flex-grow min-w-0", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("h4", { className: "font-medium text-sm text-[--text-normal] truncate", children: /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
               "a",
               {
                 href: source.url,
                 target: "_blank",
                 rel: "noopener noreferrer",
-                className: "text-blue-600 hover:underline",
+                className: "text-[--text-accent] hover:underline",
                 children: source.title || source.domain
               }
             ) }),
-            /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("p", { className: "text-xs text-gray-500 dark:text-gray-400 truncate", children: source.domain })
+            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("p", { className: "text-xs text-[--text-muted] truncate", children: source.domain })
           ] })
         ]
       },
@@ -110149,24 +112393,24 @@ function SourcesSection({ groundingMetadata }) {
 }
 
 // views/assistant/ai-chat/context-limit-indicator.tsx
-var import_react69 = __toESM(require_react());
+var import_react82 = __toESM(require_react());
 
 // ../../node_modules/use-debounce/dist/index.module.js
-var import_react68 = __toESM(require_react());
+var import_react81 = __toESM(require_react());
 function c(e2, u2, c3) {
-  var i = this, a = (0, import_react68.useRef)(null), o = (0, import_react68.useRef)(0), f = (0, import_react68.useRef)(null), l = (0, import_react68.useRef)([]), v = (0, import_react68.useRef)(), m = (0, import_react68.useRef)(), d = (0, import_react68.useRef)(e2), g = (0, import_react68.useRef)(true);
+  var i = this, a = (0, import_react81.useRef)(null), o = (0, import_react81.useRef)(0), f = (0, import_react81.useRef)(null), l = (0, import_react81.useRef)([]), v = (0, import_react81.useRef)(), m = (0, import_react81.useRef)(), d = (0, import_react81.useRef)(e2), g = (0, import_react81.useRef)(true);
   d.current = e2;
   var p = "undefined" != typeof window, w = !u2 && 0 !== u2 && p;
   if ("function" != typeof e2)
     throw new TypeError("Expected a function");
   u2 = +u2 || 0;
   var s = !!(c3 = c3 || {}).leading, x = !("trailing" in c3) || !!c3.trailing, h = "maxWait" in c3, y = "debounceOnServer" in c3 && !!c3.debounceOnServer, F = h ? Math.max(+c3.maxWait || 0, u2) : null;
-  (0, import_react68.useEffect)(function() {
+  (0, import_react81.useEffect)(function() {
     return g.current = true, function() {
       g.current = false;
     };
   }, []);
-  var A = (0, import_react68.useMemo)(function() {
+  var A = (0, import_react81.useMemo)(function() {
     var r3 = function(r4) {
       var n3 = l.current, t3 = v.current;
       return l.current = v.current = null, o.current = r4, m.current = d.current.apply(t3, n3);
@@ -110211,16 +112455,16 @@ function c(e2, u2, c3) {
 }
 
 // views/assistant/ai-chat/context-limit-indicator.tsx
-var import_jsx_runtime62 = __toESM(require_jsx_runtime());
+var import_jsx_runtime77 = __toESM(require_jsx_runtime());
 function ContextLimitIndicator({
   unifiedContext,
   maxContextSize
 }) {
-  const [stats, setStats] = import_react69.default.useState({ contextSize: 0, percentUsed: 0 });
-  const [error, setError] = import_react69.default.useState();
-  const [tiktokenInitialized, setTiktokenInitialized] = import_react69.default.useState(false);
+  const [stats, setStats] = import_react82.default.useState({ contextSize: 0, percentUsed: 0 });
+  const [error, setError] = import_react82.default.useState();
+  const [tiktokenInitialized, setTiktokenInitialized] = import_react82.default.useState(false);
   const { isLightweightMode, toggleLightweightMode } = useContextItems();
-  import_react69.default.useEffect(() => {
+  import_react82.default.useEffect(() => {
     async function setup() {
       try {
         if (!tiktokenInitialized) {
@@ -110250,42 +112494,42 @@ function ContextLimitIndicator({
       encoder.free();
     }
   }, 300);
-  import_react69.default.useEffect(() => {
+  import_react82.default.useEffect(() => {
     calculateTokens(unifiedContext);
   }, [unifiedContext]);
   if (error) {
-    return /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "mt-2 p-2 rounded text-xs text-[--text-error] border border-[--text-error]", children: error });
+    return /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "mt-2 p-2 rounded text-xs text-[--text-error] border border-[--text-error]", children: error });
   }
   const isOverLimit = stats.contextSize > maxContextSize;
   const shouldWarn = stats.percentUsed > 80;
-  return /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "mt-2 space-y-2 flex", children: /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "relative group", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: `p-2 min-w-max rounded text-xs flex gap-1 items-center justify-between cursor-pointer hover:bg-[--background-modifier-hover] transition-colors
+  return /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "mt-2 space-y-2 flex", children: /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "relative group", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: `p-2 min-w-max rounded text-xs flex gap-1 items-center justify-between cursor-pointer hover:bg-[--background-modifier-hover] transition-colors
           ${isOverLimit ? "border border-[--text-error] text-[--text-error]" : shouldWarn ? "border border-[--text-warning] text-[--text-warning]" : "border border-[--background-modifier-border] text-[--text-muted]"}`, children: [
-      /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { children: isOverLimit ? "Context size exceeds maximum" : shouldWarn ? "Context size nearing limit" : "Context used" }),
-      /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("span", { className: "font-mono", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("span", { children: isOverLimit ? "Context size exceeds maximum" : shouldWarn ? "Context size nearing limit" : "Context used" }),
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("span", { className: "font-mono", children: [
         stats.percentUsed.toFixed(0),
         "%"
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "absolute left-0 top-full mt-1 w-72 bg-[--background-secondary] rounded-md shadow-lg border border-[--background-modifier-border] opacity-0 group-hover:opacity-100 transition-opacity z-10", children: /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "absolute left-0 bottom-full mb-1 w-72 bg-[--background-secondary] border border-[--background-modifier-border] opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none group-hover:pointer-events-auto", children: /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
       "div",
       {
         onClick: toggleLightweightMode,
-        className: `w-full px-4 py-3.5 text-left text-xs flex items-start justify-between gap-4 hover:bg-[--background-modifier-hover] rounded-md cursor-pointer
+        className: `w-full px-4 py-3.5 text-left text-xs flex items-start justify-between gap-4 hover:bg-[--background-modifier-hover]  cursor-pointer
               ${isLightweightMode ? "text-[--interactive-accent]" : "text-[--text-normal]"}`,
-        children: /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "space-y-1.5 flex-1", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "font-medium flex items-center gap-2", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
+        children: /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "space-y-1.5 flex-1", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "font-medium flex items-center gap-2", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
               "div",
               {
                 className: `w-4 h-4 rounded border flex items-center justify-center
                   ${isLightweightMode ? "border-[--interactive-accent] bg-[--interactive-accent]" : "border-[--background-modifier-border]"}`,
-                children: isLightweightMode && /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("svg", { className: "w-3 h-3 text-[--text-on-accent]", viewBox: "0 0 14 14", fill: "none", children: /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("path", { d: "M11.6666 3.5L5.24992 9.91667L2.33325 7", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }) })
+                children: isLightweightMode && /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("svg", { className: "w-3 h-3 text-[--text-on-accent]", viewBox: "0 0 14 14", fill: "none", children: /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("path", { d: "M11.6666 3.5L5.24992 9.91667L2.33325 7", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }) })
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("span", { children: "Disable Context" })
+            /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("span", { children: "Disable Context" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "text-[--text-muted] text-[11px] leading-relaxed", children: "Removes file content from context while preserving metadata. Useful for batch operations like moving, renaming, or tagging files." })
+          /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "text-[--text-muted] text-[11px] leading-relaxed", children: "Removes file content from context while preserving metadata. Useful for batch operations like moving, renaming, or tagging files." })
         ] })
       }
     ) })
@@ -110293,8 +112537,8 @@ function ContextLimitIndicator({
 }
 
 // views/assistant/ai-chat/model-selector.tsx
-var import_react70 = __toESM(require_react());
-var import_jsx_runtime63 = __toESM(require_jsx_runtime());
+var import_react83 = __toESM(require_react());
+var import_jsx_runtime78 = __toESM(require_jsx_runtime());
 var MODEL_DISPLAY_NAMES = {
   "gpt-4.1-mini": "Cloud",
   "custom": "Ollama Model"
@@ -110307,9 +112551,9 @@ var ModelSelector = ({
   onModelSelect
 }) => {
   const plugin = usePlugin();
-  const [isModelSelectorOpen, setIsModelSelectorOpen] = import_react70.default.useState(false);
-  const [isCustomizing, setIsCustomizing] = import_react70.default.useState(false);
-  const [customModel, setCustomModel] = import_react70.default.useState(plugin.settings.customModelName || "llama3.2");
+  const [isModelSelectorOpen, setIsModelSelectorOpen] = import_react83.default.useState(false);
+  const [isCustomizing, setIsCustomizing] = import_react83.default.useState(false);
+  const [customModel, setCustomModel] = import_react83.default.useState(plugin.settings.customModelName || "llama3.2");
   const handleModelSelect = async (model) => {
     if (model === "custom") {
       setIsCustomizing(true);
@@ -110330,22 +112574,22 @@ var ModelSelector = ({
     setIsCustomizing(false);
     setIsModelSelectorOpen(false);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("div", { className: "border-t border-[--background-modifier-border] p-2 relative", children: /* @__PURE__ */ (0, import_jsx_runtime63.jsxs)("div", { className: "flex items-center justify-end space-x-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime63.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("div", { className: "relative", children: /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "flex items-center justify-end", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)(
       "div",
       {
         onClick: () => plugin.settings.showLocalLLMInChat && setIsModelSelectorOpen(!isModelSelectorOpen),
-        className: `flex items-center space-x-1 text-[--text-muted] hover:text-[--text-normal] text-sm bg-[--background-primary-alt] ${plugin.settings.showLocalLLMInChat ? "hover:bg-[--background-modifier-hover] cursor-pointer" : ""} px-2 py-1 rounded`,
+        className: `flex items-center gap-1 text-xs text-[--text-muted] ${plugin.settings.showLocalLLMInChat ? "hover:text-[--text-normal] cursor-pointer" : ""}`,
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("span", { children: getDisplayName(selectedModel) }),
-          plugin.settings.showLocalLLMInChat && /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("span", { children: getDisplayName(selectedModel) }),
+          plugin.settings.showLocalLLMInChat && /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
             "svg",
             {
               xmlns: "http://www.w3.org/2000/svg",
               viewBox: "0 0 20 20",
               fill: "currentColor",
-              className: `w-4 h-4 transition-transform ${isModelSelectorOpen ? "rotate-180" : ""}`,
-              children: /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
+              className: `w-3 h-3 transition-transform ${isModelSelectorOpen ? "rotate-180" : ""}`,
+              children: /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
                 "path",
                 {
                   fillRule: "evenodd",
@@ -110358,8 +112602,8 @@ var ModelSelector = ({
         ]
       }
     ),
-    isModelSelectorOpen && plugin.settings.showLocalLLMInChat && /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("div", { className: "absolute bottom-full right-0 mb-1 bg-[--background-primary] border border-[--background-modifier-border] rounded shadow-lg", children: /* @__PURE__ */ (0, import_jsx_runtime63.jsxs)("div", { className: "py-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
+    isModelSelectorOpen && plugin.settings.showLocalLLMInChat && /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("div", { className: "absolute bottom-full right-0 mb-1 bg-[--background-primary] border border-[--background-modifier-border]", children: /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "py-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
         "div",
         {
           onClick: () => handleModelSelect("gpt-4.1-mini"),
@@ -110367,19 +112611,19 @@ var ModelSelector = ({
           children: getDisplayName("gpt-4.1-mini")
         }
       ),
-      isCustomizing ? /* @__PURE__ */ (0, import_jsx_runtime63.jsxs)("div", { className: "px-4 py-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
+      isCustomizing ? /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "px-4 py-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
           "input",
           {
             type: "text",
             value: customModel,
             onChange: (e2) => setCustomModel(e2.target.value),
-            className: "w-full px-2 py-1 text-sm border rounded bg-[--background-primary] text-[--text-normal] border-[--background-modifier-border]",
+            className: "w-full px-2 py-1 text-sm border bg-[--background-primary] text-[--text-normal] border-[--background-modifier-border]",
             placeholder: "Enter model name..."
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime63.jsxs)("div", { className: "flex justify-end mt-2 space-x-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "flex justify-end mt-2 space-x-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
             "button",
             {
               onClick: () => setIsCustomizing(false),
@@ -110387,7 +112631,7 @@ var ModelSelector = ({
               children: "Cancel"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
             "button",
             {
               onClick: handleCustomModelSave,
@@ -110396,7 +112640,7 @@ var ModelSelector = ({
             }
           )
         ] })
-      ] }) : /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
+      ] }) : /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
         "div",
         {
           onClick: () => handleModelSelect("custom"),
@@ -110409,19 +112653,19 @@ var ModelSelector = ({
 };
 
 // views/assistant/ai-chat/audio-recorder.tsx
-var import_react71 = __toESM(require_react());
-var import_jsx_runtime64 = __toESM(require_jsx_runtime());
+var import_react84 = __toESM(require_react());
+var import_jsx_runtime79 = __toESM(require_jsx_runtime());
 var AudioRecorder = ({
   onTranscriptionComplete,
   debug = false
 }) => {
   const plugin = usePlugin();
-  const [isRecording, setIsRecording] = (0, import_react71.useState)(false);
-  const mediaRecorderRef = (0, import_react71.useRef)(null);
-  const audioChunks = (0, import_react71.useRef)([]);
-  const [audioUrl, setAudioUrl] = (0, import_react71.useState)(null);
-  const [recordings, setRecordings] = (0, import_react71.useState)([]);
-  const [isProcessing, setIsProcessing] = (0, import_react71.useState)(false);
+  const [isRecording, setIsRecording] = (0, import_react84.useState)(false);
+  const mediaRecorderRef = (0, import_react84.useRef)(null);
+  const audioChunks = (0, import_react84.useRef)([]);
+  const [audioUrl, setAudioUrl] = (0, import_react84.useState)(null);
+  const [recordings, setRecordings] = (0, import_react84.useState)([]);
+  const [isProcessing, setIsProcessing] = (0, import_react84.useState)(false);
   const startRecording = async (e2) => {
     e2.preventDefault();
     e2.stopPropagation();
@@ -110509,21 +112753,21 @@ var AudioRecorder = ({
       setIsProcessing(false);
     }
   };
-  (0, import_react71.useEffect)(() => {
+  (0, import_react84.useEffect)(() => {
     return () => {
       recordings.forEach((recording) => {
         URL.revokeObjectURL(recording.url);
       });
     };
   }, [recordings]);
-  return /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "flex flex-col gap-4", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime64.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)("div", { className: "flex flex-col gap-4", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
       Button,
       {
         onClick: isRecording ? stopRecording : startRecording,
         className: cn(
           // box shadow none
-          "bg-transparent opacity-50 cursor-pointer shadow-lg ",
+          "bg-transparent opacity-50 cursor-pointer  ",
           "hover:opacity-100 hover:shadow-none",
           "shadow-none disabled:shadow-none disabled:cursor-not-allowed",
           {
@@ -110532,165 +112776,27 @@ var AudioRecorder = ({
         ),
         title: isProcessing ? "Processing audio..." : isRecording ? "Stop Recording" : "Start Recording",
         disabled: isProcessing,
-        children: isProcessing ? /* @__PURE__ */ (0, import_jsx_runtime64.jsx)(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : isRecording ? /* @__PURE__ */ (0, import_jsx_runtime64.jsx)(CircleStop, { className: "w-4 h-4" }) : /* @__PURE__ */ (0, import_jsx_runtime64.jsx)(Mic, { className: "w-4 h-4" })
+        children: isProcessing ? /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : isRecording ? /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(CircleStop, { className: "w-4 h-4" }) : /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(Mic, { className: "w-4 h-4" })
       }
     ),
-    debug && recordings.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "flex flex-col gap-2 p-2 rounded bg-[--background-secondary]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("h3", { className: "text-[--text-muted] text-sm", children: "Recording History" }),
-      recordings.map((recording, index2) => /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "flex items-center gap-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { className: "text-xs text-[--text-muted]", children: recording.timestamp }),
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("audio", { controls: true, src: recording.url, className: "h-8" })
+    debug && recordings.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)("div", { className: "flex flex-col gap-2 p-2 rounded bg-[--background-secondary]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("h3", { className: "text-[--text-muted] text-sm", children: "Recording History" }),
+      recordings.map((recording, index2) => /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)("div", { className: "flex items-center gap-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("span", { className: "text-xs text-[--text-muted]", children: recording.timestamp }),
+        /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("audio", { controls: true, src: recording.url, className: "h-8" })
       ] }, recording.timestamp))
     ] })
   ] });
 };
 
-// views/assistant/ai-chat/components/search-toggle.tsx
-var import_react72 = __toESM(require_react());
-var import_jsx_runtime65 = __toESM(require_jsx_runtime());
-function SearchToggle({ selectedModel }) {
-  const plugin = usePlugin();
-  const [isEnabled, setIsEnabled] = (0, import_react72.useState)(plugin.settings.enableSearchGrounding);
-  const [isDeepSearch, setIsDeepSearch] = (0, import_react72.useState)(plugin.settings.enableDeepSearch);
-  const handleToggle = async () => {
-    plugin.settings.enableSearchGrounding = !plugin.settings.enableSearchGrounding;
-    await plugin.saveSettings();
-    setIsEnabled(!isEnabled);
-  };
-  const handleDeepSearchToggle = async (e2) => {
-    e2.stopPropagation();
-    plugin.settings.enableDeepSearch = !plugin.settings.enableDeepSearch;
-    await plugin.saveSettings();
-    setIsDeepSearch(!isDeepSearch);
-  };
-  const supportsSearch = selectedModel === "gpt-4.1" || selectedModel === "gpt-4.1-mini" || selectedModel === "gpt-4o" || selectedModel === "gpt-4o-search-preview" || selectedModel === "gpt-4o-mini-search-preview";
-  if (!supportsSearch) {
-    return null;
-  }
-  const isSearchModel = selectedModel === "gpt-4o-search-preview" || selectedModel === "gpt-4o-mini-search-preview";
-  const searchAutoEnabled = isSearchModel;
-  return /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "flex items-center space-x-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)(
-      "button",
-      {
-        onClick: handleToggle,
-        disabled: isSearchModel,
-        className: `flex items-center space-x-1 text-sm px-2 py-1 rounded transition-colors ${isEnabled || searchAutoEnabled ? "bg-blue-600 text-white hover:bg-blue-700" : "bg-[--background-primary-alt] text-[--text-muted] hover:text-[--text-normal] hover:bg-[--background-modifier-hover]"}`,
-        title: isEnabled ? "Disable internet search" : "Enable internet search",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)(
-            "svg",
-            {
-              className: "w-4 h-4",
-              viewBox: "0 0 24 24",
-              fill: "none",
-              stroke: "currentColor",
-              strokeWidth: "2",
-              strokeLinecap: "round",
-              strokeLinejoin: "round",
-              children: [
-                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("circle", { cx: "12", cy: "12", r: "10" }),
-                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("line", { x1: "2", y1: "12", x2: "22", y2: "12" }),
-                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("path", { d: "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" })
-              ]
-            }
-          ),
-          (isEnabled || searchAutoEnabled) && /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { children: "Search" })
-        ]
-      }
-    ),
-    (isEnabled || searchAutoEnabled) && /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)(
-      "button",
-      {
-        onClick: handleDeepSearchToggle,
-        className: `flex items-center space-x-1 text-sm px-2 py-1 rounded transition-colors ${isDeepSearch ? "bg-indigo-600 text-white hover:bg-indigo-700" : "bg-[--background-primary-alt] text-[--text-muted] hover:text-[--text-normal] hover:bg-[--background-modifier-hover]"}`,
-        title: isDeepSearch ? "Use standard search context" : "Use deep search with more context",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)(
-            "svg",
-            {
-              className: "w-4 h-4",
-              viewBox: "0 0 24 24",
-              fill: "none",
-              stroke: "currentColor",
-              strokeWidth: "2",
-              strokeLinecap: "round",
-              strokeLinejoin: "round",
-              children: [
-                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("circle", { cx: "11", cy: "11", r: "8" }),
-                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("line", { x1: "21", y1: "21", x2: "16.65", y2: "16.65" }),
-                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("line", { x1: "11", y1: "8", x2: "11", y2: "14" }),
-                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("line", { x1: "8", y1: "11", x2: "14", y2: "11" })
-              ]
-            }
-          ),
-          isDeepSearch && /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { children: "Deep" })
-        ]
-      }
-    )
-  ] });
-}
-
-// views/assistant/ai-chat/submit-button.tsx
-var import_jsx_runtime66 = __toESM(require_jsx_runtime());
-var SubmitButton = ({
-  isGenerating,
-  className = ""
-}) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
-    Button,
-    {
-      type: "submit",
-      className: `flex-none ml-2 font-bold px-4 flex items-center justify-center h-full ${isGenerating ? "bg-[--background-modifier-form-field] text-[--text-muted] cursor-not-allowed" : "bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] text-[--text-on-accent]"} ${className}`,
-      children: isGenerating ? /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
-        "svg",
-        {
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          className: "w-5 h-5",
-          children: /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
-            "path",
-            {
-              strokeLinecap: "round",
-              strokeLinejoin: "round",
-              strokeWidth: 2,
-              d: "M6 18L18 6M6 6l12 12"
-            }
-          )
-        }
-      ) : /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
-        "svg",
-        {
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 0 24 24",
-          fill: "none",
-          stroke: "currentColor",
-          className: "w-5 h-5",
-          children: /* @__PURE__ */ (0, import_jsx_runtime66.jsx)(
-            "path",
-            {
-              strokeLinecap: "round",
-              strokeLinejoin: "round",
-              strokeWidth: 2,
-              d: "M14 5l7 7m0 0l-7 7m7-7H3"
-            }
-          )
-        }
-      )
-    }
-  );
-};
-
 // views/assistant/ai-chat/selected-item.tsx
-var import_jsx_runtime67 = __toESM(require_jsx_runtime());
+var import_jsx_runtime80 = __toESM(require_jsx_runtime());
 var SelectedItem = ({
   item,
   prefix,
   onClick,
   onRemove
-}) => /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)(
+}) => /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)(
   motion.div,
   {
     className: "bg-[--background-secondary] text-[--text-normal] rounded px-2 py-1 text-sm m-1 flex gap-1 min-w-fit h-fit",
@@ -110699,7 +112805,7 @@ var SelectedItem = ({
     exit: { opacity: 0, scale: 0.8 },
     transition: { duration: 0.2 },
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)(
+      /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)(
         "span",
         {
           onClick,
@@ -110710,7 +112816,7 @@ var SelectedItem = ({
           ]
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime67.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
         "div",
         {
           onClick: onRemove,
@@ -110723,8 +112829,8 @@ var SelectedItem = ({
 );
 
 // views/assistant/ai-chat/components/context-items.tsx
-var import_obsidian25 = require("obsidian");
-var import_jsx_runtime68 = __toESM(require_jsx_runtime());
+var import_obsidian39 = require("obsidian");
+var import_jsx_runtime81 = __toESM(require_jsx_runtime());
 var ContextItems = () => {
   const plugin = usePlugin();
   const app = plugin.app;
@@ -110777,7 +112883,7 @@ var ContextItems = () => {
   };
   const handleOpenFolder = (folderPath) => {
     const folder = app.vault.getAbstractFileByPath(folderPath);
-    if (folder && folder instanceof import_obsidian25.TFolder) {
+    if (folder && folder instanceof import_obsidian39.TFolder) {
       const fileExplorerLeaf = app.workspace.getLeavesOfType("file-explorer")[0];
       if (fileExplorerLeaf) {
         app.workspace.revealLeaf(fileExplorerLeaf);
@@ -110799,8 +112905,8 @@ var ContextItems = () => {
       }
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "flex-grow overflow-x-auto", children: /* @__PURE__ */ (0, import_jsx_runtime68.jsxs)("div", { className: "flex flex-col space-y-2", children: [
-    currentFile && includeCurrentFile && /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "flex space-x-2", children: /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "flex-grow overflow-x-auto", children: /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)("div", { className: "flex flex-col space-y-2", children: [
+    currentFile && includeCurrentFile && /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "flex space-x-2", children: /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
       SelectedItem,
       {
         item: currentFile.title,
@@ -110810,7 +112916,7 @@ var ContextItems = () => {
       },
       "current-file"
     ) }),
-    Object.values(files).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "flex space-x-2", children: Object.values(files).map((file) => /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+    Object.values(files).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "flex space-x-2", children: Object.values(files).map((file) => /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
       SelectedItem,
       {
         item: file.title,
@@ -110820,7 +112926,7 @@ var ContextItems = () => {
       },
       file.id
     )) }),
-    Object.values(folders).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "flex space-x-2", children: Object.values(folders).map((folder) => /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+    Object.values(folders).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "flex space-x-2", children: Object.values(folders).map((folder) => /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
       SelectedItem,
       {
         item: folder.name,
@@ -110830,7 +112936,7 @@ var ContextItems = () => {
       },
       folder.id
     )) }),
-    Object.values(tags).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "flex space-x-2", children: Object.values(tags).map((tag) => /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+    Object.values(tags).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "flex space-x-2", children: Object.values(tags).map((tag) => /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
       SelectedItem,
       {
         item: tag.name,
@@ -110840,7 +112946,7 @@ var ContextItems = () => {
       },
       tag.id
     )) }),
-    Object.values(youtubeVideos).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "flex space-x-2", children: Object.values(youtubeVideos).map((video) => /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+    Object.values(youtubeVideos).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "flex space-x-2", children: Object.values(youtubeVideos).map((video) => /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
       SelectedItem,
       {
         item: video.title,
@@ -110850,7 +112956,7 @@ var ContextItems = () => {
       },
       video.id
     )) }),
-    Object.values(searchResults).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "flex space-x-2", children: Object.values(searchResults).map((search3) => /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+    Object.values(searchResults).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "flex space-x-2", children: Object.values(searchResults).map((search3) => /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
       SelectedItem,
       {
         item: `"${search3.query}" (${search3.results.length} results)`,
@@ -110860,7 +112966,7 @@ var ContextItems = () => {
       },
       search3.id
     )) }),
-    Object.values(textSelections).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "flex space-x-2", children: Object.values(textSelections).map((selection) => /* @__PURE__ */ (0, import_jsx_runtime68.jsx)(
+    Object.values(textSelections).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "flex space-x-2", children: Object.values(textSelections).map((selection) => /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
       SelectedItem,
       {
         item: `${selection.content.slice(0, 30)}...`,
@@ -110874,22 +112980,22 @@ var ContextItems = () => {
 };
 
 // views/assistant/ai-chat/components/clear-all-button.tsx
-var import_jsx_runtime69 = __toESM(require_jsx_runtime());
+var import_jsx_runtime82 = __toESM(require_jsx_runtime());
 function ClearAllButton() {
   const { clearAll } = useContextItems();
-  return /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
     Button,
     {
       onClick: clearAll,
       className: "bg-[--interactive-normal] hover:bg-[--interactive-hover] text-[--text-normal]",
-      children: /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
+      children: /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
         "svg",
         {
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 0 24 24",
           fill: "currentColor",
           className: "w-4 h-4",
-          children: /* @__PURE__ */ (0, import_jsx_runtime69.jsx)(
+          children: /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
             "path",
             {
               fillRule: "evenodd",
@@ -110903,14 +113009,31 @@ function ClearAllButton() {
   );
 }
 
+// views/assistant/ai-chat/components/new-chat-button.tsx
+var import_jsx_runtime83 = __toESM(require_jsx_runtime());
+function NewChatButton({ onClick }) {
+  return /* @__PURE__ */ (0, import_jsx_runtime83.jsxs)(
+    Button,
+    {
+      onClick,
+      className: "bg-[--interactive-normal] hover:bg-[--interactive-hover] text-[--text-normal] gap-1.5",
+      "aria-label": "Start new chat",
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(Plus, { className: "w-4 h-4" }),
+        /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("span", { className: "text-xs", children: "New" })
+      ]
+    }
+  );
+}
+
 // views/assistant/ai-chat/hooks/use-current-file.ts
-var import_react73 = __toESM(require_react());
+var import_react85 = __toESM(require_react());
 function useCurrentFile({
   app,
   setCurrentFile
 }) {
-  const [error, setError] = (0, import_react73.useState)(null);
-  const currentFile = (0, import_react73.useRef)(null);
+  const [error, setError] = (0, import_react85.useState)(null);
+  const currentFile = (0, import_react85.useRef)(null);
   const isMediaFile = (file) => {
     const extension2 = file.extension.toLowerCase();
     return VALID_MEDIA_EXTENSIONS.includes(extension2);
@@ -110952,7 +113075,7 @@ function useCurrentFile({
       currentFile.current = null;
     }
   };
-  (0, import_react73.useEffect)(() => {
+  (0, import_react85.useEffect)(() => {
     updateActiveFile();
     const eventRefs = [
       app.workspace.on("file-open", updateActiveFile),
@@ -110970,8 +113093,8 @@ function useCurrentFile({
 }
 
 // views/assistant/ai-chat/tool-handlers/search-annotation-handler.tsx
-var import_react74 = __toESM(require_react());
-var import_jsx_runtime70 = __toESM(require_jsx_runtime());
+var import_react86 = __toESM(require_react());
+var import_jsx_runtime84 = __toESM(require_jsx_runtime());
 var SearchAnnotationHandler = ({
   annotation
 }) => {
@@ -110979,8 +113102,8 @@ var SearchAnnotationHandler = ({
   const { groundingMetadata } = annotation;
   if (!((_a17 = groundingMetadata == null ? void 0 : groundingMetadata.groundingSupports) == null ? void 0 : _a17.length))
     return null;
-  return /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "flex flex-col gap-2 p-4 rounded-md bg-[--background-primary-alt] m-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-[--text-muted] text-sm", children: "Search Results:" }),
+  return /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)("div", { className: "flex flex-col gap-2 p-4 bg-[--background-primary-alt] m-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("div", { className: "text-[--text-muted] text-sm", children: "Search Results:" }),
     groundingMetadata.groundingSupports.map((result, index2) => {
       const sources = result.groundingChunkIndices.map((idx) => {
         var _a18;
@@ -110988,15 +113111,15 @@ var SearchAnnotationHandler = ({
         return chunk ? { title: chunk.title, uri: chunk.uri } : null;
       }).filter(Boolean);
       const maxScore = Math.max(...result.confidenceScores);
-      return /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)(
+      return /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)(
         "div",
         {
           className: "flex flex-col gap-1 p-2 rounded bg-[--background-primary] border border-[--background-modifier-border]",
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "flex justify-between items-center", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("span", { className: "text-[--text-accent] text-sm", children: sources.map((source, i) => /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)(import_react74.default.Fragment, { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)("div", { className: "flex justify-between items-center", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("span", { className: "text-[--text-accent] text-sm", children: sources.map((source, i) => /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)(import_react86.default.Fragment, { children: [
                 i > 0 && ", ",
-                /* @__PURE__ */ (0, import_jsx_runtime70.jsx)(
+                /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
                   "a",
                   {
                     href: source.uri,
@@ -111007,13 +113130,13 @@ var SearchAnnotationHandler = ({
                   }
                 )
               ] }, i)) }),
-              /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("span", { className: "text-[--text-muted] text-xs", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)("span", { className: "text-[--text-muted] text-xs", children: [
                 "Score: ",
                 (maxScore * 100).toFixed(1),
                 "%"
               ] })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-[--text-normal] text-sm whitespace-pre-wrap", children: result.segment.text })
+            /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("div", { className: "text-[--text-normal] text-sm whitespace-pre-wrap", children: result.segment.text })
           ]
         },
         index2
@@ -111027,15 +113150,165 @@ function isSearchResultsAnnotation(annotation) {
   return annotation.type === "search-results";
 }
 
+// views/assistant/ai-chat/use-editor-selection.ts
+var import_react87 = __toESM(require_react());
+var import_obsidian40 = require("obsidian");
+var EMPTY_CONTEXT = {
+  selectedText: "",
+  cursorPosition: null,
+  currentLine: "",
+  lineNumber: 0,
+  hasSelection: false,
+  filePath: null,
+  fileName: null,
+  selection: null
+};
+function useEditorSelection(app) {
+  const [currentContext, setCurrentContext] = (0, import_react87.useState)(EMPTY_CONTEXT);
+  const [frozenContext, setFrozenContext] = (0, import_react87.useState)(EMPTY_CONTEXT);
+  (0, import_react87.useEffect)(() => {
+    const updateContext = () => {
+      const view2 = app.workspace.getActiveViewOfType(import_obsidian40.MarkdownView);
+      if (!view2 || !view2.editor) {
+        setCurrentContext(EMPTY_CONTEXT);
+        return;
+      }
+      const editor = view2.editor;
+      const file = view2.file;
+      try {
+        const selectedText = editor.getSelection();
+        const hasSelection2 = selectedText.length > 0;
+        const cursorPosition = editor.getCursor();
+        const lineNumber = cursorPosition.line;
+        const currentLine = editor.getLine(lineNumber);
+        const selection = hasSelection2 ? {
+          anchor: editor.getCursor("from"),
+          head: editor.getCursor("to")
+        } : null;
+        const newContext = {
+          selectedText,
+          cursorPosition,
+          currentLine,
+          lineNumber,
+          hasSelection: hasSelection2,
+          filePath: (file == null ? void 0 : file.path) || null,
+          fileName: (file == null ? void 0 : file.basename) || null,
+          selection
+        };
+        setCurrentContext(newContext);
+        if (hasSelection2) {
+          setFrozenContext(newContext);
+        } else {
+          setFrozenContext(EMPTY_CONTEXT);
+        }
+      } catch (error) {
+        console.error("Error getting editor context:", error);
+        setCurrentContext(EMPTY_CONTEXT);
+      }
+    };
+    updateContext();
+    let rafId;
+    const pollSelection = () => {
+      updateContext();
+      rafId = requestAnimationFrame(pollSelection);
+    };
+    rafId = requestAnimationFrame(pollSelection);
+    const editorChangeRef = app.workspace.on("editor-change", () => {
+      updateContext();
+    });
+    const activeLeafChangeRef = app.workspace.on("active-leaf-change", () => {
+      updateContext();
+    });
+    const fileOpenRef = app.workspace.on("file-open", () => {
+      updateContext();
+    });
+    return () => {
+      cancelAnimationFrame(rafId);
+      app.workspace.offref(editorChangeRef);
+      app.workspace.offref(activeLeafChangeRef);
+      app.workspace.offref(fileOpenRef);
+    };
+  }, [app]);
+  return {
+    current: currentContext,
+    frozen: frozenContext
+  };
+}
+function formatEditorContextForAI(context) {
+  var _a17, _b;
+  if (!context.hasSelection && !context.filePath) {
+    return "";
+  }
+  const parts = [];
+  parts.push(`<editor_context>`);
+  if (context.fileName) {
+    parts.push(`<file>${context.fileName}</file>`);
+  }
+  if (context.filePath) {
+    parts.push(`<path>${context.filePath}</path>`);
+  }
+  if (context.hasSelection && context.selectedText) {
+    const lineRange = ((_a17 = context.selection) == null ? void 0 : _a17.anchor) && ((_b = context.selection) == null ? void 0 : _b.head) ? `lines ${context.selection.anchor.line + 1}-${context.selection.head.line + 1}` : `line ${context.lineNumber + 1}`;
+    parts.push(`<selection>`);
+    parts.push(`<range>${lineRange}</range>`);
+    parts.push(`<text>`);
+    parts.push(context.selectedText);
+    parts.push(`</text>`);
+    parts.push(`</selection>`);
+  } else if (context.currentLine) {
+    parts.push(`<cursor>`);
+    parts.push(`<line_number>${context.lineNumber + 1}</line_number>`);
+    parts.push(`<line_content>${context.currentLine}</line_content>`);
+    parts.push(`</cursor>`);
+  }
+  parts.push(`</editor_context>`);
+  return parts.join("\n");
+}
+
+// views/assistant/ai-chat/components/editor-context-badge.tsx
+var import_jsx_runtime85 = __toESM(require_jsx_runtime());
+function EditorContextBadge({ context }) {
+  if (!context.hasSelection && !context.currentLine) {
+    return null;
+  }
+  const truncate = (text6, maxLength = 50) => {
+    if (text6.length <= maxLength)
+      return text6;
+    return text6.slice(0, maxLength) + "...";
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)(
+    "div",
+    {
+      className: tw(
+        "flex items-center gap-2 px-3 py-1.5 text-xs bg-[--background-secondary] border border-[--background-modifier-border] text-[--text-muted]"
+      ),
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("span", { className: "font-medium", children: "\u{1F4DD} Selection:" }),
+        context.hasSelection ? /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)("span", { className: "text-[--text-normal]", children: [
+          '"',
+          truncate(context.selectedText),
+          '"'
+        ] }) : /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)("span", { className: "text-[--text-normal]", children: [
+          "Line ",
+          context.lineNumber + 1,
+          ': "',
+          truncate(context.currentLine),
+          '"'
+        ] })
+      ]
+    }
+  ) });
+}
+
 // views/assistant/ai-chat/chat.tsx
-var import_jsx_runtime71 = __toESM(require_jsx_runtime());
+var import_jsx_runtime86 = __toESM(require_jsx_runtime());
 var ChatComponent = ({
   apiKey,
   inputRef
 }) => {
   const plugin = usePlugin();
   const app = plugin.app;
-  const [errorMessage, setErrorMessage] = (0, import_react75.useState)(null);
+  const [errorMessage, setErrorMessage] = (0, import_react88.useState)(null);
   const {
     setCurrentFile,
     files,
@@ -111048,6 +113321,13 @@ var ChatComponent = ({
   } = useContextItems();
   const uniqueReferences = getUniqueReferences();
   logger.debug("uniqueReferences", uniqueReferences);
+  const { current: currentEditorContext, frozen: frozenEditorContext } = useEditorSelection(app);
+  console.log("===== CONTEXT COMPARISON =====");
+  console.log("Current selection:", currentEditorContext.selectedText);
+  console.log("Frozen selection:", frozenEditorContext.selectedText);
+  console.log("Using frozen for AI");
+  console.log("==============================");
+  const editorContext = frozenEditorContext;
   const contextItems = {
     files,
     folders,
@@ -111060,7 +113340,7 @@ var ChatComponent = ({
     app,
     setCurrentFile
   });
-  const contextString = import_react75.default.useMemo(() => {
+  const contextString = import_react88.default.useMemo(() => {
     if (isLightweightMode) {
       const lightweightContext = {
         files: Object.fromEntries(
@@ -111102,18 +113382,40 @@ var ChatComponent = ({
     return JSON.stringify(contextItems);
   }, [contextItems, isLightweightMode]);
   logger.debug("contextString", contextString);
-  const [selectedModel, setSelectedModel] = (0, import_react75.useState)(
+  const [selectedModel, setSelectedModel] = (0, import_react88.useState)(
     plugin.settings.selectedModel
   );
-  const chatBody = {
-    currentDatetime: window.moment().format("YYYY-MM-DDTHH:mm:ssZ"),
-    newUnifiedContext: contextString,
+  const editorContextString = import_react88.default.useMemo(
+    () => formatEditorContextForAI(editorContext),
+    [editorContext.selectedText, editorContext.filePath]
+    // Only recalc when selection or file changes
+  );
+  const fullContext = import_react88.default.useMemo(
+    () => editorContextString ? `${contextString}
+
+${editorContextString}` : contextString,
+    [contextString, editorContextString]
+  );
+  const currentDatetime = import_react88.default.useMemo(
+    () => window.moment().format("YYYY-MM-DDTHH:mm:ssZ"),
+    []
+    // Empty deps = only calculate once
+  );
+  const chatBody = import_react88.default.useMemo(() => ({
+    currentDatetime,
+    newUnifiedContext: fullContext,
     model: plugin.settings.selectedModel,
-    // Pass selected model to server
     enableSearchGrounding: plugin.settings.enableSearchGrounding || selectedModel === "gpt-4o-search-preview" || selectedModel === "gpt-4o-mini-search-preview",
     deepSearch: plugin.settings.enableDeepSearch
-  };
-  const [groundingMetadata, setGroundingMetadata] = (0, import_react75.useState)(null);
+  }), [
+    currentDatetime,
+    fullContext,
+    plugin.settings.selectedModel,
+    plugin.settings.enableSearchGrounding,
+    plugin.settings.enableDeepSearch,
+    selectedModel
+  ]);
+  const [groundingMetadata, setGroundingMetadata] = (0, import_react88.useState)(null);
   const {
     isLoading: isGenerating,
     messages,
@@ -111123,8 +113425,10 @@ var ChatComponent = ({
     stop,
     addToolResult,
     error,
-    reload
+    reload,
+    setMessages
   } = useChat({
+    // NO body or prepareRequestBody - causes infinite loops!
     onDataChunk: (chunk) => {
       var _a17;
       if (chunk.type === "metadata" && ((_a17 = chunk.data) == null ? void 0 : _a17.groundingMetadata)) {
@@ -111144,7 +113448,7 @@ var ChatComponent = ({
       if (!plugin.settings.showLocalLLMInChat || selectedModel === "gpt-4o") {
         return fetch(url, options);
       }
-      const { messages: messages2, newUnifiedContext, currentDatetime } = JSON.parse(
+      const { messages: messages2, newUnifiedContext, currentDatetime: currentDatetime2 } = JSON.parse(
         options.body
       );
       logger.debug("local model context", {
@@ -111157,7 +113461,7 @@ var ChatComponent = ({
         model: ollama(selectedModel),
         system: `
           ${newUnifiedContext},
-          currentDatetime: ${currentDatetime},
+          currentDatetime: ${currentDatetime2},
           `,
         messages: convertToCoreMessages(messages2)
       });
@@ -111168,28 +113472,33 @@ var ChatComponent = ({
     },
     keepLastMessageOnError: true,
     onError: (error2) => {
-      var _a17, _b, _c, _d, _e;
+      var _a17, _b, _c, _d, _e, _f;
       logger.error(error2.message);
+      const isToolError = (_a17 = error2.message) == null ? void 0 : _a17.includes("ToolInvocation must have a result");
+      if (isToolError) {
+        logger.warn("Tool invocation error detected, displaying as message...");
+        return;
+      }
       let userFriendlyMessage = "Something went wrong. Please try again.";
-      if ((_a17 = error2.message) == null ? void 0 : _a17.toLowerCase().includes("api key")) {
+      if ((_b = error2.message) == null ? void 0 : _b.toLowerCase().includes("api key")) {
         userFriendlyMessage = "API key issue detected. Please check your settings.";
-      } else if (((_b = error2.message) == null ? void 0 : _b.toLowerCase().includes("network")) || ((_c = error2.message) == null ? void 0 : _c.toLowerCase().includes("fetch"))) {
+      } else if (((_c = error2.message) == null ? void 0 : _c.toLowerCase().includes("network")) || ((_d = error2.message) == null ? void 0 : _d.toLowerCase().includes("fetch"))) {
         userFriendlyMessage = "Connection failed. Please check your internet connection.";
-      } else if ((_d = error2.message) == null ? void 0 : _d.toLowerCase().includes("rate limit")) {
+      } else if ((_e = error2.message) == null ? void 0 : _e.toLowerCase().includes("rate limit")) {
         userFriendlyMessage = "Rate limit reached. Please wait a moment and try again.";
-      } else if ((_e = error2.message) == null ? void 0 : _e.toLowerCase().includes("timeout")) {
+      } else if ((_f = error2.message) == null ? void 0 : _f.toLowerCase().includes("timeout")) {
         userFriendlyMessage = "Request timed out. Please try again.";
       } else if (error2.message) {
-        userFriendlyMessage = error2.message.length > 100 ? error2.message.substring(0, 100) + "..." : error2.message;
+        userFriendlyMessage = error2.message;
       }
       setErrorMessage(userFriendlyMessage);
     },
     onFinish: () => {
-      setErrorMessage(null);
+      clearEphemeralContext();
     }
   });
-  const [attachments, setAttachments] = (0, import_react75.useState)([]);
-  const handleAttachmentsChange = (0, import_react75.useCallback)((newAttachments) => {
+  const [attachments, setAttachments] = (0, import_react88.useState)([]);
+  const handleAttachmentsChange = (0, import_react88.useCallback)((newAttachments) => {
     setAttachments(newAttachments);
   }, []);
   const handleSendMessage = (e2) => {
@@ -111224,16 +113533,16 @@ var ChatComponent = ({
       handleSendMessage(event);
     }
   };
-  const messagesEndRef = (0, import_react75.useRef)(null);
+  const messagesEndRef = (0, import_react88.useRef)(null);
   const scrollToBottom = () => {
     var _a17;
     (_a17 = messagesEndRef.current) == null ? void 0 : _a17.scrollIntoView({ behavior: "smooth" });
   };
-  (0, import_react75.useEffect)(() => {
+  (0, import_react88.useEffect)(() => {
     scrollToBottom();
   }, [messages, history]);
-  const [maxContextSize] = (0, import_react75.useState)(80 * 1e3);
-  (0, import_react75.useEffect)(() => {
+  const [maxContextSize] = (0, import_react88.useState)(80 * 1e3);
+  (0, import_react88.useEffect)(() => {
     setSelectedModel(plugin.settings.selectedModel);
   }, [plugin.settings.selectedModel]);
   const handleTranscriptionComplete = (text6) => {
@@ -111250,48 +113559,35 @@ var ChatComponent = ({
     setErrorMessage(null);
     reload();
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex flex-col h-full", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "flex-none border-b border-[--background-modifier-border] p-4 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex items-center space-x-3", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "h-10 w-10 rounded-full bg-[--background-secondary] flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { role: "img", "aria-label": "ai", className: "text-lg", children: "\u{1F916}" }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("h2", { className: "text-lg font-medium text-[--text-normal]", children: "AI Assistant" }),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("p", { className: "text-sm text-[--text-muted] flex items-center gap-2", children: isGenerating ? /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(import_jsx_runtime71.Fragment, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { className: "inline-block w-2 h-2 bg-[--text-accent] rounded-full animate-pulse" }),
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { children: "Thinking..." })
-        ] }) : errorMessage ? /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(import_jsx_runtime71.Fragment, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { className: "inline-block w-2 h-2 bg-[--text-error] rounded-full" }),
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { children: "Error occurred" })
-        ] }) : /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(import_jsx_runtime71.Fragment, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { className: "inline-block w-2 h-2 bg-[--interactive-success] rounded-full" }),
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { children: "Ready to help" })
-        ] }) })
+  const handleDismissError = () => {
+    setErrorMessage(null);
+  };
+  const handleNewChat = () => {
+    setMessages([]);
+    setErrorMessage(null);
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)(StyledContainer, { className: "flex flex-col h-full w-full max-h-full overflow-hidden", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "flex-none border-b border-[--background-modifier-border] px-3 py-1.5 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex items-center justify-between", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex items-center gap-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("h2", { className: "text-sm font-medium text-[--text-normal]", children: "Chat" }),
+        isGenerating && /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex items-center gap-1.5 text-xs text-[--text-muted]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("span", { className: "inline-block w-1.5 h-1.5 bg-[--text-accent] rounded-full animate-pulse" }),
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("span", { children: "Thinking" })
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex items-center gap-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(NewChatButton, { onClick: handleNewChat }),
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(ClearAllButton, {})
       ] })
-    ] }) }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "flex-1 overflow-y-auto p-4 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex flex-col space-y-4", children: [
-      errorMessage && /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "bg-[--background-secondary] border border-[--background-modifier-border] rounded-lg p-4 mb-4", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex items-start gap-3", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "flex-shrink-0 mt-0.5", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(CircleAlert, { className: "w-5 h-5 text-[--text-error]" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex-grow", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("h4", { className: "text-sm font-medium text-[--text-normal] mb-1", children: "Unable to process request" }),
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("p", { className: "text-sm text-[--text-muted]", children: errorMessage })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-          Button2,
-          {
-            onClick: handleRetry,
-            variant: "ghost",
-            size: "sm",
-            className: "flex-shrink-0 hover:bg-[--background-modifier-hover]",
-            children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(RefreshCw, { className: "w-4 h-4" })
-          }
-        )
-      ] }) }),
-      messages.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "flex flex-col items-center justify-center py-12" }) : messages.map((message) => {
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "flex-1 overflow-y-auto px-3 py-2 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex flex-col space-y-1", children: [
+      messages.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "flex flex-col items-center justify-center py-12" }) : messages.map((message) => {
         var _a17, _b;
-        return /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(import_react75.default.Fragment, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(MessageRenderer, { message }),
+        return /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)(import_react88.default.Fragment, { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(MessageRenderer, { message }),
           (_a17 = message.annotations) == null ? void 0 : _a17.map((annotation, index2) => {
             if (isSearchResultsAnnotation(annotation)) {
-              return /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
+              return /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
                 SearchAnnotationHandler,
                 {
                   annotation
@@ -111303,7 +113599,7 @@ var ChatComponent = ({
           }),
           (_b = message.toolInvocations) == null ? void 0 : _b.map(
             (toolInvocation) => {
-              return /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
+              return /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
                 tool_invocation_handler_default,
                 {
                   toolInvocation,
@@ -111316,180 +113612,113 @@ var ChatComponent = ({
           )
         ] }, message.id);
       }),
-      isGenerating && /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex items-start gap-3 p-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "flex-shrink-0 mt-1", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "w-8 h-8 rounded-full bg-[--background-secondary] flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "w-2 h-2 bg-[--text-accent] rounded-full animate-pulse" }) }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex-grow", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-sm font-medium text-[--text-normal] mb-2", children: "AI is thinking..." }),
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "space-y-2", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "h-2 bg-[--background-modifier-border] rounded animate-pulse", style: { width: "75%" } }),
-            /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "h-2 bg-[--background-modifier-border] rounded animate-pulse", style: { width: "50%" } }),
-            /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "h-2 bg-[--background-modifier-border] rounded animate-pulse", style: { width: "60%" } })
-          ] })
-        ] })
+      isGenerating && /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex items-start gap-2 py-1.5", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "w-4 text-xs text-[--text-faint]", children: "AI" }),
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "flex-1", children: /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex items-center gap-2 text-sm text-[--text-muted]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "w-1.5 h-1.5 bg-[--text-accent] rounded-full animate-pulse" }),
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("span", { children: "Thinking..." })
+        ] }) })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { ref: messagesEndRef }),
-      groundingMetadata && /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(SourcesSection, { groundingMetadata })
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex-none border-t border-[--background-modifier-border] p-4 bg-[--background-primary]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex items-center space-x-2 mb-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(ContextItems, {}),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(ClearAllButton, {})
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-[--text-muted] text-sm mt-2 mb-2 ml-2", children: [
-        "Tip: Enter ",
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("code", { children: "@note" }),
-        ", ",
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("code", { children: "@tag" }),
-        ", or",
-        " ",
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("code", { children: "@folder" }),
-        " to add items to context."
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("form", { onSubmit: handleSendMessage, className: "flex flex-col space-y-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: `flex flex-grow ${error ? "opacity-50 pointer-events-none" : ""}`, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "overflow-y-auto relative w-full", ref: inputRef, children: [
-            /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-              tiptap_default,
+      errorMessage && /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex items-start gap-2 py-1.5 border-b border-[--background-modifier-border] pb-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "w-4 text-xs text-[--text-error]", children: "\u26A0" }),
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex-1 space-y-1", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex items-center justify-between", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "text-sm text-[--text-error] font-medium", children: "Error" }),
+            /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
+              "button",
               {
-                value: input,
-                onChange: handleTiptapChange,
-                onKeyDown: handleKeyDown2
+                onClick: handleDismissError,
+                className: "text-[--text-muted] hover:text-[--text-normal] text-xs",
+                title: "Dismiss error",
+                children: "\u2715"
               }
-            ),
-            /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "absolute bottom-0 right-12 h-full flex items-center space-x-2", children: /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(AudioRecorder, { onTranscriptionComplete: handleTranscriptionComplete }) })
+            )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(SubmitButton, { isGenerating })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "grid grid-cols-3 gap-4", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "text-sm text-[--text-normal] whitespace-pre-wrap select-text", children: errorMessage }),
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)(
             Button2,
             {
-              variant: "outline",
-              className: "flex items-center justify-center space-x-2 bg-[--background-primary-alt]",
-              onClick: () => handleExampleClick("Can you summarize this for me?"),
+              onClick: handleRetry,
+              variant: "ghost",
+              size: "sm",
+              className: "text-xs mt-1 hover:bg-[--background-modifier-hover]",
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { role: "img", "aria-label": "summary", className: "text-lg", children: "\u{1F4DD}" }),
-                /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { children: "Quick Summary" })
-              ]
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(
-            Button2,
-            {
-              variant: "outline",
-              className: "flex items-center justify-center space-x-2 bg-[--background-primary-alt]",
-              onClick: () => handleExampleClick("What are the key points?"),
-              children: [
-                /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { role: "img", "aria-label": "key points", className: "text-lg", children: "\u{1F3AF}" }),
-                /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { children: "Key Points" })
-              ]
-            }
-          ),
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)(
-            Button2,
-            {
-              variant: "outline",
-              className: "flex items-center justify-center space-x-2 bg-[--background-primary-alt]",
-              onClick: () => handleExampleClick("Extract action items from this."),
-              children: [
-                /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { role: "img", "aria-label": "action items", className: "text-lg", children: "\u2705" }),
-                /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("span", { children: "Action Items" })
+                /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(RefreshCw, { className: "w-3 h-3 mr-1" }),
+                "Retry"
               ]
             }
           )
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex items-center justify-between mt-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { ref: messagesEndRef }),
+      groundingMetadata && /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(SourcesSection, { groundingMetadata })
+    ] }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "flex-none border-t border-[--background-modifier-border] bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("form", { onSubmit: handleSendMessage, className: "p-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "mb-2", children: /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(ContextItems, {}) }),
+      /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "relative", ref: inputRef, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(EditorContextBadge, { context: editorContext }),
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
+          tiptap_default,
+          {
+            value: input,
+            onChange: handleTiptapChange,
+            onKeyDown: handleKeyDown2
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "absolute bottom-2 right-2 flex items-center gap-1", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(AudioRecorder, { onTranscriptionComplete: handleTranscriptionComplete }),
+          /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
+            "button",
+            {
+              type: "submit",
+              disabled: isGenerating,
+              className: `w-7 h-7 flex items-center justify-center transition-colors ${isGenerating ? "text-[--text-muted] cursor-not-allowed" : "text-[--interactive-accent] hover:text-[--interactive-accent-hover]"}`,
+              title: isGenerating ? "Stop generating" : "Send message",
+              children: isGenerating ? /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", className: "w-5 h-5", children: /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M6 18L18 6M6 6l12 12" }) }) : /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", className: "w-5 h-5", children: /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M14 5l7 7m0 0l-7 7m7-7H3" }) })
+            }
+          )
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex items-center justify-between mt-1.5 text-xs text-[--text-muted]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
           ContextLimitIndicator,
           {
             unifiedContext: contextString,
             maxContextSize
           }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "flex items-center space-x-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(SearchToggle, { selectedModel }),
-          /* @__PURE__ */ (0, import_jsx_runtime71.jsx)(
-            ModelSelector,
-            {
-              selectedModel,
-              onModelSelect: setSelectedModel
-            }
-          )
-        ] })
+        ) }),
+        /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
+          ModelSelector,
+          {
+            selectedModel,
+            onModelSelect: setSelectedModel
+          }
+        )
       ] })
-    ] })
+    ] }) })
   ] });
 };
 
 // views/assistant/ai-chat/container.tsx
-var import_jsx_runtime72 = __toESM(require_jsx_runtime());
+var import_jsx_runtime87 = __toESM(require_jsx_runtime());
 var AIChatSidebar = ({ plugin, apiKey }) => {
-  const inputRef = (0, import_react77.useRef)(null);
-  const [conversations, setConversations] = (0, import_react77.useState)([[]]);
-  const [currentConversationIndex, setCurrentConversationIndex] = (0, import_react77.useState)(0);
-  const startNewConversation = () => {
-    setConversations([...conversations, []]);
-    setCurrentConversationIndex(conversations.length);
-  };
-  (0, import_react77.useEffect)(() => {
-    const handleKeyDown2 = (e2) => {
-      if ((e2.ctrlKey || e2.metaKey) && e2.key === "n") {
-        e2.preventDefault();
-        startNewConversation();
-      }
-    };
-    document.addEventListener("keydown", handleKeyDown2);
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown2);
-    };
-  }, [conversations]);
-  return /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "flex flex-col h-full bg-[--background-primary]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "relative flex-none h-10 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
-      Button,
-      {
-        onClick: startNewConversation,
-        className: "h-6 w-6 p-1 rounded-full bg-[--interactive-accent] text-[--text-on-accent] hover:bg-[--interactive-accent-hover] transition-colors duration-200 absolute top-2 right-2 z-10",
-        "aria-label": "New Conversation",
-        children: /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
-          "svg",
-          {
-            xmlns: "http://www.w3.org/2000/svg",
-            viewBox: "0 0 24 24",
-            fill: "currentColor",
-            className: "w-4 h-4",
-            children: /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
-              "path",
-              {
-                d: "M12 5v14M5 12h14",
-                stroke: "currentColor",
-                strokeWidth: "2",
-                strokeLinecap: "round",
-                strokeLinejoin: "round"
-              }
-            )
-          }
-        )
-      }
-    ) }),
-    /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "flex-1 min-h-0 flex flex-col", children: /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
-      ChatComponent,
-      {
-        plugin,
-        apiKey,
-        inputRef
-      },
-      currentConversationIndex
-    ) })
-  ] });
+  const inputRef = (0, import_react90.useRef)(null);
+  return /* @__PURE__ */ (0, import_jsx_runtime87.jsx)("div", { className: "flex flex-col h-full w-full bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime87.jsx)("div", { className: "flex-1 min-h-0 w-full", children: /* @__PURE__ */ (0, import_jsx_runtime87.jsx)(
+    ChatComponent,
+    {
+      plugin,
+      apiKey,
+      inputRef
+    }
+  ) }) });
 };
 var container_default = AIChatSidebar;
 
 // views/assistant/synchronizer/sync-tab.tsx
-var import_react78 = __toESM(require_react());
+var import_react91 = __toESM(require_react());
 
 // apiUtils.ts
-var import_obsidian26 = require("obsidian");
+var import_obsidian41 = require("obsidian");
 async function makeApiRequest(requestFn) {
   logMessage("Making API request", requestFn);
   const response = await requestFn();
@@ -111497,14 +113726,14 @@ async function makeApiRequest(requestFn) {
     return response.json;
   }
   if (response.json.error) {
-    new import_obsidian26.Notice(`File Organizer error: ${response.json.error}`, 6e3);
+    new import_obsidian41.Notice(`File Organizer error: ${response.json.error}`, 6e3);
     throw new Error(response.json.error);
   }
   throw new Error("Unknown error");
 }
 async function checkLicenseKey(serverUrl, key) {
   try {
-    const response = await (0, import_obsidian26.requestUrl)({
+    const response = await (0, import_obsidian41.requestUrl)({
       url: `${serverUrl}/api/check-key`,
       method: "POST",
       headers: {
@@ -111520,23 +113749,23 @@ async function checkLicenseKey(serverUrl, key) {
 }
 
 // views/assistant/synchronizer/sync-tab.tsx
-var import_obsidian27 = require("obsidian");
-var import_jsx_runtime73 = __toESM(require_jsx_runtime());
+var import_obsidian42 = require("obsidian");
+var import_jsx_runtime88 = __toESM(require_jsx_runtime());
 var DOWNLOADED_FILES_KEY = "file-organizer-downloaded-files";
 function SyncTab({ plugin }) {
-  const [files, setFiles] = (0, import_react78.useState)([]);
-  const [loading, setLoading] = (0, import_react78.useState)(true);
-  const [error, setError] = (0, import_react78.useState)(null);
-  const [page, setPage] = (0, import_react78.useState)(1);
-  const [totalPages, setTotalPages] = (0, import_react78.useState)(1);
-  const [downloading, setDownloading] = (0, import_react78.useState)({});
-  const [downloadedFiles, setDownloadedFiles] = (0, import_react78.useState)(
+  const [files, setFiles] = (0, import_react91.useState)([]);
+  const [loading, setLoading] = (0, import_react91.useState)(true);
+  const [error, setError] = (0, import_react91.useState)(null);
+  const [page, setPage] = (0, import_react91.useState)(1);
+  const [totalPages, setTotalPages] = (0, import_react91.useState)(1);
+  const [downloading, setDownloading] = (0, import_react91.useState)({});
+  const [downloadedFiles, setDownloadedFiles] = (0, import_react91.useState)(
     /* @__PURE__ */ new Set()
   );
-  const [syncingAll, setSyncingAll] = (0, import_react78.useState)(false);
-  const [previewCache, setPreviewCache] = (0, import_react78.useState)({});
-  const [loadingPreviews, setLoadingPreviews] = (0, import_react78.useState)({});
-  (0, import_react78.useEffect)(() => {
+  const [syncingAll, setSyncingAll] = (0, import_react91.useState)(false);
+  const [previewCache, setPreviewCache] = (0, import_react91.useState)({});
+  const [loadingPreviews, setLoadingPreviews] = (0, import_react91.useState)({});
+  (0, import_react91.useEffect)(() => {
     const loadDownloadedFiles = () => {
       try {
         const savedFiles = localStorage.getItem(DOWNLOADED_FILES_KEY);
@@ -111549,7 +113778,7 @@ function SyncTab({ plugin }) {
     };
     loadDownloadedFiles();
   }, []);
-  (0, import_react78.useEffect)(() => {
+  (0, import_react91.useEffect)(() => {
     fetchFiles();
   }, [page, plugin]);
   async function fetchFiles() {
@@ -111562,7 +113791,7 @@ function SyncTab({ plugin }) {
       setLoading(true);
       setError(null);
       const response = await makeApiRequest(
-        () => (0, import_obsidian27.requestUrl)({
+        () => (0, import_obsidian42.requestUrl)({
           url: `${plugin.getServerUrl()}/api/files?page=${page}`,
           method: "GET",
           headers: {
@@ -111596,7 +113825,7 @@ function SyncTab({ plugin }) {
     }
     setLoadingPreviews((prev) => ({ ...prev, [file.id]: true }));
     try {
-      const response = await (0, import_obsidian27.requestUrl)({
+      const response = await (0, import_obsidian42.requestUrl)({
         url: file.blobUrl,
         method: "GET"
       });
@@ -111647,7 +113876,7 @@ function SyncTab({ plugin }) {
     )) {
       setDownloadedFiles(/* @__PURE__ */ new Set());
       localStorage.removeItem(DOWNLOADED_FILES_KEY);
-      new import_obsidian27.Notice("Download history cleared");
+      new import_obsidian42.Notice("Download history cleared");
     }
   };
   const downloadAllMissingFiles = async () => {
@@ -111659,18 +113888,18 @@ function SyncTab({ plugin }) {
         (file) => file.status === "completed" && !downloadedFiles.has(file.id)
       );
       if (filesToDownload.length === 0) {
-        new import_obsidian27.Notice("All files are already synchronized");
+        new import_obsidian42.Notice("All files are already synchronized");
         return;
       }
-      new import_obsidian27.Notice(`Syncing ${filesToDownload.length} file(s)...`);
+      new import_obsidian42.Notice(`Syncing ${filesToDownload.length} file(s)...`);
       for (const file of filesToDownload) {
         if (!downloading[file.id]) {
           await downloadFile(file);
         }
       }
-      new import_obsidian27.Notice(`Successfully synchronized ${filesToDownload.length} file(s)`);
+      new import_obsidian42.Notice(`Successfully synchronized ${filesToDownload.length} file(s)`);
     } catch (err) {
-      new import_obsidian27.Notice(
+      new import_obsidian42.Notice(
         `Error during bulk sync: ${err instanceof Error ? err.message : String(err)}`
       );
       console.error("Bulk sync error:", err);
@@ -111684,14 +113913,13 @@ function SyncTab({ plugin }) {
     setDownloading((prev) => ({ ...prev, [file.id]: true }));
     try {
       const folderPath = plugin.settings.syncFolderPath || "_NoteCompanion/Sync";
-      let folder;
       try {
-        folder = await plugin.ensureFolderExists(folderPath);
+        await plugin.ensureFolderExists(folderPath);
       } catch (err) {
-        new import_obsidian27.Notice(`Failed to create sync folder: ${folderPath}`);
+        new import_obsidian42.Notice(`Failed to create sync folder: ${folderPath}`);
         throw err;
       }
-      const fileResponse = await (0, import_obsidian27.requestUrl)({
+      const fileResponse = await (0, import_obsidian42.requestUrl)({
         url: file.blobUrl,
         method: "GET"
       });
@@ -111706,7 +113934,7 @@ function SyncTab({ plugin }) {
       try {
         await plugin.ensureFolderExists(dateFolderPath);
       } catch (err) {
-        new import_obsidian27.Notice(`Failed to create date folder: ${dateFolderPath}`);
+        new import_obsidian42.Notice(`Failed to create date folder: ${dateFolderPath}`);
         throw err;
       }
       if (isImage2 || isPDF) {
@@ -111726,9 +113954,9 @@ ${file.textContent || ""}`;
           const mdFilePath = `${dateFolderPath}/${baseName}.md`;
           await plugin.app.vault.create(mdFilePath, markdownContent);
           markFileAsDownloaded(file.id);
-          new import_obsidian27.Notice(`Downloaded ${sanitizedFilename} to ${dateFolderPath}`);
+          new import_obsidian42.Notice(`Downloaded ${sanitizedFilename} to ${dateFolderPath}`);
         } catch (err) {
-          new import_obsidian27.Notice(`Failed to save file: ${sanitizedFilename}`);
+          new import_obsidian42.Notice(`Failed to save file: ${sanitizedFilename}`);
           throw err;
         }
       } else {
@@ -111743,14 +113971,14 @@ ${file.textContent || ""}`;
             content3
           );
           markFileAsDownloaded(file.id);
-          new import_obsidian27.Notice(`Downloaded ${finalName} to ${dateFolderPath}`);
+          new import_obsidian42.Notice(`Downloaded ${finalName} to ${dateFolderPath}`);
         } catch (err) {
-          new import_obsidian27.Notice(`Failed to save file: ${sanitizedFilename}`);
+          new import_obsidian42.Notice(`Failed to save file: ${sanitizedFilename}`);
           throw err;
         }
       }
     } catch (err) {
-      new import_obsidian27.Notice(
+      new import_obsidian42.Notice(
         `Error downloading file: ${err instanceof Error ? err.message : String(err)}`
       );
       console.error("Download error:", err);
@@ -111760,11 +113988,11 @@ ${file.textContent || ""}`;
   }
   function getFileIcon(fileType2, className = "w-4 h-4") {
     if (fileType2.startsWith("image/")) {
-      return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(FileImage, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(FileImage, { className });
     } else if (fileType2 === "application/pdf") {
-      return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(FileImage, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(FileImage, { className });
     } else {
-      return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(FileText, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(FileText, { className });
     }
   }
   function getStatusBadge(status) {
@@ -111772,290 +114000,179 @@ ${file.textContent || ""}`;
     let icon = null;
     switch (status) {
       case "completed":
-        className += " bg-emerald-50 text-emerald-700 border border-emerald-200";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Check, { className: "w-3 h-3" });
+        className += " bg-[--text-success] text-[--text-on-accent] border border-[--background-modifier-border]";
+        icon = /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(Check, { className: "w-3 h-3" });
         break;
       case "processing":
-        className += " bg-indigo-50 text-indigo-700 border border-indigo-200";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(RotateCw, { className: "w-3 h-3 animate-spin" });
+        className += " bg-[--interactive-accent] text-[--text-on-accent] border border-[--background-modifier-border]";
+        icon = /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(RotateCw, { className: "w-3 h-3 animate-spin" });
         break;
       case "pending":
-        className += " bg-amber-50 text-amber-700 border border-amber-200";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Clock, { className: "w-3 h-3" });
+        className += " bg-[--text-warning] text-[--text-on-accent] border border-[--background-modifier-border]";
+        icon = /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(Clock, { className: "w-3 h-3" });
         break;
       case "error":
-        className += " bg-rose-50 text-rose-700 border border-rose-200";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(CircleAlert, { className: "w-3 h-3" });
+        className += " bg-[--text-error] text-[--text-on-accent] border border-[--background-modifier-border]";
+        icon = /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(CircleAlert, { className: "w-3 h-3" });
         break;
       default:
-        className += " bg-slate-100 text-slate-700 border border-slate-200";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Cloud, { className: "w-3 h-3" });
+        className += " bg-[--background-secondary] text-[--text-muted] border border-[--background-modifier-border]";
+        icon = /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(Cloud, { className: "w-3 h-3" });
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("span", { className, children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("span", { className, children: [
       icon,
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: status })
+      /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { children: status })
     ] });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "sync-tab-container", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "sync-header", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(SectionHeader, { text: "Sync Files", icon: "\u{1F4E5}" }),
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("p", { className: "sync-subtitle", children: "Sync files from Note Companion web and mobile" })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "sync-how-to-card", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "sync-card-content", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Cloud, { className: "sync-icon" }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("h3", { className: "sync-card-title", children: "How Sync Works" }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("p", { className: "sync-card-description", children: "Sync allows you to download files uploaded through the Note Companion mobile app or web interface." }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("ol", { className: "sync-steps", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("li", { className: "sync-step", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "sync-step-number", children: "1" }),
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("p", { className: "sync-step-text", children: "Upload files using the Note Companion mobile app or web app" })
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("li", { className: "sync-step", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "sync-step-number", children: "2" }),
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("p", { className: "sync-step-text", children: "Files will appear here after processing" })
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("li", { className: "sync-step", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "sync-step-number", children: "3" }),
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("p", { className: "sync-step-text", children: "Download files directly to your Obsidian vault" })
-          ] })
+  return /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(StyledContainer, { className: tw("bg-[--background-primary] h-full flex flex-col"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("px-3 py-1.5 border-b border-[--background-modifier-border] flex items-center justify-between"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("h2", { className: tw("text-sm font-medium text-[--text-normal]"), children: "Sync Files" }),
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("p", { className: tw("text-xs text-[--text-muted]"), children: [
+          files.filter((f) => downloadedFiles.has(f.id)).length,
+          " of ",
+          files.length,
+          " synced"
         ] })
-      ] })
-    ] }) }),
-    error && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "bg-white border border-rose-200 shadow-sm text-rose-700 p-5 rounded-lg mb-6 flex items-start gap-3", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(CircleAlert, { className: "w-5 h-5 flex-shrink-0 mt-0.5" }),
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("p", { className: "font-medium mb-3", children: error }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(
-          Button2,
-          {
-            className: "bg-rose-600 hover:bg-rose-700 transition-colors duration-200",
-            onClick: fetchFiles,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(RefreshCw, { className: "w-4 h-4 mr-2" }),
-              " Retry"
-            ]
-          }
-        )
-      ] })
-    ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "bg-white border border-slate-200 rounded-lg p-5 shadow-sm mb-6", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex flex-col md:flex-row md:justify-between md:items-center gap-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex gap-3", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
-          Button2,
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex items-center gap-2"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+          "button",
           {
             onClick: fetchFiles,
             disabled: loading,
-            className: "bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200 shadow-sm px-4 py-2 h-auto rounded-lg flex items-center gap-2",
-            children: loading ? /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(import_jsx_runtime73.Fragment, { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(RefreshCw, { className: "w-4 h-4 animate-spin" }),
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: "Loading..." })
-            ] }) : /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(import_jsx_runtime73.Fragment, { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(RefreshCw, { className: "w-4 h-4" }),
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: "Refresh" })
-            ] })
+            className: tw(`p-1.5 text-[--text-muted] hover:text-[--text-normal] transition-colors ${loading ? "cursor-wait" : ""}`),
+            title: "Refresh file list",
+            children: /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(RefreshCw, { className: tw(`w-4 h-4 ${loading ? "animate-spin" : ""}`) })
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
-          Button2,
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+          "button",
           {
             onClick: downloadAllMissingFiles,
-            disabled: loading || syncingAll || files.filter(
-              (f) => f.status === "completed" && !downloadedFiles.has(f.id)
-            ).length === 0,
-            className: `transition-colors duration-200 shadow-sm px-4 py-2 h-auto rounded-lg flex items-center gap-2 ${loading || syncingAll || files.filter((f) => f.status === "completed" && !downloadedFiles.has(f.id)).length === 0 ? "bg-slate-100 text-slate-400" : "bg-emerald-600 hover:bg-emerald-700 text-white"}`,
-            children: syncingAll ? /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(import_jsx_runtime73.Fragment, { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(CloudDownload, { className: "w-4 h-4 animate-pulse" }),
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: "Syncing..." })
-            ] }) : /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(import_jsx_runtime73.Fragment, { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(CloudDownload, { className: "w-4 h-4" }),
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: "Sync All New Files" })
-            ] })
+            disabled: loading || syncingAll || files.filter((f) => f.status === "completed" && !downloadedFiles.has(f.id)).length === 0,
+            className: tw(`p-1.5 transition-colors ${files.filter((f) => f.status === "completed" && !downloadedFiles.has(f.id)).length > 0 ? "text-[--interactive-accent] hover:text-[--interactive-accent-hover]" : "text-[--text-muted] cursor-not-allowed"}`),
+            title: `Sync all (${files.filter((f) => f.status === "completed" && !downloadedFiles.has(f.id)).length})`,
+            children: /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(CloudDownload, { className: tw(`w-4 h-4 ${syncingAll ? "animate-pulse" : ""}`) })
           }
-        )
-      ] }),
-      files.length > 0 && !loading && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex items-center bg-slate-50 px-4 py-2 rounded-lg flex-wrap", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-sm text-slate-600 font-medium mr-3 flex items-center", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Check, { className: "w-4 h-4 text-emerald-500 mr-2" }),
-          /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("span", { children: [
-            files.filter((f) => downloadedFiles.has(f.id)).length,
-            " of ",
-            files.length,
-            " files synced"
-          ] })
-        ] }),
-        downloadedFiles.size > 0 && /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
+        ),
+        downloadedFiles.size > 0 && /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
           "button",
           {
             onClick: clearDownloadHistory,
-            className: "text-xs text-rose-500 hover:text-rose-700 transition-colors duration-200 border border-rose-200 rounded-md px-2 py-1 hover:bg-rose-50",
-            children: "Clear History"
+            className: tw("text-xs text-[--text-muted] hover:text-[--text-error] transition-colors px-2"),
+            title: "Clear sync history",
+            children: "Clear"
           }
         )
       ] })
-    ] }) }),
-    loading ? /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "space-y-6", children: [1, 2, 3].map((i) => /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "bg-white border border-slate-200 rounded-lg p-5 shadow-sm animate-pulse", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex justify-between items-start mb-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "h-5 bg-slate-200 rounded-md w-48 mb-2" }),
-          /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "h-4 bg-slate-100 rounded-md w-36" })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "h-6 bg-slate-200 rounded-full w-20" })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "border-t border-slate-100 pt-4 mt-4", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex justify-between items-center", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "h-9 bg-slate-200 rounded-md w-28" }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "h-4 bg-slate-100 rounded-md w-24" })
-      ] }) })
-    ] }, i)) }) : /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(import_jsx_runtime73.Fragment, { children: [
-      files.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "bg-white border border-slate-200 shadow-sm rounded-lg p-8 text-center", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "inline-flex justify-center items-center w-16 h-16 bg-indigo-50 rounded-full mb-4", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Cloud, { className: "w-8 h-8 text-indigo-500" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("h3", { className: "text-slate-800 font-medium text-lg mb-3", children: "No synced files found" }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("p", { className: "text-slate-600 mb-6 max-w-md mx-auto", children: "To see files here, upload documents using Note Companion" }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex flex-col sm:flex-row gap-4 justify-center mb-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "bg-slate-50 border border-slate-200 rounded-lg p-4 text-left flex flex-col", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "text-sm font-medium text-slate-700 mb-2", children: "Mobile App" }),
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "text-xs text-slate-500", children: "Upload files from your phone or tablet" })
-          ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "bg-slate-50 border border-slate-200 rounded-lg p-4 text-left flex flex-col", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "text-sm font-medium text-slate-700 mb-2", children: "Web App" }),
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "text-xs text-slate-500", children: "Visit notecompanion.ai to upload files" })
-          ] })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("p", { className: "text-xs text-slate-400", children: "Files will appear here once uploaded and processed" })
-      ] }) : /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "space-y-6", children: files.map((file) => /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
-        "div",
-        {
-          className: `bg-white border shadow-sm rounded-lg overflow-hidden transition-all duration-200 ${downloadedFiles.has(file.id) ? "border-indigo-200 shadow-indigo-50" : "border-slate-200 hover:border-slate-300"}`,
-          children: /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "p-5", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex justify-between items-start", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex", children: [
-                loadingPreviews[file.id] ? /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "w-12 h-12 mr-3 flex-shrink-0 rounded-lg overflow-hidden border border-slate-200 flex items-center justify-center bg-slate-50 animate-pulse", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(RefreshCw, { className: "w-5 h-5 text-slate-400 animate-spin" }) }) : file.fileType.startsWith("image/") && previewCache[file.id] ? /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "w-12 h-12 mr-3 flex-shrink-0 rounded-lg overflow-hidden border border-slate-200", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex-1 overflow-y-auto"), children: [
+      error && /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("px-3 py-2 bg-[--background-modifier-error] border-l-2 border-[--text-error]"), children: /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex items-center gap-2 text-sm text-[--text-error]"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(CircleAlert, { className: tw("w-4 h-4") }),
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { children: error })
+      ] }) }),
+      loading ? /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("border-t border-[--background-modifier-border]"), children: [1, 2, 3].map((i) => /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex items-center px-3 py-2 border-b border-[--background-modifier-border] animate-pulse"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("w-6 h-6 mr-3 bg-[--background-modifier-border]") }),
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("flex-1"), children: /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("h-4 bg-[--background-modifier-border] w-2/3") }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("h-3 bg-[--background-modifier-border] w-16 mr-4") }),
+        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("w-4 h-4 bg-[--background-modifier-border]") })
+      ] }, i)) }) : /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(import_jsx_runtime88.Fragment, { children: [
+        files.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex flex-col items-center justify-center py-12 text-center"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(Cloud, { className: tw("w-12 h-12 text-[--text-faint] mb-4") }),
+          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("p", { className: tw("text-sm text-[--text-muted]"), children: "No files yet. Upload via mobile or web app." })
+        ] }) : /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("border-t border-[--background-modifier-border]"), children: files.map((file) => /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(
+          "div",
+          {
+            onClick: () => file.status === "completed" && !downloading[file.id] && downloadFile(file),
+            className: tw(`flex items-center gap-3 px-3 py-2 border-b border-[--background-modifier-border] transition-colors group ${file.status === "completed" && !downloading[file.id] ? "cursor-pointer hover:bg-[--background-modifier-hover]" : "cursor-default"}`),
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("mr-3 flex-shrink-0 overflow-hidden"), children: [
+                file.fileType.startsWith("image/") ? /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
                   "img",
                   {
-                    src: previewCache[file.id].dataUrl,
+                    src: file.previewUrl || file.blobUrl,
                     alt: file.originalName,
-                    className: "w-full h-full object-cover"
+                    className: tw("w-16 h-16 object-cover border border-[--background-modifier-border]"),
+                    onError: (e2) => {
+                      e2.currentTarget.style.display = "none";
+                      const fallback = e2.currentTarget.nextElementSibling;
+                      if (fallback)
+                        fallback.style.display = "flex";
+                    }
                   }
-                ) }) : file.fileType === "application/pdf" && previewCache[file.id] ? /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "w-12 h-12 mr-3 flex-shrink-0 rounded-lg overflow-hidden border border-slate-200 bg-slate-50 flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "bg-rose-100 p-1 rounded", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 384 512", className: "w-6 h-6 text-rose-700", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("path", { fill: "currentColor", d: "M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z" }) }) }) }) : (file.fileType.startsWith("image/") || file.fileType === "application/pdf") && file.status === "completed" ? /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
+                ) : null,
+                /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
                   "div",
                   {
-                    className: "w-12 h-12 mr-3 flex-shrink-0 rounded-lg overflow-hidden border border-slate-200 bg-slate-50 flex items-center justify-center cursor-pointer hover:bg-slate-100 transition-colors duration-200",
-                    onClick: () => fetchPreview(file),
-                    title: "Load preview",
-                    children: /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: "w-5 h-5 text-slate-500", children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("circle", { cx: "12", cy: "12", r: "10" }),
-                      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("path", { d: "M8 12h8" }),
-                      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("path", { d: "M12 8v8" })
-                    ] })
+                    className: tw("flex items-center justify-center w-6 h-6"),
+                    style: { display: file.fileType.startsWith("image/") ? "none" : "flex" },
+                    children: getFileIcon(file.fileType, tw("w-4 h-4 text-[--text-muted]"))
                   }
-                ) : /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: `p-2 rounded-lg mr-3 flex-shrink-0 ${downloadedFiles.has(file.id) ? "bg-indigo-50" : "bg-slate-50"}`, children: getFileIcon(file.fileType, "w-5 h-5 text-slate-700") }),
-                /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex items-center mb-1", children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("h3", { className: "font-medium text-slate-800", children: file.originalName }),
-                    downloadedFiles.has(file.id) && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("span", { className: "ml-2 px-2 py-0.5 bg-indigo-100 border border-indigo-200 text-indigo-700 text-xs rounded-full flex items-center", children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Check, { className: "w-3 h-3 mr-1" }),
-                      "Synced"
-                    ] })
-                  ] }),
-                  /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("p", { className: "text-xs text-slate-500 flex items-center", children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "mr-3", children: new Date(file.createdAt).toLocaleString() }),
-                    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "text-xs font-medium bg-slate-100 px-2 py-0.5 rounded text-slate-600", children: file.fileType.split("/")[1] || file.fileType })
-                  ] })
+                )
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex-1 min-w-0 flex flex-col justify-center"), children: [
+                /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("text-sm text-[--text-normal] truncate font-medium"), children: file.originalName }),
+                /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("text-xs text-[--text-muted] flex items-center gap-2"), children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { children: new Date(file.createdAt).toLocaleDateString() }),
+                  file.fileType.startsWith("image/") && /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { className: tw("text-[--text-faint]"), children: "\u2022 Image" })
                 ] })
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { children: getStatusBadge(file.status) })
-            ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "border-t border-slate-100 mt-4 pt-4 flex justify-between items-center", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
-                Button2,
-                {
-                  onClick: () => downloadFile(file),
-                  disabled: file.status !== "completed" || downloading[file.id],
-                  className: `px-4 py-2 h-auto rounded-lg transition-colors duration-200 flex items-center gap-2 shadow-sm ${file.status !== "completed" || downloading[file.id] ? "bg-slate-100 text-slate-400 cursor-not-allowed" : downloadedFiles.has(file.id) ? "bg-slate-100 hover:bg-slate-200 text-slate-700" : "bg-indigo-600 hover:bg-indigo-700 text-white"}`,
-                  children: downloading[file.id] ? /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(import_jsx_runtime73.Fragment, { children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(CloudDownload, { className: "w-4 h-4 animate-pulse" }),
-                    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: "Downloading..." })
-                  ] }) : downloadedFiles.has(file.id) ? /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(import_jsx_runtime73.Fragment, { children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Download, { className: "w-4 h-4" }),
-                    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: "Download Again" })
-                  ] }) : /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(import_jsx_runtime73.Fragment, { children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Download, { className: "w-4 h-4" }),
-                    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: "Download" })
-                  ] })
-                }
-              ),
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-xs text-slate-500 flex items-center", children: file.status === "completed" && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("span", { className: "text-emerald-600 flex items-center", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(Check, { className: "w-3 h-3 mr-1" }),
-                "Ready to download"
-              ] }) })
-            ] })
-          ] })
-        },
-        file.id
-      )) }),
-      totalPages > 1 && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex justify-between items-center mt-8 bg-white border border-slate-200 shadow-sm rounded-lg p-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(
-          Button2,
-          {
-            onClick: () => setPage((p) => Math.max(1, p - 1)),
-            disabled: page === 1,
-            className: `px-4 py-2 h-auto rounded-lg transition-colors duration-200 flex items-center gap-2 
-                  ${page === 1 ? "bg-slate-100 text-slate-400 cursor-not-allowed" : "bg-white border border-slate-200 hover:bg-slate-50 text-slate-700"}`,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: "w-4 h-4", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("path", { d: "M15 18l-6-6 6-6" }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: "Previous" })
+              /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("w-5 h-5 flex items-center justify-center flex-shrink-0"), children: downloading[file.id] ? /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(CloudDownload, { className: tw("w-4 h-4 text-[--text-muted] animate-pulse") }) : downloadedFiles.has(file.id) ? /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(Check, { className: tw("w-4 h-4 text-[--text-success]") }) : file.status === "completed" ? /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(Download, { className: tw("w-4 h-4 text-[--text-muted] opacity-0 group-hover:opacity-100 transition-opacity") }) : /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(Clock, { className: tw("w-4 h-4 text-[--text-warning]") }) })
             ]
-          }
-        ),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "bg-slate-50 border border-slate-200 px-4 py-2 rounded-lg text-sm font-medium text-slate-700", children: [
-          "Page ",
-          page,
-          " of ",
-          totalPages
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(
-          Button2,
-          {
-            onClick: () => setPage((p) => Math.min(totalPages, p + 1)),
-            disabled: page === totalPages,
-            className: `px-4 py-2 h-auto rounded-lg transition-colors duration-200 flex items-center gap-2 
-                  ${page === totalPages ? "bg-slate-100 text-slate-400 cursor-not-allowed" : "bg-white border border-slate-200 hover:bg-slate-50 text-slate-700"}`,
-            children: [
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { children: "Next" }),
-              /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: "w-4 h-4", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("path", { d: "M9 18l6-6-6-6" }) })
-            ]
-          }
-        )
+          },
+          file.id
+        )) }),
+        totalPages > 1 && /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex justify-between items-center mt-8 bg-[--background-primary] border border-[--background-modifier-border] p-4"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(
+            Button2,
+            {
+              onClick: () => setPage((p) => Math.max(1, p - 1)),
+              disabled: page === 1,
+              className: tw(`px-4 py-2 h-auto transition-colors duration-200 flex items-center gap-2 ${page === 1 ? "bg-[--background-secondary] text-[--text-faint] cursor-not-allowed" : "bg-[--background-primary] border border-[--background-modifier-border] hover:bg-[--background-secondary] text-[--text-normal]"}`),
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: tw("w-4 h-4"), children: /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("path", { d: "M15 18l-6-6 6-6" }) }),
+                /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { children: "Previous" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("bg-[--background-secondary] border border-[--background-modifier-border] px-4 py-2 text-sm font-medium text-[--text-normal]"), children: [
+            "Page ",
+            page,
+            " of ",
+            totalPages
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(
+            Button2,
+            {
+              onClick: () => setPage((p) => Math.min(totalPages, p + 1)),
+              disabled: page === totalPages,
+              className: tw(`px-4 py-2 h-auto transition-colors duration-200 flex items-center gap-2 ${page === totalPages ? "bg-[--background-secondary] text-[--text-faint] cursor-not-allowed" : "bg-[--background-primary] border border-[--background-modifier-border] hover:bg-[--background-secondary] text-[--text-normal]"}`),
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { children: "Next" }),
+                /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: tw("w-4 h-4"), children: /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("path", { d: "M9 18l6-6-6-6" }) })
+              ]
+            }
+          )
+        ] })
       ] })
     ] })
   ] });
 }
 
-// components/ui/utils.tsx
-var import_jsx_runtime74 = __toESM(require_jsx_runtime());
-function cn2(...inputs) {
-  return twMerge(clsx(inputs));
-}
-function StyledContainer({
-  children,
-  className,
-  ...props
-}) {
-  return /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: cn2("fo-container h-full", className), ...props, children });
-}
-
 // views/assistant/view.tsx
-var import_jsx_runtime75 = __toESM(require_jsx_runtime());
+var import_jsx_runtime89 = __toESM(require_jsx_runtime());
 var ORGANIZER_VIEW_TYPE = "fo2k.assistant.sidebar2";
 function TabContent2({
   activeTab,
   plugin,
-  leaf
+  leaf,
+  showSyncTab
 }) {
-  const [activeFile, setActiveFile] = React57.useState(null);
-  const [noteContent, setNoteContent] = React57.useState("");
-  const [refreshKey, setRefreshKey] = React57.useState(0);
-  React57.useEffect(() => {
+  const [activeFile, setActiveFile] = React70.useState(null);
+  const [noteContent, setNoteContent] = React70.useState("");
+  const [refreshKey, setRefreshKey] = React70.useState(0);
+  React70.useEffect(() => {
     const updateActiveFile = async () => {
       const file = plugin.app.workspace.getActiveFile();
       if (file) {
@@ -112076,38 +114193,50 @@ function TabContent2({
     };
   }, [plugin.app.workspace, plugin.app.vault]);
   function renderNoteContent(content3) {
-    return /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "markdown-preview", children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(Markdown, { children: content3 }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: tw("markdown-preview"), children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(Markdown, { children: content3 }) });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "flex flex-col h-full", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: tw("flex flex-col h-full w-full"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
       "div",
       {
-        className: `flex-1 min-h-0 ${activeTab === "organizer" ? "block" : "hidden"}`,
-        children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(AssistantView, { plugin, leaf })
+        className: tw(
+          "flex-1 min-h-0 w-full",
+          activeTab === "organizer" ? "block" : "hidden"
+        ),
+        children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(AssistantView, { plugin, leaf })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)(
+    /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)(
       "div",
       {
-        className: `flex-1 min-h-0 flex flex-col ${activeTab === "inbox" ? "block" : "hidden"}`,
+        className: tw(
+          "flex-1 min-h-0 w-full flex flex-col",
+          activeTab === "inbox" ? "block" : "hidden"
+        ),
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(SectionHeader, { text: "Inbox Processing", icon: "\u{1F4E5} " }),
-          /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(InboxLogs, {})
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(SectionHeader, { text: "Inbox Processing", icon: "\u{1F4E5} " }),
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(InboxLogs, {})
         ]
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
       "div",
       {
-        className: `flex-1 min-h-0 ${activeTab === "chat" ? "flex" : "hidden"}`,
-        children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(container_default, { plugin, apiKey: plugin.settings.API_KEY })
+        className: tw(
+          "flex-1 min-h-0 w-full",
+          activeTab === "chat" ? "flex flex-col" : "hidden"
+        ),
+        children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(container_default, { plugin, apiKey: plugin.settings.API_KEY })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+    showSyncTab && /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
       "div",
       {
-        className: `flex-1 min-h-0 ${activeTab === "sync" ? "block" : "hidden"}`,
-        children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(SyncTab, { plugin })
+        className: tw(
+          "flex-1 min-h-0 w-full",
+          activeTab === "sync" ? "block" : "hidden"
+        ),
+        children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(SyncTab, { plugin })
       }
     )
   ] });
@@ -112117,14 +114246,14 @@ function TabButton2({
   onClick,
   children
 }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
     "button",
     {
       onClick,
-      className: `
-                px-3 py-2 text-sm font-medium shadow-none cursor-pointer bg-transparent
-                ${isActive2 ? "bg-[--interactive-accent] text-black" : "bg-[--background-primary] text-[--text-muted] hover:bg-[--background-modifierhover] hover:text-black"}
-      `,
+      className: tw(
+        "px-3 py-1.5 text-sm transition-colors relative",
+        isActive2 ? "text-[--text-normal] font-medium after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[--interactive-accent]" : "text-[--text-muted] hover:text-[--text-normal]"
+      ),
       children
     }
   );
@@ -112135,13 +114264,14 @@ function AssistantContent({
   initialTab,
   onTabChange
 }) {
-  const [activeTab, setActiveTab] = React57.useState(initialTab);
-  React57.useEffect(() => {
+  const [activeTab, setActiveTab] = React70.useState(initialTab);
+  React70.useEffect(() => {
     onTabChange(setActiveTab);
   }, [onTabChange]);
-  return /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "flex flex-col h-full", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "flex shadow-none w-fit space-x-2 bg-[--background-primary] p-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+  const showSyncTab = plugin.settings.showSyncTab;
+  return /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: tw("flex flex-col h-full w-full"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: tw("flex px-3 pt-2 pb-0 border-b border-[--background-modifier-border] bg-[--background-primary]"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
         TabButton2,
         {
           isActive: activeTab === "organizer",
@@ -112149,7 +114279,7 @@ function AssistantContent({
           children: "Organizer"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
         TabButton2,
         {
           isActive: activeTab === "inbox",
@@ -112157,7 +114287,7 @@ function AssistantContent({
           children: "Inbox"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
         TabButton2,
         {
           isActive: activeTab === "chat",
@@ -112165,7 +114295,7 @@ function AssistantContent({
           children: "Chat"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+      showSyncTab && /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
         TabButton2,
         {
           isActive: activeTab === "sync",
@@ -112174,10 +114304,10 @@ function AssistantContent({
         }
       )
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "flex-1 min-h-0", children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(TabContent2, { activeTab, plugin, leaf }) })
+    /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: tw("flex-1 min-h-0 w-full overflow-hidden"), children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(TabContent2, { activeTab, plugin, leaf, showSyncTab }) })
   ] });
 }
-var AssistantViewWrapper = class extends import_obsidian28.ItemView {
+var AssistantViewWrapper = class extends import_obsidian43.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.root = null;
@@ -112200,11 +114330,13 @@ var AssistantViewWrapper = class extends import_obsidian28.ItemView {
       name: "Open Chat Tab",
       callback: () => this.activateTab("chat")
     });
-    this.plugin.addCommand({
-      id: "open-sync-tab",
-      name: "Open Sync Tab",
-      callback: () => this.activateTab("sync")
-    });
+    if (this.plugin.settings.showSyncTab) {
+      this.plugin.addCommand({
+        id: "open-sync-tab",
+        name: "Open Sync Tab",
+        callback: () => this.activateTab("sync")
+      });
+    }
   }
   activateTab(tab2) {
     this.plugin.app.workspace.revealLeaf(this.leaf);
@@ -112229,7 +114361,7 @@ var AssistantViewWrapper = class extends import_obsidian28.ItemView {
   render() {
     var _a17;
     (_a17 = this.root) == null ? void 0 : _a17.render(
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(AppContext.Provider, { value: { plugin: this.plugin, root: this.root }, children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(React57.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(AppContext.Provider, { value: { plugin: this.plugin, root: this.root }, children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(React70.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
         AssistantContent,
         {
           plugin: this.plugin,
@@ -112250,25 +114382,25 @@ var AssistantViewWrapper = class extends import_obsidian28.ItemView {
 };
 
 // views/assistant/dashboard/view.tsx
-var import_obsidian31 = require("obsidian");
+var import_obsidian46 = require("obsidian");
 var import_client3 = __toESM(require_client());
 
 // views/assistant/dashboard/main-dashboard.tsx
-var import_react80 = __toESM(require_react());
-var import_obsidian30 = require("obsidian");
+var import_react93 = __toESM(require_react());
+var import_obsidian45 = require("obsidian");
 
 // views/assistant/dashboard/onboarding-wizard.tsx
-var import_react79 = __toESM(require_react());
-var import_obsidian29 = require("obsidian");
-var import_jsx_runtime76 = __toESM(require_jsx_runtime());
+var import_react92 = __toESM(require_react());
+var import_obsidian44 = require("obsidian");
+var import_jsx_runtime90 = __toESM(require_jsx_runtime());
 function OnboardingWizard({ plugin, onComplete }) {
-  const [step, setStep] = (0, import_react79.useState)(0);
-  const [email, setEmail] = (0, import_react79.useState)("");
-  const [password, setPassword] = (0, import_react79.useState)("");
-  const [confirmPassword, setConfirmPassword] = (0, import_react79.useState)("");
-  const [isSignup, setIsSignup] = (0, import_react79.useState)(true);
-  const [isLoading, setIsLoading] = (0, import_react79.useState)(false);
-  const [error, setError] = (0, import_react79.useState)("");
+  const [step, setStep] = (0, import_react92.useState)(0);
+  const [email, setEmail] = (0, import_react92.useState)("");
+  const [password, setPassword] = (0, import_react92.useState)("");
+  const [confirmPassword, setConfirmPassword] = (0, import_react92.useState)("");
+  const [isSignup, setIsSignup] = (0, import_react92.useState)(true);
+  const [isLoading, setIsLoading] = (0, import_react92.useState)(false);
+  const [error, setError] = (0, import_react92.useState)("");
   const handleSignup = async () => {
     if (isSignup && password !== confirmPassword) {
       setError("Passwords do not match");
@@ -112297,7 +114429,7 @@ function OnboardingWizard({ plugin, onComplete }) {
       }
       plugin.settings.API_KEY = data.licenseKey;
       await plugin.saveSettings();
-      new import_obsidian29.Notice(`Successfully ${isSignup ? "signed up" : "signed in"}! Your account is now connected.`, 5e3);
+      new import_obsidian44.Notice(`Successfully ${isSignup ? "signed up" : "signed in"}! Your account is now connected.`, 5e3);
       nextStep();
     } catch (error2) {
       console.error(`Error during ${isSignup ? "signup" : "login"}:`, error2);
@@ -112316,24 +114448,24 @@ function OnboardingWizard({ plugin, onComplete }) {
   const skipAccount = () => {
     nextStep();
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)(
     motion.div,
     {
-      className: tw("max-w-xl mx-auto bg-white rounded-lg shadow-md p-6"),
+      className: tw("max-w-xl mx-auto bg-white p-6"),
       initial: { opacity: 0 },
       animate: { opacity: 1 },
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("h2", { className: tw("text-xl font-bold mb-6 text-[--text-accent]"), children: step === 0 ? "Welcome to Note Companion!" : step === 1 ? "Create Your Account" : "Set Up Your Workspace" }),
-        step === 0 && /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("p", { className: tw("text-[--text-normal]"), children: "Note Companion helps you organize your Obsidian vault with AI-powered features:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("ul", { className: tw("list-disc pl-5 space-y-2"), children: [
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("li", { children: "Automatically organize and format notes" }),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("li", { children: "Extract key concepts and suggest tags" }),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("li", { children: "Get AI assistance with your content" }),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("li", { children: "Sync across devices" })
+        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("h2", { className: tw("text-xl font-bold mb-6 text-[--text-accent]"), children: step === 0 ? "Welcome to Note Companion!" : step === 1 ? "Create Your Account" : "Set Up Your Workspace" }),
+        step === 0 && /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("p", { className: tw("text-[--text-normal]"), children: "Note Companion helps you organize your Obsidian vault with AI-powered features:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("ul", { className: tw("list-disc pl-5 space-y-2"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("li", { children: "Automatically organize and format notes" }),
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("li", { children: "Extract key concepts and suggest tags" }),
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("li", { children: "Get AI assistance with your content" }),
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("li", { children: "Sync across devices" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("p", { className: tw("text-sm text-[--text-muted] mt-4"), children: "Let's get you set up in just a few steps!" }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("p", { className: tw("text-sm text-[--text-muted] mt-4"), children: "Let's get you set up in just a few steps!" }),
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
             Button2,
             {
               onClick: nextStep,
@@ -112342,9 +114474,9 @@ function OnboardingWizard({ plugin, onComplete }) {
             }
           )
         ] }),
-        step === 1 && /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: tw("mb-4 flex items-center justify-center space-x-4"), children: [
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+        step === 1 && /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("mb-4 flex items-center justify-center space-x-4"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
               "div",
               {
                 className: tw(`cursor-pointer px-4 py-2 font-medium ${isSignup ? "text-[--text-accent] border-b-2 border-[--text-accent]" : "text-[--text-muted]"}`),
@@ -112352,7 +114484,7 @@ function OnboardingWizard({ plugin, onComplete }) {
                 children: "Sign Up"
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
               "div",
               {
                 className: tw(`cursor-pointer px-4 py-2 font-medium ${!isSignup ? "text-[--text-accent] border-b-2 border-[--text-accent]" : "text-[--text-muted]"}`),
@@ -112361,10 +114493,10 @@ function OnboardingWizard({ plugin, onComplete }) {
               }
             )
           ] }),
-          error && /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: tw("bg-red-50 text-red-700 p-3 rounded-md text-sm"), children: error }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Email" }),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+          error && /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("bg-red-50 text-red-700 p-3 text-sm"), children: error }),
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Email" }),
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
               "input",
               {
                 type: "email",
@@ -112375,9 +114507,9 @@ function OnboardingWizard({ plugin, onComplete }) {
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Password" }),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Password" }),
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
               "input",
               {
                 type: "password",
@@ -112388,9 +114520,9 @@ function OnboardingWizard({ plugin, onComplete }) {
               }
             )
           ] }),
-          isSignup && /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Confirm Password" }),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+          isSignup && /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Confirm Password" }),
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
               "input",
               {
                 type: "password",
@@ -112401,27 +114533,27 @@ function OnboardingWizard({ plugin, onComplete }) {
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
             Button2,
             {
               onClick: handleSignup,
               disabled: isLoading,
               className: tw("w-full mt-2"),
-              children: isLoading ? /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("span", { className: tw("flex items-center justify-center"), children: [
-                /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("svg", { className: tw("animate-spin -ml-1 mr-2 h-4 w-4"), xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 24 24", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("circle", { className: tw("opacity-25"), cx: "12", cy: "12", r: "10", stroke: "currentColor", strokeWidth: "4" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("path", { className: tw("opacity-75"), fill: "currentColor", d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" })
+              children: isLoading ? /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("span", { className: tw("flex items-center justify-center"), children: [
+                /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("svg", { className: tw("animate-spin -ml-1 mr-2 h-4 w-4"), xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 24 24", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("circle", { className: tw("opacity-25"), cx: "12", cy: "12", r: "10", stroke: "currentColor", strokeWidth: "4" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("path", { className: tw("opacity-75"), fill: "currentColor", d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" })
                 ] }),
                 "Processing..."
               ] }) : isSignup ? "Sign Up" : "Sign In"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: tw("flex items-center justify-center my-4"), children: [
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: tw("flex-grow border-t border-[--background-modifier-border]") }),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("span", { className: tw("mx-4 text-[--text-muted] text-sm"), children: "or" }),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: tw("flex-grow border-t border-[--background-modifier-border]") })
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("flex items-center justify-center my-4"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("flex-grow border-t border-[--background-modifier-border]") }),
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("span", { className: tw("mx-4 text-[--text-muted] text-sm"), children: "or" }),
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("flex-grow border-t border-[--background-modifier-border]") })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
             Button2,
             {
               onClick: skipAccount,
@@ -112431,28 +114563,28 @@ function OnboardingWizard({ plugin, onComplete }) {
             }
           )
         ] }),
-        step === 2 && /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: tw("mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4"), children: /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("svg", { className: tw("w-8 h-8 text-green-600"), fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 13l4 4L19 7" }) }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("h4", { className: tw("text-lg font-medium text-center"), children: "You're ready to go!" }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("p", { className: tw("text-center"), children: "Note Companion is now set up and ready to help you organize your vault." }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: tw("bg-[--background-primary-alt] p-4 rounded-lg border border-[--background-modifier-border]"), children: [
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("h4", { className: tw("font-medium text-sm mb-2"), children: "We'll create these folders for you:" }),
-            /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("ul", { className: tw("text-sm space-y-2"), children: [
-              /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("li", { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: "_NoteCompanion/Inbox" }),
+        step === 2 && /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4"), children: /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("svg", { className: tw("w-8 h-8 text-green-600"), fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 13l4 4L19 7" }) }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("h4", { className: tw("text-lg font-medium text-center"), children: "You're ready to go!" }),
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("p", { className: tw("text-center"), children: "Note Companion is now set up and ready to help you organize your vault." }),
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("bg-[--background-primary-alt] p-4 border border-[--background-modifier-border]"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("h4", { className: tw("font-medium text-sm mb-2"), children: "We'll create these folders for you:" }),
+            /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("ul", { className: tw("text-sm space-y-2"), children: [
+              /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("li", { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("strong", { children: "_NoteCompanion/Inbox" }),
                 ": Files waiting to be processed"
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("li", { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: "_NoteCompanion/Processed" }),
+              /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("li", { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("strong", { children: "_NoteCompanion/Processed" }),
                 ": Organized files"
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("li", { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: "_NoteCompanion/References" }),
+              /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("li", { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("strong", { children: "_NoteCompanion/References" }),
                 ": Reference materials"
               ] })
             ] })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
             Button2,
             {
               onClick: finish,
@@ -112461,15 +114593,15 @@ function OnboardingWizard({ plugin, onComplete }) {
             }
           )
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: tw("mt-6"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: tw("w-full bg-[--background-modifier-border] rounded-full h-1.5"), children: /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("mt-6"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("w-full bg-[--background-modifier-border] rounded-full h-1.5"), children: /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
             "div",
             {
               className: tw("bg-[--text-accent] h-1.5 rounded-full"),
               style: { width: `${(step + 1) / 3 * 100}%` }
             }
           ) }),
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: tw("text-xs text-[--text-muted] text-right mt-1"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("text-xs text-[--text-muted] text-right mt-1"), children: [
             "Step ",
             step + 1,
             " of 3"
@@ -112481,27 +114613,27 @@ function OnboardingWizard({ plugin, onComplete }) {
 }
 
 // views/assistant/dashboard/collapsible-section.tsx
-var import_jsx_runtime77 = __toESM(require_jsx_runtime());
+var import_jsx_runtime91 = __toESM(require_jsx_runtime());
 function CollapsibleSection({
   title,
   isOpen,
   onToggle,
   children
 }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "mb-2 border-b border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)("div", { className: "mb-2 border-b border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)(
       Button2,
       {
         className: "w-full flex justify-between items-center px-2 py-2 bg-[--background-primary] hover:bg-[--background-modifier-hover] transition-colors",
         onClick: onToggle,
         variant: "ghost",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("span", { className: "font-semibold text-[--text-normal]", children: title }),
-          isOpen ? /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(ChevronUp, { className: "h-4 w-4" }) : /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(ChevronDown, { className: "h-4 w-4" })
+          /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("span", { className: "font-semibold text-[--text-normal]", children: title }),
+          isOpen ? /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(ChevronUp, { className: "h-4 w-4" }) : /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(ChevronDown, { className: "h-4 w-4" })
         ]
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(AnimatePresence, { children: isOpen && /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(AnimatePresence, { children: isOpen && /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
       motion.div,
       {
         className: "bg-[--background-primary-alt]",
@@ -112516,25 +114648,25 @@ function CollapsibleSection({
 }
 
 // views/assistant/dashboard/floating-action-button.tsx
-var import_jsx_runtime78 = __toESM(require_jsx_runtime());
+var import_jsx_runtime92 = __toESM(require_jsx_runtime());
 function FloatingActionButton({
   label,
   onClick
 }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(
     motion.div,
     {
       className: "fixed bottom-4 right-4",
       whileHover: { scale: 1.05 },
       whileTap: { scale: 0.95 },
-      children: /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)(
+      children: /* @__PURE__ */ (0, import_jsx_runtime92.jsxs)(
         Button2,
         {
-          className: "rounded-full shadow-lg flex items-center gap-2",
+          className: "rounded-full flex items-center gap-2",
           onClick,
           size: "lg",
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(Sparkles, { className: "h-4 w-4" }),
+            /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(Sparkles, { className: "h-4 w-4" }),
             label
           ]
         }
@@ -112544,32 +114676,32 @@ function FloatingActionButton({
 }
 
 // components/ui/progress.tsx
-var React62 = __toESM(require_react());
+var React75 = __toESM(require_react());
 
 // node_modules/@radix-ui/react-progress/dist/index.mjs
-var React61 = __toESM(require_react(), 1);
+var React74 = __toESM(require_react(), 1);
 
 // node_modules/@radix-ui/react-context/dist/index.mjs
-var React59 = __toESM(require_react(), 1);
-var import_jsx_runtime79 = __toESM(require_jsx_runtime(), 1);
+var React72 = __toESM(require_react(), 1);
+var import_jsx_runtime93 = __toESM(require_jsx_runtime(), 1);
 function createContextScope(scopeName, createContextScopeDeps = []) {
   let defaultContexts = [];
   function createContext32(rootComponentName, defaultContext) {
-    const BaseContext2 = React59.createContext(defaultContext);
+    const BaseContext2 = React72.createContext(defaultContext);
     const index2 = defaultContexts.length;
     defaultContexts = [...defaultContexts, defaultContext];
     const Provider = (props) => {
       var _a17;
       const { scope, children, ...context } = props;
       const Context = ((_a17 = scope == null ? void 0 : scope[scopeName]) == null ? void 0 : _a17[index2]) || BaseContext2;
-      const value = React59.useMemo(() => context, Object.values(context));
-      return /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(Context.Provider, { value, children });
+      const value = React72.useMemo(() => context, Object.values(context));
+      return /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(Context.Provider, { value, children });
     };
     Provider.displayName = rootComponentName + "Provider";
     function useContext22(consumerName, scope) {
       var _a17;
       const Context = ((_a17 = scope == null ? void 0 : scope[scopeName]) == null ? void 0 : _a17[index2]) || BaseContext2;
-      const context = React59.useContext(Context);
+      const context = React72.useContext(Context);
       if (context)
         return context;
       if (defaultContext !== void 0)
@@ -112580,11 +114712,11 @@ function createContextScope(scopeName, createContextScopeDeps = []) {
   }
   const createScope = () => {
     const scopeContexts = defaultContexts.map((defaultContext) => {
-      return React59.createContext(defaultContext);
+      return React72.createContext(defaultContext);
     });
     return function useScope(scope) {
       const contexts = (scope == null ? void 0 : scope[scopeName]) || scopeContexts;
-      return React59.useMemo(
+      return React72.useMemo(
         () => ({ [`__scope${scopeName}`]: { ...scope, [scopeName]: contexts } }),
         [scope, contexts]
       );
@@ -112608,7 +114740,7 @@ function composeContextScopes(...scopes) {
         const currentScope = scopeProps[`__scope${scopeName}`];
         return { ...nextScopes2, ...currentScope };
       }, {});
-      return React59.useMemo(() => ({ [`__scope${baseScope.scopeName}`]: nextScopes }), [nextScopes]);
+      return React72.useMemo(() => ({ [`__scope${baseScope.scopeName}`]: nextScopes }), [nextScopes]);
     };
   };
   createScope.scopeName = baseScope.scopeName;
@@ -112616,9 +114748,9 @@ function composeContextScopes(...scopes) {
 }
 
 // node_modules/@radix-ui/react-primitive/dist/index.mjs
-var React60 = __toESM(require_react(), 1);
+var React73 = __toESM(require_react(), 1);
 var ReactDOM2 = __toESM(require_react_dom(), 1);
-var import_jsx_runtime80 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime94 = __toESM(require_jsx_runtime(), 1);
 var NODES = [
   "a",
   "button",
@@ -112640,26 +114772,26 @@ var NODES = [
 ];
 var Primitive = NODES.reduce((primitive, node2) => {
   const Slot2 = createSlot(`Primitive.${node2}`);
-  const Node3 = React60.forwardRef((props, forwardedRef) => {
+  const Node3 = React73.forwardRef((props, forwardedRef) => {
     const { asChild, ...primitiveProps } = props;
     const Comp = asChild ? Slot2 : node2;
     if (typeof window !== "undefined") {
       window[Symbol.for("radix-ui")] = true;
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(Comp, { ...primitiveProps, ref: forwardedRef });
+    return /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(Comp, { ...primitiveProps, ref: forwardedRef });
   });
   Node3.displayName = `Primitive.${node2}`;
   return { ...primitive, [node2]: Node3 };
 }, {});
 
 // node_modules/@radix-ui/react-progress/dist/index.mjs
-var import_jsx_runtime81 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime95 = __toESM(require_jsx_runtime(), 1);
 "use client";
 var PROGRESS_NAME = "Progress";
 var DEFAULT_MAX = 100;
 var [createProgressContext, createProgressScope] = createContextScope(PROGRESS_NAME);
 var [ProgressProvider, useProgressContext] = createProgressContext(PROGRESS_NAME);
-var Progress = React61.forwardRef(
+var Progress = React74.forwardRef(
   (props, forwardedRef) => {
     const {
       __scopeProgress,
@@ -112677,7 +114809,7 @@ var Progress = React61.forwardRef(
     }
     const value = isValidValueNumber(valueProp, max2) ? valueProp : null;
     const valueLabel = isNumber4(value) ? getValueLabel(value, max2) : void 0;
-    return /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(ProgressProvider, { scope: __scopeProgress, value, max: max2, children: /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(ProgressProvider, { scope: __scopeProgress, value, max: max2, children: /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
       Primitive.div,
       {
         "aria-valuemax": max2,
@@ -112696,12 +114828,12 @@ var Progress = React61.forwardRef(
 );
 Progress.displayName = PROGRESS_NAME;
 var INDICATOR_NAME = "ProgressIndicator";
-var ProgressIndicator = React61.forwardRef(
+var ProgressIndicator = React74.forwardRef(
   (props, forwardedRef) => {
     var _a17;
     const { __scopeProgress, ...indicatorProps } = props;
     const context = useProgressContext(INDICATOR_NAME, __scopeProgress);
-    return /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
       Primitive.div,
       {
         "data-state": getProgressState(context.value, context.max),
@@ -112744,9 +114876,9 @@ var Root3 = Progress;
 var Indicator = ProgressIndicator;
 
 // components/ui/progress.tsx
-var import_jsx_runtime82 = __toESM(require_jsx_runtime());
+var import_jsx_runtime96 = __toESM(require_jsx_runtime());
 "use client";
-var Progress2 = React62.forwardRef(({ className, value, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+var Progress2 = React75.forwardRef(({ className, value, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
   Root3,
   {
     ref,
@@ -112755,7 +114887,7 @@ var Progress2 = React62.forwardRef(({ className, value, ...props }, ref) => /* @
       className
     ),
     ...props,
-    children: /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+    children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
       Indicator,
       {
         className: "h-full w-full flex-1 bg-primary transition-all",
@@ -112767,28 +114899,28 @@ var Progress2 = React62.forwardRef(({ className, value, ...props }, ref) => /* @
 Progress2.displayName = Root3.displayName;
 
 // views/assistant/dashboard/progress-bar.tsx
-var import_jsx_runtime83 = __toESM(require_jsx_runtime());
+var import_jsx_runtime97 = __toESM(require_jsx_runtime());
 function ProgressBar({ value }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(Progress2, { value, className: "w-full" });
+  return /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(Progress2, { value, className: "w-full" });
 }
 
 // views/assistant/dashboard/main-dashboard.tsx
-var import_jsx_runtime84 = __toESM(require_jsx_runtime());
+var import_jsx_runtime98 = __toESM(require_jsx_runtime());
 function MainDashboard() {
   var _a17;
   const plugin = usePlugin();
-  const [isOnboardingComplete, setIsOnboardingComplete] = (0, import_react80.useState)(
+  const [isOnboardingComplete, setIsOnboardingComplete] = (0, import_react93.useState)(
     (_a17 = plugin.settings.hasRunOnboarding) != null ? _a17 : false
   );
-  const [expandedSections, setExpandedSections] = (0, import_react80.useState)([
+  const [expandedSections, setExpandedSections] = (0, import_react93.useState)([
     "organizer"
   ]);
-  const [isLongTaskRunning, setIsLongTaskRunning] = (0, import_react80.useState)(false);
-  const [longTaskProgress, setLongTaskProgress] = (0, import_react80.useState)(0);
-  const [activeFile, setActiveFile] = (0, import_react80.useState)(null);
-  const [activeContent, setActiveContent] = (0, import_react80.useState)("");
-  const [refreshKey, setRefreshKey] = (0, import_react80.useState)(0);
-  (0, import_react80.useEffect)(() => {
+  const [isLongTaskRunning, setIsLongTaskRunning] = (0, import_react93.useState)(false);
+  const [longTaskProgress, setLongTaskProgress] = (0, import_react93.useState)(0);
+  const [activeFile, setActiveFile] = (0, import_react93.useState)(null);
+  const [activeContent, setActiveContent] = (0, import_react93.useState)("");
+  const [refreshKey, setRefreshKey] = (0, import_react93.useState)(0);
+  (0, import_react93.useEffect)(() => {
     const handleFileOpen = async () => {
       const file = plugin.app.workspace.getActiveFile();
       if (file) {
@@ -112821,7 +114953,7 @@ function MainDashboard() {
       setLongTaskProgress(progress2);
     }
     setIsLongTaskRunning(false);
-    new import_obsidian30.Notice("Long task completed!");
+    new import_obsidian45.Notice("Long task completed!");
   };
   const toggleSection = (section) => {
     setExpandedSections((prev) => {
@@ -112849,27 +114981,27 @@ function MainDashboard() {
   };
   const handleFABAction = () => {
     if (!activeFile) {
-      new import_obsidian30.Notice("No active file to operate on!");
+      new import_obsidian45.Notice("No active file to operate on!");
       return;
     }
     if (activeFile.basename.toLowerCase().includes("meeting")) {
-      new import_obsidian30.Notice("Meeting note enhanced!");
+      new import_obsidian45.Notice("Meeting note enhanced!");
     } else {
-      new import_obsidian30.Notice(`Organized: ${activeFile.basename}`);
+      new import_obsidian45.Notice(`Organized: ${activeFile.basename}`);
     }
   };
   if (!isOnboardingComplete) {
-    return /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(OnboardingWizard, { plugin, onComplete: handleOnboardingComplete });
+    return /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(OnboardingWizard, { plugin, onComplete: handleOnboardingComplete });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)("div", { className: "flex flex-col h-full relative p-2", children: [
-    isLongTaskRunning && /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("div", { className: "p-2 bg-[--background-secondary] mb-2 rounded", children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(ProgressBar, { value: longTaskProgress }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("div", { className: "flex flex-col h-full relative p-2", children: [
+    isLongTaskRunning && /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("div", { className: "p-2 bg-[--background-secondary] mb-2 rounded", children: /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(ProgressBar, { value: longTaskProgress }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
       CollapsibleSection,
       {
         title: "Organizer",
         isOpen: expandedSections.includes("organizer"),
         onToggle: () => toggleSection("organizer"),
-        children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
+        children: /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
           AssistantView,
           {
             plugin,
@@ -112878,25 +115010,25 @@ function MainDashboard() {
         ) })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
       CollapsibleSection,
       {
         title: "Inbox",
         isOpen: expandedSections.includes("inbox"),
         onToggle: () => toggleSection("inbox"),
-        children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("p", { children: "Inbox logs or quick file processing UI here." }) })
+        children: /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("p", { children: "Inbox logs or quick file processing UI here." }) })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
       CollapsibleSection,
       {
         title: "Chat",
         isOpen: expandedSections.includes("chat"),
         onToggle: () => toggleSection("chat"),
-        children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(container_default, { plugin, apiKey: plugin.getApiKey() }) })
+        children: /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(container_default, { plugin, apiKey: plugin.getApiKey() }) })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
       FloatingActionButton,
       {
         label: getFloatingButtonLabel(),
@@ -112907,9 +115039,9 @@ function MainDashboard() {
 }
 
 // views/assistant/dashboard/view.tsx
-var import_jsx_runtime85 = __toESM(require_jsx_runtime());
+var import_jsx_runtime99 = __toESM(require_jsx_runtime());
 var DASHBOARD_VIEW_TYPE = "fo2k.dashboard";
-var DashboardView = class extends import_obsidian31.ItemView {
+var DashboardView = class extends import_obsidian46.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.root = null;
@@ -112928,7 +115060,7 @@ var DashboardView = class extends import_obsidian31.ItemView {
     const container = this.containerEl.children[1];
     this.root = (0, import_client3.createRoot)(container);
     this.root.render(
-      /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(AppContext.Provider, { value: { plugin: this.plugin, root: this.root }, children: /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(MainDashboard, {}) })
+      /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(AppContext.Provider, { value: { plugin: this.plugin, root: this.root }, children: /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(MainDashboard, {}) })
     );
   }
   async onClose() {
@@ -118112,13 +120244,13 @@ var es_default29 = configure2({
 });
 
 // handlers/eventHandlers.ts
-var import_obsidian34 = require("obsidian");
+var import_obsidian49 = require("obsidian");
 
 // inbox/services/queue.ts
 var import_events2 = require("events");
 
 // inbox/services/error-service.ts
-var import_obsidian32 = require("obsidian");
+var import_obsidian47 = require("obsidian");
 var ErrorService = class {
   constructor() {
     this.errorLog = [];
@@ -118157,7 +120289,7 @@ var ErrorService = class {
   }
   showNotification(details) {
     const duration = this.getNotificationDuration(details.severity);
-    new import_obsidian32.Notice(
+    new import_obsidian47.Notice(
       `FileOrganizer: ${details.message}`,
       duration
     );
@@ -118216,16 +120348,8 @@ var ErrorService = class {
   }
 };
 
-// inbox/constants.ts
-var CHUNK_SIZE = 1024 * 1024;
-var MAX_CONCURRENT_TASKS = 100;
-var CACHE_TTL = 1e3 * 60 * 60 * 24;
-var SIZE_THRESHOLDS = {
-  SMALL: 1024 * 100
-  // 100KB
-};
-
 // inbox/services/queue.ts
+var MAX_CONCURRENT_TASKS = 5;
 var Queue = class extends import_events2.EventEmitter {
   constructor(options) {
     super();
@@ -118375,7 +120499,7 @@ var Queue = class extends import_events2.EventEmitter {
 };
 
 // fileUtils.ts
-var import_obsidian33 = require("obsidian");
+var import_obsidian48 = require("obsidian");
 async function ensureFolderExists(app, folderPath) {
   if (!await app.vault.adapter.exists(folderPath)) {
     await app.vault.createFolder(folderPath);
@@ -118635,13 +120759,13 @@ summary: "A short overview of the video's main theme."
 async function moveFile(app, sourceFile, newFileName, destinationFolder = "") {
   const fileExtension = sourceFile.extension;
   let targetPath = `${destinationFolder}/${newFileName}.${fileExtension}`;
-  const normalizedTargetPath = (0, import_obsidian33.normalizePath)(targetPath);
+  const normalizedTargetPath = (0, import_obsidian48.normalizePath)(targetPath);
   if (await app.vault.adapter.exists(normalizedTargetPath)) {
     const timestamp = Date.now();
     const uniqueFileName = `${newFileName}_${timestamp}`;
     targetPath = `${destinationFolder}/${uniqueFileName}.${fileExtension}`;
   }
-  const normalizedFinalPath = (0, import_obsidian33.normalizePath)(targetPath);
+  const normalizedFinalPath = (0, import_obsidian48.normalizePath)(targetPath);
   await ensureFolderExists(app, destinationFolder);
   await app.fileManager.renameFile(sourceFile, normalizedFinalPath);
   const movedFile = app.vault.getAbstractFileByPath(
@@ -119369,13 +121493,35 @@ function shouldSkipAction(context, action) {
       return false;
   }
 }
+function getActionDisplayName(action) {
+  const actionMap = {
+    ["Extracting content..." /* EXTRACT */]: "Extracting content",
+    ["Analyzing document type..." /* CLASSIFY */]: "Classifying document",
+    ["Moving to final location..." /* MOVING */]: "Finding destination folder",
+    ["Renaming file..." /* RENAME */]: "Generating title",
+    ["Generating tags..." /* TAGGING */]: "Adding tags",
+    ["Formatting content..." /* FORMATTING */]: "Formatting content"
+  };
+  return actionMap[action] || action.toString();
+}
 async function executeStep(context, step, action, errorAction) {
+  var _a17;
   try {
     if (shouldSkipAction(context, action)) {
       context.recordManager.skipAction(context.hash, action);
       return context;
     }
     context.recordManager.addAction(context.hash, action);
+    const shouldNotify = context.plugin.settings.enableProcessingNotifications;
+    if (shouldNotify && ["Extracting content..." /* EXTRACT */, "Analyzing document type..." /* CLASSIFY */, "Moving to final location..." /* MOVING */, "Renaming file..." /* RENAME */, "Generating tags..." /* TAGGING */, "Formatting content..." /* FORMATTING */].includes(action)) {
+      const fileName = ((_a17 = context.containerFile) == null ? void 0 : _a17.basename) || context.inboxFile.basename;
+      const actionName = getActionDisplayName(action);
+      context.plugin.app.workspace.trigger("file-organizer:processing-step", {
+        fileName,
+        action: actionName,
+        hash: context.hash
+      });
+    }
     const result = await step(context);
     const isDoneAction = action.toString().includes("_DONE");
     if (!isDoneAction) {
@@ -119414,8 +121560,8 @@ function registerEventHandlers(plugin) {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
       if (!file.path.includes(plugin.settings.pathToWatch))
         return;
-      if (file instanceof import_obsidian34.TFile) {
-        new import_obsidian34.Notice("Inbox is looking at new file: " + file.basename);
+      if (file instanceof import_obsidian49.TFile) {
+        new import_obsidian49.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
       }
     })
@@ -119425,8 +121571,8 @@ function registerEventHandlers(plugin) {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
       if (!file.path.includes(plugin.settings.pathToWatch))
         return;
-      if (file instanceof import_obsidian34.TFile) {
-        new import_obsidian34.Notice("Inbox is looking at new file: " + file.basename);
+      if (file instanceof import_obsidian49.TFile) {
+        new import_obsidian49.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
       }
     })
@@ -119457,7 +121603,7 @@ function initializeFileOrganizationCommands(plugin) {
 }
 
 // index.ts
-var FileOrganizer = class extends import_obsidian35.Plugin {
+var FileOrganizer = class extends import_obsidian50.Plugin {
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
   }
@@ -119514,7 +121660,7 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
       return concepts;
     } catch (error) {
       logger.error("Error in identifyConceptsAndFetchChunks:", error);
-      new import_obsidian35.Notice("An error occurred while processing the document.", 6e3);
+      new import_obsidian50.Notice("An error occurred while processing the document.", 6e3);
       throw error;
     }
   }
@@ -119538,7 +121684,7 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
       return formattedContent;
     } catch (error) {
       logger.error("Error formatting content:", error);
-      new import_obsidian35.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian50.Notice("An error occurred while formatting the content.", 6e3);
       return "";
     }
   }
@@ -119560,7 +121706,7 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
     const templateFile = this.app.vault.getAbstractFileByPath(
       `${this.settings.templatePaths}/${classification}`
     );
-    if (!templateFile || !(templateFile instanceof import_obsidian35.TFile)) {
+    if (!templateFile || !(templateFile instanceof import_obsidian50.TFile)) {
       logger.error("Template file not found or is not a valid file.");
       return "";
     }
@@ -119573,7 +121719,7 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
   }) {
     var _a17;
     try {
-      new import_obsidian35.Notice("Formatting content in split view...", 3e3);
+      new import_obsidian50.Notice("Formatting content in split view...", 3e3);
       const newFileName = `${file.basename}-formatted-${Date.now()}.md`;
       const newFilePath = `${(_a17 = file.parent) == null ? void 0 : _a17.path}/${newFileName}`;
       const newFile = await this.app.vault.create(newFilePath, "");
@@ -119591,10 +121737,10 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
         this.settings.API_KEY,
         updateCallback
       );
-      new import_obsidian35.Notice("Content formatted in split view successfully", 3e3);
+      new import_obsidian50.Notice("Content formatted in split view successfully", 3e3);
     } catch (error) {
       logger.error("Error formatting content in split view:", error);
-      new import_obsidian35.Notice(
+      new import_obsidian50.Notice(
         "An error occurred while formatting the content in split view.",
         6e3
       );
@@ -119606,7 +121752,7 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
     content: content3
   }) {
     try {
-      new import_obsidian35.Notice("Formatting content...", 3e3);
+      new import_obsidian50.Notice("Formatting content...", 3e3);
       const backupFile = await this.backupTheFileAndAddReferenceToCurrentFile(
         file
       );
@@ -119624,10 +121770,10 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
       );
       this.appendBackupLinkToCurrentFile(file, backupFile);
       await this.appendFormattedLinkToBackupFile(backupFile, file);
-      new import_obsidian35.Notice("Content formatted successfully", 3e3);
+      new import_obsidian50.Notice("Content formatted successfully", 3e3);
     } catch (error) {
       logger.error("Error formatting content:", error);
-      new import_obsidian35.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian50.Notice("An error occurred while formatting the content.", 6e3);
     }
   }
   async streamFormatAppendInCurrentNote({
@@ -119636,7 +121782,7 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
     content: content3
   }) {
     try {
-      new import_obsidian35.Notice("Appending formatted content...", 3e3);
+      new import_obsidian50.Notice("Appending formatted content...", 3e3);
       let formattedContent = "";
       const updateCallback = async (partialContent) => {
         formattedContent = partialContent;
@@ -119649,10 +121795,10 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
         updateCallback
       );
       await this.app.vault.append(file, "\n\n" + formattedContent);
-      new import_obsidian35.Notice("Content appended successfully", 3e3);
+      new import_obsidian50.Notice("Content appended successfully", 3e3);
     } catch (error) {
       logger.error("Error appending content:", error);
-      new import_obsidian35.Notice("An error occurred while appending content.", 6e3);
+      new import_obsidian50.Notice("An error occurred while appending content.", 6e3);
     }
   }
   async streamFormatInCurrentNoteLineByLine({
@@ -119662,7 +121808,7 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
     chunkMode = "line"
   }) {
     try {
-      new import_obsidian35.Notice("Formatting content line by line...", 3e3);
+      new import_obsidian50.Notice("Formatting content line by line...", 3e3);
       const backupFile = await this.backupTheFileAndAddReferenceToCurrentFile(
         file
       );
@@ -119691,10 +121837,10 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
       );
       await this.appendBackupLinkToCurrentFile(file, backupFile);
       await this.appendFormattedLinkToBackupFile(backupFile, file);
-      new import_obsidian35.Notice("Line-by-line update done!", 3e3);
+      new import_obsidian50.Notice("Line-by-line update done!", 3e3);
     } catch (error) {
       logger.error("Error formatting content line by line:", error);
-      new import_obsidian35.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian50.Notice("An error occurred while formatting the content.", 6e3);
       throw error;
     }
   }
@@ -119704,7 +121850,7 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
     await this.app.vault.create(filePath, content3);
   }
   async extractTextFromPDF(file) {
-    const pdfjsLib = await (0, import_obsidian35.loadPdfJs)();
+    const pdfjsLib = await (0, import_obsidian50.loadPdfJs)();
     try {
       const arrayBuffer = await this.app.vault.readBinary(file);
       const bytes = new Uint8Array(arrayBuffer);
@@ -120009,7 +122155,7 @@ var FileOrganizer = class extends import_obsidian35.Plugin {
     return processedContent;
   }
   async extractTextFromImage(image3) {
-    const base64Image = (0, import_obsidian35.arrayBufferToBase64)(image3);
+    const base64Image = (0, import_obsidian50.arrayBufferToBase64)(image3);
     const response = await fetch(`${this.getServerUrl()}/api/vision`, {
       method: "POST",
       headers: {
@@ -120191,7 +122337,7 @@ ${formattedTag}`);
           });
           view2 == null ? void 0 : view2.activateTab("chat");
         } else {
-          new import_obsidian35.Notice("No text selected");
+          new import_obsidian50.Notice("No text selected");
         }
       }
     });
@@ -120226,16 +122372,16 @@ ${formattedTag}`);
     for await (const chunk of transcriptIterator) {
       await this.app.vault.append(parentFile, chunk);
     }
-    new import_obsidian35.Notice(`Transcription completed for ${audioFileName}`, 5e3);
+    new import_obsidian50.Notice(`Transcription completed for ${audioFileName}`, 5e3);
   }
   async generateUniqueBackupFileName(originalFile) {
-    const baseFileName = `${originalFile.basename}_backup_${(0, import_obsidian35.moment)().format(
+    const baseFileName = `${originalFile.basename}_backup_${(0, import_obsidian50.moment)().format(
       "YYYYMMDD_HHmmss"
     )}`;
     let fileName = `${baseFileName}.${originalFile.extension}`;
     let counter2 = 1;
     while (await this.app.vault.adapter.exists(
-      (0, import_obsidian35.normalizePath)(`${this.settings.backupFolderPath}/${fileName}`)
+      (0, import_obsidian50.normalizePath)(`${this.settings.backupFolderPath}/${fileName}`)
     )) {
       fileName = `${baseFileName}_${counter2}.${originalFile.extension}`;
       counter2++;
@@ -120244,7 +122390,7 @@ ${formattedTag}`);
   }
   async backupTheFileAndAddReferenceToCurrentFile(file) {
     const backupFileName = await this.generateUniqueBackupFileName(file);
-    const backupFilePath = (0, import_obsidian35.normalizePath)(
+    const backupFilePath = (0, import_obsidian50.normalizePath)(
       `${this.settings.backupFolderPath}/${backupFileName}`
     );
     const backupFile = await this.app.vault.copy(file, backupFilePath);
@@ -120254,14 +122400,14 @@ ${formattedTag}`);
     const templateFolder = this.app.vault.getAbstractFileByPath(
       this.settings.templatePaths
     );
-    if (!templateFolder || !(templateFolder instanceof import_obsidian35.TFolder)) {
+    if (!templateFolder || !(templateFolder instanceof import_obsidian50.TFolder)) {
       logger.error("Template folder not found or is not a valid folder.");
       return "";
     }
     const templateFile = templateFolder.children.find(
-      (file) => file instanceof import_obsidian35.TFile && file.basename === templateName
+      (file) => file instanceof import_obsidian50.TFile && file.basename === templateName
     );
-    if (!templateFile || !(templateFile instanceof import_obsidian35.TFile)) {
+    if (!templateFile || !(templateFile instanceof import_obsidian50.TFile)) {
       logger.error("Template file not found or is not a valid file.");
       return "";
     }
@@ -120273,12 +122419,12 @@ ${formattedTag}`);
     const templateFolder = this.app.vault.getAbstractFileByPath(
       this.settings.templatePaths
     );
-    if (!templateFolder || !(templateFolder instanceof import_obsidian35.TFolder)) {
+    if (!templateFolder || !(templateFolder instanceof import_obsidian50.TFolder)) {
       logger.error("Template folder not found or is not a valid folder.");
       return [];
     }
     const templateFiles = templateFolder.children.filter(
-      (file) => file instanceof import_obsidian35.TFile
+      (file) => file instanceof import_obsidian50.TFile
     );
     return templateFiles.map((file) => file.basename);
   }
@@ -120325,26 +122471,26 @@ ${formattedTag}`);
   // Create all necessary folders for the plugin to function properly
   async checkAndCreateRequiredFolders() {
     try {
-      await checkAndCreateFolders(
-        this.app.vault,
-        [
-          this.settings.pathToWatch,
-          this.settings.defaultDestinationPath,
-          this.settings.referencePath,
-          this.settings.attachmentsPath,
-          this.settings.logFolderPath,
-          this.settings.backupFolderPath,
-          this.settings.templatePaths,
-          this.settings.fabricPaths,
-          this.settings.bypassedFilePath,
-          this.settings.errorFilePath,
-          this.settings.syncFolderPath
-        ]
-      );
-      new import_obsidian35.Notice("All required folders have been created successfully!", 3e3);
+      const folderPaths = [
+        this.settings.pathToWatch,
+        this.settings.defaultDestinationPath,
+        this.settings.referencePath,
+        this.settings.attachmentsPath,
+        this.settings.logFolderPath,
+        this.settings.backupFolderPath,
+        this.settings.templatePaths,
+        this.settings.fabricPaths,
+        this.settings.bypassedFilePath,
+        this.settings.errorFilePath,
+        this.settings.syncFolderPath
+      ];
+      for (const folderPath of folderPaths) {
+        await ensureFolderExists(this.app, folderPath);
+      }
+      new import_obsidian50.Notice("All required folders have been created successfully!", 3e3);
     } catch (error) {
       console.error("Failed to create required folders:", error);
-      new import_obsidian35.Notice("There was an error creating the required folders. Please check console for details.", 5e3);
+      new import_obsidian50.Notice("There was an error creating the required folders. Please check console for details.", 5e3);
     }
   }
   async fetchUsageStats() {
@@ -120918,6 +123064,14 @@ lucide-react/dist/esm/icons/loader-circle.js:
    * See the LICENSE file in the root directory of this source tree.
    *)
 
+lucide-react/dist/esm/icons/loader.js:
+  (**
+   * @license lucide-react v0.441.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
 lucide-react/dist/esm/icons/mic.js:
   (**
    * @license lucide-react v0.441.0 - ISC
@@ -120927,6 +123081,14 @@ lucide-react/dist/esm/icons/mic.js:
    *)
 
 lucide-react/dist/esm/icons/play.js:
+  (**
+   * @license lucide-react v0.441.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/plus.js:
   (**
    * @license lucide-react v0.441.0 - ISC
    *
@@ -120959,6 +123121,14 @@ lucide-react/dist/esm/icons/search.js:
    *)
 
 lucide-react/dist/esm/icons/sparkles.js:
+  (**
+   * @license lucide-react v0.441.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/undo-2.js:
   (**
    * @license lucide-react v0.441.0 - ISC
    *

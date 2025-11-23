@@ -48,6 +48,8 @@
   "hasCatalystAccess": true,
   "hasRunOnboarding": false,
   "pdfPageLimit": 10,
+  "enableProcessingNotifications": true,
+  "showSyncTab": false,
   "enableScreenpipe": false,
   "screenpipeTimeRange": 8,
   "queryScreenpipeLimit": 250
