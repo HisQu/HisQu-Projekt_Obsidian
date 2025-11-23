@@ -747,6 +747,25 @@
   collaborator = {R{\"o}{\ss}ler, Hellmuth}
 }
 
+@incollection{FathallahNeOnGPTLargeLanguageModelPoweredPipelineOntologyLearning,
+  title = {{{NeOn-GPT}}: {{A Large Language Model-Powered Pipeline}} for {{Ontology Learning}}},
+  shorttitle = {{{NeOn-GPT}}},
+  booktitle = {The {{Semantic Web}}: {{ESWC}} 2024 {{Satellite Events}}},
+  author = {Fathallah, Nadeen and Das, Arunav and Giorgis, Stefano De and Poltronieri, Andrea and Haase, Peter and Kovriguina, Liubov},
+  editor = {Mero{\~n}o Pe{\~n}uela, Albert and Corcho, Oscar and Groth, Paul and Simperl, Elena and Tamma, Valentina and Nuzzolese, Andrea Giovanni and {Poveda-Villal{\'o}n}, Maria and Sabou, Marta and Presutti, Valentina and Celino, Irene and Revenko, Artem and Raad, Joe and Sartini, Bruno and Lisena, Pasquale},
+  year = 2025,
+  volume = {15344},
+  pages = {36--50},
+  publisher = {Springer Nature Switzerland},
+  address = {Cham},
+  doi = {10.1007/978-3-031-78952-6_4},
+  urldate = {2025-11-10},
+  abstract = {We address the task of ontology learning by combining the structured NeOn methodology framework with Large Language Models (LLMs) for translating natural language domain descriptions into Turtle syntax ontologies. The main contribution of the paper is a prompt pipeline tailored for domain-agnostic modeling, exemplified through the application to a domain-specific case study: the wine ontology. The resulting pipeline is used to develop NeOn-GPT, a workflow for automatic ontology modeling, and its proof of concept implementation, integrated on top of the metaphactory platform. NeOn-GPT leverages the systematic approach of the NeOn methodology and LLMs' generative capabilities to facilitate a more efficient ontology development process. We evaluate the proposed approach by conducting comprehensive evaluations using the Stanford wine ontology as the gold standard. The obtained results show, that LLMs are not fully equipped to perform procedural tasks required for ontology development, and lack the reasoning skills and domain expertise needed. Overall, LLMs require integration with the workflow or trajectory tools for continuous knowledge engineering tasks. Nevertheless, LLMs can significantly alleviate the time and expertise needed. Our code base is publicly available for research and development purposes, accessible at: https://github.com/andreamust/NEON-GPT.},
+  isbn = {978-3-031-78951-9 978-3-031-78952-6},
+  langid = {english},
+  file = {C:\Users\lucan\Zotero\storage\MLSGCGUA\Fathallah et al. - 2025 - NeOn-GPT A Large Language Model-Powered Pipeline .pdf}
+}
+
 @misc{FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels,
   title = {{{ColPali}}. {{Efficient Document Retrieval}} with {{Vision Language Models}}},
   shorttitle = {{{ColPali}}},
@@ -893,6 +912,17 @@
   pages = {147--156},
   urldate = {2025-03-21},
   annotation = {http://opac.regesta-imperii.de/id/1180964}
+}
+
+@article{Gomez-PerezNeOnMethodologyBuildingOntologyNetworksScenariobasedMethodology,
+  title = {{{NeOn Methodology}} for {{Building Ontology Networks}}: A {{Scenario-based Methodology}}},
+  shorttitle = {{{NeOn Methodology}} for {{Building Ontology Networks}}},
+  author = {{Gomez-Perez}, Asuncion and {Su{\'a}rez-Figueroa}, Mari Carmen},
+  year = 2009,
+  month = jan,
+  abstract = {The 1990s and the first years of this new millennium have witnessed the growing interest of many practitioners in methodologies that support the creation of single or isolated ontologies. All these approaches have supposed a step forward since they have transformed the art of constructing single ontologies into an engineering activity. With the goal of speeding up the ontology development process, ontology practitioners are starting to reuse and re-engineer as much as possible knowledge resources (such as ontologies, thesauri, lexicons, and classification schemas), which already have reached some degree of consensus. In this paper, we present the set of nine scenarios identified in the NeOn Methodology framework. Additionally, we present how such scenarios have been followed in different use cases.},
+  keywords = {LLM,Methode,NeOn,Ontologie},
+  file = {C:\Users\lucan\Zotero\storage\7EADIWTW\Gomez-Perez and Suárez-Figueroa - 2009 - NeOn Methodology for Building Ontology Networks a.pdf}
 }
 
 @incollection{GrafingerBeziehungenzwischenVatikanischerBibliothekundDeutschemHistorischemInstitut,
@@ -1410,6 +1440,23 @@
   file = {C:\Users\lucan\Zotero\storage\BEYJ6PQS\§-kuricPlotasticBridgingPlotting2024a.pdf}
 }
 
+@misc{KusupatiMatryoshkaRepresentationLearning,
+  title = {Matryoshka {{Representation Learning}}},
+  author = {Kusupati, Aditya and Bhatt, Gantavya and Rege, Aniket and Wallingford, Matthew and Sinha, Aditya and Ramanujan, Vivek and {Howard-Snyder}, William and Chen, Kaifeng and Kakade, Sham and Jain, Prateek and Farhadi, Ali},
+  year = 2024,
+  month = feb,
+  number = {arXiv:2205.13147},
+  eprint = {2205.13147},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2205.13147},
+  urldate = {2025-10-30},
+  abstract = {Learned representations are a central component in modern ML systems, serving a multitude of downstream tasks. When training such representations, it is often the case that computational and statistical constraints for each downstream task are unknown. In this context rigid, fixed capacity representations can be either over or under-accommodating to the task at hand. This leads us to ask: can we design a flexible representation that can adapt to multiple downstream tasks with varying computational resources? Our main contribution is Matryoshka Representation Learning (MRL) which encodes information at different granularities and allows a single embedding to adapt to the computational constraints of downstream tasks. MRL minimally modifies existing representation learning pipelines and imposes no additional cost during inference and deployment. MRL learns coarse-to-fine representations that are at least as accurate and rich as independently trained low-dimensional representations. The flexibility within the learned Matryoshka Representations offer: (a) up to 14x smaller embedding size for ImageNet-1K classification at the same level of accuracy; (b) up to 14x real-world speed-ups for large-scale retrieval on ImageNet-1K and 4K; and (c) up to 2\% accuracy improvements for long-tail few-shot classification, all while being as robust as the original representations. Finally, we show that MRL extends seamlessly to web-scale datasets (ImageNet, JFT) across various modalities -- vision (ViT, ResNet), vision + language (ALIGN) and language (BERT). MRL code and pretrained models are open-sourced at https://github.com/RAIVNLab/MRL.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning},
+  file = {C\:\\Users\\lucan\\Zotero\\storage\\FWDH4CMY\\Kusupati et al. - 2024 - Matryoshka Representation Learning.pdf;C\:\\Users\\lucan\\Zotero\\storage\\WLXZLPTA\\2205.html}
+}
+
 @book{LangStudienBrevenregisternundBrevenkonzepten15JahrhundertsausVatikanischenArchiv,
   title = {Studien Zu Den {{Brevenregistern}} Und {{Brevenkonzepten}} Des 15. {{Jahrhunderts}} Aus Dem {{Vatikanischen Archiv}}},
   author = {Lang, Gottfried},
@@ -1643,6 +1690,14 @@
   volume = {21},
   pages = {146--154},
   annotation = {http://opac.regesta-imperii.de/id/472501}
+}
+
+@misc{NeOnMethodology,
+  title = {The {{NeOn Methodology}}},
+  urldate = {2025-11-10},
+  howpublished = {https://oeg.fi.upm.es/index.php/en/methodologies/59-neon-methodology/index.html},
+  keywords = {LLM,Methode,Ontologie},
+  file = {C:\Users\lucan\Zotero\storage\7GKV6QJ3\index.html}
 }
 
 @incollection{NeumannProptereiusseniumacdebilitatemoculorumatquevisussuashorascanonicaspersolverenonpotestAlterundAltersbilderimRepertoriumGermanicumundRepertoriumPoenitentiariaeGermanicumausgerontomediavistischerPerspektive,
