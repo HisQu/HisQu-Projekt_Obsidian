@@ -13,7 +13,7 @@ Durch das Prinzip der geteilten Notizen wird das gemeinsame wissenschaftliche Ar
 - die Diskussion innerhalb des Forschungsteams,
 - sowie die nachhaltige Sicherung des Wissens im Projektkontext.
 ## 🧭 Nutzungshinweise
-Nutze beim Erstellen neuer Einträge das bereitgestellte Template nutze bitte den Shortcut 'Strg+Shift+c' , dann wällst Du die Literaturnotiz aus, die in der Zoterobibilothek liegt.
+Nutze beim Erstellen neuer Einträge das bereitgestellte Template nutze bitte den Shortcut 'Alt+L' , dann wällst Du die Literaturnotiz aus, die in der Zoterobibilothek liegt.
 - Autornotiz:
   - Bei der Übertragung von Zotero zu Obsidian werden auch die Autoren übernommen und als Notiz vorangelegt. Durch das klicken auf den Namen entsteht eine verlinkte Notiz
   - Diese Notiz sollte durch den Shortcut `Alt+A` durch eine Vorlage ergänzt werden, die dann weiter bearbeitet werden kann. Alternativ kann man auch über das Befehlsmenü `Strg+P` und der Suche nach '*Autor* ' die Vorlage einfügen
