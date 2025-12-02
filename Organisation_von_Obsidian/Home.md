@@ -1,12 +1,9 @@
 ---
 cssclasses:
   - dashboard
-
-banner: "![[BannerHisQu.png]]"
+banner: "![[logoBannerHisQu.png]]"
 banner_y: 0.452
 ---
-
-
 
 
 # Literatur
