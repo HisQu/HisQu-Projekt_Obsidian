@@ -33,6 +33,7 @@ siehe auch::  [[Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 19
 
 siehe auch::  - [[Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994]]
 
+
 ---
 ## Originalquelle:
 - [PDF](RoesslerUniversitaetundGelehrtenstand14001800BuedingerVortr1966.pdf)

@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "c3da111e19330916",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+                "file": "Literatur/Autoren/David Zbíral.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,18 +28,18 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
+              "title": "David Zbíral"
             }
           },
           {
-            "id": "177708fd69a749b8",
+            "id": "643fb637d40228fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Autoren/Karl Ferdinand Werner.md",
-                "mode": "preview",
-                "source": false,
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -52,11 +52,12 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Karl Ferdinand Werner"
+              "title": "conflict-files-obsidian-git"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 1,
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -221,7 +222,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Autoren/Karl Ferdinand Werner.md",
+                "file": "conflict-files-obsidian-git.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -249,15 +250,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Karl Ferdinand Werner"
+              "title": "Graph von conflict-files-obsidian-git"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 500.5,
-    "collapsed": true
+    "width": 500.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -281,34 +281,35 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "177708fd69a749b8",
+  "active": "643fb637d40228fb",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Literatur/Autoren/David Zbíral.md",
+    "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
+    "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
+    "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
+    "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "RoesslerUniversitaetundGelehrtenstand14001800BuedingerVortr1966.pdf.md",
+    "Organisation_von_Obsidian/Home.md",
+    "BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.pdf.md",
+    "excalibrain.md",
+    "Literatur/Autoren/Hellmuth Rössler.md",
+    "Literatur/Deutsches Patriziat 1430-1740 Hellmuth Rössler 1968.md",
+    "Literatur/Autoren/Thomas Bardelle.md",
+    "Literatur/Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012.md",
+    "PDFs/BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.pdf",
+    "Highlights for BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.md",
+    "Literatur/Autoren/Karl Ferdinand Werner.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
-    "Organisation_von_Obsidian/Home.md",
-    "PDFs/BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.pdf",
     "Vorlagen/Vorlage Autoren.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
-    "Literatur/Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012.md",
-    "Highlights for BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.md",
-    "BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.pdf.md",
     "Vorlagen/Vorlage_Konzept.md",
-    "excalibrain.md",
     "Unbenannt.md",
     "README.md",
     "Literatur/Autoren/Walter Deeters.md",
     "Literatur/Autoren/Friedrich W. Euler.md",
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
-    "Literatur/Autoren/Brigide Schwarz.md",
-    "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
-    "Literatur/Autoren/Hanns Hubert Hofmann.md",
-    "Literatur/Der Adel in Franken Hanns Hubert Hofmann 1965.md",
-    "Literatur/Autoren/Robert Gramsch-Stehfest.md",
-    "Literatur/Das _Repertorium Germanicum_ als serielle Quelle zur Geschichte der akademischen Eliten und die Erkenntnispotenziale seiner digital gestützten Auswertung Robert Gramsch-Stehfest 2023.md",
-    "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
-    "Literatur/Autoren/David Zbíral.md",
-    "Literatur/Autoren/Karl Ferdinand Werner.md",
-    "Literatur/Autoren/Günther Franz.md",
     "Organisation_von_Obsidian/Bilder/logoBannerHisQu.png",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
