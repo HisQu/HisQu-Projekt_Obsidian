@@ -183,7 +183,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       },
       {
         "id": "90e5484812b210aa",
@@ -196,7 +196,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
+                "file": "Literatur/Autoren/Friedrich W. Euler.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,15 +224,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969"
+              "title": "Graph von Friedrich W. Euler"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 500.5,
-    "collapsed": true
+    "width": 500.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -252,7 +251,7 @@
       "fileorganizer2000:Note Companion": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "dfe52a084a7fe93d",
   "lastOpenFiles": [
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
     "Literatur/Autoren/Brigide Schwarz.md",
