@@ -6,6 +6,7 @@
       {
         "id": "4509724f8bf84da7",
         "type": "tabs",
+        "dimension": 49.14965986394558,
         "children": [
           {
             "id": "e7a7b303c61786dc",
@@ -13,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Autoren/Friedrich W. Euler.md",
+                "file": "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +29,26 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Friedrich W. Euler"
+              "title": "Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969"
+            }
+          }
+        ]
+      },
+      {
+        "id": "e3c5777577708467",
+        "type": "tabs",
+        "dimension": 50.85034013605442,
+        "children": [
+          {
+            "id": "43859c133ce10b73",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "excalibrain.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "excalibrain"
             }
           }
         ]
@@ -196,7 +216,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Autoren/Friedrich W. Euler.md",
+                "file": "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,7 +244,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Friedrich W. Euler"
+              "title": "Graph von Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969"
             }
           }
         ]
@@ -251,8 +271,14 @@
       "fileorganizer2000:Note Companion": false
     }
   },
-  "active": "dfe52a084a7fe93d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "excalibrain.md",
+    "Literatur/Autoren/Walter Deeters.md",
+    "README.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "Organisation_von_Obsidian/Home.md",
+    "Literatur/Autoren/Friedrich W. Euler.md",
     "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
     "Literatur/Autoren/Brigide Schwarz.md",
     "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
@@ -268,19 +294,13 @@
     "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
     "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
     "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
-    "Organisation_von_Obsidian/Home.md",
     "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
-    "excalibrain.md",
-    "Literatur/Autoren/Walter Deeters.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Organisation_von_Obsidian/Bilder/logoBannerHisQu.png",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "Literatur/Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012.md",
     "Unbenannt.md",
     "Literatur/Spätmittelalterlicher deutscher Niederadel. Ein landschaftlicher Vergleich Joachim Schneider 2003.md",
     "Organisation_von_Obsidian/Allgemeine_Einführung.md",
-    "Literatur/Autoren/Rudolf Holbach.md",
-    "Literatur/Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001.md",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
     "_NoteCompanion/Backups",

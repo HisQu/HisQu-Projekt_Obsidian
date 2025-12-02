@@ -83,7 +83,7 @@
   "inferAllLinksAsFriends": false,
   "inverseInfer": false,
   "inverseArrowDirection": true,
-  "renderAlias": true,
+  "renderAlias": false,
   "nodeTitleScript": "",
   "backgroundColor": "#0c3e6aff",
   "excludeFilepaths": [],
@@ -99,7 +99,7 @@
   "showNeighborCount": true,
   "showFullTagName": false,
   "maxItemCount": 30,
-  "renderSiblings": false,
+  "renderSiblings": true,
   "applyPowerFilter": false,
   "baseNodeStyle": {
     "prefix": "",

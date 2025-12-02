@@ -20,6 +20,7 @@ Darin u.a.:: [[Libertas scholastica und negotium scholare. Entstehung und Sozial
 
 enthält unter anderem:: [[Libertas scholastica und negotium scholare. Entstehung und Sozialprestige des Akademikerstandes im Mittelalter Laetitia Boehm 1970]],  [[Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970]] 
 
+
 ## Weitere Bände dieser Reihe
 
 weitere Bände der Reihe::  Band 2  [[Deutscher Adel 1430-1555 Hellmuth Rößler 1965]], Band 3 [[Deutsches Patriziat 1430-1740 Hellmuth Rössler 1968]],  Band 5 [[Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972]]
