@@ -32,14 +32,14 @@
             }
           },
           {
-            "id": "643fb637d40228fb",
+            "id": "ef45d426f6769ac6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "conflict-files-obsidian-git"
+              "title": "Home"
             }
           }
         ],
@@ -222,7 +222,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -250,7 +250,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von conflict-files-obsidian-git"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -281,7 +281,7 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "643fb637d40228fb",
+  "active": "dfe52a084a7fe93d",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Literatur/Autoren/David Zbíral.md",
