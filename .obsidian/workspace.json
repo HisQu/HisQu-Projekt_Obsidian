@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
-                "mode": "preview",
+                "file": "Literatur/Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012"
             }
           }
         ]
@@ -183,7 +183,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       },
       {
         "id": "90e5484812b210aa",
@@ -196,7 +196,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,7 +224,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012"
             }
           }
         ]
@@ -253,7 +253,15 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
     "Organisation_von_Obsidian/Home.md",
+    "Literatur/Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "Unbenannt.md",
+    "excalibrain.md",
+    "Literatur/Spätmittelalterlicher deutscher Niederadel. Ein landschaftlicher Vergleich Joachim Schneider 2003.md",
+    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+    "Organisation_von_Obsidian/Allgemeine_Einführung.md",
     "Literatur/Autoren/Rudolf Holbach.md",
     "Literatur/Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001.md",
     "Literatur/Autoren/Jörg Voigt.md",
@@ -264,7 +272,6 @@
     "Literatur/Römische Kurie und Pfründenmarkt im Spätmittelalter Brigide Schwarz 1993.md",
     "Literatur/Autoren/Eva Pleticha.md",
     "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
-    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "Organisation_von_Obsidian/Allgemeine_Einführung 1.md",
     "Organisation_von_Obsidian/Banner.md",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
@@ -272,15 +279,8 @@
     "conflict-files-obsidian-git.md",
     "README.md",
     "Unbenannt 1.md",
-    "Unbenannt.md",
-    "excalibrain.md",
     "Literatur/Autoren/Brigitta König-Ries.md",
-    "Literatur/Autoren/Sheeba Samuel.md",
-    "Literatur/Autoren/Alsayed Algergawy.md",
-    "Literatur/The role of ontology matching in ontology network development Sheeba Samuel, Brigitta König-Ries, Alsayed Algergawy 2023.md",
     "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
-    "_NoteCompanion/Templates/research_paper.md",
-    "_NoteCompanion/Templates/enhance.md",
     "_NoteCompanion/Backups",
     "_NoteCompanion/Fabric",
     "_NoteCompanion/Templates",

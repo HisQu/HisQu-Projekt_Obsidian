@@ -9,15 +9,6 @@
       "key": "N"
     }
   ],
-  "obsidian-citation-plugin:open-literature-note": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "C"
-    }
-  ],
   "homepage:open-homepage": [
     {
       "modifiers": [
@@ -144,6 +135,14 @@
         "Alt"
       ],
       "key": "S"
+    }
+  ],
+  "obsidian-citation-plugin:open-literature-note": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "L"
     }
   ]
 }

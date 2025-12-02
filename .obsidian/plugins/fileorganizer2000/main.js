@@ -32819,11 +32819,11 @@ var require_lodash = __commonJS({
             return isFunction3(object2[key]);
           });
         }
-        function baseGet(object2, path) {
-          path = castPath(path, object2);
-          var index2 = 0, length = path.length;
+        function baseGet(object2, path2) {
+          path2 = castPath(path2, object2);
+          var index2 = 0, length = path2.length;
           while (object2 != null && index2 < length) {
-            object2 = object2[toKey(path[index2++])];
+            object2 = object2[toKey(path2[index2++])];
           }
           return index2 && index2 == length ? object2 : undefined2;
         }
@@ -32887,10 +32887,10 @@ var require_lodash = __commonJS({
           });
           return accumulator;
         }
-        function baseInvoke(object2, path, args) {
-          path = castPath(path, object2);
-          object2 = parent(object2, path);
-          var func = object2 == null ? object2 : object2[toKey(last(path))];
+        function baseInvoke(object2, path2, args) {
+          path2 = castPath(path2, object2);
+          object2 = parent(object2, path2);
+          var func = object2 == null ? object2 : object2[toKey(last(path2))];
           return func == null ? undefined2 : apply2(func, object2, args);
         }
         function baseIsArguments(value) {
@@ -33046,13 +33046,13 @@ var require_lodash = __commonJS({
             return object2 === source || baseIsMatch(object2, source, matchData);
           };
         }
-        function baseMatchesProperty(path, srcValue) {
-          if (isKey(path) && isStrictComparable(srcValue)) {
-            return matchesStrictComparable(toKey(path), srcValue);
+        function baseMatchesProperty(path2, srcValue) {
+          if (isKey(path2) && isStrictComparable(srcValue)) {
+            return matchesStrictComparable(toKey(path2), srcValue);
           }
           return function(object2) {
-            var objValue = get3(object2, path);
-            return objValue === undefined2 && objValue === srcValue ? hasIn(object2, path) : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
+            var objValue = get3(object2, path2);
+            return objValue === undefined2 && objValue === srcValue ? hasIn(object2, path2) : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
           };
         }
         function baseMerge(object2, source, srcIndex, customizer, stack) {
@@ -33149,23 +33149,23 @@ var require_lodash = __commonJS({
           });
         }
         function basePick(object2, paths) {
-          return basePickBy(object2, paths, function(value, path) {
-            return hasIn(object2, path);
+          return basePickBy(object2, paths, function(value, path2) {
+            return hasIn(object2, path2);
           });
         }
         function basePickBy(object2, paths, predicate) {
           var index2 = -1, length = paths.length, result2 = {};
           while (++index2 < length) {
-            var path = paths[index2], value = baseGet(object2, path);
-            if (predicate(value, path)) {
-              baseSet(result2, castPath(path, object2), value);
+            var path2 = paths[index2], value = baseGet(object2, path2);
+            if (predicate(value, path2)) {
+              baseSet(result2, castPath(path2, object2), value);
             }
           }
           return result2;
         }
-        function basePropertyDeep(path) {
+        function basePropertyDeep(path2) {
           return function(object2) {
-            return baseGet(object2, path);
+            return baseGet(object2, path2);
           };
         }
         function basePullAll(array, values2, iteratee2, comparator) {
@@ -33239,14 +33239,14 @@ var require_lodash = __commonJS({
           var array = values(collection);
           return shuffleSelf(array, baseClamp(n2, 0, array.length));
         }
-        function baseSet(object2, path, value, customizer) {
+        function baseSet(object2, path2, value, customizer) {
           if (!isObject2(object2)) {
             return object2;
           }
-          path = castPath(path, object2);
-          var index2 = -1, length = path.length, lastIndex = length - 1, nested = object2;
+          path2 = castPath(path2, object2);
+          var index2 = -1, length = path2.length, lastIndex = length - 1, nested = object2;
           while (nested != null && ++index2 < length) {
-            var key = toKey(path[index2]), newValue = value;
+            var key = toKey(path2[index2]), newValue = value;
             if (key === "__proto__" || key === "constructor" || key === "prototype") {
               return object2;
             }
@@ -33254,7 +33254,7 @@ var require_lodash = __commonJS({
               var objValue = nested[key];
               newValue = customizer ? customizer(objValue, key, nested) : undefined2;
               if (newValue === undefined2) {
-                newValue = isObject2(objValue) ? objValue : isIndex(path[index2 + 1]) ? [] : {};
+                newValue = isObject2(objValue) ? objValue : isIndex(path2[index2 + 1]) ? [] : {};
               }
             }
             assignValue(nested, key, newValue);
@@ -33420,13 +33420,13 @@ var require_lodash = __commonJS({
             }
           return result2;
         }
-        function baseUnset(object2, path) {
-          path = castPath(path, object2);
-          object2 = parent(object2, path);
-          return object2 == null || delete object2[toKey(last(path))];
+        function baseUnset(object2, path2) {
+          path2 = castPath(path2, object2);
+          object2 = parent(object2, path2);
+          return object2 == null || delete object2[toKey(last(path2))];
         }
-        function baseUpdate(object2, path, updater, customizer) {
-          return baseSet(object2, path, updater(baseGet(object2, path)), customizer);
+        function baseUpdate(object2, path2, updater, customizer) {
+          return baseSet(object2, path2, updater(baseGet(object2, path2)), customizer);
         }
         function baseWhile(array, predicate, isDrop, fromRight) {
           var length = array.length, index2 = fromRight ? length : -1;
@@ -34309,11 +34309,11 @@ var require_lodash = __commonJS({
           var match = source.match(reWrapDetails);
           return match ? match[1].split(reSplitDetails) : [];
         }
-        function hasPath(object2, path, hasFunc) {
-          path = castPath(path, object2);
-          var index2 = -1, length = path.length, result2 = false;
+        function hasPath(object2, path2, hasFunc) {
+          path2 = castPath(path2, object2);
+          var index2 = -1, length = path2.length, result2 = false;
           while (++index2 < length) {
-            var key = toKey(path[index2]);
+            var key = toKey(path2[index2]);
             if (!(result2 = object2 != null && hasFunc(object2, key))) {
               break;
             }
@@ -34515,8 +34515,8 @@ var require_lodash = __commonJS({
             return apply2(func, this, otherArgs);
           };
         }
-        function parent(object2, path) {
-          return path.length < 2 ? object2 : baseGet(object2, baseSlice(path, 0, -1));
+        function parent(object2, path2) {
+          return path2.length < 2 ? object2 : baseGet(object2, baseSlice(path2, 0, -1));
         }
         function reorder(array, indexes) {
           var arrLength = array.length, length = nativeMin(indexes.length, arrLength), oldArray = copyArray(array);
@@ -35151,10 +35151,10 @@ var require_lodash = __commonJS({
           }
           return isString2(collection) ? fromIndex <= length && collection.indexOf(value, fromIndex) > -1 : !!length && baseIndexOf(collection, value, fromIndex) > -1;
         }
-        var invokeMap = baseRest(function(collection, path, args) {
-          var index2 = -1, isFunc = typeof path == "function", result2 = isArrayLike(collection) ? Array2(collection.length) : [];
+        var invokeMap = baseRest(function(collection, path2, args) {
+          var index2 = -1, isFunc = typeof path2 == "function", result2 = isArrayLike(collection) ? Array2(collection.length) : [];
           baseEach(collection, function(value) {
-            result2[++index2] = isFunc ? apply2(path, value, args) : baseInvoke(value, path, args);
+            result2[++index2] = isFunc ? apply2(path2, value, args) : baseInvoke(value, path2, args);
           });
           return result2;
         });
@@ -35806,15 +35806,15 @@ var require_lodash = __commonJS({
         function functionsIn(object2) {
           return object2 == null ? [] : baseFunctions(object2, keysIn(object2));
         }
-        function get3(object2, path, defaultValue) {
-          var result2 = object2 == null ? undefined2 : baseGet(object2, path);
+        function get3(object2, path2, defaultValue) {
+          var result2 = object2 == null ? undefined2 : baseGet(object2, path2);
           return result2 === undefined2 ? defaultValue : result2;
         }
-        function has2(object2, path) {
-          return object2 != null && hasPath(object2, path, baseHas);
+        function has2(object2, path2) {
+          return object2 != null && hasPath(object2, path2, baseHas);
         }
-        function hasIn(object2, path) {
-          return object2 != null && hasPath(object2, path, baseHasIn);
+        function hasIn(object2, path2) {
+          return object2 != null && hasPath(object2, path2, baseHasIn);
         }
         var invert = createInverter(function(result2, value, key) {
           if (value != null && typeof value.toString != "function") {
@@ -35867,10 +35867,10 @@ var require_lodash = __commonJS({
             return result2;
           }
           var isDeep = false;
-          paths = arrayMap(paths, function(path) {
-            path = castPath(path, object2);
-            isDeep || (isDeep = path.length > 1);
-            return path;
+          paths = arrayMap(paths, function(path2) {
+            path2 = castPath(path2, object2);
+            isDeep || (isDeep = path2.length > 1);
+            return path2;
           });
           copyObject(object2, getAllKeysIn(object2), result2);
           if (isDeep) {
@@ -35896,19 +35896,19 @@ var require_lodash = __commonJS({
             return [prop];
           });
           predicate = getIteratee(predicate);
-          return basePickBy(object2, props, function(value, path) {
-            return predicate(value, path[0]);
+          return basePickBy(object2, props, function(value, path2) {
+            return predicate(value, path2[0]);
           });
         }
-        function result(object2, path, defaultValue) {
-          path = castPath(path, object2);
-          var index2 = -1, length = path.length;
+        function result(object2, path2, defaultValue) {
+          path2 = castPath(path2, object2);
+          var index2 = -1, length = path2.length;
           if (!length) {
             length = 1;
             object2 = undefined2;
           }
           while (++index2 < length) {
-            var value = object2 == null ? undefined2 : object2[toKey(path[index2])];
+            var value = object2 == null ? undefined2 : object2[toKey(path2[index2])];
             if (value === undefined2) {
               index2 = length;
               value = defaultValue;
@@ -35917,12 +35917,12 @@ var require_lodash = __commonJS({
           }
           return object2;
         }
-        function set(object2, path, value) {
-          return object2 == null ? object2 : baseSet(object2, path, value);
+        function set(object2, path2, value) {
+          return object2 == null ? object2 : baseSet(object2, path2, value);
         }
-        function setWith(object2, path, value, customizer) {
+        function setWith(object2, path2, value, customizer) {
           customizer = typeof customizer == "function" ? customizer : undefined2;
-          return object2 == null ? object2 : baseSet(object2, path, value, customizer);
+          return object2 == null ? object2 : baseSet(object2, path2, value, customizer);
         }
         var toPairs = createToPairs(keys3);
         var toPairsIn = createToPairs(keysIn);
@@ -35944,15 +35944,15 @@ var require_lodash = __commonJS({
           });
           return accumulator;
         }
-        function unset(object2, path) {
-          return object2 == null ? true : baseUnset(object2, path);
+        function unset(object2, path2) {
+          return object2 == null ? true : baseUnset(object2, path2);
         }
-        function update(object2, path, updater) {
-          return object2 == null ? object2 : baseUpdate(object2, path, castFunction(updater));
+        function update(object2, path2, updater) {
+          return object2 == null ? object2 : baseUpdate(object2, path2, castFunction(updater));
         }
-        function updateWith(object2, path, updater, customizer) {
+        function updateWith(object2, path2, updater, customizer) {
           customizer = typeof customizer == "function" ? customizer : undefined2;
-          return object2 == null ? object2 : baseUpdate(object2, path, castFunction(updater), customizer);
+          return object2 == null ? object2 : baseUpdate(object2, path2, castFunction(updater), customizer);
         }
         function values(object2) {
           return object2 == null ? [] : baseValues(object2, keys3(object2));
@@ -36333,17 +36333,17 @@ var require_lodash = __commonJS({
         function matches2(source) {
           return baseMatches(baseClone(source, CLONE_DEEP_FLAG));
         }
-        function matchesProperty(path, srcValue) {
-          return baseMatchesProperty(path, baseClone(srcValue, CLONE_DEEP_FLAG));
+        function matchesProperty(path2, srcValue) {
+          return baseMatchesProperty(path2, baseClone(srcValue, CLONE_DEEP_FLAG));
         }
-        var method = baseRest(function(path, args) {
+        var method = baseRest(function(path2, args) {
           return function(object2) {
-            return baseInvoke(object2, path, args);
+            return baseInvoke(object2, path2, args);
           };
         });
         var methodOf = baseRest(function(object2, args) {
-          return function(path) {
-            return baseInvoke(object2, path, args);
+          return function(path2) {
+            return baseInvoke(object2, path2, args);
           };
         });
         function mixin(object2, source, options) {
@@ -36390,12 +36390,12 @@ var require_lodash = __commonJS({
         var over = createOver(arrayMap);
         var overEvery = createOver(arrayEvery);
         var overSome = createOver(arraySome);
-        function property(path) {
-          return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+        function property(path2) {
+          return isKey(path2) ? baseProperty(toKey(path2)) : basePropertyDeep(path2);
         }
         function propertyOf(object2) {
-          return function(path) {
-            return object2 == null ? undefined2 : baseGet(object2, path);
+          return function(path2) {
+            return object2 == null ? undefined2 : baseGet(object2, path2);
           };
         }
         var range = createRange();
@@ -36848,12 +36848,12 @@ var require_lodash = __commonJS({
         LazyWrapper.prototype.findLast = function(predicate) {
           return this.reverse().find(predicate);
         };
-        LazyWrapper.prototype.invokeMap = baseRest(function(path, args) {
-          if (typeof path == "function") {
+        LazyWrapper.prototype.invokeMap = baseRest(function(path2, args) {
+          if (typeof path2 == "function") {
             return new LazyWrapper(this);
           }
           return this.map(function(value) {
-            return baseInvoke(value, path, args);
+            return baseInvoke(value, path2, args);
           });
         });
         LazyWrapper.prototype.reject = function(predicate) {
@@ -46971,8 +46971,8 @@ var require_parseUtil = __commonJS({
     var errors_1 = require_errors();
     var en_1 = __importDefault(require_en());
     var makeIssue2 = (params) => {
-      const { data, path, errorMaps, issueData } = params;
-      const fullPath = [...path, ...issueData.path || []];
+      const { data, path: path2, errorMaps, issueData } = params;
+      const fullPath = [...path2, ...issueData.path || []];
       const fullIssue = {
         ...issueData,
         path: fullPath
@@ -47138,11 +47138,11 @@ var require_types = __commonJS({
     var util_1 = require_util();
     var ZodError_1 = require_ZodError();
     var ParseInputLazyPath2 = class {
-      constructor(parent, value, path, key) {
+      constructor(parent, value, path2, key) {
         this._cachedPath = [];
         this.parent = parent;
         this.data = value;
-        this._path = path;
+        this._path = path2;
         this._key = key;
       }
       get path() {
@@ -53714,14 +53714,14 @@ var require_url_state_machine = __commonJS({
       return url.replace(/\u0009|\u000A|\u000D/g, "");
     }
     function shortenPath(url) {
-      const path = url.path;
-      if (path.length === 0) {
+      const path2 = url.path;
+      if (path2.length === 0) {
         return;
       }
-      if (url.scheme === "file" && path.length === 1 && isNormalizedWindowsDriveLetter(path[0])) {
+      if (url.scheme === "file" && path2.length === 1 && isNormalizedWindowsDriveLetter(path2[0])) {
         return;
       }
-      path.pop();
+      path2.pop();
     }
     function includesCredentials(url) {
       return url.username !== "" || url.password !== "";
@@ -60161,8 +60161,8 @@ var require_mime = __commonJS({
       mimeTypes[mime] = extensions;
     };
     exports2.addType = addType;
-    var getType2 = (path) => {
-      const pathParts = path.split("/").slice(-1);
+    var getType2 = (path2) => {
+      const pathParts = path2.split("/").slice(-1);
       const extension2 = pathParts[pathParts.length - 1].split(".").pop();
       const type = findType(extension2);
       return type[0];
@@ -60179,12 +60179,12 @@ var require_FsPromise = __commonJS({
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.readFile = exports2.writeFileSync = exports2.writeFile = exports2.read = exports2.open = exports2.close = exports2.stat = exports2.createReadStream = exports2.pathExists = void 0;
-    var fs = require("fs");
-    exports2.pathExists = fs.existsSync;
-    exports2.createReadStream = fs.createReadStream;
-    async function stat(path) {
+    var fs2 = require("fs");
+    exports2.pathExists = fs2.existsSync;
+    exports2.createReadStream = fs2.createReadStream;
+    async function stat(path2) {
       return new Promise((resolve2, reject2) => {
-        fs.stat(path, (err, stats) => {
+        fs2.stat(path2, (err, stats) => {
           if (err)
             reject2(err);
           else
@@ -60195,7 +60195,7 @@ var require_FsPromise = __commonJS({
     exports2.stat = stat;
     async function close2(fd) {
       return new Promise((resolve2, reject2) => {
-        fs.close(fd, (err) => {
+        fs2.close(fd, (err) => {
           if (err)
             reject2(err);
           else
@@ -60204,9 +60204,9 @@ var require_FsPromise = __commonJS({
       });
     }
     exports2.close = close2;
-    async function open(path, mode) {
+    async function open(path2, mode) {
       return new Promise((resolve2, reject2) => {
-        fs.open(path, mode, (err, fd) => {
+        fs2.open(path2, mode, (err, fd) => {
           if (err)
             reject2(err);
           else
@@ -60217,7 +60217,7 @@ var require_FsPromise = __commonJS({
     exports2.open = open;
     async function read(fd, buffer, offset, length, position3) {
       return new Promise((resolve2, reject2) => {
-        fs.read(fd, buffer, offset, length, position3, (err, bytesRead, _buffer) => {
+        fs2.read(fd, buffer, offset, length, position3, (err, bytesRead, _buffer) => {
           if (err)
             reject2(err);
           else
@@ -60226,9 +60226,9 @@ var require_FsPromise = __commonJS({
       });
     }
     exports2.read = read;
-    async function writeFile(path, data) {
+    async function writeFile(path2, data) {
       return new Promise((resolve2, reject2) => {
-        fs.writeFile(path, data, (err) => {
+        fs2.writeFile(path2, data, (err) => {
           if (err)
             reject2(err);
           else
@@ -60237,13 +60237,13 @@ var require_FsPromise = __commonJS({
       });
     }
     exports2.writeFile = writeFile;
-    function writeFileSync(path, data) {
-      fs.writeFileSync(path, data);
+    function writeFileSync(path2, data) {
+      fs2.writeFileSync(path2, data);
     }
     exports2.writeFileSync = writeFileSync;
-    async function readFile(path) {
+    async function readFile(path2) {
       return new Promise((resolve2, reject2) => {
-        fs.readFile(path, (err, buffer) => {
+        fs2.readFile(path2, (err, buffer) => {
           if (err)
             reject2(err);
           else
@@ -60732,7 +60732,7 @@ var require_FileTokenizer = __commonJS({
     exports2.fromFile = exports2.FileTokenizer = void 0;
     var AbstractTokenizer_1 = require_AbstractTokenizer();
     var peek_readable_1 = require_lib5();
-    var fs = require_FsPromise();
+    var fs2 = require_FsPromise();
     var FileTokenizer = class extends AbstractTokenizer_1.AbstractTokenizer {
       constructor(fd, fileInfo) {
         super(fileInfo);
@@ -60747,7 +60747,7 @@ var require_FileTokenizer = __commonJS({
       async readBuffer(uint8Array, options) {
         const normOptions = this.normalizeOptions(uint8Array, options);
         this.position = normOptions.position;
-        const res = await fs.read(this.fd, uint8Array, normOptions.offset, normOptions.length, normOptions.position);
+        const res = await fs2.read(this.fd, uint8Array, normOptions.offset, normOptions.length, normOptions.position);
         this.position += res.bytesRead;
         if (res.bytesRead < normOptions.length && (!options || !options.mayBeLess)) {
           throw new peek_readable_1.EndOfStreamError();
@@ -60762,23 +60762,23 @@ var require_FileTokenizer = __commonJS({
        */
       async peekBuffer(uint8Array, options) {
         const normOptions = this.normalizeOptions(uint8Array, options);
-        const res = await fs.read(this.fd, uint8Array, normOptions.offset, normOptions.length, normOptions.position);
+        const res = await fs2.read(this.fd, uint8Array, normOptions.offset, normOptions.length, normOptions.position);
         if (!normOptions.mayBeLess && res.bytesRead < normOptions.length) {
           throw new peek_readable_1.EndOfStreamError();
         }
         return res.bytesRead;
       }
       async close() {
-        return fs.close(this.fd);
+        return fs2.close(this.fd);
       }
     };
     exports2.FileTokenizer = FileTokenizer;
     async function fromFile(sourceFilePath) {
-      const stat = await fs.stat(sourceFilePath);
+      const stat = await fs2.stat(sourceFilePath);
       if (!stat.isFile) {
         throw new Error(`File not a file: ${sourceFilePath}`);
       }
-      const fd = await fs.open(sourceFilePath, "r");
+      const fd = await fs2.open(sourceFilePath, "r");
       return new FileTokenizer(fd, { path: sourceFilePath, size: stat.size });
     }
     exports2.fromFile = fromFile;
@@ -60791,7 +60791,7 @@ var require_lib6 = __commonJS({
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.fromStream = exports2.fromBuffer = exports2.EndOfStreamError = exports2.fromFile = void 0;
-    var fs = require_FsPromise();
+    var fs2 = require_FsPromise();
     var core = require_core();
     var FileTokenizer_1 = require_FileTokenizer();
     Object.defineProperty(exports2, "fromFile", { enumerable: true, get: function() {
@@ -60807,7 +60807,7 @@ var require_lib6 = __commonJS({
     async function fromStream2(stream2, fileInfo) {
       fileInfo = fileInfo ? fileInfo : {};
       if (stream2.path) {
-        const stat = await fs.stat(stream2.path);
+        const stat = await fs2.stat(stream2.path);
         fileInfo.path = stream2.path;
         fileInfo.size = stat.size;
       }
@@ -62844,8 +62844,8 @@ var require_file_type = __commonJS({
     "use strict";
     var strtok32 = require_lib6();
     var core = require_core2();
-    async function fromFile(path) {
-      const tokenizer = await strtok32.fromFile(path);
+    async function fromFile(path2) {
+      const tokenizer = await strtok32.fromFile(path2);
       try {
         return await core.fromTokenizer(tokenizer);
       } finally {
@@ -64181,13 +64181,13 @@ var require_image_bitmap = __commonJS({
     function _interopRequireDefault(obj) {
       return obj && obj.__esModule ? obj : { default: obj };
     }
-    async function getMIMEFromBuffer(buffer, path) {
+    async function getMIMEFromBuffer(buffer, path2) {
       const fileTypeFromBuffer = await _fileType.default.fromBuffer(buffer);
       if (fileTypeFromBuffer) {
         return fileTypeFromBuffer.mime;
       }
-      if (path) {
-        return MIME.getType(path);
+      if (path2) {
+        return MIME.getType(path2);
       }
       return null;
     }
@@ -64257,10 +64257,10 @@ var require_image_bitmap = __commonJS({
       const newHeight = swapDimensions ? img.bitmap.width : img.bitmap.height;
       transformBitmap(img, newWidth, newHeight, transformation);
     }
-    async function parseBitmap(data, path, cb) {
-      const mime = await getMIMEFromBuffer(data, path);
+    async function parseBitmap(data, path2, cb) {
+      const mime = await getMIMEFromBuffer(data, path2);
       if (typeof mime !== "string") {
-        return cb(new Error("Could not find MIME for Buffer <" + path + ">"));
+        return cb(new Error("Could not find MIME for Buffer <" + path2 + ">"));
       }
       this._originalMime = mime.toLowerCase();
       try {
@@ -64499,7 +64499,7 @@ var require_dist7 = __commonJS({
         _defineProperty(this, "_originalMime", _Jimp.MIME_PNG);
         _defineProperty(this, "_exif", null);
         _defineProperty(this, "_rgba", true);
-        _defineProperty(this, "writeAsync", (path) => (0, _promisify.default)(this.write, this, path));
+        _defineProperty(this, "writeAsync", (path2) => (0, _promisify.default)(this.write, this, path2));
         _defineProperty(this, "getBase64Async", (mime) => (0, _promisify.default)(this.getBase64, this, mime));
         _defineProperty(this, "getBuffer", _imageBitmap.getBuffer);
         _defineProperty(this, "getBufferAsync", _imageBitmap.getBufferAsync);
@@ -64598,7 +64598,7 @@ var require_dist7 = __commonJS({
           };
           finish(null, this);
         } else if (typeof args[0] === "string") {
-          const path = args[0];
+          const path2 = args[0];
           cb = args[1];
           if (typeof cb === "undefined") {
             cb = noop4;
@@ -64606,11 +64606,11 @@ var require_dist7 = __commonJS({
           if (typeof cb !== "function") {
             return _utils.throwError.call(this, "cb must be a function", finish);
           }
-          loadBufferFromPath(path, (err, data) => {
+          loadBufferFromPath(path2, (err, data) => {
             if (err) {
               return _utils.throwError.call(this, err, finish);
             }
-            this.parseBitmap(data, path, finish);
+            this.parseBitmap(data, path2, finish);
           });
         } else if (typeof args[0] === "object" && Buffer.isBuffer(args[0])) {
           const data = args[0];
@@ -64645,7 +64645,7 @@ var require_dist7 = __commonJS({
        * @param {function(Error, Jimp)} finish (optional) a callback for when complete
        * @memberof Jimp
        */
-      parseBitmap(data, path, finish) {
+      parseBitmap(data, path2, finish) {
         _imageBitmap.parseBitmap.call(this, data, null, finish);
       }
       /**
@@ -64735,11 +64735,11 @@ var require_dist7 = __commonJS({
        * @param {function(Error, Jimp)} cb (optional) a function to call when the image is saved to disk
        * @returns {Jimp} this for chaining of methods
        */
-      write(path, cb) {
+      write(path2, cb) {
         if (!_fs.default || !_fs.default.createWriteStream) {
           throw new Error("Cant access the filesystem. You can use the getBase64 method.");
         }
-        if (typeof path !== "string") {
+        if (typeof path2 !== "string") {
           return _utils.throwError.call(this, "path must be a string", cb);
         }
         if (typeof cb === "undefined") {
@@ -64748,8 +64748,8 @@ var require_dist7 = __commonJS({
         if (typeof cb !== "function") {
           return _utils.throwError.call(this, "cb must be a function", cb);
         }
-        const mime = MIME.getType(path) || this.getMIME();
-        const pathObj = _path.default.parse(path);
+        const mime = MIME.getType(path2) || this.getMIME();
+        const pathObj = _path.default.parse(path2);
         if (pathObj.dir) {
           _fs.default.mkdirSync(pathObj.dir, {
             recursive: true
@@ -64759,7 +64759,7 @@ var require_dist7 = __commonJS({
           if (err) {
             return _utils.throwError.call(this, err, cb);
           }
-          const stream2 = _fs.default.createWriteStream(path);
+          const stream2 = _fs.default.createWriteStream(path2);
           stream2.on("open", () => {
             stream2.write(buffer);
             stream2.end();
@@ -65409,14 +65409,14 @@ var require_timm = __commonJS({
       result[idx] = newItem;
       return result;
     }
-    function getIn(obj, path) {
-      if (!Array.isArray(path)) {
+    function getIn(obj, path2) {
+      if (!Array.isArray(path2)) {
         throwStr(IS_DEV ? "A path array should be provided when calling getIn()" : INVALID_ARGS);
       }
       if (obj == null) return void 0;
       let ptr = obj;
-      for (let i = 0; i < path.length; i++) {
-        const key = path[i];
+      for (let i = 0; i < path2.length; i++) {
+        const key = path2[i];
         ptr = ptr != null ? ptr[key] : void 0;
         if (ptr === void 0) return ptr;
       }
@@ -65430,18 +65430,18 @@ var require_timm = __commonJS({
       obj2[key] = val;
       return obj2;
     }
-    function setIn(obj, path, val) {
-      if (!path.length) return val;
-      return doSetIn(obj, path, val, 0);
+    function setIn(obj, path2, val) {
+      if (!path2.length) return val;
+      return doSetIn(obj, path2, val, 0);
     }
-    function doSetIn(obj, path, val, idx) {
+    function doSetIn(obj, path2, val, idx) {
       let newValue;
-      const key = path[idx];
-      if (idx === path.length - 1) {
+      const key = path2[idx];
+      if (idx === path2.length - 1) {
         newValue = val;
       } else {
-        const nestedObj = isObject2(obj) && isObject2(obj[key]) ? obj[key] : typeof path[idx + 1] === "number" ? [] : {};
-        newValue = doSetIn(nestedObj, path, val, idx + 1);
+        const nestedObj = isObject2(obj) && isObject2(obj[key]) ? obj[key] : typeof path2[idx + 1] === "number" ? [] : {};
+        newValue = doSetIn(nestedObj, path2, val, idx + 1);
       }
       return set(obj, key, newValue);
     }
@@ -65450,10 +65450,10 @@ var require_timm = __commonJS({
       const nextVal = fnUpdate(prevVal);
       return set(obj, key, nextVal);
     }
-    function updateIn(obj, path, fnUpdate) {
-      const prevVal = getIn(obj, path);
+    function updateIn(obj, path2, fnUpdate) {
+      const prevVal = getIn(obj, path2);
       const nextVal = fnUpdate(prevVal);
-      return setIn(obj, path, nextVal);
+      return setIn(obj, path2, nextVal);
     }
     function merge2(a, b, c2, d, e2, f, ...rest) {
       return rest.length ? doMerge.call(null, false, false, a, b, c2, d, e2, f, ...rest) : doMerge(false, false, a, b, c2, d, e2, f);
@@ -65461,8 +65461,8 @@ var require_timm = __commonJS({
     function mergeDeep2(a, b, c2, d, e2, f, ...rest) {
       return rest.length ? doMerge.call(null, false, true, a, b, c2, d, e2, f, ...rest) : doMerge(false, true, a, b, c2, d, e2, f);
     }
-    function mergeIn(a, path, b, c2, d, e2, f, ...rest) {
-      let prevVal = getIn(a, path);
+    function mergeIn(a, path2, b, c2, d, e2, f, ...rest) {
+      let prevVal = getIn(a, path2);
       if (prevVal == null) prevVal = {};
       let nextVal;
       if (rest.length) {
@@ -65470,7 +65470,7 @@ var require_timm = __commonJS({
       } else {
         nextVal = doMerge(false, false, prevVal, b, c2, d, e2, f);
       }
-      return setIn(a, path, nextVal);
+      return setIn(a, path2, nextVal);
     }
     function omit(obj, attrs) {
       const omitList = Array.isArray(attrs) ? attrs : [attrs];
@@ -67130,9 +67130,9 @@ var require_decoder = __commonJS({
         return a < 0 ? 0 : a > 255 ? 255 : a;
       }
       constructor.prototype = {
-        load: function load(path) {
+        load: function load(path2) {
           var xhr = new XMLHttpRequest();
-          xhr.open("GET", path, true);
+          xhr.open("GET", path2, true);
           xhr.responseType = "arraybuffer";
           xhr.onload = (function() {
             var data = new Uint8Array(xhr.response || xhr.mozResponseArrayBuffer);
@@ -82072,7 +82072,7 @@ var require_gifframe = __commonJS({
 var require_gifutil = __commonJS({
   "../../node_modules/gifwrap/src/gifutil.js"(exports2) {
     "use strict";
-    var fs = require("fs");
+    var fs2 = require("fs");
     var ImageQ = require_image_q();
     var BitmapImage = require_bitmapimage();
     var { GifFrame } = require_gifframe();
@@ -82187,14 +82187,14 @@ var require_gifutil = __commonJS({
       jimpImage.bitmap.data = bitmapImageToShare.bitmap.data;
       return jimpImage;
     };
-    exports2.write = function(path, frames, spec, encoder) {
+    exports2.write = function(path2, frames, spec, encoder) {
       encoder = encoder || defaultCodec;
-      const matches2 = path.match(/\.[a-zA-Z]+$/);
+      const matches2 = path2.match(/\.[a-zA-Z]+$/);
       if (matches2 !== null && INVALID_SUFFIXES.includes(matches2[0].toLowerCase())) {
-        throw new Error(`GIF '${path}' has an unexpected suffix`);
+        throw new Error(`GIF '${path2}' has an unexpected suffix`);
       }
       return encoder.encodeGif(frames, spec).then((gif) => {
-        return _writeBinary(path, gif.buffer).then(() => {
+        return _writeBinary(path2, gif.buffer).then(() => {
           return gif;
         });
       });
@@ -82266,9 +82266,9 @@ var require_gifutil = __commonJS({
         }
       }
     }
-    function _readBinary(path) {
+    function _readBinary(path2) {
       return new Promise((resolve2, reject2) => {
-        fs.readFile(path, (err, buffer) => {
+        fs2.readFile(path2, (err, buffer) => {
           if (err) {
             return reject2(err);
           }
@@ -82276,9 +82276,9 @@ var require_gifutil = __commonJS({
         });
       });
     }
-    function _writeBinary(path, buffer) {
+    function _writeBinary(path2, buffer) {
       return new Promise((resolve2, reject2) => {
-        fs.writeFile(path, buffer, (err) => {
+        fs2.writeFile(path2, buffer, (err) => {
           if (err) {
             return reject2(err);
           }
@@ -85482,7 +85482,7 @@ var require_CentraResponse = __commonJS({
 // ../../node_modules/centra/model/CentraRequest.js
 var require_CentraRequest = __commonJS({
   "../../node_modules/centra/model/CentraRequest.js"(exports2, module2) {
-    var path = require("path");
+    var path2 = require("path");
     var http = require("http");
     var https = require("https");
     var followRedirects = require_follow_redirects();
@@ -85538,7 +85538,7 @@ var require_CentraRequest = __commonJS({
         return this;
       }
       path(relativePath) {
-        this.url.pathname = path.join(this.url.pathname, relativePath);
+        this.url.pathname = path2.join(this.url.pathname, relativePath);
         return this;
       }
       body(data, sendAs) {
@@ -91949,8 +91949,8 @@ var require_types2 = __commonJS({
 // ../../node_modules/mime/mime.js
 var require_mime2 = __commonJS({
   "../../node_modules/mime/mime.js"(exports2, module2) {
-    var path = require("path");
-    var fs = require("fs");
+    var path2 = require("path");
+    var fs2 = require("fs");
     function Mime() {
       this.types = /* @__PURE__ */ Object.create(null);
       this.extensions = /* @__PURE__ */ Object.create(null);
@@ -91971,7 +91971,7 @@ var require_mime2 = __commonJS({
     };
     Mime.prototype.load = function(file) {
       this._loading = file;
-      var map2 = {}, content3 = fs.readFileSync(file, "ascii"), lines = content3.split(/[\r\n]+/);
+      var map2 = {}, content3 = fs2.readFileSync(file, "ascii"), lines = content3.split(/[\r\n]+/);
       lines.forEach(function(line) {
         var fields = line.replace(/\s*#.*|^\s*|\s*$/g, "").split(/\s+/);
         map2[fields.shift()] = fields;
@@ -91979,8 +91979,8 @@ var require_mime2 = __commonJS({
       this.define(map2);
       this._loading = null;
     };
-    Mime.prototype.lookup = function(path2, fallback) {
-      var ext = path2.replace(/^.*[\.\/\\]/, "").toLowerCase();
+    Mime.prototype.lookup = function(path3, fallback) {
+      var ext = path3.replace(/^.*[\.\/\\]/, "").toLowerCase();
       return this.types[ext] || fallback || this.default_type;
     };
     Mime.prototype.extension = function(mimeType) {
@@ -92033,9 +92033,9 @@ var require_is_binary = __commonJS({
 // ../../node_modules/load-bmfont/index.js
 var require_load_bmfont = __commonJS({
   "../../node_modules/load-bmfont/index.js"(exports2, module2) {
-    var fs = require("fs");
+    var fs2 = require("fs");
     var url = require("url");
-    var path = require("path");
+    var path2 = require("path");
     var request = require_phin();
     var parseASCII = require_parse_bmfont_ascii();
     var parseXML = require_lib9();
@@ -92079,7 +92079,7 @@ var require_load_bmfont = __commonJS({
           handleData(err);
         });
       } else {
-        fs.readFile(file, opt, handleData);
+        fs2.readFile(file, opt, handleData);
       }
     };
   }
@@ -93341,31 +93341,56 @@ __export(index_exports, {
   default: () => FileOrganizer
 });
 module.exports = __toCommonJS(index_exports);
-var import_obsidian47 = require("obsidian");
+var import_obsidian48 = require("obsidian");
 
 // services/logger.ts
 var LoggerService = class {
   constructor() {
     this.isEnabled = false;
+    this.logs = [];
+    this.maxLogs = 100;
   }
+  // Keep last 100 logs
   configure(enabled) {
     this.isEnabled = enabled;
   }
-  info(...messages) {
+  addLog(level, message, details) {
     if (!this.isEnabled) return;
+    this.logs.push({
+      level,
+      message,
+      timestamp: Date.now(),
+      details
+    });
+    if (this.logs.length > this.maxLogs) {
+      this.logs = this.logs.slice(-this.maxLogs);
+    }
+  }
+  info(...messages) {
+    const message = messages.map((m) => typeof m === "string" ? m : JSON.stringify(m)).join(" ");
+    this.addLog("info", message);
     console.info(...messages);
   }
   error(...messages) {
-    if (!this.isEnabled) return;
+    const message = messages.map((m) => typeof m === "string" ? m : JSON.stringify(m)).join(" ");
+    this.addLog("error", message);
     console.error(...messages);
   }
   warn(...messages) {
-    if (!this.isEnabled) return;
+    const message = messages.map((m) => typeof m === "string" ? m : JSON.stringify(m)).join(" ");
+    this.addLog("warn", message);
     console.warn(...messages);
   }
   debug(...messages) {
-    if (!this.isEnabled) return;
+    const message = messages.map((m) => typeof m === "string" ? m : JSON.stringify(m)).join(" ");
+    this.addLog("debug", message);
     console.debug(...messages);
+  }
+  getLogs() {
+    return [...this.logs];
+  }
+  clearLogs() {
+    this.logs = [];
   }
 };
 var logger = new LoggerService();
@@ -93375,8 +93400,8 @@ function sanitizeFileName(fileName) {
   if (!fileName) return "";
   return fileName.replace(/[\/\\:*?"<>|]/g, " -");
 }
-function cleanPath(path) {
-  const trimmedPath = path.trim();
+function cleanPath(path2) {
+  const trimmedPath = path2.trim();
   const pathWithoutLeadingAndTrailingSlashes = trimmedPath.replace(
     /^\/+|\/+$/g,
     ""
@@ -94055,9 +94080,9 @@ var FileConfigTab = ({ plugin }) => {
     }
     await plugin.saveSettings();
   };
-  const checkPathExistence = async (path) => {
+  const checkPathExistence = async (path2) => {
     try {
-      const normalizedPath = (0, import_obsidian3.normalizePath)(path);
+      const normalizedPath = (0, import_obsidian3.normalizePath)(path2);
       const exists = await plugin.app.vault.adapter.exists(normalizedPath);
       return exists;
     } catch (error) {
@@ -94065,9 +94090,9 @@ var FileConfigTab = ({ plugin }) => {
       return false;
     }
   };
-  const createFolder = async (path) => {
+  const createFolder = async (path2) => {
     try {
-      const normalizedPath = (0, import_obsidian3.normalizePath)(path);
+      const normalizedPath = (0, import_obsidian3.normalizePath)(path2);
       await plugin.app.vault.createFolder(normalizedPath);
       return true;
     } catch (error) {
@@ -94088,7 +94113,7 @@ var FileConfigTab = ({ plugin }) => {
         errorFilePath
       ];
       const existenceResults = await Promise.all(
-        pathsToCheck.map(async (path) => [path, await checkPathExistence(path)])
+        pathsToCheck.map(async (path2) => [path2, await checkPathExistence(path2)])
       );
       setPathExistence(Object.fromEntries(existenceResults));
     };
@@ -94096,8 +94121,8 @@ var FileConfigTab = ({ plugin }) => {
   }, [pathToWatch, attachmentsPath, logFolderPath, defaultDestinationPath, backupFolderPath, templatePaths, bypassedFilePath, errorFilePath]);
   (0, import_react4.useEffect)(() => {
     const newWarnings = {};
-    const checkPath = (path, key) => {
-      if (path && cleanPath(path) !== path) {
+    const checkPath = (path2, key) => {
+      if (path2 && cleanPath(path2) !== path2) {
         newWarnings[key] = "Path may contain leading/trailing slashes or spaces. Consider cleaning it.";
       }
     };
@@ -94246,9 +94271,11 @@ var CustomizationTab = ({ plugin }) => {
   const [imageInstructions, setImageInstructions] = (0, import_react5.useState)(plugin.settings.imageInstructions);
   const [customTagInstructions, setCustomTagInstructions] = (0, import_react5.useState)(plugin.settings.customTagInstructions);
   (0, import_react5.useEffect)(() => {
-    plugin.settings.useFolderEmbeddings = false;
-    plugin.saveSettings();
-  }, [plugin.settings]);
+    if (plugin.settings.useFolderEmbeddings !== false) {
+      plugin.settings.useFolderEmbeddings = false;
+      plugin.saveSettings();
+    }
+  }, []);
   const handleToggleChange = async (value, setter, settingKey) => {
     setter(value);
     plugin.settings[settingKey] = value;
@@ -94918,13 +94945,13 @@ var FileOrganizerSettingTab = class extends import_obsidian4.PluginSettingTab {
 };
 
 // views/assistant/view.tsx
-var import_obsidian40 = require("obsidian");
+var import_obsidian41 = require("obsidian");
 var React68 = __toESM(require_react());
 var import_client2 = __toESM(require_client());
 
 // views/assistant/organizer/organizer.tsx
 var React20 = __toESM(require_react());
-var import_obsidian11 = require("obsidian");
+var import_obsidian12 = require("obsidian");
 var import_lodash = __toESM(require_lodash());
 
 // ../../node_modules/clsx/dist/clsx.mjs
@@ -95035,9 +95062,9 @@ var processClassesRecursively = (classGroup, classPartObject, classGroupId, them
     });
   });
 };
-var getPart = (classPartObject, path) => {
+var getPart = (classPartObject, path2) => {
   let currentClassPartObject = classPartObject;
-  path.split(CLASS_PART_SEPARATOR).forEach((pathPart) => {
+  path2.split(CLASS_PART_SEPARATOR).forEach((pathPart) => {
     if (!currentClassPartObject.nextPart.has(pathPart)) {
       currentClassPartObject.nextPart.set(pathPart, {
         nextPart: /* @__PURE__ */ new Map(),
@@ -105950,8 +105977,8 @@ function getErrorMap() {
   return overrideErrorMap;
 }
 var makeIssue = (params) => {
-  const { data, path, errorMaps, issueData } = params;
-  const fullPath = [...path, ...issueData.path || []];
+  const { data, path: path2, errorMaps, issueData } = params;
+  const fullPath = [...path2, ...issueData.path || []];
   const fullIssue = {
     ...issueData,
     path: fullPath
@@ -106076,11 +106103,11 @@ var errorUtil;
 var _ZodEnum_cache;
 var _ZodNativeEnum_cache;
 var ParseInputLazyPath = class {
-  constructor(parent, value, path, key) {
+  constructor(parent, value, path2, key) {
     this._cachedPath = [];
     this.parent = parent;
     this.data = value;
-    this._path = path;
+    this._path = path2;
     this._key = key;
   }
   get path() {
@@ -109933,7 +109960,7 @@ var RefreshButton = ({ onRefresh }) => {
 
 // views/assistant/organizer/ai-format/templates.tsx
 var React17 = __toESM(require_react());
-var import_obsidian8 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 
 // views/assistant/organizer/ai-format/user-templates.tsx
 var React16 = __toESM(require_react());
@@ -110202,7 +110229,222 @@ var FileOrganizerSettings = class {
 };
 var DEFAULT_SETTINGS = new FileOrganizerSettings();
 
+// ../../node_modules/youtube-transcript-plus/dist/youtube-transcript-plus.js
+var import_promises = __toESM(require("fs/promises"), 1);
+var import_path2 = __toESM(require("path"), 1);
+function __awaiter(thisArg, _arguments, P, generator) {
+  function adopt(value) {
+    return value instanceof P ? value : new P(function(resolve2) {
+      resolve2(value);
+    });
+  }
+  return new (P || (P = Promise))(function(resolve2, reject2) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e2) {
+        reject2(e2);
+      }
+    }
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e2) {
+        reject2(e2);
+      }
+    }
+    function step(result) {
+      result.done ? resolve2(result.value) : adopt(result.value).then(fulfilled, rejected);
+    }
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+}
+var DEFAULT_USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+var RE_YOUTUBE = /(?:v=|\/|v\/|embed\/|watch\?.*v=|youtu\.be\/|\/v\/|e\/|watch\?.*vi?=|\/embed\/|\/v\/|vi?\/|watch\?.*vi?=|youtu\.be\/|\/vi?\/|\/e\/)([a-zA-Z0-9_-]{11})/i;
+var RE_XML_TRANSCRIPT = /<text start="([^"]*)" dur="([^"]*)">([^<]*)<\/text>/g;
+var YoutubeTranscriptTooManyRequestError = class extends Error {
+  constructor() {
+    super("YouTube is receiving too many requests from your IP address. Please try again later or use a proxy. If the issue persists, consider reducing the frequency of requests.");
+    this.name = "YoutubeTranscriptTooManyRequestError";
+  }
+};
+var YoutubeTranscriptVideoUnavailableError = class extends Error {
+  constructor(videoId) {
+    super(`The video with ID "${videoId}" is no longer available or has been removed. Please check the video URL or ID and try again.`);
+    this.name = "YoutubeTranscriptVideoUnavailableError";
+  }
+};
+var YoutubeTranscriptDisabledError = class extends Error {
+  constructor(videoId) {
+    super(`Transcripts are disabled for the video with ID "${videoId}". This may be due to the video owner disabling captions or the video not supporting transcripts.`);
+    this.name = "YoutubeTranscriptDisabledError";
+  }
+};
+var YoutubeTranscriptNotAvailableError = class extends Error {
+  constructor(videoId) {
+    super(`No transcripts are available for the video with ID "${videoId}". This may be because the video does not have captions or the captions are not accessible.`);
+    this.name = "YoutubeTranscriptNotAvailableError";
+  }
+};
+var YoutubeTranscriptNotAvailableLanguageError = class extends Error {
+  constructor(lang, availableLangs, videoId) {
+    super(`No transcripts are available in "${lang}" for the video with ID "${videoId}". Available languages: ${availableLangs.join(", ")}. Please try a different language.`);
+    this.name = "YoutubeTranscriptNotAvailableLanguageError";
+  }
+};
+var YoutubeTranscriptInvalidVideoIdError = class extends Error {
+  constructor() {
+    super('Invalid YouTube video ID or URL. Please provide a valid video ID or URL. Example: "dQw4w9WgXcQ" or "https://www.youtube.com/watch?v=dQw4w9WgXcQ".');
+    this.name = "YoutubeTranscriptInvalidVideoIdError";
+  }
+};
+function retrieveVideoId(videoId) {
+  if (videoId.length === 11) {
+    return videoId;
+  }
+  const matchId = videoId.match(RE_YOUTUBE);
+  if (matchId && matchId.length) {
+    return matchId[1];
+  }
+  throw new YoutubeTranscriptInvalidVideoIdError();
+}
+function defaultFetch(params) {
+  return __awaiter(this, void 0, void 0, function* () {
+    const { url, lang, userAgent, method = "GET", body, headers = {} } = params;
+    const fetchHeaders = Object.assign(Object.assign({ "User-Agent": userAgent || DEFAULT_USER_AGENT }, lang && { "Accept-Language": lang }), headers);
+    const fetchOptions = {
+      method,
+      headers: fetchHeaders
+    };
+    if (body && method === "POST") {
+      fetchOptions.body = body;
+    }
+    return fetch(url, fetchOptions);
+  });
+}
+var YoutubeTranscript = class _YoutubeTranscript {
+  constructor(config) {
+    this.config = config;
+  }
+  fetchTranscript(videoId) {
+    return __awaiter(this, void 0, void 0, function* () {
+      var _a16, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
+      const identifier = retrieveVideoId(videoId);
+      const lang = (_a16 = this.config) === null || _a16 === void 0 ? void 0 : _a16.lang;
+      const userAgent = (_c = (_b = this.config) === null || _b === void 0 ? void 0 : _b.userAgent) !== null && _c !== void 0 ? _c : DEFAULT_USER_AGENT;
+      const cache2 = (_d = this.config) === null || _d === void 0 ? void 0 : _d.cache;
+      const cacheTTL = (_e = this.config) === null || _e === void 0 ? void 0 : _e.cacheTTL;
+      const cacheKey = `yt:transcript:${identifier}:${lang !== null && lang !== void 0 ? lang : ""}`;
+      if (cache2) {
+        const cached = yield cache2.get(cacheKey);
+        if (cached) {
+          try {
+            return JSON.parse(cached);
+          } catch (_p) {
+          }
+        }
+      }
+      const protocol = ((_f = this.config) === null || _f === void 0 ? void 0 : _f.disableHttps) ? "http" : "https";
+      const watchUrl = `${protocol}://www.youtube.com/watch?v=${identifier}`;
+      const videoPageResponse = ((_g = this.config) === null || _g === void 0 ? void 0 : _g.videoFetch) ? yield this.config.videoFetch({ url: watchUrl, lang, userAgent }) : yield defaultFetch({ url: watchUrl, lang, userAgent });
+      if (!videoPageResponse.ok) {
+        throw new YoutubeTranscriptVideoUnavailableError(identifier);
+      }
+      const videoPageBody = yield videoPageResponse.text();
+      if (videoPageBody.includes('class="g-recaptcha"')) {
+        throw new YoutubeTranscriptTooManyRequestError();
+      }
+      const apiKeyMatch = videoPageBody.match(/"INNERTUBE_API_KEY":"([^"]+)"/) || videoPageBody.match(/INNERTUBE_API_KEY\\":\\"([^\\"]+)\\"/);
+      if (!apiKeyMatch) {
+        throw new YoutubeTranscriptNotAvailableError(identifier);
+      }
+      const apiKey = apiKeyMatch[1];
+      const playerEndpoint = `https://www.youtube.com/youtubei/v1/player?key=${apiKey}`;
+      const playerBody = {
+        context: {
+          client: {
+            clientName: "ANDROID",
+            clientVersion: "20.10.38"
+          }
+        },
+        videoId: identifier
+      };
+      const playerFetchParams = {
+        url: playerEndpoint,
+        method: "POST",
+        lang,
+        userAgent,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(playerBody)
+      };
+      const playerRes = ((_h = this.config) === null || _h === void 0 ? void 0 : _h.playerFetch) ? yield this.config.playerFetch(playerFetchParams) : yield defaultFetch(playerFetchParams);
+      if (!playerRes.ok) {
+        throw new YoutubeTranscriptVideoUnavailableError(identifier);
+      }
+      const playerJson = yield playerRes.json();
+      const tracklist = (_k = (_j = playerJson === null || playerJson === void 0 ? void 0 : playerJson.captions) === null || _j === void 0 ? void 0 : _j.playerCaptionsTracklistRenderer) !== null && _k !== void 0 ? _k : playerJson === null || playerJson === void 0 ? void 0 : playerJson.playerCaptionsTracklistRenderer;
+      const tracks = tracklist === null || tracklist === void 0 ? void 0 : tracklist.captionTracks;
+      const isPlayableOk = ((_l = playerJson === null || playerJson === void 0 ? void 0 : playerJson.playabilityStatus) === null || _l === void 0 ? void 0 : _l.status) === "OK";
+      if (!(playerJson === null || playerJson === void 0 ? void 0 : playerJson.captions) || !tracklist) {
+        if (isPlayableOk) {
+          throw new YoutubeTranscriptDisabledError(identifier);
+        }
+        throw new YoutubeTranscriptNotAvailableError(identifier);
+      }
+      if (!Array.isArray(tracks) || tracks.length === 0) {
+        throw new YoutubeTranscriptDisabledError(identifier);
+      }
+      const selectedTrack = lang ? tracks.find((t2) => t2.languageCode === lang) : tracks[0];
+      if (!selectedTrack) {
+        const available = tracks.map((t2) => t2.languageCode).filter(Boolean);
+        throw new YoutubeTranscriptNotAvailableLanguageError(lang, available, identifier);
+      }
+      let transcriptURL = selectedTrack.baseUrl || selectedTrack.url;
+      if (!transcriptURL) {
+        throw new YoutubeTranscriptNotAvailableError(identifier);
+      }
+      transcriptURL = transcriptURL.replace(/&fmt=[^&]+$/, "");
+      if ((_m = this.config) === null || _m === void 0 ? void 0 : _m.disableHttps) {
+        transcriptURL = transcriptURL.replace(/^https:\/\//, "http://");
+      }
+      const transcriptResponse = ((_o = this.config) === null || _o === void 0 ? void 0 : _o.transcriptFetch) ? yield this.config.transcriptFetch({ url: transcriptURL, lang, userAgent }) : yield defaultFetch({ url: transcriptURL, lang, userAgent });
+      if (!transcriptResponse.ok) {
+        if (transcriptResponse.status === 429) {
+          throw new YoutubeTranscriptTooManyRequestError();
+        }
+        throw new YoutubeTranscriptNotAvailableError(identifier);
+      }
+      const transcriptBody = yield transcriptResponse.text();
+      const results = [...transcriptBody.matchAll(RE_XML_TRANSCRIPT)];
+      const transcript = results.map((m) => ({
+        text: m[3],
+        duration: parseFloat(m[2]),
+        offset: parseFloat(m[1]),
+        lang: lang !== null && lang !== void 0 ? lang : selectedTrack.languageCode
+      }));
+      if (transcript.length === 0) {
+        throw new YoutubeTranscriptNotAvailableError(identifier);
+      }
+      if (cache2) {
+        try {
+          yield cache2.set(cacheKey, JSON.stringify(transcript), cacheTTL);
+        } catch (_q) {
+        }
+      }
+      return transcript;
+    });
+  }
+  static fetchTranscript(videoId, config) {
+    return __awaiter(this, void 0, void 0, function* () {
+      const instance = new _YoutubeTranscript(config);
+      return instance.fetchTranscript(videoId);
+    });
+  }
+};
+var fetchTranscript = YoutubeTranscript.fetchTranscript;
+
 // inbox/services/youtube-service.ts
+var import_obsidian8 = require("obsidian");
 var YOUTUBE_URL_PATTERNS = [
   /(?:https?:\/\/)?(?:www\.)?youtu\.be\/([a-zA-Z0-9_-]+)/,
   /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/
@@ -110216,60 +110458,175 @@ async function extractYouTubeVideoId(content3) {
   }
   return null;
 }
-async function getYouTubeContent(videoId, plugin) {
-  if (!plugin) {
+function createObsidianFetch() {
+  return async (url, options) => {
+    const response = await (0, import_obsidian8.requestUrl)({
+      url,
+      method: options?.method || "GET",
+      headers: options?.headers || {},
+      body: options?.body
+    });
+    return {
+      ok: response.status >= 200 && response.status < 300,
+      status: response.status,
+      statusText: "",
+      // RequestUrlResponse doesn't have statusText
+      text: async () => response.text,
+      json: async () => {
+        try {
+          return typeof response.json === "string" ? JSON.parse(response.json) : response.json;
+        } catch {
+          throw new Error("Invalid JSON response");
+        }
+      },
+      headers: new Headers(response.headers || {})
+    };
+  };
+}
+function decodeHtmlEntities(text6) {
+  const decoded = text6.replace(
+    /&#(\d+);/g,
+    (match, dec) => String.fromCharCode(parseInt(dec, 10))
+  ).replace(
+    /&#x([0-9a-fA-F]+);/gi,
+    (match, hex2) => String.fromCharCode(parseInt(hex2, 16))
+  ).replace(/&#39;/g, "'").replace(/&apos;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+  if (typeof document !== "undefined" && decoded !== text6) {
+    try {
+      const div = document.createElement("div");
+      div.textContent = decoded;
+      const domDecoded = div.textContent || div.innerText || decoded;
+      return domDecoded;
+    } catch (e2) {
+    }
+  }
+  return decoded;
+}
+async function fetchYouTubeTitle(videoId) {
+  try {
+    const url = `https://www.youtube.com/watch?v=${videoId}`;
+    console.log("[YouTube Service] Fetching title from:", url);
+    const response = await (0, import_obsidian8.requestUrl)({
+      url,
+      method: "GET",
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9"
+      }
+    });
+    if (response.status < 200 || response.status >= 300) {
+      throw new Error(`Failed to fetch YouTube page: ${response.status}`);
+    }
+    const html4 = response.text;
+    const titleMatch = html4.match(/<title[^>]*>([^<]+)<\/title>/i);
+    if (titleMatch && titleMatch[1]) {
+      let title = decodeHtmlEntities(titleMatch[1]);
+      title = title.replace(/\s*-\s*YouTube\s*$/, "").trim();
+      if (title) {
+        console.log("[YouTube Service] Extracted title:", title);
+        return title;
+      }
+    }
+    const ogTitleMatch = html4.match(
+      /<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i
+    );
+    if (ogTitleMatch && ogTitleMatch[1]) {
+      let title = decodeHtmlEntities(ogTitleMatch[1]);
+      title = title.trim();
+      console.log("[YouTube Service] Extracted title from og:title:", title);
+      return title;
+    }
+    throw new Error("Could not extract title from YouTube page");
+  } catch (error) {
+    console.error("[YouTube Service] Error fetching title:", error);
     throw new YouTubeError(
-      "Plugin instance required to fetch YouTube content. Please ensure the plugin is properly initialized."
+      `Failed to fetch YouTube video title: ${error instanceof Error ? error.message : "Unknown error"}`
     );
   }
+}
+async function getYouTubeContent(videoId, _plugin) {
+  console.log(
+    "[YouTube Service] Fetching YouTube content directly (client-side):",
+    videoId
+  );
   try {
-    const serverUrl = plugin.getServerUrl();
-    const apiKey = plugin.getApiKey();
-    if (!serverUrl) {
-      throw new YouTubeError(
-        "Server URL not configured. Please set your server URL in plugin settings."
-      );
+    const obsidianFetch = createObsidianFetch();
+    console.log(
+      "[YouTube Service] Starting parallel fetch of transcript and title..."
+    );
+    const [transcriptItems, title] = await Promise.all([
+      fetchTranscript(videoId, {
+        // Provide custom fetch functions that use Obsidian's requestUrl
+        videoFetch: async ({ url, lang, userAgent }) => {
+          return obsidianFetch(url, {
+            method: "GET",
+            headers: {
+              ...lang && { "Accept-Language": lang },
+              "User-Agent": userAgent
+            }
+          });
+        },
+        playerFetch: async ({
+          url,
+          method,
+          body,
+          headers,
+          lang,
+          userAgent
+        }) => {
+          return obsidianFetch(url, {
+            method: method || "POST",
+            headers: {
+              ...lang && { "Accept-Language": lang },
+              "User-Agent": userAgent,
+              ...headers
+            },
+            body
+          });
+        },
+        transcriptFetch: async ({ url, lang, userAgent }) => {
+          return obsidianFetch(url, {
+            method: "GET",
+            headers: {
+              ...lang && { "Accept-Language": lang },
+              "User-Agent": userAgent
+            }
+          });
+        }
+      }).catch((error) => {
+        console.error("[YouTube Service] Transcript fetch error:", error);
+        throw new YouTubeError(
+          `Failed to fetch transcript: ${error instanceof Error ? error.message : "Unknown error"}`
+        );
+      }),
+      fetchYouTubeTitle(videoId).catch((error) => {
+        console.warn(
+          "[YouTube Service] Title fetch failed, using fallback:",
+          error
+        );
+        return "Untitled YouTube Video";
+      })
+    ]);
+    if (!transcriptItems || transcriptItems.length === 0) {
+      throw new YouTubeError("No transcript items returned from YouTube");
     }
-    if (!apiKey) {
-      throw new YouTubeError(
-        "API key not configured. Please set your API key in plugin settings."
-      );
-    }
-    console.log("[YouTube Service] Fetching via backend API:", videoId);
-    console.log("[YouTube Service] Server URL:", serverUrl);
-    const response = await fetch(`${serverUrl}/api/youtube-transcript`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`
-      },
-      body: JSON.stringify({ videoId })
+    const transcript = transcriptItems.map((item) => item.text).join(" ");
+    const decodedTitle = decodeHtmlEntities(title);
+    console.log("[YouTube Service] Successfully fetched:", {
+      originalTitle: title,
+      decodedTitle,
+      transcriptLength: transcript.length
     });
-    if (response.ok) {
-      const data = await response.json();
-      console.log("[YouTube Service] Successfully fetched via backend API");
-      return { title: data.title, transcript: data.transcript };
-    } else {
-      const errorData = await response.json().catch(() => ({}));
-      console.error(
-        "[YouTube Service] Backend API failed:",
-        response.status,
-        errorData.error
-      );
-      throw new YouTubeError(
-        errorData.error || `Backend API failed with status ${response.status}. Please check your server configuration.`
-      );
-    }
+    return { title: decodedTitle, transcript };
   } catch (error) {
     if (error instanceof YouTubeError) {
       throw error;
     }
-    console.error("[YouTube Service] Backend API error:", error);
+    console.error("[YouTube Service] Error fetching YouTube content:", error);
     const message = error instanceof Error ? error.message : "Unknown error";
-    logger.error("Error fetching YouTube content from backend:", error);
-    throw new YouTubeError(
-      `Failed to fetch YouTube content: ${message}. Please check your server URL and API key configuration.`
-    );
+    logger.error("Error fetching YouTube content:", error);
+    throw new YouTubeError(`Failed to fetch YouTube content: ${message}`);
   }
 }
 function getOriginalContent(content3) {
@@ -110312,7 +110669,7 @@ var ClassificationContainer = ({
           try {
             console.log("[YouTube Format] Starting transcript fetch...");
             logger.info("Fetching YouTube transcript for formatting...");
-            new import_obsidian8.Notice("Fetching YouTube transcript...", 2e3);
+            new import_obsidian9.Notice("Fetching YouTube transcript...", 2e3);
             const { title, transcript } = await getYouTubeContent(
               videoId,
               plugin
@@ -110334,7 +110691,7 @@ Video ID: ${videoId}
 ${transcript}`;
             fileContent = fileContent + videoInfo;
             logger.info("YouTube transcript fetched successfully");
-            new import_obsidian8.Notice("Transcript fetched, formatting...", 2e3);
+            new import_obsidian9.Notice("Transcript fetched, formatting...", 2e3);
           } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
             console.error(
@@ -110348,7 +110705,7 @@ ${transcript}`;
               errorMessage,
               error
             );
-            new import_obsidian8.Notice(
+            new import_obsidian9.Notice(
               `Could not fetch transcript: ${errorMessage}. Formatting with available content.`,
               5e3
             );
@@ -110366,25 +110723,91 @@ ${transcript}`;
         let targetFile = file;
         if ((templateName === "youtube_video" || templateName === "youtube_video.md") && videoId && videoTitle) {
           try {
+            console.log("[YouTube Format] Attempting to rename file with title:", {
+              videoTitle,
+              videoId,
+              currentFileName: file.name,
+              parentPath: file.parent?.path
+            });
             const sanitizedTitle = videoTitle.replace(/[<>:"/\\|?*]/g, "").replace(/\s+/g, " ").trim().substring(0, 100);
             const newFileName = `${sanitizedTitle}.md`;
             const newPath = `${file.parent?.path || ""}/${newFileName}`.replace(
               /^\/+/,
               ""
             );
-            if (sanitizedTitle && newFileName !== file.name && !await plugin.app.vault.adapter.exists(newPath)) {
-              await plugin.app.fileManager.renameFile(file, newPath);
-              targetFile = plugin.app.vault.getAbstractFileByPath(
-                newPath
-              );
-              if (!targetFile) {
-                targetFile = file;
+            console.log("[YouTube Format] Rename check:", {
+              sanitizedTitle,
+              newFileName,
+              currentFileName: file.name,
+              newPath,
+              willRename: sanitizedTitle && newFileName !== file.name
+            });
+            if (sanitizedTitle && newFileName !== file.name) {
+              const pathExists = await plugin.app.vault.adapter.exists(newPath);
+              console.log("[YouTube Format] Path exists check:", {
+                newPath,
+                exists: pathExists
+              });
+              if (!pathExists) {
+                await plugin.app.fileManager.renameFile(file, newPath);
+                targetFile = plugin.app.vault.getAbstractFileByPath(
+                  newPath
+                );
+                if (!targetFile) {
+                  targetFile = file;
+                  console.warn("[YouTube Format] Rename failed: targetFile not found after rename");
+                } else {
+                  console.log("[YouTube Format] Successfully renamed file:", newFileName);
+                  logger.info(`Renamed file to match video title: ${newFileName}`);
+                }
+              } else {
+                let uniquePath = newPath;
+                let counter2 = 1;
+                const baseName = sanitizedTitle;
+                const parentDir = file.parent?.path || "";
+                while (await plugin.app.vault.adapter.exists(uniquePath)) {
+                  const uniqueFileName = `${baseName} (${counter2}).md`;
+                  uniquePath = `${parentDir}/${uniqueFileName}`.replace(/^\/+/, "");
+                  counter2++;
+                  if (counter2 > 100) {
+                    console.warn("[YouTube Format] Too many duplicate files, keeping original name");
+                    break;
+                  }
+                }
+                if (counter2 <= 100) {
+                  await plugin.app.fileManager.renameFile(file, uniquePath);
+                  targetFile = plugin.app.vault.getAbstractFileByPath(
+                    uniquePath
+                  );
+                  if (!targetFile) {
+                    targetFile = file;
+                    console.warn("[YouTube Format] Rename failed: targetFile not found after rename");
+                  } else {
+                    console.log("[YouTube Format] Successfully renamed file with unique name:", uniquePath);
+                    logger.info(`Renamed file to match video title: ${uniquePath}`);
+                  }
+                } else {
+                  console.warn("[YouTube Format] Cannot rename: too many duplicate files exist");
+                }
               }
-              logger.info(`Renamed file to match video title: ${newFileName}`);
+            } else {
+              console.log("[YouTube Format] Skipping rename:", {
+                reason: !sanitizedTitle ? "no sanitized title" : "filename unchanged",
+                sanitizedTitle,
+                newFileName,
+                currentFileName: file.name
+              });
             }
           } catch (error) {
+            console.error("[YouTube Format] Error during rename:", error);
             logger.warn("Failed to rename file with video title:", error);
           }
+        } else {
+          console.log("[YouTube Format] Not renaming - conditions not met:", {
+            isYouTubeTemplate: templateName === "youtube_video" || templateName === "youtube_video.md",
+            hasVideoId: !!videoId,
+            hasVideoTitle: !!videoTitle
+          });
         }
         await plugin.streamFormatInCurrentNote({
           file: targetFile,
@@ -110419,7 +110842,7 @@ ${transcript}`;
       }
       const backupContent = await plugin.app.vault.read(backupTFile);
       await plugin.app.vault.modify(file, backupContent);
-      new import_obsidian8.Notice("Successfully reverted to backup version", 3e3);
+      new import_obsidian9.Notice("Successfully reverted to backup version", 3e3);
     } catch (error) {
       logger.error("Error reverting to backup:", error);
     }
@@ -110487,7 +110910,7 @@ ${transcript}`;
 
 // views/assistant/organizer/transcript.tsx
 var React18 = __toESM(require_react());
-var import_obsidian9 = require("obsidian");
+var import_obsidian10 = require("obsidian");
 var import_jsx_runtime27 = __toESM(require_jsx_runtime());
 var TranscriptionButton = ({ plugin, file, content: content3 }) => {
   const [transcribing, setTranscribing] = React18.useState(false);
@@ -110497,7 +110920,7 @@ var TranscriptionButton = ({ plugin, file, content: content3 }) => {
       const audioRegex = /!\[\[(.*?\.(mp3|wav|m4a|ogg|webm))]]/gi;
       const matches2 = Array.from(content3.matchAll(audioRegex));
       if (matches2.length === 0) {
-        new import_obsidian9.Notice("No audio files found");
+        new import_obsidian10.Notice("No audio files found");
         return;
       }
       for (const match of matches2) {
@@ -110506,9 +110929,9 @@ var TranscriptionButton = ({ plugin, file, content: content3 }) => {
           audioFileName,
           "."
         );
-        if (!(audioFile instanceof import_obsidian9.TFile)) {
+        if (!(audioFile instanceof import_obsidian10.TFile)) {
           logger.error(`Audio file not found: ${audioFileName}`);
-          new import_obsidian9.Notice(`Audio file not found: ${audioFileName}`);
+          new import_obsidian10.Notice(`Audio file not found: ${audioFileName}`);
           continue;
         }
         const transcript = await plugin.generateTranscriptFromAudio(audioFile);
@@ -110517,12 +110940,12 @@ var TranscriptionButton = ({ plugin, file, content: content3 }) => {
           audioFileName,
           transcript
         );
-        new import_obsidian9.Notice(`Transcript added for: ${audioFileName}`);
+        new import_obsidian10.Notice(`Transcript added for: ${audioFileName}`);
       }
-      new import_obsidian9.Notice(`Completed transcribing ${matches2.length} audio files`);
+      new import_obsidian10.Notice(`Completed transcribing ${matches2.length} audio files`);
     } catch (error) {
       logger.error("Error transcribing audio:", error);
-      new import_obsidian9.Notice("Error transcribing audio");
+      new import_obsidian10.Notice("Error transcribing audio");
     } finally {
       setTranscribing(false);
     }
@@ -110705,7 +111128,7 @@ var LicenseValidator = ({
 };
 
 // constants.ts
-var import_obsidian10 = require("obsidian");
+var import_obsidian11 = require("obsidian");
 var VALID_IMAGE_EXTENSIONS = [
   "png",
   "jpg",
@@ -110737,7 +111160,7 @@ var VALID_EXTENSIONS = [
 var isValidExtension = (extension2) => {
   const isSupported = VALID_EXTENSIONS.includes(extension2);
   if (!isSupported) {
-    new import_obsidian10.Notice("Sorry, FileOrganizer does not support this file type.");
+    new import_obsidian11.Notice("Sorry, FileOrganizer does not support this file type.");
   }
   return isSupported;
 };
@@ -110824,7 +111247,7 @@ var AssistantView = ({
     if (!activeFile) return;
     try {
       await plugin.app.vault.delete(activeFile);
-      new import_obsidian11.Notice("File deleted successfully");
+      new import_obsidian12.Notice("File deleted successfully");
     } catch (err) {
       logger.error("Error deleting file:", err);
       setError("Failed to delete file");
@@ -110981,7 +111404,7 @@ var hasAudioEmbed = (content3) => {
 var React25 = __toESM(require_react());
 
 // inbox/services/record-manager.ts
-var import_obsidian12 = require("obsidian");
+var import_obsidian13 = require("obsidian");
 
 // inbox/services/id-service.ts
 var import_crypto = require("crypto");
@@ -111063,7 +111486,7 @@ var RecordManager = class _RecordManager {
     this.app = app;
     this.idService = IdService.getInstance();
     this.settings = {
-      recordFilePath: (0, import_obsidian12.normalizePath)("_NoteCompanion/.records")
+      recordFilePath: (0, import_obsidian13.normalizePath)("_NoteCompanion/.records")
     };
     this.loadRecords();
   }
@@ -111346,7 +111769,7 @@ var usePlugin = () => {
 };
 
 // views/assistant/inbox-logs.tsx
-var import_obsidian14 = require("obsidian");
+var import_obsidian15 = require("obsidian");
 
 // components/ui/utils.tsx
 var import_jsx_runtime32 = __toESM(require_jsx_runtime());
@@ -111710,7 +112133,7 @@ Button2.displayName = "Button";
 
 // views/assistant/organizer/components/undo-button.tsx
 var import_lucide_react4 = __toESM(require_lucide_react());
-var import_obsidian13 = require("obsidian");
+var import_obsidian14 = require("obsidian");
 var import_jsx_runtime36 = __toESM(require_jsx_runtime());
 var UndoButton = ({ record, plugin, onUndo }) => {
   const [isUndoing, setIsUndoing] = React24.useState(false);
@@ -111719,7 +112142,7 @@ var UndoButton = ({ record, plugin, onUndo }) => {
   }, [record]);
   const handleUndo = async () => {
     if (!record.file || !record.newPath) {
-      new import_obsidian13.Notice("Cannot undo: file information missing");
+      new import_obsidian14.Notice("Cannot undo: file information missing");
       return;
     }
     setIsUndoing(true);
@@ -111731,7 +112154,7 @@ var UndoButton = ({ record, plugin, onUndo }) => {
       const targetPath = `${inboxPath}/${originalName}`;
       const existing = app.vault.getAbstractFileByPath(targetPath);
       if (existing) {
-        new import_obsidian13.Notice(`Cannot undo: a file already exists at ${targetPath}`);
+        new import_obsidian14.Notice(`Cannot undo: a file already exists at ${targetPath}`);
         setIsUndoing(false);
         return;
       }
@@ -111743,13 +112166,13 @@ var UndoButton = ({ record, plugin, onUndo }) => {
         const filtered = lines.filter((line) => !tagPattern.test(line));
         await app.vault.modify(file, filtered.join("\n"));
       }
-      new import_obsidian13.Notice(`Undid processing for ${record.originalName}`);
+      new import_obsidian14.Notice(`Undid processing for ${record.originalName}`);
       if (onUndo) {
         onUndo();
       }
     } catch (error) {
       console.error("Error undoing file movement:", error);
-      new import_obsidian13.Notice(`Failed to undo: ${error.message}`);
+      new import_obsidian14.Notice(`Failed to undo: ${error.message}`);
     } finally {
       setIsUndoing(false);
     }
@@ -111879,7 +112302,7 @@ var EssentialInfoDisplay = ({ record }) => {
               if (templateFile) {
                 plugin.app.workspace.getLeaf().openFile(templateFile);
               } else {
-                new import_obsidian14.Notice(`Template file not found: ${templatePath}`);
+                new import_obsidian15.Notice(`Template file not found: ${templatePath}`);
               }
             }
           },
@@ -117354,11 +117777,11 @@ var ResolvedPos = class _ResolvedPos {
   /**
   @internal
   */
-  constructor(pos, path, parentOffset) {
+  constructor(pos, path2, parentOffset) {
     this.pos = pos;
-    this.path = path;
+    this.path = path2;
     this.parentOffset = parentOffset;
-    this.depth = path.length / 3 - 1;
+    this.depth = path2.length / 3 - 1;
   }
   /**
   @internal
@@ -117589,12 +118012,12 @@ var ResolvedPos = class _ResolvedPos {
   static resolve(doc3, pos) {
     if (!(pos >= 0 && pos <= doc3.content.size))
       throw new RangeError("Position " + pos + " out of range");
-    let path = [];
+    let path2 = [];
     let start2 = 0, parentOffset = pos;
     for (let node2 = doc3; ; ) {
       let { index: index2, offset } = node2.content.findIndex(parentOffset);
       let rem = parentOffset - offset;
-      path.push(node2, index2, start2 + offset);
+      path2.push(node2, index2, start2 + offset);
       if (!rem)
         break;
       node2 = node2.child(index2);
@@ -117603,7 +118026,7 @@ var ResolvedPos = class _ResolvedPos {
       parentOffset = rem - 1;
       start2 += offset + 1;
     }
-    return new _ResolvedPos(pos, path, parentOffset);
+    return new _ResolvedPos(pos, path2, parentOffset);
   }
   /**
   @internal
@@ -135798,14 +136221,14 @@ var KeyStore = class {
   }
 };
 function createKey2(key) {
-  let path = null;
+  let path2 = null;
   let id3 = null;
   let src = null;
   let weight = 1;
   let getFn = null;
   if (isString(key) || isArray(key)) {
     src = key;
-    path = createKeyPath(key);
+    path2 = createKeyPath(key);
     id3 = createKeyId(key);
   } else {
     if (!hasOwn.call(key, "name")) {
@@ -135819,11 +136242,11 @@ function createKey2(key) {
         throw new Error(INVALID_KEY_WEIGHT_VALUE(name16));
       }
     }
-    path = createKeyPath(name16);
+    path2 = createKeyPath(name16);
     id3 = createKeyId(name16);
     getFn = key.getFn;
   }
-  return { path, id: id3, weight, src, getFn };
+  return { path: path2, id: id3, weight, src, getFn };
 }
 function createKeyPath(key) {
   return isArray(key) ? key : key.split(".");
@@ -135831,34 +136254,34 @@ function createKeyPath(key) {
 function createKeyId(key) {
   return isArray(key) ? key.join(".") : key;
 }
-function get2(obj, path) {
+function get2(obj, path2) {
   let list3 = [];
   let arr = false;
-  const deepGet = (obj2, path2, index2) => {
+  const deepGet = (obj2, path3, index2) => {
     if (!isDefined(obj2)) {
       return;
     }
-    if (!path2[index2]) {
+    if (!path3[index2]) {
       list3.push(obj2);
     } else {
-      let key = path2[index2];
+      let key = path3[index2];
       const value = obj2[key];
       if (!isDefined(value)) {
         return;
       }
-      if (index2 === path2.length - 1 && (isString(value) || isNumber3(value) || isBoolean(value))) {
+      if (index2 === path3.length - 1 && (isString(value) || isNumber3(value) || isBoolean(value))) {
         list3.push(toString(value));
       } else if (isArray(value)) {
         arr = true;
         for (let i = 0, len = value.length; i < len; i += 1) {
-          deepGet(value[i], path2, index2 + 1);
+          deepGet(value[i], path3, index2 + 1);
         }
-      } else if (path2.length) {
-        deepGet(value, path2, index2 + 1);
+      } else if (path3.length) {
+        deepGet(value, path3, index2 + 1);
       }
     }
   };
-  deepGet(obj, isString(path) ? path.split(".") : path, 0);
+  deepGet(obj, isString(path2) ? path2.split(".") : path2, 0);
   return arr ? list3 : list3[0];
 }
 var MatchOptions = {
@@ -137170,8 +137593,8 @@ var createImpl = (createState3) => {
 var create = (createState3) => createState3 ? createImpl(createState3) : createImpl;
 
 // views/assistant/ai-chat/use-context-items.ts
-var import_obsidian15 = require("obsidian");
 var import_obsidian16 = require("obsidian");
+var import_obsidian17 = require("obsidian");
 var useContextItems = create((set, get3) => ({
   // Initial state
   files: {},
@@ -137321,8 +137744,8 @@ var useContextItems = create((set, get3) => ({
     const folderRef = app.vault.getFolderByPath(folderPath);
     if (!folderRef) return [];
     const files = [];
-    import_obsidian16.Vault.recurseChildren(folderRef, (file) => {
-      if (file instanceof import_obsidian15.TFile) {
+    import_obsidian17.Vault.recurseChildren(folderRef, (file) => {
+      if (file instanceof import_obsidian16.TFile) {
         files.push(file);
       }
     });
@@ -137491,7 +137914,7 @@ var getUniqueReferences = () => {
 
 // views/assistant/ai-chat/use-vault-items.ts
 var import_react46 = __toESM(require_react());
-var import_obsidian17 = require("obsidian");
+var import_obsidian18 = require("obsidian");
 function useVaultItems() {
   const plugin = usePlugin();
   return (0, import_react46.useMemo)(() => {
@@ -137528,9 +137951,9 @@ function useVaultItems() {
         type: "tag"
       })),
       // Helper to load file content when needed
-      loadFileContent: async (path) => {
-        const file = plugin.app.vault.getFileByPath(path);
-        if (file instanceof import_obsidian17.TFile) {
+      loadFileContent: async (path2) => {
+        const file = plugin.app.vault.getFileByPath(path2);
+        if (file instanceof import_obsidian18.TFile) {
           return await plugin.app.vault.read(file);
         }
         return null;
@@ -137628,7 +138051,7 @@ var Tiptap = ({ value, onChange, onKeyDown }) => {
 var tiptap_default = Tiptap;
 
 // views/assistant/ai-chat/ai-message-renderer.tsx
-var import_obsidian18 = require("obsidian");
+var import_obsidian19 = require("obsidian");
 
 // ../../node_modules/devlop/lib/default.js
 function ok() {
@@ -147990,13 +148413,13 @@ var VFile = class {
    * @returns {undefined}
    *   Nothing.
    */
-  set path(path) {
-    if (isUrl(path)) {
-      path = (0, import_node_url.fileURLToPath)(path);
+  set path(path2) {
+    if (isUrl(path2)) {
+      path2 = (0, import_node_url.fileURLToPath)(path2);
     }
-    assertNonEmpty(path, "path");
-    if (this.path !== path) {
-      this.history.push(path);
+    assertNonEmpty(path2, "path");
+    if (this.path !== path2) {
+      this.history.push(path2);
     }
   }
   /**
@@ -148263,8 +148686,8 @@ function assertNonEmpty(part, name16) {
     throw new Error("`" + name16 + "` cannot be empty");
   }
 }
-function assertPath(path, name16) {
-  if (!path) {
+function assertPath(path2, name16) {
+  if (!path2) {
     throw new Error("Setting `" + name16 + "` requires `path` to be set too");
   }
 }
@@ -149110,14 +149533,14 @@ var AIMarkdown = ({ content: content3, app }) => {
     e2.preventDefault();
     const href = link2.getAttribute("data-href");
     if (!href) return;
-    const linkpath = (0, import_obsidian18.getLinkpath)(href);
+    const linkpath = (0, import_obsidian19.getLinkpath)(href);
     plugin.app.workspace.openLinkText(linkpath, "", true);
   };
   return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "card", children: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "markdown-preview-view p-0", onClick: handleClick2, children: content3.split(/(\[\[.*?\]\])/g).map((part, i) => {
     if (part.startsWith("[[") && part.endsWith("]]")) {
       const inner = part.slice(2, -2);
       const [target, alias] = inner.split("|");
-      const linkpath = (0, import_obsidian18.getLinkpath)(target.trim());
+      const linkpath = (0, import_obsidian19.getLinkpath)(target.trim());
       const displayText = alias?.trim() || target.trim().replace(/\.(md|markdown)$/, "");
       return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(
         "a",
@@ -149147,7 +149570,7 @@ var AIMarkdown = ({ content: content3, app }) => {
 
 // views/assistant/ai-chat/shared/markdown-renderer.tsx
 var import_react50 = __toESM(require_react());
-var import_obsidian19 = require("obsidian");
+var import_obsidian20 = require("obsidian");
 var import_jsx_runtime42 = __toESM(require_jsx_runtime());
 var MarkdownContent = ({
   content: content3,
@@ -149191,8 +149614,8 @@ var MarkdownContent = ({
       try {
         const leaf = plugin.app.workspace.getMostRecentLeaf();
         const tempContainer = document.createElement("div");
-        if (leaf?.view instanceof import_obsidian19.MarkdownView) {
-          await import_obsidian19.MarkdownRenderer.render(
+        if (leaf?.view instanceof import_obsidian20.MarkdownView) {
+          await import_obsidian20.MarkdownRenderer.render(
             plugin.app,
             content3,
             tempContainer,
@@ -149200,7 +149623,7 @@ var MarkdownContent = ({
             leaf.view
           );
         } else {
-          await import_obsidian19.MarkdownRenderer.renderMarkdown(
+          await import_obsidian20.MarkdownRenderer.renderMarkdown(
             content3,
             tempContainer,
             "",
@@ -149631,7 +150054,7 @@ function LastModifiedHandler({
 
 // views/assistant/ai-chat/tool-handlers/open-file-handler.tsx
 var import_react55 = __toESM(require_react());
-var import_obsidian20 = require("obsidian");
+var import_obsidian21 = require("obsidian");
 var import_jsx_runtime51 = __toESM(require_jsx_runtime());
 function OpenFileHandler({
   toolInvocation,
@@ -149646,7 +150069,7 @@ function OpenFileHandler({
         const args2 = toolInvocation.args;
         try {
           const file = app.vault.getAbstractFileByPath(args2.filePath);
-          if (!(file instanceof import_obsidian20.TFile)) {
+          if (!(file instanceof import_obsidian21.TFile)) {
             handleAddResult(
               JSON.stringify({
                 success: false,
@@ -149734,7 +150157,7 @@ function SettingsUpdateHandler({
 
 // views/assistant/ai-chat/tool-handlers/append-content-handler.tsx
 var import_react57 = __toESM(require_react());
-var import_obsidian21 = require("obsidian");
+var import_obsidian22 = require("obsidian");
 var import_jsx_runtime53 = __toESM(require_jsx_runtime());
 function AppendContentHandler({
   toolInvocation,
@@ -149748,7 +150171,7 @@ function AppendContentHandler({
       const activeFile = fileName ? plugin.app.vault.getAbstractFileByPath(fileName) : plugin.app.workspace.getActiveFile();
       if (activeFile) {
         const currentContent = await plugin.app.vault.read(activeFile);
-        if (!(activeFile instanceof import_obsidian21.TFile)) {
+        if (!(activeFile instanceof import_obsidian22.TFile)) {
           throw new Error("Active file is not a TFile");
         }
         await plugin.app.vault.modify(
@@ -149820,21 +150243,21 @@ function OnboardHandler({
   const [isValidated, setIsValidated] = (0, import_react58.useState)(false);
   const { toggleLightweightMode } = useContextItems();
   const plugin = usePlugin();
-  const getFilesFromPath = (path) => {
+  const getFilesFromPath = (path2) => {
     const allUserFiles = plugin.getAllUserMarkdownFiles();
-    if (path === "/") {
+    if (path2 === "/") {
       return allUserFiles;
     }
     return allUserFiles.filter((file) => {
       const filePath = file.path;
-      return filePath.startsWith(path + "/") || filePath === path;
+      return filePath.startsWith(path2 + "/") || filePath === path2;
     });
   };
-  const analyzeFolderStructure = async (path, depth = 0, maxDepth2 = 3) => {
+  const analyzeFolderStructure = async (path2, depth = 0, maxDepth2 = 3) => {
     toggleLightweightMode();
-    const files = getFilesFromPath(path);
+    const files = getFilesFromPath(path2);
     const structure = {
-      path,
+      path: path2,
       files: await Promise.all(
         files.map(async (file) => {
           const fileData = {
@@ -149849,11 +150272,11 @@ function OnboardHandler({
       subfolders: [],
       depth
     };
-    if (depth < maxDepth2 && path !== "/") {
+    if (depth < maxDepth2 && path2 !== "/") {
       const userFolders = plugin.getAllUserFolders().filter((folderPath) => {
-        const isSubfolder = folderPath.startsWith(path + "/");
+        const isSubfolder = folderPath.startsWith(path2 + "/");
         const folderDepth = folderPath.split("/").length;
-        const currentDepth = path.split("/").length;
+        const currentDepth = path2.split("/").length;
         return isSubfolder && folderDepth === currentDepth + 1;
       });
       for (const folderPath of userFolders) {
@@ -149871,8 +150294,8 @@ function OnboardHandler({
     setIsAnalyzing(true);
     toggleLightweightMode();
     try {
-      const { path = "/", maxDepth: maxDepth2 = 3 } = toolInvocation.args;
-      const structure = await analyzeFolderStructure(path, 0, maxDepth2);
+      const { path: path2 = "/", maxDepth: maxDepth2 = 3 } = toolInvocation.args;
+      const structure = await analyzeFolderStructure(path2, 0, maxDepth2);
       setIsValidated(true);
       const analysisData = {
         structure,
@@ -150047,7 +150470,7 @@ function MoveFilesHandler({
 
 // views/assistant/ai-chat/tool-handlers/rename-files-handler.tsx
 var import_react60 = __toESM(require_react());
-var import_obsidian22 = require("obsidian");
+var import_obsidian23 = require("obsidian");
 var import_jsx_runtime56 = __toESM(require_jsx_runtime());
 function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
   const plugin = usePlugin();
@@ -150066,7 +150489,7 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
     for (const fileData of files) {
       try {
         const existingFile = plugin.app.vault.getAbstractFileByPath(fileData.oldPath);
-        if (existingFile && existingFile instanceof import_obsidian22.TFile) {
+        if (existingFile && existingFile instanceof import_obsidian23.TFile) {
           const newPath = existingFile.path.replace(existingFile.name, fileData.newName);
           await plugin.app.fileManager.renameFile(existingFile, newPath);
           renameResults.push(`\u2705 Renamed: ${existingFile.path} \u2192 ${newPath}`);
@@ -150353,13 +150776,13 @@ function AddTextHandler({
     const handleAddText = async () => {
       if (!hasFetchedRef.current && !("result" in toolInvocation)) {
         hasFetchedRef.current = true;
-        const { content: content3, path } = toolInvocation.args;
+        const { content: content3, path: path2 } = toolInvocation.args;
         try {
           let targetFile;
-          if (path) {
-            targetFile = app.vault.getAbstractFileByPath(path);
+          if (path2) {
+            targetFile = app.vault.getAbstractFileByPath(path2);
             if (!targetFile) {
-              throw new Error(`File not found at path: ${path}`);
+              throw new Error(`File not found at path: ${path2}`);
             }
           } else {
             targetFile = app.workspace.getActiveFile();
@@ -150376,7 +150799,7 @@ function AddTextHandler({
             await app.vault.modify(targetFile, currentContent + "\n" + content3);
           }
           logger.info(`Successfully added text to document: ${targetFile.path}`);
-          handleAddResult(`Successfully added text to document${path ? `: ${path}` : ""}`);
+          handleAddResult(`Successfully added text to document${path2 ? `: ${path2}` : ""}`);
           setAddSuccess(true);
         } catch (error) {
           logger.error("Error adding text to document:", error);
@@ -150415,14 +150838,14 @@ function ModifyTextHandler({
     const fetchModifications = async () => {
       if (!hasFetchedRef.current && !("result" in toolInvocation)) {
         hasFetchedRef.current = true;
-        const { content: content3, path, instructions } = toolInvocation.args;
+        const { content: content3, path: path2, instructions } = toolInvocation.args;
         try {
           let targetFile;
           let originalContent;
-          if (path) {
-            targetFile = app.vault.getAbstractFileByPath(path);
+          if (path2) {
+            targetFile = app.vault.getAbstractFileByPath(path2);
             if (!targetFile) {
-              throw new Error(`File not found at path: ${path}`);
+              throw new Error(`File not found at path: ${path2}`);
             }
           } else {
             targetFile = app.workspace.getActiveFile();
@@ -150609,8 +151032,8 @@ function ModifyTextHandler({
 
 // views/assistant/ai-chat/tool-handlers/metadata-handler.tsx
 var import_react65 = __toESM(require_react());
-var import_obsidian23 = require("obsidian");
 var import_obsidian24 = require("obsidian");
+var import_obsidian25 = require("obsidian");
 var import_jsx_runtime61 = __toESM(require_jsx_runtime());
 function MetadataHandler({
   toolInvocation,
@@ -150620,7 +151043,7 @@ function MetadataHandler({
   const hasFetchedRef = (0, import_react65.useRef)(false);
   const extractMetadata = async (filePath, options) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian23.TFile)) return null;
+    if (!(file instanceof import_obsidian24.TFile)) return null;
     const cache2 = app.metadataCache.getFileCache(file);
     const metadata = {
       path: file.path,
@@ -150633,7 +151056,7 @@ function MetadataHandler({
       metadata.frontmatter = cache2.frontmatter;
     }
     if (options.includeTags !== false && cache2) {
-      const tags = (0, import_obsidian24.getAllTags)(cache2);
+      const tags = (0, import_obsidian25.getAllTags)(cache2);
       if (tags) {
         metadata.tags = tags;
       }
@@ -150665,7 +151088,7 @@ function MetadataHandler({
         try {
           const results = await Promise.all(
             args2.filePaths.map(
-              (path) => extractMetadata(path, {
+              (path2) => extractMetadata(path2, {
                 includeContent: args2.includeContent,
                 includeFrontmatter: args2.includeFrontmatter,
                 includeTags: args2.includeTags,
@@ -150694,7 +151117,7 @@ function MetadataHandler({
 
 // views/assistant/ai-chat/tool-handlers/frontmatter-handler.tsx
 var import_react66 = __toESM(require_react());
-var import_obsidian25 = require("obsidian");
+var import_obsidian26 = require("obsidian");
 var import_jsx_runtime62 = __toESM(require_jsx_runtime());
 function FrontmatterHandler({
   toolInvocation,
@@ -150704,7 +151127,7 @@ function FrontmatterHandler({
   const hasFetchedRef = (0, import_react66.useRef)(false);
   const updateFrontmatter = async (filePath, updates, deletions) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian25.TFile)) {
+    if (!(file instanceof import_obsidian26.TFile)) {
       return {
         success: false,
         message: `File not found: ${filePath}`
@@ -150784,7 +151207,7 @@ function FrontmatterHandler({
 
 // views/assistant/ai-chat/tool-handlers/tags-handler.tsx
 var import_react67 = __toESM(require_react());
-var import_obsidian26 = require("obsidian");
+var import_obsidian27 = require("obsidian");
 var import_jsx_runtime63 = __toESM(require_jsx_runtime());
 function TagsHandler({
   toolInvocation,
@@ -150797,7 +151220,7 @@ function TagsHandler({
     for (const filePath of filePaths2) {
       try {
         const file = app.vault.getAbstractFileByPath(filePath);
-        if (!(file instanceof import_obsidian26.TFile)) {
+        if (!(file instanceof import_obsidian27.TFile)) {
           results.push({
             path: filePath,
             success: false,
@@ -150923,7 +151346,7 @@ ${tagLine}`;
 
 // views/assistant/ai-chat/tool-handlers/backlinks-handler.tsx
 var import_react68 = __toESM(require_react());
-var import_obsidian27 = require("obsidian");
+var import_obsidian28 = require("obsidian");
 var import_jsx_runtime64 = __toESM(require_jsx_runtime());
 function BacklinksHandler({
   toolInvocation,
@@ -150933,7 +151356,7 @@ function BacklinksHandler({
   const hasFetchedRef = (0, import_react68.useRef)(false);
   const getBacklinks = (filePath, includeUnresolved) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian27.TFile)) {
+    if (!(file instanceof import_obsidian28.TFile)) {
       return {
         path: filePath,
         success: false,
@@ -150941,15 +151364,15 @@ function BacklinksHandler({
       };
     }
     const backlinksForFile = app.metadataCache.getBacklinksForFile(file);
-    const resolved = backlinksForFile ? Array.from(backlinksForFile.keys()).map((path) => ({
-      path,
-      count: backlinksForFile.get(path) || 0
+    const resolved = backlinksForFile ? Array.from(backlinksForFile.keys()).map((path2) => ({
+      path: path2,
+      count: backlinksForFile.get(path2) || 0
     })) : [];
     let unresolved = [];
     if (includeUnresolved) {
       const unresolvedLinks = app.metadataCache.unresolvedLinks;
-      unresolved = Object.entries(unresolvedLinks).filter(([, links]) => filePath in links).map(([path, links]) => ({
-        path,
+      unresolved = Object.entries(unresolvedLinks).filter(([, links]) => filePath in links).map(([path2, links]) => ({
+        path: path2,
         count: links[filePath]
       }));
     }
@@ -150969,7 +151392,7 @@ function BacklinksHandler({
         const { filePaths: filePaths2, includeUnresolved } = toolInvocation.args;
         try {
           const results = filePaths2.map(
-            (path) => getBacklinks(path, includeUnresolved || false)
+            (path2) => getBacklinks(path2, includeUnresolved || false)
           );
           handleAddResult(JSON.stringify(results));
         } catch (error) {
@@ -150998,7 +151421,7 @@ function BacklinksHandler({
 
 // views/assistant/ai-chat/tool-handlers/outgoing-links-handler.tsx
 var import_react69 = __toESM(require_react());
-var import_obsidian28 = require("obsidian");
+var import_obsidian29 = require("obsidian");
 var import_jsx_runtime65 = __toESM(require_jsx_runtime());
 function OutgoingLinksHandler({
   toolInvocation,
@@ -151008,7 +151431,7 @@ function OutgoingLinksHandler({
   const hasFetchedRef = (0, import_react69.useRef)(false);
   const getOutgoingLinks = (filePath, includeEmbeds, resolvedOnly) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian28.TFile)) {
+    if (!(file instanceof import_obsidian29.TFile)) {
       return {
         path: filePath,
         success: false,
@@ -151059,8 +151482,8 @@ function OutgoingLinksHandler({
         const { filePaths: filePaths2, includeEmbeds, resolvedOnly } = toolInvocation.args;
         try {
           const results = filePaths2.map(
-            (path) => getOutgoingLinks(
-              path,
+            (path2) => getOutgoingLinks(
+              path2,
               includeEmbeds !== false,
               resolvedOnly || false
             )
@@ -151092,7 +151515,7 @@ function OutgoingLinksHandler({
 
 // views/assistant/ai-chat/tool-handlers/headings-handler.tsx
 var import_react70 = __toESM(require_react());
-var import_obsidian29 = require("obsidian");
+var import_obsidian30 = require("obsidian");
 var import_jsx_runtime66 = __toESM(require_jsx_runtime());
 function HeadingsHandler({
   toolInvocation,
@@ -151102,7 +151525,7 @@ function HeadingsHandler({
   const hasFetchedRef = (0, import_react70.useRef)(false);
   const getHeadings = (filePath, minLevel = 1, maxLevel = 6) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian29.TFile)) {
+    if (!(file instanceof import_obsidian30.TFile)) {
       return {
         path: filePath,
         success: false,
@@ -151140,7 +151563,7 @@ function HeadingsHandler({
         const { filePaths: filePaths2, minLevel, maxLevel } = toolInvocation.args;
         try {
           const results = filePaths2.map(
-            (path) => getHeadings(path, minLevel || 1, maxLevel || 6)
+            (path2) => getHeadings(path2, minLevel || 1, maxLevel || 6)
           );
           handleAddResult(JSON.stringify(results));
         } catch (error) {
@@ -151169,7 +151592,7 @@ function HeadingsHandler({
 
 // views/assistant/ai-chat/tool-handlers/create-files-handler.tsx
 var import_react71 = __toESM(require_react());
-var import_obsidian30 = require("obsidian");
+var import_obsidian31 = require("obsidian");
 var import_jsx_runtime67 = __toESM(require_jsx_runtime());
 function CreateFilesHandler({
   toolInvocation,
@@ -151221,8 +151644,8 @@ function CreateFilesHandler({
         const activeFile = app.workspace.getActiveFile();
         if (activeFile) {
           const currentContent = await app.vault.read(activeFile);
-          const links = createdPaths.map((path) => {
-            const linkText = path.replace(/\.md$/, "");
+          const links = createdPaths.map((path2) => {
+            const linkText = path2.replace(/\.md$/, "");
             return `- [[${linkText}]]`;
           }).join("\n");
           const newContent = `${currentContent}
@@ -151259,7 +151682,7 @@ ${links}`;
               message: `Created ${successCount} file(s)${failCount > 0 ? `, ${failCount} failed` : ""}`
             })
           );
-          new import_obsidian30.Notice(
+          new import_obsidian31.Notice(
             `Created ${successCount} file(s)${failCount > 0 ? `, ${failCount} failed` : ""}`
           );
         } catch (error) {
@@ -151269,7 +151692,7 @@ ${links}`;
               error: `Failed to create files: ${error.message}`
             })
           );
-          new import_obsidian30.Notice(`Error creating files: ${error.message}`);
+          new import_obsidian31.Notice(`Error creating files: ${error.message}`);
         } finally {
           setIsCreating(false);
         }
@@ -151287,17 +151710,17 @@ ${links}`;
       " file(s)..."
     ] }) : /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)("div", { className: "space-y-1", children: [
       /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("div", { className: "text-[--text-success] text-xs", children: "\u2713 Files created successfully" }),
-      createdFiles.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("div", { className: "text-[--text-faint] text-xs", children: createdFiles.map((path) => /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)("div", { children: [
+      createdFiles.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("div", { className: "text-[--text-faint] text-xs", children: createdFiles.map((path2) => /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)("div", { children: [
         "\u2022 ",
-        path
-      ] }, path)) })
+        path2
+      ] }, path2)) })
     ] })
   ] });
 }
 
 // views/assistant/ai-chat/tool-handlers/delete-files-handler.tsx
 var import_react72 = __toESM(require_react());
-var import_obsidian31 = require("obsidian");
+var import_obsidian32 = require("obsidian");
 var import_jsx_runtime68 = __toESM(require_jsx_runtime());
 function DeleteFilesHandler({
   toolInvocation,
@@ -151316,12 +151739,12 @@ function DeleteFilesHandler({
         const { filePaths } = toolInvocation.args;
         const valid2 = [];
         const invalid = [];
-        filePaths.forEach((path) => {
-          const file = app.vault.getAbstractFileByPath(path);
-          if (file instanceof import_obsidian31.TFile) {
+        filePaths.forEach((path2) => {
+          const file = app.vault.getAbstractFileByPath(path2);
+          if (file instanceof import_obsidian32.TFile) {
             valid2.push(file);
           } else {
-            invalid.push(path);
+            invalid.push(path2);
           }
         });
         setValidFiles(valid2);
@@ -151352,7 +151775,7 @@ function DeleteFilesHandler({
     setIsDone(true);
     const message = permanentDelete2 ? `Permanently deleted ${deletedCount} file(s)` : `Moved ${deletedCount} file(s) to trash`;
     const resultMessage = failedCount > 0 ? `${message}, ${failedCount} failed` : message;
-    new import_obsidian31.Notice(resultMessage);
+    new import_obsidian32.Notice(resultMessage);
     handleAddResult(
       JSON.stringify({
         success: true,
@@ -151444,7 +151867,7 @@ function DeleteFilesHandler({
 
 // views/assistant/ai-chat/tool-handlers/merge-files-handler.tsx
 var import_react73 = __toESM(require_react());
-var import_obsidian32 = require("obsidian");
+var import_obsidian33 = require("obsidian");
 var import_jsx_runtime69 = __toESM(require_jsx_runtime());
 function MergeFilesHandler({
   toolInvocation,
@@ -151463,12 +151886,12 @@ function MergeFilesHandler({
         const { sourceFiles } = toolInvocation.args;
         const valid2 = [];
         const invalid = [];
-        sourceFiles.forEach((path) => {
-          const file = app.vault.getAbstractFileByPath(path);
-          if (file instanceof import_obsidian32.TFile) {
+        sourceFiles.forEach((path2) => {
+          const file = app.vault.getAbstractFileByPath(path2);
+          if (file instanceof import_obsidian33.TFile) {
             valid2.push(file);
           } else {
-            invalid.push(path);
+            invalid.push(path2);
           }
         });
         setValidFiles(valid2);
@@ -151493,7 +151916,7 @@ function MergeFilesHandler({
       const mergedContent = contents.join(separator);
       const outputPath = outputFolder ? `${outputFolder}/${outputFileName2}.md` : `${outputFileName2}.md`;
       const existingFile = app.vault.getAbstractFileByPath(outputPath);
-      if (existingFile instanceof import_obsidian32.TFile) {
+      if (existingFile instanceof import_obsidian33.TFile) {
         const confirmOverwrite = confirm(
           `File "${outputFileName2}.md" already exists. Overwrite?`
         );
@@ -151518,7 +151941,7 @@ function MergeFilesHandler({
       }
       setIsDone(true);
       const message = deleteSource2 ? `Merged ${validFiles.length} files into "${outputFileName2}.md" and deleted source files` : `Merged ${validFiles.length} files into "${outputFileName2}.md"`;
-      new import_obsidian32.Notice(message);
+      new import_obsidian33.Notice(message);
       handleAddResult(
         JSON.stringify({
           success: true,
@@ -151530,7 +151953,7 @@ function MergeFilesHandler({
       );
     } catch (error) {
       setIsDone(true);
-      new import_obsidian32.Notice(`Failed to merge files: ${error.message}`);
+      new import_obsidian33.Notice(`Failed to merge files: ${error.message}`);
       handleAddResult(
         JSON.stringify({
           success: false,
@@ -151634,7 +152057,7 @@ function MergeFilesHandler({
 
 // views/assistant/ai-chat/tool-handlers/create-template-handler.tsx
 var import_react74 = __toESM(require_react());
-var import_obsidian33 = require("obsidian");
+var import_obsidian34 = require("obsidian");
 var import_jsx_runtime70 = __toESM(require_jsx_runtime());
 function CreateTemplateHandler({
   toolInvocation,
@@ -151678,7 +152101,7 @@ function CreateTemplateHandler({
       }
       setIsDone(true);
       const message = `Created template "${templateName2}" in ${templateFolder}/`;
-      new import_obsidian33.Notice(message);
+      new import_obsidian34.Notice(message);
       handleAddResult(
         JSON.stringify({
           success: true,
@@ -151688,7 +152111,7 @@ function CreateTemplateHandler({
       );
     } catch (error) {
       setIsDone(true);
-      new import_obsidian33.Notice(`Failed to create template: ${error.message}`);
+      new import_obsidian34.Notice(`Failed to create template: ${error.message}`);
       handleAddResult(
         JSON.stringify({
           success: false,
@@ -151770,7 +152193,7 @@ function CreateTemplateHandler({
 
 // views/assistant/ai-chat/tool-handlers/bulk-find-replace-handler.tsx
 var import_react75 = __toESM(require_react());
-var import_obsidian34 = require("obsidian");
+var import_obsidian35 = require("obsidian");
 var import_jsx_runtime71 = __toESM(require_jsx_runtime());
 function BulkFindReplaceHandler({
   toolInvocation,
@@ -151796,9 +152219,9 @@ function BulkFindReplaceHandler({
         const valid2 = [];
         const invalid = [];
         const counts = [];
-        for (const path of filePaths) {
-          const file = app.vault.getAbstractFileByPath(path);
-          if (file instanceof import_obsidian34.TFile) {
+        for (const path2 of filePaths) {
+          const file = app.vault.getAbstractFileByPath(path2);
+          if (file instanceof import_obsidian35.TFile) {
             valid2.push(file);
             try {
               const content3 = await app.vault.read(file);
@@ -151822,7 +152245,7 @@ function BulkFindReplaceHandler({
               counts.push({ path: file.path, count: 0 });
             }
           } else {
-            invalid.push(path);
+            invalid.push(path2);
           }
         }
         setValidFiles(valid2);
@@ -151883,7 +152306,7 @@ function BulkFindReplaceHandler({
     }
     setIsDone(true);
     const message = `Replaced ${totalMatches2} occurrence(s) in ${filesModified} file(s)`;
-    new import_obsidian34.Notice(message);
+    new import_obsidian35.Notice(message);
     handleAddResult(
       JSON.stringify({
         success: true,
@@ -152015,7 +152438,7 @@ function BulkFindReplaceHandler({
 
 // views/assistant/ai-chat/tool-handlers/export-to-format-handler.tsx
 var import_react76 = __toESM(require_react());
-var import_obsidian35 = require("obsidian");
+var import_obsidian36 = require("obsidian");
 var import_jsx_runtime72 = __toESM(require_jsx_runtime());
 function ExportToFormatHandler({
   toolInvocation,
@@ -152034,12 +152457,12 @@ function ExportToFormatHandler({
         const { filePaths } = toolInvocation.args;
         const valid2 = [];
         const invalid = [];
-        filePaths.forEach((path) => {
-          const file = app.vault.getAbstractFileByPath(path);
-          if (file instanceof import_obsidian35.TFile) {
+        filePaths.forEach((path2) => {
+          const file = app.vault.getAbstractFileByPath(path2);
+          if (file instanceof import_obsidian36.TFile) {
             valid2.push(file);
           } else {
-            invalid.push(path);
+            invalid.push(path2);
           }
         });
         setValidFiles(valid2);
@@ -152116,7 +152539,7 @@ ${content3.replace(/\n/g, "<br>\n")}
       }
       setIsDone(true);
       const message = `Exported ${exportedCount} file(s) to ${format3.toUpperCase()}`;
-      new import_obsidian35.Notice(message);
+      new import_obsidian36.Notice(message);
       handleAddResult(
         JSON.stringify({
           success: true,
@@ -152130,7 +152553,7 @@ ${content3.replace(/\n/g, "<br>\n")}
       );
     } catch (error) {
       setIsDone(true);
-      new import_obsidian35.Notice(`Export failed: ${error.message}`);
+      new import_obsidian36.Notice(`Export failed: ${error.message}`);
       handleAddResult(
         JSON.stringify({
           success: false,
@@ -157332,7 +157755,7 @@ var SelectedItem = ({
 );
 
 // views/assistant/ai-chat/components/context-items.tsx
-var import_obsidian36 = require("obsidian");
+var import_obsidian37 = require("obsidian");
 var import_jsx_runtime79 = __toESM(require_jsx_runtime());
 var ContextItems = () => {
   const plugin = usePlugin();
@@ -157386,7 +157809,7 @@ var ContextItems = () => {
   };
   const handleOpenFolder = (folderPath) => {
     const folder = app.vault.getAbstractFileByPath(folderPath);
-    if (folder && folder instanceof import_obsidian36.TFolder) {
+    if (folder && folder instanceof import_obsidian37.TFolder) {
       const fileExplorerLeaf = app.workspace.getLeavesOfType("file-explorer")[0];
       if (fileExplorerLeaf) {
         app.workspace.revealLeaf(fileExplorerLeaf);
@@ -157653,7 +158076,7 @@ function isSearchResultsAnnotation(annotation) {
 
 // views/assistant/ai-chat/use-editor-selection.ts
 var import_react84 = __toESM(require_react());
-var import_obsidian37 = require("obsidian");
+var import_obsidian38 = require("obsidian");
 var EMPTY_CONTEXT = {
   selectedText: "",
   cursorPosition: null,
@@ -157669,7 +158092,7 @@ function useEditorSelection(app) {
   const [frozenContext, setFrozenContext] = (0, import_react84.useState)(EMPTY_CONTEXT);
   (0, import_react84.useEffect)(() => {
     const updateContext = () => {
-      const view2 = app.workspace.getActiveViewOfType(import_obsidian37.MarkdownView);
+      const view2 = app.workspace.getActiveViewOfType(import_obsidian38.MarkdownView);
       if (!view2 || !view2.editor) {
         setCurrentContext(EMPTY_CONTEXT);
         return;
@@ -158206,7 +158629,7 @@ var container_default = AIChatSidebar;
 var import_react88 = __toESM(require_react());
 
 // apiUtils.ts
-var import_obsidian38 = require("obsidian");
+var import_obsidian39 = require("obsidian");
 async function makeApiRequest(requestFn) {
   logMessage("Making API request", requestFn);
   const response = await requestFn();
@@ -158214,14 +158637,14 @@ async function makeApiRequest(requestFn) {
     return response.json;
   }
   if (response.json.error) {
-    new import_obsidian38.Notice(`File Organizer error: ${response.json.error}`, 6e3);
+    new import_obsidian39.Notice(`File Organizer error: ${response.json.error}`, 6e3);
     throw new Error(response.json.error);
   }
   throw new Error("Unknown error");
 }
 async function checkLicenseKey(serverUrl, key) {
   try {
-    const response = await (0, import_obsidian38.requestUrl)({
+    const response = await (0, import_obsidian39.requestUrl)({
       url: `${serverUrl}/api/check-key`,
       method: "POST",
       headers: {
@@ -158237,7 +158660,7 @@ async function checkLicenseKey(serverUrl, key) {
 }
 
 // views/assistant/synchronizer/sync-tab.tsx
-var import_obsidian39 = require("obsidian");
+var import_obsidian40 = require("obsidian");
 var import_lucide_react12 = __toESM(require_lucide_react());
 var import_jsx_runtime86 = __toESM(require_jsx_runtime());
 var DOWNLOADED_FILES_KEY = "file-organizer-downloaded-files";
@@ -158280,7 +158703,7 @@ function SyncTab({ plugin }) {
       setLoading(true);
       setError(null);
       const response = await makeApiRequest(
-        () => (0, import_obsidian39.requestUrl)({
+        () => (0, import_obsidian40.requestUrl)({
           url: `${plugin.getServerUrl()}/api/files?page=${page}`,
           method: "GET",
           headers: {
@@ -158314,7 +158737,7 @@ function SyncTab({ plugin }) {
     }
     setLoadingPreviews((prev) => ({ ...prev, [file.id]: true }));
     try {
-      const response = await (0, import_obsidian39.requestUrl)({
+      const response = await (0, import_obsidian40.requestUrl)({
         url: file.blobUrl,
         method: "GET"
       });
@@ -158365,7 +158788,7 @@ function SyncTab({ plugin }) {
     )) {
       setDownloadedFiles(/* @__PURE__ */ new Set());
       localStorage.removeItem(DOWNLOADED_FILES_KEY);
-      new import_obsidian39.Notice("Download history cleared");
+      new import_obsidian40.Notice("Download history cleared");
     }
   };
   const downloadAllMissingFiles = async () => {
@@ -158376,18 +158799,18 @@ function SyncTab({ plugin }) {
         (file) => file.status === "completed" && !downloadedFiles.has(file.id)
       );
       if (filesToDownload.length === 0) {
-        new import_obsidian39.Notice("All files are already synchronized");
+        new import_obsidian40.Notice("All files are already synchronized");
         return;
       }
-      new import_obsidian39.Notice(`Syncing ${filesToDownload.length} file(s)...`);
+      new import_obsidian40.Notice(`Syncing ${filesToDownload.length} file(s)...`);
       for (const file of filesToDownload) {
         if (!downloading[file.id]) {
           await downloadFile(file);
         }
       }
-      new import_obsidian39.Notice(`Successfully synchronized ${filesToDownload.length} file(s)`);
+      new import_obsidian40.Notice(`Successfully synchronized ${filesToDownload.length} file(s)`);
     } catch (err) {
-      new import_obsidian39.Notice(
+      new import_obsidian40.Notice(
         `Error during bulk sync: ${err instanceof Error ? err.message : String(err)}`
       );
       console.error("Bulk sync error:", err);
@@ -158403,10 +158826,10 @@ function SyncTab({ plugin }) {
       try {
         await plugin.ensureFolderExists(folderPath);
       } catch (err) {
-        new import_obsidian39.Notice(`Failed to create sync folder: ${folderPath}`);
+        new import_obsidian40.Notice(`Failed to create sync folder: ${folderPath}`);
         throw err;
       }
-      const fileResponse = await (0, import_obsidian39.requestUrl)({
+      const fileResponse = await (0, import_obsidian40.requestUrl)({
         url: file.blobUrl,
         method: "GET"
       });
@@ -158421,7 +158844,7 @@ function SyncTab({ plugin }) {
       try {
         await plugin.ensureFolderExists(dateFolderPath);
       } catch (err) {
-        new import_obsidian39.Notice(`Failed to create date folder: ${dateFolderPath}`);
+        new import_obsidian40.Notice(`Failed to create date folder: ${dateFolderPath}`);
         throw err;
       }
       if (isImage2 || isPDF) {
@@ -158441,9 +158864,9 @@ ${file.textContent || ""}`;
           const mdFilePath = `${dateFolderPath}/${baseName}.md`;
           await plugin.app.vault.create(mdFilePath, markdownContent);
           markFileAsDownloaded(file.id);
-          new import_obsidian39.Notice(`Downloaded ${sanitizedFilename} to ${dateFolderPath}`);
+          new import_obsidian40.Notice(`Downloaded ${sanitizedFilename} to ${dateFolderPath}`);
         } catch (err) {
-          new import_obsidian39.Notice(`Failed to save file: ${sanitizedFilename}`);
+          new import_obsidian40.Notice(`Failed to save file: ${sanitizedFilename}`);
           throw err;
         }
       } else {
@@ -158458,14 +158881,14 @@ ${file.textContent || ""}`;
             content3
           );
           markFileAsDownloaded(file.id);
-          new import_obsidian39.Notice(`Downloaded ${finalName} to ${dateFolderPath}`);
+          new import_obsidian40.Notice(`Downloaded ${finalName} to ${dateFolderPath}`);
         } catch (err) {
-          new import_obsidian39.Notice(`Failed to save file: ${sanitizedFilename}`);
+          new import_obsidian40.Notice(`Failed to save file: ${sanitizedFilename}`);
           throw err;
         }
       }
     } catch (err) {
-      new import_obsidian39.Notice(
+      new import_obsidian40.Notice(
         `Error downloading file: ${err instanceof Error ? err.message : String(err)}`
       );
       console.error("Download error:", err);
@@ -158793,7 +159216,7 @@ function AssistantContent({
     /* @__PURE__ */ (0, import_jsx_runtime87.jsx)("div", { className: tw("flex-1 min-h-0 w-full overflow-hidden"), children: /* @__PURE__ */ (0, import_jsx_runtime87.jsx)(TabContent2, { activeTab, plugin, leaf, showSyncTab }) })
   ] });
 }
-var AssistantViewWrapper = class extends import_obsidian40.ItemView {
+var AssistantViewWrapper = class extends import_obsidian41.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.root = null;
@@ -158866,16 +159289,16 @@ var AssistantViewWrapper = class extends import_obsidian40.ItemView {
 };
 
 // views/assistant/dashboard/view.tsx
-var import_obsidian43 = require("obsidian");
+var import_obsidian44 = require("obsidian");
 var import_client3 = __toESM(require_client());
 
 // views/assistant/dashboard/main-dashboard.tsx
 var import_react90 = __toESM(require_react());
-var import_obsidian42 = require("obsidian");
+var import_obsidian43 = require("obsidian");
 
 // views/assistant/dashboard/onboarding-wizard.tsx
 var import_react89 = __toESM(require_react());
-var import_obsidian41 = require("obsidian");
+var import_obsidian42 = require("obsidian");
 var import_jsx_runtime88 = __toESM(require_jsx_runtime());
 function OnboardingWizard({ plugin, onComplete }) {
   const [step, setStep] = (0, import_react89.useState)(0);
@@ -158913,7 +159336,7 @@ function OnboardingWizard({ plugin, onComplete }) {
       }
       plugin.settings.API_KEY = data.licenseKey;
       await plugin.saveSettings();
-      new import_obsidian41.Notice(`Successfully ${isSignup ? "signed up" : "signed in"}! Your account is now connected.`, 5e3);
+      new import_obsidian42.Notice(`Successfully ${isSignup ? "signed up" : "signed in"}! Your account is now connected.`, 5e3);
       nextStep();
     } catch (error2) {
       console.error(`Error during ${isSignup ? "signup" : "login"}:`, error2);
@@ -159430,7 +159853,7 @@ function MainDashboard() {
       setLongTaskProgress(progress2);
     }
     setIsLongTaskRunning(false);
-    new import_obsidian42.Notice("Long task completed!");
+    new import_obsidian43.Notice("Long task completed!");
   };
   const toggleSection = (section) => {
     setExpandedSections((prev) => {
@@ -159455,13 +159878,13 @@ function MainDashboard() {
   };
   const handleFABAction = () => {
     if (!activeFile) {
-      new import_obsidian42.Notice("No active file to operate on!");
+      new import_obsidian43.Notice("No active file to operate on!");
       return;
     }
     if (activeFile.basename.toLowerCase().includes("meeting")) {
-      new import_obsidian42.Notice("Meeting note enhanced!");
+      new import_obsidian43.Notice("Meeting note enhanced!");
     } else {
-      new import_obsidian42.Notice(`Organized: ${activeFile.basename}`);
+      new import_obsidian43.Notice(`Organized: ${activeFile.basename}`);
     }
   };
   if (!isOnboardingComplete) {
@@ -159515,7 +159938,7 @@ function MainDashboard() {
 // views/assistant/dashboard/view.tsx
 var import_jsx_runtime97 = __toESM(require_jsx_runtime());
 var DASHBOARD_VIEW_TYPE = "fo2k.dashboard";
-var DashboardView = class extends import_obsidian43.ItemView {
+var DashboardView = class extends import_obsidian44.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.root = null;
@@ -159552,13 +159975,13 @@ var es_default = (0, import_custom.default)({
 });
 
 // handlers/eventHandlers.ts
-var import_obsidian46 = require("obsidian");
+var import_obsidian47 = require("obsidian");
 
 // inbox/services/queue.ts
 var import_events = require("events");
 
 // inbox/services/error-service.ts
-var import_obsidian44 = require("obsidian");
+var import_obsidian45 = require("obsidian");
 var ErrorService = class _ErrorService {
   constructor() {
     this.errorLog = [];
@@ -159597,7 +160020,7 @@ var ErrorService = class _ErrorService {
   }
   showNotification(details) {
     const duration = this.getNotificationDuration(details.severity);
-    new import_obsidian44.Notice(
+    new import_obsidian45.Notice(
       `FileOrganizer: ${details.message}`,
       duration
     );
@@ -159630,11 +160053,11 @@ var ErrorService = class _ErrorService {
     this.isDebugEnabled = false;
   }
   // Helper methods for common error scenarios
-  handleFileOperationError(operation, path, error) {
+  handleFileOperationError(operation, path2, error) {
     this.handleError({
-      message: `Failed to ${operation} file: ${path}`,
+      message: `Failed to ${operation} file: ${path2}`,
       severity: "high" /* HIGH */,
-      context: { operation, path },
+      context: { operation, path: path2 },
       error,
       shouldNotify: true
     });
@@ -159807,7 +160230,7 @@ var Queue = class extends import_events.EventEmitter {
 };
 
 // fileUtils.ts
-var import_obsidian45 = require("obsidian");
+var import_obsidian46 = require("obsidian");
 async function ensureFolderExists(app, folderPath) {
   if (!await app.vault.adapter.exists(folderPath)) {
     await app.vault.createFolder(folderPath);
@@ -160092,13 +160515,13 @@ summary: "A comprehensive guide to building modern React applications with hooks
 async function moveFile(app, sourceFile, newFileName, destinationFolder = "") {
   const fileExtension = sourceFile.extension;
   let targetPath = `${destinationFolder}/${newFileName}.${fileExtension}`;
-  const normalizedTargetPath = (0, import_obsidian45.normalizePath)(targetPath);
+  const normalizedTargetPath = (0, import_obsidian46.normalizePath)(targetPath);
   if (await app.vault.adapter.exists(normalizedTargetPath)) {
     const timestamp = Date.now();
     const uniqueFileName = `${newFileName}_${timestamp}`;
     targetPath = `${destinationFolder}/${uniqueFileName}.${fileExtension}`;
   }
-  const normalizedFinalPath = (0, import_obsidian45.normalizePath)(targetPath);
+  const normalizedFinalPath = (0, import_obsidian46.normalizePath)(targetPath);
   await ensureFolderExists(app, destinationFolder);
   await app.fileManager.renameFile(sourceFile, normalizedFinalPath);
   const movedFile = app.vault.getAbstractFileByPath(
@@ -160862,8 +161285,8 @@ function registerEventHandlers(plugin) {
     plugin.app.vault.on("create", async (file) => {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
       if (!file.path.includes(plugin.settings.pathToWatch)) return;
-      if (file instanceof import_obsidian46.TFile) {
-        new import_obsidian46.Notice("Inbox is looking at new file: " + file.basename);
+      if (file instanceof import_obsidian47.TFile) {
+        new import_obsidian47.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
       }
     })
@@ -160872,8 +161295,8 @@ function registerEventHandlers(plugin) {
     plugin.app.vault.on("rename", async (file, oldPath) => {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
       if (!file.path.includes(plugin.settings.pathToWatch)) return;
-      if (file instanceof import_obsidian46.TFile) {
-        new import_obsidian46.Notice("Inbox is looking at new file: " + file.basename);
+      if (file instanceof import_obsidian47.TFile) {
+        new import_obsidian47.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
       }
     })
@@ -160904,7 +161327,7 @@ function initializeFileOrganizationCommands(plugin) {
 }
 
 // index.ts
-var FileOrganizer = class extends import_obsidian47.Plugin {
+var FileOrganizer = class extends import_obsidian48.Plugin {
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
     if (this.settings.selectedModel === "gpt-4.1-mini") {
@@ -160965,7 +161388,7 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
       return concepts;
     } catch (error) {
       logger.error("Error in identifyConceptsAndFetchChunks:", error);
-      new import_obsidian47.Notice("An error occurred while processing the document.", 6e3);
+      new import_obsidian48.Notice("An error occurred while processing the document.", 6e3);
       throw error;
     }
   }
@@ -160989,7 +161412,7 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
       return formattedContent;
     } catch (error) {
       logger.error("Error formatting content:", error);
-      new import_obsidian47.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian48.Notice("An error occurred while formatting the content.", 6e3);
       return "";
     }
   }
@@ -161011,7 +161434,7 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
     const templateFile = this.app.vault.getAbstractFileByPath(
       `${this.settings.templatePaths}/${classification}`
     );
-    if (!templateFile || !(templateFile instanceof import_obsidian47.TFile)) {
+    if (!templateFile || !(templateFile instanceof import_obsidian48.TFile)) {
       logger.error("Template file not found or is not a valid file.");
       return "";
     }
@@ -161023,7 +161446,7 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
     content: content3
   }) {
     try {
-      new import_obsidian47.Notice("Formatting content in split view...", 3e3);
+      new import_obsidian48.Notice("Formatting content in split view...", 3e3);
       const newFileName = `${file.basename}-formatted-${Date.now()}.md`;
       const newFilePath = `${file.parent?.path}/${newFileName}`;
       const newFile = await this.app.vault.create(newFilePath, "");
@@ -161041,14 +161464,31 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
         this.settings.API_KEY,
         updateCallback
       );
-      new import_obsidian47.Notice("Content formatted in split view successfully", 3e3);
+      new import_obsidian48.Notice("Content formatted in split view successfully", 3e3);
     } catch (error) {
       logger.error("Error formatting content in split view:", error);
-      new import_obsidian47.Notice(
+      new import_obsidian48.Notice(
         "An error occurred while formatting the content in split view.",
         6e3
       );
     }
+  }
+  /**
+   * Cleans up tags in formatted content by removing extra # symbols
+   * Fixes cases where AI generates tags with # that then appear as ## in Obsidian
+   */
+  cleanupTagsInContent(content3) {
+    const lines = content3.split("\n");
+    const cleanedLines = lines.map((line) => {
+      if (/^#{1,6}\s/.test(line)) {
+        return line;
+      }
+      if (line.trim().startsWith("```")) {
+        return line;
+      }
+      return line.replace(/(\s|^)(#{2,})([a-zA-Z0-9_\-]+)/g, "$1#$3");
+    });
+    return cleanedLines.join("\n");
   }
   async streamFormatInCurrentNote({
     file,
@@ -161056,13 +161496,13 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
     content: content3
   }) {
     try {
-      new import_obsidian47.Notice("Formatting content...", 3e3);
+      new import_obsidian48.Notice("Formatting content...", 3e3);
       const backupFile = await this.backupTheFileAndAddReferenceToCurrentFile(
         file
       );
       let formattedContent = "";
       const updateCallback = async (partialContent) => {
-        formattedContent = partialContent;
+        formattedContent = this.cleanupTagsInContent(partialContent);
         await this.app.vault.modify(file, formattedContent);
       };
       await this.formatStream(
@@ -161074,10 +161514,10 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
       );
       this.appendBackupLinkToCurrentFile(file, backupFile);
       await this.appendFormattedLinkToBackupFile(backupFile, file);
-      new import_obsidian47.Notice("Content formatted successfully", 3e3);
+      new import_obsidian48.Notice("Content formatted successfully", 3e3);
     } catch (error) {
       logger.error("Error formatting content:", error);
-      new import_obsidian47.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian48.Notice("An error occurred while formatting the content.", 6e3);
     }
   }
   async streamFormatAppendInCurrentNote({
@@ -161086,7 +161526,7 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
     content: content3
   }) {
     try {
-      new import_obsidian47.Notice("Appending formatted content...", 3e3);
+      new import_obsidian48.Notice("Appending formatted content...", 3e3);
       let formattedContent = "";
       const updateCallback = async (partialContent) => {
         formattedContent = partialContent;
@@ -161099,10 +161539,10 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
         updateCallback
       );
       await this.app.vault.append(file, "\n\n" + formattedContent);
-      new import_obsidian47.Notice("Content appended successfully", 3e3);
+      new import_obsidian48.Notice("Content appended successfully", 3e3);
     } catch (error) {
       logger.error("Error appending content:", error);
-      new import_obsidian47.Notice("An error occurred while appending content.", 6e3);
+      new import_obsidian48.Notice("An error occurred while appending content.", 6e3);
     }
   }
   async streamFormatInCurrentNoteLineByLine({
@@ -161112,7 +161552,7 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
     chunkMode = "line"
   }) {
     try {
-      new import_obsidian47.Notice("Formatting content line by line...", 3e3);
+      new import_obsidian48.Notice("Formatting content line by line...", 3e3);
       const backupFile = await this.backupTheFileAndAddReferenceToCurrentFile(
         file
       );
@@ -161141,10 +161581,10 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
       );
       await this.appendBackupLinkToCurrentFile(file, backupFile);
       await this.appendFormattedLinkToBackupFile(backupFile, file);
-      new import_obsidian47.Notice("Line-by-line update done!", 3e3);
+      new import_obsidian48.Notice("Line-by-line update done!", 3e3);
     } catch (error) {
       logger.error("Error formatting content line by line:", error);
-      new import_obsidian47.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian48.Notice("An error occurred while formatting the content.", 6e3);
       throw error;
     }
   }
@@ -161154,7 +161594,7 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
     await this.app.vault.create(filePath, content3);
   }
   async extractTextFromPDF(file) {
-    const pdfjsLib = await (0, import_obsidian47.loadPdfJs)();
+    const pdfjsLib = await (0, import_obsidian48.loadPdfJs)();
     try {
       const arrayBuffer = await this.app.vault.readBinary(file);
       const bytes = new Uint8Array(arrayBuffer);
@@ -161388,7 +161828,7 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
     ];
     const allFiles = this.app.vault.getMarkdownFiles();
     const allFilesFiltered = allFiles.filter(
-      (file) => !settingsPaths.some((path) => file.path.includes(path))
+      (file) => !settingsPaths.some((path2) => file.path.includes(path2))
     );
     return allFilesFiltered;
   }
@@ -161455,7 +161895,7 @@ var FileOrganizer = class extends import_obsidian47.Plugin {
     return processedContent;
   }
   async extractTextFromImage(image3) {
-    const base64Image = (0, import_obsidian47.arrayBufferToBase64)(image3);
+    const base64Image = (0, import_obsidian48.arrayBufferToBase64)(image3);
     const response = await fetch(`${this.getServerUrl()}/api/vision`, {
       method: "POST",
       headers: {
@@ -161635,7 +162075,7 @@ ${formattedTag}`);
           });
           view2?.activateTab("chat");
         } else {
-          new import_obsidian47.Notice("No text selected");
+          new import_obsidian48.Notice("No text selected");
         }
       }
     });
@@ -161670,16 +162110,16 @@ ${formattedTag}`);
     for await (const chunk of transcriptIterator) {
       await this.app.vault.append(parentFile, chunk);
     }
-    new import_obsidian47.Notice(`Transcription completed for ${audioFileName}`, 5e3);
+    new import_obsidian48.Notice(`Transcription completed for ${audioFileName}`, 5e3);
   }
   async generateUniqueBackupFileName(originalFile) {
-    const baseFileName = `${originalFile.basename}_backup_${(0, import_obsidian47.moment)().format(
+    const baseFileName = `${originalFile.basename}_backup_${(0, import_obsidian48.moment)().format(
       "YYYYMMDD_HHmmss"
     )}`;
     let fileName = `${baseFileName}.${originalFile.extension}`;
     let counter2 = 1;
     while (await this.app.vault.adapter.exists(
-      (0, import_obsidian47.normalizePath)(`${this.settings.backupFolderPath}/${fileName}`)
+      (0, import_obsidian48.normalizePath)(`${this.settings.backupFolderPath}/${fileName}`)
     )) {
       fileName = `${baseFileName}_${counter2}.${originalFile.extension}`;
       counter2++;
@@ -161688,7 +162128,7 @@ ${formattedTag}`);
   }
   async backupTheFileAndAddReferenceToCurrentFile(file) {
     const backupFileName = await this.generateUniqueBackupFileName(file);
-    const backupFilePath = (0, import_obsidian47.normalizePath)(
+    const backupFilePath = (0, import_obsidian48.normalizePath)(
       `${this.settings.backupFolderPath}/${backupFileName}`
     );
     const backupFile = await this.app.vault.copy(file, backupFilePath);
@@ -161698,14 +162138,14 @@ ${formattedTag}`);
     const templateFolder = this.app.vault.getAbstractFileByPath(
       this.settings.templatePaths
     );
-    if (!templateFolder || !(templateFolder instanceof import_obsidian47.TFolder)) {
+    if (!templateFolder || !(templateFolder instanceof import_obsidian48.TFolder)) {
       logger.error("Template folder not found or is not a valid folder.");
       return "";
     }
     const templateFile = templateFolder.children.find(
-      (file) => file instanceof import_obsidian47.TFile && file.basename === templateName
+      (file) => file instanceof import_obsidian48.TFile && file.basename === templateName
     );
-    if (!templateFile || !(templateFile instanceof import_obsidian47.TFile)) {
+    if (!templateFile || !(templateFile instanceof import_obsidian48.TFile)) {
       logger.error("Template file not found or is not a valid file.");
       return "";
     }
@@ -161717,12 +162157,12 @@ ${formattedTag}`);
     const templateFolder = this.app.vault.getAbstractFileByPath(
       this.settings.templatePaths
     );
-    if (!templateFolder || !(templateFolder instanceof import_obsidian47.TFolder)) {
+    if (!templateFolder || !(templateFolder instanceof import_obsidian48.TFolder)) {
       logger.error("Template folder not found or is not a valid folder.");
       return [];
     }
     const templateFiles = templateFolder.children.filter(
-      (file) => file instanceof import_obsidian47.TFile
+      (file) => file instanceof import_obsidian48.TFile
     );
     return templateFiles.map((file) => file.basename);
   }
@@ -161784,10 +162224,10 @@ ${formattedTag}`);
       for (const folderPath of folderPaths) {
         await ensureFolderExists(this.app, folderPath);
       }
-      new import_obsidian47.Notice("All required folders have been created successfully!", 3e3);
+      new import_obsidian48.Notice("All required folders have been created successfully!", 3e3);
     } catch (error) {
       console.error("Failed to create required folders:", error);
-      new import_obsidian47.Notice("There was an error creating the required folders. Please check console for details.", 5e3);
+      new import_obsidian48.Notice("There was an error creating the required folders. Please check console for details.", 5e3);
     }
   }
   async fetchUsageStats() {
@@ -162240,5 +162680,3 @@ sax/lib/sax.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-
-/* nosourcemap */
