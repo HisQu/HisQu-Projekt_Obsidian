@@ -1,10 +1,14 @@
 ---
 Titel: When it was 2024 – Generative AI in the field of digital scholarly editions
-Autor: "[[Christopher Pollin]]"
-"[[Franz Fischer]]", "[[Patrick Sahle]]", "[[Martina Scholger]]", "[[Georg Vogeler]]"
-Herausgeber:  Forschungsverbund Marbach Weimar Wolfenbüttel / Digital Humanities im deutschsprachigen Raum e. V.
+Autor: 
+- "[[Christopher Pollin]]"
+- "[[Franz Fischer]]"
+- "[[Patrick Sahle]]"
+- "[[Martina Scholger]]"
+- "[[Georg Vogeler]]"
+Herausgeber: Forschungsverbund Marbach Weimar Wolfenbüttel / Digital Humanities im deutschsprachigen Raum e. V.
 Erscheinungsjahr: 2025
-Seiten: 
+Seiten:
 Verbindung zu Zotero: zotero://select/items/@PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions
 ---
 # When it was 2024 – Generative AI in the field of digital scholarly editions - Christopher Pollin, Franz Fischer, Patrick Sahle, Martina Scholger, Georg Vogeler
