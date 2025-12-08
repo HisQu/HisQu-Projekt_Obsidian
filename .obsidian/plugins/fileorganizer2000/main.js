@@ -472,7 +472,7 @@ var require_react_production = __commonJS({
     exports2.useTransition = function() {
       return ReactSharedInternals.H.useTransition();
     };
-    exports2.version = "19.0.0";
+    exports2.version = "19.0.1";
   }
 });
 
@@ -926,7 +926,7 @@ var require_react_dom_production = __commonJS({
     exports2.useFormStatus = function() {
       return ReactSharedInternals.H.useHostTransitionStatus();
     };
-    exports2.version = "19.0.0";
+    exports2.version = "19.0.1";
   }
 });
 
@@ -11993,12 +11993,12 @@ var require_react_dom_client_production = __commonJS({
       }
     };
     var isomorphicReactPackageVersion$jscomp$inline_1686 = React75.version;
-    if ("19.0.0" !== isomorphicReactPackageVersion$jscomp$inline_1686)
+    if ("19.0.1" !== isomorphicReactPackageVersion$jscomp$inline_1686)
       throw Error(
         formatProdErrorMessage(
           527,
           isomorphicReactPackageVersion$jscomp$inline_1686,
-          "19.0.0"
+          "19.0.1"
         )
       );
     ReactDOMSharedInternals.findDOMNode = function(componentOrElement) {
@@ -12016,11 +12016,11 @@ var require_react_dom_client_production = __commonJS({
     };
     var internals$jscomp$inline_2165 = {
       bundleType: 0,
-      version: "19.0.0",
+      version: "19.0.1",
       rendererPackageName: "react-dom",
       currentDispatcherRef: ReactSharedInternals,
       findFiberByHostInstance: getClosestInstanceFromNode,
-      reconcilerVersion: "19.0.0"
+      reconcilerVersion: "19.0.1"
     };
     if ("undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__) {
       hook$jscomp$inline_2166 = __REACT_DEVTOOLS_GLOBAL_HOOK__;
@@ -12088,7 +12088,7 @@ var require_react_dom_client_production = __commonJS({
       listenToAllSupportedEvents(container);
       return new ReactDOMHydrationRoot(initialChildren);
     };
-    exports2.version = "19.0.0";
+    exports2.version = "19.0.1";
   }
 });
 
@@ -22020,7 +22020,7 @@ var require_lucide_react = __commonJS({
       ["path", { d: "M7 14v1a2 2 0 0 0 2 2h1", key: "pao6x6" }],
       ["path", { d: "M14 7h1a2 2 0 0 1 2 2v1", key: "19tdru" }]
     ]);
-    var Send = createLucideIcon("Send", [
+    var Send2 = createLucideIcon("Send", [
       [
         "path",
         {
@@ -23033,7 +23033,7 @@ var require_lucide_react = __commonJS({
       ["path", { d: "m15 9-6 6", key: "1uzhvr" }],
       ["path", { d: "m9 9 6 6", key: "z0biqf" }]
     ]);
-    var Square = createLucideIcon("Square", [
+    var Square2 = createLucideIcon("Square", [
       ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", key: "afitv7" }]
     ]);
     var Squircle = createLucideIcon("Squircle", [
@@ -25967,7 +25967,7 @@ var require_lucide_react = __commonJS({
       SearchSlash,
       SearchX,
       Section,
-      Send,
+      Send: Send2,
       SendHorizontal,
       SendToBack,
       SeparatorHorizontal,
@@ -26044,7 +26044,7 @@ var require_lucide_react = __commonJS({
       Split,
       SprayCan,
       Sprout,
-      Square,
+      Square: Square2,
       SquareActivity,
       SquareArrowDown,
       SquareArrowDownLeft,
@@ -29574,7 +29574,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideSearchSlash = SearchSlash;
     exports2.LucideSearchX = SearchX;
     exports2.LucideSection = Section;
-    exports2.LucideSend = Send;
+    exports2.LucideSend = Send2;
     exports2.LucideSendHorizonal = SendHorizontal;
     exports2.LucideSendHorizontal = SendHorizontal;
     exports2.LucideSendToBack = SendToBack;
@@ -29663,7 +29663,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideSplitSquareVertical = SquareSplitVertical;
     exports2.LucideSprayCan = SprayCan;
     exports2.LucideSprout = Sprout;
-    exports2.LucideSquare = Square;
+    exports2.LucideSquare = Square2;
     exports2.LucideSquareActivity = SquareActivity;
     exports2.LucideSquareArrowDown = SquareArrowDown;
     exports2.LucideSquareArrowDownLeft = SquareArrowDownLeft;
@@ -30716,12 +30716,12 @@ var require_lucide_react = __commonJS({
     exports2.SearchXIcon = SearchX;
     exports2.Section = Section;
     exports2.SectionIcon = Section;
-    exports2.Send = Send;
+    exports2.Send = Send2;
     exports2.SendHorizonal = SendHorizontal;
     exports2.SendHorizonalIcon = SendHorizontal;
     exports2.SendHorizontal = SendHorizontal;
     exports2.SendHorizontalIcon = SendHorizontal;
-    exports2.SendIcon = Send;
+    exports2.SendIcon = Send2;
     exports2.SendToBack = SendToBack;
     exports2.SendToBackIcon = SendToBack;
     exports2.SeparatorHorizontal = SeparatorHorizontal;
@@ -30894,7 +30894,7 @@ var require_lucide_react = __commonJS({
     exports2.SprayCanIcon = SprayCan;
     exports2.Sprout = Sprout;
     exports2.SproutIcon = Sprout;
-    exports2.Square = Square;
+    exports2.Square = Square2;
     exports2.SquareActivity = SquareActivity;
     exports2.SquareActivityIcon = SquareActivity;
     exports2.SquareArrowDown = SquareArrowDown;
@@ -30959,7 +30959,7 @@ var require_lucide_react = __commonJS({
     exports2.SquareFunctionIcon = SquareFunction;
     exports2.SquareGanttChart = SquareChartGantt;
     exports2.SquareGanttChartIcon = SquareChartGantt;
-    exports2.SquareIcon = Square;
+    exports2.SquareIcon = Square2;
     exports2.SquareKanban = SquareKanban;
     exports2.SquareKanbanIcon = SquareKanban;
     exports2.SquareLibrary = SquareLibrary;
@@ -93341,9 +93341,54 @@ __export(index_exports, {
   default: () => FileOrganizer
 });
 module.exports = __toCommonJS(index_exports);
-var import_obsidian48 = require("obsidian");
+var import_obsidian50 = require("obsidian");
 
 // services/logger.ts
+function safeStringify(obj, maxDepth2 = 3) {
+  const seen = /* @__PURE__ */ new WeakSet();
+  return safeStringifyInternal(obj, seen, maxDepth2, 0);
+}
+function safeStringifyInternal(obj, seen, maxDepth2, currentDepth) {
+  if (currentDepth > maxDepth2) {
+    return "[Max Depth Reached]";
+  }
+  if (obj === null) return "null";
+  if (obj === void 0) return "undefined";
+  if (typeof obj === "string") return obj;
+  if (typeof obj === "number" || typeof obj === "boolean") return String(obj);
+  if (typeof obj === "function") {
+    return `[Function: ${obj.name || "anonymous"}]`;
+  }
+  if (typeof obj === "object") {
+    if (seen.has(obj)) {
+      return "[Circular Reference]";
+    }
+    seen.add(obj);
+    try {
+      return JSON.stringify(obj);
+    } catch (error) {
+      try {
+        if (Array.isArray(obj)) {
+          const items = obj.slice(0, 10).map(
+            (item) => safeStringifyInternal(item, seen, maxDepth2, currentDepth + 1)
+          );
+          const suffix2 = obj.length > 10 ? ` ... (${obj.length - 10} more)` : "";
+          return `[${items.join(", ")}${suffix2}]`;
+        }
+        const keys3 = Object.keys(obj).slice(0, 10);
+        const pairs = keys3.map((key) => {
+          const value = safeStringifyInternal(obj[key], seen, maxDepth2, currentDepth + 1);
+          return `"${key}": ${value}`;
+        });
+        const suffix = Object.keys(obj).length > 10 ? ` ... (${Object.keys(obj).length - 10} more keys)` : "";
+        return `{${pairs.join(", ")}${suffix}}`;
+      } catch (innerError) {
+        return `[Object: ${obj.constructor?.name || "Object"}]`;
+      }
+    }
+  }
+  return String(obj);
+}
 var LoggerService = class {
   constructor() {
     this.isEnabled = false;
@@ -93367,22 +93412,22 @@ var LoggerService = class {
     }
   }
   info(...messages) {
-    const message = messages.map((m) => typeof m === "string" ? m : JSON.stringify(m)).join(" ");
+    const message = messages.map((m) => typeof m === "string" ? m : safeStringify(m)).join(" ");
     this.addLog("info", message);
     console.info(...messages);
   }
   error(...messages) {
-    const message = messages.map((m) => typeof m === "string" ? m : JSON.stringify(m)).join(" ");
+    const message = messages.map((m) => typeof m === "string" ? m : safeStringify(m)).join(" ");
     this.addLog("error", message);
     console.error(...messages);
   }
   warn(...messages) {
-    const message = messages.map((m) => typeof m === "string" ? m : JSON.stringify(m)).join(" ");
+    const message = messages.map((m) => typeof m === "string" ? m : safeStringify(m)).join(" ");
     this.addLog("warn", message);
     console.warn(...messages);
   }
   debug(...messages) {
-    const message = messages.map((m) => typeof m === "string" ? m : JSON.stringify(m)).join(" ");
+    const message = messages.map((m) => typeof m === "string" ? m : safeStringify(m)).join(" ");
     this.addLog("debug", message);
     console.debug(...messages);
   }
@@ -94945,7 +94990,7 @@ var FileOrganizerSettingTab = class extends import_obsidian4.PluginSettingTab {
 };
 
 // views/assistant/view.tsx
-var import_obsidian41 = require("obsidian");
+var import_obsidian43 = require("obsidian");
 var React68 = __toESM(require_react());
 var import_client2 = __toESM(require_client());
 
@@ -110097,9 +110142,16 @@ var UserTemplates = ({
   const dropdownTemplates = templateNames.filter(
     (t2) => t2 !== selectedTemplateName
   );
-  const handleFormatClick = () => {
+  const handleFormatClick = async () => {
     if (selectedTemplateName) {
-      onFormat(selectedTemplateName);
+      setFormatting(true);
+      try {
+        await onFormat(selectedTemplateName);
+      } catch (error) {
+        logger.error("Error formatting:", error);
+      } finally {
+        setFormatting(false);
+      }
     }
   };
   const renderContent = () => {
@@ -110157,10 +110209,42 @@ var UserTemplates = ({
       /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(
         "button",
         {
-          className: `px-4 py-2 transition-colors duration-200 ${!selectedTemplateName || formatting ? "bg-[--background-modifier-border] text-[--text-muted] cursor-not-allowed" : "bg-[--interactive-accent] text-white hover:bg-[--interactive-accent-hover]"}`,
+          className: `px-4 py-2 transition-colors duration-200 flex items-center justify-center ${!selectedTemplateName || formatting ? "bg-[--background-modifier-border] text-[--text-muted] cursor-not-allowed" : "bg-[--interactive-accent] text-white hover:bg-[--interactive-accent-hover]"}`,
           disabled: !selectedTemplateName || formatting || isFileTooLarge,
           onClick: handleFormatClick,
-          children: formatting ? "Applying..." : "Apply"
+          children: formatting ? /* @__PURE__ */ (0, import_jsx_runtime25.jsxs)("span", { className: "flex items-center justify-center", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime25.jsxs)(
+              "svg",
+              {
+                className: "animate-spin -ml-1 mr-2 h-4 w-4",
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "none",
+                viewBox: "0 0 24 24",
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(
+                    "circle",
+                    {
+                      className: "opacity-25",
+                      cx: "12",
+                      cy: "12",
+                      r: "10",
+                      stroke: "currentColor",
+                      strokeWidth: "4"
+                    }
+                  ),
+                  /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(
+                    "path",
+                    {
+                      className: "opacity-75",
+                      fill: "currentColor",
+                      d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    }
+                  )
+                ]
+              }
+            ),
+            "Applying..."
+          ] }) : "Apply"
         }
       )
     ] });
@@ -110449,7 +110533,7 @@ var YOUTUBE_URL_PATTERNS = [
   /(?:https?:\/\/)?(?:www\.)?youtu\.be\/([a-zA-Z0-9_-]+)/,
   /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/
 ];
-async function extractYouTubeVideoId(content3) {
+function extractYouTubeVideoId(content3) {
   for (const pattern of YOUTUBE_URL_PATTERNS) {
     const match = content3.match(pattern);
     if (match && match[1]) {
@@ -110546,9 +110630,24 @@ async function fetchYouTubeTitle(videoId) {
   }
 }
 async function getYouTubeContent(videoId, _plugin) {
+  if (!videoId) {
+    throw new YouTubeError("videoId is required");
+  }
+  const normalizedVideoId = String(videoId).trim();
+  if (!normalizedVideoId) {
+    throw new YouTubeError("videoId cannot be empty");
+  }
+  const extractedId = extractYouTubeVideoId(normalizedVideoId);
+  const finalVideoId = extractedId || normalizedVideoId;
+  if (!/^[a-zA-Z0-9_-]+$/.test(finalVideoId)) {
+    throw new YouTubeError(
+      `Invalid videoId format: "${finalVideoId}". Expected YouTube video ID (alphanumeric, dashes, underscores only)`
+    );
+  }
   console.log(
     "[YouTube Service] Fetching YouTube content directly (client-side):",
-    videoId
+    finalVideoId,
+    `(original: ${typeof videoId === "string" ? videoId : JSON.stringify(videoId)})`
   );
   try {
     const obsidianFetch = createObsidianFetch();
@@ -110556,7 +110655,7 @@ async function getYouTubeContent(videoId, _plugin) {
       "[YouTube Service] Starting parallel fetch of transcript and title..."
     );
     const [transcriptItems, title] = await Promise.all([
-      fetchTranscript(videoId, {
+      fetchTranscript(finalVideoId, {
         // Provide custom fetch functions that use Obsidian's requestUrl
         videoFetch: async ({ url, lang, userAgent }) => {
           return obsidianFetch(url, {
@@ -110596,11 +110695,17 @@ async function getYouTubeContent(videoId, _plugin) {
         }
       }).catch((error) => {
         console.error("[YouTube Service] Transcript fetch error:", error);
+        const errorMessage = error instanceof Error ? error.message : String(error);
+        if (errorMessage.includes("match is not a function")) {
+          throw new YouTubeError(
+            `Invalid videoId type. Received: ${typeof finalVideoId}, value: ${JSON.stringify(finalVideoId)}. ${errorMessage}`
+          );
+        }
         throw new YouTubeError(
-          `Failed to fetch transcript: ${error instanceof Error ? error.message : "Unknown error"}`
+          `Failed to fetch transcript: ${errorMessage}`
         );
       }),
-      fetchYouTubeTitle(videoId).catch((error) => {
+      fetchYouTubeTitle(finalVideoId).catch((error) => {
         console.warn(
           "[YouTube Service] Title fetch failed, using fallback:",
           error
@@ -110663,7 +110768,7 @@ var ClassificationContainer = ({
       let videoTitle = null;
       let videoId = null;
       if (templateName === "youtube_video" || templateName === "youtube_video.md") {
-        videoId = await extractYouTubeVideoId(fileContent);
+        videoId = extractYouTubeVideoId(fileContent);
         console.log("[YouTube Format] Extracted video ID:", videoId);
         if (videoId) {
           try {
@@ -110912,9 +111017,52 @@ ${transcript}`;
 var React18 = __toESM(require_react());
 var import_obsidian10 = require("obsidian");
 var import_jsx_runtime27 = __toESM(require_jsx_runtime());
-var TranscriptionButton = ({ plugin, file, content: content3 }) => {
+var TranscriptionButton = ({
+  plugin,
+  file,
+  content: content3
+}) => {
   const [transcribing, setTranscribing] = React18.useState(false);
+  const MAX_FILE_SIZE_MB = 25;
+  const MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024;
+  const checkAudioFiles = () => {
+    const audioRegex = /!\[\[(.*?\.(mp3|wav|m4a|ogg|webm))]]/gi;
+    const matches2 = Array.from(content3.matchAll(audioRegex));
+    if (matches2.length === 0) {
+      return { valid: false, error: "No audio files found" };
+    }
+    const oversizedFiles = [];
+    for (const match of matches2) {
+      const audioFileName = match[1];
+      const audioFile = plugin.app.metadataCache.getFirstLinkpathDest(
+        audioFileName,
+        "."
+      );
+      if (!(audioFile instanceof import_obsidian10.TFile)) {
+        continue;
+      }
+      const fileSizeInBytes = audioFile.stat.size;
+      const fileSizeInMB = fileSizeInBytes / (1024 * 1024);
+      if (fileSizeInBytes > MAX_FILE_SIZE_BYTES) {
+        oversizedFiles.push(`${audioFileName} (${fileSizeInMB.toFixed(2)}MB)`);
+      }
+    }
+    if (oversizedFiles.length > 0) {
+      return {
+        valid: false,
+        error: `File(s) too large (>${MAX_FILE_SIZE_MB}MB): ${oversizedFiles.join(
+          ", "
+        )}. Please compress or split the audio file.`
+      };
+    }
+    return { valid: true };
+  };
   const handleTranscribe = async () => {
+    const validation2 = checkAudioFiles();
+    if (!validation2.valid) {
+      new import_obsidian10.Notice(validation2.error || "Cannot transcribe audio files", 8e3);
+      return;
+    }
     setTranscribing(true);
     try {
       const audioRegex = /!\[\[(.*?\.(mp3|wav|m4a|ogg|webm))]]/gi;
@@ -110950,18 +111098,24 @@ var TranscriptionButton = ({ plugin, file, content: content3 }) => {
       setTranscribing(false);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
-    "button",
-    {
-      className: "flex items-center gap-2 bg-[--interactive-accent] text-[--text-on-accent] px-4 py-2 hover:bg-[--interactive-accent-hover] disabled:opacity-50",
-      onClick: handleTranscribe,
-      disabled: transcribing,
-      children: transcribing ? /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(import_jsx_runtime27.Fragment, { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "animate-spin", children: "\u27F3" }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: "Transcribing..." })
-      ] }) : "Transcribe Audio"
-    }
-  );
+  const validation = checkAudioFiles();
+  const hasOversizedFiles = !validation.valid && validation.error?.includes("too large");
+  return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "flex flex-col gap-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
+      "button",
+      {
+        className: "flex items-center gap-2 bg-[--interactive-accent] text-[--text-on-accent] px-4 py-2 hover:bg-[--interactive-accent-hover] disabled:opacity-50 disabled:cursor-not-allowed",
+        onClick: handleTranscribe,
+        disabled: transcribing || hasOversizedFiles,
+        title: hasOversizedFiles ? validation.error : void 0,
+        children: transcribing ? /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(import_jsx_runtime27.Fragment, { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "animate-spin", children: "\u27F3" }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: "Transcribing..." })
+        ] }) : "Transcribe Audio"
+      }
+    ),
+    hasOversizedFiles && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "text-xs text-[--text-error] px-2", children: validation.error })
+  ] });
 };
 
 // views/assistant/organizer/components/empty-state.tsx
@@ -137823,14 +137977,35 @@ var addFileReference = (file) => {
   });
 };
 var addYouTubeContext = (video) => {
-  useContextItems.getState().addYouTubeVideo({
+  console.log("[addYouTubeContext] Adding video to store:", {
+    videoId: video.videoId,
+    title: video.title,
+    transcriptLength: video.transcript.length
+  });
+  const store = useContextItems.getState();
+  console.log("[addYouTubeContext] Store state before add:", {
+    hasYoutubeVideos: !!store.youtubeVideos,
+    youtubeVideosType: typeof store.youtubeVideos,
+    youtubeVideosKeys: store.youtubeVideos ? Object.keys(store.youtubeVideos) : []
+  });
+  store.addYouTubeVideo({
     id: `youtube-${video.videoId}`,
     type: "youtube",
     videoId: video.videoId,
     title: video.title,
     transcript: video.transcript,
     reference: `YouTube Video: ${video.title}`,
-    createdAt: Date.now()
+    createdAt: Date.now(),
+    ephemeral: false
+    // CRITICAL: Explicitly set to false so it's NOT cleared by clearEphemeral
+  });
+  const storeAfter = useContextItems.getState();
+  const addedVideo = storeAfter.youtubeVideos?.[`youtube-${video.videoId}`];
+  console.log("[addYouTubeContext] Store state after add:", {
+    hasYoutubeVideos: !!storeAfter.youtubeVideos,
+    youtubeVideosKeys: storeAfter.youtubeVideos ? Object.keys(storeAfter.youtubeVideos) : [],
+    videoAdded: !!addedVideo,
+    videoId: addedVideo?.videoId
   });
 };
 var addFolderContext = async (folderPath, app) => {
@@ -149672,14 +149847,23 @@ var UserMarkdown = ({ content: content3 }) => {
 
 // views/assistant/ai-chat/components/append-button.tsx
 var import_lucide_react7 = __toESM(require_lucide_react());
+var import_obsidian21 = require("obsidian");
 var import_jsx_runtime44 = __toESM(require_jsx_runtime());
 var AppendButton = ({ content: content3 }) => {
   const plugin = usePlugin();
   const handleAppend = async () => {
-    const activeFile = plugin.app.workspace.getActiveFile();
-    if (!activeFile) return;
-    const fileContent = await plugin.app.vault.read(activeFile);
-    await plugin.app.vault.modify(activeFile, fileContent + "\n\n" + content3);
+    try {
+      const activeFile = plugin.app.workspace.getActiveFile();
+      if (!activeFile) {
+        new import_obsidian21.Notice("No active note to append to", 3e3);
+        return;
+      }
+      const fileContent = await plugin.app.vault.read(activeFile);
+      await plugin.app.vault.modify(activeFile, fileContent + "\n\n" + content3);
+      new import_obsidian21.Notice(`Appended to ${activeFile.basename}`, 3e3);
+    } catch (error) {
+      new import_obsidian21.Notice(`Failed to append: ${error instanceof Error ? error.message : "Unknown error"}`, 5e3);
+    }
   };
   return /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
     "button",
@@ -149694,10 +149878,16 @@ var AppendButton = ({ content: content3 }) => {
 
 // views/assistant/ai-chat/components/copy-button.tsx
 var import_lucide_react8 = __toESM(require_lucide_react());
+var import_obsidian22 = require("obsidian");
 var import_jsx_runtime45 = __toESM(require_jsx_runtime());
 var CopyButton = ({ content: content3 }) => {
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(content3);
+    try {
+      await navigator.clipboard.writeText(content3);
+      new import_obsidian22.Notice("Copied to clipboard", 2e3);
+    } catch (error) {
+      new import_obsidian22.Notice(`Failed to copy: ${error instanceof Error ? error.message : "Unknown error"}`, 5e3);
+    }
   };
   return /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
     "button",
@@ -149717,7 +149907,12 @@ var MessageRenderer = ({
 }) => {
   const plugin = usePlugin();
   if (message.toolInvocations) {
-    return null;
+    const allToolsComplete = message.toolInvocations.every(
+      (tool) => "result" in tool
+    );
+    if (!allToolsComplete) {
+      return null;
+    }
   }
   if (message.content.length === 0) {
     return null;
@@ -149797,36 +149992,206 @@ function YouTubeHandler({
   const hasFetchedRef = (0, import_react51.useRef)(false);
   const [fetchSuccess, setFetchSuccess] = (0, import_react51.useState)(null);
   import_react51.default.useEffect(() => {
+    console.log("[YouTube Handler] useEffect triggered", {
+      toolName: toolInvocation.toolName,
+      hasArgs: !!toolInvocation.args,
+      videoId: toolInvocation.args?.videoId,
+      hasFetched: hasFetchedRef.current,
+      hasResult: "result" in toolInvocation
+    });
     const handleYouTubeTranscript = async () => {
-      if (!hasFetchedRef.current && !("result" in toolInvocation)) {
-        hasFetchedRef.current = true;
-        const { videoId } = toolInvocation.args;
+      if (hasFetchedRef.current || "result" in toolInvocation) {
+        console.log(
+          "[YouTube Handler] Skipping - already fetched or has result",
+          {
+            hasFetched: hasFetchedRef.current,
+            hasResult: "result" in toolInvocation
+          }
+        );
+        return;
+      }
+      console.log("[YouTube Handler] Starting handler execution");
+      hasFetchedRef.current = true;
+      try {
+        let { videoId } = toolInvocation.args || {};
+        if (videoId && typeof videoId.then === "function") {
+          const errorMsg = "Invalid videoId: received a Promise instead of a string value";
+          logger.error(errorMsg, { args: toolInvocation.args });
+          handleAddResult(JSON.stringify({ error: errorMsg }));
+          setFetchSuccess(false);
+          return;
+        }
+        if (!videoId || typeof videoId !== "string") {
+          const errorMsg = `Invalid videoId: videoId is required and must be a string. Received type: ${typeof videoId}, value: ${String(
+            videoId
+          ).substring(0, 100)}`;
+          logger.error(errorMsg, { args: toolInvocation.args });
+          handleAddResult(JSON.stringify({ error: errorMsg }));
+          setFetchSuccess(false);
+          return;
+        }
+        const extractedId = extractYouTubeVideoId(videoId);
+        if (extractedId) {
+          videoId = extractedId;
+        } else if (!/^[a-zA-Z0-9_-]+$/.test(videoId)) {
+          const errorMsg = `Invalid videoId format. Expected YouTube video ID or URL, got: ${videoId.substring(
+            0,
+            50
+          )}`;
+          logger.error(errorMsg);
+          handleAddResult(JSON.stringify({ error: errorMsg }));
+          setFetchSuccess(false);
+          return;
+        }
+        console.log(
+          "[YouTube Handler] About to fetch content for videoId:",
+          videoId
+        );
+        let title;
+        let transcript;
         try {
-          const { title, transcript } = await getYouTubeContent(videoId, plugin);
+          const contentResult = await getYouTubeContent(videoId, plugin);
+          title = contentResult.title;
+          transcript = contentResult.transcript;
+          console.log("[YouTube Handler] Successfully fetched content:", {
+            title,
+            transcriptLength: transcript.length
+          });
+        } catch (error) {
+          console.error("[YouTube Handler] Error in getYouTubeContent:", error);
+          throw error;
+        }
+        console.log("[YouTube Handler] About to add to context");
+        try {
           addYouTubeContext({
             videoId,
             title,
             transcript
           });
-          const wordCount = transcript.split(/\s+/).length;
-          handleAddResult(JSON.stringify({
-            success: true,
-            title,
-            videoId,
-            wordCount,
-            message: `Successfully retrieved YouTube transcript for "${title}" (${wordCount} words)`
-          }));
-          setFetchSuccess(true);
+          console.log("[YouTube Handler] Called addYouTubeContext");
         } catch (error) {
-          logger.error("Error fetching YouTube transcript:", error);
-          const errorMessage = error instanceof Error ? error.message : "Unknown error";
-          handleAddResult(JSON.stringify({ error: errorMessage }));
-          setFetchSuccess(false);
+          console.error("[YouTube Handler] Error in addYouTubeContext:", error);
         }
+        await new Promise((resolve2) => setTimeout(resolve2, 100));
+        const store = useContextItems.getState();
+        if (!store.youtubeVideos) {
+          console.error(
+            "[YouTube Handler] ERROR: store.youtubeVideos is undefined!"
+          );
+          console.error("[YouTube Handler] Full store state:", store);
+        }
+        const addedVideo = store.youtubeVideos?.[`youtube-${videoId}`];
+        if (!addedVideo) {
+          console.error(
+            "[YouTube Handler] ERROR: Video not found in store after addYouTubeContext!"
+          );
+          console.error("[YouTube Handler] Store state:", {
+            youtubeVideos: store.youtubeVideos,
+            youtubeVideosType: typeof store.youtubeVideos,
+            allKeys: store.youtubeVideos ? Object.keys(store.youtubeVideos) : [],
+            storeKeys: Object.keys(store)
+          });
+          addYouTubeContext({
+            videoId,
+            title,
+            transcript
+          });
+          await new Promise((resolve2) => setTimeout(resolve2, 10));
+          const store2 = useContextItems.getState();
+          const addedVideo2 = store2.youtubeVideos?.[`youtube-${videoId}`];
+          if (!addedVideo2) {
+            console.error(
+              "[YouTube Handler] ERROR: Video still not in store after retry!"
+            );
+            console.error("[YouTube Handler] Store2 state:", {
+              youtubeVideos: store2.youtubeVideos,
+              youtubeVideosType: typeof store2.youtubeVideos,
+              allKeys: store2.youtubeVideos ? Object.keys(store2.youtubeVideos) : []
+            });
+          } else {
+            console.log("[YouTube Handler] Successfully added on retry!");
+          }
+        }
+        const finalStore = useContextItems.getState();
+        console.log("[YouTube Handler] Added to context:", {
+          videoId,
+          title,
+          transcriptLength: transcript.length,
+          foundInStore: !!addedVideo,
+          allVideos: finalStore.youtubeVideos ? Object.keys(finalStore.youtubeVideos) : [],
+          storeKeys: Object.keys(finalStore),
+          youtubeVideosType: typeof finalStore.youtubeVideos
+        });
+        const wordCount = transcript.split(/\s+/).length;
+        const verifyStore = useContextItems.getState();
+        const videoStillInStore = !!verifyStore.youtubeVideos?.[`youtube-${videoId}`];
+        if (!videoStillInStore) {
+          console.error(
+            "[YouTube Handler] CRITICAL: Video not in store before handleAddResult! Re-adding..."
+          );
+          addYouTubeContext({ videoId, title, transcript });
+          await new Promise((resolve2) => setTimeout(resolve2, 50));
+          const verifyStore2 = useContextItems.getState();
+          if (!verifyStore2.youtubeVideos?.[`youtube-${videoId}`]) {
+            console.error(
+              "[YouTube Handler] CRITICAL: Video still not in store after re-add!"
+            );
+          }
+        }
+        const finalVerifyStore = useContextItems.getState();
+        console.log(
+          "[YouTube Handler] About to call handleAddResult - video is in store:",
+          {
+            videoId,
+            inStore: !!finalVerifyStore.youtubeVideos?.[`youtube-${videoId}`],
+            allVideos: finalVerifyStore.youtubeVideos ? Object.keys(finalVerifyStore.youtubeVideos) : [],
+            storeKeys: Object.keys(finalVerifyStore)
+          }
+        );
+        await new Promise((resolve2) => setTimeout(resolve2, 100));
+        const finalCheckStore = useContextItems.getState();
+        const finalCheckVideo = !!finalCheckStore.youtubeVideos?.[`youtube-${videoId}`];
+        console.log(
+          "[YouTube Handler] Final store check before handleAddResult:",
+          {
+            videoInStore: finalCheckVideo,
+            allVideos: finalCheckStore.youtubeVideos ? Object.keys(finalCheckStore.youtubeVideos) : []
+          }
+        );
+        const toolResultMessage = `YouTube Video Transcript Retrieved
+
+Title: ${title}
+Video ID: ${videoId}
+Word Count: ${wordCount}
+
+FULL TRANSCRIPT:
+${transcript}
+
+Please provide a comprehensive summary of this video, including:
+- Main topics and themes
+- Key points discussed
+- Important information or insights
+- Overall takeaway or conclusion
+
+The full transcript is provided above - use it to create a detailed, accurate summary.`;
+        console.log(
+          "[YouTube Handler] Calling handleAddResult with transcript length:",
+          transcript.length
+        );
+        handleAddResult(toolResultMessage);
+        console.log(
+          "[YouTube Handler] handleAddResult called - AI SDK should continue now"
+        );
+        setFetchSuccess(true);
+      } catch (error) {
+        logger.error("Error fetching YouTube transcript:", error);
+        const errorMessage = error instanceof Error ? error.message : "Unknown error";
+        handleAddResult(JSON.stringify({ error: errorMessage }));
+        setFetchSuccess(false);
       }
     };
     handleYouTubeTranscript();
-  }, [toolInvocation, handleAddResult, plugin]);
+  }, [toolInvocation.toolCallId]);
   if (fetchSuccess === null) {
     return /* @__PURE__ */ (0, import_jsx_runtime47.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Fetching the video transcript..." });
   }
@@ -150054,7 +150419,7 @@ function LastModifiedHandler({
 
 // views/assistant/ai-chat/tool-handlers/open-file-handler.tsx
 var import_react55 = __toESM(require_react());
-var import_obsidian21 = require("obsidian");
+var import_obsidian23 = require("obsidian");
 var import_jsx_runtime51 = __toESM(require_jsx_runtime());
 function OpenFileHandler({
   toolInvocation,
@@ -150069,7 +150434,7 @@ function OpenFileHandler({
         const args2 = toolInvocation.args;
         try {
           const file = app.vault.getAbstractFileByPath(args2.filePath);
-          if (!(file instanceof import_obsidian21.TFile)) {
+          if (!(file instanceof import_obsidian23.TFile)) {
             handleAddResult(
               JSON.stringify({
                 success: false,
@@ -150157,7 +150522,7 @@ function SettingsUpdateHandler({
 
 // views/assistant/ai-chat/tool-handlers/append-content-handler.tsx
 var import_react57 = __toESM(require_react());
-var import_obsidian22 = require("obsidian");
+var import_obsidian24 = require("obsidian");
 var import_jsx_runtime53 = __toESM(require_jsx_runtime());
 function AppendContentHandler({
   toolInvocation,
@@ -150171,7 +150536,7 @@ function AppendContentHandler({
       const activeFile = fileName ? plugin.app.vault.getAbstractFileByPath(fileName) : plugin.app.workspace.getActiveFile();
       if (activeFile) {
         const currentContent = await plugin.app.vault.read(activeFile);
-        if (!(activeFile instanceof import_obsidian22.TFile)) {
+        if (!(activeFile instanceof import_obsidian24.TFile)) {
           throw new Error("Active file is not a TFile");
         }
         await plugin.app.vault.modify(
@@ -150470,7 +150835,7 @@ function MoveFilesHandler({
 
 // views/assistant/ai-chat/tool-handlers/rename-files-handler.tsx
 var import_react60 = __toESM(require_react());
-var import_obsidian23 = require("obsidian");
+var import_obsidian25 = require("obsidian");
 var import_jsx_runtime56 = __toESM(require_jsx_runtime());
 function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
   const plugin = usePlugin();
@@ -150489,7 +150854,7 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
     for (const fileData of files) {
       try {
         const existingFile = plugin.app.vault.getAbstractFileByPath(fileData.oldPath);
-        if (existingFile && existingFile instanceof import_obsidian23.TFile) {
+        if (existingFile && existingFile instanceof import_obsidian25.TFile) {
           const newPath = existingFile.path.replace(existingFile.name, fileData.newName);
           await plugin.app.fileManager.renameFile(existingFile, newPath);
           renameResults.push(`\u2705 Renamed: ${existingFile.path} \u2192 ${newPath}`);
@@ -151032,8 +151397,8 @@ function ModifyTextHandler({
 
 // views/assistant/ai-chat/tool-handlers/metadata-handler.tsx
 var import_react65 = __toESM(require_react());
-var import_obsidian24 = require("obsidian");
-var import_obsidian25 = require("obsidian");
+var import_obsidian26 = require("obsidian");
+var import_obsidian27 = require("obsidian");
 var import_jsx_runtime61 = __toESM(require_jsx_runtime());
 function MetadataHandler({
   toolInvocation,
@@ -151043,7 +151408,7 @@ function MetadataHandler({
   const hasFetchedRef = (0, import_react65.useRef)(false);
   const extractMetadata = async (filePath, options) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian24.TFile)) return null;
+    if (!(file instanceof import_obsidian26.TFile)) return null;
     const cache2 = app.metadataCache.getFileCache(file);
     const metadata = {
       path: file.path,
@@ -151056,7 +151421,7 @@ function MetadataHandler({
       metadata.frontmatter = cache2.frontmatter;
     }
     if (options.includeTags !== false && cache2) {
-      const tags = (0, import_obsidian25.getAllTags)(cache2);
+      const tags = (0, import_obsidian27.getAllTags)(cache2);
       if (tags) {
         metadata.tags = tags;
       }
@@ -151117,7 +151482,7 @@ function MetadataHandler({
 
 // views/assistant/ai-chat/tool-handlers/frontmatter-handler.tsx
 var import_react66 = __toESM(require_react());
-var import_obsidian26 = require("obsidian");
+var import_obsidian28 = require("obsidian");
 var import_jsx_runtime62 = __toESM(require_jsx_runtime());
 function FrontmatterHandler({
   toolInvocation,
@@ -151127,7 +151492,7 @@ function FrontmatterHandler({
   const hasFetchedRef = (0, import_react66.useRef)(false);
   const updateFrontmatter = async (filePath, updates, deletions) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian26.TFile)) {
+    if (!(file instanceof import_obsidian28.TFile)) {
       return {
         success: false,
         message: `File not found: ${filePath}`
@@ -151207,7 +151572,7 @@ function FrontmatterHandler({
 
 // views/assistant/ai-chat/tool-handlers/tags-handler.tsx
 var import_react67 = __toESM(require_react());
-var import_obsidian27 = require("obsidian");
+var import_obsidian29 = require("obsidian");
 var import_jsx_runtime63 = __toESM(require_jsx_runtime());
 function TagsHandler({
   toolInvocation,
@@ -151220,7 +151585,7 @@ function TagsHandler({
     for (const filePath of filePaths2) {
       try {
         const file = app.vault.getAbstractFileByPath(filePath);
-        if (!(file instanceof import_obsidian27.TFile)) {
+        if (!(file instanceof import_obsidian29.TFile)) {
           results.push({
             path: filePath,
             success: false,
@@ -151346,7 +151711,7 @@ ${tagLine}`;
 
 // views/assistant/ai-chat/tool-handlers/backlinks-handler.tsx
 var import_react68 = __toESM(require_react());
-var import_obsidian28 = require("obsidian");
+var import_obsidian30 = require("obsidian");
 var import_jsx_runtime64 = __toESM(require_jsx_runtime());
 function BacklinksHandler({
   toolInvocation,
@@ -151356,7 +151721,7 @@ function BacklinksHandler({
   const hasFetchedRef = (0, import_react68.useRef)(false);
   const getBacklinks = (filePath, includeUnresolved) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian28.TFile)) {
+    if (!(file instanceof import_obsidian30.TFile)) {
       return {
         path: filePath,
         success: false,
@@ -151421,7 +151786,7 @@ function BacklinksHandler({
 
 // views/assistant/ai-chat/tool-handlers/outgoing-links-handler.tsx
 var import_react69 = __toESM(require_react());
-var import_obsidian29 = require("obsidian");
+var import_obsidian31 = require("obsidian");
 var import_jsx_runtime65 = __toESM(require_jsx_runtime());
 function OutgoingLinksHandler({
   toolInvocation,
@@ -151431,7 +151796,7 @@ function OutgoingLinksHandler({
   const hasFetchedRef = (0, import_react69.useRef)(false);
   const getOutgoingLinks = (filePath, includeEmbeds, resolvedOnly) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian29.TFile)) {
+    if (!(file instanceof import_obsidian31.TFile)) {
       return {
         path: filePath,
         success: false,
@@ -151515,7 +151880,7 @@ function OutgoingLinksHandler({
 
 // views/assistant/ai-chat/tool-handlers/headings-handler.tsx
 var import_react70 = __toESM(require_react());
-var import_obsidian30 = require("obsidian");
+var import_obsidian32 = require("obsidian");
 var import_jsx_runtime66 = __toESM(require_jsx_runtime());
 function HeadingsHandler({
   toolInvocation,
@@ -151525,7 +151890,7 @@ function HeadingsHandler({
   const hasFetchedRef = (0, import_react70.useRef)(false);
   const getHeadings = (filePath, minLevel = 1, maxLevel = 6) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian30.TFile)) {
+    if (!(file instanceof import_obsidian32.TFile)) {
       return {
         path: filePath,
         success: false,
@@ -151592,7 +151957,7 @@ function HeadingsHandler({
 
 // views/assistant/ai-chat/tool-handlers/create-files-handler.tsx
 var import_react71 = __toESM(require_react());
-var import_obsidian31 = require("obsidian");
+var import_obsidian33 = require("obsidian");
 var import_jsx_runtime67 = __toESM(require_jsx_runtime());
 function CreateFilesHandler({
   toolInvocation,
@@ -151682,7 +152047,7 @@ ${links}`;
               message: `Created ${successCount} file(s)${failCount > 0 ? `, ${failCount} failed` : ""}`
             })
           );
-          new import_obsidian31.Notice(
+          new import_obsidian33.Notice(
             `Created ${successCount} file(s)${failCount > 0 ? `, ${failCount} failed` : ""}`
           );
         } catch (error) {
@@ -151692,7 +152057,7 @@ ${links}`;
               error: `Failed to create files: ${error.message}`
             })
           );
-          new import_obsidian31.Notice(`Error creating files: ${error.message}`);
+          new import_obsidian33.Notice(`Error creating files: ${error.message}`);
         } finally {
           setIsCreating(false);
         }
@@ -151720,7 +152085,7 @@ ${links}`;
 
 // views/assistant/ai-chat/tool-handlers/delete-files-handler.tsx
 var import_react72 = __toESM(require_react());
-var import_obsidian32 = require("obsidian");
+var import_obsidian34 = require("obsidian");
 var import_jsx_runtime68 = __toESM(require_jsx_runtime());
 function DeleteFilesHandler({
   toolInvocation,
@@ -151741,7 +152106,7 @@ function DeleteFilesHandler({
         const invalid = [];
         filePaths.forEach((path2) => {
           const file = app.vault.getAbstractFileByPath(path2);
-          if (file instanceof import_obsidian32.TFile) {
+          if (file instanceof import_obsidian34.TFile) {
             valid2.push(file);
           } else {
             invalid.push(path2);
@@ -151775,7 +152140,7 @@ function DeleteFilesHandler({
     setIsDone(true);
     const message = permanentDelete2 ? `Permanently deleted ${deletedCount} file(s)` : `Moved ${deletedCount} file(s) to trash`;
     const resultMessage = failedCount > 0 ? `${message}, ${failedCount} failed` : message;
-    new import_obsidian32.Notice(resultMessage);
+    new import_obsidian34.Notice(resultMessage);
     handleAddResult(
       JSON.stringify({
         success: true,
@@ -151867,7 +152232,7 @@ function DeleteFilesHandler({
 
 // views/assistant/ai-chat/tool-handlers/merge-files-handler.tsx
 var import_react73 = __toESM(require_react());
-var import_obsidian33 = require("obsidian");
+var import_obsidian35 = require("obsidian");
 var import_jsx_runtime69 = __toESM(require_jsx_runtime());
 function MergeFilesHandler({
   toolInvocation,
@@ -151888,7 +152253,7 @@ function MergeFilesHandler({
         const invalid = [];
         sourceFiles.forEach((path2) => {
           const file = app.vault.getAbstractFileByPath(path2);
-          if (file instanceof import_obsidian33.TFile) {
+          if (file instanceof import_obsidian35.TFile) {
             valid2.push(file);
           } else {
             invalid.push(path2);
@@ -151916,7 +152281,7 @@ function MergeFilesHandler({
       const mergedContent = contents.join(separator);
       const outputPath = outputFolder ? `${outputFolder}/${outputFileName2}.md` : `${outputFileName2}.md`;
       const existingFile = app.vault.getAbstractFileByPath(outputPath);
-      if (existingFile instanceof import_obsidian33.TFile) {
+      if (existingFile instanceof import_obsidian35.TFile) {
         const confirmOverwrite = confirm(
           `File "${outputFileName2}.md" already exists. Overwrite?`
         );
@@ -151941,7 +152306,7 @@ function MergeFilesHandler({
       }
       setIsDone(true);
       const message = deleteSource2 ? `Merged ${validFiles.length} files into "${outputFileName2}.md" and deleted source files` : `Merged ${validFiles.length} files into "${outputFileName2}.md"`;
-      new import_obsidian33.Notice(message);
+      new import_obsidian35.Notice(message);
       handleAddResult(
         JSON.stringify({
           success: true,
@@ -151953,7 +152318,7 @@ function MergeFilesHandler({
       );
     } catch (error) {
       setIsDone(true);
-      new import_obsidian33.Notice(`Failed to merge files: ${error.message}`);
+      new import_obsidian35.Notice(`Failed to merge files: ${error.message}`);
       handleAddResult(
         JSON.stringify({
           success: false,
@@ -152057,7 +152422,7 @@ function MergeFilesHandler({
 
 // views/assistant/ai-chat/tool-handlers/create-template-handler.tsx
 var import_react74 = __toESM(require_react());
-var import_obsidian34 = require("obsidian");
+var import_obsidian36 = require("obsidian");
 var import_jsx_runtime70 = __toESM(require_jsx_runtime());
 function CreateTemplateHandler({
   toolInvocation,
@@ -152101,7 +152466,7 @@ function CreateTemplateHandler({
       }
       setIsDone(true);
       const message = `Created template "${templateName2}" in ${templateFolder}/`;
-      new import_obsidian34.Notice(message);
+      new import_obsidian36.Notice(message);
       handleAddResult(
         JSON.stringify({
           success: true,
@@ -152111,7 +152476,7 @@ function CreateTemplateHandler({
       );
     } catch (error) {
       setIsDone(true);
-      new import_obsidian34.Notice(`Failed to create template: ${error.message}`);
+      new import_obsidian36.Notice(`Failed to create template: ${error.message}`);
       handleAddResult(
         JSON.stringify({
           success: false,
@@ -152193,7 +152558,7 @@ function CreateTemplateHandler({
 
 // views/assistant/ai-chat/tool-handlers/bulk-find-replace-handler.tsx
 var import_react75 = __toESM(require_react());
-var import_obsidian35 = require("obsidian");
+var import_obsidian37 = require("obsidian");
 var import_jsx_runtime71 = __toESM(require_jsx_runtime());
 function BulkFindReplaceHandler({
   toolInvocation,
@@ -152221,7 +152586,7 @@ function BulkFindReplaceHandler({
         const counts = [];
         for (const path2 of filePaths) {
           const file = app.vault.getAbstractFileByPath(path2);
-          if (file instanceof import_obsidian35.TFile) {
+          if (file instanceof import_obsidian37.TFile) {
             valid2.push(file);
             try {
               const content3 = await app.vault.read(file);
@@ -152306,7 +152671,7 @@ function BulkFindReplaceHandler({
     }
     setIsDone(true);
     const message = `Replaced ${totalMatches2} occurrence(s) in ${filesModified} file(s)`;
-    new import_obsidian35.Notice(message);
+    new import_obsidian37.Notice(message);
     handleAddResult(
       JSON.stringify({
         success: true,
@@ -152438,7 +152803,7 @@ function BulkFindReplaceHandler({
 
 // views/assistant/ai-chat/tool-handlers/export-to-format-handler.tsx
 var import_react76 = __toESM(require_react());
-var import_obsidian36 = require("obsidian");
+var import_obsidian38 = require("obsidian");
 var import_jsx_runtime72 = __toESM(require_jsx_runtime());
 function ExportToFormatHandler({
   toolInvocation,
@@ -152459,7 +152824,7 @@ function ExportToFormatHandler({
         const invalid = [];
         filePaths.forEach((path2) => {
           const file = app.vault.getAbstractFileByPath(path2);
-          if (file instanceof import_obsidian36.TFile) {
+          if (file instanceof import_obsidian38.TFile) {
             valid2.push(file);
           } else {
             invalid.push(path2);
@@ -152539,7 +152904,7 @@ ${content3.replace(/\n/g, "<br>\n")}
       }
       setIsDone(true);
       const message = `Exported ${exportedCount} file(s) to ${format3.toUpperCase()}`;
-      new import_obsidian36.Notice(message);
+      new import_obsidian38.Notice(message);
       handleAddResult(
         JSON.stringify({
           success: true,
@@ -152553,7 +152918,7 @@ ${content3.replace(/\n/g, "<br>\n")}
       );
     } catch (error) {
       setIsDone(true);
-      new import_obsidian36.Notice(`Export failed: ${error.message}`);
+      new import_obsidian38.Notice(`Export failed: ${error.message}`);
       handleAddResult(
         JSON.stringify({
           success: false,
@@ -157755,7 +158120,7 @@ var SelectedItem = ({
 );
 
 // views/assistant/ai-chat/components/context-items.tsx
-var import_obsidian37 = require("obsidian");
+var import_obsidian39 = require("obsidian");
 var import_jsx_runtime79 = __toESM(require_jsx_runtime());
 var ContextItems = () => {
   const plugin = usePlugin();
@@ -157809,7 +158174,7 @@ var ContextItems = () => {
   };
   const handleOpenFolder = (folderPath) => {
     const folder = app.vault.getAbstractFileByPath(folderPath);
-    if (folder && folder instanceof import_obsidian37.TFolder) {
+    if (folder && folder instanceof import_obsidian39.TFolder) {
       const fileExplorerLeaf = app.workspace.getLeavesOfType("file-explorer")[0];
       if (fileExplorerLeaf) {
         app.workspace.revealLeaf(fileExplorerLeaf);
@@ -158076,7 +158441,7 @@ function isSearchResultsAnnotation(annotation) {
 
 // views/assistant/ai-chat/use-editor-selection.ts
 var import_react84 = __toESM(require_react());
-var import_obsidian38 = require("obsidian");
+var import_obsidian40 = require("obsidian");
 var EMPTY_CONTEXT = {
   selectedText: "",
   cursorPosition: null,
@@ -158092,7 +158457,7 @@ function useEditorSelection(app) {
   const [frozenContext, setFrozenContext] = (0, import_react84.useState)(EMPTY_CONTEXT);
   (0, import_react84.useEffect)(() => {
     const updateContext = () => {
-      const view2 = app.workspace.getActiveViewOfType(import_obsidian38.MarkdownView);
+      const view2 = app.workspace.getActiveViewOfType(import_obsidian40.MarkdownView);
       if (!view2 || !view2.editor) {
         setCurrentContext(EMPTY_CONTEXT);
         return;
@@ -158238,6 +158603,7 @@ var ChatComponent = ({
     tags,
     searchResults,
     currentFile,
+    youtubeVideos,
     textSelections,
     isLightweightMode
   } = useContextItems();
@@ -158250,6 +158616,7 @@ var ChatComponent = ({
     folders,
     tags,
     currentFile,
+    youtubeVideos,
     searchResults,
     textSelections
   };
@@ -158290,6 +158657,13 @@ var ChatComponent = ({
             }
           ])
         ),
+        youtubeVideos: Object.fromEntries(
+          Object.entries(youtubeVideos).map(([id3, video]) => [
+            id3,
+            { ...video, transcript: "" }
+            // Remove transcript in lightweight mode
+          ])
+        ),
         // Keep these as is
         currentFile: currentFile ? { ...currentFile, content: "" } : null,
         textSelections
@@ -158318,20 +158692,23 @@ ${editorContextString}` : contextString,
     []
     // Empty deps = only calculate once
   );
-  const chatBody = import_react85.default.useMemo(() => ({
-    currentDatetime,
-    newUnifiedContext: fullContext,
-    model: plugin.settings.selectedModel,
-    enableSearchGrounding: plugin.settings.enableSearchGrounding || selectedModel === "gpt-4o-search-preview" || selectedModel === "gpt-4o-mini-search-preview",
-    deepSearch: plugin.settings.enableDeepSearch
-  }), [
-    currentDatetime,
-    fullContext,
-    plugin.settings.selectedModel,
-    plugin.settings.enableSearchGrounding,
-    plugin.settings.enableDeepSearch,
-    selectedModel
-  ]);
+  const chatBody = import_react85.default.useMemo(
+    () => ({
+      currentDatetime,
+      newUnifiedContext: fullContext,
+      model: plugin.settings.selectedModel,
+      enableSearchGrounding: plugin.settings.enableSearchGrounding || selectedModel === "gpt-4o-search-preview" || selectedModel === "gpt-4o-mini-search-preview",
+      deepSearch: plugin.settings.enableDeepSearch
+    }),
+    [
+      currentDatetime,
+      fullContext,
+      plugin.settings.selectedModel,
+      plugin.settings.enableSearchGrounding,
+      plugin.settings.enableDeepSearch,
+      selectedModel
+    ]
+  );
   const [groundingMetadata, setGroundingMetadata] = (0, import_react85.useState)(null);
   const {
     isLoading: isGenerating,
@@ -158345,13 +158722,139 @@ ${editorContextString}` : contextString,
     reload,
     setMessages
   } = useChat({
-    // NO body or prepareRequestBody - causes infinite loops!
+    // Use prepareRequestBody to ensure context is always included, even after tool results
+    // Read context fresh from Zustand store each time to ensure it's up-to-date after tool results
+    prepareRequestBody: ({ messages: messages2 }) => {
+      const store = useContextItems.getState();
+      const freshContextItems = {
+        files: store.files || {},
+        folders: store.folders || {},
+        tags: store.tags || {},
+        currentFile: store.currentFile || null,
+        youtubeVideos: store.youtubeVideos || {},
+        // CRITICAL: Ensure youtubeVideos is always an object
+        searchResults: store.searchResults || {},
+        textSelections: store.textSelections || {}
+      };
+      console.log("[Chat] prepareRequestBody - Store state:", {
+        hasYoutubeVideos: !!store.youtubeVideos,
+        youtubeVideosType: typeof store.youtubeVideos,
+        youtubeVideosKeys: store.youtubeVideos ? Object.keys(store.youtubeVideos) : [],
+        allStoreKeys: Object.keys(store)
+      });
+      if (!freshContextItems.youtubeVideos || typeof freshContextItems.youtubeVideos !== "object") {
+        console.warn(
+          "[Chat] prepareRequestBody: youtubeVideos is not an object, fixing it:",
+          {
+            type: typeof freshContextItems.youtubeVideos,
+            value: freshContextItems.youtubeVideos
+          }
+        );
+        freshContextItems.youtubeVideos = {};
+      }
+      const freshContextString = store.isLightweightMode ? JSON.stringify({
+        files: Object.fromEntries(
+          Object.entries(freshContextItems.files).map(([id3, file]) => [
+            id3,
+            { ...file, content: "" }
+          ])
+        ),
+        folders: Object.fromEntries(
+          Object.entries(freshContextItems.folders).map(([id3, folder]) => [
+            id3,
+            {
+              ...folder,
+              files: folder.files.map((f) => ({ ...f, content: "" }))
+            }
+          ])
+        ),
+        tags: Object.fromEntries(
+          Object.entries(freshContextItems.tags).map(([id3, tag]) => [
+            id3,
+            { ...tag, files: tag.files.map((f) => ({ ...f, content: "" })) }
+          ])
+        ),
+        searchResults: Object.fromEntries(
+          Object.entries(freshContextItems.searchResults).map(
+            ([id3, search3]) => [
+              id3,
+              {
+                ...search3,
+                results: search3.results.map((r3) => ({ ...r3, content: "" }))
+              }
+            ]
+          )
+        ),
+        youtubeVideos: Object.fromEntries(
+          Object.entries(freshContextItems.youtubeVideos).map(
+            ([id3, video]) => [id3, { ...video, transcript: "" }]
+          )
+        ),
+        currentFile: freshContextItems.currentFile ? { ...freshContextItems.currentFile, content: "" } : null,
+        textSelections: freshContextItems.textSelections
+      }) : JSON.stringify(freshContextItems);
+      const freshEditorContext = formatEditorContextForAI(editorContext);
+      const freshFullContext = freshEditorContext ? `${freshContextString}
+
+${freshEditorContext}` : freshContextString;
+      const hasYouTube = Object.keys(freshContextItems.youtubeVideos).length > 0;
+      const contextStringLength = freshContextString.length;
+      console.log("[Chat] prepareRequestBody:", {
+        hasYouTube,
+        youtubeVideoCount: Object.keys(freshContextItems.youtubeVideos).length,
+        youtubeVideoIds: Object.keys(freshContextItems.youtubeVideos),
+        contextStringLength,
+        isLightweightMode: store.isLightweightMode,
+        hasEditorContext: !!freshEditorContext
+      });
+      if (hasYouTube) {
+        const firstVideo = Object.values(
+          freshContextItems.youtubeVideos
+        )[0];
+        console.log("[Chat] First YouTube video:", {
+          id: firstVideo?.id,
+          title: firstVideo?.title,
+          transcriptLength: firstVideo?.transcript?.length || 0,
+          videoId: firstVideo?.videoId
+        });
+      } else {
+        console.warn(
+          "[Chat] prepareRequestBody: No YouTube videos in context!",
+          {
+            storeYoutubeVideos: Object.keys(store.youtubeVideos),
+            freshContextItemsYoutubeVideos: Object.keys(
+              freshContextItems.youtubeVideos
+            ),
+            allStoreKeys: Object.keys(store)
+          }
+        );
+      }
+      const requestBody = {
+        messages: messages2,
+        currentDatetime,
+        newUnifiedContext: freshFullContext,
+        model: plugin.settings.selectedModel,
+        enableSearchGrounding: plugin.settings.enableSearchGrounding || selectedModel === "gpt-4o-search-preview" || selectedModel === "gpt-4o-mini-search-preview",
+        deepSearch: plugin.settings.enableDeepSearch
+      };
+      try {
+        const contextJson = JSON.parse(freshContextString);
+        console.log("[Chat] Context JSON being sent:", {
+          hasYoutubeVideos: !!(contextJson.youtubeVideos && Object.keys(contextJson.youtubeVideos).length > 0),
+          youtubeVideoCount: contextJson.youtubeVideos ? Object.keys(contextJson.youtubeVideos).length : 0,
+          allKeys: Object.keys(contextJson)
+        });
+      } catch (e2) {
+        console.error("[Chat] Failed to parse context JSON:", e2);
+      }
+      return JSON.stringify(requestBody);
+    },
     onDataChunk: (chunk) => {
       if (chunk.type === "metadata" && chunk.data?.groundingMetadata) {
         setGroundingMetadata(chunk.data.groundingMetadata);
       }
     },
-    maxSteps: 2,
+    maxSteps: 5,
     api: `${plugin.getServerUrl()}/api/chat`,
     experimental_throttle: 100,
     headers: {
@@ -158389,7 +158892,9 @@ ${editorContextString}` : contextString,
     keepLastMessageOnError: true,
     onError: (error2) => {
       logger.error(error2.message);
-      const isToolError = error2.message?.includes("ToolInvocation must have a result");
+      const isToolError = error2.message?.includes(
+        "ToolInvocation must have a result"
+      );
       if (isToolError) {
         logger.warn("Tool invocation error detected, displaying as message...");
         return;
@@ -158413,11 +158918,18 @@ ${editorContextString}` : contextString,
     }
   });
   const [attachments, setAttachments] = (0, import_react85.useState)([]);
-  const handleAttachmentsChange = (0, import_react85.useCallback)((newAttachments) => {
-    setAttachments(newAttachments);
-  }, []);
+  const handleAttachmentsChange = (0, import_react85.useCallback)(
+    (newAttachments) => {
+      setAttachments(newAttachments);
+    },
+    []
+  );
   const handleSendMessage = (e2) => {
-    logger.debug("handleSendMessage", e2, input);
+    logger.debug("handleSendMessage", {
+      input,
+      type: e2.type,
+      timeStamp: e2.timeStamp
+    });
     e2.preventDefault();
     if (isGenerating) {
       handleCancelGeneration();
@@ -158425,11 +158937,13 @@ ${editorContextString}` : contextString,
     }
     const messageBody = {
       ...chatBody,
-      experimental_attachments: attachments.map(({ id: id3, size, ...attachment }) => ({
-        name: attachment.name,
-        contentType: attachment.contentType,
-        url: attachment.url
-      }))
+      experimental_attachments: attachments.map(
+        ({ id: id3, size, ...attachment }) => ({
+          name: attachment.name,
+          contentType: attachment.contentType,
+          url: attachment.url
+        })
+      )
     };
     handleSubmit(e2, { body: messageBody });
     setAttachments([]);
@@ -158496,19 +159010,6 @@ ${editorContextString}` : contextString,
     ] }) }),
     /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("div", { className: "flex-1 overflow-y-auto px-3 py-2 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)("div", { className: "flex flex-col space-y-1", children: [
       messages.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("div", { className: "flex flex-col items-center justify-center py-12" }) : messages.map((message) => /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)(import_react85.default.Fragment, { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(MessageRenderer, { message }),
-        message.annotations?.map((annotation, index2) => {
-          if (isSearchResultsAnnotation(annotation)) {
-            return /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
-              SearchAnnotationHandler,
-              {
-                annotation
-              },
-              `${message.id}-annotation-${index2}`
-            );
-          }
-          return null;
-        }),
         message.toolInvocations?.map(
           (toolInvocation) => {
             return /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
@@ -158521,7 +159022,20 @@ ${editorContextString}` : contextString,
               toolInvocation.toolCallId
             );
           }
-        )
+        ),
+        message.annotations?.map((annotation, index2) => {
+          if (isSearchResultsAnnotation(annotation)) {
+            return /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
+              SearchAnnotationHandler,
+              {
+                annotation
+              },
+              `${message.id}-annotation-${index2}`
+            );
+          }
+          return null;
+        }),
+        /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(MessageRenderer, { message })
       ] }, message.id)),
       isGenerating && /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)("div", { className: "flex items-start gap-2 py-1.5", children: [
         /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("div", { className: "w-4 text-xs text-[--text-faint]", children: "AI" }),
@@ -158577,15 +159091,20 @@ ${editorContextString}` : contextString,
           }
         ),
         /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)("div", { className: "absolute bottom-2 right-2 flex items-center gap-1", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(AudioRecorder, { onTranscriptionComplete: handleTranscriptionComplete }),
+          /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
+            AudioRecorder,
+            {
+              onTranscriptionComplete: handleTranscriptionComplete
+            }
+          ),
           /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
             "button",
             {
               type: "submit",
-              disabled: isGenerating,
-              className: `w-7 h-7 flex items-center justify-center transition-colors ${isGenerating ? "text-[--text-muted] cursor-not-allowed" : "text-[--interactive-accent] hover:text-[--interactive-accent-hover]"}`,
+              disabled: isGenerating || !input.trim(),
+              className: `flex items-center justify-center transition-all rounded-md w-8 h-8 ${isGenerating || !input.trim() ? "text-[--text-muted] cursor-not-allowed opacity-50" : "text-[--text-on-accent] bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] shadow-sm hover:shadow"}`,
               title: isGenerating ? "Stop generating" : "Send message",
-              children: isGenerating ? /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", className: "w-5 h-5", children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M6 18L18 6M6 6l12 12" }) }) : /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", className: "w-5 h-5", children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M14 5l7 7m0 0l-7 7m7-7H3" }) })
+              children: isGenerating ? /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(import_lucide_react11.Square, { className: "w-4 h-4", fill: "currentColor" }) : /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(import_lucide_react11.Send, { className: "w-4 h-4" })
             }
           )
         ] })
@@ -158629,7 +159148,7 @@ var container_default = AIChatSidebar;
 var import_react88 = __toESM(require_react());
 
 // apiUtils.ts
-var import_obsidian39 = require("obsidian");
+var import_obsidian41 = require("obsidian");
 async function makeApiRequest(requestFn) {
   logMessage("Making API request", requestFn);
   const response = await requestFn();
@@ -158637,14 +159156,14 @@ async function makeApiRequest(requestFn) {
     return response.json;
   }
   if (response.json.error) {
-    new import_obsidian39.Notice(`File Organizer error: ${response.json.error}`, 6e3);
+    new import_obsidian41.Notice(`File Organizer error: ${response.json.error}`, 6e3);
     throw new Error(response.json.error);
   }
   throw new Error("Unknown error");
 }
 async function checkLicenseKey(serverUrl, key) {
   try {
-    const response = await (0, import_obsidian39.requestUrl)({
+    const response = await (0, import_obsidian41.requestUrl)({
       url: `${serverUrl}/api/check-key`,
       method: "POST",
       headers: {
@@ -158660,7 +159179,7 @@ async function checkLicenseKey(serverUrl, key) {
 }
 
 // views/assistant/synchronizer/sync-tab.tsx
-var import_obsidian40 = require("obsidian");
+var import_obsidian42 = require("obsidian");
 var import_lucide_react12 = __toESM(require_lucide_react());
 var import_jsx_runtime86 = __toESM(require_jsx_runtime());
 var DOWNLOADED_FILES_KEY = "file-organizer-downloaded-files";
@@ -158703,7 +159222,7 @@ function SyncTab({ plugin }) {
       setLoading(true);
       setError(null);
       const response = await makeApiRequest(
-        () => (0, import_obsidian40.requestUrl)({
+        () => (0, import_obsidian42.requestUrl)({
           url: `${plugin.getServerUrl()}/api/files?page=${page}`,
           method: "GET",
           headers: {
@@ -158737,7 +159256,7 @@ function SyncTab({ plugin }) {
     }
     setLoadingPreviews((prev) => ({ ...prev, [file.id]: true }));
     try {
-      const response = await (0, import_obsidian40.requestUrl)({
+      const response = await (0, import_obsidian42.requestUrl)({
         url: file.blobUrl,
         method: "GET"
       });
@@ -158788,7 +159307,7 @@ function SyncTab({ plugin }) {
     )) {
       setDownloadedFiles(/* @__PURE__ */ new Set());
       localStorage.removeItem(DOWNLOADED_FILES_KEY);
-      new import_obsidian40.Notice("Download history cleared");
+      new import_obsidian42.Notice("Download history cleared");
     }
   };
   const downloadAllMissingFiles = async () => {
@@ -158799,18 +159318,18 @@ function SyncTab({ plugin }) {
         (file) => file.status === "completed" && !downloadedFiles.has(file.id)
       );
       if (filesToDownload.length === 0) {
-        new import_obsidian40.Notice("All files are already synchronized");
+        new import_obsidian42.Notice("All files are already synchronized");
         return;
       }
-      new import_obsidian40.Notice(`Syncing ${filesToDownload.length} file(s)...`);
+      new import_obsidian42.Notice(`Syncing ${filesToDownload.length} file(s)...`);
       for (const file of filesToDownload) {
         if (!downloading[file.id]) {
           await downloadFile(file);
         }
       }
-      new import_obsidian40.Notice(`Successfully synchronized ${filesToDownload.length} file(s)`);
+      new import_obsidian42.Notice(`Successfully synchronized ${filesToDownload.length} file(s)`);
     } catch (err) {
-      new import_obsidian40.Notice(
+      new import_obsidian42.Notice(
         `Error during bulk sync: ${err instanceof Error ? err.message : String(err)}`
       );
       console.error("Bulk sync error:", err);
@@ -158826,10 +159345,10 @@ function SyncTab({ plugin }) {
       try {
         await plugin.ensureFolderExists(folderPath);
       } catch (err) {
-        new import_obsidian40.Notice(`Failed to create sync folder: ${folderPath}`);
+        new import_obsidian42.Notice(`Failed to create sync folder: ${folderPath}`);
         throw err;
       }
-      const fileResponse = await (0, import_obsidian40.requestUrl)({
+      const fileResponse = await (0, import_obsidian42.requestUrl)({
         url: file.blobUrl,
         method: "GET"
       });
@@ -158844,7 +159363,7 @@ function SyncTab({ plugin }) {
       try {
         await plugin.ensureFolderExists(dateFolderPath);
       } catch (err) {
-        new import_obsidian40.Notice(`Failed to create date folder: ${dateFolderPath}`);
+        new import_obsidian42.Notice(`Failed to create date folder: ${dateFolderPath}`);
         throw err;
       }
       if (isImage2 || isPDF) {
@@ -158864,9 +159383,9 @@ ${file.textContent || ""}`;
           const mdFilePath = `${dateFolderPath}/${baseName}.md`;
           await plugin.app.vault.create(mdFilePath, markdownContent);
           markFileAsDownloaded(file.id);
-          new import_obsidian40.Notice(`Downloaded ${sanitizedFilename} to ${dateFolderPath}`);
+          new import_obsidian42.Notice(`Downloaded ${sanitizedFilename} to ${dateFolderPath}`);
         } catch (err) {
-          new import_obsidian40.Notice(`Failed to save file: ${sanitizedFilename}`);
+          new import_obsidian42.Notice(`Failed to save file: ${sanitizedFilename}`);
           throw err;
         }
       } else {
@@ -158881,14 +159400,14 @@ ${file.textContent || ""}`;
             content3
           );
           markFileAsDownloaded(file.id);
-          new import_obsidian40.Notice(`Downloaded ${finalName} to ${dateFolderPath}`);
+          new import_obsidian42.Notice(`Downloaded ${finalName} to ${dateFolderPath}`);
         } catch (err) {
-          new import_obsidian40.Notice(`Failed to save file: ${sanitizedFilename}`);
+          new import_obsidian42.Notice(`Failed to save file: ${sanitizedFilename}`);
           throw err;
         }
       }
     } catch (err) {
-      new import_obsidian40.Notice(
+      new import_obsidian42.Notice(
         `Error downloading file: ${err instanceof Error ? err.message : String(err)}`
       );
       console.error("Download error:", err);
@@ -159216,7 +159735,7 @@ function AssistantContent({
     /* @__PURE__ */ (0, import_jsx_runtime87.jsx)("div", { className: tw("flex-1 min-h-0 w-full overflow-hidden"), children: /* @__PURE__ */ (0, import_jsx_runtime87.jsx)(TabContent2, { activeTab, plugin, leaf, showSyncTab }) })
   ] });
 }
-var AssistantViewWrapper = class extends import_obsidian41.ItemView {
+var AssistantViewWrapper = class extends import_obsidian43.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.root = null;
@@ -159289,16 +159808,16 @@ var AssistantViewWrapper = class extends import_obsidian41.ItemView {
 };
 
 // views/assistant/dashboard/view.tsx
-var import_obsidian44 = require("obsidian");
+var import_obsidian46 = require("obsidian");
 var import_client3 = __toESM(require_client());
 
 // views/assistant/dashboard/main-dashboard.tsx
 var import_react90 = __toESM(require_react());
-var import_obsidian43 = require("obsidian");
+var import_obsidian45 = require("obsidian");
 
 // views/assistant/dashboard/onboarding-wizard.tsx
 var import_react89 = __toESM(require_react());
-var import_obsidian42 = require("obsidian");
+var import_obsidian44 = require("obsidian");
 var import_jsx_runtime88 = __toESM(require_jsx_runtime());
 function OnboardingWizard({ plugin, onComplete }) {
   const [step, setStep] = (0, import_react89.useState)(0);
@@ -159336,7 +159855,7 @@ function OnboardingWizard({ plugin, onComplete }) {
       }
       plugin.settings.API_KEY = data.licenseKey;
       await plugin.saveSettings();
-      new import_obsidian42.Notice(`Successfully ${isSignup ? "signed up" : "signed in"}! Your account is now connected.`, 5e3);
+      new import_obsidian44.Notice(`Successfully ${isSignup ? "signed up" : "signed in"}! Your account is now connected.`, 5e3);
       nextStep();
     } catch (error2) {
       console.error(`Error during ${isSignup ? "signup" : "login"}:`, error2);
@@ -159853,7 +160372,7 @@ function MainDashboard() {
       setLongTaskProgress(progress2);
     }
     setIsLongTaskRunning(false);
-    new import_obsidian43.Notice("Long task completed!");
+    new import_obsidian45.Notice("Long task completed!");
   };
   const toggleSection = (section) => {
     setExpandedSections((prev) => {
@@ -159878,13 +160397,13 @@ function MainDashboard() {
   };
   const handleFABAction = () => {
     if (!activeFile) {
-      new import_obsidian43.Notice("No active file to operate on!");
+      new import_obsidian45.Notice("No active file to operate on!");
       return;
     }
     if (activeFile.basename.toLowerCase().includes("meeting")) {
-      new import_obsidian43.Notice("Meeting note enhanced!");
+      new import_obsidian45.Notice("Meeting note enhanced!");
     } else {
-      new import_obsidian43.Notice(`Organized: ${activeFile.basename}`);
+      new import_obsidian45.Notice(`Organized: ${activeFile.basename}`);
     }
   };
   if (!isOnboardingComplete) {
@@ -159938,7 +160457,7 @@ function MainDashboard() {
 // views/assistant/dashboard/view.tsx
 var import_jsx_runtime97 = __toESM(require_jsx_runtime());
 var DASHBOARD_VIEW_TYPE = "fo2k.dashboard";
-var DashboardView = class extends import_obsidian44.ItemView {
+var DashboardView = class extends import_obsidian46.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.root = null;
@@ -159975,13 +160494,13 @@ var es_default = (0, import_custom.default)({
 });
 
 // handlers/eventHandlers.ts
-var import_obsidian47 = require("obsidian");
+var import_obsidian49 = require("obsidian");
 
 // inbox/services/queue.ts
 var import_events = require("events");
 
 // inbox/services/error-service.ts
-var import_obsidian45 = require("obsidian");
+var import_obsidian47 = require("obsidian");
 var ErrorService = class _ErrorService {
   constructor() {
     this.errorLog = [];
@@ -160020,7 +160539,7 @@ var ErrorService = class _ErrorService {
   }
   showNotification(details) {
     const duration = this.getNotificationDuration(details.severity);
-    new import_obsidian45.Notice(
+    new import_obsidian47.Notice(
       `FileOrganizer: ${details.message}`,
       duration
     );
@@ -160230,7 +160749,7 @@ var Queue = class extends import_events.EventEmitter {
 };
 
 // fileUtils.ts
-var import_obsidian46 = require("obsidian");
+var import_obsidian48 = require("obsidian");
 async function ensureFolderExists(app, folderPath) {
   if (!await app.vault.adapter.exists(folderPath)) {
     await app.vault.createFolder(folderPath);
@@ -160408,15 +160927,15 @@ date_published: "{{video publication date if available in transcript or metadata
 
 topics: ["{{relevant topic 1}}", "{{relevant topic 2}}"]
 
-tags: ["#youtube", "{{#any other relevant tags based on content}}"]
+tags: ["youtube", "{{any other relevant tags based on content}}"]
 
 summary: "{{short summary of the video's main theme and key takeaways}}"
 
 ---
 
-2. A YouTube embed link in the following format:
+2. A YouTube video embed in the following format (Obsidian will automatically embed the video):
 
-[![YouTube Video](https://www.youtube.com/watch?v=XXXXXXX)](https://www.youtube.com/watch?v=XXXXXXX)
+![](https://www.youtube.com/watch?v=VIDEO_ID)
 
 3. A comprehensive, detailed summary of the key points from the video (below the embed link).
 
@@ -160426,7 +160945,7 @@ summary: "{{short summary of the video's main theme and key takeaways}}"
 
 - Extract topics by analyzing the main themes discussed in the transcript. Use 2-5 specific, relevant topics.
 
-- Generate tags based on the video content. Always include "#youtube" and add 2-4 additional relevant tags.
+- Generate tags based on the video content. Always include "youtube" and add 2-4 additional relevant tags. Tags in frontmatter should NOT include the "#" symbol (only use "#" for inline tags in the content body).
 
 - Create a concise summary (1-2 sentences) that captures the video's main theme and key takeaways.
 
@@ -160436,7 +160955,9 @@ summary: "{{short summary of the video's main theme and key takeaways}}"
 
 - Maintain the exact markdown syntax for the frontmatter block (\`---\` at the top and bottom).
 
-- Use the YouTube link format exactly as provided. Extract the video ID from the URL in the content.
+- Extract the video ID from the YouTube URL in the content, then create the embed using Obsidian's embed syntax:
+  - Format: ![](https://www.youtube.com/watch?v=VIDEO_ID) (replace VIDEO_ID with the actual video ID)
+  - This will automatically embed the YouTube video player in Obsidian
 
 - In the main body, provide a comprehensive summary with bullet points covering all major points from the video transcript.
 
@@ -160456,13 +160977,13 @@ date_published: "2024-01-15"
 
 topics: ["React", "Web Development", "JavaScript", "Tutorial"]
 
-tags: ["#youtube", "#react", "#webdev", "#tutorial"]
+tags: ["youtube", "react", "webdev", "tutorial"]
 
 summary: "A comprehensive guide to building modern React applications with hooks, context API, and best practices for 2024."
 
 ---
 
-[![YouTube Video](https://www.youtube.com/watch?v=XXXXXXX)](https://www.youtube.com/watch?v=XXXXXXX)
+![](https://www.youtube.com/watch?v=VIDEO_ID)
 
 ## Detailed Summary
 
@@ -160515,13 +161036,13 @@ summary: "A comprehensive guide to building modern React applications with hooks
 async function moveFile(app, sourceFile, newFileName, destinationFolder = "") {
   const fileExtension = sourceFile.extension;
   let targetPath = `${destinationFolder}/${newFileName}.${fileExtension}`;
-  const normalizedTargetPath = (0, import_obsidian46.normalizePath)(targetPath);
+  const normalizedTargetPath = (0, import_obsidian48.normalizePath)(targetPath);
   if (await app.vault.adapter.exists(normalizedTargetPath)) {
     const timestamp = Date.now();
     const uniqueFileName = `${newFileName}_${timestamp}`;
     targetPath = `${destinationFolder}/${uniqueFileName}.${fileExtension}`;
   }
-  const normalizedFinalPath = (0, import_obsidian46.normalizePath)(targetPath);
+  const normalizedFinalPath = (0, import_obsidian48.normalizePath)(targetPath);
   await ensureFolderExists(app, destinationFolder);
   await app.fileManager.renameFile(sourceFile, normalizedFinalPath);
   const movedFile = app.vault.getAbstractFileByPath(
@@ -160991,7 +161512,7 @@ async function fetchYouTubeTranscriptStep(context) {
       );
       return context;
     }
-    const videoId = await extractYouTubeVideoId(context.content);
+    const videoId = extractYouTubeVideoId(context.content);
     if (!videoId) {
       return context;
     }
@@ -161285,8 +161806,8 @@ function registerEventHandlers(plugin) {
     plugin.app.vault.on("create", async (file) => {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
       if (!file.path.includes(plugin.settings.pathToWatch)) return;
-      if (file instanceof import_obsidian47.TFile) {
-        new import_obsidian47.Notice("Inbox is looking at new file: " + file.basename);
+      if (file instanceof import_obsidian49.TFile) {
+        new import_obsidian49.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
       }
     })
@@ -161295,8 +161816,8 @@ function registerEventHandlers(plugin) {
     plugin.app.vault.on("rename", async (file, oldPath) => {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
       if (!file.path.includes(plugin.settings.pathToWatch)) return;
-      if (file instanceof import_obsidian47.TFile) {
-        new import_obsidian47.Notice("Inbox is looking at new file: " + file.basename);
+      if (file instanceof import_obsidian49.TFile) {
+        new import_obsidian49.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
       }
     })
@@ -161327,7 +161848,7 @@ function initializeFileOrganizationCommands(plugin) {
 }
 
 // index.ts
-var FileOrganizer = class extends import_obsidian48.Plugin {
+var FileOrganizer = class extends import_obsidian50.Plugin {
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
     if (this.settings.selectedModel === "gpt-4.1-mini") {
@@ -161388,7 +161909,7 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
       return concepts;
     } catch (error) {
       logger.error("Error in identifyConceptsAndFetchChunks:", error);
-      new import_obsidian48.Notice("An error occurred while processing the document.", 6e3);
+      new import_obsidian50.Notice("An error occurred while processing the document.", 6e3);
       throw error;
     }
   }
@@ -161412,7 +161933,7 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
       return formattedContent;
     } catch (error) {
       logger.error("Error formatting content:", error);
-      new import_obsidian48.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian50.Notice("An error occurred while formatting the content.", 6e3);
       return "";
     }
   }
@@ -161434,7 +161955,7 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
     const templateFile = this.app.vault.getAbstractFileByPath(
       `${this.settings.templatePaths}/${classification}`
     );
-    if (!templateFile || !(templateFile instanceof import_obsidian48.TFile)) {
+    if (!templateFile || !(templateFile instanceof import_obsidian50.TFile)) {
       logger.error("Template file not found or is not a valid file.");
       return "";
     }
@@ -161446,7 +161967,7 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
     content: content3
   }) {
     try {
-      new import_obsidian48.Notice("Formatting content in split view...", 3e3);
+      new import_obsidian50.Notice("Formatting content in split view...", 3e3);
       const newFileName = `${file.basename}-formatted-${Date.now()}.md`;
       const newFilePath = `${file.parent?.path}/${newFileName}`;
       const newFile = await this.app.vault.create(newFilePath, "");
@@ -161464,10 +161985,10 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
         this.settings.API_KEY,
         updateCallback
       );
-      new import_obsidian48.Notice("Content formatted in split view successfully", 3e3);
+      new import_obsidian50.Notice("Content formatted in split view successfully", 3e3);
     } catch (error) {
       logger.error("Error formatting content in split view:", error);
-      new import_obsidian48.Notice(
+      new import_obsidian50.Notice(
         "An error occurred while formatting the content in split view.",
         6e3
       );
@@ -161476,10 +161997,64 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
   /**
    * Cleans up tags in formatted content by removing extra # symbols
    * Fixes cases where AI generates tags with # that then appear as ## in Obsidian
+   * Also removes # from tags in frontmatter (frontmatter tags should not have #)
+   * Also fixes YouTube embeds to use thumbnail image URLs instead of watch URLs
    */
   cleanupTagsInContent(content3) {
+    content3 = content3.replace(
+      /\[!\[([^\]]*)\]\(https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)\)\]\(https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)\)/g,
+      (match, altText, videoId1, videoId2) => {
+        const videoId = videoId1 || videoId2;
+        return `![](https://www.youtube.com/watch?v=${videoId})`;
+      }
+    );
+    content3 = content3.replace(
+      /\[!\[([^\]]*)\]\(https:\/\/img\.youtube\.com\/vi\/([a-zA-Z0-9_-]+)\/[^)]+\)\]\(https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)\)/g,
+      (match, altText, videoId1, videoId2) => {
+        const videoId = videoId1 || videoId2;
+        return `![](https://www.youtube.com/watch?v=${videoId})`;
+      }
+    );
+    const frontmatterRegex = /^---\n([\s\S]*?)\n---(\n|$)/;
+    const frontmatterMatch = content3.match(frontmatterRegex);
+    if (frontmatterMatch) {
+      let frontmatterContent = frontmatterMatch[1];
+      const closingNewline = frontmatterMatch[2] || "\n";
+      frontmatterContent = frontmatterContent.replace(
+        /tags:\s*\[([\s\S]*?)\]/g,
+        (match, tagsContent) => {
+          const tagMatches = tagsContent.match(/["']([^"']*)["']/g) || [];
+          const cleanedTags = tagMatches.map((tagMatch) => {
+            const cleaned = tagMatch.replace(/^["']|["']$/g, "").replace(/^#+/, "");
+            return `"${cleaned}"`;
+          });
+          const isMultiline = tagsContent.includes("\n");
+          if (isMultiline) {
+            return `tags: [
+${cleanedTags.map((tag) => `  ${tag}`).join(",\n")}
+]`;
+          } else {
+            return `tags: [${cleanedTags.join(", ")}]`;
+          }
+        }
+      );
+      content3 = content3.replace(
+        frontmatterRegex,
+        `---
+${frontmatterContent}
+---${closingNewline}`
+      );
+    }
     const lines = content3.split("\n");
+    let inFrontmatter = false;
     const cleanedLines = lines.map((line) => {
+      if (line.trim() === "---") {
+        inFrontmatter = !inFrontmatter;
+        return line;
+      }
+      if (inFrontmatter) {
+        return line;
+      }
       if (/^#{1,6}\s/.test(line)) {
         return line;
       }
@@ -161496,7 +162071,7 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
     content: content3
   }) {
     try {
-      new import_obsidian48.Notice("Formatting content...", 3e3);
+      new import_obsidian50.Notice("Formatting content...", 3e3);
       const backupFile = await this.backupTheFileAndAddReferenceToCurrentFile(
         file
       );
@@ -161514,10 +162089,10 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
       );
       this.appendBackupLinkToCurrentFile(file, backupFile);
       await this.appendFormattedLinkToBackupFile(backupFile, file);
-      new import_obsidian48.Notice("Content formatted successfully", 3e3);
+      new import_obsidian50.Notice("Content formatted successfully", 3e3);
     } catch (error) {
       logger.error("Error formatting content:", error);
-      new import_obsidian48.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian50.Notice("An error occurred while formatting the content.", 6e3);
     }
   }
   async streamFormatAppendInCurrentNote({
@@ -161526,7 +162101,7 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
     content: content3
   }) {
     try {
-      new import_obsidian48.Notice("Appending formatted content...", 3e3);
+      new import_obsidian50.Notice("Appending formatted content...", 3e3);
       let formattedContent = "";
       const updateCallback = async (partialContent) => {
         formattedContent = partialContent;
@@ -161539,10 +162114,10 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
         updateCallback
       );
       await this.app.vault.append(file, "\n\n" + formattedContent);
-      new import_obsidian48.Notice("Content appended successfully", 3e3);
+      new import_obsidian50.Notice("Content appended successfully", 3e3);
     } catch (error) {
       logger.error("Error appending content:", error);
-      new import_obsidian48.Notice("An error occurred while appending content.", 6e3);
+      new import_obsidian50.Notice("An error occurred while appending content.", 6e3);
     }
   }
   async streamFormatInCurrentNoteLineByLine({
@@ -161552,7 +162127,7 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
     chunkMode = "line"
   }) {
     try {
-      new import_obsidian48.Notice("Formatting content line by line...", 3e3);
+      new import_obsidian50.Notice("Formatting content line by line...", 3e3);
       const backupFile = await this.backupTheFileAndAddReferenceToCurrentFile(
         file
       );
@@ -161581,10 +162156,10 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
       );
       await this.appendBackupLinkToCurrentFile(file, backupFile);
       await this.appendFormattedLinkToBackupFile(backupFile, file);
-      new import_obsidian48.Notice("Line-by-line update done!", 3e3);
+      new import_obsidian50.Notice("Line-by-line update done!", 3e3);
     } catch (error) {
       logger.error("Error formatting content line by line:", error);
-      new import_obsidian48.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian50.Notice("An error occurred while formatting the content.", 6e3);
       throw error;
     }
   }
@@ -161594,7 +162169,7 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
     await this.app.vault.create(filePath, content3);
   }
   async extractTextFromPDF(file) {
-    const pdfjsLib = await (0, import_obsidian48.loadPdfJs)();
+    const pdfjsLib = await (0, import_obsidian50.loadPdfJs)();
     try {
       const arrayBuffer = await this.app.vault.readBinary(file);
       const bytes = new Uint8Array(arrayBuffer);
@@ -161676,47 +162251,42 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
   async transcribeAudioViaPresignedUrl(audioBuffer, fileExtension) {
     const fileName = `audio-${Date.now()}.${fileExtension}`;
     const mimeType = `audio/${fileExtension}`;
-    const presignedResponse = await fetch(`${this.getServerUrl()}/api/create-upload-url`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${this.settings.API_KEY}`
-      },
-      body: JSON.stringify({
-        filename: fileName,
-        contentType: mimeType
-      })
-    });
-    if (!presignedResponse.ok) {
-      const errorData = await presignedResponse.json();
-      throw new Error(`Failed to get upload URL: ${errorData.error}`);
-    }
-    const { uploadUrl, key, publicUrl } = await presignedResponse.json();
-    if (!uploadUrl || !key || !publicUrl) {
-      throw new Error("Invalid response from create-upload-url endpoint");
-    }
-    const uploadResponse = await fetch(uploadUrl, {
-      method: "PUT",
-      body: audioBuffer,
-      headers: {
-        "Content-Type": mimeType
+    const uploadResponse = await fetch(
+      `${this.getServerUrl()}/api/upload-audio-to-r2?extension=${fileExtension}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": mimeType,
+          Authorization: `Bearer ${this.settings.API_KEY}`
+        },
+        body: audioBuffer
       }
-    });
+    );
     if (!uploadResponse.ok) {
-      throw new Error(`Failed to upload to R2: ${uploadResponse.status}`);
+      const errorData = await uploadResponse.json();
+      throw new Error(
+        `Failed to upload audio to R2: ${errorData.error || errorData.details || "Unknown error"}`
+      );
     }
-    const transcribeResponse = await fetch(`${this.getServerUrl()}/api/transcribe`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${this.settings.API_KEY}`
-      },
-      body: JSON.stringify({
-        fileUrl: publicUrl,
-        key,
-        extension: fileExtension
-      })
-    });
+    const { key, publicUrl } = await uploadResponse.json();
+    if (!key || !publicUrl) {
+      throw new Error("Invalid response from upload-audio-to-r2 endpoint");
+    }
+    const transcribeResponse = await fetch(
+      `${this.getServerUrl()}/api/transcribe`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${this.settings.API_KEY}`
+        },
+        body: JSON.stringify({
+          fileUrl: publicUrl,
+          key,
+          extension: fileExtension
+        })
+      }
+    );
     if (!transcribeResponse.ok) {
       const errorData = await transcribeResponse.json();
       throw new Error(`Transcription failed: ${errorData.error}`);
@@ -161725,10 +162295,38 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
   }
   async generateTranscriptFromAudio(file) {
     try {
+      const fileSizeInBytes = file.stat.size;
+      const fileSizeInMB = fileSizeInBytes / (1024 * 1024);
+      const MAX_FILE_SIZE_MB = 25;
+      const MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024;
+      if (fileSizeInBytes > MAX_FILE_SIZE_BYTES) {
+        throw new Error(
+          `Audio file is too large (${fileSizeInMB.toFixed(
+            2
+          )}MB). Maximum size is ${MAX_FILE_SIZE_MB}MB. Please compress or split the audio file.`
+        );
+      }
       const audioBuffer = await this.app.vault.readBinary(file);
+      console.log(
+        `[Plugin] Transcribing audio file: ${file.name}, size: ${fileSizeInMB.toFixed(2)}MB`
+      );
       const response = await this.transcribeAudio(audioBuffer, file.extension);
       const data = await response.json();
       const transcript = data.text;
+      const transcriptLength = transcript?.length || 0;
+      console.log(
+        `[Plugin] Received transcript: ${transcriptLength} characters`
+      );
+      if (data.length) {
+        console.log(
+          `[Plugin] Server reported transcript length: ${data.length} characters`
+        );
+        if (transcriptLength !== data.length) {
+          console.warn(
+            `[Plugin] WARNING: Transcript length mismatch! Received ${transcriptLength} but server reported ${data.length}`
+          );
+        }
+      }
       async function* generateTranscript() {
         yield transcript;
       }
@@ -161895,7 +162493,7 @@ var FileOrganizer = class extends import_obsidian48.Plugin {
     return processedContent;
   }
   async extractTextFromImage(image3) {
-    const base64Image = (0, import_obsidian48.arrayBufferToBase64)(image3);
+    const base64Image = (0, import_obsidian50.arrayBufferToBase64)(image3);
     const response = await fetch(`${this.getServerUrl()}/api/vision`, {
       method: "POST",
       headers: {
@@ -162075,7 +162673,7 @@ ${formattedTag}`);
           });
           view2?.activateTab("chat");
         } else {
-          new import_obsidian48.Notice("No text selected");
+          new import_obsidian50.Notice("No text selected");
         }
       }
     });
@@ -162107,19 +162705,47 @@ ${formattedTag}`);
 
 `;
     await this.app.vault.append(parentFile, transcriptHeader);
+    let totalAppended = 0;
+    let chunkCount = 0;
     for await (const chunk of transcriptIterator) {
+      const chunkLength = chunk.length;
+      console.log(
+        `[Plugin] Appending transcript chunk ${++chunkCount}: ${chunkLength} characters`
+      );
       await this.app.vault.append(parentFile, chunk);
+      totalAppended += chunkLength;
     }
-    new import_obsidian48.Notice(`Transcription completed for ${audioFileName}`, 5e3);
+    console.log(
+      `[Plugin] Total transcript appended: ${totalAppended} characters in ${chunkCount} chunk(s)`
+    );
+    const fileContent = await this.app.vault.read(parentFile);
+    const transcriptStart = fileContent.indexOf(transcriptHeader);
+    if (transcriptStart !== -1) {
+      const appendedTranscript = fileContent.substring(
+        transcriptStart + transcriptHeader.length
+      );
+      console.log(
+        `[Plugin] Verified: File contains ${appendedTranscript.length} characters of transcript`
+      );
+      if (appendedTranscript.length !== totalAppended) {
+        console.warn(
+          `[Plugin] WARNING: Mismatch! Appended ${totalAppended} but file contains ${appendedTranscript.length}`
+        );
+      }
+    }
+    new import_obsidian50.Notice(
+      `Transcription completed for ${audioFileName} (${totalAppended} characters)`,
+      5e3
+    );
   }
   async generateUniqueBackupFileName(originalFile) {
-    const baseFileName = `${originalFile.basename}_backup_${(0, import_obsidian48.moment)().format(
+    const baseFileName = `${originalFile.basename}_backup_${(0, import_obsidian50.moment)().format(
       "YYYYMMDD_HHmmss"
     )}`;
     let fileName = `${baseFileName}.${originalFile.extension}`;
     let counter2 = 1;
     while (await this.app.vault.adapter.exists(
-      (0, import_obsidian48.normalizePath)(`${this.settings.backupFolderPath}/${fileName}`)
+      (0, import_obsidian50.normalizePath)(`${this.settings.backupFolderPath}/${fileName}`)
     )) {
       fileName = `${baseFileName}_${counter2}.${originalFile.extension}`;
       counter2++;
@@ -162128,7 +162754,7 @@ ${formattedTag}`);
   }
   async backupTheFileAndAddReferenceToCurrentFile(file) {
     const backupFileName = await this.generateUniqueBackupFileName(file);
-    const backupFilePath = (0, import_obsidian48.normalizePath)(
+    const backupFilePath = (0, import_obsidian50.normalizePath)(
       `${this.settings.backupFolderPath}/${backupFileName}`
     );
     const backupFile = await this.app.vault.copy(file, backupFilePath);
@@ -162138,14 +162764,14 @@ ${formattedTag}`);
     const templateFolder = this.app.vault.getAbstractFileByPath(
       this.settings.templatePaths
     );
-    if (!templateFolder || !(templateFolder instanceof import_obsidian48.TFolder)) {
+    if (!templateFolder || !(templateFolder instanceof import_obsidian50.TFolder)) {
       logger.error("Template folder not found or is not a valid folder.");
       return "";
     }
     const templateFile = templateFolder.children.find(
-      (file) => file instanceof import_obsidian48.TFile && file.basename === templateName
+      (file) => file instanceof import_obsidian50.TFile && file.basename === templateName
     );
-    if (!templateFile || !(templateFile instanceof import_obsidian48.TFile)) {
+    if (!templateFile || !(templateFile instanceof import_obsidian50.TFile)) {
       logger.error("Template file not found or is not a valid file.");
       return "";
     }
@@ -162157,12 +162783,12 @@ ${formattedTag}`);
     const templateFolder = this.app.vault.getAbstractFileByPath(
       this.settings.templatePaths
     );
-    if (!templateFolder || !(templateFolder instanceof import_obsidian48.TFolder)) {
+    if (!templateFolder || !(templateFolder instanceof import_obsidian50.TFolder)) {
       logger.error("Template folder not found or is not a valid folder.");
       return [];
     }
     const templateFiles = templateFolder.children.filter(
-      (file) => file instanceof import_obsidian48.TFile
+      (file) => file instanceof import_obsidian50.TFile
     );
     return templateFiles.map((file) => file.basename);
   }
@@ -162224,10 +162850,13 @@ ${formattedTag}`);
       for (const folderPath of folderPaths) {
         await ensureFolderExists(this.app, folderPath);
       }
-      new import_obsidian48.Notice("All required folders have been created successfully!", 3e3);
+      new import_obsidian50.Notice("All required folders have been created successfully!", 3e3);
     } catch (error) {
       console.error("Failed to create required folders:", error);
-      new import_obsidian48.Notice("There was an error creating the required folders. Please check console for details.", 5e3);
+      new import_obsidian50.Notice(
+        "There was an error creating the required folders. Please check console for details.",
+        5e3
+      );
     }
   }
   async fetchUsageStats() {
@@ -162236,26 +162865,31 @@ ${formattedTag}`);
         return null;
       }
       try {
-        const publicResponse = await fetch(`${this.getServerUrl()}/api/public-usage`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${this.settings.API_KEY}`
+        const publicResponse = await fetch(
+          `${this.getServerUrl()}/api/public-usage`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${this.settings.API_KEY}`
+            }
           }
-        });
+        );
         if (publicResponse.ok) {
           const data2 = await publicResponse.json();
           return data2;
         }
         logger.debug("Public usage endpoint failed, trying regular endpoint");
       } catch (error) {
-        logger.debug("Error fetching from public usage endpoint, trying regular endpoint");
+        logger.debug(
+          "Error fetching from public usage endpoint, trying regular endpoint"
+        );
       }
       const response = await fetch(`${this.getServerUrl()}/api/usage`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${this.settings.API_KEY}`
+          Authorization: `Bearer ${this.settings.API_KEY}`
         }
       });
       if (!response.ok) {
@@ -162263,18 +162897,24 @@ ${formattedTag}`);
           const errorData = await response.json();
           if (errorData.error && errorData.error.includes("Token limit exceeded")) {
             try {
-              const publicResponse = await fetch(`${this.getServerUrl()}/api/public-usage`, {
-                method: "GET",
-                headers: {
-                  "Content-Type": "application/json",
-                  "Authorization": `Bearer ${this.settings.API_KEY}`
+              const publicResponse = await fetch(
+                `${this.getServerUrl()}/api/public-usage`,
+                {
+                  method: "GET",
+                  headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${this.settings.API_KEY}`
+                  }
                 }
-              });
+              );
               if (publicResponse.ok) {
                 return await publicResponse.json();
               }
             } catch (e2) {
-              logger.debug("Failed to get public usage after token limit error", e2);
+              logger.debug(
+                "Failed to get public usage after token limit error",
+                e2
+              );
             }
             return {
               tokenUsage: 1e5,
