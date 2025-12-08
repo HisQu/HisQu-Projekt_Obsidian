@@ -11,24 +11,16 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
+                "page": 1,
+                "left": -25,
+                "top": 846,
+                "zoom": 0.6110621141489229
               },
-              "icon": "lucide-file",
-              "title": "Home"
+              "icon": "lucide-file-text",
+              "title": "PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions"
             }
           }
         ]
@@ -196,7 +188,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,7 +216,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions"
             }
           }
         ]
@@ -257,7 +249,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
+    "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions 1.pdf",
+    "PDFs/ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf",
+    "PDFs/BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.pdf",
+    "PDFs/ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf",
     "Organisation_von_Obsidian/Home.md",
+    "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
     "Literatur/Autoren/David Zbíral.md",
     "conflict-files-obsidian-git.md",
     "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
@@ -272,7 +270,6 @@
     "Literatur/Deutsches Patriziat 1430-1740 Hellmuth Rössler 1968.md",
     "Literatur/Autoren/Thomas Bardelle.md",
     "Literatur/Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012.md",
-    "PDFs/BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.pdf",
     "Highlights for BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.md",
     "Literatur/Autoren/Karl Ferdinand Werner.md",
     "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
@@ -283,17 +280,12 @@
     "README.md",
     "Literatur/Autoren/Walter Deeters.md",
     "Literatur/Autoren/Friedrich W. Euler.md",
-    "Literatur/Entstehung und Entwicklung deutscher Gelehrtengeschlechter Friedrich W. Euler 1970.md",
     "Organisation_von_Obsidian/Bilder/logoBannerHisQu.png",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
-    "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
     "_NoteCompanion/Backups",
     "_NoteCompanion/Fabric",
     "_NoteCompanion/Templates",
-    "_NoteCompanion/Logs",
-    "_NoteCompanion/Processed/Attachments",
-    "_NoteCompanion/Processed",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
