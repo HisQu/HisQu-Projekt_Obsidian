@@ -11,16 +11,24 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
-                "page": 1,
-                "left": -25,
-                "top": 846,
-                "zoom": 0.6110621141489229
+                "file": "Organisation_von_Obsidian/Home.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-file-text",
-              "title": "PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions"
+              "icon": "lucide-file",
+              "title": "Home"
             }
           }
         ]
@@ -188,7 +196,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -216,7 +224,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -249,13 +257,13 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
     "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
     "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions 1.pdf",
     "PDFs/ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf",
     "PDFs/BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.pdf",
     "PDFs/ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf",
     "Organisation_von_Obsidian/Home.md",
-    "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
     "Literatur/Autoren/David Zbíral.md",
     "conflict-files-obsidian-git.md",
     "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
