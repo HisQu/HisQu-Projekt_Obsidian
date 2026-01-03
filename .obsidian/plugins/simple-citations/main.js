@@ -263,9 +263,11 @@ ${endTag}` : "";
 
 // src/utils/updateContent.ts
 async function updateContent(app, targetFile, template, abstract) {
+  const normalizedAbstract = typeof abstract === "string" ? abstract : "";
+  const trimmedAbstract = normalizedAbstract.split("\n").map((line) => line.trim()).join("\n").replace(/\n{2,}/g, "\n");
   await app.vault.process(targetFile, (fileContent) => {
     fileContent = replaceCommentTags(fileContent, "<!-- START_TEMPLATE -->", "<!-- END_TEMPLATE -->", template);
-    fileContent = replaceCommentTags(fileContent, "<!-- START_ABSTRACT -->", "<!-- END_ABSTRACT -->", abstract);
+    fileContent = replaceCommentTags(fileContent, "<!-- START_ABSTRACT -->", "<!-- END_ABSTRACT -->", trimmedAbstract);
     return fileContent;
   });
 }

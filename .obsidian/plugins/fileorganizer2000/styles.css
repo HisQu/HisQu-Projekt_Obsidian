@@ -121,6 +121,9 @@
 .pointer-events-none {
   pointer-events: none;
 }
+.pointer-events-auto {
+  pointer-events: auto;
+}
 .visible {
   visibility: visible;
 }
@@ -166,6 +169,9 @@
 .left-3 {
   left: 0.75rem;
 }
+.left-\[10px\] {
+  left: 10px;
+}
 .left-\[50\%\] {
   left: 50%;
 }
@@ -187,11 +193,17 @@
 .top-4 {
   top: 1rem;
 }
+.top-\[10px\] {
+  top: 10px;
+}
 .top-\[50\%\] {
   top: 50%;
 }
 .z-10 {
   z-index: 10;
+}
+.z-20 {
+  z-index: 20;
 }
 .z-50 {
   z-index: 50;
@@ -208,6 +220,10 @@
 .-mx-1 {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
+}
+.-mx-3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
 }
 .mx-4 {
   margin-left: 1rem;
@@ -379,6 +395,9 @@
 .h-9 {
   height: 2.25rem;
 }
+.h-\[--icon-size\] {
+  height: var(--icon-size);
+}
 .h-\[1px\] {
   height: 1px;
 }
@@ -413,6 +432,9 @@
 }
 .max-h-\[300px\] {
   max-height: 300px;
+}
+.max-h-\[400px\] {
+  max-height: 400px;
 }
 .max-h-full {
   max-height: 100%;
@@ -468,8 +490,14 @@
 .w-8 {
   width: 2rem;
 }
+.w-80 {
+  width: 20rem;
+}
 .w-9 {
   width: 2.25rem;
+}
+.w-\[--icon-size\] {
+  width: var(--icon-size);
 }
 .w-\[1px\] {
   width: 1px;
@@ -632,6 +660,9 @@
 .justify-between {
   justify-content: space-between;
 }
+.gap-0 {
+  gap: 0px;
+}
 .gap-0\.5 {
   gap: 0.125rem;
 }
@@ -644,6 +675,9 @@
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-2\.5 {
+  gap: 0.625rem;
+}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -654,6 +688,11 @@
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -754,6 +793,9 @@
 }
 .border {
   border-width: 1px;
+}
+.border-0 {
+  border-width: 0px;
 }
 .border-2 {
   border-width: 2px;
@@ -856,6 +898,9 @@
 .bg-\[--interactive-normal\] {
   background-color: var(--interactive-normal);
 }
+.bg-\[--tag-background\] {
+  background-color: var(--tag-background);
+}
 .bg-\[--text-accent\] {
   background-color: var(--text-accent);
 }
@@ -912,6 +957,10 @@
   --tw-bg-opacity: 1;
   background-color: rgb(254 242 242 / var(--tw-bg-opacity, 1));
 }
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
+}
 .bg-secondary {
   background-color: var(--background-secondary);
 }
@@ -931,12 +980,18 @@
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
 }
+.stroke-current {
+  stroke: currentColor;
+}
 .object-cover {
   -o-object-fit: cover;
   object-fit: cover;
 }
 .p-0 {
   padding: 0px;
+}
+.p-0\.5 {
+  padding: 0.125rem;
 }
 .p-1 {
   padding: 0.25rem;
@@ -999,10 +1054,6 @@
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
 }
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1011,6 +1062,10 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1018,6 +1073,14 @@
 .py-3\.5 {
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1058,9 +1121,6 @@
 .pt-0 {
   padding-top: 0px;
 }
-.pt-0\.5 {
-  padding-top: 0.125rem;
-}
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -1096,10 +1156,6 @@
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 .text-6xl {
   font-size: 3.75rem;
@@ -1158,6 +1214,9 @@
 .leading-snug {
   line-height: 1.375;
 }
+.leading-tight {
+  line-height: 1.25;
+}
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -1166,6 +1225,9 @@
 }
 .text-\[--interactive-accent\] {
   color: var(--interactive-accent);
+}
+.text-\[--tag-color\] {
+  color: var(--tag-color);
 }
 .text-\[--text-accent\] {
   color: var(--text-accent);
@@ -1231,6 +1293,9 @@
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+.underline {
+  text-decoration-line: underline;
+}
 .line-through {
   text-decoration-line: line-through;
 }
@@ -1239,6 +1304,9 @@
 }
 .opacity-0 {
   opacity: 0;
+}
+.opacity-100 {
+  opacity: 1;
 }
 .opacity-25 {
   opacity: 0.25;
@@ -1704,6 +1772,13 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+.tiptap-editor .tiptap p.is-editor-empty:first-child::before {
+  color: var(--text-muted);
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -1803,32 +1878,37 @@
 .placeholder\:text-muted-foreground::placeholder {
   color: var(--text-muted);
 }
-.after\:absolute::after {
-  content: var(--tw-content);
-  position: absolute;
+.first\:pt-2\.5:first-child {
+  padding-top: 0.625rem;
 }
-.after\:bottom-0::after {
-  content: var(--tw-content);
-  bottom: 0px;
+.last\:mb-0:last-child {
+  margin-bottom: 0px;
 }
-.after\:left-0::after {
-  content: var(--tw-content);
-  left: 0px;
+.last\:border-0:last-child {
+  border-width: 0px;
 }
-.after\:right-0::after {
-  content: var(--tw-content);
-  right: 0px;
+.last\:pb-2\.5:last-child {
+  padding-bottom: 0.625rem;
 }
-.after\:h-0\.5::after {
-  content: var(--tw-content);
-  height: 0.125rem;
+.focus-within\:border-\[--interactive-accent\]:focus-within {
+  border-color: var(--interactive-accent);
 }
-.after\:bg-\[--interactive-accent\]::after {
-  content: var(--tw-content);
-  background-color: var(--interactive-accent);
+.focus-within\:ring-1:focus-within {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow:
+    var(--tw-ring-offset-shadow),
+    var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+.focus-within\:ring-\[--interactive-accent\]:focus-within {
+  --tw-ring-color: var(--interactive-accent);
 }
 .hover\:border-\[--background-modifier-border-hover\]:hover {
   border-color: var(--background-modifier-border-hover);
+}
+.hover\:border-\[--background-modifier-border\]:hover {
+  border-color: var(--background-modifier-border);
 }
 .hover\:border-\[--interactive-accent\]:hover {
   border-color: var(--interactive-accent);
@@ -1867,6 +1947,10 @@
 .hover\:bg-green-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
+}
+.hover\:bg-red-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
 }
 .hover\:text-\[--interactive-accent-hover\]:hover {
   color: var(--interactive-accent-hover);
@@ -1978,9 +2062,6 @@
     var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000),
     var(--tw-shadow);
-}
-.group:hover .group-hover\:pointer-events-auto {
-  pointer-events: auto;
 }
 .group:hover .group-hover\:bg-opacity-50 {
   --tw-bg-opacity: 0.5;
