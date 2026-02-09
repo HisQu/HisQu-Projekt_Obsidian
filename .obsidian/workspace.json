@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/The Measure of the Archive. The Ro­bustness of Network Analysis in Early Modern Correspondence Yann C. Ryan, Sebastian E. Ahnert 2021.md",
-                "mode": "preview",
-                "source": true,
+                "file": "Organisation_von_Obsidian/Home.md",
+                "mode": "source",
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "The Measure of the Archive. The Ro­bustness of Network Analysis in Early Modern Correspondence Yann C. Ryan, Sebastian E. Ahnert 2021"
+              "title": "Home"
             }
           }
         ]
@@ -196,7 +196,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/The Measure of the Archive. The Ro­bustness of Network Analysis in Early Modern Correspondence Yann C. Ryan, Sebastian E. Ahnert 2021.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,7 +224,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von The Measure of the Archive. The Ro­bustness of Network Analysis in Early Modern Correspondence Yann C. Ryan, Sebastian E. Ahnert 2021"
+              "title": "Graph von Home"
             }
           }
         ]
@@ -255,12 +255,12 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "dfe52a084a7fe93d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Literatur/The Measure of the Archive. The Ro­bustness of Network Analysis in Early Modern Correspondence Yann C. Ryan, Sebastian E. Ahnert 2021.md",
     "PDFs/RyanMeasureArchiveRobustnessNetworkAnalysisEarlyModernCorrespondence.pdf",
     "_NoteCompanion/Templates/flash_cards.md",
     "Organisation_von_Obsidian/Home.md",
-    "Literatur/The Measure of the Archive. The Ro­bustness of Network Analysis in Early Modern Correspondence Yann C. Ryan, Sebastian E. Ahnert 2021.md",
     "Recordings",
     "Literatur/When it was 2024 – Generative AI in the field of digital scholarly editions Christopher Pollin, Franz Fischer, Patrick Sahle, Martina Scholger, Georg Vogeler 2025.md",
     "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
@@ -293,7 +293,6 @@
     "Organisation_von_Obsidian/Bilder/logoBannerHisQu.png",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
-    "_NoteCompanion/Backups",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
