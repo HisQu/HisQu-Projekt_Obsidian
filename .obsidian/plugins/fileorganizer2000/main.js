@@ -887,7 +887,7 @@ var require_scheduler = __commonJS({
 var require_react_dom_production = __commonJS({
   "../../node_modules/react-dom/cjs/react-dom.production.js"(exports2) {
     "use strict";
-    var React82 = require_react();
+    var React88 = require_react();
     function formatProdErrorMessage(code2) {
       var url = "https://react.dev/errors/" + code2;
       if (1 < arguments.length) {
@@ -927,7 +927,7 @@ var require_react_dom_production = __commonJS({
         implementation
       };
     }
-    var ReactSharedInternals = React82.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+    var ReactSharedInternals = React88.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
     function getCrossOriginStringAs(as, input) {
       if ("font" === as) return "";
       if ("string" === typeof input)
@@ -1063,7 +1063,7 @@ var require_react_dom_client_production = __commonJS({
   "../../node_modules/react-dom/cjs/react-dom-client.production.js"(exports2) {
     "use strict";
     var Scheduler = require_scheduler();
-    var React82 = require_react();
+    var React88 = require_react();
     var ReactDOM3 = require_react_dom();
     function formatProdErrorMessage(code2) {
       var url = "https://react.dev/errors/" + code2;
@@ -1146,7 +1146,7 @@ var require_react_dom_client_production = __commonJS({
         }
       return null;
     }
-    var ReactSharedInternals = React82.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+    var ReactSharedInternals = React88.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
     var assign = Object.assign;
     var prefix;
     var suffix;
@@ -12094,7 +12094,7 @@ var require_react_dom_client_production = __commonJS({
         0 === i && attemptExplicitHydrationTarget(target);
       }
     };
-    var isomorphicReactPackageVersion$jscomp$inline_1686 = React82.version;
+    var isomorphicReactPackageVersion$jscomp$inline_1686 = React88.version;
     if ("19.0.1" !== isomorphicReactPackageVersion$jscomp$inline_1686)
       throw Error(
         formatProdErrorMessage(
@@ -12259,6 +12259,50 @@ var require_jsx_runtime = __commonJS({
     } else {
       module2.exports = null;
     }
+  }
+});
+
+// constants.ts
+var import_obsidian5, FREE_TIER_TOKEN_LIMIT, VALID_IMAGE_EXTENSIONS, VALID_AUDIO_EXTENSIONS, VALID_MEDIA_EXTENSIONS, VALID_TEXT_EXTENSIONS, VALID_EXTENSIONS, isValidExtension;
+var init_constants = __esm({
+  "constants.ts"() {
+    import_obsidian5 = require("obsidian");
+    FREE_TIER_TOKEN_LIMIT = 1e5;
+    VALID_IMAGE_EXTENSIONS = [
+      "png",
+      "jpg",
+      "jpeg",
+      "gif",
+      "svg",
+      "webp"
+    ];
+    VALID_AUDIO_EXTENSIONS = [
+      "mp3",
+      "mp4",
+      "mpeg",
+      "mpga",
+      "m4a",
+      "wav",
+      "webm"
+    ];
+    VALID_MEDIA_EXTENSIONS = [
+      ...VALID_IMAGE_EXTENSIONS,
+      ...VALID_AUDIO_EXTENSIONS,
+      "pdf"
+    ];
+    VALID_TEXT_EXTENSIONS = ["md", "txt"];
+    VALID_EXTENSIONS = [
+      ...VALID_MEDIA_EXTENSIONS,
+      ...VALID_TEXT_EXTENSIONS,
+      "pdf"
+    ];
+    isValidExtension = (extension2) => {
+      const isSupported = VALID_EXTENSIONS.includes(extension2);
+      if (!isSupported) {
+        new import_obsidian5.Notice("Sorry, Note Companion does not support this file type.");
+      }
+      return isSupported;
+    };
   }
 });
 
@@ -13238,7 +13282,7 @@ var require_lucide_react = __commonJS({
       ["circle", { cx: "18", cy: "20", r: "2", key: "t9985n" }],
       ["circle", { cx: "9", cy: "20", r: "2", key: "e5v82j" }]
     ]);
-    var Ban2 = createLucideIcon("Ban", [
+    var Ban3 = createLucideIcon("Ban", [
       ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
       ["path", { d: "m4.9 4.9 14.2 14.2", key: "1m5liu" }]
     ]);
@@ -15349,7 +15393,7 @@ var require_lucide_react = __commonJS({
       ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
       ["polyline", { points: "12 6 12 12 16.5 12", key: "1aq6pp" }]
     ]);
-    var Clock4 = createLucideIcon("Clock4", [
+    var Clock42 = createLucideIcon("Clock4", [
       ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
       ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
     ]);
@@ -16809,7 +16853,7 @@ var require_lucide_react = __commonJS({
       ["path", { d: "M3 15h6", key: "4e2qda" }],
       ["path", { d: "M6 12v6", key: "1u72j0" }]
     ]);
-    var FilePlus = createLucideIcon("FilePlus", [
+    var FilePlus3 = createLucideIcon("FilePlus", [
       ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
       ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
       ["path", { d: "M9 15h6", key: "cctwl0" }],
@@ -16888,7 +16932,7 @@ var require_lucide_react = __commonJS({
       ["path", { d: "m8 16 2-2-2-2", key: "10vzyd" }],
       ["path", { d: "M12 18h4", key: "1wd2n7" }]
     ]);
-    var FileText7 = createLucideIcon("FileText", [
+    var FileText8 = createLucideIcon("FileText", [
       ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
       ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
       ["path", { d: "M10 9H8", key: "b1mrlr" }],
@@ -21622,7 +21666,7 @@ var require_lucide_react = __commonJS({
       ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
       ["path", { d: "M22 22 2 2", key: "1r8tn9" }]
     ]);
-    var RefreshCw6 = createLucideIcon("RefreshCw", [
+    var RefreshCw7 = createLucideIcon("RefreshCw", [
       ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
       ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
       ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
@@ -21775,7 +21819,7 @@ var require_lucide_react = __commonJS({
       ["path", { d: "m15 2-3 3 3 3", key: "177bxs" }],
       ["path", { d: "M20 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2", key: "d36hnl" }]
     ]);
-    var RotateCcw2 = createLucideIcon("RotateCcw", [
+    var RotateCcw3 = createLucideIcon("RotateCcw", [
       ["path", { d: "M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8", key: "1357e3" }],
       ["path", { d: "M3 3v5h5", key: "1xhq8a" }]
     ]);
@@ -22098,7 +22142,7 @@ var require_lucide_react = __commonJS({
       ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }],
       ["path", { d: "m21 21-4.3-4.3", key: "1qie3q" }]
     ]);
-    var Search5 = createLucideIcon("Search", [
+    var Search6 = createLucideIcon("Search", [
       ["circle", { cx: "11", cy: "11", r: "8", key: "4ej97u" }],
       ["path", { d: "m21 21-4.3-4.3", key: "1qie3q" }]
     ]);
@@ -23905,7 +23949,7 @@ var require_lucide_react = __commonJS({
       ["path", { d: "M8 15h.01", key: "a7atzg" }],
       ["path", { d: "M16 15h.01", key: "rnfrdf" }]
     ]);
-    var Trash23 = createLucideIcon("Trash2", [
+    var Trash24 = createLucideIcon("Trash2", [
       ["path", { d: "M3 6h18", key: "d0wm0j" }],
       ["path", { d: "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6", key: "4alrt4" }],
       ["path", { d: "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2", key: "v07s0e" }],
@@ -24836,7 +24880,7 @@ var require_lucide_react = __commonJS({
         }
       ]
     ]);
-    var X3 = createLucideIcon("X", [
+    var X5 = createLucideIcon("X", [
       ["path", { d: "M18 6 6 18", key: "1bl5f8" }],
       ["path", { d: "m6 6 12 12", key: "d8bk6v" }]
     ]);
@@ -25012,7 +25056,7 @@ var require_lucide_react = __commonJS({
       BadgeSwissFranc,
       BadgeX,
       BaggageClaim,
-      Ban: Ban2,
+      Ban: Ban3,
       Banana,
       Bandage,
       Banknote,
@@ -25271,7 +25315,7 @@ var require_lucide_react = __commonJS({
       Clock12,
       Clock2: Clock22,
       Clock3: Clock32,
-      Clock4,
+      Clock4: Clock42,
       Clock5,
       Clock6,
       Clock7,
@@ -25457,7 +25501,7 @@ var require_lucide_react = __commonJS({
       FileOutput,
       FilePen,
       FilePenLine,
-      FilePlus,
+      FilePlus: FilePlus3,
       FilePlus2,
       FileQuestion,
       FileScan,
@@ -25468,7 +25512,7 @@ var require_lucide_react = __commonJS({
       FileStack,
       FileSymlink,
       FileTerminal,
-      FileText: FileText7,
+      FileText: FileText8,
       FileType,
       FileType2,
       FileUp,
@@ -26006,7 +26050,7 @@ var require_lucide_react = __commonJS({
       RedoDot,
       RefreshCcw,
       RefreshCcwDot,
-      RefreshCw: RefreshCw6,
+      RefreshCw: RefreshCw7,
       RefreshCwOff,
       Refrigerator,
       Regex,
@@ -26024,7 +26068,7 @@ var require_lucide_react = __commonJS({
       RockingChair,
       RollerCoaster,
       Rotate3d,
-      RotateCcw: RotateCcw2,
+      RotateCcw: RotateCcw3,
       RotateCcwSquare,
       RotateCw: RotateCw2,
       RotateCwSquare,
@@ -26063,7 +26107,7 @@ var require_lucide_react = __commonJS({
       ScreenShareOff,
       Scroll,
       ScrollText,
-      Search: Search5,
+      Search: Search6,
       SearchCheck,
       SearchCode,
       SearchSlash,
@@ -26301,7 +26345,7 @@ var require_lucide_react = __commonJS({
       TrainTrack,
       TramFront,
       Trash,
-      Trash2: Trash23,
+      Trash2: Trash24,
       TreeDeciduous,
       TreePalm,
       TreePine,
@@ -26406,7 +26450,7 @@ var require_lucide_react = __commonJS({
       Worm,
       WrapText,
       Wrench,
-      X: X3,
+      X: X5,
       Youtube,
       Zap: Zap2,
       ZapOff,
@@ -26737,8 +26781,8 @@ var require_lucide_react = __commonJS({
     exports2.BadgeXIcon = BadgeX;
     exports2.BaggageClaim = BaggageClaim;
     exports2.BaggageClaimIcon = BaggageClaim;
-    exports2.Ban = Ban2;
-    exports2.BanIcon = Ban2;
+    exports2.Ban = Ban3;
+    exports2.BanIcon = Ban3;
     exports2.Banana = Banana;
     exports2.BananaIcon = Banana;
     exports2.Bandage = Bandage;
@@ -27306,8 +27350,8 @@ var require_lucide_react = __commonJS({
     exports2.Clock2Icon = Clock22;
     exports2.Clock3 = Clock32;
     exports2.Clock3Icon = Clock32;
-    exports2.Clock4 = Clock4;
-    exports2.Clock4Icon = Clock4;
+    exports2.Clock4 = Clock42;
+    exports2.Clock4Icon = Clock42;
     exports2.Clock5 = Clock5;
     exports2.Clock5Icon = Clock5;
     exports2.Clock6 = Clock6;
@@ -27719,10 +27763,10 @@ var require_lucide_react = __commonJS({
     exports2.FilePenLineIcon = FilePenLine;
     exports2.FilePieChart = FileChartPie;
     exports2.FilePieChartIcon = FileChartPie;
-    exports2.FilePlus = FilePlus;
+    exports2.FilePlus = FilePlus3;
     exports2.FilePlus2 = FilePlus2;
     exports2.FilePlus2Icon = FilePlus2;
-    exports2.FilePlusIcon = FilePlus;
+    exports2.FilePlusIcon = FilePlus3;
     exports2.FileQuestion = FileQuestion;
     exports2.FileQuestionIcon = FileQuestion;
     exports2.FileScan = FileScan;
@@ -27743,8 +27787,8 @@ var require_lucide_react = __commonJS({
     exports2.FileSymlinkIcon = FileSymlink;
     exports2.FileTerminal = FileTerminal;
     exports2.FileTerminalIcon = FileTerminal;
-    exports2.FileText = FileText7;
-    exports2.FileTextIcon = FileText7;
+    exports2.FileText = FileText8;
+    exports2.FileTextIcon = FileText8;
     exports2.FileType = FileType;
     exports2.FileType2 = FileType2;
     exports2.FileType2Icon = FileType2;
@@ -28498,7 +28542,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideBadgeSwissFranc = BadgeSwissFranc;
     exports2.LucideBadgeX = BadgeX;
     exports2.LucideBaggageClaim = BaggageClaim;
-    exports2.LucideBan = Ban2;
+    exports2.LucideBan = Ban3;
     exports2.LucideBanana = Banana;
     exports2.LucideBandage = Bandage;
     exports2.LucideBanknote = Banknote;
@@ -28783,7 +28827,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideClock12 = Clock12;
     exports2.LucideClock2 = Clock22;
     exports2.LucideClock3 = Clock32;
-    exports2.LucideClock4 = Clock4;
+    exports2.LucideClock4 = Clock42;
     exports2.LucideClock5 = Clock5;
     exports2.LucideClock6 = Clock6;
     exports2.LucideClock7 = Clock7;
@@ -28989,7 +29033,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideFilePen = FilePen;
     exports2.LucideFilePenLine = FilePenLine;
     exports2.LucideFilePieChart = FileChartPie;
-    exports2.LucideFilePlus = FilePlus;
+    exports2.LucideFilePlus = FilePlus3;
     exports2.LucideFilePlus2 = FilePlus2;
     exports2.LucideFileQuestion = FileQuestion;
     exports2.LucideFileScan = FileScan;
@@ -29001,7 +29045,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideFileStack = FileStack;
     exports2.LucideFileSymlink = FileSymlink;
     exports2.LucideFileTerminal = FileTerminal;
-    exports2.LucideFileText = FileText7;
+    exports2.LucideFileText = FileText8;
     exports2.LucideFileType = FileType;
     exports2.LucideFileType2 = FileType2;
     exports2.LucideFileUp = FileUp;
@@ -29606,7 +29650,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideRedoDot = RedoDot;
     exports2.LucideRefreshCcw = RefreshCcw;
     exports2.LucideRefreshCcwDot = RefreshCcwDot;
-    exports2.LucideRefreshCw = RefreshCw6;
+    exports2.LucideRefreshCw = RefreshCw7;
     exports2.LucideRefreshCwOff = RefreshCwOff;
     exports2.LucideRefrigerator = Refrigerator;
     exports2.LucideRegex = Regex;
@@ -29625,7 +29669,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideRollerCoaster = RollerCoaster;
     exports2.LucideRotate3D = Rotate3d;
     exports2.LucideRotate3d = Rotate3d;
-    exports2.LucideRotateCcw = RotateCcw2;
+    exports2.LucideRotateCcw = RotateCcw3;
     exports2.LucideRotateCcwSquare = RotateCcwSquare;
     exports2.LucideRotateCw = RotateCw2;
     exports2.LucideRotateCwSquare = RotateCwSquare;
@@ -29670,7 +29714,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideScreenShareOff = ScreenShareOff;
     exports2.LucideScroll = Scroll;
     exports2.LucideScrollText = ScrollText;
-    exports2.LucideSearch = Search5;
+    exports2.LucideSearch = Search6;
     exports2.LucideSearchCheck = SearchCheck;
     exports2.LucideSearchCode = SearchCode;
     exports2.LucideSearchSlash = SearchSlash;
@@ -29928,7 +29972,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideTrainTrack = TrainTrack;
     exports2.LucideTramFront = TramFront;
     exports2.LucideTrash = Trash;
-    exports2.LucideTrash2 = Trash23;
+    exports2.LucideTrash2 = Trash24;
     exports2.LucideTreeDeciduous = TreeDeciduous;
     exports2.LucideTreePalm = TreePalm;
     exports2.LucideTreePine = TreePine;
@@ -30051,7 +30095,7 @@ var require_lucide_react = __commonJS({
     exports2.LucideWorm = Worm;
     exports2.LucideWrapText = WrapText;
     exports2.LucideWrench = Wrench;
-    exports2.LucideX = X3;
+    exports2.LucideX = X5;
     exports2.LucideXCircle = CircleX;
     exports2.LucideXOctagon = OctagonX;
     exports2.LucideXSquare = SquareX;
@@ -30678,8 +30722,8 @@ var require_lucide_react = __commonJS({
     exports2.RefreshCcwDot = RefreshCcwDot;
     exports2.RefreshCcwDotIcon = RefreshCcwDot;
     exports2.RefreshCcwIcon = RefreshCcw;
-    exports2.RefreshCw = RefreshCw6;
-    exports2.RefreshCwIcon = RefreshCw6;
+    exports2.RefreshCw = RefreshCw7;
+    exports2.RefreshCwIcon = RefreshCw7;
     exports2.RefreshCwOff = RefreshCwOff;
     exports2.RefreshCwOffIcon = RefreshCwOff;
     exports2.Refrigerator = Refrigerator;
@@ -30716,8 +30760,8 @@ var require_lucide_react = __commonJS({
     exports2.Rotate3DIcon = Rotate3d;
     exports2.Rotate3d = Rotate3d;
     exports2.Rotate3dIcon = Rotate3d;
-    exports2.RotateCcw = RotateCcw2;
-    exports2.RotateCcwIcon = RotateCcw2;
+    exports2.RotateCcw = RotateCcw3;
+    exports2.RotateCcwIcon = RotateCcw3;
     exports2.RotateCcwSquare = RotateCcwSquare;
     exports2.RotateCcwSquareIcon = RotateCcwSquare;
     exports2.RotateCw = RotateCw2;
@@ -30806,12 +30850,12 @@ var require_lucide_react = __commonJS({
     exports2.ScrollIcon = Scroll;
     exports2.ScrollText = ScrollText;
     exports2.ScrollTextIcon = ScrollText;
-    exports2.Search = Search5;
+    exports2.Search = Search6;
     exports2.SearchCheck = SearchCheck;
     exports2.SearchCheckIcon = SearchCheck;
     exports2.SearchCode = SearchCode;
     exports2.SearchCodeIcon = SearchCode;
-    exports2.SearchIcon = Search5;
+    exports2.SearchIcon = Search6;
     exports2.SearchSlash = SearchSlash;
     exports2.SearchSlashIcon = SearchSlash;
     exports2.SearchX = SearchX;
@@ -31321,8 +31365,8 @@ var require_lucide_react = __commonJS({
     exports2.TramFront = TramFront;
     exports2.TramFrontIcon = TramFront;
     exports2.Trash = Trash;
-    exports2.Trash2 = Trash23;
-    exports2.Trash2Icon = Trash23;
+    exports2.Trash2 = Trash24;
+    exports2.Trash2Icon = Trash24;
     exports2.TrashIcon = Trash;
     exports2.TreeDeciduous = TreeDeciduous;
     exports2.TreeDeciduousIcon = TreeDeciduous;
@@ -31568,10 +31612,10 @@ var require_lucide_react = __commonJS({
     exports2.WrapTextIcon = WrapText;
     exports2.Wrench = Wrench;
     exports2.WrenchIcon = Wrench;
-    exports2.X = X3;
+    exports2.X = X5;
     exports2.XCircle = CircleX;
     exports2.XCircleIcon = CircleX;
-    exports2.XIcon = X3;
+    exports2.XIcon = X5;
     exports2.XOctagon = OctagonX;
     exports2.XOctagonIcon = OctagonX;
     exports2.XSquare = SquareX;
@@ -37772,7 +37816,7 @@ function extractYouTubeVideoId(content3) {
 }
 function createObsidianFetch() {
   return async (url, options) => {
-    const response = await (0, import_obsidian9.requestUrl)({
+    const response = await (0, import_obsidian13.requestUrl)({
       url,
       method: options?.method || "GET",
       headers: options?.headers || {},
@@ -37820,11 +37864,160 @@ function decodeHtmlEntities(text6) {
   }
   return decoded;
 }
-async function fetchYouTubeTitle(videoId) {
+function parseJsonLdFromHtml(html4) {
+  const result = {};
+  const jsonLdRegex = /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+  let match;
+  while ((match = jsonLdRegex.exec(html4)) !== null) {
+    const raw = match[1].trim();
+    if (!raw) continue;
+    try {
+      const data = JSON.parse(raw);
+      const items = Array.isArray(data) ? data : [data];
+      for (const item of items) {
+        if (item && typeof item === "object") {
+          if (item["@type"] === "VideoObject") {
+            if (item.uploadDate && typeof item.uploadDate === "string") {
+              result.datePublished = item.uploadDate;
+            }
+            const author = item.author;
+            if (author && typeof author === "object" && author.name) {
+              result.channel = String(author.name).trim();
+            }
+            if (!result.channel) {
+              const publisher = item.publisher;
+              if (publisher && typeof publisher === "object" && publisher.name) {
+                result.channel = String(publisher.name).trim();
+              }
+            }
+            if (result.channel && result.datePublished) return result;
+          }
+          if (item["@type"] === "BreadcrumbList" && Array.isArray(item.itemListElement)) {
+            const last = item.itemListElement[item.itemListElement.length - 1];
+            if (last?.name && !result.channel) {
+              result.channel = String(last.name).trim();
+            }
+          }
+        }
+      }
+    } catch {
+    }
+  }
+  return result;
+}
+function parseYtInitialDataChannel(html4) {
+  const match = html4.match(
+    /(?:var\s+)?(?:window\s*\[\s*["']ytInitialData["']\s*\]|ytInitialData)\s*=\s*(\{)/
+  );
+  if (!match || !match[1]) return void 0;
+  const startIndex = match.index + match[0].length - 1;
+  let depth = 0;
+  let inString = null;
+  let i = startIndex;
+  const len = html4.length;
+  while (i < len) {
+    const c2 = html4[i];
+    if (inString) {
+      if (c2 === "\\") {
+        i += 2;
+        continue;
+      }
+      if (c2 === inString) {
+        inString = null;
+      }
+      i++;
+      continue;
+    }
+    if (c2 === '"' || c2 === "'") {
+      inString = c2;
+      i++;
+      continue;
+    }
+    if (c2 === "{") {
+      depth++;
+      i++;
+      continue;
+    }
+    if (c2 === "}") {
+      depth--;
+      if (depth === 0) {
+        try {
+          const jsonStr = html4.slice(startIndex, i + 1);
+          const data = JSON.parse(jsonStr);
+          const channel = getChannelFromYtInitialData(data);
+          if (channel) return channel;
+        } catch {
+        }
+        return void 0;
+      }
+      i++;
+      continue;
+    }
+    i++;
+  }
+  return void 0;
+}
+function getChannelFromYtInitialData(data) {
+  const extractChannelFromOwner = (owner) => {
+    const videoOwner = owner?.videoOwnerRenderer;
+    const title = videoOwner?.title;
+    if (!title) return void 0;
+    const runs = title.runs;
+    if (Array.isArray(runs) && runs[0]?.text) return String(runs[0].text).trim();
+    const simpleText = title.simpleText;
+    if (typeof simpleText === "string") return simpleText.trim();
+    return void 0;
+  };
+  const searchVideoSecondaryInfo = (items) => {
+    if (!Array.isArray(items)) return void 0;
+    for (const item of items) {
+      const section = item.itemSectionRenderer;
+      const sectionContents = section?.contents;
+      const direct = item.videoSecondaryInfoRenderer;
+      if (direct?.owner) {
+        const ch = extractChannelFromOwner(direct.owner);
+        if (ch) return ch;
+      }
+      if (!Array.isArray(sectionContents)) continue;
+      for (const sec of sectionContents) {
+        const videoSecondary = sec.videoSecondaryInfoRenderer;
+        const owner = videoSecondary?.owner;
+        if (owner) {
+          const ch = extractChannelFromOwner(owner);
+          if (ch) return ch;
+        }
+      }
+    }
+    return void 0;
+  };
+  if (!data || typeof data !== "object") return void 0;
+  const d = data;
+  const contents = d.contents;
+  const twoCol = contents?.twoColumnWatchNextResults;
+  if (!twoCol) return void 0;
+  const results = twoCol.results;
+  const resultsInner = results?.results;
+  const resultsContents = resultsInner?.contents;
+  const ch1 = searchVideoSecondaryInfo(resultsContents);
+  if (ch1) return ch1;
+  const secondaryResults = twoCol.secondaryResults;
+  const secondaryContents = Array.isArray(secondaryResults?.contents) ? secondaryResults.contents : secondaryResults?.secondaryResults?.contents;
+  return searchVideoSecondaryInfo(secondaryContents);
+}
+function formatDatePublished(isoDate) {
+  try {
+    const date = new Date(isoDate);
+    if (Number.isNaN(date.getTime())) return isoDate;
+    return date.toISOString().slice(0, 10);
+  } catch {
+    return isoDate;
+  }
+}
+async function fetchYouTubeMetadata(videoId) {
   try {
     const url = `https://www.youtube.com/watch?v=${videoId}`;
-    console.log("[YouTube Service] Fetching title from:", url);
-    const response = await (0, import_obsidian9.requestUrl)({
+    console.log("[YouTube Service] Fetching metadata from:", url);
+    const response = await (0, import_obsidian13.requestUrl)({
       url,
       method: "GET",
       headers: {
@@ -37837,29 +38030,43 @@ async function fetchYouTubeTitle(videoId) {
       throw new Error(`Failed to fetch YouTube page: ${response.status}`);
     }
     const html4 = response.text;
+    const metadata = { title: "" };
     const titleMatch = html4.match(/<title[^>]*>([^<]+)<\/title>/i);
-    if (titleMatch && titleMatch[1]) {
+    if (titleMatch?.[1]) {
       let title = decodeHtmlEntities(titleMatch[1]);
       title = title.replace(/\s*-\s*YouTube\s*$/, "").trim();
-      if (title) {
-        console.log("[YouTube Service] Extracted title:", title);
-        return title;
+      if (title) metadata.title = title;
+    }
+    if (!metadata.title) {
+      const ogTitleMatch = html4.match(
+        /<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i
+      );
+      if (ogTitleMatch?.[1]) {
+        metadata.title = decodeHtmlEntities(ogTitleMatch[1]).trim();
       }
     }
-    const ogTitleMatch = html4.match(
-      /<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i
-    );
-    if (ogTitleMatch && ogTitleMatch[1]) {
-      let title = decodeHtmlEntities(ogTitleMatch[1]);
-      title = title.trim();
-      console.log("[YouTube Service] Extracted title from og:title:", title);
-      return title;
+    const ytChannel = parseYtInitialDataChannel(html4);
+    if (ytChannel) {
+      metadata.channel = ytChannel;
     }
-    throw new Error("Could not extract title from YouTube page");
+    const jsonLd = parseJsonLdFromHtml(html4);
+    if (!metadata.channel && jsonLd.channel) metadata.channel = jsonLd.channel;
+    if (jsonLd.datePublished) {
+      metadata.datePublished = formatDatePublished(jsonLd.datePublished);
+    }
+    if (!metadata.title) {
+      throw new Error("Could not extract title from YouTube page");
+    }
+    console.log("[YouTube Service] Extracted metadata:", {
+      title: metadata.title,
+      channel: metadata.channel ?? "(none)",
+      datePublished: metadata.datePublished ?? "(none)"
+    });
+    return metadata;
   } catch (error) {
-    console.error("[YouTube Service] Error fetching title:", error);
+    console.error("[YouTube Service] Error fetching metadata:", error);
     throw new YouTubeError(
-      `Failed to fetch YouTube video title: ${error instanceof Error ? error.message : "Unknown error"}`
+      `Failed to fetch YouTube video metadata: ${error instanceof Error ? error.message : "Unknown error"}`
     );
   }
 }
@@ -37886,9 +38093,9 @@ async function getYouTubeContent(videoId, _plugin) {
   try {
     const obsidianFetch = createObsidianFetch();
     console.log(
-      "[YouTube Service] Starting parallel fetch of transcript and title..."
+      "[YouTube Service] Starting parallel fetch of transcript and metadata..."
     );
-    const [transcriptItems, title] = await Promise.all([
+    const [transcriptItems, metadata] = await Promise.all([
       fetchTranscript(finalVideoId, {
         // Provide custom fetch functions that use Obsidian's requestUrl
         videoFetch: async ({ url, lang, userAgent }) => {
@@ -37939,12 +38146,13 @@ async function getYouTubeContent(videoId, _plugin) {
           `Failed to fetch transcript: ${errorMessage}`
         );
       }),
-      fetchYouTubeTitle(finalVideoId).catch((error) => {
+      fetchYouTubeMetadata(finalVideoId).catch((error) => {
         console.warn(
-          "[YouTube Service] Title fetch failed, using fallback:",
+          "[YouTube Service] Metadata fetch failed, using fallback:",
           error
         );
-        return "Untitled YouTube Video";
+        const fallback = { title: "Untitled YouTube Video" };
+        return fallback;
       })
     ]);
     if (!transcriptItems || transcriptItems.length === 0) {
@@ -37952,13 +38160,19 @@ async function getYouTubeContent(videoId, _plugin) {
     }
     const rawTranscript = transcriptItems.map((item) => item.text).join(" ");
     const decodedTranscript = decodeHtmlEntities(rawTranscript);
-    const decodedTitle = decodeHtmlEntities(title);
+    const decodedTitle = decodeHtmlEntities(metadata.title);
     console.log("[YouTube Service] Successfully fetched:", {
-      originalTitle: title,
-      decodedTitle,
+      title: decodedTitle,
+      channel: metadata.channel ?? "(none)",
+      datePublished: metadata.datePublished ?? "(none)",
       transcriptLength: decodedTranscript.length
     });
-    return { title: decodedTitle, transcript: decodedTranscript };
+    return {
+      title: decodedTitle,
+      transcript: decodedTranscript,
+      channel: metadata.channel,
+      datePublished: metadata.datePublished
+    };
   } catch (error) {
     if (error instanceof YouTubeError) {
       throw error;
@@ -37978,12 +38192,12 @@ function getOriginalContent(content3) {
   original = original.replace(transcriptHeaderPattern, "");
   return original;
 }
-var import_obsidian9, YOUTUBE_URL_PATTERNS, YouTubeError;
+var import_obsidian13, YOUTUBE_URL_PATTERNS, YouTubeError;
 var init_youtube_service = __esm({
   "inbox/services/youtube-service.ts"() {
     init_logger();
     init_youtube_transcript_plus();
-    import_obsidian9 = require("obsidian");
+    import_obsidian13 = require("obsidian");
     YOUTUBE_URL_PATTERNS = [
       /(?:https?:\/\/)?(?:www\.)?youtu\.be\/([a-zA-Z0-9_-]+)/,
       /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/
@@ -37994,49 +38208,6 @@ var init_youtube_service = __esm({
         this.details = details;
         this.name = "YouTubeError";
       }
-    };
-  }
-});
-
-// constants.ts
-var import_obsidian12, VALID_IMAGE_EXTENSIONS, VALID_AUDIO_EXTENSIONS, VALID_MEDIA_EXTENSIONS, VALID_TEXT_EXTENSIONS, VALID_EXTENSIONS, isValidExtension;
-var init_constants = __esm({
-  "constants.ts"() {
-    import_obsidian12 = require("obsidian");
-    VALID_IMAGE_EXTENSIONS = [
-      "png",
-      "jpg",
-      "jpeg",
-      "gif",
-      "svg",
-      "webp"
-    ];
-    VALID_AUDIO_EXTENSIONS = [
-      "mp3",
-      "mp4",
-      "mpeg",
-      "mpga",
-      "m4a",
-      "wav",
-      "webm"
-    ];
-    VALID_MEDIA_EXTENSIONS = [
-      ...VALID_IMAGE_EXTENSIONS,
-      ...VALID_AUDIO_EXTENSIONS,
-      "pdf"
-    ];
-    VALID_TEXT_EXTENSIONS = ["md", "txt"];
-    VALID_EXTENSIONS = [
-      ...VALID_MEDIA_EXTENSIONS,
-      ...VALID_TEXT_EXTENSIONS,
-      "pdf"
-    ];
-    isValidExtension = (extension2) => {
-      const isSupported = VALID_EXTENSIONS.includes(extension2);
-      if (!isSupported) {
-        new import_obsidian12.Notice("Sorry, Note Companion does not support this file type.");
-      }
-      return isSupported;
     };
   }
 });
@@ -42149,17 +42320,17 @@ var require_secure_json_parse = __commonJS({
 var require_use_sync_external_store_shim_production = __commonJS({
   "../../node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.js"(exports2) {
     "use strict";
-    var React82 = require_react();
+    var React88 = require_react();
     function is2(x, y) {
       return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
     }
     var objectIs = "function" === typeof Object.is ? Object.is : is2;
-    var useState62 = React82.useState;
-    var useEffect43 = React82.useEffect;
-    var useLayoutEffect4 = React82.useLayoutEffect;
-    var useDebugValue3 = React82.useDebugValue;
+    var useState66 = React88.useState;
+    var useEffect46 = React88.useEffect;
+    var useLayoutEffect4 = React88.useLayoutEffect;
+    var useDebugValue3 = React88.useDebugValue;
     function useSyncExternalStore$2(subscribe, getSnapshot) {
-      var value = getSnapshot(), _useState = useState62({ inst: { value, getSnapshot } }), inst = _useState[0].inst, forceUpdate = _useState[1];
+      var value = getSnapshot(), _useState = useState66({ inst: { value, getSnapshot } }), inst = _useState[0].inst, forceUpdate = _useState[1];
       useLayoutEffect4(
         function() {
           inst.value = value;
@@ -42168,7 +42339,7 @@ var require_use_sync_external_store_shim_production = __commonJS({
         },
         [subscribe, value, getSnapshot]
       );
-      useEffect43(
+      useEffect46(
         function() {
           checkIfSnapshotChanged(inst) && forceUpdate({ inst });
           return subscribe(function() {
@@ -42194,7 +42365,7 @@ var require_use_sync_external_store_shim_production = __commonJS({
       return getSnapshot();
     }
     var shim2 = "undefined" === typeof window || "undefined" === typeof window.document || "undefined" === typeof window.document.createElement ? useSyncExternalStore$1 : useSyncExternalStore$2;
-    exports2.useSyncExternalStore = void 0 !== React82.useSyncExternalStore ? React82.useSyncExternalStore : shim2;
+    exports2.useSyncExternalStore = void 0 !== React88.useSyncExternalStore ? React88.useSyncExternalStore : shim2;
   }
 });
 
@@ -45847,6 +46018,87 @@ var require_extend = __commonJS({
   }
 });
 
+// services/screenpipe-client.ts
+var screenpipe_client_exports = {};
+__export(screenpipe_client_exports, {
+  ScreenpipeClient: () => ScreenpipeClient,
+  parseScreenpipeTimestamp: () => parseScreenpipeTimestamp
+});
+function parseScreenpipeTimestamp(ts) {
+  const s = ts.trim();
+  if (/^\d{10}$/.test(s)) {
+    return new Date(parseInt(s, 10) * 1e3);
+  }
+  if (/^\d{13}$/.test(s)) {
+    return new Date(parseInt(s, 10));
+  }
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?(\.\d+)?$/i.test(s)) {
+    return /* @__PURE__ */ new Date(`${s}Z`);
+  }
+  return new Date(ts);
+}
+var ScreenpipeClient;
+var init_screenpipe_client = __esm({
+  "services/screenpipe-client.ts"() {
+    ScreenpipeClient = class {
+      constructor(apiUrl = "http://localhost:3030") {
+        this.apiUrl = apiUrl;
+      }
+      /**
+       * Check if ScreenPipe API is available
+       */
+      async isAvailable() {
+        try {
+          const response = await fetch(`${this.apiUrl}/health`, {
+            signal: AbortSignal.timeout(2e3)
+            // 2 second timeout
+          });
+          return response.ok;
+        } catch {
+          return false;
+        }
+      }
+      /**
+       * Search ScreenPipe for recorded content
+       */
+      async search(params) {
+        try {
+          const searchParams = new URLSearchParams();
+          if (params.q) {
+            searchParams.append("q", params.q);
+          }
+          if (params.content_type && params.content_type !== "all") {
+            searchParams.append("content_type", params.content_type);
+          }
+          searchParams.append("limit", String(Math.min(params.limit || 10, 50)));
+          if (params.start_time) {
+            searchParams.append("start_time", params.start_time);
+          }
+          if (params.end_time) {
+            searchParams.append("end_time", params.end_time);
+          }
+          if (params.app_name) {
+            searchParams.append("app_name", params.app_name);
+          }
+          if (params.window_name) {
+            searchParams.append("window_name", params.window_name);
+          }
+          const response = await fetch(
+            `${this.apiUrl}/search?${searchParams.toString()}`
+          );
+          if (!response.ok) {
+            throw new Error(`ScreenPipe API error: ${response.status}`);
+          }
+          const data = await response.json();
+          return data.data || [];
+        } catch (error) {
+          return [];
+        }
+      }
+    };
+  }
+});
+
 // ../../node_modules/ollama-ai-provider/node_modules/nanoid/non-secure/index.cjs
 var require_non_secure = __commonJS({
   "../../node_modules/ollama-ai-provider/node_modules/nanoid/non-secure/index.cjs"(exports2, module2) {
@@ -45908,11 +46160,11 @@ var require_dist = __commonJS({
       NoSuchModelError: () => NoSuchModelError,
       TooManyEmbeddingValuesForCallError: () => TooManyEmbeddingValuesForCallError,
       TypeValidationError: () => TypeValidationError2,
-      UnsupportedFunctionalityError: () => UnsupportedFunctionalityError,
+      UnsupportedFunctionalityError: () => UnsupportedFunctionalityError2,
       getErrorMessage: () => getErrorMessage3,
-      isJSONArray: () => isJSONArray,
-      isJSONObject: () => isJSONObject,
-      isJSONValue: () => isJSONValue
+      isJSONArray: () => isJSONArray2,
+      isJSONObject: () => isJSONObject2,
+      isJSONValue: () => isJSONValue2
     });
     module2.exports = __toCommonJS2(src_exports);
     var marker16 = "vercel.ai.error";
@@ -46379,7 +46631,7 @@ Error message: ${getErrorMessage3(cause)}`,
     var marker133 = `vercel.ai.error.${name123}`;
     var symbol133 = Symbol.for(marker133);
     var _a133;
-    var UnsupportedFunctionalityError = class extends AISDKError2 {
+    var UnsupportedFunctionalityError2 = class extends AISDKError2 {
       constructor({ functionality }) {
         super({
           name: name123,
@@ -46410,26 +46662,26 @@ Error message: ${getErrorMessage3(cause)}`,
       }
     };
     _a133 = symbol133;
-    function isJSONValue(value) {
+    function isJSONValue2(value) {
       if (value === null || typeof value === "string" || typeof value === "number" || typeof value === "boolean") {
         return true;
       }
       if (Array.isArray(value)) {
-        return value.every(isJSONValue);
+        return value.every(isJSONValue2);
       }
       if (typeof value === "object") {
         return Object.entries(value).every(
-          ([key, val]) => typeof key === "string" && isJSONValue(val)
+          ([key, val]) => typeof key === "string" && isJSONValue2(val)
         );
       }
       return false;
     }
-    function isJSONArray(value) {
-      return Array.isArray(value) && value.every(isJSONValue);
+    function isJSONArray2(value) {
+      return Array.isArray(value) && value.every(isJSONValue2);
     }
-    function isJSONObject(value) {
+    function isJSONObject2(value) {
       return value != null && typeof value === "object" && Object.entries(value).every(
-        ([key, val]) => typeof key === "string" && isJSONValue(val)
+        ([key, val]) => typeof key === "string" && isJSONValue2(val)
       );
     }
   }
@@ -46727,7 +46979,7 @@ var require_dist3 = __commonJS({
     function isAbortError2(error) {
       return error instanceof Error && (error.name === "AbortError" || error.name === "TimeoutError");
     }
-    var import_provider43 = require_dist();
+    var import_provider46 = require_dist();
     function loadApiKey({
       apiKey,
       environmentVariableName,
@@ -46738,23 +46990,23 @@ var require_dist3 = __commonJS({
         return apiKey;
       }
       if (apiKey != null) {
-        throw new import_provider43.LoadAPIKeyError({
+        throw new import_provider46.LoadAPIKeyError({
           message: `${description} API key must be a string.`
         });
       }
       if (typeof process === "undefined") {
-        throw new import_provider43.LoadAPIKeyError({
+        throw new import_provider46.LoadAPIKeyError({
           message: `${description} API key is missing. Pass it using the '${apiKeyParameterName}' parameter. Environment variables is not supported in this environment.`
         });
       }
       apiKey = process.env[environmentVariableName];
       if (apiKey == null) {
-        throw new import_provider43.LoadAPIKeyError({
+        throw new import_provider46.LoadAPIKeyError({
           message: `${description} API key is missing. Pass it using the '${apiKeyParameterName}' parameter or the ${environmentVariableName} environment variable.`
         });
       }
       if (typeof apiKey !== "string") {
-        throw new import_provider43.LoadAPIKeyError({
+        throw new import_provider46.LoadAPIKeyError({
           message: `${description} API key must be a string. The value of the ${environmentVariableName} environment variable is not a string.`
         });
       }
@@ -46809,7 +47061,7 @@ var require_dist3 = __commonJS({
       }
       return settingValue;
     }
-    var import_provider44 = require_dist();
+    var import_provider47 = require_dist();
     var import_secure_json_parse2 = __toESM2(require_secure_json_parse());
     var import_provider310 = require_dist();
     var validatorSymbol2 = Symbol.for("vercel.ai.validator");
@@ -46873,10 +47125,10 @@ var require_dist3 = __commonJS({
         }
         return validateTypes({ value, schema });
       } catch (error) {
-        if (import_provider44.JSONParseError.isJSONParseError(error) || import_provider44.TypeValidationError.isTypeValidationError(error)) {
+        if (import_provider47.JSONParseError.isJSONParseError(error) || import_provider47.TypeValidationError.isTypeValidationError(error)) {
           throw error;
         }
-        throw new import_provider44.JSONParseError({ text: text6, cause: error });
+        throw new import_provider47.JSONParseError({ text: text6, cause: error });
       }
     }
     function safeParseJSON2({
@@ -46895,7 +47147,7 @@ var require_dist3 = __commonJS({
       } catch (error) {
         return {
           success: false,
-          error: import_provider44.JSONParseError.isJSONParseError(error) ? error : new import_provider44.JSONParseError({ text: text6, cause: error })
+          error: import_provider47.JSONParseError.isJSONParseError(error) ? error : new import_provider47.JSONParseError({ text: text6, cause: error })
         };
       }
     }
@@ -51601,14 +51853,14 @@ var require_dist5 = __commonJS({
     __export3(src_exports, {
       Ollama: () => Ollama,
       createOllama: () => createOllama,
-      ollama: () => ollama2
+      ollama: () => ollama3
     });
     module2.exports = __toCommonJS2(src_exports);
     var import_provider_utils62 = require_dist3();
     var import_provider_utils52 = require_dist3();
     var import_zod22 = require_zod();
-    var import_provider43 = require_dist();
-    var import_provider_utils16 = require_dist3();
+    var import_provider46 = require_dist();
+    var import_provider_utils17 = require_dist3();
     function convertToOllamaChatMessages(prompt2) {
       const messages = [];
       for (const { content: content3, role } of prompt2) {
@@ -51624,12 +51876,12 @@ var require_dist5 = __commonJS({
                   if (current.type === "text") {
                     previous2.content += current.text;
                   } else if (current.type === "image" && current.image instanceof URL) {
-                    throw new import_provider43.UnsupportedFunctionalityError({
+                    throw new import_provider46.UnsupportedFunctionalityError({
                       functionality: "Image URLs in user messages"
                     });
                   } else if (current.type === "image" && current.image instanceof Uint8Array) {
                     previous2.images = previous2.images || [];
-                    previous2.images.push((0, import_provider_utils16.convertUint8ArrayToBase64)(current.image));
+                    previous2.images.push((0, import_provider_utils17.convertUint8ArrayToBase64)(current.image));
                   }
                   return previous2;
                 },
@@ -51801,13 +52053,13 @@ var require_dist5 = __commonJS({
       }
     }
     var import_provider_utils32 = require_dist3();
-    var import_zod13 = require_zod();
-    var ollamaErrorDataSchema = import_zod13.z.object({
-      error: import_zod13.z.object({
-        code: import_zod13.z.string().nullable(),
-        message: import_zod13.z.string(),
-        param: import_zod13.z.any().nullable(),
-        type: import_zod13.z.string()
+    var import_zod14 = require_zod();
+    var ollamaErrorDataSchema = import_zod14.z.object({
+      error: import_zod14.z.object({
+        code: import_zod14.z.string().nullable(),
+        message: import_zod14.z.string(),
+        param: import_zod14.z.any().nullable(),
+        type: import_zod14.z.string()
       })
     });
     var ollamaFailedResponseHandler = (0, import_provider_utils32.createJsonErrorResponseHandler)({
@@ -52269,7 +52521,7 @@ var require_dist5 = __commonJS({
       provider.textEmbeddingModel = createEmbeddingModel;
       return provider;
     }
-    var ollama2 = createOllama();
+    var ollama3 = createOllama();
   }
 });
 
@@ -52278,10 +52530,10 @@ var meeting_metadata_exports = {};
 __export(meeting_metadata_exports, {
   MeetingMetadataManager: () => MeetingMetadataManager
 });
-var import_obsidian47, METADATA_FILE, MeetingMetadataManager;
+var import_obsidian54, METADATA_FILE, MeetingMetadataManager;
 var init_meeting_metadata = __esm({
   "views/assistant/meetings/meeting-metadata.ts"() {
-    import_obsidian47 = require("obsidian");
+    import_obsidian54 = require("obsidian");
     init_logger();
     init_constants();
     METADATA_FILE = "_NoteCompanion/.meetings.json";
@@ -52340,7 +52592,7 @@ var init_meeting_metadata = __esm({
         try {
           const allFiles = this.plugin.app.vault.getAllLoadedFiles();
           const audioFiles = allFiles.filter(
-            (file) => file instanceof import_obsidian47.TFile && VALID_AUDIO_EXTENSIONS.includes(file.extension.toLowerCase())
+            (file) => file instanceof import_obsidian54.TFile && VALID_AUDIO_EXTENSIONS.includes(file.extension.toLowerCase())
           );
           for (const file of audioFiles) {
             if (existingPaths.has(file.path)) {
@@ -52367,7 +52619,7 @@ var init_meeting_metadata = __esm({
       getAllAudioFiles() {
         const allFiles = this.plugin.app.vault.getAllLoadedFiles();
         return allFiles.filter(
-          (file) => file instanceof import_obsidian47.TFile && VALID_AUDIO_EXTENSIONS.includes(file.extension.toLowerCase())
+          (file) => file instanceof import_obsidian54.TFile && VALID_AUDIO_EXTENSIONS.includes(file.extension.toLowerCase())
         );
       }
       getRecordings() {
@@ -75534,7 +75786,7 @@ var require_UTIF = __commonJS({
             }
             function a7(Q, h, f, G, n2, E, a, C, F, d) {
               if (d == null) d = false;
-              var T = f.m, U = f.Z, z = h, J = 0, V = 0, r3 = 0, D = 0, a8, q = 0, X3, O, _, N, e2, K, x = 0, k, g, R, c2;
+              var T = f.m, U = f.Z, z = h, J = 0, V = 0, r3 = 0, D = 0, a8, q = 0, X5, O, _, N, e2, K, x = 0, k, g, R, c2;
               function Y() {
                 if (V > 0) {
                   V--;
@@ -75597,11 +75849,11 @@ var require_UTIF = __commonJS({
                 }
                 return e3 + (-1 << I) + 1;
               }
-              function v(X4, I) {
-                var l = u2(X4.J), M = l === 0 ? 0 : j(l), N2 = 1;
-                X4.D[I] = X4.Q += M;
+              function v(X6, I) {
+                var l = u2(X6.J), M = l === 0 ? 0 : j(l), N2 = 1;
+                X6.D[I] = X6.Q += M;
                 while (N2 < 64) {
-                  var S = u2(X4.i), i = S & 15, A = S >> 4;
+                  var S = u2(X6.i), i = S & 15, A = S >> 4;
                   if (i === 0) {
                     if (A < 15) {
                       break;
@@ -75611,25 +75863,25 @@ var require_UTIF = __commonJS({
                   }
                   N2 += A;
                   var o = p[N2];
-                  X4.D[I + o] = j(i);
+                  X6.D[I + o] = j(i);
                   N2++;
                 }
               }
-              function $(X4, I) {
-                var l = u2(X4.J), M = l === 0 ? 0 : j(l) << F;
-                X4.D[I] = X4.Q += M;
+              function $(X6, I) {
+                var l = u2(X6.J), M = l === 0 ? 0 : j(l) << F;
+                X6.D[I] = X6.Q += M;
               }
-              function b(X4, I) {
-                X4.D[I] |= Y() << F;
+              function b(X6, I) {
+                X6.D[I] |= Y() << F;
               }
-              function P(X4, I) {
+              function P(X6, I) {
                 if (r3 > 0) {
                   r3--;
                   return;
                 }
                 var N2 = E, l = a;
                 while (N2 <= l) {
-                  var M = u2(X4.i), S = M & 15, i = M >> 4;
+                  var M = u2(X6.i), S = M & 15, i = M >> 4;
                   if (S === 0) {
                     if (i < 15) {
                       r3 = m(i) + (1 << i) - 1;
@@ -75640,17 +75892,17 @@ var require_UTIF = __commonJS({
                   }
                   N2 += i;
                   var A = p[N2];
-                  X4.D[I + A] = j(S) * (1 << F);
+                  X6.D[I + A] = j(S) * (1 << F);
                   N2++;
                 }
               }
-              function a4(X4, I) {
+              function a4(X6, I) {
                 var N2 = E, l = a, M = 0, S, i;
                 while (N2 <= l) {
-                  var A = I + p[N2], o = X4.D[A] < 0 ? -1 : 1;
+                  var A = I + p[N2], o = X6.D[A] < 0 ? -1 : 1;
                   switch (D) {
                     case 0:
-                      i = u2(X4.i);
+                      i = u2(X6.i);
                       S = i & 15;
                       M = i >> 4;
                       if (S === 0) {
@@ -75671,8 +75923,8 @@ var require_UTIF = __commonJS({
                       continue;
                     case 1:
                     case 2:
-                      if (X4.D[A]) {
-                        X4.D[A] += o * (Y() << F);
+                      if (X6.D[A]) {
+                        X6.D[A] += o * (Y() << F);
                       } else {
                         M--;
                         if (M === 0) {
@@ -75681,16 +75933,16 @@ var require_UTIF = __commonJS({
                       }
                       break;
                     case 3:
-                      if (X4.D[A]) {
-                        X4.D[A] += o * (Y() << F);
+                      if (X6.D[A]) {
+                        X6.D[A] += o * (Y() << F);
                       } else {
-                        X4.D[A] = a8 << F;
+                        X6.D[A] = a8 << F;
                         D = 0;
                       }
                       break;
                     case 4:
-                      if (X4.D[A]) {
-                        X4.D[A] += o * (Y() << F);
+                      if (X6.D[A]) {
+                        X6.D[A] += o * (Y() << F);
                       }
                       break;
                   }
@@ -75703,16 +75955,16 @@ var require_UTIF = __commonJS({
                   }
                 }
               }
-              function H(X4, I, x2, l, M) {
+              function H(X6, I, x2, l, M) {
                 var S = x2 / T | 0, i = x2 % T;
-                q = S * X4.A + l;
-                var A = i * X4.h + M, o = a2(X4, q, A);
-                I(X4, o);
+                q = S * X6.A + l;
+                var A = i * X6.h + M, o = a2(X6, q, A);
+                I(X6, o);
               }
-              function w(X4, I, x2) {
-                q = x2 / X4.P | 0;
-                var l = x2 % X4.P, M = a2(X4, q, l);
-                I(X4, M);
+              function w(X6, I, x2) {
+                q = x2 / X6.P | 0;
+                var l = x2 % X6.P, M = a2(X6, q, l);
+                I(X6, M);
               }
               var y = G.length;
               if (U) {
@@ -75737,20 +75989,20 @@ var require_UTIF = __commonJS({
                   }
                   r3 = 0;
                   if (y === 1) {
-                    X3 = G[0];
+                    X5 = G[0];
                     for (e2 = 0; e2 < L; e2++) {
-                      w(X3, K, x);
+                      w(X5, K, x);
                       x++;
                     }
                   } else {
                     for (e2 = 0; e2 < L; e2++) {
                       for (O = 0; O < y; O++) {
-                        X3 = G[O];
-                        R = X3.h;
-                        c2 = X3.A;
+                        X5 = G[O];
+                        R = X5.h;
+                        c2 = X5.A;
                         for (_ = 0; _ < c2; _++) {
                           for (N = 0; N < R; N++) {
-                            H(X3, K, x, _, N);
+                            H(X5, K, x, _, N);
                           }
                         }
                       }
@@ -76119,8 +76371,8 @@ var require_UTIF = __commonJS({
                       if (H < y) {
                         H = y;
                       }
-                      var X3 = Q[E + 2];
-                      m = F.W.push({ h: w, A: y, L: X3, $: null });
+                      var X5 = Q[E + 2];
+                      m = F.W.push({ h: w, A: y, L: X5, $: null });
                       F._[a4] = m - 1;
                       E += 3;
                     }
@@ -76767,7 +77019,7 @@ var require_UTIF = __commonJS({
           }
           function av(t2, E, h, L, g, n2) {
             L = new Uint16Array(L.buffer);
-            var W = Date.now(), j = UTIF2._binBE, $ = E + h, r3, u2, X3, I, ax, a3, R, ai, aa, ap, ah, ae, aD, al, i, aE, T, B;
+            var W = Date.now(), j = UTIF2._binBE, $ = E + h, r3, u2, X5, I, ax, a3, R, ai, aa, ap, ah, ae, aD, al, i, aE, T, B;
             E += 4;
             var a5 = n2[0] == 1;
             while (E < $) {
@@ -76775,7 +77027,7 @@ var require_UTIF = __commonJS({
               E += 4;
               if (S == 12) r3 = s;
               else if (S == 20) u2 = s;
-              else if (S == 21) X3 = s;
+              else if (S == 21) X5 = s;
               else if (S == 48) I = s;
               else if (S == 53) ax = s;
               else if (S == 35) a3 = s;
@@ -76802,8 +77054,8 @@ var require_UTIF = __commonJS({
                 if ((F & V) == V) {
                   if (T == null) {
                     T = [];
-                    for (var M = 0; M < 4; M++) T[M] = new Int16Array((u2 >>> 1) * (X3 >>> 1));
-                    B = new Int16Array((u2 >>> 1) * (X3 >>> 1));
+                    for (var M = 0; M < 4; M++) T[M] = new Int16Array((u2 >>> 1) * (X5 >>> 1));
+                    B = new Int16Array((u2 >>> 1) * (X5 >>> 1));
                     C = new Int16Array(1024);
                     for (var M = 0; M < 1024; M++) {
                       var aG = M - 512, p = Math.abs(aG), r3 = Math.floor(768 * p * p * p / (255 * 255 * 255)) + p;
@@ -76816,7 +77068,7 @@ var require_UTIF = __commonJS({
                       k[M] = Math.min(a1, aA);
                     }
                   }
-                  var w = T[R], v = m(u2, 1 + P[I]), N = m(X3, 1 + P[I]);
+                  var w = T[R], v = m(u2, 1 + P[I]), N = m(X5, 1 + P[I]);
                   if (I == 0) {
                     for (var b = 0; b < N; b++) for (var G = 0; G < v; G++) {
                       var c2 = E + (b * v + G) * 2;
@@ -76873,7 +77125,7 @@ var require_UTIF = __commonJS({
                   }
                   if (I == 9 && R == 3) {
                     var a8 = T[0], ab = T[1], aq = T[2], as = T[3];
-                    for (var b = 0; b < X3; b += 2) for (var G = 0; G < u2; G += 2) {
+                    for (var b = 0; b < X5; b += 2) for (var G = 0; G < u2; G += 2) {
                       var U = b * u2 + G, c2 = (b >>> 1) * (u2 >>> 1) + (G >>> 1), z = a8[c2], ao = ab[c2] - 2048, ak = aq[c2] - 2048, ad = as[c2] - 2048, aj = (ao << 1) + z, a0 = (ak << 1) + z, aH = z + ad, am = z - ad;
                       if (a5) {
                         L[U] = q(aH);
@@ -78245,10 +78497,10 @@ var require_UTIF = __commonJS({
                 var sX = 9 * u2 / (6 * u2 - 16 * v + 12);
                 var sY = 4 * v / (6 * u2 - 16 * v + 12);
                 var bY = L;
-                var X3 = sX * bY / sY, Y = bY, Z = (1 - sX - sY) * bY / sY;
-                var r3 = 2.69 * X3 - 1.276 * Y - 0.414 * Z;
-                var g = -1.022 * X3 + 1.978 * Y + 0.044 * Z;
-                var b = 0.061 * X3 - 0.224 * Y + 1.163 * Z;
+                var X5 = sX * bY / sY, Y = bY, Z = (1 - sX - sY) * bY / sY;
+                var r3 = 2.69 * X5 - 1.276 * Y - 0.414 * Z;
+                var g = -1.022 * X5 + 1.978 * Y + 0.044 * Z;
+                var b = 0.061 * X5 - 0.224 * Y + 1.163 * Z;
                 img[qi] = gamma(Math.min(r3, 1)) * 255;
                 img[qi + 1] = gamma(Math.min(g, 1)) * 255;
                 img[qi + 2] = gamma(Math.min(b, 1)) * 255;
@@ -78531,7 +78783,7 @@ var require_UTIF = __commonJS({
             var f = H(I, V);
             return P(f, I);
           }
-          function X3(h, V, I, f, w, x) {
+          function X5(h, V, I, f, w, x) {
             var T = 0;
             for (var G = 0; G < x; G++) {
               var s = G * V;
@@ -78632,7 +78884,7 @@ var require_UTIF = __commonJS({
                   Z += c2[t2];
                 }
                 var B = _ / p, e2 = s / D, d = B * e2;
-                X3($, B * Z, M, u2, Z, e2);
+                X5($, B * Z, M, u2, Z, e2);
                 j($, I, B, e2, Z - 2, Z, Z, f);
                 var A = new Uint16Array(d * c2[0]);
                 if (p == 2 && D == 2) {
@@ -78677,7 +78929,7 @@ var require_UTIF = __commonJS({
                   }
                 }
               } else {
-                X3($, _ * E, M, G, E, s);
+                X5($, _ * E, M, G, E, s);
                 if (w == 0) j($, I, _, s, 0, E, E, f);
                 else {
                   var U = Math.floor(w / _);
@@ -78815,7 +79067,7 @@ var require_UTIF = __commonJS({
           }
           function r3(t2, Z, u2, e2, Q, V, O, o) {
             if (o == null) o = 0;
-            var X3 = V + 1, k = X3 % 2, j = 0, I = 0, a = 0, l, R, w = e2[Q], S = e2[Q - 1], H = e2[Q - 2][X3], g = S[X3 - 1], Y = S[X3], P = S[X3 + 1], A = w[X3 - 1], v = w[X3 + 1], y = Math.abs, d, C, n2, h;
+            var X5 = V + 1, k = X5 % 2, j = 0, I = 0, a = 0, l, R, w = e2[Q], S = e2[Q - 1], H = e2[Q - 2][X5], g = S[X5 - 1], Y = S[X5], P = S[X5 + 1], A = w[X5 - 1], v = w[X5 + 1], y = Math.abs, d, C, n2, h;
             if (k) {
               d = y(P - Y);
               C = y(H - Y);
@@ -78825,7 +79077,7 @@ var require_UTIF = __commonJS({
               h = d > n2 && C < d ? H + g : d < n2 && C < n2 ? H + P : P + g;
               h = h + 2 * Y >>> 2;
               if (o) {
-                w[X3] = h;
+                w[X5] = h;
                 return;
               }
               l = Z.t * Z.c[t2.g + Y - H] + Z.c[t2.g + g - Y];
@@ -78853,7 +79105,7 @@ var require_UTIF = __commonJS({
               if (h < 0) h += Z.w;
               else if (h > t2.g) h -= Z.w;
             }
-            w[X3] = h >= 0 ? Math.min(h, t2.g) : 0;
+            w[X5] = h >= 0 ? Math.min(h, t2.g) : 0;
           }
           function U(t2, Z, u2) {
             var e2 = t2[0].length;
@@ -78867,17 +79119,17 @@ var require_UTIF = __commonJS({
             U(t2, i, J);
             U(t2, x, $);
           }
-          function _(t2, Z, u2, e2, Q, V, O, o, X3, k, j, I, a) {
+          function _(t2, Z, u2, e2, Q, V, O, o, X5, k, j, I, a) {
             var l = 0, R = 1, w = Q < M && Q > J;
             while (R < t2.m) {
               if (l < t2.m) {
-                r3(t2, Z, u2, e2, Q, l, O[X3], t2.h && (w && k || !w && (j || (l & I) == a)));
-                r3(t2, Z, u2, e2, V, l, O[X3], t2.h && (!w && k || w && (j || (l & I) == a)));
+                r3(t2, Z, u2, e2, Q, l, O[X5], t2.h && (w && k || !w && (j || (l & I) == a)));
+                r3(t2, Z, u2, e2, V, l, O[X5], t2.h && (!w && k || w && (j || (l & I) == a)));
                 l += 2;
               }
               if (l > 8) {
-                r3(t2, Z, u2, e2, Q, R, o[X3]);
-                r3(t2, Z, u2, e2, V, R, o[X3]);
+                r3(t2, Z, u2, e2, Q, R, o[X5]);
+                r3(t2, Z, u2, e2, V, R, o[X5]);
                 R += 2;
               }
             }
@@ -78894,7 +79146,7 @@ var require_UTIF = __commonJS({
           function a9(t2, Z, u2, e2, Q, V) {
             var O = V.length, o = t2.l;
             if (Q + 1 == t2.s) o = t2.e - Q * t2.l;
-            var X3 = 6 * t2.e * e2 + Q * t2.l;
+            var X5 = 6 * t2.e * e2 + Q * t2.l;
             for (var k = 0; k < 6; k++) {
               for (var j = 0; j < o; j++) {
                 var I = V[k % O][j % O], a;
@@ -78906,9 +79158,9 @@ var require_UTIF = __commonJS({
                   a = s + k;
                 }
                 var l = t2.h ? (j * 2 / 3 & 2147483646 | j % 3 & 1) + (j % 3 >>> 1) : j >>> 1;
-                Z[X3 + j] = u2[a][l + 1];
+                Z[X5 + j] = u2[a][l + 1];
               }
-              X3 += t2.e;
+              X5 += t2.e;
             }
           }
           UTIF2._decompressRAF = function(t2, Z) {
@@ -78917,28 +79169,28 @@ var require_UTIF = __commonJS({
               Z = u2.h ? [[1, 1, 0, 1, 1, 2], [1, 1, 2, 1, 1, 0], [2, 0, 1, 0, 2, 1], [1, 1, 2, 1, 1, 0], [1, 1, 0, 1, 1, 2], [0, 2, 1, 2, 0, 1]] : [[0, 1], [3, 2]];
             }
             var O = [[G, b], [F, J], [N, f], [E, q], [M, L], [m, $]], o = [];
-            for (var X3 = 0; X3 < p; X3++) {
-              o[X3] = new Uint16Array(u2.A);
+            for (var X5 = 0; X5 < p; X5++) {
+              o[X5] = new Uint16Array(u2.A);
             }
             for (var k = 0; k < u2.s; k++) {
               var j = D(Q), I = D(Q);
-              for (var X3 = 0; X3 < p; X3++) {
+              for (var X5 = 0; X5 < p; X5++) {
                 for (var a = 0; a < u2.A; a++) {
-                  o[X3][a] = 0;
+                  o[X5][a] = 0;
                 }
               }
               for (var l = 0; l < u2.d; l++) {
                 a8(u2, Q, e2[k], o, j, I);
-                for (var X3 = 0; X3 < 6; X3++) {
+                for (var X5 = 0; X5 < 6; X5++) {
                   for (var a = 0; a < u2.A; a++) {
-                    o[O[X3][0]][a] = o[O[X3][1]][a];
+                    o[O[X5][0]][a] = o[O[X5][1]][a];
                   }
                 }
                 a9(u2, V, o, l, k, Z);
-                for (var X3 = i; X3 < p; X3++) {
-                  if ([N, E, M, m].indexOf(X3) == -1) {
+                for (var X5 = i; X5 < p; X5++) {
+                  if ([N, E, M, m].indexOf(X5) == -1) {
                     for (var a = 0; a < u2.A; a++) {
-                      o[X3][a] = 0;
+                      o[X5][a] = 0;
                     }
                   }
                 }
@@ -81684,42 +81936,42 @@ var require_image_q = __commonJS({
           }
         }
       }
-      static _volumeFloat(cube, moment6) {
-        return moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] - moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] + moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+      static _volumeFloat(cube, moment8) {
+        return moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] - moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] + moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
       }
-      static _volume(cube, moment6) {
-        return _WuQuant._volumeFloat(cube, moment6) | 0;
+      static _volume(cube, moment8) {
+        return _WuQuant._volumeFloat(cube, moment8) | 0;
       }
-      static _top(cube, direction, position3, moment6) {
+      static _top(cube, direction, position3, moment8) {
         let result;
         switch (direction) {
           case _WuQuant._alpha:
-            result = moment6[position3][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] - moment6[position3][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment6[position3][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment6[position3][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (moment6[position3][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment6[position3][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment6[position3][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment6[position3][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            result = moment8[position3][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] - moment8[position3][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment8[position3][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment8[position3][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (moment8[position3][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] - moment8[position3][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment8[position3][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment8[position3][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
             break;
           case _WuQuant._red:
-            result = moment6[cube.alphaMaximum][position3][cube.greenMaximum][cube.blueMaximum] - moment6[cube.alphaMaximum][position3][cube.greenMinimum][cube.blueMaximum] - moment6[cube.alphaMinimum][position3][cube.greenMaximum][cube.blueMaximum] + moment6[cube.alphaMinimum][position3][cube.greenMinimum][cube.blueMaximum] - (moment6[cube.alphaMaximum][position3][cube.greenMaximum][cube.blueMinimum] - moment6[cube.alphaMaximum][position3][cube.greenMinimum][cube.blueMinimum] - moment6[cube.alphaMinimum][position3][cube.greenMaximum][cube.blueMinimum] + moment6[cube.alphaMinimum][position3][cube.greenMinimum][cube.blueMinimum]);
+            result = moment8[cube.alphaMaximum][position3][cube.greenMaximum][cube.blueMaximum] - moment8[cube.alphaMaximum][position3][cube.greenMinimum][cube.blueMaximum] - moment8[cube.alphaMinimum][position3][cube.greenMaximum][cube.blueMaximum] + moment8[cube.alphaMinimum][position3][cube.greenMinimum][cube.blueMaximum] - (moment8[cube.alphaMaximum][position3][cube.greenMaximum][cube.blueMinimum] - moment8[cube.alphaMaximum][position3][cube.greenMinimum][cube.blueMinimum] - moment8[cube.alphaMinimum][position3][cube.greenMaximum][cube.blueMinimum] + moment8[cube.alphaMinimum][position3][cube.greenMinimum][cube.blueMinimum]);
             break;
           case _WuQuant._green:
-            result = moment6[cube.alphaMaximum][cube.redMaximum][position3][cube.blueMaximum] - moment6[cube.alphaMaximum][cube.redMinimum][position3][cube.blueMaximum] - moment6[cube.alphaMinimum][cube.redMaximum][position3][cube.blueMaximum] + moment6[cube.alphaMinimum][cube.redMinimum][position3][cube.blueMaximum] - (moment6[cube.alphaMaximum][cube.redMaximum][position3][cube.blueMinimum] - moment6[cube.alphaMaximum][cube.redMinimum][position3][cube.blueMinimum] - moment6[cube.alphaMinimum][cube.redMaximum][position3][cube.blueMinimum] + moment6[cube.alphaMinimum][cube.redMinimum][position3][cube.blueMinimum]);
+            result = moment8[cube.alphaMaximum][cube.redMaximum][position3][cube.blueMaximum] - moment8[cube.alphaMaximum][cube.redMinimum][position3][cube.blueMaximum] - moment8[cube.alphaMinimum][cube.redMaximum][position3][cube.blueMaximum] + moment8[cube.alphaMinimum][cube.redMinimum][position3][cube.blueMaximum] - (moment8[cube.alphaMaximum][cube.redMaximum][position3][cube.blueMinimum] - moment8[cube.alphaMaximum][cube.redMinimum][position3][cube.blueMinimum] - moment8[cube.alphaMinimum][cube.redMaximum][position3][cube.blueMinimum] + moment8[cube.alphaMinimum][cube.redMinimum][position3][cube.blueMinimum]);
             break;
           case _WuQuant._blue:
-            result = moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][position3] - moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][position3] - moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][position3] + moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][position3] - (moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][position3] - moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][position3] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][position3] + moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][position3]);
+            result = moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][position3] - moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][position3] - moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][position3] + moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][position3] - (moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][position3] - moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][position3] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][position3] + moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][position3]);
             break;
           default:
             throw new Error("impossible");
         }
         return result | 0;
       }
-      static _bottom(cube, direction, moment6) {
+      static _bottom(cube, direction, moment8) {
         switch (direction) {
           case _WuQuant._alpha:
-            return -moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] + moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            return -moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMaximum] + moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
           case _WuQuant._red:
-            return -moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] + moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] + moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            return -moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] + moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] + moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMaximum] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] + moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] + moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
           case _WuQuant._green:
-            return -moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] + moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] + moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            return -moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] + moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] + moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMaximum] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMaximum] - (-moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] + moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
           case _WuQuant._blue:
-            return -moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment6[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment6[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] - (-moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment6[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment6[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
+            return -moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment8[cube.alphaMaximum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment8[cube.alphaMaximum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum] - (-moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMaximum][cube.blueMinimum] + moment8[cube.alphaMinimum][cube.redMaximum][cube.greenMinimum][cube.blueMinimum] + moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMaximum][cube.blueMinimum] - moment8[cube.alphaMinimum][cube.redMinimum][cube.greenMinimum][cube.blueMinimum]);
           default:
             return 0;
         }
@@ -94032,7 +94284,7 @@ __export(index_exports, {
   default: () => FileOrganizer
 });
 module.exports = __toCommonJS(index_exports);
-var import_obsidian60 = require("obsidian");
+var import_obsidian68 = require("obsidian");
 
 // someUtils.ts
 init_logger();
@@ -94060,7 +94312,7 @@ function sanitizeTag(tag) {
 
 // views/settings/view.tsx
 var React8 = __toESM(require_react());
-var import_obsidian5 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 var import_client = __toESM(require_client());
 
 // views/settings/main.tsx
@@ -94068,7 +94320,7 @@ var import_react10 = __toESM(require_react());
 
 // views/settings/general-tab.tsx
 var import_react4 = __toESM(require_react());
-var import_obsidian2 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 
 // views/settings/account-data.tsx
 var import_react3 = __toESM(require_react());
@@ -94081,6 +94333,58 @@ var import_jsx_runtime = __toESM(require_jsx_runtime());
 var Button = ({ children: children2, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { ...props, className: `button ${props.className || ""}`, children: children2 });
 
 // views/settings/top-up-credits.tsx
+var import_obsidian2 = require("obsidian");
+
+// apiUtils.ts
+var import_obsidian = require("obsidian");
+init_logger();
+function validateApiKey(key) {
+  if (!key || typeof key !== "string") {
+    return {
+      isValid: false,
+      error: "API key is required"
+    };
+  }
+  const trimmedKey = key.trim();
+  if (trimmedKey.length === 0) {
+    return {
+      isValid: false,
+      error: "API key cannot be empty"
+    };
+  }
+  if (trimmedKey.length < 10) {
+    return {
+      isValid: false,
+      error: `API key is too short (${trimmedKey.length} characters). Valid keys are at least 10 characters long.`
+    };
+  }
+  if (trimmedKey.length < 20) {
+    return {
+      isValid: true,
+      // Still allow it, but it might be invalid
+      error: `API key seems too short (${trimmedKey.length} characters). Valid Unkey keys are typically 20+ characters.`
+    };
+  }
+  return { isValid: true };
+}
+async function checkLicenseKey(serverUrl, key) {
+  try {
+    const response = await (0, import_obsidian.requestUrl)({
+      url: `${serverUrl}/api/check-key`,
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${key}`
+      }
+    });
+    return response.status === 200;
+  } catch (error) {
+    logger.error("Error checking API key:", error);
+    return false;
+  }
+}
+
+// views/settings/top-up-credits.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime());
 function TopUpCredits({
   plugin,
@@ -94088,6 +94392,14 @@ function TopUpCredits({
 }) {
   const [loading, setLoading] = (0, import_react.useState)(false);
   const handleTopUp = async () => {
+    const validation = validateApiKey(plugin.settings.API_KEY);
+    if (!validation.isValid) {
+      new import_obsidian2.Notice(validation.error || "Invalid API key", 5e3);
+      return;
+    }
+    if (validation.error) {
+      console.warn("API key validation warning:", validation.error);
+    }
     try {
       setLoading(true);
       const response = await fetch(`${plugin.getServerUrl()}/api/top-up`, {
@@ -94104,6 +94416,7 @@ function TopUpCredits({
       onLicenseKeyChange(data.licenseKey);
     } catch (error) {
       console.error("Top-up error:", error);
+      new import_obsidian2.Notice("Failed to process top-up request", 5e3);
     } finally {
       setLoading(false);
     }
@@ -94113,6 +94426,7 @@ function TopUpCredits({
 
 // views/settings/top-up-minutes.tsx
 var import_react2 = __toESM(require_react());
+var import_obsidian3 = require("obsidian");
 var import_jsx_runtime3 = __toESM(require_jsx_runtime());
 function TopUpMinutes({
   plugin,
@@ -94120,6 +94434,14 @@ function TopUpMinutes({
 }) {
   const [loading, setLoading] = (0, import_react2.useState)(false);
   const handleTopUp = async () => {
+    const validation = validateApiKey(plugin.settings.API_KEY);
+    if (!validation.isValid) {
+      new import_obsidian3.Notice(validation.error || "Invalid API key", 5e3);
+      return;
+    }
+    if (validation.error) {
+      console.warn("API key validation warning:", validation.error);
+    }
     try {
       setLoading(true);
       const response = await fetch(
@@ -94133,12 +94455,26 @@ function TopUpMinutes({
         }
       );
       const data = await response.json();
+      if (data.anonymousUserCreated && data.invalidKeyDetected) {
+        new import_obsidian3.Notice(
+          "Your API key was invalid. A new key has been generated and saved. Please use this key for future requests.",
+          8e3
+        );
+      } else if (data.anonymousUserCreated) {
+        new import_obsidian3.Notice(
+          "A new account was created for this purchase. Your new API key has been saved.",
+          6e3
+        );
+      }
       if (data.url) {
         window.location.href = data.url;
       }
-      onLicenseKeyChange(data.licenseKey);
+      if (data.licenseKey) {
+        onLicenseKeyChange(data.licenseKey);
+      }
     } catch (error) {
       console.error("Top-up minutes error:", error);
+      new import_obsidian3.Notice("Failed to process top-up request", 5e3);
     } finally {
       setLoading(false);
     }
@@ -94148,7 +94484,7 @@ function TopUpMinutes({
 
 // views/settings/account-data.tsx
 init_logger();
-var import_obsidian = require("obsidian");
+var import_obsidian4 = require("obsidian");
 var import_jsx_runtime4 = __toESM(require_jsx_runtime());
 var AccountData = ({
   plugin,
@@ -94202,7 +94538,7 @@ var AccountData = ({
         return;
       }
       onLicenseKeyChange(data.licenseKey);
-      new import_obsidian.Notice(
+      new import_obsidian4.Notice(
         `Successfully ${isSignup ? "signed up" : "signed in"}! Your account is now connected.`,
         5e3
       );
@@ -94214,6 +94550,11 @@ var AccountData = ({
     }
   };
   const handleDevTopUp = async () => {
+    const validation = validateApiKey(plugin.settings.API_KEY);
+    if (!validation.isValid) {
+      setError(validation.error || "Invalid API key");
+      return;
+    }
     try {
       setIsLoading(true);
       const tokens = parseInt(devTokens);
@@ -94231,7 +94572,7 @@ var AccountData = ({
       );
       const data = await response.json();
       if (response.ok) {
-        new import_obsidian.Notice(
+        new import_obsidian4.Notice(
           `Successfully added ${tokens.toLocaleString()} tokens to your account!`,
           5e3
         );
@@ -94245,6 +94586,11 @@ var AccountData = ({
     }
   };
   const handleDevTopUpMinutes = async () => {
+    const validation = validateApiKey(plugin.settings.API_KEY);
+    if (!validation.isValid) {
+      setError(validation.error || "Invalid API key");
+      return;
+    }
     try {
       setIsLoading(true);
       const minutes = parseInt(devMinutes);
@@ -94262,7 +94608,7 @@ var AccountData = ({
       );
       const data = await response.json();
       if (response.ok) {
-        new import_obsidian.Notice(
+        new import_obsidian4.Notice(
           `Successfully added ${minutes} minutes to your account!`,
           5e3
         );
@@ -94556,6 +94902,7 @@ var AccountData = ({
 };
 
 // views/settings/general-tab.tsx
+init_constants();
 var import_jsx_runtime5 = __toESM(require_jsx_runtime());
 var GeneralTab = ({
   plugin,
@@ -94566,6 +94913,7 @@ var GeneralTab = ({
   const [keyStatus, setKeyStatus] = (0, import_react4.useState)(plugin.settings.API_KEY ? "checking" : "idle");
   const [usageData, setUsageData] = (0, import_react4.useState)(null);
   const [isLoadingUsage, setIsLoadingUsage] = (0, import_react4.useState)(false);
+  const [validationError, setValidationError] = (0, import_react4.useState)(null);
   (0, import_react4.useEffect)(() => {
     if (plugin.settings.API_KEY) {
       checkLicenseStatus();
@@ -94579,10 +94927,17 @@ var GeneralTab = ({
       if (data) {
         setUsageData(data);
         if (data.tokenUsage >= data.maxTokenUsage) {
-          new import_obsidian2.Notice(
-            "Token limit reached. Please upgrade your plan for more tokens.",
-            5e3
-          );
+          if (data.maxTokenUsage === FREE_TIER_TOKEN_LIMIT) {
+            new import_obsidian6.Notice(
+              "Token limit reached. Please upgrade your plan for more tokens.",
+              5e3
+            );
+          } else {
+            new import_obsidian6.Notice(
+              "Token limit reached for this month. Tokens reset on the 1st. Top up credits if you need more before then.",
+              5e3
+            );
+          }
         }
       }
     } catch (error) {
@@ -94603,6 +94958,17 @@ var GeneralTab = ({
   const handleLicenseKeyChange = async (value) => {
     setLicenseKey(value);
     setKeyStatus("idle");
+    setValidationError(null);
+    const validation = validateApiKey(value);
+    if (!validation.isValid) {
+      setValidationError(validation.error || "Invalid API key format");
+      plugin.settings.API_KEY = value;
+      await plugin.saveSettings();
+      return;
+    }
+    if (validation.error) {
+      setValidationError(validation.error);
+    }
     plugin.settings.API_KEY = value;
     await plugin.saveSettings();
   };
@@ -94704,7 +95070,7 @@ var GeneralTab = ({
             "input",
             {
               type: "text",
-              className: `flex-1 bg-[--background-primary] border rounded px-3 py-1.5 ${keyStatus === "valid" ? "border-[--text-success]" : keyStatus === "invalid" ? "border-[--text-error]" : "border-[--background-modifier-border]"}`,
+              className: `flex-1 bg-[--background-primary] border rounded px-3 py-1.5 ${keyStatus === "valid" ? "border-[--text-success]" : keyStatus === "invalid" || validationError ? "border-[--text-error]" : "border-[--background-modifier-border]"}`,
               placeholder: "Enter your File Organizer License Key",
               value: licenseKey,
               onChange: (e2) => handleLicenseKeyChange(e2.target.value)
@@ -94714,11 +95080,13 @@ var GeneralTab = ({
             "button",
             {
               onClick: handleActivate,
-              className: "bg-[--interactive-accent] text-[--text-on-accent] px-4 py-1.5 rounded hover:bg-[--interactive-accent-hover] transition-colors",
+              disabled: !licenseKey || !!validationError,
+              className: "bg-[--interactive-accent] text-[--text-on-accent] px-4 py-1.5 rounded hover:bg-[--interactive-accent-hover] transition-colors disabled:opacity-50 disabled:cursor-not-allowed",
               children: "Activate"
             }
           )
         ] }),
+        validationError && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-sm text-[--text-error] mt-1", children: validationError }),
         getStatusIndicator()
       ] })
     ] }) }),
@@ -94791,15 +95159,18 @@ var GeneralTab = ({
           ] })
         ] }),
         usageData && usageData.maxAudioTranscriptionMinutes > 0 && usageData.audioTranscriptionMinutes >= usageData.maxAudioTranscriptionMinutes && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "mt-2 p-3 bg-[--background-] bg-opacity-20 rounded text-[--text-error] text-sm", children: "Audio transcription quota reached. Please upgrade your plan or wait for the next billing cycle." }),
-        usageData && usageData.tokenUsage >= usageData.maxTokenUsage && /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "mt-2 p-3 bg-[--background-] bg-opacity-20 rounded text-[--text-error] text-sm", children: [
+        usageData && usageData.tokenUsage >= usageData.maxTokenUsage && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "mt-2 p-3 bg-[--background-] bg-opacity-20 rounded text-[--text-error] text-sm", children: usageData.maxTokenUsage === FREE_TIER_TOKEN_LIMIT ? /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(import_jsx_runtime5.Fragment, { children: [
           /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("strong", { children: "Token limit reached!" }),
           " You've used all your tokens for this month. Next reset is on the 1st of the coming month.",
           /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("br", {}),
           /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("br", {}),
           "Upgrade your plan if you'd like to to continue using Note Companion."
-        ] })
+        ] }) : /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(import_jsx_runtime5.Fragment, { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("strong", { children: "Token limit reached!" }),
+          " You've used all your tokens for this month. Next reset is on the 1st of the coming month. Top up credits if you'd like to continue before then."
+        ] }) })
       ] }) : /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("p", { className: "text-[--text-muted] text-sm", children: !plugin.settings.API_KEY ? "Please enter a license key to see usage statistics." : keyStatus === "invalid" ? "License key appears to be invalid. Enter a valid key to see detailed usage statistics." : "No usage data available. Please check your connection and try again." }),
-      usageData && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "mt-4", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+      usageData && usageData.maxTokenUsage === FREE_TIER_TOKEN_LIMIT && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "mt-4", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
         "button",
         {
           onClick: () => plugin.openUpgradePlanModal(),
@@ -94862,7 +95233,7 @@ var GeneralTab = ({
 
 // views/settings/file-config-tab.tsx
 var import_react5 = __toESM(require_react());
-var import_obsidian3 = require("obsidian");
+var import_obsidian7 = require("obsidian");
 var import_lucide_react = __toESM(require_lucide_react());
 init_logger();
 var import_jsx_runtime6 = __toESM(require_jsx_runtime());
@@ -95034,7 +95405,7 @@ var FileConfigTab = ({ plugin }) => {
   };
   const checkPathExistence = async (path2) => {
     try {
-      const normalizedPath = (0, import_obsidian3.normalizePath)(path2);
+      const normalizedPath = (0, import_obsidian7.normalizePath)(path2);
       const exists = await plugin.app.vault.adapter.exists(normalizedPath);
       return exists;
     } catch (error) {
@@ -95044,7 +95415,7 @@ var FileConfigTab = ({ plugin }) => {
   };
   const createFolder = async (path2) => {
     try {
-      const normalizedPath = (0, import_obsidian3.normalizePath)(path2);
+      const normalizedPath = (0, import_obsidian7.normalizePath)(path2);
       await plugin.app.vault.createFolder(normalizedPath);
       return true;
     } catch (error) {
@@ -95230,6 +95601,73 @@ var FileConfigTab = ({ plugin }) => {
         ),
         "templatePaths"
       ),
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "setting-item", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "setting-item-info", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "setting-item-name", children: "Restore Default Templates" }),
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "setting-item-description", children: "Restore the default plugin templates (meeting_note.md, youtube_video.md, enhance.md, research_paper.md, flash_cards.md) to their original versions. Your custom templates will not be affected." })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "setting-item-control", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+          "button",
+          {
+            onClick: async () => {
+              const confirmed = await new Promise((resolve2) => {
+                class RestoreTemplatesModal extends import_obsidian7.Modal {
+                  onOpen() {
+                    const { contentEl } = this;
+                    contentEl.empty();
+                    contentEl.createEl("h2", { text: "Restore Default Templates" });
+                    contentEl.createEl("p", {
+                      text: "This will restore the following templates to their original plugin versions:"
+                    });
+                    const list3 = contentEl.createEl("ul");
+                    list3.createEl("li", { text: "meeting_note.md" });
+                    list3.createEl("li", { text: "youtube_video.md" });
+                    list3.createEl("li", { text: "enhance.md" });
+                    list3.createEl("li", { text: "research_paper.md" });
+                    list3.createEl("li", { text: "flash_cards.md" });
+                    contentEl.createEl("p", {
+                      text: "Your custom templates will not be affected.",
+                      attr: { style: "margin-top: 1em; font-weight: bold;" }
+                    });
+                    const buttonContainer = contentEl.createDiv({
+                      attr: { style: "display: flex; gap: 10px; margin-top: 1em;" }
+                    });
+                    buttonContainer.createEl("button", { text: "Cancel" }).addEventListener("click", () => {
+                      resolve2(false);
+                      this.close();
+                    });
+                    buttonContainer.createEl("button", {
+                      text: "Restore",
+                      attr: { style: "background: var(--interactive-accent);" }
+                    }).addEventListener("click", () => {
+                      resolve2(true);
+                      this.close();
+                    });
+                  }
+                }
+                const modal = new RestoreTemplatesModal(plugin.app);
+                modal.open();
+              });
+              if (confirmed) {
+                try {
+                  await plugin.restoreTemplates();
+                } catch (error) {
+                }
+              }
+            },
+            style: {
+              padding: "6px 12px",
+              fontSize: "13px",
+              background: "var(--interactive-accent)",
+              color: "var(--text-on-accent)",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer"
+            },
+            children: "Restore Default Templates"
+          }
+        ) })
+      ] }),
       renderSettingItem(
         "Bypassed notes path",
         "Choose a folder for bypassed notes.",
@@ -95445,7 +95883,7 @@ var TextAreaSetting = ({ name: name16, description, value, onChange, disabled })
 
 // views/settings/advanced-tab.tsx
 var import_react7 = __toESM(require_react());
-var import_obsidian4 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 init_logger();
 var import_jsx_runtime8 = __toESM(require_jsx_runtime());
 var AdvancedTab = ({ plugin }) => {
@@ -95566,13 +96004,13 @@ ${log.details}` : ""}`
                   ).join("\n\n");
                   try {
                     await navigator.clipboard.writeText(logText);
-                    new import_obsidian4.Notice(
+                    new import_obsidian8.Notice(
                       `Copied ${logs.length} log entries to clipboard`,
                       2e3
                     );
                   } catch (error) {
                     console.error("Failed to copy logs:", error);
-                    new import_obsidian4.Notice("Failed to copy logs to clipboard", 3e3);
+                    new import_obsidian8.Notice("Failed to copy logs to clipboard", 3e3);
                   }
                 },
                 className: "clickable-icon",
@@ -95849,6 +96287,20 @@ var ExperimentTab = ({ plugin }) => {
   const [showSyncTab, setShowSyncTab] = (0, import_react9.useState)(
     plugin.settings.showSyncTab
   );
+  const [enableScreenpipe, setEnableScreenpipe] = (0, import_react9.useState)(
+    plugin.settings.enableScreenpipe
+  );
+  const [screenpipeTimeRange, setScreenpipeTimeRange] = (0, import_react9.useState)(
+    plugin.settings.screenpipeTimeRange
+  );
+  const [queryScreenpipeLimit, setQueryScreenpipeLimit] = (0, import_react9.useState)(
+    plugin.settings.queryScreenpipeLimit
+  );
+  (0, import_react9.useEffect)(() => {
+    setEnableScreenpipe(plugin.settings.enableScreenpipe);
+    setScreenpipeTimeRange(plugin.settings.screenpipeTimeRange);
+    setQueryScreenpipeLimit(plugin.settings.queryScreenpipeLimit);
+  }, [plugin.settings.enableScreenpipe, plugin.settings.screenpipeTimeRange, plugin.settings.queryScreenpipeLimit]);
   const handleToggleChange = async (value, setter, settingKey) => {
     setter(value);
     plugin.settings[settingKey] = value;
@@ -95968,22 +96420,88 @@ var ExperimentTab = ({ plugin }) => {
       /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "border-t border-[--background-modifier-border] pt-6", children: [
         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("h3", { className: "text-lg font-medium text-[--text-normal] mb-4", children: "Integrations (Beta)" }),
         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "bg-[--background-secondary] p-4 rounded-lg mb-4", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-sm text-[--text-muted]", children: "These integrations are in early beta. Your feedback helps us improve and prioritize features." }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "space-y-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "space-y-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
-          ToggleSetting3,
-          {
-            name: "Show Sync Tab (Advanced)",
-            description: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "space-y-2", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { children: "Enable the Sync tab in the Assistant sidebar for mobile app file synchronization." }),
-              /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "mt-2 p-3 bg-[--background-secondary] rounded text-sm space-y-1", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-[--text-warning]", children: "\u26A0\uFE0F Advanced Feature" }),
-                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-[--text-muted]", children: "This feature is designed for users of the Note Companion mobile app who want to sync files between mobile and desktop." }),
-                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-xs text-[--text-faint]", children: "Requires Note Companion mobile app setup" })
-              ] })
-            ] }),
-            value: showSyncTab,
-            onChange: (value) => handleToggleChange(value, setShowSyncTab, "showSyncTab")
-          }
-        ) }) })
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "space-y-3", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "space-y-3", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+            ToggleSetting3,
+            {
+              name: "Show Sync Tab (Advanced)",
+              description: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "space-y-2", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { children: "Enable the Sync tab in the Assistant sidebar for mobile app file synchronization." }),
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "mt-2 p-3 bg-[--background-secondary] rounded text-sm space-y-1", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-[--text-warning]", children: "\u26A0\uFE0F Advanced Feature" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-[--text-muted]", children: "This feature is designed for users of the Note Companion mobile app who want to sync files between mobile and desktop." }),
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-xs text-[--text-faint]", children: "Requires Note Companion mobile app setup" })
+                ] })
+              ] }),
+              value: showSyncTab,
+              onChange: (value) => handleToggleChange(value, setShowSyncTab, "showSyncTab")
+            }
+          ),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+            ToggleSetting3,
+            {
+              name: "ScreenPipe Integration",
+              description: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "space-y-2", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { children: "Enable ScreenPipe integration to search your screen activity and audio transcriptions in the AI chat." }),
+                /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "mt-2 p-3 bg-[--background-secondary] rounded text-sm space-y-1", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-[--text-accent]", children: "\u{1F4FA} Requires ScreenPipe running on localhost:3030" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-[--text-muted]", children: "Search your screen recordings and meeting transcriptions directly from chat." }),
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-xs text-[--text-faint]", children: "Make sure ScreenPipe is running before using this feature" })
+                ] }),
+                enableScreenpipe && /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "mt-4 ml-4 p-4 bg-[--background-primary-alt] rounded-lg border-l-2 border-[--text-accent] space-y-4", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "space-y-2", children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("label", { className: "text-sm text-[--text-normal] font-medium", children: "Time Range (hours)" }),
+                    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex items-center space-x-2", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+                        "input",
+                        {
+                          type: "number",
+                          min: "1",
+                          max: "24",
+                          value: screenpipeTimeRange,
+                          onChange: async (e2) => {
+                            const value = Number(e2.target.value);
+                            setScreenpipeTimeRange(value);
+                            plugin.settings.screenpipeTimeRange = value;
+                            await plugin.saveSettings();
+                          },
+                          className: "w-20 px-2 py-1 bg-[--background-primary] border border-[--background-modifier-border] rounded"
+                        }
+                      ),
+                      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "text-sm text-[--text-muted]", children: "hours" })
+                    ] }),
+                    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-xs text-[--text-muted]", children: "Adjust how far back Screenpipe should look for data. Lower values mean faster processing but may miss important context." })
+                  ] }),
+                  /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "space-y-2", children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("label", { className: "text-sm text-[--text-normal] font-medium", children: "Query Limit" }),
+                    /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "flex items-center space-x-2", children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(
+                        "input",
+                        {
+                          type: "number",
+                          min: "1",
+                          max: "100",
+                          value: queryScreenpipeLimit,
+                          onChange: async (e2) => {
+                            const value = Number(e2.target.value);
+                            setQueryScreenpipeLimit(value);
+                            plugin.settings.queryScreenpipeLimit = value;
+                            await plugin.saveSettings();
+                          },
+                          className: "w-20 px-2 py-1 bg-[--background-primary] border border-[--background-modifier-border] rounded"
+                        }
+                      ),
+                      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("span", { className: "text-sm text-[--text-muted]", children: "items" })
+                    ] }),
+                    /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("p", { className: "text-xs text-[--text-muted]", children: "Maximum number of items to fetch per query. Higher limits provide more context but may impact performance." })
+                  ] })
+                ] })
+              ] }),
+              value: enableScreenpipe,
+              onChange: (value) => handleToggleChange(value, setEnableScreenpipe, "enableScreenpipe")
+            }
+          )
+        ] }) })
       ] })
     ] })
   ] }) });
@@ -96047,7 +96565,7 @@ var TabContent = ({ tabs, activeTab, plugin }) => /* @__PURE__ */ (0, import_jsx
 
 // views/settings/view.tsx
 var import_jsx_runtime12 = __toESM(require_jsx_runtime());
-var FileOrganizerSettingTab = class extends import_obsidian5.PluginSettingTab {
+var FileOrganizerSettingTab = class extends import_obsidian9.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.root = null;
@@ -96075,13 +96593,13 @@ var FileOrganizerSettingTab = class extends import_obsidian5.PluginSettingTab {
 };
 
 // views/assistant/view.tsx
-var import_obsidian54 = require("obsidian");
-var React73 = __toESM(require_react());
+var import_obsidian63 = require("obsidian");
+var React79 = __toESM(require_react());
 var import_client2 = __toESM(require_client());
 
 // views/assistant/organizer/organizer.tsx
 var React20 = __toESM(require_react());
-var import_obsidian13 = require("obsidian");
+var import_obsidian16 = require("obsidian");
 var import_lodash = __toESM(require_lodash());
 
 // ../../node_modules/clsx/dist/clsx.mjs
@@ -106577,7 +107095,8 @@ var SimilarTags = ({
   plugin,
   file,
   content: content3,
-  refreshKey
+  refreshKey,
+  onTokenLimitError
 }) => {
   const [existingTags, setExistingTags] = React11.useState([]);
   const [newTags, setNewTags] = React11.useState([]);
@@ -106602,13 +107121,17 @@ var SimilarTags = ({
         setNewTags(newTagsResult || []);
       } catch (error) {
         logger.error("Error in tag fetching process:", error);
+        if (error && typeof error === "object" && "status" in error && error.status === 429) {
+          const errorMessage = error.message || "Token limit exceeded. Please upgrade your plan for more tokens.";
+          onTokenLimitError?.(errorMessage);
+        }
       } finally {
         setLoading(false);
         setInitialLoadComplete(true);
       }
     };
     fetchTags();
-  }, [file, content3, refreshKey]);
+  }, [file, content3, refreshKey, plugin, onTokenLimitError]);
   const handleTagClick = (tag) => {
     plugin.appendTag(file, tag);
   };
@@ -106657,7 +107180,7 @@ var SimilarTags = ({
 // views/assistant/organizer/chunks.tsx
 var React12 = __toESM(require_react());
 init_logger();
-var import_obsidian6 = require("obsidian");
+var import_obsidian10 = require("obsidian");
 var import_jsx_runtime22 = __toESM(require_jsx_runtime());
 var AtomicNotes = ({ plugin, activeFile, refreshKey }) => {
   const [concepts, setConcepts] = React12.useState([]);
@@ -106698,7 +107221,7 @@ var AtomicNotes = ({ plugin, activeFile, refreshKey }) => {
   const renderMarkdown = React12.useCallback(async (content3, containerEl) => {
     if (!content3) return;
     try {
-      await import_obsidian6.MarkdownRenderer.renderMarkdown(
+      await import_obsidian10.MarkdownRenderer.renderMarkdown(
         content3,
         containerEl,
         activeFile.path,
@@ -106754,7 +107277,7 @@ var AtomicNotes = ({ plugin, activeFile, refreshKey }) => {
 
 // views/assistant/organizer/titles/box.tsx
 var React13 = __toESM(require_react());
-var import_obsidian7 = require("obsidian");
+var import_obsidian11 = require("obsidian");
 
 // ../../node_modules/zod/v3/external.js
 var external_exports = {};
@@ -110840,11 +111363,11 @@ var RenameSuggestion = ({
     setLoading(true);
     try {
       await plugin.moveFile(file, sanitizedTitle, file.parent.path);
-      new import_obsidian7.Notice(`Renamed to ${sanitizedTitle}`);
+      new import_obsidian11.Notice(`Renamed to ${sanitizedTitle}`);
     } catch (error2) {
       logger.error("Error renaming file:", error2);
       const errorMessage = error2 instanceof Error ? error2.message : "Unknown error";
-      new import_obsidian7.Notice(`Failed to rename: ${errorMessage}`);
+      new import_obsidian11.Notice(`Failed to rename: ${errorMessage}`);
     } finally {
       setLoading(false);
     }
@@ -110882,14 +111405,15 @@ var ErrorDisplay = ({
 
 // views/assistant/organizer/folders/box.tsx
 var React14 = __toESM(require_react());
-var import_obsidian8 = require("obsidian");
+var import_obsidian12 = require("obsidian");
 init_logger();
 var import_jsx_runtime24 = __toESM(require_jsx_runtime());
 var SimilarFolderBox = ({
   plugin,
   file,
   content: content3,
-  refreshKey
+  refreshKey,
+  onTokenLimitError
 }) => {
   const [suggestions, setSuggestions] = React14.useState([]);
   const [loading, setLoading] = React14.useState(false);
@@ -110918,12 +111442,18 @@ var SimilarFolderBox = ({
       setSuggestions(filteredSuggestions2);
     } catch (err) {
       logger.error("Error fetching folders:", err);
+      if (err && typeof err === "object" && "status" in err && err.status === 429) {
+        const errorMessage2 = err.message || "Token limit exceeded. Please upgrade your plan for more tokens.";
+        setError(new Error(errorMessage2));
+        onTokenLimitError?.(errorMessage2);
+        return;
+      }
       const errorMessage = typeof err === "object" && err !== null ? err.error?.message || err.error || err.message || "Unknown error" : String(err);
       setError(new Error(errorMessage));
     } finally {
       setLoading(false);
     }
-  }, [content3, file, plugin]);
+  }, [content3, file, plugin, onTokenLimitError]);
   React14.useEffect(() => {
     suggestFolders();
   }, [suggestFolders, refreshKey]);
@@ -110938,11 +111468,11 @@ var SimilarFolderBox = ({
     setLoading(true);
     try {
       await plugin.moveFile(file, file.basename, folder);
-      new import_obsidian8.Notice(`Moved ${file.basename} to ${folder}`);
+      new import_obsidian12.Notice(`Moved ${file.basename} to ${folder}`);
     } catch (error2) {
       logger.error("Error moving file:", error2);
       const errorMessage = error2 instanceof Error ? error2.message : "Unknown error occurred";
-      new import_obsidian8.Notice(
+      new import_obsidian12.Notice(
         `Failed to move ${file.basename} to ${folder}: ${errorMessage}`
       );
     } finally {
@@ -111080,7 +111610,7 @@ var RefreshButton = ({ onRefresh }) => {
 
 // views/assistant/organizer/ai-format/templates.tsx
 var React17 = __toESM(require_react());
-var import_obsidian10 = require("obsidian");
+var import_obsidian14 = require("obsidian");
 
 // views/assistant/organizer/ai-format/user-templates.tsx
 var React16 = __toESM(require_react());
@@ -111127,7 +111657,8 @@ var UserTemplates = ({
   file,
   content: content3,
   refreshKey,
-  onFormat
+  onFormat,
+  onTokenLimitError
 }) => {
   const [templateNames, setTemplateNames] = React16.useState([]);
   const [selectedTemplateName, setSelectedTemplateName] = React16.useState(null);
@@ -111195,6 +111726,10 @@ var UserTemplates = ({
         setClassificationStatus("success");
       } catch (error) {
         logger.error("Error in fetchClassificationAndTemplates:", error);
+        if (error && typeof error === "object" && "status" in error && error.status === 429) {
+          const errorMessage2 = error.message || "Token limit exceeded. Please upgrade your plan for more tokens.";
+          onTokenLimitError?.(errorMessage2);
+        }
         setClassificationStatus("error");
       }
     };
@@ -111385,8 +111920,16 @@ var FileOrganizerSettings = class {
     this.enableProcessingNotifications = true;
     // Show toast notifications during file processing
     this.showSyncTab = false;
+    // Show Sync tab in assistant (experimental mobile sync feature)
+    this.enableScreenpipe = false;
+    // Enable ScreenPipe integration for screen activity search
+    this.screenpipeApiUrl = "http://localhost:3030";
+    // ScreenPipe API URL
+    this.screenpipeTimeRange = 2;
+    // Default time range in hours for ScreenPipe searches (1-24)
+    this.queryScreenpipeLimit = 10;
   }
-  // Show Sync tab in assistant (experimental mobile sync feature)
+  // Default query limit for ScreenPipe searches (1-100)
 };
 var DEFAULT_SETTINGS = new FileOrganizerSettings();
 
@@ -111398,7 +111941,9 @@ var ClassificationContainer = ({
   plugin,
   file,
   content: content3,
-  refreshKey
+  refreshKey,
+  onFileRename,
+  onTokenLimitError
 }) => {
   const [formatBehavior, setFormatBehavior] = React17.useState(plugin.settings.formatBehavior || DEFAULT_SETTINGS.formatBehavior);
   const [backupFile, setBackupFile] = React17.useState(null);
@@ -111419,31 +111964,33 @@ var ClassificationContainer = ({
         console.log("[YouTube Format] Extracted video ID:", videoId);
         if (videoId) {
           try {
-            console.log("[YouTube Format] Starting transcript fetch...");
-            logger.info("Fetching YouTube transcript for formatting...");
-            new import_obsidian10.Notice("Fetching YouTube transcript...", 2e3);
-            const { title, transcript } = await getYouTubeContent(
-              videoId,
-              plugin
-            );
+            console.log("[YouTube Format] Starting transcript and metadata fetch...");
+            logger.info("Fetching YouTube transcript and metadata for formatting...");
+            new import_obsidian14.Notice("Fetching YouTube transcript...", 2e3);
+            const { title, transcript, channel, datePublished } = await getYouTubeContent(videoId, plugin);
             videoTitle = title;
-            console.log("[YouTube Format] Successfully fetched transcript:", {
+            console.log("[YouTube Format] Successfully fetched:", {
               title,
+              channel: channel ?? "(none)",
+              datePublished: datePublished ?? "(none)",
               transcriptLength: transcript?.length
             });
-            const videoInfo = `
-
-## YouTube Video Information
-
-Title: ${title}
-Video ID: ${videoId}
-
-## Full Transcript
-
-${transcript}`;
+            const infoLines = [
+              "## YouTube Video Information",
+              "",
+              `Title: ${title}`,
+              `Video ID: ${videoId}`,
+              ...channel ? [`Channel: ${channel}`] : [],
+              ...datePublished ? [`Date Published: ${datePublished}`] : [],
+              "",
+              "## Full Transcript",
+              "",
+              transcript
+            ];
+            const videoInfo = "\n\n" + infoLines.join("\n");
             fileContent = fileContent + videoInfo;
             logger.info("YouTube transcript fetched successfully");
-            new import_obsidian10.Notice("Transcript fetched, formatting...", 2e3);
+            new import_obsidian14.Notice("Transcript fetched, formatting...", 2e3);
           } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
             console.error(
@@ -111457,7 +112004,7 @@ ${transcript}`;
               errorMessage,
               error
             );
-            new import_obsidian10.Notice(
+            new import_obsidian14.Notice(
               `Could not fetch transcript: ${errorMessage}. Formatting with available content.`,
               5e3
             );
@@ -111509,8 +112056,10 @@ ${transcript}`;
                   targetFile = file;
                   console.warn("[YouTube Format] Rename failed: targetFile not found after rename");
                 } else {
-                  console.log("[YouTube Format] Successfully renamed file:", newFileName);
                   logger.info(`Renamed file to match video title: ${newFileName}`);
+                  if (onFileRename) {
+                    onFileRename(targetFile);
+                  }
                 }
               } else {
                 let uniquePath = newPath;
@@ -111535,8 +112084,10 @@ ${transcript}`;
                     targetFile = file;
                     console.warn("[YouTube Format] Rename failed: targetFile not found after rename");
                   } else {
-                    console.log("[YouTube Format] Successfully renamed file with unique name:", uniquePath);
                     logger.info(`Renamed file to match video title: ${uniquePath}`);
+                    if (onFileRename) {
+                      onFileRename(targetFile);
+                    }
                   }
                 } else {
                   console.warn("[YouTube Format] Cannot rename: too many duplicate files exist");
@@ -111594,7 +112145,7 @@ ${transcript}`;
       }
       const backupContent = await plugin.app.vault.read(backupTFile);
       await plugin.app.vault.modify(file, backupContent);
-      new import_obsidian10.Notice("Successfully reverted to backup version", 3e3);
+      new import_obsidian14.Notice("Successfully reverted to backup version", 3e3);
     } catch (error) {
       logger.error("Error reverting to backup:", error);
     }
@@ -111653,7 +112204,8 @@ ${transcript}`;
           file,
           content: content3,
           refreshKey,
-          onFormat: handleFormat
+          onFormat: handleFormat,
+          onTokenLimitError
         }
       )
     ] })
@@ -111662,7 +112214,7 @@ ${transcript}`;
 
 // views/assistant/organizer/transcript.tsx
 var React18 = __toESM(require_react());
-var import_obsidian11 = require("obsidian");
+var import_obsidian15 = require("obsidian");
 init_logger();
 var import_jsx_runtime28 = __toESM(require_jsx_runtime());
 var TranscriptionButton = ({
@@ -111686,7 +112238,7 @@ var TranscriptionButton = ({
         audioFileName,
         "."
       );
-      if (!(audioFile instanceof import_obsidian11.TFile)) {
+      if (!(audioFile instanceof import_obsidian15.TFile)) {
         continue;
       }
       const fileSizeInBytes = audioFile.stat.size;
@@ -111708,7 +112260,7 @@ var TranscriptionButton = ({
   const handleTranscribe = async () => {
     const validation2 = checkAudioFiles();
     if (!validation2.valid) {
-      new import_obsidian11.Notice(validation2.error || "Cannot transcribe audio files", 8e3);
+      new import_obsidian15.Notice(validation2.error || "Cannot transcribe audio files", 8e3);
       return;
     }
     setTranscribing(true);
@@ -111716,7 +112268,7 @@ var TranscriptionButton = ({
       const audioRegex = /!\[\[(.*?\.(mp3|wav|m4a|ogg|webm))]]/gi;
       const matches2 = Array.from(content3.matchAll(audioRegex));
       if (matches2.length === 0) {
-        new import_obsidian11.Notice("No audio files found");
+        new import_obsidian15.Notice("No audio files found");
         return;
       }
       let transcribedCount = 0;
@@ -111727,14 +112279,14 @@ var TranscriptionButton = ({
           audioFileName,
           "."
         );
-        if (!(audioFile instanceof import_obsidian11.TFile)) {
+        if (!(audioFile instanceof import_obsidian15.TFile)) {
           logger.error(`Audio file not found: ${audioFileName}`);
-          new import_obsidian11.Notice(`Audio file not found: ${audioFileName}`);
+          new import_obsidian15.Notice(`Audio file not found: ${audioFileName}`);
           continue;
         }
         if (plugin.hasExistingTranscript(content3, audioFileName)) {
           logger.info(`Transcript already exists for: ${audioFileName}`);
-          new import_obsidian11.Notice(`Transcript already exists for: ${audioFileName}`, 3e3);
+          new import_obsidian15.Notice(`Transcript already exists for: ${audioFileName}`, 3e3);
           skippedCount++;
           continue;
         }
@@ -111744,17 +112296,17 @@ var TranscriptionButton = ({
           audioFileName,
           transcript
         );
-        new import_obsidian11.Notice(`Transcript added for: ${audioFileName}`);
+        new import_obsidian15.Notice(`Transcript added for: ${audioFileName}`);
         transcribedCount++;
       }
       if (transcribedCount > 0) {
-        new import_obsidian11.Notice(`Completed transcribing ${transcribedCount} audio file(s)${skippedCount > 0 ? ` (${skippedCount} skipped)` : ""}`);
+        new import_obsidian15.Notice(`Completed transcribing ${transcribedCount} audio file(s)${skippedCount > 0 ? ` (${skippedCount} skipped)` : ""}`);
       } else if (skippedCount > 0) {
-        new import_obsidian11.Notice(`All ${skippedCount} audio file(s) already have transcripts`);
+        new import_obsidian15.Notice(`All ${skippedCount} audio file(s) already have transcripts`);
       }
     } catch (error) {
       logger.error("Error transcribing audio:", error);
-      new import_obsidian11.Notice("Error transcribing audio");
+      new import_obsidian15.Notice("Error transcribing audio");
     } finally {
       setTranscribing(false);
     }
@@ -111882,6 +112434,11 @@ var LicenseValidator = ({
   const [isValidating, setIsValidating] = React19.useState(true);
   const [licenseError, setLicenseError] = React19.useState(null);
   const validateLicense = React19.useCallback(async () => {
+    if (plugin.settings.enableSelfHosting) {
+      setIsValidating(false);
+      onValidationComplete();
+      return;
+    }
     try {
       setIsValidating(true);
       setLicenseError(null);
@@ -111905,7 +112462,7 @@ var LicenseValidator = ({
     } finally {
       setIsValidating(false);
     }
-  }, [apiKey, onValidationComplete]);
+  }, [apiKey, onValidationComplete, plugin]);
   React19.useEffect(() => {
     validateLicense();
   }, [validateLicense]);
@@ -111952,7 +112509,8 @@ var checkIfIsMediaFile = (file) => {
 };
 var AssistantView = ({
   plugin,
-  leaf
+  leaf,
+  onTokenLimitError
 }) => {
   const [activeFile, setActiveFile] = React20.useState(null);
   const [noteContent, setNoteContent] = React20.useState("");
@@ -111960,6 +112518,9 @@ var AssistantView = ({
   const [error, setError] = React20.useState(null);
   const [isLicenseValid, setIsLicenseValid] = React20.useState(false);
   const [isConnected, setIsConnected] = React20.useState(true);
+  const activeFilePathRef = React20.useRef(null);
+  const activeFileRef = React20.useRef(null);
+  const isRenamingRef = React20.useRef(false);
   const isMediaFile = React20.useMemo(
     () => checkIfIsMediaFile(activeFile),
     [activeFile]
@@ -111969,6 +112530,9 @@ var AssistantView = ({
     [activeFile, plugin.getAllIgnoredFolders]
   );
   const updateActiveFile = React20.useCallback(async () => {
+    if (isRenamingRef.current) {
+      return;
+    }
     logMessage("updating active file");
     const isVisible2 = leaf.view.containerEl.isShown() && !plugin.app.workspace.rightSplit.collapsed;
     if (!isVisible2) return;
@@ -111979,6 +112543,8 @@ var AssistantView = ({
         setNoteContent(content3);
       }
       setActiveFile(file);
+      activeFileRef.current = file;
+      activeFilePathRef.current = file ? file.path : null;
     } catch (err) {
       logger.error("Error updating active file:", err);
       setError("Failed to load file content");
@@ -111994,18 +112560,61 @@ var AssistantView = ({
   React20.useEffect(() => {
     updateActiveFile();
     const debouncedUpdate = (0, import_lodash.debounce)(updateActiveFile, 300);
+    const handleRename = (file, oldPath) => {
+      if (!(file instanceof import_obsidian16.TFile)) return;
+      const currentActiveFile = plugin.app.workspace.getActiveFile();
+      const storedPath = activeFilePathRef.current;
+      const isActiveFileRenamed = storedPath === oldPath || // Primary check: stored path matches old path
+      currentActiveFile && currentActiveFile.path === file.path && (storedPath === oldPath || !storedPath);
+      if (isActiveFileRenamed) {
+        logger.info("Detected rename of active file:", {
+          oldPath,
+          newPath: file.path,
+          storedPath,
+          currentActivePath: currentActiveFile?.path
+        });
+        setActiveFile(file);
+        activeFileRef.current = file;
+        activeFilePathRef.current = file.path;
+        setTimeout(() => {
+          updateActiveFile();
+        }, 100);
+      } else {
+        const stateActiveFile = activeFileRef.current;
+        if (currentActiveFile && currentActiveFile.path === file.path && stateActiveFile && stateActiveFile.path !== file.path) {
+          logger.info(
+            "Detected active file path mismatch after rename, updating:",
+            {
+              statePath: stateActiveFile.path,
+              workspacePath: currentActiveFile.path,
+              renamedPath: file.path
+            }
+          );
+          setActiveFile(file);
+          activeFileRef.current = file;
+          activeFilePathRef.current = file.path;
+          setTimeout(() => {
+            updateActiveFile();
+          }, 100);
+        }
+      }
+    };
     plugin.app.workspace.on("file-open", debouncedUpdate);
     plugin.app.workspace.on("active-leaf-change", debouncedUpdate);
+    plugin.app.vault.on("rename", handleRename);
     return () => {
       plugin.app.workspace.off("file-open", debouncedUpdate);
       plugin.app.workspace.off("active-leaf-change", debouncedUpdate);
+      plugin.app.vault.off("rename", handleRename);
       debouncedUpdate.cancel();
     };
-  }, [updateActiveFile, plugin.app.workspace]);
+  }, [updateActiveFile, plugin.app.workspace, plugin.app.vault]);
   const refreshContext = React20.useCallback(() => {
     setRefreshKey((prevKey) => prevKey + 1);
     setError(null);
     setActiveFile(null);
+    activeFileRef.current = null;
+    activeFilePathRef.current = null;
     setNoteContent("");
     setTimeout(() => {
       updateActiveFile();
@@ -112026,7 +112635,7 @@ var AssistantView = ({
     if (!activeFile) return;
     try {
       await plugin.app.vault.delete(activeFile);
-      new import_obsidian13.Notice("File deleted successfully");
+      new import_obsidian16.Notice("File deleted successfully");
     } catch (err) {
       logger.error("Error deleting file:", err);
       setError("Failed to delete file");
@@ -112034,7 +112643,15 @@ var AssistantView = ({
   }, [activeFile, plugin.app.vault]);
   if (!isLicenseValid) {
     return /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
+        "div",
+        {
+          className: tw(
+            "flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"
+          ),
+          children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext })
+        }
+      ),
       /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
         LicenseValidator,
         {
@@ -112047,7 +112664,15 @@ var AssistantView = ({
   }
   if (error) {
     return /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
+        "div",
+        {
+          className: tw(
+            "flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"
+          ),
+          children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext })
+        }
+      ),
       /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
         EmptyState,
         {
@@ -112060,25 +112685,57 @@ var AssistantView = ({
   }
   if (!activeFile) {
     return /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
+        "div",
+        {
+          className: tw(
+            "flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"
+          ),
+          children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext })
+        }
+      ),
       /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(EmptyState, { message: "Open a file " }) })
     ] });
   }
   if (isInIgnoredPatterns) {
     return /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
+        "div",
+        {
+          className: tw(
+            "flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"
+          ),
+          children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext })
+        }
+      ),
       /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(EmptyState, { message: "This file is part of an ignored folder and will not be processed." }) })
     ] });
   }
   if (isMediaFile) {
     return /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
+        "div",
+        {
+          className: tw(
+            "flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"
+          ),
+          children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext })
+        }
+      ),
       /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(EmptyState, { message: "To process an image or audio file, move it to the Note Companion Inbox Folder (e.g. for image text extraction or audio transcription)." }) })
     ] });
   }
   if (!noteContent.trim()) {
     return /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: tw("flex flex-col h-full"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
+        "div",
+        {
+          className: tw(
+            "flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border]"
+          ),
+          children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext })
+        }
+      ),
       /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("px-3"), children: /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
         EmptyState,
         {
@@ -112092,10 +112749,24 @@ var AssistantView = ({
     ] });
   }
   return /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: tw("flex flex-col h-full overflow-y-auto"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: tw("flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border] bg-[--background-primary] sticky top-0 z-10"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext }),
-      /* @__PURE__ */ (0, import_jsx_runtime32.jsx)("div", { className: tw("text-xs text-[--text-normal] font-medium truncate"), children: activeFile.basename })
-    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)(
+      "div",
+      {
+        className: tw(
+          "flex gap-2 items-center px-3 py-2 border-b border-[--background-modifier-border] bg-[--background-primary] sticky top-0 z-10"
+        ),
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(RefreshButton, { onRefresh: refreshContext }),
+          /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
+            "div",
+            {
+              className: tw("text-xs text-[--text-normal] font-medium truncate"),
+              children: activeFile.basename
+            }
+          )
+        ]
+      }
+    ),
     /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)("div", { className: tw("flex flex-col px-3"), children: [
       renderSection(
         /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
@@ -112104,7 +112775,30 @@ var AssistantView = ({
             plugin,
             file: activeFile,
             content: noteContent,
-            refreshKey
+            refreshKey,
+            onTokenLimitError,
+            onFileRename: async (newFile) => {
+              isRenamingRef.current = true;
+              activeFileRef.current = newFile;
+              activeFilePathRef.current = newFile.path;
+              setActiveFile(newFile);
+              try {
+                const content3 = await plugin.app.vault.read(newFile);
+                setNoteContent(content3);
+              } catch (err) {
+                logger.error("Error reading renamed file content:", err);
+              }
+              setRefreshKey((prev) => prev + 1);
+              setTimeout(() => {
+                isRenamingRef.current = false;
+                const currentActive = plugin.app.workspace.getActiveFile();
+                if (currentActive && currentActive.path === newFile.path && activeFileRef.current?.path !== newFile.path) {
+                  setActiveFile(newFile);
+                  activeFileRef.current = newFile;
+                  activeFilePathRef.current = newFile.path;
+                }
+              }, 500);
+            }
           }
         ),
         "Error loading classification"
@@ -112117,7 +112811,8 @@ var AssistantView = ({
             plugin,
             file: activeFile,
             content: noteContent,
-            refreshKey
+            refreshKey,
+            onTokenLimitError
           }
         ),
         "Error loading tags"
@@ -112145,7 +112840,8 @@ var AssistantView = ({
             plugin,
             file: activeFile,
             content: noteContent,
-            refreshKey
+            refreshKey,
+            onTokenLimitError
           }
         ),
         "Error loading folder suggestions"
@@ -112153,7 +112849,14 @@ var AssistantView = ({
       plugin.settings.enableAtomicNotes && /* @__PURE__ */ (0, import_jsx_runtime32.jsxs)(import_jsx_runtime32.Fragment, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(SectionHeader, { text: "Atomic notes", icon: "\u2702\uFE0F " }),
         renderSection(
-          /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(AtomicNotes, { plugin, activeFile, refreshKey }),
+          /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(
+            AtomicNotes,
+            {
+              plugin,
+              activeFile,
+              refreshKey
+            }
+          ),
           "Error loading atomic notes"
         )
       ] }),
@@ -112180,10 +112883,10 @@ var hasAudioEmbed = (content3) => {
 };
 
 // views/assistant/inbox-logs.tsx
-var React25 = __toESM(require_react());
+var React26 = __toESM(require_react());
 
 // inbox/services/record-manager.ts
-var import_obsidian14 = require("obsidian");
+var import_obsidian17 = require("obsidian");
 
 // inbox/services/id-service.ts
 var import_crypto = require("crypto");
@@ -112211,52 +112914,52 @@ var IdService = class _IdService {
 
 // inbox/services/record-manager.ts
 var import_moment = __toESM(require_moment());
-var Action = /* @__PURE__ */ ((Action2) => {
-  Action2["CLEANUP"] = "Cleaning up file...";
-  Action2["CLEANUP_DONE"] = "File cleaned up";
-  Action2["RENAME"] = "Renaming file...";
-  Action2["RENAME_DONE"] = "File renamed";
-  Action2["EXTRACT"] = "Extracting content...";
-  Action2["EXTRACT_DONE"] = "Content extracted";
-  Action2["MOVING_ATTACHMENT"] = "Moving attachments...";
-  Action2["MOVING_ATTACHEMENT_DONE"] = "Attachments moved";
-  Action2["CLASSIFY"] = "Analyzing document type...";
-  Action2["CLASSIFY_DONE"] = "Document type identified";
-  Action2["TAGGING"] = "Generating tags...";
-  Action2["TAGGING_DONE"] = "Tags generated";
-  Action2["APPLYING_TAGS"] = "Applying tags...";
-  Action2["APPLYING_TAGS_DONE"] = "Tags applied";
-  Action2["RECOMMEND_NAME"] = "Generating file name...";
-  Action2["RECOMMEND_NAME_DONE"] = "File name generated";
-  Action2["CONTAINER"] = "Creating document container...";
-  Action2["APPEND"] = "Appending content...";
-  Action2["APPEND_DONE"] = "Content appended";
-  Action2["ERROR_APPEND"] = "Failed to append content";
-  Action2["ERROR_COMPLETE"] = "Processing failed";
-  Action2["ERROR_VALIDATE"] = "Failed to validate document";
-  Action2["ERROR_CONTAINER"] = "Failed to create container";
-  Action2["CONTAINER_DONE"] = "Container created";
-  Action2["APPLYING_NAME"] = "Applying new name...";
-  Action2["APPLYING_NAME_DONE"] = "New name applied";
-  Action2["FORMATTING"] = "Formatting content...";
-  Action2["FORMATTING_DONE"] = "Content formatted";
-  Action2["MOVING"] = "Moving to final location...";
-  Action2["MOVING_DONE"] = "File moved successfully";
-  Action2["COMPLETED"] = "Processing completed";
-  Action2["VALIDATE"] = "Validating document...";
-  Action2["VALIDATE_DONE"] = "Document validated";
-  Action2["ERROR_CLEANUP"] = "Failed to clean up file";
-  Action2["ERROR_RENAME"] = "Failed to rename file";
-  Action2["ERROR_EXTRACT"] = "Failed to extract content";
-  Action2["ERROR_MOVING_ATTACHMENT"] = "Failed to move attachments";
-  Action2["ERROR_CLASSIFY"] = "Failed to analyze document type";
-  Action2["ERROR_TAGGING"] = "Failed to generate tags";
-  Action2["ERROR_FORMATTING"] = "Failed to format content";
-  Action2["ERROR_MOVING"] = "Failed to move file";
-  Action2["FETCH_YOUTUBE"] = "Fetching YouTube transcript...";
-  Action2["FETCH_YOUTUBE_DONE"] = "YouTube transcript fetched";
-  Action2["ERROR_FETCH_YOUTUBE"] = "Failed to fetch YouTube transcript";
-  return Action2;
+var Action = /* @__PURE__ */ ((Action3) => {
+  Action3["CLEANUP"] = "Cleaning up file...";
+  Action3["CLEANUP_DONE"] = "File cleaned up";
+  Action3["RENAME"] = "Renaming file...";
+  Action3["RENAME_DONE"] = "File renamed";
+  Action3["EXTRACT"] = "Extracting content...";
+  Action3["EXTRACT_DONE"] = "Content extracted";
+  Action3["MOVING_ATTACHMENT"] = "Moving attachments...";
+  Action3["MOVING_ATTACHEMENT_DONE"] = "Attachments moved";
+  Action3["CLASSIFY"] = "Analyzing document type...";
+  Action3["CLASSIFY_DONE"] = "Document type identified";
+  Action3["TAGGING"] = "Generating tags...";
+  Action3["TAGGING_DONE"] = "Tags generated";
+  Action3["APPLYING_TAGS"] = "Applying tags...";
+  Action3["APPLYING_TAGS_DONE"] = "Tags applied";
+  Action3["RECOMMEND_NAME"] = "Generating file name...";
+  Action3["RECOMMEND_NAME_DONE"] = "File name generated";
+  Action3["CONTAINER"] = "Creating document container...";
+  Action3["APPEND"] = "Appending content...";
+  Action3["APPEND_DONE"] = "Content appended";
+  Action3["ERROR_APPEND"] = "Failed to append content";
+  Action3["ERROR_COMPLETE"] = "Processing failed";
+  Action3["ERROR_VALIDATE"] = "Failed to validate document";
+  Action3["ERROR_CONTAINER"] = "Failed to create container";
+  Action3["CONTAINER_DONE"] = "Container created";
+  Action3["APPLYING_NAME"] = "Applying new name...";
+  Action3["APPLYING_NAME_DONE"] = "New name applied";
+  Action3["FORMATTING"] = "Formatting content...";
+  Action3["FORMATTING_DONE"] = "Content formatted";
+  Action3["MOVING"] = "Moving to final location...";
+  Action3["MOVING_DONE"] = "File moved successfully";
+  Action3["COMPLETED"] = "Processing completed";
+  Action3["VALIDATE"] = "Validating document...";
+  Action3["VALIDATE_DONE"] = "Document validated";
+  Action3["ERROR_CLEANUP"] = "Failed to clean up file";
+  Action3["ERROR_RENAME"] = "Failed to rename file";
+  Action3["ERROR_EXTRACT"] = "Failed to extract content";
+  Action3["ERROR_MOVING_ATTACHMENT"] = "Failed to move attachments";
+  Action3["ERROR_CLASSIFY"] = "Failed to analyze document type";
+  Action3["ERROR_TAGGING"] = "Failed to generate tags";
+  Action3["ERROR_FORMATTING"] = "Failed to format content";
+  Action3["ERROR_MOVING"] = "Failed to move file";
+  Action3["FETCH_YOUTUBE"] = "Fetching YouTube transcript...";
+  Action3["FETCH_YOUTUBE_DONE"] = "YouTube transcript fetched";
+  Action3["ERROR_FETCH_YOUTUBE"] = "Failed to fetch YouTube transcript";
+  return Action3;
 })(Action || {});
 var RecordManager = class _RecordManager {
   constructor(app) {
@@ -112265,7 +112968,7 @@ var RecordManager = class _RecordManager {
     this.app = app;
     this.idService = IdService.getInstance();
     this.settings = {
-      recordFilePath: (0, import_obsidian14.normalizePath)("_NoteCompanion/.records")
+      recordFilePath: (0, import_obsidian17.normalizePath)("_NoteCompanion/.records")
     };
     this.loadRecords();
   }
@@ -112476,7 +113179,7 @@ var RecordManager = class _RecordManager {
         const fileNameWithExt = fileName.endsWith(".md") ? fileName : `${fileName}.md`;
         const filePath = `${record.newPath}/${fileNameWithExt}`;
         const file = this.app.vault.getAbstractFileByPath(filePath);
-        if (file instanceof import_obsidian14.TFile) {
+        if (file instanceof import_obsidian17.TFile) {
           record.file = file;
         }
       }
@@ -112542,7 +113245,7 @@ var RecordManager = class _RecordManager {
 
 // views/assistant/inbox-logs.tsx
 var import_moment2 = __toESM(require_moment());
-var import_lucide_react5 = __toESM(require_lucide_react());
+var import_lucide_react6 = __toESM(require_lucide_react());
 
 // views/assistant/provider.tsx
 var import_react34 = __toESM(require_react());
@@ -112560,13 +113263,13 @@ var usePlugin = () => {
 };
 
 // inbox/index.ts
-var import_obsidian17 = require("obsidian");
+var import_obsidian20 = require("obsidian");
 
 // inbox/services/queue.ts
 var import_events = require("events");
 
 // inbox/services/error-service.ts
-var import_obsidian15 = require("obsidian");
+var import_obsidian18 = require("obsidian");
 init_logger();
 var ErrorService = class _ErrorService {
   constructor() {
@@ -112606,7 +113309,7 @@ var ErrorService = class _ErrorService {
   }
   showNotification(details) {
     const duration = this.getNotificationDuration(details.severity);
-    new import_obsidian15.Notice(
+    new import_obsidian18.Notice(
       `FileOrganizer: ${details.message}`,
       duration
     );
@@ -112820,32 +113523,10 @@ init_logger();
 init_constants();
 
 // fileUtils.ts
-var import_obsidian16 = require("obsidian");
+var import_obsidian19 = require("obsidian");
 init_logger();
-async function ensureFolderExists(app, folderPath) {
-  if (!await app.vault.adapter.exists(folderPath)) {
-    await app.vault.createFolder(folderPath);
-  }
-}
-async function checkAndCreateFolders(app, settings) {
-  await ensureFolderExists(app, settings.pathToWatch);
-  await ensureFolderExists(app, settings.defaultDestinationPath);
-  await ensureFolderExists(app, settings.attachmentsPath);
-  await ensureFolderExists(app, settings.logFolderPath);
-  await ensureFolderExists(app, settings.templatePaths);
-  await ensureFolderExists(app, settings.stagingFolder);
-  await ensureFolderExists(app, settings.backupFolderPath);
-  await ensureFolderExists(app, settings.recordingsFolderPath);
-}
-async function checkAndCreateTemplates(app, settings) {
-  const meetingNoteTemplatePath = `${settings.templatePaths}/meeting_note.md`;
-  const youtubeVideoTemplatePath = `${settings.templatePaths}/youtube_video.md`;
-  const enhanceTemplatePath = `${settings.templatePaths}/enhance.md`;
-  const researchPaperTemplatePath = `${settings.templatePaths}/research_paper.md`;
-  if (!await app.vault.adapter.exists(meetingNoteTemplatePath)) {
-    await app.vault.create(
-      meetingNoteTemplatePath,
-      `Contextual Extraction of Discussion Points and Action Items
+function getMeetingNoteTemplateContent() {
+  return `Contextual Extraction of Discussion Points and Action Items
 
 Instruction:
 Analyze the provided content, which includes:
@@ -112877,13 +113558,10 @@ Output Format:
 - Key excerpts from Transcript 1: [Relevant excerpts related to discussion points and action items].
 - Key excerpts from Transcript 2: [Relevant excerpts related to discussion points and action items].
 - Key highlights from Written Notes: [Direct quotes or summaries from notes].
-`
-    );
-  }
-  if (!await app.vault.adapter.exists(researchPaperTemplatePath)) {
-    await app.vault.create(
-      researchPaperTemplatePath,
-      `---
+`;
+}
+function getResearchPaperTemplateContent() {
+  return `---
 
 title: "[Full paper title]"
 
@@ -112980,13 +113658,10 @@ citation: "[Complete citation in APA/MLA format]"
 - **Potential citations**: [Where in your own writing you might cite this]
 - **Related papers in vault**: [[Paper 1]], [[Paper 2]]
 - **Related concepts**: [[Concept 1]], [[Concept 2]]
-`
-    );
-  }
-  if (!await app.vault.adapter.exists(youtubeVideoTemplatePath)) {
-    await app.vault.create(
-      youtubeVideoTemplatePath,
-      `Please create an Obsidian note using the video link and any available transcript or additional context. The note must include:
+`;
+}
+function getYoutubeVideoTemplateContent() {
+  return `Please create an Obsidian note using the video link and any available transcript or additional context. The note must include:
 
 1. Frontmatter (at the top) with the following properties:
 
@@ -113016,15 +113691,17 @@ summary: "{{short summary of the video's main theme and key takeaways}}"
 
 - Extract the video title from the "YouTube Video Information" section if provided, or infer from the transcript content.
 
+- Use the **Channel** and **Date Published** values from the "YouTube Video Information" section when present for the frontmatter \`channel\` and \`date_published\` fields. If not provided in that section, leave them empty.
+
 - Extract topics by analyzing the main themes discussed in the transcript. Use 2-5 specific, relevant topics.
 
-- Generate tags based on the video content. Always include "youtube" and add 2-4 additional relevant tags. Tags in frontmatter should NOT include the "#" symbol (only use "#" for inline tags in the content body).
+- Generate tags based on the video content. Always include "youtube" and add 2-4 additional relevant tags. Tags in frontmatter should NOT include the "#" symbol (only use "#" for inline tags in the content body). **CRITICAL: Tags must have NO spaces between words. Use hyphens or underscores to connect multi-word tags (e.g., "web-development" or "machine_learning", not "web development" or "machine learning").**
 
 - Create a concise summary (1-2 sentences) that captures the video's main theme and key takeaways.
 
 - If a full transcript is provided in the "Full Transcript" section, use it to create an accurate, detailed summary below the embed link.
 
-- Extract the publication date if mentioned in the transcript or metadata. If not available, leave date_published empty.
+- If "Date Published" is in the YouTube Video Information section, use it for \`date_published\`. Otherwise extract from transcript if mentioned, or leave empty.
 
 - Maintain the exact markdown syntax for the frontmatter block (\`---\` at the top and bottom).
 
@@ -113033,6 +113710,8 @@ summary: "{{short summary of the video's main theme and key takeaways}}"
   - This will automatically embed the YouTube video player in Obsidian
 
 - In the main body, provide a comprehensive summary with bullet points covering all major points from the video transcript.
+
+- **CRITICAL - NO SPONSOR CONTENT: Never include sponsor segments, promotional content, or ads in the summary or body. Exclude: "sponsored by", "use code X", "check out our sponsor", "this video is brought to you by", discount/promo codes, product plugs, and mid-roll ad segments. Summarize ONLY the main educational or informational content of the video. If the transcript contains sponsor blocks, skip them entirely\u2014do not paraphrase or mention them.**
 
 - Do not use \`\`\` code blocks or markdown code formatting in the summary.
 
@@ -113066,13 +113745,10 @@ summary: "A comprehensive guide to building modern React applications with hooks
 - Implementing Context API for global state
 - Best practices for component structure and organization
 - Performance optimization techniques
-- Deployment strategies and recommendations`
-    );
-  }
-  if (!await app.vault.adapter.exists(enhanceTemplatePath)) {
-    await app.vault.create(
-      enhanceTemplatePath,
-      `1. **Use Headings and Subheadings**: Clearly define sections with headings (e.g.,
+- Deployment strategies and recommendations`;
+}
+function getEnhanceTemplateContent() {
+  return `1. **Use Headings and Subheadings**: Clearly define sections with headings (e.g.,
 \`\`\`
 #
 \`\`\`
@@ -113102,20 +113778,226 @@ summary: "A comprehensive guide to building modern React applications with hooks
 
 9. **Linking and Cross-referencing**: Use internal links to connect related notes or sections within your vault.
 
-10. do not use \`\`\` markdown`
+10. do not use \`\`\` markdown`;
+}
+function getFlashCardsTemplateContent() {
+  return `Please create an Obsidian note with interactive flashcards using native Obsidian HTML features. The note must include:
+
+1. Frontmatter (at the top) with the following properties:
+
+---
+
+total: {{number of flashcards created}}
+
+topics: ["{{topic 1}}", "{{topic 2}}", "{{topic 3}}"]
+
+created: "{{current date in YYYY-MM-DD format}}"
+
+---
+
+2. Interactive flashcards using HTML details/summary tags (below the frontmatter).
+
+**Instructions:**
+
+- Extract key concepts, facts, definitions, relationships, and important information from the content
+- Identify all testable knowledge points: definitions, concepts, facts, formulas, relationships, processes, dates, names, theories, principles, etc.
+- Extract 3-7 main topics or themes from the content for the topics array in frontmatter
+- **CRITICAL: Randomize the order of flashcards - mix different topics, difficulty levels, and question types together. Do NOT follow the original content order or group by topic. Create a varied, shuffled study experience.**
+- Create 10-30 flashcards depending on content length and density
+- Prioritize information that is:
+  - Fundamental to understanding the topic
+  - Frequently referenced or important
+  - Easy to forget (dates, numbers, specific details)
+  - Part of a sequence or process
+  - A definition or key concept
+
+- Maintain the exact markdown syntax for the frontmatter block (\`---\` at the top and bottom).
+- Each property in frontmatter must be on its own line with proper YAML indentation
+- Topics should be an array: topics: ["Topic 1", "Topic 2", "Topic 3"]
+- Total should be a number without quotes
+- Created should be a string in quotes with format "YYYY-MM-DD"
+
+- Format each flashcard using HTML details/summary tags:
+  - Each flashcard must be a separate <details> block with class="flashcard"
+  - The <summary> tag must have class="flashcard-question" and contain the question
+  - The answer must be wrapped in <div class="flashcard-answer">
+  - Leave a blank line after </summary> and before </details> for proper spacing
+  - Answers can include markdown formatting (bold, italic, lists, links, etc.)
+  - Answers can span multiple paragraphs
+
+- Questions should test understanding, not just recall
+- Answers should be complete but concise (typically 1-4 sentences, but can be longer if needed)
+- Include context and examples when helpful
+- Use clear, specific language
+- Make questions specific and focused (avoid overly broad questions)
+- Include [[internal links]] to related notes or concepts when relevant
+- Use **bold** for key terms in answers
+- Group related information in answers using lists or structured formatting
+
+- Do not use \`\`\` code blocks or markdown code formatting in the output
+- Focus on accuracy and completeness based on the actual content provided
+
+**Example Output Format:**
+
+---
+
+total: 3
+
+topics: ["Cell Biology", "Energy Production", "Molecular Biology"]
+
+created: "2025-01-09"
+
+---
+
+<details class="flashcard">
+<summary class="flashcard-question">What is the primary function of mitochondria?</summary>
+
+<div class="flashcard-answer">
+
+Mitochondria are organelles that produce ATP (adenosine triphosphate) through cellular respiration. They are often called the "powerhouse of the cell" because they generate most of the cell's energy supply.
+
+Related: See also [[Chloroplasts]] for plant cell energy production.
+
+</div>
+
+</details>
+
+<details class="flashcard">
+<summary class="flashcard-question">What is the difference between DNA and RNA?</summary>
+
+<div class="flashcard-answer">
+
+- **DNA**: Double-stranded, contains thymine, stores genetic information
+- **RNA**: Single-stranded, contains uracil, involved in protein synthesis
+
+</div>
+
+</details>
+
+<details class="flashcard">
+<summary class="flashcard-question">How does photosynthesis work?</summary>
+
+<div class="flashcard-answer">
+
+Photosynthesis occurs in two stages:
+
+1. **Light-dependent reactions**: Chlorophyll absorbs light energy, splits water molecules, and produces ATP and NADPH
+2. **Calvin cycle**: Uses ATP and NADPH to convert carbon dioxide into glucose
+
+</div>
+
+</details>
+
+Important Notes:
+- ALWAYS include frontmatter with total, topics, and created date
+- Each property in frontmatter must be on its own line (no nesting, flat structure like the YouTube template)
+- Topics should be an array: topics: ["Topic 1", "Topic 2", "Topic 3"]
+- Created should be a string in quotes: created: "2025-01-09"
+- Total should be a number without quotes: total: 15
+- Use proper HTML syntax - ensure all tags are properly closed
+- Output the actual HTML tags directly (NOT inside markdown code blocks)
+- Each flashcard should be separated by a blank line for readability
+- **RANDOMIZE THE ORDER: Mix topics, difficulty levels, and question types - do not follow source material order**
+- Include [[internal links]] to related concepts when relevant
+- Answers can include markdown formatting like **bold**, *italic*, lists, and [[internal links]]
+- If content is very long, focus on the most important concepts
+- If content is technical, ensure definitions are clear
+- Maintain the original meaning and accuracy of the source material
+- All flashcards will be in one note - users can click to reveal answers
+- This format works natively in Obsidian without requiring any plugins`;
+}
+async function ensureFolderExists(app, folderPath) {
+  if (!await app.vault.adapter.exists(folderPath)) {
+    await app.vault.createFolder(folderPath);
+  }
+}
+async function checkAndCreateFolders(app, settings) {
+  await ensureFolderExists(app, settings.pathToWatch);
+  await ensureFolderExists(app, settings.defaultDestinationPath);
+  await ensureFolderExists(app, settings.attachmentsPath);
+  await ensureFolderExists(app, settings.logFolderPath);
+  await ensureFolderExists(app, settings.templatePaths);
+  await ensureFolderExists(app, settings.stagingFolder);
+  await ensureFolderExists(app, settings.backupFolderPath);
+  await ensureFolderExists(app, settings.recordingsFolderPath);
+}
+async function checkAndCreateTemplates(app, settings) {
+  const meetingNoteTemplatePath = `${settings.templatePaths}/meeting_note.md`;
+  const youtubeVideoTemplatePath = `${settings.templatePaths}/youtube_video.md`;
+  const enhanceTemplatePath = `${settings.templatePaths}/enhance.md`;
+  const researchPaperTemplatePath = `${settings.templatePaths}/research_paper.md`;
+  const flashCardsTemplatePath = `${settings.templatePaths}/flash_cards.md`;
+  if (!await app.vault.adapter.exists(meetingNoteTemplatePath)) {
+    await app.vault.create(
+      meetingNoteTemplatePath,
+      getMeetingNoteTemplateContent()
     );
+  }
+  if (!await app.vault.adapter.exists(researchPaperTemplatePath)) {
+    await app.vault.create(
+      researchPaperTemplatePath,
+      getResearchPaperTemplateContent()
+    );
+  }
+  if (!await app.vault.adapter.exists(youtubeVideoTemplatePath)) {
+    await app.vault.create(
+      youtubeVideoTemplatePath,
+      getYoutubeVideoTemplateContent()
+    );
+  }
+  if (!await app.vault.adapter.exists(enhanceTemplatePath)) {
+    await app.vault.create(enhanceTemplatePath, getEnhanceTemplateContent());
+  }
+  if (!await app.vault.adapter.exists(flashCardsTemplatePath)) {
+    await app.vault.create(
+      flashCardsTemplatePath,
+      getFlashCardsTemplateContent()
+    );
+  }
+}
+async function restoreDefaultTemplates(app, settings) {
+  const templatePaths = {
+    meetingNote: `${settings.templatePaths}/meeting_note.md`,
+    youtubeVideo: `${settings.templatePaths}/youtube_video.md`,
+    enhance: `${settings.templatePaths}/enhance.md`,
+    researchPaper: `${settings.templatePaths}/research_paper.md`,
+    flashCards: `${settings.templatePaths}/flash_cards.md`
+  };
+  const templateContents = {
+    meetingNote: getMeetingNoteTemplateContent(),
+    youtubeVideo: getYoutubeVideoTemplateContent(),
+    enhance: getEnhanceTemplateContent(),
+    researchPaper: getResearchPaperTemplateContent(),
+    flashCards: getFlashCardsTemplateContent()
+  };
+  await ensureFolderExists(app, settings.templatePaths);
+  for (const [key, path2] of Object.entries(templatePaths)) {
+    try {
+      const existing = app.vault.getAbstractFileByPath(path2);
+      if (existing && existing instanceof import_obsidian19.TFile) {
+        await app.vault.delete(existing);
+      }
+      await app.vault.create(
+        path2,
+        templateContents[key]
+      );
+      logger.info(`Restored default template: ${path2}`);
+    } catch (error) {
+      logger.error(`Failed to restore template ${path2}:`, error);
+      throw error;
+    }
   }
 }
 async function moveFile(app, sourceFile, newFileName, destinationFolder = "") {
   const fileExtension = sourceFile.extension;
   let targetPath = `${destinationFolder}/${newFileName}.${fileExtension}`;
-  const normalizedTargetPath = (0, import_obsidian16.normalizePath)(targetPath);
+  const normalizedTargetPath = (0, import_obsidian19.normalizePath)(targetPath);
   if (await app.vault.adapter.exists(normalizedTargetPath)) {
     const timestamp = Date.now();
     const uniqueFileName = `${newFileName}_${timestamp}`;
     targetPath = `${destinationFolder}/${uniqueFileName}.${fileExtension}`;
   }
-  const normalizedFinalPath = (0, import_obsidian16.normalizePath)(targetPath);
+  const normalizedFinalPath = (0, import_obsidian19.normalizePath)(targetPath);
   await ensureFolderExists(app, destinationFolder);
   await app.fileManager.renameFile(sourceFile, normalizedFinalPath);
   const movedFile = app.vault.getAbstractFileByPath(
@@ -113664,7 +114546,7 @@ async function handleBypass(context, reason) {
     const fileName = context.inboxFile.basename;
     const bypassedFolderPath = context.plugin.settings.bypassedFilePath;
     if (context.plugin.settings.enableProcessingNotifications) {
-      new import_obsidian17.Notice(
+      new import_obsidian20.Notice(
         `\u26A0\uFE0F Bypassed: ${fileName}
 Reason: ${reason}
 Location: ${bypassedFolderPath}`,
@@ -113814,7 +114696,7 @@ async function handleError(error, context) {
   }
   if (context.plugin.settings.enableProcessingNotifications && errorAction) {
     const formattedMessage = formatErrorMessage(errorAction, errorMessage);
-    new import_obsidian17.Notice(
+    new import_obsidian20.Notice(
       `\u274C Error: ${fileName}
 ${errorType}: ${formattedMessage}
 Location: ${destinationFolder}`,
@@ -113936,7 +114818,7 @@ async function executeStep(context, step, action, errorAction) {
       const progress2 = record ? calculateProgress(record) : 0;
       const queueInfo = totalInQueue > 1 ? ` (${queuePosition}/${totalInQueue})` : "";
       const progressInfo = progress2 > 0 ? ` - ${progress2}%` : "";
-      new import_obsidian17.Notice(
+      new import_obsidian20.Notice(
         `\u{1F4C4} ${fileName}: ${actionName}${queueInfo}${progressInfo}`,
         3e3
       );
@@ -113983,7 +114865,7 @@ async function shouldProcessYouTube(context) {
 
 // views/assistant/inbox-logs.tsx
 init_constants();
-var import_obsidian19 = require("obsidian");
+var import_obsidian23 = require("obsidian");
 
 // components/ui/utils.tsx
 var import_jsx_runtime33 = __toESM(require_jsx_runtime());
@@ -114347,7 +115229,7 @@ Button2.displayName = "Button";
 
 // views/assistant/organizer/components/undo-button.tsx
 var import_lucide_react4 = __toESM(require_lucide_react());
-var import_obsidian18 = require("obsidian");
+var import_obsidian21 = require("obsidian");
 var import_jsx_runtime37 = __toESM(require_jsx_runtime());
 var UndoButton = ({ record, plugin, onUndo }) => {
   const [isUndoing, setIsUndoing] = React24.useState(false);
@@ -114356,7 +115238,7 @@ var UndoButton = ({ record, plugin, onUndo }) => {
   }, [record.status, record.newPath, record.file]);
   const handleUndo = async () => {
     if (!record.file || !record.newPath) {
-      new import_obsidian18.Notice("Cannot undo: file information missing");
+      new import_obsidian21.Notice("Cannot undo: file information missing");
       return;
     }
     setIsUndoing(true);
@@ -114368,7 +115250,7 @@ var UndoButton = ({ record, plugin, onUndo }) => {
       const targetPath = `${inboxPath}/${originalName}`;
       const existing = app.vault.getAbstractFileByPath(targetPath);
       if (existing) {
-        new import_obsidian18.Notice(`Cannot undo: a file already exists at ${targetPath}`);
+        new import_obsidian21.Notice(`Cannot undo: a file already exists at ${targetPath}`);
         setIsUndoing(false);
         return;
       }
@@ -114380,13 +115262,13 @@ var UndoButton = ({ record, plugin, onUndo }) => {
         const filtered = lines.filter((line) => !tagPattern.test(line));
         await app.vault.modify(file, filtered.join("\n"));
       }
-      new import_obsidian18.Notice(`Undid processing for ${record.originalName}`);
+      new import_obsidian21.Notice(`Undid processing for ${record.originalName}`);
       if (onUndo) {
         onUndo();
       }
     } catch (error) {
       console.error("Error undoing file movement:", error);
-      new import_obsidian18.Notice(`Failed to undo: ${error.message}`);
+      new import_obsidian21.Notice(`Failed to undo: ${error.message}`);
     } finally {
       setIsUndoing(false);
     }
@@ -114411,17 +115293,251 @@ var UndoButton = ({ record, plugin, onUndo }) => {
   );
 };
 
-// views/assistant/inbox-logs.tsx
+// views/assistant/inbox-logs/recent-issues-panel.tsx
+var React25 = __toESM(require_react());
+var import_obsidian22 = require("obsidian");
+var import_lucide_react5 = __toESM(require_lucide_react());
 var import_jsx_runtime38 = __toESM(require_jsx_runtime());
+var StatusBadge = ({ status }) => {
+  const getStatusColor = () => {
+    switch (status) {
+      case "error":
+        return "bg-[--text-error]";
+      case "bypassed":
+        return "bg-[--text-muted]";
+      default:
+        return "bg-[--text-muted]";
+    }
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("span", { className: "inline-flex items-center", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "sr-only", children: status }),
+    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+      "span",
+      {
+        className: `w-2 h-2 rounded-full ${getStatusColor()}`,
+        "aria-hidden": "true"
+      }
+    )
+  ] });
+};
+var IssueCard = ({ record, plugin, onRetry }) => {
+  const [isRetrying, setIsRetrying] = React25.useState(false);
+  const recordManager = RecordManager.getInstance(plugin.app);
+  const lastError = recordManager.getLastError(record.id);
+  const getErrorMessage3 = () => {
+    if (record.status === "error" && lastError?.error?.message) {
+      return lastError.error.message;
+    }
+    if (record.status === "bypassed") {
+      const allErrors = Object.values(record.logs).filter((log) => log.error).map((log) => log.error.message);
+      for (const errorMsg of allErrors) {
+        if (errorMsg.includes("Bypassed due to")) {
+          const reason = errorMsg.replace("Bypassed due to ", "").trim();
+          return reason || "File bypassed";
+        }
+      }
+      if (lastError?.error?.message) {
+        const msg = lastError.error.message;
+        if (msg.includes("Bypassed due to")) {
+          return msg.replace("Bypassed due to ", "").trim();
+        }
+        return msg;
+      }
+      return "File bypassed";
+    }
+    return "Unknown issue";
+  };
+  const errorMessage = getErrorMessage3();
+  const getMostRecentTimestamp = () => {
+    const timestamps = Object.values(record.logs).map((log) => log.timestamp);
+    if (timestamps.length === 0) return "";
+    return timestamps.sort().reverse()[0];
+  };
+  const handleRetry = async () => {
+    setIsRetrying(true);
+    try {
+      await onRetry(record);
+    } finally {
+      setIsRetrying(false);
+    }
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "border-b border-[--background-modifier-border] p-2 hover:bg-[--background-modifier-hover]", children: /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex items-center justify-between gap-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex-1 min-w-0", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex items-center gap-2 mb-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(StatusBadge, { status: record.status }),
+        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "text-sm text-[--text-normal] truncate", children: record.originalName })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "text-xs text-[--text-muted] truncate", children: errorMessage }),
+      getMostRecentTimestamp() && /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "text-xs text-[--text-faint] mt-0.5", children: new Date(getMostRecentTimestamp()).toLocaleString() })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)(
+      Button2,
+      {
+        onClick: handleRetry,
+        disabled: isRetrying,
+        size: "sm",
+        variant: "outline",
+        className: tw("flex items-center gap-1 text-xs"),
+        title: "Retry processing this file",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.RotateCcw, { className: tw(`w-3 h-3 ${isRetrying ? "animate-spin" : ""}`) }),
+          isRetrying ? "Retrying..." : "Retry"
+        ]
+      }
+    )
+  ] }) });
+};
+var RecentIssuesPanel = ({ plugin }) => {
+  const [issues, setIssues] = React25.useState([]);
+  React25.useEffect(() => {
+    const fetchIssues = () => {
+      try {
+        const recordManager = RecordManager.getInstance(plugin.app);
+        const allRecords = recordManager.getAllRecords();
+        const errorAndBypassed = allRecords.filter(
+          (r3) => r3.status === "error" || r3.status === "bypassed"
+        );
+        const sorted = errorAndBypassed.sort((a, b) => {
+          const getLatestTimestamp = (record) => {
+            const timestamps = Object.values(record.logs).map(
+              (log) => new Date(log.timestamp).getTime()
+            );
+            return timestamps.length > 0 ? Math.max(...timestamps) : 0;
+          };
+          return getLatestTimestamp(b) - getLatestTimestamp(a);
+        });
+        setIssues(sorted.slice(0, 10));
+      } catch (error) {
+        console.error("Error fetching issues:", error);
+        setIssues([]);
+      }
+    };
+    fetchIssues();
+    const interval = setInterval(fetchIssues, 2e3);
+    return () => clearInterval(interval);
+  }, [plugin.app]);
+  const handleRetry = React25.useCallback(
+    async (record) => {
+      try {
+        const inbox = Inbox.getInstance();
+        let fileToRetry = null;
+        if (record.file) {
+          fileToRetry = record.file;
+        } else {
+          const errorPath2 = plugin.settings.errorFilePath;
+          const bypassPath2 = plugin.settings.bypassedFilePath;
+          const inboxPath2 = plugin.settings.pathToWatch;
+          if (errorPath2) {
+            const searchNames = [record.originalName];
+            if (record.newName) searchNames.push(record.newName);
+            for (const name16 of searchNames) {
+              const errorFile = plugin.app.vault.getAbstractFileByPath(
+                `${errorPath2}/${name16}`
+              );
+              if (errorFile instanceof import_obsidian22.TFile) {
+                fileToRetry = errorFile;
+                break;
+              }
+            }
+          }
+          if (!fileToRetry && bypassPath2) {
+            const searchNames = [record.originalName];
+            if (record.newName) searchNames.push(record.newName);
+            for (const name16 of searchNames) {
+              const bypassFile = plugin.app.vault.getAbstractFileByPath(
+                `${bypassPath2}/${name16}`
+              );
+              if (bypassFile instanceof import_obsidian22.TFile) {
+                fileToRetry = bypassFile;
+                break;
+              }
+            }
+          }
+          if (!fileToRetry && inboxPath2) {
+            const searchNames = [record.originalName];
+            if (record.newName) searchNames.push(record.newName);
+            for (const name16 of searchNames) {
+              const inboxFile = plugin.app.vault.getAbstractFileByPath(
+                `${inboxPath2}/${name16}`
+              );
+              if (inboxFile instanceof import_obsidian22.TFile) {
+                fileToRetry = inboxFile;
+                break;
+              }
+            }
+          }
+          if (!fileToRetry) {
+            const allLoadedFiles = plugin.app.vault.getAllLoadedFiles();
+            const allFiles = allLoadedFiles.filter((f) => f instanceof import_obsidian22.TFile);
+            fileToRetry = allFiles.find((f) => f.basename === record.originalName || f.name === record.originalName) || null;
+          }
+        }
+        if (!fileToRetry) {
+          new import_obsidian22.Notice(
+            `Cannot retry: File "${record.originalName}" not found in vault`
+          );
+          return;
+        }
+        const currentPath = fileToRetry.path;
+        const inboxPath = plugin.settings.pathToWatch;
+        const errorPath = plugin.settings.errorFilePath;
+        const bypassPath = plugin.settings.bypassedFilePath;
+        if (errorPath && currentPath.startsWith(errorPath) || bypassPath && currentPath.startsWith(bypassPath)) {
+          const targetPath = `${inboxPath}/${fileToRetry.name}`;
+          await plugin.app.fileManager.renameFile(fileToRetry, targetPath);
+          fileToRetry = plugin.app.vault.getAbstractFileByPath(targetPath) || null;
+          if (!fileToRetry) {
+            new import_obsidian22.Notice("Failed to move file back to inbox");
+            return;
+          }
+        }
+        inbox.enqueueFile(fileToRetry);
+        new import_obsidian22.Notice(`Retrying processing for ${record.originalName}`);
+      } catch (error) {
+        console.error("Error retrying file:", error);
+        new import_obsidian22.Notice(`Failed to retry: ${error.message || "Unknown error"}`);
+      }
+    },
+    [plugin]
+  );
+  if (issues.length === 0) {
+    return null;
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "border-b border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "px-3 py-2 bg-[--background-secondary]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex items-center gap-2 mb-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.AlertCircle, { className: "w-4 h-4 text-[--text-error]" }),
+        /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("h3", { className: "text-sm font-semibold text-[--text-normal]", children: [
+          "Recent Issues (",
+          issues.length,
+          ")"
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: "Files that failed processing or were bypassed" })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "max-h-64 overflow-y-auto", children: issues.map((record) => /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+      IssueCard,
+      {
+        record,
+        plugin,
+        onRetry: handleRetry
+      },
+      record.id
+    )) })
+  ] });
+};
+
+// views/assistant/inbox-logs.tsx
+var import_jsx_runtime39 = __toESM(require_jsx_runtime());
 var FileNameDisplay = ({ record }) => {
   const hasNewName = record.newName && record.originalName !== record.newName;
   if (!hasNewName) {
-    return /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-accent]", children: record.originalName || "No file" });
+    return /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-accent]", children: record.originalName || "No file" });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex items-center gap-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-muted] line-through", children: record.originalName }),
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-muted]", children: "\u2192" }),
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-accent]", children: record.newName })
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex items-center gap-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] line-through", children: record.originalName }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted]", children: "\u2192" }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-accent]", children: record.newName })
   ] });
 };
 var getErrorSummary = (record) => {
@@ -114470,11 +115586,11 @@ var EssentialInfoDisplay = ({ record }) => {
   if (!hasRename && !hasMove && !hasTranscribedAudio && !hasProcessedImage && record.tags.length === 0 && !hasYouTubeTranscript && !hasFormatted) {
     return null;
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "space-y-2", children: [
-    hasRename && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "text-sm", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "space-y-2", children: [
+    hasRename && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Renamed as",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "span",
         {
           className: "text-[--text-accent] cursor-pointer hover:underline",
@@ -114484,10 +115600,10 @@ var EssentialInfoDisplay = ({ record }) => {
             } else {
               const filePath = record.newPath ? `${record.newPath}/${record.newName || record.originalName}` : record.newName || record.originalName;
               const file = plugin.app.vault.getAbstractFileByPath(filePath);
-              if (file instanceof import_obsidian19.TFile) {
+              if (file instanceof import_obsidian23.TFile) {
                 plugin.app.workspace.getLeaf().openFile(file);
               } else {
-                new import_obsidian19.Notice("File not found");
+                new import_obsidian23.Notice("File not found");
               }
             }
           },
@@ -114495,12 +115611,12 @@ var EssentialInfoDisplay = ({ record }) => {
         }
       ),
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(getActionTimestamp("RENAME_DONE")) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(getActionTimestamp("RENAME_DONE")) })
     ] }),
-    hasMove && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "text-sm", children: [
+    hasMove && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Moved to",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "span",
         {
           className: "text-[--text-accent] cursor-pointer hover:underline",
@@ -114511,10 +115627,10 @@ var EssentialInfoDisplay = ({ record }) => {
               const fileName = record.newName || record.originalName;
               const filePath = record.newPath ? `${record.newPath}/${fileName}${fileName.endsWith(".md") ? "" : ".md"}` : fileName;
               const file = plugin.app.vault.getAbstractFileByPath(filePath);
-              if (file instanceof import_obsidian19.TFile) {
+              if (file instanceof import_obsidian23.TFile) {
                 plugin.app.workspace.getLeaf().openFile(file);
               } else {
-                new import_obsidian19.Notice("File not found");
+                new import_obsidian23.Notice("File not found");
               }
             }
           },
@@ -114522,22 +115638,22 @@ var EssentialInfoDisplay = ({ record }) => {
         }
       ),
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(getActionTimestamp("MOVING_DONE")) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(getActionTimestamp("MOVING_DONE")) })
     ] }),
-    hasTranscribedAudio && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "text-sm", children: [
+    hasTranscribedAudio && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Transcribed audio",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(audioTimestamp) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(audioTimestamp) })
     ] }),
-    hasProcessedImage && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "text-sm", children: [
+    hasProcessedImage && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Processed image",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(imageTimestamp) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(imageTimestamp) })
     ] }),
-    hasFormatted && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "text-sm", children: [
+    hasFormatted && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Note formatted as",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "span",
         {
           className: "text-[--text-accent] cursor-pointer hover:underline",
@@ -114548,7 +115664,7 @@ var EssentialInfoDisplay = ({ record }) => {
               if (templateFile) {
                 plugin.app.workspace.getLeaf().openFile(templateFile);
               } else {
-                new import_obsidian19.Notice(`Template file not found: ${templatePath}`);
+                new import_obsidian23.Notice(`Template file not found: ${templatePath}`);
               }
             }
           },
@@ -114556,16 +115672,16 @@ var EssentialInfoDisplay = ({ record }) => {
         }
       ),
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(formattingTimestamp) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(formattingTimestamp) })
     ] }),
-    record.tags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "text-sm", children: [
+    record.tags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Added tags: ",
       record.tags.join(", ")
     ] }),
-    hasYouTubeTranscript && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "text-sm", children: [
+    hasYouTubeTranscript && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "text-sm", children: [
       "Extracted YouTube transcript",
       " ",
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(youtubeTimestamp) })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] text-xs", children: formatTimestamp(youtubeTimestamp) })
     ] })
   ] });
 };
@@ -114592,20 +115708,20 @@ function getQueuePosition(record) {
 }
 function FileCard({ record }) {
   const plugin = usePlugin();
-  const [isExpanded, setIsExpanded] = React25.useState(false);
+  const [isExpanded, setIsExpanded] = React26.useState(false);
   const errorSummary = getErrorSummary(record);
   const queuePosition = getQueuePosition(record);
   const hasExpandableContent = record.status === "processing" || record.status === "completed" || record.status === "error";
-  return /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "border-b border-[--background-modifier-border] hover:bg-[--background-modifier-hover]", children: /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "border-b border-[--background-modifier-border] hover:bg-[--background-modifier-hover]", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
     "div",
     {
       className: "px-3 py-2 cursor-pointer",
       onClick: () => setIsExpanded(!isExpanded),
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex items-center justify-between gap-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex items-center gap-2 flex-1 min-w-0", children: [
-            hasExpandableContent && /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "flex-shrink-0", children: isExpanded ? /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.ChevronDown, { className: "w-4 h-4 text-[--text-muted]" }) : /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.ChevronRight, { className: "w-4 h-4 text-[--text-muted]" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex items-center justify-between gap-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex items-center gap-2 flex-1 min-w-0", children: [
+            hasExpandableContent && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "flex-shrink-0", children: isExpanded ? /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.ChevronDown, { className: "w-4 h-4 text-[--text-muted]" }) : /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.ChevronRight, { className: "w-4 h-4 text-[--text-muted]" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
               "div",
               {
                 className: "cursor-pointer flex items-center gap-2 flex-1 min-w-0",
@@ -114616,24 +115732,24 @@ function FileCard({ record }) {
                   } else {
                     const filePath = record.newPath ? `${record.newPath}/${record.newName || record.originalName}` : record.originalName;
                     const file = plugin.app.vault.getAbstractFileByPath(filePath);
-                    if (file instanceof import_obsidian19.TFile) {
+                    if (file instanceof import_obsidian23.TFile) {
                       plugin.app.workspace.getLeaf().openFile(file);
                     } else {
-                      new import_obsidian19.Notice("File not found or has been moved");
+                      new import_obsidian23.Notice("File not found or has been moved");
                     }
                   }
                 },
                 children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(StatusBadge, { status: record.status }),
-                  /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(FileNameDisplay, { record }),
-                  queuePosition && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("span", { className: "text-[--text-muted] text-xs", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(StatusBadge2, { status: record.status }),
+                  /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(FileNameDisplay, { record }),
+                  queuePosition && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("span", { className: "text-[--text-muted] text-xs", children: [
                     "(Queue: ",
                     queuePosition.position,
                     "/",
                     queuePosition.total,
                     ")"
                   ] }),
-                  errorSummary && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("span", { className: "text-[--text-error] text-xs truncate", children: [
+                  errorSummary && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("span", { className: "text-[--text-error] text-xs truncate", children: [
                     "\u2022 ",
                     errorSummary
                   ] })
@@ -114641,17 +115757,17 @@ function FileCard({ record }) {
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(UndoButton, { record, plugin })
+          /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(UndoButton, { record, plugin })
         ] }),
-        isExpanded && /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "mt-2 space-y-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(EssentialInfoDisplay, { record }),
-          (record.status === "processing" || record.status === "completed" || record.status === "error") && /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "mt-4 -mx-3 px-3", children: /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(ProcessingTimeline, { record }) })
+        isExpanded && /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "mt-2 space-y-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(EssentialInfoDisplay, { record }),
+          (record.status === "processing" || record.status === "completed" || record.status === "error") && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "mt-4 -mx-3 px-3", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(ProcessingTimeline, { record }) })
         ] })
       ]
     }
   ) });
 }
-var StatusBadge = ({ status }) => {
+var StatusBadge2 = ({ status }) => {
   const getStatusColor = () => {
     switch (status) {
       case "completed":
@@ -114664,9 +115780,9 @@ var StatusBadge = ({ status }) => {
         return "bg-[--text-muted]";
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("span", { className: "inline-flex items-center", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("span", { className: "sr-only", children: status }),
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("span", { className: "inline-flex items-center", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "sr-only", children: status }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
       "span",
       {
         className: `w-2 h-2 rounded-full ${getStatusColor()}`,
@@ -114678,32 +115794,32 @@ var StatusBadge = ({ status }) => {
 var InboxAnalytics = ({ analytics }) => {
   const { byStatus } = analytics;
   const mainFlow = [
-    { status: "queued", icon: /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.Clock, { className: "w-4 h-4" }) },
-    { status: "processing", icon: /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.Play, { className: "w-4 h-4" }) },
-    { status: "completed", icon: /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.Check, { className: "w-4 h-4" }) }
+    { status: "queued", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.Clock, { className: "w-4 h-4" }) },
+    { status: "processing", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.Play, { className: "w-4 h-4" }) },
+    { status: "completed", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.Check, { className: "w-4 h-4" }) }
   ];
   const exceptions = [
-    { status: "error", icon: /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.AlertCircle, { className: "w-4 h-4" }) },
-    { status: "bypassed", icon: /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.Ban, { className: "w-4 h-4" }) }
+    { status: "error", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.AlertCircle, { className: "w-4 h-4" }) },
+    { status: "bypassed", icon: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.Ban, { className: "w-4 h-4" }) }
   ];
   const StatusBox = ({
     status,
     icon
-  }) => /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)(
+  }) => /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
     "div",
     {
       className: "bg-[--background-primary] p-4 rounded text-center flex flex-col items-center",
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "text-sm capitalize", children: status }),
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "font-semibold", children: byStatus[status] || 0 }),
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "mt-1 text-[--text-muted]", children: icon })
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "text-sm capitalize", children: status }),
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "font-semibold", children: byStatus[status] || 0 }),
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "mt-1 text-[--text-muted]", children: icon })
       ]
     },
     status
   );
-  return /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "bg-[--background-secondary] ", children: /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "space-y-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "grid grid-cols-3 gap-2", children: mainFlow.map(({ status, icon }) => /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(StatusBox, { status, icon }, status)) }),
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "grid grid-cols-2 gap-2", children: exceptions.map(({ status, icon }) => /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(StatusBox, { status, icon }, status)) })
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "bg-[--background-secondary] ", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "space-y-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "grid grid-cols-3 gap-2", children: mainFlow.map(({ status, icon }) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(StatusBox, { status, icon }, status)) }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "grid grid-cols-2 gap-2", children: exceptions.map(({ status, icon }) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(StatusBox, { status, icon }, status)) })
   ] }) });
 };
 var DateFilterSelect = ({ value, onChange }) => {
@@ -114760,20 +115876,20 @@ var DateFilterSelect = ({ value, onChange }) => {
       ...dates
     });
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex items-center gap-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "relative flex items-center gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.Calendar, { className: "w-4 h-4 text-[--text-muted]" }),
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex items-center gap-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "relative flex items-center gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.Calendar, { className: "w-4 h-4 text-[--text-muted]" }),
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "select",
         {
           value: value.range,
           onChange: (e2) => handleRangeChange(e2.target.value),
           className: "pl-2 pr-8 h-min py-2 bg-[--background-secondary] rounded-l border border-[--background-modifier-border] text-sm appearance-none",
-          children: ranges.map(({ value: value2, label }) => /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("option", { value: value2, children: label }, value2))
+          children: ranges.map(({ value: value2, label }) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("option", { value: value2, children: label }, value2))
         }
       )
     ] }),
-    value.range === "custom" && /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+    value.range === "custom" && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
       "input",
       {
         type: "date",
@@ -114792,7 +115908,7 @@ var SearchBar = ({
   selectedStatus,
   dateFilter
 }) => {
-  const [searchQuery, setSearchQuery] = React25.useState("");
+  const [searchQuery, setSearchQuery] = React26.useState("");
   const handleSearchChange = (e2) => {
     const query = e2.target.value;
     setSearchQuery(query);
@@ -114806,10 +115922,10 @@ var SearchBar = ({
     "error",
     "bypassed"
   ];
-  return /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "bg-[--background-primary] p-4 border border-[--background-modifier-border] space-y-3", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "pl-10 relative flex-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.Search, { className: "w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-[--text-muted]" }),
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "bg-[--background-primary] p-4 border border-[--background-modifier-border] space-y-3", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "pl-10 relative flex-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.Search, { className: "w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-[--text-muted]" }),
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
         "input",
         {
           type: "text",
@@ -114820,38 +115936,38 @@ var SearchBar = ({
         }
       )
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex items-center gap-3", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "relative w-[200px]", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_lucide_react5.Filter, { className: "w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-[--text-muted]" }),
-        /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex items-center gap-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "relative w-[200px]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.Filter, { className: "w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-[--text-muted]" }),
+        /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
           "select",
           {
             value: selectedStatus,
             onChange: (e2) => onStatusFilter(e2.target.value),
             className: "w-full pl-9 pr-4 h-min py-2 bg-[--background-secondary] rounded border border-[--background-modifier-border] text-sm appearance-none",
-            children: statuses.map((status) => /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("option", { value: status, children: status ? status.charAt(0).toUpperCase() + status.slice(1) : "All Status" }, status))
+            children: statuses.map((status) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("option", { value: status, children: status ? status.charAt(0).toUpperCase() + status.slice(1) : "All Status" }, status))
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(DateFilterSelect, { value: dateFilter, onChange: onDateFilter })
+      /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(DateFilterSelect, { value: dateFilter, onChange: onDateFilter })
     ] })
   ] });
 };
 var InboxLogs = () => {
   const plugin = usePlugin();
-  const [records, setRecords] = React25.useState([]);
-  const [filteredRecords, setFilteredRecords] = React25.useState(
+  const [records, setRecords] = React26.useState([]);
+  const [filteredRecords, setFilteredRecords] = React26.useState(
     []
   );
-  const [analytics, setAnalytics] = React25.useState();
-  const [searchQuery, setSearchQuery] = React25.useState("");
-  const [statusFilter, setStatusFilter] = React25.useState("");
-  const [dateFilter, setDateFilter] = React25.useState({
+  const [analytics, setAnalytics] = React26.useState();
+  const [searchQuery, setSearchQuery] = React26.useState("");
+  const [statusFilter, setStatusFilter] = React26.useState("");
+  const [dateFilter, setDateFilter] = React26.useState({
     range: "today",
     startDate: (0, import_moment2.default)().format("YYYY-MM-DD"),
     endDate: (0, import_moment2.default)().format("YYYY-MM-DD")
   });
-  const filterRecords = React25.useCallback(
+  const filterRecords = React26.useCallback(
     (records2) => {
       return records2.filter((record) => {
         const matchesSearch = searchQuery.toLowerCase().split(" ").every(
@@ -114887,10 +116003,10 @@ var InboxLogs = () => {
       return newRecord.status !== oldRecord.status || newRecord.tags.length !== oldRecord.tags.length || Object.keys(newRecord.logs).length !== Object.keys(oldRecord.logs).length || newRecord.newName !== oldRecord.newName || newRecord.newPath !== oldRecord.newPath;
     });
   };
-  React25.useEffect(() => {
+  React26.useEffect(() => {
     setFilteredRecords(filterRecords(records));
   }, [filterRecords, records]);
-  React25.useEffect(() => {
+  React26.useEffect(() => {
     const fetchData = () => {
       const newFiles = plugin.inbox.getAllFiles();
       const newAnalytics = plugin.inbox.getAnalytics();
@@ -114914,9 +116030,10 @@ var InboxLogs = () => {
   const handleDateFilter = (filter2) => {
     setDateFilter(filter2);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex flex-col h-full", children: [
-    analytics && /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "border-b border-[--background-modifier-border]", children: /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(InboxAnalytics, { analytics }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "border-b border-[--background-modifier-border] px-3 py-2", children: /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex flex-col h-full", children: [
+    analytics && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "border-b border-[--background-modifier-border]", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(InboxAnalytics, { analytics }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(RecentIssuesPanel, { plugin }),
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "border-b border-[--background-modifier-border] px-3 py-2", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
       SearchBar,
       {
         onSearch: handleSearch,
@@ -114926,22 +116043,22 @@ var InboxLogs = () => {
         dateFilter
       }
     ) }),
-    dateFilter.range !== "all" && /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "text-xs text-[--text-muted] px-3 py-1 border-b border-[--background-modifier-border]", children: dateFilter.range === "custom" ? /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(import_jsx_runtime38.Fragment, { children: (0, import_moment2.default)(dateFilter.startDate).format("MMM D, YYYY") }) : /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)(import_jsx_runtime38.Fragment, { children: [
+    dateFilter.range !== "all" && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "text-xs text-[--text-muted] px-3 py-1 border-b border-[--background-modifier-border]", children: dateFilter.range === "custom" ? /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_jsx_runtime39.Fragment, { children: (0, import_moment2.default)(dateFilter.startDate).format("MMM D, YYYY") }) : /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(import_jsx_runtime39.Fragment, { children: [
       (0, import_moment2.default)(dateFilter.startDate).format("MMM D"),
       dateFilter.startDate !== dateFilter.endDate && ` - ${(0, import_moment2.default)(dateFilter.endDate).format("MMM D")}`
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime38.jsxs)("div", { className: "flex-1 overflow-y-auto", children: [
-      filteredRecords.map((record) => /* @__PURE__ */ (0, import_jsx_runtime38.jsx)(FileCard, { record }, record.id)),
-      filteredRecords.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime38.jsx)("div", { className: "flex items-center justify-center h-32 text-xs text-[--text-muted]", children: records.length === 0 ? "No records found" : "No matching records" })
+    /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)("div", { className: "flex-1 overflow-y-auto", children: [
+      filteredRecords.map((record) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(FileCard, { record }, record.id)),
+      filteredRecords.length === 0 && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "flex items-center justify-center h-32 text-xs text-[--text-muted]", children: records.length === 0 ? "No records found" : "No matching records" })
     ] })
   ] });
 };
 
 // views/assistant/ai-chat/container.tsx
-var import_react91 = __toESM(require_react());
+var import_react95 = __toESM(require_react());
 
 // views/assistant/ai-chat/chat.tsx
-var import_react89 = __toESM(require_react());
+var import_react92 = __toESM(require_react());
 
 // ../../node_modules/@ai-sdk/provider/dist/index.mjs
 var marker = "vercel.ai.error";
@@ -115162,7 +116279,42 @@ var name13 = "AI_UnsupportedFunctionalityError";
 var marker14 = `vercel.ai.error.${name13}`;
 var symbol14 = Symbol.for(marker14);
 var _a14;
+var UnsupportedFunctionalityError = class extends AISDKError {
+  constructor({
+    functionality,
+    message = `'${functionality}' functionality not supported.`
+  }) {
+    super({ name: name13, message });
+    this[_a14] = true;
+    this.functionality = functionality;
+  }
+  static isInstance(error) {
+    return AISDKError.hasMarker(error, marker14);
+  }
+};
 _a14 = symbol14;
+function isJSONValue(value) {
+  if (value === null || typeof value === "string" || typeof value === "number" || typeof value === "boolean") {
+    return true;
+  }
+  if (Array.isArray(value)) {
+    return value.every(isJSONValue);
+  }
+  if (typeof value === "object") {
+    return Object.entries(value).every(
+      ([key, val]) => typeof key === "string" && isJSONValue(val)
+    );
+  }
+  return false;
+}
+function isJSONArray(value) {
+  return Array.isArray(value) && value.every(isJSONValue);
+}
+function isJSONObject(value) {
+  return value != null && typeof value === "object" && Object.entries(value).every(
+    ([key, val]) => typeof key === "string" && isJSONValue(val)
+  );
+}
 
 // ../../node_modules/nanoid/non-secure/index.js
 var customAlphabet = (alphabet, defaultSize = 21) => {
@@ -119231,8 +120383,8 @@ function useChat({
 }
 
 // views/assistant/ai-chat/chat.tsx
-var import_obsidian45 = require("obsidian");
-var import_lucide_react15 = __toESM(require_lucide_react());
+var import_obsidian51 = require("obsidian");
+var import_lucide_react16 = __toESM(require_lucide_react());
 
 // ../../node_modules/orderedmap/dist/index.js
 function OrderedMap(content3) {
@@ -119408,7 +120560,7 @@ function findDiffEnd(a, b, posA, posB) {
     posB -= size;
   }
 }
-var Fragment9 = class _Fragment {
+var Fragment10 = class _Fragment {
   /**
   @internal
   */
@@ -119700,7 +120852,7 @@ var Fragment9 = class _Fragment {
     throw new RangeError("Can not convert " + nodes + " to a Fragment" + (nodes.nodesBetween ? " (looks like multiple versions of prosemirror-model were loaded)" : ""));
   }
 };
-Fragment9.empty = new Fragment9([], 0);
+Fragment10.empty = new Fragment10([], 0);
 var found = { index: 0, offset: 0 };
 function retIndex(index2, offset) {
   found.index = index2;
@@ -119925,7 +121077,7 @@ var Slice = class _Slice {
     let openStart = json.openStart || 0, openEnd = json.openEnd || 0;
     if (typeof openStart != "number" || typeof openEnd != "number")
       throw new RangeError("Invalid input for Slice.fromJSON");
-    return new _Slice(Fragment9.fromJSON(schema, json.content), openStart, openEnd);
+    return new _Slice(Fragment10.fromJSON(schema, json.content), openStart, openEnd);
   }
   /**
   Create a slice from a fragment by taking the maximum possible
@@ -119940,7 +121092,7 @@ var Slice = class _Slice {
     return new _Slice(fragment, openStart, openEnd);
   }
 };
-Slice.empty = new Slice(Fragment9.empty, 0, 0);
+Slice.empty = new Slice(Fragment10.empty, 0, 0);
 function removeRange(content3, from2, to) {
   let { index: index2, offset } = content3.findIndex(from2), child = content3.maybeChild(index2);
   let { index: indexTo, offset: offsetTo } = content3.findIndex(to);
@@ -120038,7 +121190,7 @@ function replaceThreeWay($from, $start, $end, $to, depth) {
       addNode(close(openEnd, replaceTwoWay($end, $to, depth + 1)), content3);
   }
   addRange($to, null, depth, content3);
-  return new Fragment9(content3);
+  return new Fragment10(content3);
 }
 function replaceTwoWay($from, $to, depth) {
   let content3 = [];
@@ -120048,13 +121200,13 @@ function replaceTwoWay($from, $to, depth) {
     addNode(close(type, replaceTwoWay($from, $to, depth + 1)), content3);
   }
   addRange($to, null, depth, content3);
-  return new Fragment9(content3);
+  return new Fragment10(content3);
 }
 function prepareSliceForReplace(slice2, $along) {
   let extra = $along.depth - slice2.openStart, parent = $along.node(extra);
   let node2 = parent.copy(slice2.content);
   for (let i = extra - 1; i >= 0; i--)
-    node2 = $along.node(i).copy(Fragment9.from(node2));
+    node2 = $along.node(i).copy(Fragment10.from(node2));
   return {
     start: node2.resolveNoCache(slice2.openStart + extra),
     end: node2.resolveNoCache(node2.content.size - slice2.openEnd - extra)
@@ -120393,7 +121545,7 @@ var Node = class _Node {
     this.type = type;
     this.attrs = attrs;
     this.marks = marks;
-    this.content = content3 || Fragment9.empty;
+    this.content = content3 || Fragment10.empty;
   }
   /**
   The array of this node's child nodes.
@@ -120698,7 +121850,7 @@ var Node = class _Node {
   can optionally pass `start` and `end` indices into the
   replacement fragment.
   */
-  canReplace(from2, to, replacement = Fragment9.empty, start2 = 0, end = replacement.childCount) {
+  canReplace(from2, to, replacement = Fragment10.empty, start2 = 0, end = replacement.childCount) {
     let one3 = this.contentMatchAt(from2).matchFragment(replacement, start2, end);
     let two = one3 && one3.matchFragment(this.content, to);
     if (!two || !two.validEnd)
@@ -120780,7 +121932,7 @@ var Node = class _Node {
         throw new RangeError("Invalid text node in JSON");
       return schema.text(json.text, marks);
     }
-    let content3 = Fragment9.fromJSON(schema, json.content);
+    let content3 = Fragment10.fromJSON(schema, json.content);
     let node2 = schema.nodeType(json.type).create(json.attrs, content3, marks);
     node2.type.checkAttrs(node2.attrs);
     return node2;
@@ -120922,7 +122074,7 @@ var ContentMatch = class _ContentMatch {
     function search3(match, types2) {
       let finished = match.matchFragment(after, startIndex);
       if (finished && (!toEnd || finished.validEnd))
-        return Fragment9.from(types2.map((tp) => tp.createAndFill()));
+        return Fragment10.from(types2.map((tp) => tp.createAndFill()));
       for (let i = 0; i < match.next.length; i++) {
         let { type, next } = match.next[i];
         if (!(type.isText || type.hasRequiredAttrs()) && seen.indexOf(next) == -1) {
@@ -121374,7 +122526,7 @@ var NodeType = class _NodeType {
   create(attrs = null, content3, marks) {
     if (this.isText)
       throw new Error("NodeType.create can't construct text nodes");
-    return new Node(this, this.computeAttrs(attrs), Fragment9.from(content3), Mark.setFrom(marks));
+    return new Node(this, this.computeAttrs(attrs), Fragment10.from(content3), Mark.setFrom(marks));
   }
   /**
   Like [`create`](https://prosemirror.net/docs/ref/#model.NodeType.create), but check the given content
@@ -121382,7 +122534,7 @@ var NodeType = class _NodeType {
   if it doesn't match.
   */
   createChecked(attrs = null, content3, marks) {
-    content3 = Fragment9.from(content3);
+    content3 = Fragment10.from(content3);
     this.checkContent(content3);
     return new Node(this, this.computeAttrs(attrs), content3, Mark.setFrom(marks));
   }
@@ -121396,7 +122548,7 @@ var NodeType = class _NodeType {
   */
   createAndFill(attrs = null, content3, marks) {
     attrs = this.computeAttrs(attrs);
-    content3 = Fragment9.from(content3);
+    content3 = Fragment10.from(content3);
     if (content3.size) {
       let before = this.contentMatch.fillBefore(content3);
       if (!before)
@@ -121404,7 +122556,7 @@ var NodeType = class _NodeType {
       content3 = before.append(content3);
     }
     let matched = this.contentMatch.matchFragment(content3);
-    let after = matched && matched.fillBefore(Fragment9.empty, true);
+    let after = matched && matched.fillBefore(Fragment10.empty, true);
     if (!after)
       return null;
     return new Node(this, attrs, content3.append(after), Mark.setFrom(marks));
@@ -121882,7 +123034,7 @@ var NodeContext = class {
     if (!this.match) {
       if (!this.type)
         return [];
-      let fill = this.type.contentMatch.fillBefore(Fragment9.from(node2));
+      let fill = this.type.contentMatch.fillBefore(Fragment10.from(node2));
       if (fill) {
         this.match = this.type.contentMatch.matchFragment(fill);
       } else {
@@ -121908,9 +123060,9 @@ var NodeContext = class {
           this.content[this.content.length - 1] = text6.withText(text6.text.slice(0, text6.text.length - m[0].length));
       }
     }
-    let content3 = Fragment9.from(this.content);
+    let content3 = Fragment10.from(this.content);
     if (!openEnd && this.match)
-      content3 = content3.append(this.match.fillBefore(Fragment9.empty, true));
+      content3 = content3.append(this.match.fillBefore(Fragment10.empty, true));
     return this.type ? this.type.create(this.attrs, content3, this.marks) : content3;
   }
   inlineContext(node2) {
@@ -122921,7 +124073,7 @@ function mapFragment(fragment, f, parent) {
       child = f(child, parent, i);
     mapped.push(child);
   }
-  return Fragment9.fromArray(mapped);
+  return Fragment10.fromArray(mapped);
 }
 var AddMarkStep = class _AddMarkStep extends Step {
   /**
@@ -123038,7 +124190,7 @@ var AddNodeMarkStep = class _AddNodeMarkStep extends Step {
     if (!node2)
       return StepResult.fail("No node at mark step's position");
     let updated = node2.type.create(node2.attrs, null, this.mark.addToSet(node2.marks));
-    return StepResult.fromReplace(doc3, this.pos, this.pos + 1, new Slice(Fragment9.from(updated), 0, node2.isLeaf ? 0 : 1));
+    return StepResult.fromReplace(doc3, this.pos, this.pos + 1, new Slice(Fragment10.from(updated), 0, node2.isLeaf ? 0 : 1));
   }
   invert(doc3) {
     let node2 = doc3.nodeAt(this.pos);
@@ -123084,7 +124236,7 @@ var RemoveNodeMarkStep = class _RemoveNodeMarkStep extends Step {
     if (!node2)
       return StepResult.fail("No node at mark step's position");
     let updated = node2.type.create(node2.attrs, null, this.mark.removeFromSet(node2.marks));
-    return StepResult.fromReplace(doc3, this.pos, this.pos + 1, new Slice(Fragment9.from(updated), 0, node2.isLeaf ? 0 : 1));
+    return StepResult.fromReplace(doc3, this.pos, this.pos + 1, new Slice(Fragment10.from(updated), 0, node2.isLeaf ? 0 : 1));
   }
   invert(doc3) {
     let node2 = doc3.nodeAt(this.pos);
@@ -123349,7 +124501,7 @@ function clearIncompatible(tr, pos, parentType, match = parentType.contentMatch,
         let m, newline = /\r?\n|\r/g, slice2;
         while (m = newline.exec(child.text)) {
           if (!slice2)
-            slice2 = new Slice(Fragment9.from(parentType.schema.text(" ", parentType.allowedMarks(child.marks))), 0, 0);
+            slice2 = new Slice(Fragment10.from(parentType.schema.text(" ", parentType.allowedMarks(child.marks))), 0, 0);
           replSteps.push(new ReplaceStep(cur + m.index, cur + m.index + m[0].length, slice2));
         }
       }
@@ -123357,7 +124509,7 @@ function clearIncompatible(tr, pos, parentType, match = parentType.contentMatch,
     cur = end;
   }
   if (!match.validEnd) {
-    let fill = match.fillBefore(Fragment9.empty, true);
+    let fill = match.fillBefore(Fragment10.empty, true);
     tr.replace(cur, cur, new Slice(fill, 0, 0));
   }
   for (let i = replSteps.length - 1; i >= 0; i--)
@@ -123383,20 +124535,20 @@ function lift(tr, range, target) {
   let { $from, $to, depth } = range;
   let gapStart = $from.before(depth + 1), gapEnd = $to.after(depth + 1);
   let start2 = gapStart, end = gapEnd;
-  let before = Fragment9.empty, openStart = 0;
+  let before = Fragment10.empty, openStart = 0;
   for (let d = depth, splitting = false; d > target; d--)
     if (splitting || $from.index(d) > 0) {
       splitting = true;
-      before = Fragment9.from($from.node(d).copy(before));
+      before = Fragment10.from($from.node(d).copy(before));
       openStart++;
     } else {
       start2--;
     }
-  let after = Fragment9.empty, openEnd = 0;
+  let after = Fragment10.empty, openEnd = 0;
   for (let d = depth, splitting = false; d > target; d--)
     if (splitting || $to.after(d + 1) < $to.end(d)) {
       splitting = true;
-      after = Fragment9.from($to.node(d).copy(after));
+      after = Fragment10.from($to.node(d).copy(after));
       openEnd++;
     } else {
       end++;
@@ -123436,14 +124588,14 @@ function findWrappingInside(range, type) {
   return inside;
 }
 function wrap(tr, range, wrappers) {
-  let content3 = Fragment9.empty;
+  let content3 = Fragment10.empty;
   for (let i = wrappers.length - 1; i >= 0; i--) {
     if (content3.size) {
       let match = wrappers[i].type.contentMatch.matchFragment(content3);
       if (!match || !match.validEnd)
         throw new RangeError("Wrapper type given to Transform.wrap does not form valid content of its parent wrapper");
     }
-    content3 = Fragment9.from(wrappers[i].type.create(wrappers[i].attrs, content3));
+    content3 = Fragment10.from(wrappers[i].type.create(wrappers[i].attrs, content3));
   }
   let start2 = range.start, end = range.end;
   tr.step(new ReplaceAroundStep(start2, end, start2, end, new Slice(content3, 0, 0), wrappers.length, true));
@@ -123468,7 +124620,7 @@ function setBlockType(tr, from2, to, type, attrs) {
       clearIncompatible(tr, tr.mapping.slice(mapFrom).map(pos, 1), type, void 0, convertNewlines === null);
       let mapping = tr.mapping.slice(mapFrom);
       let startM = mapping.map(pos, 1), endM = mapping.map(pos + node2.nodeSize, 1);
-      tr.step(new ReplaceAroundStep(startM, endM, startM + 1, endM - 1, new Slice(Fragment9.from(type.create(attrsHere, null, node2.marks)), 0, 0), 1, true));
+      tr.step(new ReplaceAroundStep(startM, endM, startM + 1, endM - 1, new Slice(Fragment10.from(type.create(attrsHere, null, node2.marks)), 0, 0), 1, true));
       if (convertNewlines === true)
         replaceNewlines(tr, node2, pos, mapFrom);
       return false;
@@ -123509,7 +124661,7 @@ function setNodeMarkup(tr, pos, type, attrs, marks) {
     return tr.replaceWith(pos, pos + node2.nodeSize, newNode);
   if (!type.validContent(node2.content))
     throw new RangeError("Invalid content for node type " + type.name);
-  tr.step(new ReplaceAroundStep(pos, pos + node2.nodeSize, pos + 1, pos + node2.nodeSize - 1, new Slice(Fragment9.from(newNode), 0, 0), 1, true));
+  tr.step(new ReplaceAroundStep(pos, pos + node2.nodeSize, pos + 1, pos + node2.nodeSize - 1, new Slice(Fragment10.from(newNode), 0, 0), 1, true));
 }
 function canSplit(doc3, pos, depth = 1, typesAfter) {
   let $pos = doc3.resolve(pos), base2 = $pos.depth - depth;
@@ -123533,11 +124685,11 @@ function canSplit(doc3, pos, depth = 1, typesAfter) {
   return $pos.node(base2).canReplaceWith(index2, index2, baseType ? baseType.type : $pos.node(base2 + 1).type);
 }
 function split(tr, pos, depth = 1, typesAfter) {
-  let $pos = tr.doc.resolve(pos), before = Fragment9.empty, after = Fragment9.empty;
+  let $pos = tr.doc.resolve(pos), before = Fragment10.empty, after = Fragment10.empty;
   for (let d = $pos.depth, e2 = $pos.depth - depth, i = depth - 1; d > e2; d--, i--) {
-    before = Fragment9.from($pos.node(d).copy(before));
+    before = Fragment10.from($pos.node(d).copy(before));
     let typeAfter = typesAfter && typesAfter[i];
-    after = Fragment9.from(typeAfter ? typeAfter.type.create(typeAfter.attrs, after) : $pos.node(d).copy(after));
+    after = Fragment10.from(typeAfter ? typeAfter.type.create(typeAfter.attrs, after) : $pos.node(d).copy(after));
   }
   tr.step(new ReplaceStep(pos, pos, new Slice(before.append(after), depth, depth), true));
 }
@@ -123676,7 +124828,7 @@ var Fitter = class {
     this.$to = $to;
     this.unplaced = unplaced;
     this.frontier = [];
-    this.placed = Fragment9.empty;
+    this.placed = Fragment10.empty;
     for (let i = 0; i <= $from.depth; i++) {
       let node2 = $from.node(i);
       this.frontier.push({
@@ -123685,7 +124837,7 @@ var Fitter = class {
       });
     }
     for (let i = $from.depth; i > 0; i--)
-      this.placed = Fragment9.from($from.node(i).copy(this.placed));
+      this.placed = Fragment10.from($from.node(i).copy(this.placed));
   }
   get depth() {
     return this.frontier.length - 1;
@@ -123742,7 +124894,7 @@ var Fitter = class {
         let first2 = fragment.firstChild;
         for (let frontierDepth = this.depth; frontierDepth >= 0; frontierDepth--) {
           let { type, match } = this.frontier[frontierDepth], wrap4, inject = null;
-          if (pass == 1 && (first2 ? match.matchType(first2.type) || (inject = match.fillBefore(Fragment9.from(first2), false)) : parent && type.compatibleContent(parent.type)))
+          if (pass == 1 && (first2 ? match.matchType(first2.type) || (inject = match.fillBefore(Fragment10.from(first2), false)) : parent && type.compatibleContent(parent.type)))
             return { sliceDepth, frontierDepth, parent, inject };
           else if (pass == 2 && first2 && (wrap4 = match.findWrapping(first2.type)))
             return { sliceDepth, frontierDepth, parent, wrap: wrap4 };
@@ -123802,7 +124954,7 @@ var Fitter = class {
     let toEnd = taken == fragment.childCount;
     if (!toEnd)
       openEndCount = -1;
-    this.placed = addToFragment(this.placed, frontierDepth, Fragment9.from(add));
+    this.placed = addToFragment(this.placed, frontierDepth, Fragment10.from(add));
     this.frontier[frontierDepth].match = match;
     if (toEnd && openEndCount < 0 && parent && parent.type == this.frontier[this.depth].type && this.frontier.length > 1)
       this.closeFrontierNode();
@@ -123858,12 +125010,12 @@ var Fitter = class {
   openFrontierNode(type, attrs = null, content3) {
     let top = this.frontier[this.depth];
     top.match = top.match.matchType(type);
-    this.placed = addToFragment(this.placed, this.depth, Fragment9.from(type.create(attrs, content3)));
+    this.placed = addToFragment(this.placed, this.depth, Fragment10.from(type.create(attrs, content3)));
     this.frontier.push({ type, match: type.contentMatch });
   }
   closeFrontierNode() {
     let open = this.frontier.pop();
-    let add = open.match.fillBefore(Fragment9.empty, true);
+    let add = open.match.fillBefore(Fragment10.empty, true);
     if (add.childCount)
       this.placed = addToFragment(this.placed, this.frontier.length, add);
   }
@@ -123892,7 +125044,7 @@ function closeNodeStart(node2, openStart, openEnd) {
   if (openStart > 0) {
     frag = node2.type.contentMatch.fillBefore(frag).append(frag);
     if (openEnd <= 0)
-      frag = frag.append(node2.type.contentMatch.matchFragment(frag).fillBefore(Fragment9.empty, true));
+      frag = frag.append(node2.type.contentMatch.matchFragment(frag).fillBefore(Fragment10.empty, true));
   }
   return node2.copy(frag);
 }
@@ -123984,7 +125136,7 @@ function closeFragment(fragment, depth, oldOpen, newOpen, parent) {
   if (depth > newOpen) {
     let match = parent.contentMatchAt(0);
     let start2 = match.fillBefore(fragment).append(fragment);
-    fragment = start2.append(match.matchFragment(start2).fillBefore(Fragment9.empty, true));
+    fragment = start2.append(match.matchFragment(start2).fillBefore(Fragment10.empty, true));
   }
   return fragment;
 }
@@ -123994,7 +125146,7 @@ function replaceRangeWith(tr, from2, to, node2) {
     if (point4 != null)
       from2 = to = point4;
   }
-  tr.replaceRange(from2, to, new Slice(Fragment9.from(node2), 0, 0));
+  tr.replaceRange(from2, to, new Slice(Fragment10.from(node2), 0, 0));
 }
 function deleteRange(tr, from2, to) {
   let $from = tr.doc.resolve(from2), $to = tr.doc.resolve(to);
@@ -124042,7 +125194,7 @@ var AttrStep = class _AttrStep extends Step {
       attrs[name16] = node2.attrs[name16];
     attrs[this.attr] = this.value;
     let updated = node2.type.create(attrs, null, node2.marks);
-    return StepResult.fromReplace(doc3, this.pos, this.pos + 1, new Slice(Fragment9.from(updated), 0, node2.isLeaf ? 0 : 1));
+    return StepResult.fromReplace(doc3, this.pos, this.pos + 1, new Slice(Fragment10.from(updated), 0, node2.isLeaf ? 0 : 1));
   }
   getMap() {
     return StepMap.empty;
@@ -124177,7 +125329,7 @@ var Transform = class {
   fragment, node, or array of nodes.
   */
   replaceWith(from2, to, content3) {
-    return this.replace(from2, to, new Slice(Fragment9.from(content3), 0, 0));
+    return this.replace(from2, to, new Slice(Fragment10.from(content3), 0, 0));
   }
   /**
   Delete the content between the given positions.
@@ -124673,7 +125825,7 @@ var NodeSelection = class _NodeSelection extends Selection {
     return new _NodeSelection($pos);
   }
   content() {
-    return new Slice(Fragment9.from(this.node), 0, 0);
+    return new Slice(Fragment10.from(this.node), 0, 0);
   }
   eq(other) {
     return other instanceof _NodeSelection && other.anchor == this.anchor;
@@ -126482,7 +127634,7 @@ var NodeViewDesc = class _NodeViewDesc extends ViewDesc {
         }
       }
       if (!rule.contentElement)
-        rule.getContent = () => Fragment9.empty;
+        rule.getContent = () => Fragment10.empty;
     }
     return rule;
   }
@@ -127797,7 +128949,7 @@ function parseFromClipboard(view2, text6, html4, plainText, $context) {
       text6 = f(text6, inCode || plainText, view2);
     });
     if (inCode)
-      return text6 ? new Slice(Fragment9.from(view2.state.schema.text(text6.replace(/\r\n?/g, "\n"))), 0, 0) : Slice.empty;
+      return text6 ? new Slice(Fragment10.from(view2.state.schema.text(text6.replace(/\r\n?/g, "\n"))), 0, 0) : Slice.empty;
     let parsed = view2.someProp("clipboardTextParser", (f) => f(text6, $context, plainText, view2));
     if (parsed) {
       slice2 = parsed;
@@ -127886,13 +129038,13 @@ function normalizeSiblings(fragment, $context) {
       }
     });
     if (result)
-      return Fragment9.from(result);
+      return Fragment10.from(result);
   }
   return fragment;
 }
 function withWrappers(node2, wrap4, from2 = 0) {
   for (let i = wrap4.length - 1; i >= from2; i--)
-    node2 = wrap4[i].create(null, Fragment9.from(node2));
+    node2 = wrap4[i].create(null, Fragment10.from(node2));
   return node2;
 }
 function addToSibling(wrap4, lastWrap, node2, sibling, depth) {
@@ -127902,14 +129054,14 @@ function addToSibling(wrap4, lastWrap, node2, sibling, depth) {
       return sibling.copy(sibling.content.replaceChild(sibling.childCount - 1, inner));
     let match = sibling.contentMatchAt(sibling.childCount);
     if (match.matchType(depth == wrap4.length - 1 ? node2.type : wrap4[depth + 1]))
-      return sibling.copy(sibling.content.append(Fragment9.from(withWrappers(node2, wrap4, depth + 1))));
+      return sibling.copy(sibling.content.append(Fragment10.from(withWrappers(node2, wrap4, depth + 1))));
   }
 }
 function closeRight(node2, depth) {
   if (depth == 0)
     return node2;
   let fragment = node2.content.replaceChild(node2.childCount - 1, closeRight(node2.lastChild, depth - 1));
-  let fill = node2.contentMatchAt(node2.childCount).fillBefore(Fragment9.empty, true);
+  let fill = node2.contentMatchAt(node2.childCount).fillBefore(Fragment10.empty, true);
   return node2.copy(fragment.append(fill));
 }
 function closeRange(fragment, side, from2, to, depth, openEnd) {
@@ -127919,7 +129071,7 @@ function closeRange(fragment, side, from2, to, depth, openEnd) {
   if (depth < to - 1)
     inner = closeRange(inner, side, from2, to, depth + 1, openEnd);
   if (depth >= from2)
-    inner = side < 0 ? node2.contentMatchAt(0).fillBefore(inner, openEnd <= depth).append(inner) : inner.append(node2.contentMatchAt(node2.childCount).fillBefore(Fragment9.empty, true));
+    inner = side < 0 ? node2.contentMatchAt(0).fillBefore(inner, openEnd <= depth).append(inner) : inner.append(node2.contentMatchAt(node2.childCount).fillBefore(Fragment10.empty, true));
   return fragment.replaceChild(side < 0 ? 0 : fragment.childCount - 1, node2.copy(inner));
 }
 function closeSlice(slice2, openStart, openEnd) {
@@ -127989,7 +129141,7 @@ function addContext(slice2, context) {
     let type = schema.nodes[array[i]];
     if (!type || type.hasRequiredAttrs())
       break;
-    content3 = Fragment9.from(type.create(array[i + 1], content3));
+    content3 = Fragment10.from(type.create(array[i + 1], content3));
     openStart++;
     openEnd++;
   }
@@ -129839,7 +130991,7 @@ function isMarkChange(cur, prev) {
   let updated = [];
   for (let i = 0; i < prev.childCount; i++)
     updated.push(update(prev.child(i)));
-  if (Fragment9.from(updated).eq(cur))
+  if (Fragment10.from(updated).eq(cur))
     return { mark: mark2, type };
 }
 function looksLikeBackspace(old, start2, end, $newStart, $newEnd) {
@@ -131000,10 +132152,10 @@ function deleteBarrier(state, $cut, dispatch, dir) {
   let canDelAfter = !isolated && $cut.parent.canReplace($cut.index(), $cut.index() + 1);
   if (canDelAfter && (conn = (match = before.contentMatchAt(before.childCount)).findWrapping(after.type)) && match.matchType(conn[0] || after.type).validEnd) {
     if (dispatch) {
-      let end = $cut.pos + after.nodeSize, wrap4 = Fragment9.empty;
+      let end = $cut.pos + after.nodeSize, wrap4 = Fragment10.empty;
       for (let i = conn.length - 1; i >= 0; i--)
-        wrap4 = Fragment9.from(conn[i].create(null, wrap4));
-      wrap4 = Fragment9.from(before.copy(wrap4));
+        wrap4 = Fragment10.from(conn[i].create(null, wrap4));
+      wrap4 = Fragment10.from(before.copy(wrap4));
       let tr = state.tr.step(new ReplaceAroundStep($cut.pos - 1, end, $cut.pos, end, new Slice(wrap4, 1, 0), conn.length, true));
       let $joinAt = tr.doc.resolve(end + 2 * conn.length);
       if ($joinAt.nodeAfter && $joinAt.nodeAfter.type == before.type && canJoin(tr.doc, $joinAt.pos))
@@ -131032,9 +132184,9 @@ function deleteBarrier(state, $cut, dispatch, dir) {
       afterDepth++;
     if (at.canReplace(at.childCount, at.childCount, afterText.content)) {
       if (dispatch) {
-        let end = Fragment9.empty;
+        let end = Fragment10.empty;
         for (let i = wrap4.length - 1; i >= 0; i--)
-          end = Fragment9.from(wrap4[i].copy(end));
+          end = Fragment10.from(wrap4[i].copy(end));
         let tr = state.tr.step(new ReplaceAroundStep($cut.pos - wrap4.length, $cut.pos + after.nodeSize, $cut.pos + afterDepth, $cut.pos + after.nodeSize - afterDepth, new Slice(end, wrap4.length, 0), 0, true));
         dispatch(tr.scrollIntoView());
       }
@@ -131171,9 +132323,9 @@ function wrapRangeInList(tr, range, listType, attrs = null) {
   return true;
 }
 function doWrapInList(tr, range, wrappers, joinBefore, listType) {
-  let content3 = Fragment9.empty;
+  let content3 = Fragment10.empty;
   for (let i = wrappers.length - 1; i >= 0; i--)
-    content3 = Fragment9.from(wrappers[i].type.create(wrappers[i].attrs, content3));
+    content3 = Fragment10.from(wrappers[i].type.create(wrappers[i].attrs, content3));
   tr.step(new ReplaceAroundStep(range.start - (joinBefore ? 2 : 0), range.end, range.start, range.end, new Slice(content3, 0, 0), wrappers.length, true));
   let found2 = 0;
   for (let i = 0; i < wrappers.length; i++)
@@ -131207,7 +132359,7 @@ function liftListItem(itemType) {
 function liftToOuterList(state, dispatch, itemType, range) {
   let tr = state.tr, end = range.end, endOfList = range.$to.end(range.depth);
   if (end < endOfList) {
-    tr.step(new ReplaceAroundStep(end - 1, endOfList, end, endOfList, new Slice(Fragment9.from(itemType.create(null, range.parent.copy())), 1, 0), 1, true));
+    tr.step(new ReplaceAroundStep(end - 1, endOfList, end, endOfList, new Slice(Fragment10.from(itemType.create(null, range.parent.copy())), 1, 0), 1, true));
     range = new NodeRange(tr.doc.resolve(range.$from.pos), tr.doc.resolve(endOfList), range.depth);
   }
   const target = liftTarget(range);
@@ -131231,10 +132383,10 @@ function liftOutOfList(state, dispatch, range) {
     return false;
   let atStart = range.startIndex == 0, atEnd = range.endIndex == list3.childCount;
   let parent = $start.node(-1), indexBefore = $start.index(-1);
-  if (!parent.canReplace(indexBefore + (atStart ? 0 : 1), indexBefore + 1, item.content.append(atEnd ? Fragment9.empty : Fragment9.from(list3))))
+  if (!parent.canReplace(indexBefore + (atStart ? 0 : 1), indexBefore + 1, item.content.append(atEnd ? Fragment10.empty : Fragment10.from(list3))))
     return false;
   let start2 = $start.pos, end = start2 + item.nodeSize;
-  tr.step(new ReplaceAroundStep(start2 - (atStart ? 1 : 0), end + (atEnd ? 1 : 0), start2 + 1, end - 1, new Slice((atStart ? Fragment9.empty : Fragment9.from(list3.copy(Fragment9.empty))).append(atEnd ? Fragment9.empty : Fragment9.from(list3.copy(Fragment9.empty))), atStart ? 0 : 1, atEnd ? 0 : 1), atStart ? 0 : 1));
+  tr.step(new ReplaceAroundStep(start2 - (atStart ? 1 : 0), end + (atEnd ? 1 : 0), start2 + 1, end - 1, new Slice((atStart ? Fragment10.empty : Fragment10.from(list3.copy(Fragment10.empty))).append(atEnd ? Fragment10.empty : Fragment10.from(list3.copy(Fragment10.empty))), atStart ? 0 : 1, atEnd ? 0 : 1), atStart ? 0 : 1));
   dispatch(tr.scrollIntoView());
   return true;
 }
@@ -131252,8 +132404,8 @@ function sinkListItem(itemType) {
       return false;
     if (dispatch) {
       let nestedBefore = nodeBefore.lastChild && nodeBefore.lastChild.type == parent.type;
-      let inner = Fragment9.from(nestedBefore ? itemType.create() : null);
-      let slice2 = new Slice(Fragment9.from(itemType.create(null, Fragment9.from(parent.type.create(null, inner)))), nestedBefore ? 3 : 1, 0);
+      let inner = Fragment10.from(nestedBefore ? itemType.create() : null);
+      let slice2 = new Slice(Fragment10.from(itemType.create(null, Fragment10.from(parent.type.create(null, inner)))), nestedBefore ? 3 : 1, 0);
       let before = range.start, after = range.end;
       dispatch(state.tr.step(new ReplaceAroundStep(before - (nestedBefore ? 3 : 1), after, before, after, slice2, 1, true)).scrollIntoView());
     }
@@ -131884,7 +133036,7 @@ function inputRulesPlugin(props) {
             if (typeof text6 === "string") {
               text6 = text6;
             } else {
-              text6 = getHTMLFromFragment(Fragment9.from(text6), state.schema);
+              text6 = getHTMLFromFragment(Fragment10.from(text6), state.schema);
             }
             const { from: from2 } = simulatedInputMeta;
             const to = from2 + text6.length;
@@ -132243,7 +133395,7 @@ function pasteRulesPlugin(props) {
           if (typeof text6 === "string") {
             text6 = text6;
           } else {
-            text6 = getHTMLFromFragment(Fragment9.from(text6), state.schema);
+            text6 = getHTMLFromFragment(Fragment10.from(text6), state.schema);
           }
           const { from: from3 } = simulatedPasteMeta;
           const to2 = from3 + text6.length;
@@ -132944,7 +134096,7 @@ function elementFromString(value) {
   return removeWhitespaces(html4);
 }
 function createNodeFromContent(content3, schema, options) {
-  if (content3 instanceof Node || content3 instanceof Fragment9) {
+  if (content3 instanceof Node || content3 instanceof Fragment10) {
     return content3;
   }
   options = {
@@ -132958,7 +134110,7 @@ function createNodeFromContent(content3, schema, options) {
     try {
       const isArrayContent = Array.isArray(content3) && content3.length > 0;
       if (isArrayContent) {
-        return Fragment9.fromArray(content3.map((item) => schema.nodeFromJSON(item)));
+        return Fragment10.fromArray(content3.map((item) => schema.nodeFromJSON(item)));
       }
       const node2 = schema.nodeFromJSON(content3);
       if (options.errorOnInvalidContent) {
@@ -133089,7 +134241,7 @@ var insertContentAt = (position3, value, options) => ({ tr, dispatch, editor }) 
     if (isOnlyTextContent) {
       if (Array.isArray(value)) {
         newContent = value.map((v) => v.text || "").join("");
-      } else if (value instanceof Fragment9) {
+      } else if (value instanceof Fragment10) {
         let text6 = "";
         value.forEach((node2) => {
           if (node2.text) {
@@ -133816,10 +134968,10 @@ var splitListItem = (typeOrName, overrideAttrs = {}) => ({ tr, state, dispatch, 
       return false;
     }
     if (dispatch) {
-      let wrap4 = Fragment9.empty;
+      let wrap4 = Fragment10.empty;
       const depthBefore = $from.index(-1) ? 1 : $from.index(-2) ? 2 : 3;
       for (let d = $from.depth - depthBefore; d >= $from.depth - 3; d -= 1) {
-        wrap4 = Fragment9.from($from.node(d).copy(wrap4));
+        wrap4 = Fragment10.from($from.node(d).copy(wrap4));
       }
       const depthAfter = $from.indexAfter(-1) < $from.node(-2).childCount ? 1 : $from.indexAfter(-2) < $from.node(-3).childCount ? 2 : 3;
       const newNextTypeAttributes2 = {
@@ -133827,7 +134979,7 @@ var splitListItem = (typeOrName, overrideAttrs = {}) => ({ tr, state, dispatch, 
         ...overrideAttrs
       };
       const nextType2 = ((_a16 = type.contentMatch.defaultType) === null || _a16 === void 0 ? void 0 : _a16.createAndFill(newNextTypeAttributes2)) || void 0;
-      wrap4 = wrap4.append(Fragment9.from(type.createAndFill(null, nextType2) || void 0));
+      wrap4 = wrap4.append(Fragment10.from(type.createAndFill(null, nextType2) || void 0));
       const start2 = $from.before($from.depth - (depthBefore - 1));
       tr.replace(start2, $from.after(-depthAfter), new Slice(wrap4, 4 - depthBefore, 0));
       let sel = -1;
@@ -136811,9 +137963,9 @@ function beforeinput(view2, event) {
   let insert = $from.parent.contentMatchAt($from.index()).findWrapping(view2.state.schema.nodes.text);
   if (!insert)
     return false;
-  let frag = Fragment9.empty;
+  let frag = Fragment10.empty;
   for (let i = insert.length - 1; i >= 0; i--)
-    frag = Fragment9.from(insert[i].createAndFill(null, frag));
+    frag = Fragment10.from(insert[i].createAndFill(null, frag));
   let tr = view2.state.tr.replace($from.pos, $from.pos, new Slice(frag, 0, 0));
   tr.setSelection(TextSelection.near(tr.doc.resolve($from.pos + 1)));
   view2.dispatch(tr);
@@ -138353,22 +139505,32 @@ var Mention = Node2.create({
   }
 });
 
+// views/assistant/ai-chat/mention-with-spaces.ts
+var MentionWithSpaces = Mention.extend({
+  name: "mention",
+  // Override renderText to display label without @ prefix
+  renderText({ node: node2 }) {
+    return node2.attrs.label || node2.attrs.id || "";
+  }
+});
+var mention_with_spaces_default = MentionWithSpaces;
+
 // views/assistant/ai-chat/suggestion.ts
 var import_tippy = __toESM(require_tippy_cjs());
 
 // views/assistant/ai-chat/mentions.tsx
 var import_react44 = __toESM(require_react());
-var import_lucide_react6 = __toESM(require_lucide_react());
-var import_jsx_runtime39 = __toESM(require_jsx_runtime());
+var import_lucide_react7 = __toESM(require_lucide_react());
+var import_jsx_runtime40 = __toESM(require_jsx_runtime());
 var ItemIcon = ({ type }) => {
   const className = "w-4 h-4";
   switch (type) {
     case "file":
-      return /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.FileText, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(import_lucide_react7.FileText, { className });
     case "tag":
-      return /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.Hash, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(import_lucide_react7.Hash, { className });
     case "folder":
-      return /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(import_lucide_react6.Folder, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(import_lucide_react7.Folder, { className });
     default:
       return null;
   }
@@ -138414,26 +139576,26 @@ var Mentions = (0, import_react44.forwardRef)((props, ref) => {
   }));
   return props.items.length ? (
     // do not indent list
-    /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("ul", { className: "max-h-[300px] overflow-y-auto bg-[--background-secondary] list-none p-0", children: props.items.map((item, index2) => /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("ul", { className: "max-h-[300px] overflow-y-auto bg-[--background-secondary] list-none p-0", children: props.items.map((item, index2) => /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(
       "li",
       {
         className: "list-none",
-        children: /* @__PURE__ */ (0, import_jsx_runtime39.jsxs)(
+        children: /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(
           "button",
           {
             className: `w-full text-left flex items-center gap-2 hover:bg-[--background-modifier-active-hover] ${index2 === selectedIndex ? "bg-[--background-modifier-active-hover] text-[--text-accent]" : "text-[--text-normal]"}`,
             onClick: () => selectItem(index2),
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-[--text-muted] flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)(ItemIcon, { type: item.type }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "flex-grow min-w-0", children: /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "font-medium truncate", children: item.title }) }),
-              item.type && /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("span", { className: "text-xs text-[--text-muted] bg-[--background-secondary] px-1.5 py-0.5 rounded-full flex-shrink-0", children: item.type })
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { className: "text-[--text-muted] flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(ItemIcon, { type: item.type }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "flex-grow min-w-0", children: /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "font-medium truncate", children: item.title }) }),
+              item.type && /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { className: "text-xs text-[--text-muted] bg-[--background-secondary] px-1.5 py-0.5 rounded-full flex-shrink-0", children: item.type })
             ]
           }
         )
       },
       item.path || item.title
     )) })
-  ) : /* @__PURE__ */ (0, import_jsx_runtime39.jsx)("div", { className: "px-4 py-3 text-sm text-[--text-muted] text-center", children: "No matching items found" });
+  ) : /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "px-4 py-3 text-sm text-[--text-muted] text-center", children: "No matching items found" });
 });
 var mentions_default = Mentions;
 
@@ -139762,34 +140924,61 @@ var suggestion = {
     const allFiles = editor.storage.mention.files || [];
     const allTags = editor.storage.mention.tags || [];
     const allFolders = editor.storage.mention.folders || [];
-    if (query.length === 0) {
-      return [
-        ...allFiles.slice(0, 5),
-        ...allTags.slice(0, 3),
-        ...allFolders.slice(0, 2)
-      ];
+    let searchQuery = query;
+    if (editor?.storage?.mention?.fullQuery) {
+      searchQuery = editor.storage.mention.fullQuery;
+    } else {
+      searchQuery = query.replace(/_/g, " ");
     }
-    const fuse = new Fuse([
-      ...allFiles,
-      ...allTags.slice(0, 3),
-      ...allFolders
-    ], {
-      keys: ["title"],
-      threshold: 0.3
+    const allItems = [...allFiles, ...allTags.slice(0, 3), ...allFolders];
+    const itemsWithNormalized = allItems.map((item) => ({
+      ...item,
+      titleNormalized: item.title?.replace(/\s+/g, "") || ""
+    }));
+    const queryWithoutSpaces = searchQuery.replace(/\s+/g, "");
+    const searchQueries = searchQuery.includes(" ") ? [searchQuery, queryWithoutSpaces] : [searchQuery];
+    const fuse = new Fuse(itemsWithNormalized, {
+      keys: [
+        { name: "title", weight: 1 },
+        { name: "titleNormalized", weight: 0.8 }
+        // Lower weight for normalized matches
+      ],
+      threshold: 0.4,
+      // Slightly more lenient threshold to handle partial matches
+      includeScore: true
     });
-    return fuse.search(query).slice(0, 10).map((result) => result.item);
+    const allResults = /* @__PURE__ */ new Map();
+    searchQueries.forEach((q) => {
+      fuse.search(q).forEach((result) => {
+        const item = result.item;
+        const key = item.path || item.title || item.id;
+        const cleanItem = { ...item };
+        delete cleanItem.titleNormalized;
+        const existing = allResults.get(key);
+        if (!existing || existing.score > result.score) {
+          allResults.set(key, {
+            item: cleanItem,
+            score: result.score || 0
+          });
+        }
+      });
+    });
+    return Array.from(allResults.values()).sort((a, b) => a.score - b.score).slice(0, 10).map((result) => result.item);
   },
   render: () => {
     let reactRenderer;
     let popup;
+    let tiptapEditorInstance;
     return {
       onStart: (props) => {
         if (!props.clientRect) {
           return;
         }
+        tiptapEditorInstance = props.editor;
         reactRenderer = new ReactRenderer(mentions_default, {
           props,
           editor: props.editor
+          // This is the Tiptap Editor instance in items(), but ProseMirror view in onKeyDown
         });
         popup = (0, import_tippy.default)("body", {
           getReferenceClientRect: props.clientRect,
@@ -139802,6 +140991,29 @@ var suggestion = {
         });
       },
       onUpdate(props) {
+        if (props.range && props.editor) {
+          try {
+            const { state } = props.editor;
+            const { from: from2 } = props.range;
+            const textAfterTrigger = state.doc.textBetween(
+              from2,
+              state.selection.$from.pos
+            );
+            const searchQuery = textAfterTrigger.replace(/_/g, " ");
+            if (searchQuery !== props.query) {
+              if (!props.editor.storage.mention) {
+                props.editor.storage.mention = {};
+              }
+              props.editor.storage.mention.fullQuery = searchQuery;
+              props.editor.storage.mention.visualQuery = textAfterTrigger;
+              props.query = searchQuery;
+            } else if (props.editor.storage.mention) {
+              props.editor.storage.mention.fullQuery = null;
+              props.editor.storage.mention.visualQuery = null;
+            }
+          } catch (error) {
+          }
+        }
         reactRenderer.updateProps(props);
         if (!props.clientRect) {
           return;
@@ -139811,8 +141023,130 @@ var suggestion = {
         });
       },
       onKeyDown(props) {
+        console.log(
+          "[Mention] onKeyDown called, key:",
+          props.event.key,
+          "code:",
+          props.event.code
+        );
         if (props.event.key === "Escape") {
           popup[0].hide();
+          return true;
+        }
+        if (props.event.key === " " || props.event.code === "Space") {
+          console.log(
+            "[Mention] Space detected, preventing default and inserting underscore"
+          );
+          props.event.preventDefault();
+          props.event.stopPropagation();
+          props.event.stopImmediatePropagation();
+          const tiptapEditor = props.editor || tiptapEditorInstance;
+          if (!tiptapEditor) {
+            console.warn("[Mention] No Tiptap editor available");
+            return false;
+          }
+          let inserted = false;
+          if (tiptapEditor.chain) {
+            try {
+              console.log(
+                "[Mention] Attempting to insert underscore via Tiptap chain API"
+              );
+              const result = tiptapEditor.chain().focus().insertContent("_").run();
+              if (result !== false) {
+                inserted = true;
+                console.log("[Mention] \u2705 Underscore inserted via chain API");
+              } else {
+                console.warn("[Mention] Chain API returned false");
+              }
+            } catch (error) {
+              console.warn("[Mention] Chain API error:", error);
+            }
+          }
+          if (!inserted) {
+            const view3 = tiptapEditor.view;
+            if (view3 && view3.state && view3.dispatch) {
+              try {
+                const { state, dispatch } = view3;
+                const { $from } = state.selection;
+                const pos = $from.pos;
+                console.log(
+                  "[Mention] Attempting to insert underscore via transaction at pos:",
+                  pos
+                );
+                const tr = state.tr.insertText("_", pos);
+                dispatch(tr);
+                inserted = true;
+                console.log("[Mention] \u2705 Underscore inserted via transaction");
+              } catch (error) {
+                console.warn("[Mention] Transaction error:", error);
+              }
+            } else {
+              console.warn("[Mention] No view/state/dispatch available", {
+                hasEditor: !!tiptapEditor,
+                hasView: !!view3,
+                hasState: !!view3?.state,
+                hasDispatch: !!view3?.dispatch,
+                hasChain: !!tiptapEditor.chain
+              });
+            }
+          }
+          if (!inserted) {
+            console.warn("[Mention] Could not insert underscore");
+            return false;
+          }
+          const view2 = tiptapEditor.view;
+          if (!view2 || !view2.state) {
+            return true;
+          }
+          try {
+            const { state } = view2;
+            requestAnimationFrame(() => {
+              try {
+                if (!props.range) return;
+                const newState = view2.state;
+                const { from: from2 } = props.range;
+                let textAfterTrigger = newState.doc.textBetween(
+                  from2,
+                  newState.selection.$from.pos
+                );
+                console.log("[Mention] Text after trigger:", textAfterTrigger);
+                const searchQuery = textAfterTrigger.replace(/_/g, " ");
+                if (tiptapEditor && tiptapEditor.storage) {
+                  if (!tiptapEditor.storage.mention) {
+                    tiptapEditor.storage.mention = {};
+                  }
+                  tiptapEditor.storage.mention.fullQuery = searchQuery;
+                  tiptapEditor.storage.mention.visualQuery = textAfterTrigger;
+                  console.log("[Mention] Stored fullQuery:", searchQuery);
+                }
+                if (reactRenderer) {
+                  const updatedProps = {
+                    ...props,
+                    query: searchQuery,
+                    // Pass the search query (with spaces)
+                    range: {
+                      ...props.range,
+                      from: props.range.from,
+                      to: newState.selection.$from.pos
+                    }
+                  };
+                  reactRenderer.updateProps(updatedProps);
+                  console.log(
+                    "[Mention] Updated suggestion props with query:",
+                    searchQuery
+                  );
+                }
+              } catch (error) {
+                console.warn(
+                  "[Mention] Error updating query with space:",
+                  error
+                );
+              }
+            });
+          } catch (error) {
+            console.error("[Mention] Failed to insert underscore:", error);
+            return false;
+          }
           return true;
         }
         return reactRenderer.ref?.onKeyDown(props);
@@ -139840,9 +141174,9 @@ var import_tippy2 = __toESM(require_tippy_cjs());
 
 // views/assistant/ai-chat/command-list.tsx
 var import_react46 = __toESM(require_react());
-var import_jsx_runtime40 = __toESM(require_jsx_runtime());
+var import_jsx_runtime41 = __toESM(require_jsx_runtime());
 var CommandIcon = ({ icon }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { className: "text-[--text-muted] flex-shrink-0 w-5 h-5 flex items-center justify-center", children: icon });
+  return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("span", { className: "text-[--text-muted] flex-shrink-0 w-5 h-5 flex items-center justify-center", children: icon });
 };
 var CommandList = (0, import_react46.forwardRef)((props, ref) => {
   const [selectedIndex, setSelectedIndex] = (0, import_react46.useState)(0);
@@ -139904,23 +141238,23 @@ var CommandList = (0, import_react46.forwardRef)((props, ref) => {
     return acc;
   }, {});
   const categories = ["format", "action", "ai"];
-  return props.items.length ? /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "max-h-[400px] overflow-y-auto bg-[--background-secondary] border border-[--background-modifier-border] rounded-md shadow-lg w-80", children: categories.map((category) => {
+  return props.items.length ? /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "max-h-[400px] overflow-y-auto bg-[--background-secondary] border border-[--background-modifier-border] rounded-md shadow-lg w-80", children: categories.map((category) => {
     const items = groupedItems[category] || [];
     if (items.length === 0) return null;
-    return /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "py-1.5 first:pt-2.5 last:pb-2.5", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase px-3 py-1.5 mb-1", children: getCategoryLabel(category) }),
+    return /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "py-1.5 first:pt-2.5 last:pb-2.5", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase px-3 py-1.5 mb-1", children: getCategoryLabel(category) }),
       items.map((item) => {
         const isSelected = props.items[selectedIndex]?.id === item.id;
-        return /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)(
+        return /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)(
           "button",
           {
             className: `w-full text-left flex items-center gap-2.5 px-3 py-2 rounded hover:bg-[--background-modifier-active-hover] transition-colors ${isSelected ? "bg-[--background-modifier-active-hover] text-[--text-accent]" : "text-[--text-normal]"}`,
             onClick: () => selectItem(item.originalIndex),
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime40.jsx)(CommandIcon, { icon: item.icon }),
-              /* @__PURE__ */ (0, import_jsx_runtime40.jsxs)("div", { className: "flex-grow min-w-0 flex items-center gap-2", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { className: "font-medium text-sm leading-tight", children: item.label }),
-                item.description && /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("span", { className: "text-xs text-[--text-muted] leading-tight", children: item.description })
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(CommandIcon, { icon: item.icon }),
+              /* @__PURE__ */ (0, import_jsx_runtime41.jsxs)("div", { className: "flex-grow min-w-0 flex items-center gap-2", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("span", { className: "font-medium text-sm leading-tight", children: item.label }),
+                item.description && /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("span", { className: "text-xs text-[--text-muted] leading-tight", children: item.description })
               ] })
             ]
           },
@@ -139928,29 +141262,29 @@ var CommandList = (0, import_react46.forwardRef)((props, ref) => {
         );
       })
     ] }, category);
-  }) }) : /* @__PURE__ */ (0, import_jsx_runtime40.jsx)("div", { className: "px-4 py-3 text-sm text-[--text-muted] text-center bg-[--background-secondary] border border-[--background-modifier-border] rounded-md", children: "No matching commands found" });
+  }) }) : /* @__PURE__ */ (0, import_jsx_runtime41.jsx)("div", { className: "px-4 py-3 text-sm text-[--text-muted] text-center bg-[--background-secondary] border border-[--background-modifier-border] rounded-md", children: "No matching commands found" });
 });
 CommandList.displayName = "CommandList";
 var command_list_default = CommandList;
 
 // views/assistant/ai-chat/slash-suggestion.tsx
-var import_lucide_react7 = __toESM(require_lucide_react());
-var import_jsx_runtime41 = __toESM(require_jsx_runtime());
+var import_lucide_react8 = __toESM(require_lucide_react());
+var import_jsx_runtime42 = __toESM(require_jsx_runtime());
 var getTemplateIcon = (templateName) => {
   const lowerName = templateName.toLowerCase();
   if (lowerName.includes("youtube") || lowerName.includes("video")) {
-    return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.Video, { className: "w-4 h-4" });
+    return /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.Video, { className: "w-4 h-4" });
   }
   if (lowerName.includes("enhance")) {
-    return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.Wand2, { className: "w-4 h-4" });
+    return /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.Wand2, { className: "w-4 h-4" });
   }
   if (lowerName.includes("meeting")) {
-    return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.FileText, { className: "w-4 h-4" });
+    return /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.FileText, { className: "w-4 h-4" });
   }
   if (lowerName.includes("research") || lowerName.includes("paper")) {
-    return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.BookOpen, { className: "w-4 h-4" });
+    return /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.BookOpen, { className: "w-4 h-4" });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.FileCode, { className: "w-4 h-4" });
+  return /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.FileCode, { className: "w-4 h-4" });
 };
 var baseCommands = [
   // Action commands
@@ -139958,7 +141292,7 @@ var baseCommands = [
     id: "clear",
     label: "Clear Chat",
     description: "Clear chat history",
-    icon: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.Trash2, { className: "w-4 h-4" }),
+    icon: /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.Trash2, { className: "w-4 h-4" }),
     category: "action",
     action: "clear"
   },
@@ -139966,7 +141300,7 @@ var baseCommands = [
     id: "new",
     label: "New Chat",
     description: "Start a new conversation",
-    icon: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.Sparkles, { className: "w-4 h-4" }),
+    icon: /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.Sparkles, { className: "w-4 h-4" }),
     category: "action",
     action: "newChat"
   },
@@ -139974,7 +141308,7 @@ var baseCommands = [
     id: "search",
     label: "Search Vault",
     description: "Search your vault",
-    icon: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.Search, { className: "w-4 h-4" }),
+    icon: /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.Search, { className: "w-4 h-4" }),
     category: "action",
     action: "search"
   },
@@ -139983,7 +141317,7 @@ var baseCommands = [
     id: "summarize",
     label: "Summarize",
     description: "Summarize current context",
-    icon: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.Zap, { className: "w-4 h-4" }),
+    icon: /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.Zap, { className: "w-4 h-4" }),
     category: "ai",
     action: "summarize"
   },
@@ -139991,7 +141325,7 @@ var baseCommands = [
     id: "explain",
     label: "Explain",
     description: "Explain selected text",
-    icon: /* @__PURE__ */ (0, import_jsx_runtime41.jsx)(import_lucide_react7.Zap, { className: "w-4 h-4" }),
+    icon: /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(import_lucide_react8.Zap, { className: "w-4 h-4" }),
     category: "ai",
     action: "explain"
   }
@@ -140197,8 +141531,8 @@ var createImpl = (createState3) => {
 var create = (createState3) => createState3 ? createImpl(createState3) : createImpl;
 
 // views/assistant/ai-chat/use-context-items.ts
-var import_obsidian20 = require("obsidian");
-var import_obsidian21 = require("obsidian");
+var import_obsidian24 = require("obsidian");
+var import_obsidian25 = require("obsidian");
 var useContextItems = create((set, get3) => ({
   // Initial state
   files: {},
@@ -140348,8 +141682,8 @@ var useContextItems = create((set, get3) => ({
     const folderRef = app.vault.getFolderByPath(folderPath);
     if (!folderRef) return [];
     const files = [];
-    import_obsidian21.Vault.recurseChildren(folderRef, (file) => {
-      if (file instanceof import_obsidian20.TFile) {
+    import_obsidian25.Vault.recurseChildren(folderRef, (file) => {
+      if (file instanceof import_obsidian24.TFile) {
         files.push(file);
       }
     });
@@ -140536,7 +141870,7 @@ var getUniqueReferences = () => {
 
 // views/assistant/ai-chat/use-vault-items.ts
 var import_react49 = __toESM(require_react());
-var import_obsidian22 = require("obsidian");
+var import_obsidian26 = require("obsidian");
 function useVaultItems() {
   const plugin = usePlugin();
   return (0, import_react49.useMemo)(() => {
@@ -140575,7 +141909,7 @@ function useVaultItems() {
       // Helper to load file content when needed
       loadFileContent: async (path2) => {
         const file = plugin.app.vault.getFileByPath(path2);
-        if (file instanceof import_obsidian22.TFile) {
+        if (file instanceof import_obsidian26.TFile) {
           return await plugin.app.vault.read(file);
         }
         return null;
@@ -140585,7 +141919,7 @@ function useVaultItems() {
 }
 
 // views/assistant/ai-chat/tiptap.tsx
-var import_jsx_runtime42 = __toESM(require_jsx_runtime());
+var import_jsx_runtime43 = __toESM(require_jsx_runtime());
 var Tiptap = ({
   value,
   onChange,
@@ -140641,15 +141975,16 @@ var Tiptap = ({
   const editor = useEditor({
     extensions: [
       StarterKit,
-      Mention.configure({
+      mention_with_spaces_default.configure({
         HTMLAttributes: {
           class: "bg-[--background-modifier-active-hover] text-[--text-accent]  px-1 py-0.5"
         },
         suggestion: {
-          ...suggestion_default,
-          decorationClass: "bg-[--background-modifier-active-hover] text-[--text-accent]  px-1 py-0.5",
+          char: "@",
           items: ({ query, editor: editor2 }) => suggestion_default.items({ query, editor: editor2 }),
-          command: handleMentionCommand
+          render: () => suggestion_default.render(),
+          command: handleMentionCommand,
+          decorationClass: "bg-[--background-modifier-active-hover] text-[--text-accent]  px-1 py-0.5"
         }
       }),
       slash_command_default.configure({
@@ -140664,6 +141999,45 @@ var Tiptap = ({
       attributes: {
         class: "prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto focus:outline-none",
         "data-placeholder": "Type @ to mention files, folders, or tags, or / for commands..."
+      },
+      handleKeyDown: (view2, event) => {
+        if (event.key === " " || event.code === "Space") {
+          const { state } = view2;
+          const { $from } = state.selection;
+          let pos = $from.pos;
+          let foundAt = false;
+          let textAfterAt = "";
+          while (pos > 0 && pos > $from.pos - 100) {
+            pos--;
+            const resolvedPos = state.doc.resolve(pos);
+            const node2 = resolvedPos.node();
+            if (node2 && node2.type.name === "text") {
+              const text6 = node2.text;
+              const relativePos = pos - resolvedPos.start();
+              if (relativePos >= 0 && relativePos < text6.length) {
+                const char = text6[relativePos];
+                if (char === "@") {
+                  foundAt = true;
+                  textAfterAt = state.doc.textBetween(pos + 1, $from.pos);
+                  break;
+                } else if (!/[a-zA-Z0-9_ ]/.test(char)) {
+                  break;
+                }
+              }
+            } else {
+              break;
+            }
+          }
+          if (foundAt && textAfterAt && !textAfterAt.includes(" ") && textAfterAt.length > 0) {
+            console.log("[Tiptap] Intercepting space in mention context, replacing with underscore");
+            event.preventDefault();
+            event.stopPropagation();
+            const tr = state.tr.insertText("_", $from.pos).scrollIntoView();
+            view2.dispatch(tr);
+            return true;
+          }
+        }
+        return false;
       }
     }
   });
@@ -140715,19 +142089,19 @@ var Tiptap = ({
       };
     }
   }, [editor]);
-  return /* @__PURE__ */ (0, import_jsx_runtime42.jsxs)("div", { className: "tiptap-editor relative", onKeyDown, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime42.jsx)(EditorContent, { editor }),
-    isEmpty && editor && /* @__PURE__ */ (0, import_jsx_runtime42.jsx)("div", { className: "absolute left-[10px] top-[10px] pointer-events-none text-[--text-muted] text-sm select-none", children: "Type @ to mention files, folders, or tags, or / for commands..." })
+  return /* @__PURE__ */ (0, import_jsx_runtime43.jsxs)("div", { className: "tiptap-editor relative", onKeyDown, children: [
+    /* @__PURE__ */ (0, import_jsx_runtime43.jsx)(EditorContent, { editor }),
+    isEmpty && editor && /* @__PURE__ */ (0, import_jsx_runtime43.jsx)("div", { className: "absolute left-[10px] top-[10px] pointer-events-none text-[--text-muted] text-sm select-none", children: "Type @ to mention files, folders, or tags, or / for commands..." })
   ] });
 };
 var tiptap_default = Tiptap;
 
 // views/assistant/ai-chat/message-renderer.tsx
-var import_lucide_react11 = __toESM(require_lucide_react());
+var import_lucide_react12 = __toESM(require_lucide_react());
 
 // views/assistant/ai-chat/ai-message-renderer.tsx
 var import_react53 = __toESM(require_react());
-var import_obsidian23 = require("obsidian");
+var import_obsidian27 = require("obsidian");
 
 // ../../node_modules/devlop/lib/default.js
 function ok() {
@@ -142352,11 +143726,11 @@ function addChildren(props, children2) {
     }
   }
 }
-function productionCreate(_, jsx107, jsxs76) {
+function productionCreate(_, jsx112, jsxs82) {
   return create3;
   function create3(_2, type, props, key) {
     const isStaticChildren = Array.isArray(props.children);
-    const fn = isStaticChildren ? jsxs76 : jsx107;
+    const fn = isStaticChildren ? jsxs82 : jsx112;
     return key ? fn(type, props, key) : fn(type, props);
   }
 }
@@ -142601,7 +143975,7 @@ var urlAttributes = {
 };
 
 // ../../node_modules/react-markdown/lib/index.js
-var import_jsx_runtime43 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime44 = __toESM(require_jsx_runtime(), 1);
 var import_react52 = __toESM(require_react(), 1);
 
 // ../../node_modules/mdast-util-to-string/lib/index.js
@@ -152134,14 +153508,14 @@ function post(tree, options) {
   }
   visit(tree, transform);
   return toJsxRuntime(tree, {
-    Fragment: import_jsx_runtime43.Fragment,
+    Fragment: import_jsx_runtime44.Fragment,
     // @ts-expect-error
     // React components are allowed to return numbers,
     // but not according to the types in hast-util-to-jsx-runtime
     components,
     ignoreInvalidStyle: true,
-    jsx: import_jsx_runtime43.jsx,
-    jsxs: import_jsx_runtime43.jsxs,
+    jsx: import_jsx_runtime44.jsx,
+    jsxs: import_jsx_runtime44.jsxs,
     passKeys: true,
     passNode: true
   });
@@ -152199,7 +153573,7 @@ function defaultUrlTransform(value) {
 }
 
 // views/assistant/ai-chat/ai-message-renderer.tsx
-var import_jsx_runtime44 = __toESM(require_jsx_runtime());
+var import_jsx_runtime45 = __toESM(require_jsx_runtime());
 var AIMarkdown = ({ content: content3, app }) => {
   const plugin = usePlugin();
   const containerRef = import_react53.default.useRef(null);
@@ -152265,14 +153639,14 @@ var AIMarkdown = ({ content: content3, app }) => {
       container.removeEventListener("click", handleClick2);
     };
   }, [plugin.app]);
-  return /* @__PURE__ */ (0, import_jsx_runtime44.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime45.jsxs)(
     "div",
     {
       className: "markdown-preview-view",
       ref: containerRef,
       style: { marginTop: 0, paddingTop: 0 },
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime44.jsx)("style", { children: `
+        /* @__PURE__ */ (0, import_jsx_runtime45.jsx)("style", { children: `
         .markdown-preview-view {
           margin: 0 !important;
           padding: 0 !important;
@@ -152318,9 +153692,9 @@ var AIMarkdown = ({ content: content3, app }) => {
           if (part.startsWith("[[") && part.endsWith("]]")) {
             const inner = part.slice(2, -2);
             const [target, alias] = inner.split("|");
-            const linkpath = (0, import_obsidian23.getLinkpath)(target.trim());
+            const linkpath = (0, import_obsidian27.getLinkpath)(target.trim());
             const displayText = alias?.trim() || target.trim().replace(/\.(md|markdown)$/, "");
-            return /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+            return /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
               "a",
               {
                 href: linkpath,
@@ -152334,11 +153708,11 @@ var AIMarkdown = ({ content: content3, app }) => {
             );
           }
           const isFirstPart = i === 0;
-          return /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+          return /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
             Markdown,
             {
               components: {
-                a: ({ href, children: children2, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+                a: ({ href, children: children2, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
                   "a",
                   {
                     ...props,
@@ -152347,15 +153721,15 @@ var AIMarkdown = ({ content: content3, app }) => {
                     children: children2
                   }
                 ),
-                code: ({ inline, children: children2, ...props }) => inline ? /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+                code: ({ inline, children: children2, ...props }) => inline ? /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
                   "code",
                   {
                     ...props,
                     className: "inline-code bg-[--background-modifier-form-field] px-1 py-0.5 rounded text-[--text-accent]",
                     children: children2
                   }
-                ) : /* @__PURE__ */ (0, import_jsx_runtime44.jsx)("pre", { className: "code-block bg-[--background-secondary] p-3 rounded border border-[--background-modifier-border] overflow-x-auto", children: /* @__PURE__ */ (0, import_jsx_runtime44.jsx)("code", { ...props, children: children2 }) }),
-                p: ({ children: children2, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+                ) : /* @__PURE__ */ (0, import_jsx_runtime45.jsx)("pre", { className: "code-block bg-[--background-secondary] p-3 rounded border border-[--background-modifier-border] overflow-x-auto", children: /* @__PURE__ */ (0, import_jsx_runtime45.jsx)("code", { ...props, children: children2 }) }),
+                p: ({ children: children2, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
                   "p",
                   {
                     ...props,
@@ -152363,7 +153737,7 @@ var AIMarkdown = ({ content: content3, app }) => {
                     children: children2
                   }
                 ),
-                strong: ({ children: children2, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime44.jsx)(
+                strong: ({ children: children2, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
                   "strong",
                   {
                     ...props,
@@ -152371,7 +153745,7 @@ var AIMarkdown = ({ content: content3, app }) => {
                     children: children2
                   }
                 ),
-                em: ({ children: children2, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime44.jsx)("em", { ...props, className: "italic", children: children2 })
+                em: ({ children: children2, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime45.jsx)("em", { ...props, className: "italic", children: children2 })
               },
               children: part
             },
@@ -152385,9 +153759,9 @@ var AIMarkdown = ({ content: content3, app }) => {
 
 // views/assistant/ai-chat/shared/markdown-renderer.tsx
 var import_react54 = __toESM(require_react());
-var import_obsidian24 = require("obsidian");
+var import_obsidian28 = require("obsidian");
 init_logger();
-var import_jsx_runtime45 = __toESM(require_jsx_runtime());
+var import_jsx_runtime46 = __toESM(require_jsx_runtime());
 var MarkdownContent = ({
   content: content3,
   className = "",
@@ -152430,8 +153804,8 @@ var MarkdownContent = ({
       try {
         const leaf = plugin.app.workspace.getMostRecentLeaf();
         const tempContainer = document.createElement("div");
-        if (leaf?.view instanceof import_obsidian24.MarkdownView) {
-          await import_obsidian24.MarkdownRenderer.render(
+        if (leaf?.view instanceof import_obsidian28.MarkdownView) {
+          await import_obsidian28.MarkdownRenderer.render(
             plugin.app,
             content3,
             tempContainer,
@@ -152439,7 +153813,7 @@ var MarkdownContent = ({
             leaf.view
           );
         } else {
-          await import_obsidian24.MarkdownRenderer.renderMarkdown(
+          await import_obsidian28.MarkdownRenderer.renderMarkdown(
             content3,
             tempContainer,
             "",
@@ -152461,18 +153835,23 @@ var MarkdownContent = ({
     const eventRef = plugin.app.workspace.on("file-open", updateActiveFile);
     return () => plugin.app.workspace.offref(eventRef);
   }, [plugin.app]);
-  return /* @__PURE__ */ (0, import_jsx_runtime45.jsxs)("div", { className: `markdown-content-wrapper ${className}`, style: { margin: 0, padding: 0 }, children: [
-    children2,
-    /* @__PURE__ */ (0, import_jsx_runtime45.jsx)(
-      "div",
-      {
-        ref: contentRef,
-        className: "markdown-rendered select-text",
-        style: { marginTop: 0, paddingTop: 0 },
-        dangerouslySetInnerHTML: { __html: renderedContent }
-      }
-    ),
-    /* @__PURE__ */ (0, import_jsx_runtime45.jsx)("style", { children: `
+  return /* @__PURE__ */ (0, import_jsx_runtime46.jsxs)(
+    "div",
+    {
+      className: `markdown-content-wrapper ${className}`,
+      style: { margin: 0, padding: 0 },
+      children: [
+        children2,
+        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
+          "div",
+          {
+            ref: contentRef,
+            className: "markdown-rendered select-text",
+            style: { marginTop: 0, paddingTop: 0 },
+            dangerouslySetInnerHTML: { __html: renderedContent }
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime46.jsx)("style", { children: `
         .markdown-content-wrapper .markdown-rendered {
           margin: 0 !important;
           padding: 0 !important;
@@ -152494,13 +153873,15 @@ var MarkdownContent = ({
           padding-left: 0 !important;
         }
       ` })
-  ] });
+      ]
+    }
+  );
 };
 
 // views/assistant/ai-chat/user-message-renderer.tsx
-var import_jsx_runtime46 = __toESM(require_jsx_runtime());
+var import_jsx_runtime47 = __toESM(require_jsx_runtime());
 var UserMarkdown = ({ content: content3 }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime46.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
     MarkdownContent,
     {
       content: content3,
@@ -152510,26 +153891,26 @@ var UserMarkdown = ({ content: content3 }) => {
 };
 
 // views/assistant/ai-chat/components/append-button.tsx
-var import_lucide_react8 = __toESM(require_lucide_react());
-var import_obsidian25 = require("obsidian");
-var import_jsx_runtime47 = __toESM(require_jsx_runtime());
+var import_lucide_react9 = __toESM(require_lucide_react());
+var import_obsidian29 = require("obsidian");
+var import_jsx_runtime48 = __toESM(require_jsx_runtime());
 var AppendButton = ({ content: content3 }) => {
   const plugin = usePlugin();
   const handleAppend = async () => {
     try {
       const activeFile = plugin.app.workspace.getActiveFile();
       if (!activeFile) {
-        new import_obsidian25.Notice("No active note to append to", 3e3);
+        new import_obsidian29.Notice("No active note to append to", 3e3);
         return;
       }
       const fileContent = await plugin.app.vault.read(activeFile);
       await plugin.app.vault.modify(activeFile, fileContent + "\n\n" + content3);
-      new import_obsidian25.Notice(`Appended to ${activeFile.basename}`, 3e3);
+      new import_obsidian29.Notice(`Appended to ${activeFile.basename}`, 3e3);
     } catch (error) {
-      new import_obsidian25.Notice(`Failed to append: ${error instanceof Error ? error.message : "Unknown error"}`, 5e3);
+      new import_obsidian29.Notice(`Failed to append: ${error instanceof Error ? error.message : "Unknown error"}`, 5e3);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
     "button",
     {
       onClick: handleAppend,
@@ -152538,25 +153919,25 @@ var AppendButton = ({ content: content3 }) => {
       onMouseEnter: (e2) => e2.currentTarget.style.backgroundColor = "transparent",
       onMouseLeave: (e2) => e2.currentTarget.style.backgroundColor = "transparent",
       title: "Append to current note",
-      children: /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(import_lucide_react8.FileText, { size: 16, className: "text-[--text-muted]" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_lucide_react9.FileText, { size: 16, className: "text-[--text-muted]" })
     }
   );
 };
 
 // views/assistant/ai-chat/components/copy-button.tsx
-var import_lucide_react9 = __toESM(require_lucide_react());
-var import_obsidian26 = require("obsidian");
-var import_jsx_runtime48 = __toESM(require_jsx_runtime());
+var import_lucide_react10 = __toESM(require_lucide_react());
+var import_obsidian30 = require("obsidian");
+var import_jsx_runtime49 = __toESM(require_jsx_runtime());
 var CopyButton = ({ content: content3 }) => {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(content3);
-      new import_obsidian26.Notice("Copied to clipboard", 2e3);
+      new import_obsidian30.Notice("Copied to clipboard", 2e3);
     } catch (error) {
-      new import_obsidian26.Notice(`Failed to copy: ${error instanceof Error ? error.message : "Unknown error"}`, 5e3);
+      new import_obsidian30.Notice(`Failed to copy: ${error instanceof Error ? error.message : "Unknown error"}`, 5e3);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
     "button",
     {
       onClick: handleCopy,
@@ -152565,14 +153946,14 @@ var CopyButton = ({ content: content3 }) => {
       onMouseEnter: (e2) => e2.currentTarget.style.backgroundColor = "transparent",
       onMouseLeave: (e2) => e2.currentTarget.style.backgroundColor = "transparent",
       title: "Copy to clipboard",
-      children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_lucide_react9.Copy, { size: 16, className: "text-[--text-muted]" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(import_lucide_react10.Copy, { size: 16, className: "text-[--text-muted]" })
     }
   );
 };
 
 // views/assistant/ai-chat/components/refresh-button.tsx
-var import_lucide_react10 = __toESM(require_lucide_react());
-var import_jsx_runtime49 = __toESM(require_jsx_runtime());
+var import_lucide_react11 = __toESM(require_lucide_react());
+var import_jsx_runtime50 = __toESM(require_jsx_runtime());
 var RefreshButton2 = ({
   messageId,
   onRefresh
@@ -152580,7 +153961,7 @@ var RefreshButton2 = ({
   const handleRefresh = () => {
     onRefresh(messageId);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
     "button",
     {
       onClick: handleRefresh,
@@ -152589,13 +153970,13 @@ var RefreshButton2 = ({
       onMouseEnter: (e2) => e2.currentTarget.style.backgroundColor = "transparent",
       onMouseLeave: (e2) => e2.currentTarget.style.backgroundColor = "transparent",
       title: "Regenerate response",
-      children: /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(import_lucide_react10.RefreshCw, { size: 16, className: "text-[--text-muted]" })
+      children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_lucide_react11.RefreshCw, { size: 16, className: "text-[--text-muted]" })
     }
   );
 };
 
 // views/assistant/ai-chat/message-renderer.tsx
-var import_jsx_runtime50 = __toESM(require_jsx_runtime());
+var import_jsx_runtime51 = __toESM(require_jsx_runtime());
 var MessageRenderer = ({
   message,
   onMessageRefresh
@@ -152626,7 +154007,7 @@ var MessageRenderer = ({
   if (message.content.length === 0) {
     return null;
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)(
     motion.div,
     {
       className: "flex items-start gap-3 py-2.5",
@@ -152634,50 +154015,50 @@ var MessageRenderer = ({
       animate: { opacity: 1, y: 0 },
       transition: { duration: 0.2 },
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "flex-shrink-0 w-8 h-8 flex items-start justify-center pt-[2px]", children: message.role === "user" ? /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_lucide_react11.User, { size: 16, className: "text-[--interactive-accent]" }) : /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_lucide_react11.Bot, { size: 16, className: "text-[--interactive-accent]" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex-1 min-w-0 flex flex-col leading-snug", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "flex-shrink-0 w-8 h-8 flex items-start justify-center pt-[2px]", children: message.role === "user" ? /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(import_lucide_react12.User, { size: 16, className: "text-[--interactive-accent]" }) : /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(import_lucide_react12.Bot, { size: 16, className: "text-[--interactive-accent]" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("div", { className: "flex-1 min-w-0 flex flex-col leading-snug", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
             "div",
             {
               className: `text-sm leading-snug m-0 ${message.role === "assistant" ? "text-[--text-normal]" : "text-[--text-normal]"}`,
               style: { marginTop: 0, paddingTop: 0, marginLeft: 0, paddingLeft: 0 },
-              children: message.role === "user" ? /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(UserMarkdown, { content: message.content }) : /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(AIMarkdown, { content: message.content, app: plugin.app })
+              children: message.role === "user" ? /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(UserMarkdown, { content: message.content }) : /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(AIMarkdown, { content: message.content, app: plugin.app })
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-baseline justify-between mt-1 gap-2", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "text-xs text-[--text-muted] flex-shrink-0", children: timestamp }),
-            message.role === "assistant" && /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex-shrink-0 flex flex-row gap-0.5 items-center", children: [
-              onMessageRefresh && /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("div", { className: "flex items-baseline justify-between mt-1 gap-2", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "text-xs text-[--text-muted] flex-shrink-0", children: timestamp }),
+            message.role === "assistant" && /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("div", { className: "flex-shrink-0 flex flex-row gap-0.5 items-center", children: [
+              onMessageRefresh && /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
                 RefreshButton2,
                 {
                   messageId: message.id,
                   onRefresh: onMessageRefresh
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(AppendButton, { content: message.content }),
-              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(CopyButton, { content: message.content })
+              /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(AppendButton, { content: message.content }),
+              /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(CopyButton, { content: message.content })
             ] })
           ] }),
-          message.experimental_attachments && message.experimental_attachments.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4", children: message.experimental_attachments.map((attachment, index2) => /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
+          message.experimental_attachments && message.experimental_attachments.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4", children: message.experimental_attachments.map((attachment, index2) => /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)(
             "div",
             {
               className: "relative group",
               children: [
-                attachment.contentType?.startsWith("image/") ? /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+                attachment.contentType?.startsWith("image/") ? /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
                   "img",
                   {
                     src: attachment.url,
                     alt: attachment.name,
                     className: "w-full h-32 object-cover"
                   }
-                ) : /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-full h-32 flex items-center justify-center bg-[--background-secondary]", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+                ) : /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "w-full h-32 flex items-center justify-center bg-[--background-secondary]", children: /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
                   "svg",
                   {
                     className: "h-8 w-8 text-[--text-muted]",
                     fill: "none",
                     stroke: "currentColor",
                     viewBox: "0 0 24 24",
-                    children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+                    children: /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
                       "path",
                       {
                         strokeLinecap: "round",
@@ -152688,7 +154069,7 @@ var MessageRenderer = ({
                     )
                   }
                 ) }),
-                attachment.url && /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity flex items-center justify-center opacity-0 group-hover:opacity-100", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+                attachment.url && /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity flex items-center justify-center opacity-0 group-hover:opacity-100", children: /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
                   "a",
                   {
                     href: attachment.url,
@@ -152711,7 +154092,7 @@ var MessageRenderer = ({
 var import_react55 = __toESM(require_react());
 init_logger();
 init_youtube_service();
-var import_jsx_runtime51 = __toESM(require_jsx_runtime());
+var import_jsx_runtime52 = __toESM(require_jsx_runtime());
 function YouTubeHandler({
   toolInvocation,
   handleAddResult
@@ -152921,18 +154302,18 @@ The full transcript is provided above - use it to create a detailed, accurate su
     handleYouTubeTranscript();
   }, [toolInvocation.toolCallId]);
   if (fetchSuccess === null) {
-    return /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Fetching the video transcript..." });
+    return /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Fetching the video transcript..." });
   }
   if (fetchSuccess) {
-    return /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "text-sm text-[--text-muted]", children: "YouTube transcript successfully retrieved" });
+    return /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "text-sm text-[--text-muted]", children: "YouTube transcript successfully retrieved" });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("div", { className: "text-sm text-[--text-error]", children: "Failed to fetch YouTube transcript" });
+  return /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "text-sm text-[--text-error]", children: "Failed to fetch YouTube transcript" });
 }
 
 // views/assistant/ai-chat/tool-handlers/search-handler.tsx
 var import_react56 = __toESM(require_react());
 init_logger();
-var import_jsx_runtime52 = __toESM(require_jsx_runtime());
+var import_jsx_runtime53 = __toESM(require_jsx_runtime());
 function SearchHandler({
   toolInvocation,
   handleAddResult,
@@ -152990,13 +154371,13 @@ function SearchHandler({
     handleSearchNotes();
   }, [toolInvocation, handleAddResult, app]);
   const searchResults = useContextItems((state) => state.searchResults);
-  return /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Searching through your notes..." : Object.keys(searchResults).length > 0 ? `Found ${Object.keys(searchResults).length} matching notes` : "No files matching that criteria were found" });
+  return /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Searching through your notes..." : Object.keys(searchResults).length > 0 ? `Found ${Object.keys(searchResults).length} matching notes` : "No files matching that criteria were found" });
 }
 
 // views/assistant/ai-chat/tool-handlers/date-range-handler.tsx
 var import_react57 = __toESM(require_react());
 init_logger();
-var import_jsx_runtime53 = __toESM(require_jsx_runtime());
+var import_jsx_runtime54 = __toESM(require_jsx_runtime());
 function DateRangeHandler({
   toolInvocation,
   handleAddResult,
@@ -153066,13 +154447,13 @@ function DateRangeHandler({
   }, [toolInvocation, handleAddResult, app, clearAll]);
   const files = useContextItems((state) => state.files);
   const fileCount = Object.keys(files).length;
-  return /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Filtering notes by date range..." : fileCount > 0 ? `Found ${fileCount} notes within the specified date range` : "No files found within the specified date range" });
+  return /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Filtering notes by date range..." : fileCount > 0 ? `Found ${fileCount} notes within the specified date range` : "No files found within the specified date range" });
 }
 
 // views/assistant/ai-chat/tool-handlers/last-modified-handler.tsx
 var import_react58 = __toESM(require_react());
 init_logger();
-var import_jsx_runtime54 = __toESM(require_jsx_runtime());
+var import_jsx_runtime55 = __toESM(require_jsx_runtime());
 function LastModifiedHandler({
   toolInvocation,
   handleAddResult,
@@ -153145,13 +154526,13 @@ function LastModifiedHandler({
   const fileCount = Object.keys(files).length;
   const result = "result" in toolInvocation ? JSON.parse(toolInvocation.result) : null;
   const resultCount = result?.count || 0;
-  return /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Fetching last modified files..." : resultCount > 0 ? `Found ${resultCount} recently modified files` : "No recently modified files found" });
+  return /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "text-sm text-[--text-muted]", children: !("result" in toolInvocation) ? "Fetching last modified files..." : resultCount > 0 ? `Found ${resultCount} recently modified files` : "No recently modified files found" });
 }
 
 // views/assistant/ai-chat/tool-handlers/open-file-handler.tsx
 var import_react59 = __toESM(require_react());
-var import_obsidian27 = require("obsidian");
-var import_jsx_runtime55 = __toESM(require_jsx_runtime());
+var import_obsidian31 = require("obsidian");
+var import_jsx_runtime56 = __toESM(require_jsx_runtime());
 function OpenFileHandler({
   toolInvocation,
   handleAddResult,
@@ -153165,7 +154546,7 @@ function OpenFileHandler({
         const args2 = toolInvocation.args;
         try {
           const file = app.vault.getAbstractFileByPath(args2.filePath);
-          if (!(file instanceof import_obsidian27.TFile)) {
+          if (!(file instanceof import_obsidian31.TFile)) {
             handleAddResult(
               JSON.stringify({
                 success: false,
@@ -153196,18 +154577,18 @@ function OpenFileHandler({
   }, [toolInvocation, handleAddResult, app]);
   const args = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
-  return /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "text-sm text-[--text-muted]", children: !isComplete ? `Opening ${args.filePath}...` : `File opened` });
+  return /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "text-sm text-[--text-muted]", children: !isComplete ? `Opening ${args.filePath}...` : `File opened` });
 }
 
 // views/assistant/ai-chat/tool-handlers/settings-update-handler.tsx
 var import_react60 = __toESM(require_react());
-var import_jsx_runtime56 = __toESM(require_jsx_runtime());
-var SettingUpdate = ({ setting, value, onValidate, isValidated }) => /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "flex items-center justify-between p-2 border border-[--background-modifier-border] mb-2", children: [
-  /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "flex-1", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "font-medium text-[--text-normal]", children: setting }),
-    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "text-sm text-[--text-muted] break-all", children: value })
+var import_jsx_runtime57 = __toESM(require_jsx_runtime());
+var SettingUpdate = ({ setting, value, onValidate, isValidated }) => /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center justify-between p-2 border border-[--background-modifier-border] mb-2", children: [
+  /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex-1", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "font-medium text-[--text-normal]", children: setting }),
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-sm text-[--text-muted] break-all", children: value })
   ] }),
-  /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
+  /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
     "button",
     {
       onClick: onValidate,
@@ -153236,9 +154617,9 @@ function SettingsUpdateHandler({
       console.error(`Error updating ${key}:`, error);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "space-y-4", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "text-sm text-[--text-normal] mb-2", children: "Review and apply the suggested settings:" }),
-    Object.entries(settings).map(([key, value]) => /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "space-y-4", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-sm text-[--text-normal] mb-2", children: "Review and apply the suggested settings:" }),
+    Object.entries(settings).map(([key, value]) => /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
       SettingUpdate,
       {
         setting: key,
@@ -153253,8 +154634,8 @@ function SettingsUpdateHandler({
 
 // views/assistant/ai-chat/tool-handlers/append-content-handler.tsx
 var import_react61 = __toESM(require_react());
-var import_obsidian28 = require("obsidian");
-var import_jsx_runtime57 = __toESM(require_jsx_runtime());
+var import_obsidian32 = require("obsidian");
+var import_jsx_runtime58 = __toESM(require_jsx_runtime());
 function AppendContentHandler({
   toolInvocation,
   handleAddResult
@@ -153267,7 +154648,7 @@ function AppendContentHandler({
       const activeFile = fileName ? plugin.app.vault.getAbstractFileByPath(fileName) : plugin.app.workspace.getActiveFile();
       if (activeFile) {
         const currentContent = await plugin.app.vault.read(activeFile);
-        if (!(activeFile instanceof import_obsidian28.TFile)) {
+        if (!(activeFile instanceof import_obsidian32.TFile)) {
           throw new Error("Active file is not a TFile");
         }
         await plugin.app.vault.modify(
@@ -153299,11 +154680,11 @@ function AppendContentHandler({
       );
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Would you like to append the following content?" }),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "bg-[--background-secondary] p-3", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("pre", { className: "text-sm text-[--text-muted] whitespace-pre-wrap", children: toolInvocation.args.content }) }),
-    !isValidated && /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex space-x-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Would you like to append the following content?" }),
+    /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "bg-[--background-secondary] p-3", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("pre", { className: "text-sm text-[--text-muted] whitespace-pre-wrap", children: toolInvocation.args.content }) }),
+    !isValidated && /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex space-x-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
         "button",
         {
           onClick: handleAppendContent,
@@ -153311,7 +154692,7 @@ function AppendContentHandler({
           children: "Append Content"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
         "button",
         {
           onClick: () => handleAddResult(
@@ -153330,7 +154711,7 @@ function AppendContentHandler({
 
 // views/assistant/ai-chat/tool-handlers/onboard-handler.tsx
 var import_react62 = __toESM(require_react());
-var import_jsx_runtime58 = __toESM(require_jsx_runtime());
+var import_jsx_runtime59 = __toESM(require_jsx_runtime());
 function OnboardHandler({
   toolInvocation,
   handleAddResult
@@ -153419,17 +154800,17 @@ function OnboardHandler({
       setIsAnalyzing(false);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "space-y-4", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "space-y-4", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
       "This will analyze your vault structure to suggest optimal organization and settings. The analysis will:",
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("ul", { className: "list-disc ml-4 mt-2 space-y-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("li", { children: "Scan your folder hierarchy" }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("li", { children: "Analyze file naming patterns" }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("li", { children: "Identify common groupings" }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("li", { children: "Generate recommended settings" })
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("ul", { className: "list-disc ml-4 mt-2 space-y-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("li", { children: "Scan your folder hierarchy" }),
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("li", { children: "Analyze file naming patterns" }),
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("li", { children: "Identify common groupings" }),
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("li", { children: "Generate recommended settings" })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex justify-end", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "flex justify-end", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
       "button",
       {
         onClick: handleAnalyze,
@@ -153448,7 +154829,7 @@ function OnboardHandler({
 
 // views/assistant/ai-chat/tool-handlers/move-files-handler.tsx
 var import_react63 = __toESM(require_react());
-var import_jsx_runtime59 = __toESM(require_jsx_runtime());
+var import_jsx_runtime60 = __toESM(require_jsx_runtime());
 function MoveFilesHandler({
   toolInvocation,
   handleAddResult
@@ -153511,22 +154892,22 @@ function MoveFilesHandler({
     setIsValidated(true);
     handleAddResult(JSON.stringify({ success: true, results }));
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Ready to move files" }),
-    !isValidated && filesToMove.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Ready to move files" }),
+    !isValidated && filesToMove.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
       "Found ",
       filesToMove.length,
       " files to move:",
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
-        filesToMove.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("li", { children: file.path }, i)),
-        filesToMove.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("li", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
+        filesToMove.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("li", { children: file.path }, i)),
+        filesToMove.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("li", { children: [
           "...and ",
           filesToMove.length - 5,
           " more"
         ] })
       ] })
     ] }),
-    moveResults.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "text-sm space-y-1", children: moveResults.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+    moveResults.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("div", { className: "text-sm space-y-1", children: moveResults.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
       "div",
       {
         className: `${result.startsWith("\u2705") ? "text-[--text-success]" : result.startsWith("\u2139\uFE0F") ? "text-[--text-muted]" : "text-[--text-error]"}`,
@@ -153534,8 +154915,8 @@ function MoveFilesHandler({
       },
       i
     )) }),
-    !isValidated && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex space-x-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(
+    !isValidated && /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("div", { className: "flex space-x-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)(
         "button",
         {
           onClick: handleMoveFiles,
@@ -153547,7 +154928,7 @@ function MoveFilesHandler({
           ]
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
         "button",
         {
           onClick: () => handleAddResult(
@@ -153566,8 +154947,8 @@ function MoveFilesHandler({
 
 // views/assistant/ai-chat/tool-handlers/rename-files-handler.tsx
 var import_react64 = __toESM(require_react());
-var import_obsidian29 = require("obsidian");
-var import_jsx_runtime60 = __toESM(require_jsx_runtime());
+var import_obsidian33 = require("obsidian");
+var import_jsx_runtime61 = __toESM(require_jsx_runtime());
 function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
   const plugin = usePlugin();
   const [isDone, setIsDone] = (0, import_react64.useState)(false);
@@ -153586,7 +154967,7 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
     for (const fileData of files) {
       try {
         const existingFile = plugin.app.vault.getAbstractFileByPath(fileData.oldPath);
-        if (existingFile && existingFile instanceof import_obsidian29.TFile) {
+        if (existingFile && existingFile instanceof import_obsidian33.TFile) {
           let newName = fileData.newName;
           if (newName.endsWith(".md")) {
             newName = newName.slice(0, -3);
@@ -153616,26 +154997,26 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
       }, 100);
     }
   }, [filesToRename.length, isDone, toolInvocation, handleRename]);
-  return /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Ready to rename files" }),
-    !isDone && filesToRename.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("div", { className: "text-[--text-normal]", children: toolInvocation.args.message || "Ready to rename files" }),
+    !isDone && filesToRename.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
       "Found ",
       filesToRename.length,
       " files to rename:",
-      /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
-        filesToRename.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("li", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
+        filesToRename.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("li", { children: [
           file.oldPath,
           " \u2192 ",
           file.newName
         ] }, i)),
-        filesToRename.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("li", { children: [
+        filesToRename.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("li", { children: [
           "...and ",
           filesToRename.length - 5,
           " more"
         ] })
       ] })
     ] }),
-    results.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime60.jsx)("div", { className: "text-sm space-y-1", children: results.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+    results.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("div", { className: "text-sm space-y-1", children: results.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
       "div",
       {
         className: `${result.startsWith("\u2705") ? "text-[--text-success]" : "text-[--text-error]"}`,
@@ -153643,8 +155024,8 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
       },
       i
     )) }),
-    !isDone && /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)("div", { className: "flex space-x-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime60.jsxs)(
+    !isDone && /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "flex space-x-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)(
         "button",
         {
           onClick: handleRename,
@@ -153656,7 +155037,7 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
           ]
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime60.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
         "button",
         {
           onClick: () => handleAddResult(
@@ -153675,7 +155056,7 @@ function RenameFilesHandler({ toolInvocation, handleAddResult, app }) {
 
 // views/assistant/ai-chat/tool-handlers/search-rename-handler.tsx
 var import_react65 = __toESM(require_react());
-var import_jsx_runtime61 = __toESM(require_jsx_runtime());
+var import_jsx_runtime62 = __toESM(require_jsx_runtime());
 var SearchRenameHandler = ({ toolInvocation, handleAddResult, app }) => {
   const plugin = usePlugin();
   const [matchedFiles, setMatchedFiles] = (0, import_react65.useState)([]);
@@ -153712,32 +155093,32 @@ var SearchRenameHandler = ({ toolInvocation, handleAddResult, app }) => {
       results
     }));
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "text-[--text-normal]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "text-[--text-normal]", children: [
       'Searching for files matching: "',
       toolInvocation.args.query,
       '"'
     ] }),
-    error && /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "text-[--text-error] text-sm", children: [
+    error && /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "text-[--text-error] text-sm", children: [
       "Error: ",
       error
     ] }),
-    !isSearching && !error && /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)(import_jsx_runtime61.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
+    !isSearching && !error && /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)(import_jsx_runtime62.Fragment, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "text-sm text-[--text-muted]", children: [
         "Found ",
         matchedFiles.length,
         " matching files:",
-        matchedFiles.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
-          matchedFiles.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime61.jsx)("li", { children: file.path }, i)),
-          matchedFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("li", { children: [
+        matchedFiles.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("ul", { className: "list-disc ml-4 mt-1", children: [
+          matchedFiles.slice(0, 5).map((file, i) => /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("li", { children: file.path }, i)),
+          matchedFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("li", { children: [
             "...and ",
             matchedFiles.length - 5,
             " more"
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime61.jsxs)("div", { className: "flex space-x-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "flex space-x-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
           "button",
           {
             onClick: handleSearch,
@@ -153746,7 +155127,7 @@ var SearchRenameHandler = ({ toolInvocation, handleAddResult, app }) => {
             children: "Use These Files"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime61.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
           "button",
           {
             onClick: () => handleAddResult(
@@ -153766,7 +155147,7 @@ var SearchRenameHandler = ({ toolInvocation, handleAddResult, app }) => {
 
 // views/assistant/ai-chat/tool-handlers/execute-actions-handler.tsx
 var import_react66 = __toESM(require_react());
-var import_jsx_runtime62 = __toESM(require_jsx_runtime());
+var import_jsx_runtime63 = __toESM(require_jsx_runtime());
 function ExecuteActionsHandler({ toolInvocation, handleAddResult, app }) {
   const plugin = usePlugin();
   const [isDone, setIsDone] = (0, import_react66.useState)(false);
@@ -153848,13 +155229,13 @@ function ExecuteActionsHandler({ toolInvocation, handleAddResult, app }) {
       setIsProcessing(false);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime62.jsxs)("div", { className: "text-[--text-normal]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime63.jsxs)("div", { className: "flex flex-col space-y-4 p-4 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime63.jsxs)("div", { className: "text-[--text-normal]", children: [
       "Ready to process ",
       toolInvocation.args.filePaths.length,
       " file(s) based on content analysis"
     ] }),
-    results.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime62.jsx)("div", { className: "text-sm space-y-1", children: results.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
+    results.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("div", { className: "text-sm space-y-1", children: results.map((result, i) => /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
       "div",
       {
         className: result.startsWith("\u2705") ? "text-[--text-success]" : result.startsWith("\u2139\uFE0F") ? "text-[--text-muted]" : "text-[--text-error]",
@@ -153862,7 +155243,7 @@ function ExecuteActionsHandler({ toolInvocation, handleAddResult, app }) {
       },
       i
     )) }),
-    !isDone && /* @__PURE__ */ (0, import_jsx_runtime62.jsx)(
+    !isDone && /* @__PURE__ */ (0, import_jsx_runtime63.jsx)(
       "button",
       {
         className: "px-4 py-2 bg-[--interactive-accent] text-[--text-on-accent] hover:bg-[--interactive-accent-hover] disabled:opacity-50",
@@ -153877,7 +155258,7 @@ function ExecuteActionsHandler({ toolInvocation, handleAddResult, app }) {
 // views/assistant/ai-chat/tool-handlers/add-text-handler.tsx
 var import_react67 = __toESM(require_react());
 init_logger();
-var import_jsx_runtime63 = __toESM(require_jsx_runtime());
+var import_jsx_runtime64 = __toESM(require_jsx_runtime());
 function AddTextHandler({
   toolInvocation,
   handleAddResult,
@@ -153924,18 +155305,18 @@ function AddTextHandler({
     handleAddText();
   }, [toolInvocation, handleAddResult, app]);
   if (addSuccess === null) {
-    return /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Adding text to document..." });
+    return /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Adding text to document..." });
   }
   if (addSuccess) {
-    return /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Text successfully added to document" });
+    return /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-sm text-[--text-muted]", children: "Text successfully added to document" });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime63.jsx)("div", { className: "text-sm text-[--text-error]", children: "Failed to add text to document" });
+  return /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-sm text-[--text-error]", children: "Failed to add text to document" });
 }
 
 // views/assistant/ai-chat/tool-handlers/modify-text-handler.tsx
 var import_react68 = __toESM(require_react());
 init_logger();
-var import_jsx_runtime64 = __toESM(require_jsx_runtime());
+var import_jsx_runtime65 = __toESM(require_jsx_runtime());
 function ModifyTextHandler({
   toolInvocation,
   handleAddResult,
@@ -154033,7 +155414,7 @@ function ModifyTextHandler({
     setPendingChanges(null);
   };
   const renderDiff = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "font-mono text-xs leading-snug", children: diff.map((line, index2) => {
+    return /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "font-mono text-xs leading-snug", children: diff.map((line, index2) => {
       if (!line.added && !line.removed && !line.value.trim()) {
         return null;
       }
@@ -154043,14 +155424,14 @@ function ModifyTextHandler({
       } else if (line.removed) {
         bgColor = "rgba(var(--color-red-rgb, 255, 0, 0), 0.15)";
       }
-      return /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)(
+      return /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)(
         "div",
         {
           style: bgColor ? { backgroundColor: bgColor } : {},
           className: `py-0.5 px-2 flex items-start border-l-2 ${line.added ? "border-[--text-success]" : line.removed ? "border-[--text-error]" : "border-transparent"}`,
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { className: `select-none mr-2 w-4 flex-shrink-0 font-bold ${line.added ? "text-[--text-success]" : line.removed ? "text-[--text-error]" : "text-[--text-faint]"}`, children: line.added ? "+" : line.removed ? "\u2212" : "" }),
-            /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { className: `flex-1 whitespace-pre-wrap break-words ${line.removed ? "line-through opacity-75 text-[--text-error]" : ""} ${line.added ? "font-medium text-[--text-success]" : ""} ${!line.added && !line.removed ? "text-[--text-muted]" : ""}`, children: line.value })
+            /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { className: `select-none mr-2 w-4 flex-shrink-0 font-bold ${line.added ? "text-[--text-success]" : line.removed ? "text-[--text-error]" : "text-[--text-faint]"}`, children: line.added ? "+" : line.removed ? "\u2212" : "" }),
+            /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { className: `flex-1 whitespace-pre-wrap break-words ${line.removed ? "line-through opacity-75 text-[--text-error]" : ""} ${line.added ? "font-medium text-[--text-success]" : ""} ${!line.added && !line.removed ? "text-[--text-muted]" : ""}`, children: line.value })
           ]
         },
         index2
@@ -154058,17 +155439,17 @@ function ModifyTextHandler({
     }) });
   };
   if (modifySuccess === null && !pendingChanges) {
-    return /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "p-2 text-sm text-[--text-muted]", children: "Analyzing changes..." });
+    return /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "p-2 text-sm text-[--text-muted]", children: "Analyzing changes..." });
   }
   if (pendingChanges && !modifySuccess) {
     const addedCount = diff.filter((d) => d.added).length;
     const removedCount = diff.filter((d) => d.removed).length;
     const unchangedCount = diff.filter((d) => !d.added && !d.removed).length;
-    return /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "space-y-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "flex items-center justify-between border-b border-[--background-modifier-border] pb-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase", children: "Review Changes" }),
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "flex items-center gap-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime64.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "space-y-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "flex items-center justify-between border-b border-[--background-modifier-border] pb-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase", children: "Review Changes" }),
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "flex items-center gap-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime65.jsx)(
             "button",
             {
               onClick: handleDiscardChanges,
@@ -154077,67 +155458,67 @@ function ModifyTextHandler({
               children: "Discard"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime64.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime65.jsx)(
             "button",
             {
               onClick: handleApplyChanges,
               disabled: isApplying,
               className: "px-2 py-1 text-xs bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] text-[--text-on-accent] flex items-center gap-1",
-              children: isApplying ? /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)(import_jsx_runtime64.Fragment, { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { className: "animate-spin", children: "\u27F3" }),
-                /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { children: "Applying..." })
-              ] }) : /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)(import_jsx_runtime64.Fragment, { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { children: "\u2713" }),
-                /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { children: "Apply" })
+              children: isApplying ? /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)(import_jsx_runtime65.Fragment, { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { className: "animate-spin", children: "\u27F3" }),
+                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { children: "Applying..." })
+              ] }) : /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)(import_jsx_runtime65.Fragment, { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { children: "\u2713" }),
+                /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { children: "Apply" })
               ] })
             }
           )
         ] })
       ] }),
-      explanation && /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "p-2 border-b border-[--background-modifier-border]", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase mb-1", children: "Summary" }),
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-xs text-[--text-normal]", children: explanation })
+      explanation && /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "p-2 border-b border-[--background-modifier-border]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase mb-1", children: "Summary" }),
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "text-xs text-[--text-normal]", children: explanation })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "border border-[--background-modifier-border]", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "border-b border-[--background-modifier-border] px-2 py-1 flex items-center justify-between", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase", children: "Diff" }),
-          /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "flex items-center gap-3 text-xs", children: [
-            removedCount > 0 && /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("span", { className: "text-[--text-error] flex items-center gap-1", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { children: "\u2212" }),
-              /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("span", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "border border-[--background-modifier-border]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "border-b border-[--background-modifier-border] px-2 py-1 flex items-center justify-between", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "text-xs font-semibold text-[--text-muted] uppercase", children: "Diff" }),
+          /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "flex items-center gap-3 text-xs", children: [
+            removedCount > 0 && /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("span", { className: "text-[--text-error] flex items-center gap-1", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { children: "\u2212" }),
+              /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("span", { children: [
                 removedCount,
                 " removed"
               ] })
             ] }),
-            addedCount > 0 && /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("span", { className: "text-[--text-success] flex items-center gap-1", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { children: "+" }),
-              /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("span", { children: [
+            addedCount > 0 && /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("span", { className: "text-[--text-success] flex items-center gap-1", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { children: "+" }),
+              /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("span", { children: [
                 addedCount,
                 " added"
               ] })
             ] })
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "max-h-[300px] overflow-y-auto", children: renderDiff() })
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "max-h-[300px] overflow-y-auto", children: renderDiff() })
       ] })
     ] });
   }
   if (modifySuccess) {
-    return /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "p-3 space-y-2 border-b border-[--background-modifier-border]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "flex items-center text-[--text-success] space-x-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { className: "text-base", children: "\u2713" }),
-        /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { className: "text-sm font-medium", children: "Changes Applied Successfully" })
+    return /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "p-3 space-y-2 border-b border-[--background-modifier-border]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "flex items-center text-[--text-success] space-x-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { className: "text-base", children: "\u2713" }),
+        /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { className: "text-sm font-medium", children: "Changes Applied Successfully" })
       ] }),
-      explanation && /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("div", { className: "text-xs text-[--text-muted]", children: explanation })
+      explanation && /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "text-xs text-[--text-muted]", children: explanation })
     ] });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "p-3 space-y-2 border-b border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "flex items-center text-[--text-error] space-x-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { className: "text-base", children: "\u26A0" }),
-      /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("span", { className: "text-sm font-medium", children: "Failed to Apply Changes" })
+  return /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "p-3 space-y-2 border-b border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "flex items-center text-[--text-error] space-x-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { className: "text-base", children: "\u26A0" }),
+      /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("span", { className: "text-sm font-medium", children: "Failed to Apply Changes" })
     ] }),
-    explanation && /* @__PURE__ */ (0, import_jsx_runtime64.jsxs)("div", { className: "text-xs text-[--text-muted]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime64.jsx)("strong", { children: "Attempted Changes:" }),
+    explanation && /* @__PURE__ */ (0, import_jsx_runtime65.jsxs)("div", { className: "text-xs text-[--text-muted]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("strong", { children: "Attempted Changes:" }),
       " ",
       explanation
     ] })
@@ -154146,9 +155527,9 @@ function ModifyTextHandler({
 
 // views/assistant/ai-chat/tool-handlers/metadata-handler.tsx
 var import_react69 = __toESM(require_react());
-var import_obsidian30 = require("obsidian");
-var import_obsidian31 = require("obsidian");
-var import_jsx_runtime65 = __toESM(require_jsx_runtime());
+var import_obsidian34 = require("obsidian");
+var import_obsidian35 = require("obsidian");
+var import_jsx_runtime66 = __toESM(require_jsx_runtime());
 function MetadataHandler({
   toolInvocation,
   handleAddResult,
@@ -154157,7 +155538,7 @@ function MetadataHandler({
   const hasFetchedRef = (0, import_react69.useRef)(false);
   const extractMetadata = async (filePath, options) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian30.TFile)) return null;
+    if (!(file instanceof import_obsidian34.TFile)) return null;
     const cache2 = app.metadataCache.getFileCache(file);
     const metadata = {
       path: file.path,
@@ -154170,7 +155551,7 @@ function MetadataHandler({
       metadata.frontmatter = cache2.frontmatter;
     }
     if (options.includeTags !== false && cache2) {
-      const tags = (0, import_obsidian31.getAllTags)(cache2);
+      const tags = (0, import_obsidian35.getAllTags)(cache2);
       if (tags) {
         metadata.tags = tags;
       }
@@ -154226,13 +155607,13 @@ function MetadataHandler({
   }, [toolInvocation, handleAddResult, app]);
   const args = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
-  return /* @__PURE__ */ (0, import_jsx_runtime65.jsx)("div", { className: "text-sm text-[--text-muted]", children: !isComplete ? `Extracting metadata from ${args.filePaths.length} file(s)...` : `Metadata extracted for ${args.filePaths.length} file(s)` });
+  return /* @__PURE__ */ (0, import_jsx_runtime66.jsx)("div", { className: "text-sm text-[--text-muted]", children: !isComplete ? `Extracting metadata from ${args.filePaths.length} file(s)...` : `Metadata extracted for ${args.filePaths.length} file(s)` });
 }
 
 // views/assistant/ai-chat/tool-handlers/frontmatter-handler.tsx
 var import_react70 = __toESM(require_react());
-var import_obsidian32 = require("obsidian");
-var import_jsx_runtime66 = __toESM(require_jsx_runtime());
+var import_obsidian36 = require("obsidian");
+var import_jsx_runtime67 = __toESM(require_jsx_runtime());
 function FrontmatterHandler({
   toolInvocation,
   handleAddResult,
@@ -154241,7 +155622,7 @@ function FrontmatterHandler({
   const hasFetchedRef = (0, import_react70.useRef)(false);
   const updateFrontmatter = async (filePath, updates, deletions) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian32.TFile)) {
+    if (!(file instanceof import_obsidian36.TFile)) {
       return {
         success: false,
         message: `File not found: ${filePath}`
@@ -154313,16 +155694,16 @@ function FrontmatterHandler({
   }, [toolInvocation, handleAddResult, app]);
   const args = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
-  return /* @__PURE__ */ (0, import_jsx_runtime66.jsxs)("div", { className: "text-sm", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime66.jsx)("div", { className: "text-[--text-muted] mb-1", children: args.message }),
-    /* @__PURE__ */ (0, import_jsx_runtime66.jsx)("div", { className: "text-[--text-muted] text-xs", children: !isComplete ? `Updating frontmatter for ${args.filePath}...` : "Frontmatter updated successfully" })
+  return /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)("div", { className: "text-sm", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("div", { className: "text-[--text-muted] mb-1", children: args.message }),
+    /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("div", { className: "text-[--text-muted] text-xs", children: !isComplete ? `Updating frontmatter for ${args.filePath}...` : "Frontmatter updated successfully" })
   ] });
 }
 
 // views/assistant/ai-chat/tool-handlers/tags-handler.tsx
 var import_react71 = __toESM(require_react());
-var import_obsidian33 = require("obsidian");
-var import_jsx_runtime67 = __toESM(require_jsx_runtime());
+var import_obsidian37 = require("obsidian");
+var import_jsx_runtime68 = __toESM(require_jsx_runtime());
 function TagsHandler({
   toolInvocation,
   handleAddResult,
@@ -154334,7 +155715,7 @@ function TagsHandler({
     for (const filePath of filePaths2) {
       try {
         const file = app.vault.getAbstractFileByPath(filePath);
-        if (!(file instanceof import_obsidian33.TFile)) {
+        if (!(file instanceof import_obsidian37.TFile)) {
           results.push({
             path: filePath,
             success: false,
@@ -154442,7 +155823,7 @@ ${tagLine}`;
   }, [toolInvocation, handleAddResult, app]);
   const { filePaths, tags, location } = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
-  return /* @__PURE__ */ (0, import_jsx_runtime67.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)("div", { className: "text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime68.jsxs)("div", { className: "text-[--text-muted]", children: [
     "Adding tags ",
     tags.map((t2) => `#${t2}`).join(", "),
     " to",
@@ -154451,7 +155832,7 @@ ${tagLine}`;
     " file(s) in ",
     location,
     "..."
-  ] }) : /* @__PURE__ */ (0, import_jsx_runtime67.jsxs)("div", { className: "text-[--text-normal]", children: [
+  ] }) : /* @__PURE__ */ (0, import_jsx_runtime68.jsxs)("div", { className: "text-[--text-normal]", children: [
     "\u2713 Tags added to ",
     filePaths.length,
     " file(s)"
@@ -154460,8 +155841,8 @@ ${tagLine}`;
 
 // views/assistant/ai-chat/tool-handlers/backlinks-handler.tsx
 var import_react72 = __toESM(require_react());
-var import_obsidian34 = require("obsidian");
-var import_jsx_runtime68 = __toESM(require_jsx_runtime());
+var import_obsidian38 = require("obsidian");
+var import_jsx_runtime69 = __toESM(require_jsx_runtime());
 function BacklinksHandler({
   toolInvocation,
   handleAddResult,
@@ -154470,7 +155851,7 @@ function BacklinksHandler({
   const hasFetchedRef = (0, import_react72.useRef)(false);
   const getBacklinks = (filePath, includeUnresolved) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian34.TFile)) {
+    if (!(file instanceof import_obsidian38.TFile)) {
       return {
         path: filePath,
         success: false,
@@ -154522,11 +155903,11 @@ function BacklinksHandler({
   }, [toolInvocation, handleAddResult, app]);
   const { filePaths } = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
-  return /* @__PURE__ */ (0, import_jsx_runtime68.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime68.jsxs)("div", { className: "text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)("div", { className: "text-[--text-muted]", children: [
     "Finding backlinks for ",
     filePaths.length,
     " file(s)..."
-  ] }) : /* @__PURE__ */ (0, import_jsx_runtime68.jsxs)("div", { className: "text-[--text-normal]", children: [
+  ] }) : /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)("div", { className: "text-[--text-normal]", children: [
     "\u2713 Backlinks retrieved for ",
     filePaths.length,
     " file(s)"
@@ -154535,8 +155916,8 @@ function BacklinksHandler({
 
 // views/assistant/ai-chat/tool-handlers/outgoing-links-handler.tsx
 var import_react73 = __toESM(require_react());
-var import_obsidian35 = require("obsidian");
-var import_jsx_runtime69 = __toESM(require_jsx_runtime());
+var import_obsidian39 = require("obsidian");
+var import_jsx_runtime70 = __toESM(require_jsx_runtime());
 function OutgoingLinksHandler({
   toolInvocation,
   handleAddResult,
@@ -154545,7 +155926,7 @@ function OutgoingLinksHandler({
   const hasFetchedRef = (0, import_react73.useRef)(false);
   const getOutgoingLinks = (filePath, includeEmbeds, resolvedOnly) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian35.TFile)) {
+    if (!(file instanceof import_obsidian39.TFile)) {
       return {
         path: filePath,
         success: false,
@@ -154616,11 +155997,11 @@ function OutgoingLinksHandler({
   }, [toolInvocation, handleAddResult, app]);
   const { filePaths } = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
-  return /* @__PURE__ */ (0, import_jsx_runtime69.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)("div", { className: "text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "text-[--text-muted]", children: [
     "Analyzing outgoing links for ",
     filePaths.length,
     " file(s)..."
-  ] }) : /* @__PURE__ */ (0, import_jsx_runtime69.jsxs)("div", { className: "text-[--text-normal]", children: [
+  ] }) : /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "text-[--text-normal]", children: [
     "\u2713 Outgoing links retrieved for ",
     filePaths.length,
     " file(s)"
@@ -154629,8 +156010,8 @@ function OutgoingLinksHandler({
 
 // views/assistant/ai-chat/tool-handlers/headings-handler.tsx
 var import_react74 = __toESM(require_react());
-var import_obsidian36 = require("obsidian");
-var import_jsx_runtime70 = __toESM(require_jsx_runtime());
+var import_obsidian40 = require("obsidian");
+var import_jsx_runtime71 = __toESM(require_jsx_runtime());
 function HeadingsHandler({
   toolInvocation,
   handleAddResult,
@@ -154639,7 +156020,7 @@ function HeadingsHandler({
   const hasFetchedRef = (0, import_react74.useRef)(false);
   const getHeadings = (filePath, minLevel = 1, maxLevel = 6) => {
     const file = app.vault.getAbstractFileByPath(filePath);
-    if (!(file instanceof import_obsidian36.TFile)) {
+    if (!(file instanceof import_obsidian40.TFile)) {
       return {
         path: filePath,
         success: false,
@@ -154693,11 +156074,11 @@ function HeadingsHandler({
   }, [toolInvocation, handleAddResult, app]);
   const { filePaths } = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
-  return /* @__PURE__ */ (0, import_jsx_runtime70.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "text-[--text-muted]", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-sm", children: !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-[--text-muted]", children: [
     "Extracting headings from ",
     filePaths.length,
     " file(s)..."
-  ] }) : /* @__PURE__ */ (0, import_jsx_runtime70.jsxs)("div", { className: "text-[--text-normal]", children: [
+  ] }) : /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-[--text-normal]", children: [
     "\u2713 Headings extracted from ",
     filePaths.length,
     " file(s)"
@@ -154706,8 +156087,8 @@ function HeadingsHandler({
 
 // views/assistant/ai-chat/tool-handlers/create-files-handler.tsx
 var import_react75 = __toESM(require_react());
-var import_obsidian37 = require("obsidian");
-var import_jsx_runtime71 = __toESM(require_jsx_runtime());
+var import_obsidian41 = require("obsidian");
+var import_jsx_runtime72 = __toESM(require_jsx_runtime());
 function CreateFilesHandler({
   toolInvocation,
   handleAddResult,
@@ -154778,11 +156159,16 @@ ${links}`;
       if (!hasFetchedRef.current && !("result" in toolInvocation)) {
         hasFetchedRef.current = true;
         const { files: files2, linkInCurrentFile, message: message2 } = toolInvocation.args;
+        const normalizedFiles = files2.map((f) => ({
+          ...f,
+          folder: f.folder ?? ""
+        }));
+        const normalizedLinkInCurrentFile = linkInCurrentFile ?? true;
         setIsCreating(true);
         try {
           const { results, createdPaths } = await createFiles(
-            files2,
-            linkInCurrentFile !== false
+            normalizedFiles,
+            normalizedLinkInCurrentFile
           );
           setCreatedFiles(createdPaths);
           const successCount = results.filter((r3) => r3.success).length;
@@ -154796,7 +156182,7 @@ ${links}`;
               message: `Created ${successCount} file(s)${failCount > 0 ? `, ${failCount} failed` : ""}`
             })
           );
-          new import_obsidian37.Notice(
+          new import_obsidian41.Notice(
             `Created ${successCount} file(s)${failCount > 0 ? `, ${failCount} failed` : ""}`
           );
         } catch (error) {
@@ -154806,7 +156192,7 @@ ${links}`;
               error: `Failed to create files: ${error.message}`
             })
           );
-          new import_obsidian37.Notice(`Error creating files: ${error.message}`);
+          new import_obsidian41.Notice(`Error creating files: ${error.message}`);
         } finally {
           setIsCreating(false);
         }
@@ -154816,15 +156202,15 @@ ${links}`;
   }, [toolInvocation, handleAddResult, app]);
   const { files, message } = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
-  return /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-[--text-muted] mb-1", children: message }),
-    !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "text-[--text-muted] text-xs", children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-[--text-muted] mb-1", children: message }),
+    !isComplete ? /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-[--text-muted] text-xs", children: [
       "Creating ",
       files.length,
       " file(s)..."
-    ] }) : /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { className: "space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-[--text-success] text-xs", children: "\u2713 Files created successfully" }),
-      createdFiles.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime71.jsx)("div", { className: "text-[--text-faint] text-xs", children: createdFiles.map((path2) => /* @__PURE__ */ (0, import_jsx_runtime71.jsxs)("div", { children: [
+    ] }) : /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-[--text-success] text-xs", children: "\u2713 Files created successfully" }),
+      createdFiles.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-[--text-faint] text-xs", children: createdFiles.map((path2) => /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { children: [
         "\u2022 ",
         path2
       ] }, path2)) })
@@ -154834,8 +156220,8 @@ ${links}`;
 
 // views/assistant/ai-chat/tool-handlers/delete-files-handler.tsx
 var import_react76 = __toESM(require_react());
-var import_obsidian38 = require("obsidian");
-var import_jsx_runtime72 = __toESM(require_jsx_runtime());
+var import_obsidian42 = require("obsidian");
+var import_jsx_runtime73 = __toESM(require_jsx_runtime());
 function DeleteFilesHandler({
   toolInvocation,
   handleAddResult,
@@ -154855,7 +156241,7 @@ function DeleteFilesHandler({
         const invalid = [];
         filePaths.forEach((path2) => {
           const file = app.vault.getAbstractFileByPath(path2);
-          if (file instanceof import_obsidian38.TFile) {
+          if (file instanceof import_obsidian42.TFile) {
             valid2.push(file);
           } else {
             invalid.push(path2);
@@ -154889,7 +156275,7 @@ function DeleteFilesHandler({
     setIsDone(true);
     const message = permanentDelete2 ? `Permanently deleted ${deletedCount} file(s)` : `Moved ${deletedCount} file(s) to trash`;
     const resultMessage = failedCount > 0 ? `${message}, ${failedCount} failed` : message;
-    new import_obsidian38.Notice(resultMessage);
+    new import_obsidian42.Notice(resultMessage);
     handleAddResult(
       JSON.stringify({
         success: true,
@@ -154912,46 +156298,46 @@ function DeleteFilesHandler({
   const { reason, permanentDelete = false } = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
   if (isComplete || isDone) {
-    return /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Deletion cancelled" : "\u2713 Files deleted" }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Deletion cancelled" : "\u2713 Files deleted" }) });
   }
   if (validFiles.length === 0 && invalidPaths.length > 0) {
-    return /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to delete. All paths were invalid." }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to delete. All paths were invalid." }) });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "flex items-start gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("span", { className: "text-[--text-error] text-lg", children: "\u26A0" }),
-      /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "flex-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Deletion" }),
-        /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+  return /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "text-[--text-error] text-lg", children: "\u26A0" }),
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Deletion" }),
+        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
         "Files to delete (",
         validFiles.length,
         ")"
       ] }),
-      validFiles.slice(0, 5).map((file) => /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+      validFiles.slice(0, 5).map((file) => /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
         "\u2022 ",
         file.basename
       ] }, file.path)),
-      validFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
+      validFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
         "...and ",
         validFiles.length - 5,
         " more"
       ] })
     ] }),
-    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
+    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
       "\u26A0 ",
       invalidPaths.length,
       " invalid path(s) will be skipped"
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("div", { className: "p-2 bg-[--background-secondary] text-xs text-[--text-warning]", children: permanentDelete ? /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)(import_jsx_runtime72.Fragment, { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime72.jsx)("strong", { children: "\u26A0 Permanent deletion:" }),
+    /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "p-2 bg-[--background-secondary] text-xs text-[--text-warning]", children: permanentDelete ? /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(import_jsx_runtime73.Fragment, { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("strong", { children: "\u26A0 Permanent deletion:" }),
       " Files cannot be recovered"
-    ] }) : /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(import_jsx_runtime72.Fragment, { children: "Files will be moved to trash (can be recovered)" }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)("div", { className: "flex gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime72.jsx)(
+    ] }) : /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(import_jsx_runtime73.Fragment, { children: "Files will be moved to trash (can be recovered)" }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
         "button",
         {
           onClick: handleCancel,
@@ -154959,7 +156345,7 @@ function DeleteFilesHandler({
           children: "Cancel"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime72.jsxs)(
+      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(
         "button",
         {
           onClick: () => {
@@ -154981,8 +156367,8 @@ function DeleteFilesHandler({
 
 // views/assistant/ai-chat/tool-handlers/merge-files-handler.tsx
 var import_react77 = __toESM(require_react());
-var import_obsidian39 = require("obsidian");
-var import_jsx_runtime73 = __toESM(require_jsx_runtime());
+var import_obsidian43 = require("obsidian");
+var import_jsx_runtime74 = __toESM(require_jsx_runtime());
 function MergeFilesHandler({
   toolInvocation,
   handleAddResult,
@@ -155002,7 +156388,7 @@ function MergeFilesHandler({
         const invalid = [];
         sourceFiles.forEach((path2) => {
           const file = app.vault.getAbstractFileByPath(path2);
-          if (file instanceof import_obsidian39.TFile) {
+          if (file instanceof import_obsidian43.TFile) {
             valid2.push(file);
           } else {
             invalid.push(path2);
@@ -155030,7 +156416,7 @@ function MergeFilesHandler({
       const mergedContent = contents.join(separator);
       const outputPath = outputFolder ? `${outputFolder}/${outputFileName2}.md` : `${outputFileName2}.md`;
       const existingFile = app.vault.getAbstractFileByPath(outputPath);
-      if (existingFile instanceof import_obsidian39.TFile) {
+      if (existingFile instanceof import_obsidian43.TFile) {
         const confirmOverwrite = confirm(
           `File "${outputFileName2}.md" already exists. Overwrite?`
         );
@@ -155055,7 +156441,7 @@ function MergeFilesHandler({
       }
       setIsDone(true);
       const message = deleteSource2 ? `Merged ${validFiles.length} files into "${outputFileName2}.md" and deleted source files` : `Merged ${validFiles.length} files into "${outputFileName2}.md"`;
-      new import_obsidian39.Notice(message);
+      new import_obsidian43.Notice(message);
       handleAddResult(
         JSON.stringify({
           success: true,
@@ -155067,7 +156453,7 @@ function MergeFilesHandler({
       );
     } catch (error) {
       setIsDone(true);
-      new import_obsidian39.Notice(`Failed to merge files: ${error.message}`);
+      new import_obsidian43.Notice(`Failed to merge files: ${error.message}`);
       handleAddResult(
         JSON.stringify({
           success: false,
@@ -155092,57 +156478,57 @@ function MergeFilesHandler({
   } = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
   if (isComplete || isDone) {
-    return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Merge cancelled" : "\u2713 Files merged" }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Merge cancelled" : "\u2713 Files merged" }) });
   }
   if (validFiles.length === 0 && invalidPaths.length > 0) {
-    return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to merge. All paths were invalid." }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to merge. All paths were invalid." }) });
   }
   if (validFiles.length < 2) {
-    return /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 Need at least 2 files to merge." }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 Need at least 2 files to merge." }) });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex items-start gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u26A1" }),
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Merge" }),
-        /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+  return /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u26A1" }),
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Merge" }),
+        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
         "Files to merge (",
         validFiles.length,
         ")"
       ] }),
-      validFiles.slice(0, 5).map((file) => /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+      validFiles.slice(0, 5).map((file) => /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
         "\u2022 ",
         file.basename
       ] }, file.path)),
-      validFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
+      validFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
         "...and ",
         validFiles.length - 5,
         " more"
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Output file" }),
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Output file" }),
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
         "\u{1F4C4} ",
         outputFileName,
         ".md"
       ] })
     ] }),
-    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
+    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
       "\u26A0 ",
       invalidPaths.length,
       " invalid path(s) will be skipped"
     ] }),
-    deleteSource && /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "p-2 bg-[--background-secondary] text-xs text-[--text-warning]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)("strong", { children: "\u26A0 Warning:" }),
+    deleteSource && /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "p-2 bg-[--background-secondary] text-xs text-[--text-warning]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("strong", { children: "\u26A0 Warning:" }),
       " Source files will be moved to trash after merge"
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)("div", { className: "flex gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
         "button",
         {
           onClick: handleCancel,
@@ -155150,7 +156536,7 @@ function MergeFilesHandler({
           children: "Cancel"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime73.jsxs)(
+      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)(
         "button",
         {
           onClick: () => {
@@ -155171,8 +156557,8 @@ function MergeFilesHandler({
 
 // views/assistant/ai-chat/tool-handlers/create-template-handler.tsx
 var import_react78 = __toESM(require_react());
-var import_obsidian40 = require("obsidian");
-var import_jsx_runtime74 = __toESM(require_jsx_runtime());
+var import_obsidian44 = require("obsidian");
+var import_jsx_runtime75 = __toESM(require_jsx_runtime());
 function CreateTemplateHandler({
   toolInvocation,
   handleAddResult,
@@ -155215,7 +156601,7 @@ function CreateTemplateHandler({
       }
       setIsDone(true);
       const message = `Created template "${templateName2}" in ${templateFolder}/`;
-      new import_obsidian40.Notice(message);
+      new import_obsidian44.Notice(message);
       handleAddResult(
         JSON.stringify({
           success: true,
@@ -155225,7 +156611,7 @@ function CreateTemplateHandler({
       );
     } catch (error) {
       setIsDone(true);
-      new import_obsidian40.Notice(`Failed to create template: ${error.message}`);
+      new import_obsidian44.Notice(`Failed to create template: ${error.message}`);
       handleAddResult(
         JSON.stringify({
           success: false,
@@ -155251,38 +156637,38 @@ function CreateTemplateHandler({
   } = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
   if (isComplete || isDone) {
-    return /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Template creation cancelled" : "\u2713 Template created" }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Template creation cancelled" : "\u2713 Template created" }) });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "flex items-start gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u{1F4CB}" }),
-      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "flex-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Create Template" }),
-        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+  return /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u{1F4CB}" }),
+      /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Create Template" }),
+        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Template Details" }),
-      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("strong", { children: "Name:" }),
+    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Template Details" }),
+      /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("strong", { children: "Name:" }),
         " ",
         templateName
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("strong", { children: "Description:" }),
+      /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("strong", { children: "Description:" }),
         " ",
         description
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Template Preview" }),
-      /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "p-2 bg-[--background-secondary] text-[--text-muted] font-mono text-xs max-h-32 overflow-y-auto whitespace-pre-wrap", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Template Preview" }),
+      /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "p-2 bg-[--background-secondary] text-[--text-muted] font-mono text-xs max-h-32 overflow-y-auto whitespace-pre-wrap", children: [
         templateContent.slice(0, 300),
         templateContent.length > 300 && "..."
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime74.jsxs)("div", { className: "flex gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         "button",
         {
           onClick: handleCancel,
@@ -155290,7 +156676,7 @@ function CreateTemplateHandler({
           children: "Cancel"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime74.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
         "button",
         {
           onClick: () => {
@@ -155307,8 +156693,8 @@ function CreateTemplateHandler({
 
 // views/assistant/ai-chat/tool-handlers/bulk-find-replace-handler.tsx
 var import_react79 = __toESM(require_react());
-var import_obsidian41 = require("obsidian");
-var import_jsx_runtime75 = __toESM(require_jsx_runtime());
+var import_obsidian45 = require("obsidian");
+var import_jsx_runtime76 = __toESM(require_jsx_runtime());
 function BulkFindReplaceHandler({
   toolInvocation,
   handleAddResult,
@@ -155335,7 +156721,7 @@ function BulkFindReplaceHandler({
         const counts = [];
         for (const path2 of filePaths) {
           const file = app.vault.getAbstractFileByPath(path2);
-          if (file instanceof import_obsidian41.TFile) {
+          if (file instanceof import_obsidian45.TFile) {
             valid2.push(file);
             try {
               const content3 = await app.vault.read(file);
@@ -155420,7 +156806,7 @@ function BulkFindReplaceHandler({
     }
     setIsDone(true);
     const message = `Replaced ${totalMatches2} occurrence(s) in ${filesModified} file(s)`;
-    new import_obsidian41.Notice(message);
+    new import_obsidian45.Notice(message);
     handleAddResult(
       JSON.stringify({
         success: true,
@@ -155450,58 +156836,58 @@ function BulkFindReplaceHandler({
   const totalMatches = matchCounts.reduce((sum, m) => sum + m.count, 0);
   const filesWithMatches = matchCounts.filter((m) => m.count > 0).length;
   if (isComplete || isDone) {
-    return /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Find/Replace cancelled" : "\u2713 Find/Replace complete" }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Find/Replace cancelled" : "\u2713 Find/Replace complete" }) });
   }
   if (validFiles.length === 0) {
-    return /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to search." }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to search." }) });
   }
   if (totalMatches === 0) {
-    return /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-[--text-muted] text-xs", children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-muted] text-xs", children: [
       "No matches found in ",
       validFiles.length,
       " file(s)"
     ] }) });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "flex items-start gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u{1F50D}" }),
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "flex-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Find & Replace" }),
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+  return /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u{1F50D}" }),
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Find & Replace" }),
+        /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Operation" }),
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "p-2 bg-[--background-secondary] space-y-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-[--text-normal]", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("strong", { children: "Find:" }),
+    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Operation" }),
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "p-2 bg-[--background-secondary] space-y-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: "Find:" }),
           " ",
-          /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("code", { className: "px-1 bg-[--background-primary]", children: find2 }),
-          useRegex && /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("span", { className: "text-[--text-faint] ml-1", children: "(regex)" })
+          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("code", { className: "px-1 bg-[--background-primary]", children: find2 }),
+          useRegex && /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("span", { className: "text-[--text-faint] ml-1", children: "(regex)" })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-[--text-normal]", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("strong", { children: "Replace:" }),
+        /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: "Replace:" }),
           " ",
-          /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("code", { className: "px-1 bg-[--background-primary]", children: replace2 })
+          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("code", { className: "px-1 bg-[--background-primary]", children: replace2 })
         ] })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Impact" }),
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("strong", { children: totalMatches }),
+    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Impact" }),
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: totalMatches }),
         " match(es) in ",
-        /* @__PURE__ */ (0, import_jsx_runtime75.jsx)("strong", { children: filesWithMatches }),
+        /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: filesWithMatches }),
         " file(s)"
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
         "Files (",
         filesWithMatches,
         " with matches)"
       ] }),
-      matchCounts.filter((m) => m.count > 0).slice(0, 5).map((item) => /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+      matchCounts.filter((m) => m.count > 0).slice(0, 5).map((item) => /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
         "\u2022 ",
         item.path.split("/").pop(),
         " (",
@@ -155510,19 +156896,19 @@ function BulkFindReplaceHandler({
         item.count !== 1 ? "es" : "",
         ")"
       ] }, item.path)),
-      filesWithMatches > 5 && /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
+      filesWithMatches > 5 && /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
         "...and ",
         filesWithMatches - 5,
         " more file(s)"
       ] })
     ] }),
-    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
+    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
       "\u26A0 ",
       invalidPaths.length,
       " invalid path(s) will be skipped"
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)("div", { className: "flex gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
         "button",
         {
           onClick: handleCancel,
@@ -155530,7 +156916,7 @@ function BulkFindReplaceHandler({
           children: "Cancel"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)(
+      /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)(
         "button",
         {
           onClick: () => {
@@ -155552,8 +156938,8 @@ function BulkFindReplaceHandler({
 
 // views/assistant/ai-chat/tool-handlers/export-to-format-handler.tsx
 var import_react80 = __toESM(require_react());
-var import_obsidian42 = require("obsidian");
-var import_jsx_runtime76 = __toESM(require_jsx_runtime());
+var import_obsidian46 = require("obsidian");
+var import_jsx_runtime77 = __toESM(require_jsx_runtime());
 function ExportToFormatHandler({
   toolInvocation,
   handleAddResult,
@@ -155573,7 +156959,7 @@ function ExportToFormatHandler({
         const invalid = [];
         filePaths.forEach((path2) => {
           const file = app.vault.getAbstractFileByPath(path2);
-          if (file instanceof import_obsidian42.TFile) {
+          if (file instanceof import_obsidian46.TFile) {
             valid2.push(file);
           } else {
             invalid.push(path2);
@@ -155653,7 +157039,7 @@ ${content3.replace(/\n/g, "<br>\n")}
       }
       setIsDone(true);
       const message = `Exported ${exportedCount} file(s) to ${format3.toUpperCase()}`;
-      new import_obsidian42.Notice(message);
+      new import_obsidian46.Notice(message);
       handleAddResult(
         JSON.stringify({
           success: true,
@@ -155667,7 +157053,7 @@ ${content3.replace(/\n/g, "<br>\n")}
       );
     } catch (error) {
       setIsDone(true);
-      new import_obsidian42.Notice(`Export failed: ${error.message}`);
+      new import_obsidian46.Notice(`Export failed: ${error.message}`);
       handleAddResult(
         JSON.stringify({
           success: false,
@@ -155693,67 +157079,67 @@ ${content3.replace(/\n/g, "<br>\n")}
   } = toolInvocation.args;
   const isComplete = "result" in toolInvocation;
   if (isComplete || isDone) {
-    return /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Export cancelled" : "\u2713 Export complete" }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "text-[--text-success] text-xs", children: isDone && !isConfirmed ? "\u2717 Export cancelled" : "\u2713 Export complete" }) });
   }
   if (validFiles.length === 0) {
-    return /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to export." }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "text-sm border-b border-[--background-modifier-border] pb-2", children: /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "text-[--text-error] text-xs", children: "\u2717 No valid files to export." }) });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "flex items-start gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u{1F4E4}" }),
-      /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "flex-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Export" }),
-        /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
+  return /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "p-3 space-y-3 border border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "flex items-start gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("span", { className: "text-[--text-accent] text-lg", children: "\u{1F4E4}" }),
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "text-sm font-semibold text-[--text-normal] mb-1", children: "Confirm Export" }),
+        /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "text-xs text-[--text-muted] mb-2", children: reason })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Export Settings" }),
-      /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "p-2 bg-[--background-secondary] space-y-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-normal]", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: "Format:" }),
+    /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "font-semibold text-[--text-muted] uppercase", children: "Export Settings" }),
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "p-2 bg-[--background-secondary] space-y-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("strong", { children: "Format:" }),
           " ",
           format2.toUpperCase()
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-normal]", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: "Output:" }),
+        /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("strong", { children: "Output:" }),
           " ",
           outputFolder,
           "/"
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-normal]", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: "Metadata:" }),
+        /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "text-[--text-normal]", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("strong", { children: "Metadata:" }),
           " ",
           includeMetadata ? "Included" : "Excluded"
         ] })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-xs space-y-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "text-xs space-y-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "font-semibold text-[--text-muted] uppercase", children: [
         "Files to Export (",
         validFiles.length,
         ")"
       ] }),
-      validFiles.slice(0, 5).map((file) => /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
+      validFiles.slice(0, 5).map((file) => /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "text-[--text-normal] pl-2", children: [
         "\u2022 ",
         file.basename
       ] }, file.path)),
-      validFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
+      validFiles.length > 5 && /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "text-[--text-faint] pl-2", children: [
         "...and ",
         validFiles.length - 5,
         " more"
       ] })
     ] }),
-    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
+    invalidPaths.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "text-xs text-[--text-error]", children: [
       "\u26A0 ",
       invalidPaths.length,
       " invalid path(s) will be skipped"
     ] }),
-    format2 === "pdf" && /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "p-2 bg-[--background-secondary] text-xs text-[--text-warning]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime76.jsx)("strong", { children: "\u26A0 Note:" }),
+    format2 === "pdf" && /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "p-2 bg-[--background-secondary] text-xs text-[--text-warning]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("strong", { children: "\u26A0 Note:" }),
       " PDF export is not yet fully implemented"
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)("div", { className: "flex gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime76.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)("div", { className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
         "button",
         {
           onClick: handleCancel,
@@ -155761,7 +157147,7 @@ ${content3.replace(/\n/g, "<br>\n")}
           children: "Cancel"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime76.jsxs)(
+      /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)(
         "button",
         {
           onClick: () => {
@@ -155781,8 +157167,432 @@ ${content3.replace(/\n/g, "<br>\n")}
   ] });
 }
 
+// views/assistant/ai-chat/tool-handlers/screenpipe-handler.tsx
+var import_react81 = __toESM(require_react());
+init_logger();
+init_screenpipe_client();
+var import_jsx_runtime78 = __toESM(require_jsx_runtime());
+function ScreenpipeHandler({
+  toolInvocation,
+  handleAddResult,
+  app
+}) {
+  const hasFetchedRef = (0, import_react81.useRef)(false);
+  const retryCountRef = (0, import_react81.useRef)(0);
+  const [status, setStatus] = import_react81.default.useState(
+    "Initializing ScreenPipe search..."
+  );
+  const [error, setError] = import_react81.default.useState(null);
+  const plugin = usePlugin();
+  const pluginRef = (0, import_react81.useRef)(plugin);
+  import_react81.default.useEffect(() => {
+    pluginRef.current = plugin;
+  }, [plugin]);
+  import_react81.default.useEffect(() => {
+    console.log("[ScreenPipe Handler] Component mounted", {
+      toolCallId: toolInvocation.toolCallId,
+      toolName: toolInvocation.toolName,
+      hasPlugin: !!plugin
+    });
+  }, []);
+  import_react81.default.useEffect(() => {
+    if (hasFetchedRef.current) {
+      console.log("[ScreenPipe Handler] Already executed, skipping useEffect");
+      return;
+    }
+    if ("result" in toolInvocation) {
+      console.log("[ScreenPipe Handler] Result already exists, skipping");
+      return;
+    }
+    let timeoutId = null;
+    let isMounted = true;
+    const execute = async () => {
+      if (hasFetchedRef.current || !isMounted) {
+        console.log(
+          "[ScreenPipe Handler] Already executed or unmounted, skipping"
+        );
+        return;
+      }
+      const currentPlugin = pluginRef.current;
+      if (!currentPlugin) {
+        if (retryCountRef.current >= 10) {
+          if (!isMounted || hasFetchedRef.current) return;
+          const errorMsg = "Plugin context not available after retries";
+          console.error("[ScreenPipe Handler]", errorMsg);
+          hasFetchedRef.current = true;
+          setStatus("Error");
+          setError(errorMsg);
+          handleAddResult(JSON.stringify({ error: errorMsg }));
+          return;
+        }
+        if (!isMounted || hasFetchedRef.current) return;
+        retryCountRef.current += 1;
+        console.log(
+          "[ScreenPipe Handler] Plugin not available yet, retrying...",
+          retryCountRef.current
+        );
+        setStatus(
+          `Waiting for plugin context... (${retryCountRef.current}/10)`
+        );
+        timeoutId = setTimeout(() => {
+          if (isMounted && !hasFetchedRef.current && retryCountRef.current < 10) {
+            execute();
+          }
+        }, 100);
+        return;
+      }
+      if (hasFetchedRef.current || !isMounted) return;
+      hasFetchedRef.current = true;
+      retryCountRef.current = 0;
+      if (!isMounted) return;
+      setStatus("Checking settings...");
+      logger.debug("ScreenPipe handler executing", {
+        toolCallId: toolInvocation.toolCallId,
+        toolName: toolInvocation.toolName,
+        args: toolInvocation.args,
+        hasPlugin: !!currentPlugin,
+        enableScreenpipe: currentPlugin?.settings?.enableScreenpipe,
+        fullToolInvocation: toolInvocation
+      });
+      console.log("[ScreenPipe Handler] Starting execution", {
+        toolCallId: toolInvocation.toolCallId,
+        toolName: toolInvocation.toolName,
+        args: toolInvocation.args,
+        hasPlugin: !!currentPlugin,
+        enableScreenpipe: currentPlugin?.settings?.enableScreenpipe
+      });
+      try {
+        if (!currentPlugin) {
+          const errorMsg = "Plugin context not available";
+          logger.error("ScreenPipe handler:", errorMsg);
+          setStatus("Error");
+          setError(errorMsg);
+          handleAddResult(JSON.stringify({ error: errorMsg }));
+          return;
+        }
+        if (!currentPlugin.settings.enableScreenpipe) {
+          setStatus("ScreenPipe disabled");
+          const errorMsg = "ScreenPipe integration is disabled. Enable it in Settings > Experiments > Integrations.";
+          setError(errorMsg);
+          logger.debug("ScreenPipe handler: Disabled, sending error result");
+          handleAddResult(JSON.stringify({ error: errorMsg }));
+          return;
+        }
+        setStatus("Loading ScreenPipe client...");
+        const { ScreenpipeClient: ScreenpipeClient2 } = await Promise.resolve().then(() => (init_screenpipe_client(), screenpipe_client_exports));
+        const client = new ScreenpipeClient2(
+          currentPlugin.settings.screenpipeApiUrl
+        );
+        setStatus("Checking ScreenPipe connection...");
+        const isAvailable = await client.isAvailable();
+        if (!isAvailable) {
+          setStatus("ScreenPipe not available");
+          const errorMsg = `ScreenPipe is not running. Please start ScreenPipe on ${currentPlugin.settings.screenpipeApiUrl}`;
+          setError(errorMsg);
+          logger.debug(
+            "ScreenPipe handler: Not available, sending error result"
+          );
+          handleAddResult(JSON.stringify({ error: errorMsg }));
+          return;
+        }
+        setStatus("Searching ScreenPipe...");
+        const rawArgs = toolInvocation.args;
+        const websiteToAppMap = {
+          youtube: "Google Chrome",
+          gmail: "Google Chrome",
+          google: "Google Chrome",
+          chrome: "Google Chrome"
+        };
+        let appName = rawArgs.app_name && rawArgs.app_name.trim() !== "" ? rawArgs.app_name.trim() : void 0;
+        let windowName = rawArgs.window_name && rawArgs.window_name.trim() !== "" ? rawArgs.window_name.trim() : void 0;
+        let windowNameWasAutoSet = false;
+        const hasSpecificQuery = rawArgs.q && rawArgs.q.trim() !== "";
+        if (appName) {
+          const lowerAppName = appName.toLowerCase();
+          if (websiteToAppMap[lowerAppName]) {
+            if (!windowName) {
+              windowName = appName;
+              windowNameWasAutoSet = true;
+            }
+            appName = websiteToAppMap[lowerAppName];
+            logger.debug("ScreenPipe handler: Mapped website to app", {
+              original: rawArgs.app_name,
+              mapped: appName,
+              window: windowName
+            });
+          }
+        }
+        if (appName === "Google Chrome") {
+          const windowNameWasExplicit = rawArgs.window_name && rawArgs.window_name.trim() !== "" && !windowNameWasAutoSet;
+          if (!hasSpecificQuery && !windowNameWasExplicit) {
+            windowName = void 0;
+            logger.debug(
+              "ScreenPipe handler: General Chrome search, omitting window_name to search all tabs",
+              {
+                originalWindowName: rawArgs.window_name,
+                windowNameWasAutoSet,
+                hasQuery: hasSpecificQuery
+              }
+            );
+          } else {
+            logger.debug(
+              "ScreenPipe handler: Chrome search with specific filter",
+              {
+                hasQuery: hasSpecificQuery,
+                windowName,
+                windowNameWasExplicit,
+                originalWindowName: rawArgs.window_name
+              }
+            );
+          }
+        }
+        const userLimit = currentPlugin.settings.queryScreenpipeLimit || 10;
+        const userTimeRange = currentPlugin.settings.screenpipeTimeRange || 2;
+        let startTime = rawArgs.start_time && rawArgs.start_time.trim() !== "" ? rawArgs.start_time : void 0;
+        let endTime = rawArgs.end_time && rawArgs.end_time.trim() !== "" ? rawArgs.end_time : void 0;
+        if (!startTime && !endTime) {
+          const now3 = /* @__PURE__ */ new Date();
+          const hoursAgo = new Date(
+            now3.getTime() - userTimeRange * 60 * 60 * 1e3
+          );
+          endTime = now3.toISOString();
+          startTime = hoursAgo.toISOString();
+          logger.debug("ScreenPipe handler: Applied user time range setting", {
+            hours: userTimeRange,
+            startTime,
+            endTime
+          });
+        } else if (startTime || endTime) {
+          logger.debug("ScreenPipe handler: Using AI-provided time range", {
+            startTime,
+            endTime
+          });
+        }
+        let searchLimit = rawArgs.limit || userLimit;
+        if (appName === "Google Chrome" && !windowName && !hasSpecificQuery) {
+          searchLimit = Math.max(searchLimit, 40);
+          logger.debug(
+            "ScreenPipe handler: General Chrome search, increased limit to",
+            searchLimit,
+            {
+              originalLimit: rawArgs.limit,
+              userLimit,
+              finalLimit: searchLimit
+            }
+          );
+        }
+        const normalizedArgs = {
+          q: rawArgs.q && rawArgs.q.trim() !== "" ? rawArgs.q : void 0,
+          content_type: rawArgs.content_type && rawArgs.content_type !== "" ? rawArgs.content_type : void 0,
+          limit: searchLimit,
+          start_time: startTime,
+          end_time: endTime,
+          app_name: appName,
+          window_name: windowName
+        };
+        logger.debug(
+          "ScreenPipe handler: Executing search with normalized args:",
+          {
+            ...normalizedArgs,
+            limit: normalizedArgs.limit,
+            hasWindowName: !!normalizedArgs.window_name,
+            hasAppName: !!normalizedArgs.app_name,
+            hasQuery: !!normalizedArgs.q
+          }
+        );
+        let results = await client.search(normalizedArgs);
+        logger.debug(
+          "ScreenPipe handler: Search returned",
+          results.length,
+          "results"
+        );
+        if (results.length === 0 && appName === "Google Chrome" && normalizedArgs.window_name && !normalizedArgs.q) {
+          logger.debug(
+            "ScreenPipe handler: No results with window_name filter, retrying without window_name"
+          );
+          const fallbackArgs = {
+            ...normalizedArgs,
+            window_name: void 0,
+            // Remove window_name to search all tabs
+            limit: Math.max(normalizedArgs.limit || 40, 40)
+            // Ensure good limit for broad search
+          };
+          results = await client.search(fallbackArgs);
+          logger.debug(
+            "ScreenPipe handler: Fallback search returned",
+            results.length,
+            "results"
+          );
+        }
+        if (results.length > 0) {
+          const uniqueApps = [
+            ...new Set(
+              results.map((r3) => r3.content.app_name)
+            )
+          ];
+          const uniqueWindows = [
+            ...new Set(
+              results.map((r3) => r3.content.window_name)
+            )
+          ];
+          logger.debug("ScreenPipe handler: Found results from", {
+            uniqueApps: uniqueApps.length,
+            uniqueWindows: uniqueWindows.length,
+            apps: uniqueApps,
+            windows: uniqueWindows.slice(0, 10)
+            // First 10 windows
+          });
+        }
+        if (results.length === 0) {
+          setStatus("No results found");
+          logger.debug("ScreenPipe handler: No results, sending empty result");
+          handleAddResult(
+            JSON.stringify({
+              message: "No results found in ScreenPipe for the given criteria.",
+              results: []
+            })
+          );
+          return;
+        }
+        setStatus("Formatting results...");
+        const groupedResults = /* @__PURE__ */ new Map();
+        results.forEach((r3) => {
+          const app2 = r3.content.app_name || "Unknown";
+          const window2 = r3.content.window_name || "";
+          const groupKey = `${app2}|||${window2}`;
+          if (!groupedResults.has(groupKey)) {
+            groupedResults.set(groupKey, []);
+          }
+          groupedResults.get(groupKey).push({
+            type: r3.type,
+            timestamp: r3.content.timestamp,
+            app: app2,
+            window: window2,
+            text: r3.content.text || r3.content.transcription,
+            url: r3.content.url,
+            // Include URL if ScreenPipe provides it
+            preview: (r3.content.text || r3.content.transcription || "").substring(
+              0,
+              200
+            ) + "..."
+          });
+        });
+        const formattedResults = Array.from(groupedResults.entries()).map(
+          ([key, items]) => {
+            const [app2, window2] = key.split("|||");
+            items.sort(
+              (a, b) => parseScreenpipeTimestamp(b.timestamp).getTime() - parseScreenpipeTimestamp(a.timestamp).getTime()
+            );
+            const formatLocalTime = (utcTimestamp) => {
+              try {
+                const date = parseScreenpipeTimestamp(utcTimestamp);
+                return date.toLocaleTimeString("en-US", {
+                  hour12: false,
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  second: "2-digit",
+                  timeZoneName: "short"
+                });
+              } catch {
+                return utcTimestamp;
+              }
+            };
+            const url = items.find((i) => i.url)?.url;
+            let extractedUrl = url;
+            if (!extractedUrl && items[0].text) {
+              const youtubeUrlMatch = items[0].text.match(
+                /https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+              );
+              if (youtubeUrlMatch) {
+                extractedUrl = youtubeUrlMatch[0];
+              }
+            }
+            return {
+              app: app2,
+              window: window2,
+              count: items.length,
+              firstTimestamp: items[0].timestamp,
+              // Keep UTC for API
+              lastTimestamp: items[items.length - 1].timestamp,
+              // Keep UTC for API
+              firstTimestampLocal: formatLocalTime(items[0].timestamp),
+              // Local time for display
+              lastTimestampLocal: formatLocalTime(
+                items[items.length - 1].timestamp
+              ),
+              // Local time for display
+              // Combine text from all snapshots
+              combinedText: items.map((i) => i.text).filter(Boolean).join(" ").substring(0, 500),
+              // Include URL if available
+              url: extractedUrl,
+              // Include all timestamps for reference (UTC)
+              timestamps: items.map((i) => i.timestamp),
+              // Include local time versions for display
+              timestampsLocal: items.map((i) => formatLocalTime(i.timestamp)),
+              type: items[0].type
+            };
+          }
+        );
+        setStatus("Complete");
+        logger.debug(
+          "ScreenPipe handler: Sending grouped results:",
+          formattedResults.length,
+          "groups from",
+          results.length,
+          "total results"
+        );
+        handleAddResult(JSON.stringify(formattedResults));
+      } catch (error2) {
+        logger.error("ScreenPipe search error:", error2);
+        setStatus("Error occurred");
+        const errorMessage = error2 instanceof Error ? error2.message : "Failed to search ScreenPipe";
+        setError(errorMessage);
+        logger.debug("ScreenPipe handler: Sending error result:", errorMessage);
+        handleAddResult(JSON.stringify({ error: errorMessage }));
+      }
+    };
+    execute();
+    return () => {
+      isMounted = false;
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+      }
+    };
+  }, [toolInvocation.toolCallId]);
+  const isComplete = "result" in toolInvocation;
+  const result = toolInvocation.result;
+  let resultCount = 0;
+  if (isComplete && result) {
+    try {
+      const resultStr = typeof result === "string" ? result : JSON.stringify(result);
+      const parsed = JSON.parse(resultStr);
+      const results = Array.isArray(parsed) ? parsed : parsed.data || [];
+      resultCount = results.length;
+    } catch (e2) {
+      resultCount = Array.isArray(result) ? result.length : 0;
+    }
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "text-sm p-2", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("div", { className: "text-[--text-normal] mb-2 font-medium", children: isComplete ? "\u2713 ScreenPipe search complete" : `\u23F3 ${status}` }),
+    error && /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "text-xs text-[--text-error] mt-2 p-2 bg-[--background-secondary] rounded border border-[--background-modifier-border]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("strong", { children: "Error:" }),
+      " ",
+      error
+    ] }),
+    isComplete && resultCount > 0 && /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "text-xs text-[--text-muted] mt-1", children: [
+      "Found ",
+      resultCount,
+      " result",
+      resultCount > 1 ? "s" : ""
+    ] }),
+    isComplete && resultCount === 0 && !error && /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("div", { className: "text-xs text-[--text-muted] mt-1", children: "No results found" }),
+    !isComplete && !error && /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("div", { className: "text-xs text-[--text-muted] mt-1 italic", children: status || "Initializing..." })
+  ] });
+}
+
 // views/assistant/ai-chat/tool-handlers/tool-invocation-handler.tsx
-var import_jsx_runtime77 = __toESM(require_jsx_runtime());
+var import_jsx_runtime79 = __toESM(require_jsx_runtime());
 function ToolInvocationHandler({
   toolInvocation,
   addToolResult,
@@ -155821,13 +157631,18 @@ function ToolInvocationHandler({
       mergeFiles: "Merging Files",
       createTemplate: "Creating Template",
       bulkFindReplace: "Find & Replace",
-      exportToFormat: "Exporting Files"
+      exportToFormat: "Exporting Files",
+      searchScreenpipe: "Search ScreenPipe"
     };
     return toolTitles[toolName];
   };
   const renderContent = () => {
+    console.log("[ToolInvocationHandler] Rendering tool:", {
+      toolName: toolInvocation.toolName,
+      toolCallId: toolInvocation.toolCallId
+    });
     const handlers3 = {
-      getSearchQuery: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      getSearchQuery: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         SearchHandler,
         {
           toolInvocation,
@@ -155835,14 +157650,14 @@ function ToolInvocationHandler({
           app
         }
       ),
-      getYoutubeVideoId: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      getYoutubeVideoId: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         YouTubeHandler,
         {
           toolInvocation,
           handleAddResult
         }
       ),
-      getNotesForDateRange: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      getNotesForDateRange: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         DateRangeHandler,
         {
           toolInvocation,
@@ -155850,7 +157665,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      getLastModifiedFiles: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      getLastModifiedFiles: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         LastModifiedHandler,
         {
           toolInvocation,
@@ -155858,7 +157673,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      openFile: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      openFile: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         OpenFileHandler,
         {
           toolInvocation,
@@ -155866,21 +157681,21 @@ function ToolInvocationHandler({
           app
         }
       ),
-      generateSettings: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      generateSettings: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         SettingsUpdateHandler,
         {
           toolInvocation,
           handleAddResult
         }
       ),
-      appendContentToFile: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      appendContentToFile: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         AppendContentHandler,
         {
           toolInvocation,
           handleAddResult
         }
       ),
-      analyzeVaultStructure: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      analyzeVaultStructure: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         OnboardHandler,
         {
           toolInvocation,
@@ -155888,7 +157703,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      moveFiles: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      moveFiles: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         MoveFilesHandler,
         {
           toolInvocation,
@@ -155896,7 +157711,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      renameFiles: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      renameFiles: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         RenameFilesHandler,
         {
           toolInvocation,
@@ -155904,7 +157719,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      searchByName: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      searchByName: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         SearchRenameHandler,
         {
           toolInvocation,
@@ -155912,7 +157727,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      executeActionsOnFileBasedOnPrompt: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      executeActionsOnFileBasedOnPrompt: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         ExecuteActionsHandler,
         {
           toolInvocation,
@@ -155920,7 +157735,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      addTextToDocument: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      addTextToDocument: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         AddTextHandler,
         {
           toolInvocation,
@@ -155928,7 +157743,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      modifyDocumentText: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      modifyDocumentText: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         ModifyTextHandler,
         {
           toolInvocation,
@@ -155937,7 +157752,7 @@ function ToolInvocationHandler({
         }
       ),
       // New Metadata & Analysis Tools
-      getFileMetadata: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      getFileMetadata: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         MetadataHandler,
         {
           toolInvocation,
@@ -155945,7 +157760,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      updateFrontmatter: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      updateFrontmatter: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         FrontmatterHandler,
         {
           toolInvocation,
@@ -155953,7 +157768,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      addTags: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      addTags: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         TagsHandler,
         {
           toolInvocation,
@@ -155961,7 +157776,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      getBacklinks: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      getBacklinks: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         BacklinksHandler,
         {
           toolInvocation,
@@ -155969,7 +157784,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      getOutgoingLinks: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      getOutgoingLinks: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         OutgoingLinksHandler,
         {
           toolInvocation,
@@ -155977,7 +157792,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      getHeadings: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      getHeadings: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         HeadingsHandler,
         {
           toolInvocation,
@@ -155985,7 +157800,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      createNewFiles: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      createNewFiles: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         CreateFilesHandler,
         {
           toolInvocation,
@@ -155993,7 +157808,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      deleteFiles: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      deleteFiles: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         DeleteFilesHandler,
         {
           toolInvocation,
@@ -156001,7 +157816,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      mergeFiles: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      mergeFiles: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         MergeFilesHandler,
         {
           toolInvocation,
@@ -156009,7 +157824,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      createTemplate: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      createTemplate: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         CreateTemplateHandler,
         {
           toolInvocation,
@@ -156017,7 +157832,7 @@ function ToolInvocationHandler({
           app
         }
       ),
-      bulkFindReplace: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      bulkFindReplace: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         BulkFindReplaceHandler,
         {
           toolInvocation,
@@ -156025,8 +157840,16 @@ function ToolInvocationHandler({
           app
         }
       ),
-      exportToFormat: () => /* @__PURE__ */ (0, import_jsx_runtime77.jsx)(
+      exportToFormat: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
         ExportToFormatHandler,
+        {
+          toolInvocation,
+          handleAddResult,
+          app
+        }
+      ),
+      searchScreenpipe: () => /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
+        ScreenpipeHandler,
         {
           toolInvocation,
           handleAddResult,
@@ -156034,18 +157857,27 @@ function ToolInvocationHandler({
         }
       )
     };
-    return handlers3[toolInvocation.toolName]?.() || null;
+    const handler = handlers3[toolInvocation.toolName];
+    if (!handler) {
+      console.error("[ToolInvocationHandler] No handler found for tool:", toolInvocation.toolName);
+      return /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)("div", { className: "text-xs text-[--text-error] p-2", children: [
+        "Unknown tool: ",
+        toolInvocation.toolName
+      ] });
+    }
+    return handler();
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime77.jsxs)(
+  const content3 = renderContent();
+  return /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)(
     motion.div,
     {
-      className: "card",
+      className: "p-3 border border-[--background-modifier-border] rounded bg-[--background-secondary]",
       initial: { opacity: 0, y: 20 },
       animate: { opacity: 1, y: 0 },
       transition: { duration: 0.3 },
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("h4", { className: "m-0 mb-2 text-[--text-normal] text-sm font-semibold", children: getToolTitle(toolInvocation.toolName) }),
-        /* @__PURE__ */ (0, import_jsx_runtime77.jsx)("div", { className: "text-sm text-[--text-muted]", children: renderContent() })
+        /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("h4", { className: "m-0 mb-2 text-[--text-normal] text-sm font-semibold", children: getToolTitle(toolInvocation.toolName) }),
+        /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("div", { className: "text-sm text-[--text-muted]", children: content3 })
       ]
     }
   );
@@ -158214,7 +160046,768 @@ function createAsyncIterableStream(source) {
   };
   return stream2;
 }
+var noSchemaOutputStrategy = {
+  type: "no-schema",
+  jsonSchema: void 0,
+  validatePartialResult({ value, textDelta }) {
+    return { success: true, value: { partial: value, textDelta } };
+  },
+  validateFinalResult(value, context) {
+    return value === void 0 ? {
+      success: false,
+      error: new NoObjectGeneratedError({
+        message: "No object generated: response did not match schema.",
+        text: context.text,
+        response: context.response,
+        usage: context.usage
+      })
+    } : { success: true, value };
+  },
+  createElementStream() {
+    throw new UnsupportedFunctionalityError({
+      functionality: "element streams in no-schema mode"
+    });
+  }
+};
+var objectOutputStrategy = (schema) => ({
+  type: "object",
+  jsonSchema: schema.jsonSchema,
+  validatePartialResult({ value, textDelta }) {
+    return {
+      success: true,
+      value: {
+        // Note: currently no validation of partial results:
+        partial: value,
+        textDelta
+      }
+    };
+  },
+  validateFinalResult(value) {
+    return safeValidateTypes({ value, schema });
+  },
+  createElementStream() {
+    throw new UnsupportedFunctionalityError({
+      functionality: "element streams in object mode"
+    });
+  }
+});
+var arrayOutputStrategy = (schema) => {
+  const { $schema, ...itemSchema } = schema.jsonSchema;
+  return {
+    type: "enum",
+    // wrap in object that contains array of elements, since most LLMs will not
+    // be able to generate an array directly:
+    // possible future optimization: use arrays directly when model supports grammar-guided generation
+    jsonSchema: {
+      $schema: "http://json-schema.org/draft-07/schema#",
+      type: "object",
+      properties: {
+        elements: { type: "array", items: itemSchema }
+      },
+      required: ["elements"],
+      additionalProperties: false
+    },
+    validatePartialResult({ value, latestObject, isFirstDelta, isFinalDelta }) {
+      var _a16;
+      if (!isJSONObject(value) || !isJSONArray(value.elements)) {
+        return {
+          success: false,
+          error: new TypeValidationError({
+            value,
+            cause: "value must be an object that contains an array of elements"
+          })
+        };
+      }
+      const inputArray = value.elements;
+      const resultArray = [];
+      for (let i = 0; i < inputArray.length; i++) {
+        const element2 = inputArray[i];
+        const result = safeValidateTypes({ value: element2, schema });
+        if (i === inputArray.length - 1 && !isFinalDelta) {
+          continue;
+        }
+        if (!result.success) {
+          return result;
+        }
+        resultArray.push(result.value);
+      }
+      const publishedElementCount = (_a16 = latestObject == null ? void 0 : latestObject.length) != null ? _a16 : 0;
+      let textDelta = "";
+      if (isFirstDelta) {
+        textDelta += "[";
+      }
+      if (publishedElementCount > 0) {
+        textDelta += ",";
+      }
+      textDelta += resultArray.slice(publishedElementCount).map((element2) => JSON.stringify(element2)).join(",");
+      if (isFinalDelta) {
+        textDelta += "]";
+      }
+      return {
+        success: true,
+        value: {
+          partial: resultArray,
+          textDelta
+        }
+      };
+    },
+    validateFinalResult(value) {
+      if (!isJSONObject(value) || !isJSONArray(value.elements)) {
+        return {
+          success: false,
+          error: new TypeValidationError({
+            value,
+            cause: "value must be an object that contains an array of elements"
+          })
+        };
+      }
+      const inputArray = value.elements;
+      for (const element2 of inputArray) {
+        const result = safeValidateTypes({ value: element2, schema });
+        if (!result.success) {
+          return result;
+        }
+      }
+      return { success: true, value: inputArray };
+    },
+    createElementStream(originalStream) {
+      let publishedElements = 0;
+      return createAsyncIterableStream(
+        originalStream.pipeThrough(
+          new TransformStream({
+            transform(chunk, controller) {
+              switch (chunk.type) {
+                case "object": {
+                  const array = chunk.object;
+                  for (; publishedElements < array.length; publishedElements++) {
+                    controller.enqueue(array[publishedElements]);
+                  }
+                  break;
+                }
+                case "text-delta":
+                case "finish":
+                case "error":
+                  break;
+                default: {
+                  const _exhaustiveCheck = chunk;
+                  throw new Error(
+                    `Unsupported chunk type: ${_exhaustiveCheck}`
+                  );
+                }
+              }
+            }
+          })
+        )
+      );
+    }
+  };
+};
+var enumOutputStrategy = (enumValues) => {
+  return {
+    type: "enum",
+    // wrap in object that contains result, since most LLMs will not
+    // be able to generate an enum value directly:
+    // possible future optimization: use enums directly when model supports top-level enums
+    jsonSchema: {
+      $schema: "http://json-schema.org/draft-07/schema#",
+      type: "object",
+      properties: {
+        result: { type: "string", enum: enumValues }
+      },
+      required: ["result"],
+      additionalProperties: false
+    },
+    validateFinalResult(value) {
+      if (!isJSONObject(value) || typeof value.result !== "string") {
+        return {
+          success: false,
+          error: new TypeValidationError({
+            value,
+            cause: 'value must be an object that contains a string in the "result" property.'
+          })
+        };
+      }
+      const result = value.result;
+      return enumValues.includes(result) ? { success: true, value: result } : {
+        success: false,
+        error: new TypeValidationError({
+          value,
+          cause: "value must be a string in the enum"
+        })
+      };
+    },
+    validatePartialResult() {
+      throw new UnsupportedFunctionalityError({
+        functionality: "partial results in enum mode"
+      });
+    },
+    createElementStream() {
+      throw new UnsupportedFunctionalityError({
+        functionality: "element streams in enum mode"
+      });
+    }
+  };
+};
+function getOutputStrategy({
+  output,
+  schema,
+  enumValues
+}) {
+  switch (output) {
+    case "object":
+      return objectOutputStrategy(asSchema(schema));
+    case "array":
+      return arrayOutputStrategy(asSchema(schema));
+    case "enum":
+      return enumOutputStrategy(enumValues);
+    case "no-schema":
+      return noSchemaOutputStrategy;
+    default: {
+      const _exhaustiveCheck = output;
+      throw new Error(`Unsupported output: ${_exhaustiveCheck}`);
+    }
+  }
+}
+function validateObjectGenerationInput({
+  output,
+  mode,
+  schema,
+  schemaName,
+  schemaDescription,
+  enumValues
+}) {
+  if (output != null && output !== "object" && output !== "array" && output !== "enum" && output !== "no-schema") {
+    throw new InvalidArgumentError2({
+      parameter: "output",
+      value: output,
+      message: "Invalid output type."
+    });
+  }
+  if (output === "no-schema") {
+    if (mode === "auto" || mode === "tool") {
+      throw new InvalidArgumentError2({
+        parameter: "mode",
+        value: mode,
+        message: 'Mode must be "json" for no-schema output.'
+      });
+    }
+    if (schema != null) {
+      throw new InvalidArgumentError2({
+        parameter: "schema",
+        value: schema,
+        message: "Schema is not supported for no-schema output."
+      });
+    }
+    if (schemaDescription != null) {
+      throw new InvalidArgumentError2({
+        parameter: "schemaDescription",
+        value: schemaDescription,
+        message: "Schema description is not supported for no-schema output."
+      });
+    }
+    if (schemaName != null) {
+      throw new InvalidArgumentError2({
+        parameter: "schemaName",
+        value: schemaName,
+        message: "Schema name is not supported for no-schema output."
+      });
+    }
+    if (enumValues != null) {
+      throw new InvalidArgumentError2({
+        parameter: "enumValues",
+        value: enumValues,
+        message: "Enum values are not supported for no-schema output."
+      });
+    }
+  }
+  if (output === "object") {
+    if (schema == null) {
+      throw new InvalidArgumentError2({
+        parameter: "schema",
+        value: schema,
+        message: "Schema is required for object output."
+      });
+    }
+    if (enumValues != null) {
+      throw new InvalidArgumentError2({
+        parameter: "enumValues",
+        value: enumValues,
+        message: "Enum values are not supported for object output."
+      });
+    }
+  }
+  if (output === "array") {
+    if (schema == null) {
+      throw new InvalidArgumentError2({
+        parameter: "schema",
+        value: schema,
+        message: "Element schema is required for array output."
+      });
+    }
+    if (enumValues != null) {
+      throw new InvalidArgumentError2({
+        parameter: "enumValues",
+        value: enumValues,
+        message: "Enum values are not supported for array output."
+      });
+    }
+  }
+  if (output === "enum") {
+    if (schema != null) {
+      throw new InvalidArgumentError2({
+        parameter: "schema",
+        value: schema,
+        message: "Schema is not supported for enum output."
+      });
+    }
+    if (schemaDescription != null) {
+      throw new InvalidArgumentError2({
+        parameter: "schemaDescription",
+        value: schemaDescription,
+        message: "Schema description is not supported for enum output."
+      });
+    }
+    if (schemaName != null) {
+      throw new InvalidArgumentError2({
+        parameter: "schemaName",
+        value: schemaName,
+        message: "Schema name is not supported for enum output."
+      });
+    }
+    if (enumValues == null) {
+      throw new InvalidArgumentError2({
+        parameter: "enumValues",
+        value: enumValues,
+        message: "Enum values are required for enum output."
+      });
+    }
+    for (const value of enumValues) {
+      if (typeof value !== "string") {
+        throw new InvalidArgumentError2({
+          parameter: "enumValues",
+          value,
+          message: "Enum values must be strings."
+        });
+      }
+    }
+  }
+}
 var originalGenerateId = createIdGenerator({ prefix: "aiobj", size: 24 });
+async function generateObject({
+  model,
+  enum: enumValues,
+  // rename bc enum is reserved by typescript
+  schema: inputSchema,
+  schemaName,
+  schemaDescription,
+  mode,
+  output = "object",
+  system,
+  prompt: prompt2,
+  messages,
+  maxRetries: maxRetriesArg,
+  abortSignal,
+  headers,
+  experimental_repairText: repairText,
+  experimental_telemetry: telemetry,
+  experimental_providerMetadata,
+  providerOptions = experimental_providerMetadata,
+  _internal: {
+    generateId: generateId3 = originalGenerateId,
+    currentDate = () => /* @__PURE__ */ new Date()
+  } = {},
+  ...settings
+}) {
+  validateObjectGenerationInput({
+    output,
+    mode,
+    schema: inputSchema,
+    schemaName,
+    schemaDescription,
+    enumValues
+  });
+  const { maxRetries, retry } = prepareRetries({ maxRetries: maxRetriesArg });
+  const outputStrategy = getOutputStrategy({
+    output,
+    schema: inputSchema,
+    enumValues
+  });
+  if (outputStrategy.type === "no-schema" && mode === void 0) {
+    mode = "json";
+  }
+  const baseTelemetryAttributes = getBaseTelemetryAttributes({
+    model,
+    telemetry,
+    headers,
+    settings: { ...settings, maxRetries }
+  });
+  const tracer = getTracer(telemetry);
+  return recordSpan({
+    name: "ai.generateObject",
+    attributes: selectTelemetryAttributes({
+      telemetry,
+      attributes: {
+        ...assembleOperationName({
+          operationId: "ai.generateObject",
+          telemetry
+        }),
+        ...baseTelemetryAttributes,
+        // specific settings that only make sense on the outer level:
+        "ai.prompt": {
+          input: () => JSON.stringify({ system, prompt: prompt2, messages })
+        },
+        "ai.schema": outputStrategy.jsonSchema != null ? { input: () => JSON.stringify(outputStrategy.jsonSchema) } : void 0,
+        "ai.schema.name": schemaName,
+        "ai.schema.description": schemaDescription,
+        "ai.settings.output": outputStrategy.type,
+        "ai.settings.mode": mode
+      }
+    }),
+    tracer,
+    fn: async (span) => {
+      var _a16, _b, _c, _d;
+      if (mode === "auto" || mode == null) {
+        mode = model.defaultObjectGenerationMode;
+      }
+      let result;
+      let finishReason;
+      let usage;
+      let warnings;
+      let rawResponse;
+      let response;
+      let request;
+      let logprobs;
+      let resultProviderMetadata;
+      switch (mode) {
+        case "json": {
+          const standardizedPrompt = standardizePrompt({
+            prompt: {
+              system: outputStrategy.jsonSchema == null ? injectJsonInstruction({ prompt: system }) : model.supportsStructuredOutputs ? system : injectJsonInstruction({
+                prompt: system,
+                schema: outputStrategy.jsonSchema
+              }),
+              prompt: prompt2,
+              messages
+            },
+            tools: void 0
+          });
+          const promptMessages = await convertToLanguageModelPrompt({
+            prompt: standardizedPrompt,
+            modelSupportsImageUrls: model.supportsImageUrls,
+            modelSupportsUrl: (_a16 = model.supportsUrl) == null ? void 0 : _a16.bind(model)
+            // support 'this' context
+          });
+          const generateResult = await retry(
+            () => recordSpan({
+              name: "ai.generateObject.doGenerate",
+              attributes: selectTelemetryAttributes({
+                telemetry,
+                attributes: {
+                  ...assembleOperationName({
+                    operationId: "ai.generateObject.doGenerate",
+                    telemetry
+                  }),
+                  ...baseTelemetryAttributes,
+                  "ai.prompt.format": {
+                    input: () => standardizedPrompt.type
+                  },
+                  "ai.prompt.messages": {
+                    input: () => JSON.stringify(promptMessages)
+                  },
+                  "ai.settings.mode": mode,
+                  // standardized gen-ai llm span attributes:
+                  "gen_ai.system": model.provider,
+                  "gen_ai.request.model": model.modelId,
+                  "gen_ai.request.frequency_penalty": settings.frequencyPenalty,
+                  "gen_ai.request.max_tokens": settings.maxTokens,
+                  "gen_ai.request.presence_penalty": settings.presencePenalty,
+                  "gen_ai.request.temperature": settings.temperature,
+                  "gen_ai.request.top_k": settings.topK,
+                  "gen_ai.request.top_p": settings.topP
+                }
+              }),
+              tracer,
+              fn: async (span2) => {
+                var _a17, _b2, _c2, _d2, _e, _f;
+                const result2 = await model.doGenerate({
+                  mode: {
+                    type: "object-json",
+                    schema: outputStrategy.jsonSchema,
+                    name: schemaName,
+                    description: schemaDescription
+                  },
+                  ...prepareCallSettings(settings),
+                  inputFormat: standardizedPrompt.type,
+                  prompt: promptMessages,
+                  providerMetadata: providerOptions,
+                  abortSignal,
+                  headers
+                });
+                const responseData = {
+                  id: (_b2 = (_a17 = result2.response) == null ? void 0 : _a17.id) != null ? _b2 : generateId3(),
+                  timestamp: (_d2 = (_c2 = result2.response) == null ? void 0 : _c2.timestamp) != null ? _d2 : currentDate(),
+                  modelId: (_f = (_e = result2.response) == null ? void 0 : _e.modelId) != null ? _f : model.modelId
+                };
+                if (result2.text === void 0) {
+                  throw new NoObjectGeneratedError({
+                    message: "No object generated: the model did not return a response.",
+                    response: responseData,
+                    usage: calculateLanguageModelUsage2(result2.usage)
+                  });
+                }
+                span2.setAttributes(
+                  selectTelemetryAttributes({
+                    telemetry,
+                    attributes: {
+                      "ai.response.finishReason": result2.finishReason,
+                      "ai.response.object": { output: () => result2.text },
+                      "ai.response.id": responseData.id,
+                      "ai.response.model": responseData.modelId,
+                      "ai.response.timestamp": responseData.timestamp.toISOString(),
+                      "ai.usage.promptTokens": result2.usage.promptTokens,
+                      "ai.usage.completionTokens": result2.usage.completionTokens,
+                      // standardized gen-ai llm span attributes:
+                      "gen_ai.response.finish_reasons": [result2.finishReason],
+                      "gen_ai.response.id": responseData.id,
+                      "gen_ai.response.model": responseData.modelId,
+                      "gen_ai.usage.prompt_tokens": result2.usage.promptTokens,
+                      "gen_ai.usage.completion_tokens": result2.usage.completionTokens
+                    }
+                  })
+                );
+                return { ...result2, objectText: result2.text, responseData };
+              }
+            })
+          );
+          result = generateResult.objectText;
+          finishReason = generateResult.finishReason;
+          usage = generateResult.usage;
+          warnings = generateResult.warnings;
+          rawResponse = generateResult.rawResponse;
+          logprobs = generateResult.logprobs;
+          resultProviderMetadata = generateResult.providerMetadata;
+          request = (_b = generateResult.request) != null ? _b : {};
+          response = generateResult.responseData;
+          break;
+        }
+        case "tool": {
+          const standardizedPrompt = standardizePrompt({
+            prompt: { system, prompt: prompt2, messages },
+            tools: void 0
+          });
+          const promptMessages = await convertToLanguageModelPrompt({
+            prompt: standardizedPrompt,
+            modelSupportsImageUrls: model.supportsImageUrls,
+            modelSupportsUrl: (_c = model.supportsUrl) == null ? void 0 : _c.bind(model)
+            // support 'this' context,
+          });
+          const inputFormat = standardizedPrompt.type;
+          const generateResult = await retry(
+            () => recordSpan({
+              name: "ai.generateObject.doGenerate",
+              attributes: selectTelemetryAttributes({
+                telemetry,
+                attributes: {
+                  ...assembleOperationName({
+                    operationId: "ai.generateObject.doGenerate",
+                    telemetry
+                  }),
+                  ...baseTelemetryAttributes,
+                  "ai.prompt.format": {
+                    input: () => inputFormat
+                  },
+                  "ai.prompt.messages": {
+                    input: () => JSON.stringify(promptMessages)
+                  },
+                  "ai.settings.mode": mode,
+                  // standardized gen-ai llm span attributes:
+                  "gen_ai.system": model.provider,
+                  "gen_ai.request.model": model.modelId,
+                  "gen_ai.request.frequency_penalty": settings.frequencyPenalty,
+                  "gen_ai.request.max_tokens": settings.maxTokens,
+                  "gen_ai.request.presence_penalty": settings.presencePenalty,
+                  "gen_ai.request.temperature": settings.temperature,
+                  "gen_ai.request.top_k": settings.topK,
+                  "gen_ai.request.top_p": settings.topP
+                }
+              }),
+              tracer,
+              fn: async (span2) => {
+                var _a17, _b2, _c2, _d2, _e, _f, _g, _h;
+                const result2 = await model.doGenerate({
+                  mode: {
+                    type: "object-tool",
+                    tool: {
+                      type: "function",
+                      name: schemaName != null ? schemaName : "json",
+                      description: schemaDescription != null ? schemaDescription : "Respond with a JSON object.",
+                      parameters: outputStrategy.jsonSchema
+                    }
+                  },
+                  ...prepareCallSettings(settings),
+                  inputFormat,
+                  prompt: promptMessages,
+                  providerMetadata: providerOptions,
+                  abortSignal,
+                  headers
+                });
+                const objectText = (_b2 = (_a17 = result2.toolCalls) == null ? void 0 : _a17[0]) == null ? void 0 : _b2.args;
+                const responseData = {
+                  id: (_d2 = (_c2 = result2.response) == null ? void 0 : _c2.id) != null ? _d2 : generateId3(),
+                  timestamp: (_f = (_e = result2.response) == null ? void 0 : _e.timestamp) != null ? _f : currentDate(),
+                  modelId: (_h = (_g = result2.response) == null ? void 0 : _g.modelId) != null ? _h : model.modelId
+                };
+                if (objectText === void 0) {
+                  throw new NoObjectGeneratedError({
+                    message: "No object generated: the tool was not called.",
+                    response: responseData,
+                    usage: calculateLanguageModelUsage2(result2.usage)
+                  });
+                }
+                span2.setAttributes(
+                  selectTelemetryAttributes({
+                    telemetry,
+                    attributes: {
+                      "ai.response.finishReason": result2.finishReason,
+                      "ai.response.object": { output: () => objectText },
+                      "ai.response.id": responseData.id,
+                      "ai.response.model": responseData.modelId,
+                      "ai.response.timestamp": responseData.timestamp.toISOString(),
+                      "ai.usage.promptTokens": result2.usage.promptTokens,
+                      "ai.usage.completionTokens": result2.usage.completionTokens,
+                      // standardized gen-ai llm span attributes:
+                      "gen_ai.response.finish_reasons": [result2.finishReason],
+                      "gen_ai.response.id": responseData.id,
+                      "gen_ai.response.model": responseData.modelId,
+                      "gen_ai.usage.input_tokens": result2.usage.promptTokens,
+                      "gen_ai.usage.output_tokens": result2.usage.completionTokens
+                    }
+                  })
+                );
+                return { ...result2, objectText, responseData };
+              }
+            })
+          );
+          result = generateResult.objectText;
+          finishReason = generateResult.finishReason;
+          usage = generateResult.usage;
+          warnings = generateResult.warnings;
+          rawResponse = generateResult.rawResponse;
+          logprobs = generateResult.logprobs;
+          resultProviderMetadata = generateResult.providerMetadata;
+          request = (_d = generateResult.request) != null ? _d : {};
+          response = generateResult.responseData;
+          break;
+        }
+        case void 0: {
+          throw new Error(
+            "Model does not have a default object generation mode."
+          );
+        }
+        default: {
+          const _exhaustiveCheck = mode;
+          throw new Error(`Unsupported mode: ${_exhaustiveCheck}`);
+        }
+      }
+      function processResult(result2) {
+        const parseResult = safeParseJSON({ text: result2 });
+        if (!parseResult.success) {
+          throw new NoObjectGeneratedError({
+            message: "No object generated: could not parse the response.",
+            cause: parseResult.error,
+            text: result2,
+            response,
+            usage: calculateLanguageModelUsage2(usage)
+          });
+        }
+        const validationResult = outputStrategy.validateFinalResult(
+          parseResult.value,
+          {
+            text: result2,
+            response,
+            usage: calculateLanguageModelUsage2(usage)
+          }
+        );
+        if (!validationResult.success) {
+          throw new NoObjectGeneratedError({
+            message: "No object generated: response did not match schema.",
+            cause: validationResult.error,
+            text: result2,
+            response,
+            usage: calculateLanguageModelUsage2(usage)
+          });
+        }
+        return validationResult.value;
+      }
+      let object2;
+      try {
+        object2 = processResult(result);
+      } catch (error) {
+        if (repairText != null && NoObjectGeneratedError.isInstance(error) && (JSONParseError.isInstance(error.cause) || TypeValidationError.isInstance(error.cause))) {
+          const repairedText = await repairText({
+            text: result,
+            error: error.cause
+          });
+          if (repairedText === null) {
+            throw error;
+          }
+          object2 = processResult(repairedText);
+        } else {
+          throw error;
+        }
+      }
+      span.setAttributes(
+        selectTelemetryAttributes({
+          telemetry,
+          attributes: {
+            "ai.response.finishReason": finishReason,
+            "ai.response.object": {
+              output: () => JSON.stringify(object2)
+            },
+            "ai.usage.promptTokens": usage.promptTokens,
+            "ai.usage.completionTokens": usage.completionTokens
+          }
+        })
+      );
+      return new DefaultGenerateObjectResult({
+        object: object2,
+        finishReason,
+        usage: calculateLanguageModelUsage2(usage),
+        warnings,
+        request,
+        response: {
+          ...response,
+          headers: rawResponse == null ? void 0 : rawResponse.headers,
+          body: rawResponse == null ? void 0 : rawResponse.body
+        },
+        logprobs,
+        providerMetadata: resultProviderMetadata
+      });
+    }
+  });
+}
+var DefaultGenerateObjectResult = class {
+  constructor(options) {
+    this.object = options.object;
+    this.finishReason = options.finishReason;
+    this.usage = options.usage;
+    this.warnings = options.warnings;
+    this.providerMetadata = options.providerMetadata;
+    this.experimental_providerMetadata = options.providerMetadata;
+    this.response = options.response;
+    this.request = options.request;
+    this.logprobs = options.logprobs;
+  }
+  toJsonResponse(init3) {
+    var _a16;
+    return new Response(JSON.stringify(this.object), {
+      status: (_a16 = init3 == null ? void 0 : init3.status) != null ? _a16 : 200,
+      headers: prepareResponseHeaders(init3 == null ? void 0 : init3.headers, {
+        contentType: "application/json; charset=utf-8"
+      })
+    });
+  }
+};
 var DelayedPromise = class {
   constructor() {
     this.status = { type: "pending" };
@@ -160361,8 +162954,8 @@ var HANGING_STREAM_WARNING_TIME_MS = 15 * 1e3;
 var import_ollama_ai_provider = __toESM(require_dist5());
 
 // views/assistant/ai-chat/components/SourcesSection.tsx
-var import_react81 = __toESM(require_react());
-var import_jsx_runtime78 = __toESM(require_jsx_runtime());
+var import_react82 = __toESM(require_react());
+var import_jsx_runtime80 = __toESM(require_jsx_runtime());
 function extractDomainFromUrl(url) {
   try {
     const domain = new URL(url).hostname.replace("www.", "");
@@ -160375,7 +162968,7 @@ function getFaviconUrl(domain) {
   return `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
 }
 function SourcesSection({ groundingMetadata }) {
-  const [showAll, setShowAll] = (0, import_react81.useState)(false);
+  const [showAll, setShowAll] = (0, import_react82.useState)(false);
   if (!groundingMetadata) return null;
   const sources = groundingMetadata.groundingSupports?.map((support, index2) => {
     const url = support.segment.text.match(/https?:\/\/[^\s]+/)?.[0] || "unknown-source";
@@ -160389,10 +162982,10 @@ function SourcesSection({ groundingMetadata }) {
     };
   }) || [];
   const displayedSources = showAll ? sources : sources.slice(0, 3);
-  return /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "mt-6 space-y-4 m-2 z-50", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "flex justify-between items-center", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("h3", { className: "text-base font-medium text-[--text-normal]", children: "Sources" }),
-      sources.length > 3 && /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)("div", { className: "mt-6 space-y-4 m-2 z-50", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)("div", { className: "flex justify-between items-center", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime80.jsx)("h3", { className: "text-base font-medium text-[--text-normal]", children: "Sources" }),
+      sources.length > 3 && /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
         "button",
         {
           onClick: () => setShowAll(!showAll),
@@ -160401,13 +162994,13 @@ function SourcesSection({ groundingMetadata }) {
         }
       )
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4", children: displayedSources.map((source) => /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)(
+    /* @__PURE__ */ (0, import_jsx_runtime80.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4", children: displayedSources.map((source) => /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)(
       "div",
       {
         className: "flex items-center p-4 bg-[--background-primary] border border-[--background-modifier-border] hover:border-[--background-modifier-border-hover] transition-colors",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("div", { className: "flex-shrink-0 mr-4", children: /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "relative", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime80.jsx)("div", { className: "flex-shrink-0 mr-4", children: /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)("div", { className: "relative", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
               "img",
               {
                 src: getFaviconUrl(source.domain),
@@ -160415,10 +163008,10 @@ function SourcesSection({ groundingMetadata }) {
                 className: "w-8 h-8"
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("div", { className: "absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center bg-[--background-secondary] border border-[--background-modifier-border] rounded-full text-xs font-medium text-[--text-accent]", children: source.id })
+            /* @__PURE__ */ (0, import_jsx_runtime80.jsx)("div", { className: "absolute -top-2 -right-2 w-5 h-5 flex items-center justify-center bg-[--background-secondary] border border-[--background-modifier-border] rounded-full text-xs font-medium text-[--text-accent]", children: source.id })
           ] }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime78.jsxs)("div", { className: "flex-grow min-w-0", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("h4", { className: "font-medium text-sm text-[--text-normal] truncate", children: /* @__PURE__ */ (0, import_jsx_runtime78.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)("div", { className: "flex-grow min-w-0", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime80.jsx)("h4", { className: "font-medium text-sm text-[--text-normal] truncate", children: /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
               "a",
               {
                 href: source.url,
@@ -160428,7 +163021,7 @@ function SourcesSection({ groundingMetadata }) {
                 children: source.title || source.domain
               }
             ) }),
-            /* @__PURE__ */ (0, import_jsx_runtime78.jsx)("p", { className: "text-xs text-[--text-muted] truncate", children: source.domain })
+            /* @__PURE__ */ (0, import_jsx_runtime80.jsx)("p", { className: "text-xs text-[--text-muted] truncate", children: source.domain })
           ] })
         ]
       },
@@ -160438,24 +163031,24 @@ function SourcesSection({ groundingMetadata }) {
 }
 
 // views/assistant/ai-chat/context-limit-indicator.tsx
-var import_react83 = __toESM(require_react());
+var import_react84 = __toESM(require_react());
 var import_init2 = __toESM(require_init());
 
 // ../../node_modules/use-debounce/dist/index.module.js
-var import_react82 = __toESM(require_react());
+var import_react83 = __toESM(require_react());
 function c(e2, u2, c2) {
-  var i = this, a = (0, import_react82.useRef)(null), o = (0, import_react82.useRef)(0), f = (0, import_react82.useRef)(null), l = (0, import_react82.useRef)([]), v = (0, import_react82.useRef)(), m = (0, import_react82.useRef)(), d = (0, import_react82.useRef)(e2), g = (0, import_react82.useRef)(true);
+  var i = this, a = (0, import_react83.useRef)(null), o = (0, import_react83.useRef)(0), f = (0, import_react83.useRef)(null), l = (0, import_react83.useRef)([]), v = (0, import_react83.useRef)(), m = (0, import_react83.useRef)(), d = (0, import_react83.useRef)(e2), g = (0, import_react83.useRef)(true);
   d.current = e2;
   var p = "undefined" != typeof window, w = !u2 && 0 !== u2 && p;
   if ("function" != typeof e2) throw new TypeError("Expected a function");
   u2 = +u2 || 0;
   var s = !!(c2 = c2 || {}).leading, x = !("trailing" in c2) || !!c2.trailing, h = "maxWait" in c2, y = "debounceOnServer" in c2 && !!c2.debounceOnServer, F = h ? Math.max(+c2.maxWait || 0, u2) : null;
-  (0, import_react82.useEffect)(function() {
+  (0, import_react83.useEffect)(function() {
     return g.current = true, function() {
       g.current = false;
     };
   }, []);
-  var A = (0, import_react82.useMemo)(function() {
+  var A = (0, import_react83.useMemo)(function() {
     var r3 = function(r4) {
       var n3 = l.current, t3 = v.current;
       return l.current = v.current = null, o.current = r4, m.current = d.current.apply(t3, n3);
@@ -160497,19 +163090,19 @@ function c(e2, u2, c2) {
 
 // views/assistant/ai-chat/context-limit-indicator.tsx
 init_logger();
-var import_jsx_runtime79 = __toESM(require_jsx_runtime());
+var import_jsx_runtime81 = __toESM(require_jsx_runtime());
 function ContextLimitIndicator({
   unifiedContext,
   maxContextSize
 }) {
-  const [stats, setStats] = import_react83.default.useState({
+  const [stats, setStats] = import_react84.default.useState({
     contextSize: 0,
     percentUsed: 0
   });
-  const [error, setError] = import_react83.default.useState();
-  const [tiktokenInitialized, setTiktokenInitialized] = import_react83.default.useState(false);
+  const [error, setError] = import_react84.default.useState();
+  const [tiktokenInitialized, setTiktokenInitialized] = import_react84.default.useState(false);
   const { isLightweightMode, toggleLightweightMode } = useContextItems();
-  import_react83.default.useEffect(() => {
+  import_react84.default.useEffect(() => {
     async function setup() {
       try {
         if (!tiktokenInitialized) {
@@ -160538,17 +163131,17 @@ function ContextLimitIndicator({
       encoder.free();
     }
   }, 300);
-  import_react83.default.useEffect(() => {
+  import_react84.default.useEffect(() => {
     calculateTokens(unifiedContext);
   }, [unifiedContext]);
   if (error) {
-    return /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("div", { className: "mt-2 p-2 rounded text-xs text-[--text-error] border border-[--text-error]", children: error });
+    return /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "mt-2 p-2 rounded text-xs text-[--text-error] border border-[--text-error]", children: error });
   }
   const isOverLimit = stats.contextSize > maxContextSize;
   const shouldWarn = stats.percentUsed > 80;
-  const [isTooltipOpen, setIsTooltipOpen] = import_react83.default.useState(false);
-  return /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("div", { className: "mt-2 space-y-2 flex", children: /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)("div", { className: "relative", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)(
+  const [isTooltipOpen, setIsTooltipOpen] = import_react84.default.useState(false);
+  return /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "mt-2 space-y-2 flex", children: /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)("div", { className: "relative", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)(
       "div",
       {
         className: `p-2 min-w-max rounded text-xs flex gap-1 items-center justify-between cursor-pointer hover:bg-[--background-modifier-hover] transition-colors
@@ -160556,39 +163149,39 @@ function ContextLimitIndicator({
         onMouseEnter: () => setIsTooltipOpen(true),
         onMouseLeave: () => setIsTooltipOpen(false),
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("span", { children: isOverLimit ? "Context size exceeds maximum" : shouldWarn ? "Context size nearing limit" : "Context used" }),
-          /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)("span", { className: "font-mono", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("span", { children: isOverLimit ? "Context size exceeds maximum" : shouldWarn ? "Context size nearing limit" : "Context used" }),
+          /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)("span", { className: "font-mono", children: [
             stats.percentUsed.toFixed(0),
             "%"
           ] })
         ]
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
       "div",
       {
         className: `absolute left-0 bottom-full mb-1 w-72 bg-[--background-secondary] border border-[--background-modifier-border] rounded-md shadow-lg transition-opacity z-20 ${isTooltipOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`,
         onMouseEnter: () => setIsTooltipOpen(true),
         onMouseLeave: () => setIsTooltipOpen(false),
-        children: /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)(
+        children: /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)(
           "div",
           {
             onClick: toggleLightweightMode,
             className: `w-full px-4 py-3.5 text-left text-xs flex items-center gap-3 hover:bg-[--background-modifier-hover] cursor-pointer rounded-md
               ${isLightweightMode ? "text-[--interactive-accent]" : "text-[--text-normal]"}`,
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
                 "div",
                 {
                   className: `w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 transition-colors
               ${isLightweightMode ? "border-[--interactive-accent] bg-[--interactive-accent]" : "border-[--text-muted] bg-[--background-primary]"}`,
-                  children: isLightweightMode && /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
+                  children: isLightweightMode && /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
                     "svg",
                     {
                       className: "w-3.5 h-3.5 text-[--text-on-accent]",
                       viewBox: "0 0 14 14",
                       fill: "none",
-                      children: /* @__PURE__ */ (0, import_jsx_runtime79.jsx)(
+                      children: /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
                         "path",
                         {
                           d: "M11.6666 3.5L5.24992 9.91667L2.33325 7",
@@ -160602,9 +163195,9 @@ function ContextLimitIndicator({
                   )
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime79.jsxs)("div", { className: "space-y-1.5 flex-1", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("div", { className: "font-medium", children: "Disable Context" }),
-                /* @__PURE__ */ (0, import_jsx_runtime79.jsx)("div", { className: "text-[--text-muted] text-[11px] leading-relaxed", children: "Removes file content from context while preserving metadata. Useful for batch operations like moving, renaming, or tagging files." })
+              /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)("div", { className: "space-y-1.5 flex-1", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "font-medium", children: "Disable Context" }),
+                /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("div", { className: "text-[--text-muted] text-[11px] leading-relaxed", children: "Removes file content from context while preserving metadata. Useful for batch operations like moving, renaming, or tagging files." })
               ] })
             ]
           }
@@ -160615,8 +163208,8 @@ function ContextLimitIndicator({
 }
 
 // views/assistant/ai-chat/model-selector.tsx
-var import_react84 = __toESM(require_react());
-var import_jsx_runtime80 = __toESM(require_jsx_runtime());
+var import_react85 = __toESM(require_react());
+var import_jsx_runtime82 = __toESM(require_jsx_runtime());
 var MODEL_DISPLAY_NAMES = {
   "gpt-4o-mini": "Cloud",
   "custom": "Ollama Model"
@@ -160629,9 +163222,9 @@ var ModelSelector = ({
   onModelSelect
 }) => {
   const plugin = usePlugin();
-  const [isModelSelectorOpen, setIsModelSelectorOpen] = import_react84.default.useState(false);
-  const [isCustomizing, setIsCustomizing] = import_react84.default.useState(false);
-  const [customModel, setCustomModel] = import_react84.default.useState(plugin.settings.customModelName || "llama3.2");
+  const [isModelSelectorOpen, setIsModelSelectorOpen] = import_react85.default.useState(false);
+  const [isCustomizing, setIsCustomizing] = import_react85.default.useState(false);
+  const [customModel, setCustomModel] = import_react85.default.useState(plugin.settings.customModelName || "llama3.2");
   const handleModelSelect = async (model) => {
     if (model === "custom") {
       setIsCustomizing(true);
@@ -160652,22 +163245,22 @@ var ModelSelector = ({
     setIsCustomizing(false);
     setIsModelSelectorOpen(false);
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime80.jsx)("div", { className: "relative", children: /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)("div", { className: "flex items-center justify-end", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime82.jsx)("div", { className: "relative", children: /* @__PURE__ */ (0, import_jsx_runtime82.jsxs)("div", { className: "flex items-center justify-end", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime82.jsxs)(
       "div",
       {
         onClick: () => plugin.settings.showLocalLLMInChat && setIsModelSelectorOpen(!isModelSelectorOpen),
         className: `flex items-center gap-1 text-xs text-[--text-muted] ${plugin.settings.showLocalLLMInChat ? "hover:text-[--text-normal] cursor-pointer" : ""}`,
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime80.jsx)("span", { children: getDisplayName(selectedModel) }),
-          plugin.settings.showLocalLLMInChat && /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime82.jsx)("span", { children: getDisplayName(selectedModel) }),
+          plugin.settings.showLocalLLMInChat && /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
             "svg",
             {
               xmlns: "http://www.w3.org/2000/svg",
               viewBox: "0 0 20 20",
               fill: "currentColor",
               className: `w-3 h-3 transition-transform ${isModelSelectorOpen ? "rotate-180" : ""}`,
-              children: /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+              children: /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
                 "path",
                 {
                   fillRule: "evenodd",
@@ -160680,8 +163273,8 @@ var ModelSelector = ({
         ]
       }
     ),
-    isModelSelectorOpen && plugin.settings.showLocalLLMInChat && /* @__PURE__ */ (0, import_jsx_runtime80.jsx)("div", { className: "absolute bottom-full right-0 mb-1 bg-[--background-primary] border border-[--background-modifier-border]", children: /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)("div", { className: "py-1", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+    isModelSelectorOpen && plugin.settings.showLocalLLMInChat && /* @__PURE__ */ (0, import_jsx_runtime82.jsx)("div", { className: "absolute bottom-full right-0 mb-1 bg-[--background-primary] border border-[--background-modifier-border]", children: /* @__PURE__ */ (0, import_jsx_runtime82.jsxs)("div", { className: "py-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
         "div",
         {
           onClick: () => handleModelSelect("gpt-4o-mini"),
@@ -160689,8 +163282,8 @@ var ModelSelector = ({
           children: getDisplayName("gpt-4o-mini")
         }
       ),
-      isCustomizing ? /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)("div", { className: "px-4 py-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+      isCustomizing ? /* @__PURE__ */ (0, import_jsx_runtime82.jsxs)("div", { className: "px-4 py-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
           "input",
           {
             type: "text",
@@ -160700,8 +163293,8 @@ var ModelSelector = ({
             placeholder: "Enter model name..."
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime80.jsxs)("div", { className: "flex justify-end mt-2 space-x-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime82.jsxs)("div", { className: "flex justify-end mt-2 space-x-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
             "button",
             {
               onClick: () => setIsCustomizing(false),
@@ -160709,7 +163302,7 @@ var ModelSelector = ({
               children: "Cancel"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
             "button",
             {
               onClick: handleCustomModelSave,
@@ -160718,7 +163311,7 @@ var ModelSelector = ({
             }
           )
         ] })
-      ] }) : /* @__PURE__ */ (0, import_jsx_runtime80.jsx)(
+      ] }) : /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
         "div",
         {
           onClick: () => handleModelSelect("custom"),
@@ -160731,21 +163324,21 @@ var ModelSelector = ({
 };
 
 // views/assistant/ai-chat/audio-recorder.tsx
-var import_react85 = __toESM(require_react());
-var import_lucide_react12 = __toESM(require_lucide_react());
+var import_react86 = __toESM(require_react());
+var import_lucide_react13 = __toESM(require_lucide_react());
 init_logger();
-var import_jsx_runtime81 = __toESM(require_jsx_runtime());
+var import_jsx_runtime83 = __toESM(require_jsx_runtime());
 var AudioRecorder = ({
   onTranscriptionComplete,
   debug = false
 }) => {
   const plugin = usePlugin();
-  const [isRecording, setIsRecording] = (0, import_react85.useState)(false);
-  const mediaRecorderRef = (0, import_react85.useRef)(null);
-  const audioChunks = (0, import_react85.useRef)([]);
-  const [audioUrl, setAudioUrl] = (0, import_react85.useState)(null);
-  const [recordings, setRecordings] = (0, import_react85.useState)([]);
-  const [isProcessing, setIsProcessing] = (0, import_react85.useState)(false);
+  const [isRecording, setIsRecording] = (0, import_react86.useState)(false);
+  const mediaRecorderRef = (0, import_react86.useRef)(null);
+  const audioChunks = (0, import_react86.useRef)([]);
+  const [audioUrl, setAudioUrl] = (0, import_react86.useState)(null);
+  const [recordings, setRecordings] = (0, import_react86.useState)([]);
+  const [isProcessing, setIsProcessing] = (0, import_react86.useState)(false);
   const startRecording = async (e2) => {
     e2.preventDefault();
     e2.stopPropagation();
@@ -160832,15 +163425,15 @@ var AudioRecorder = ({
       setIsProcessing(false);
     }
   };
-  (0, import_react85.useEffect)(() => {
+  (0, import_react86.useEffect)(() => {
     return () => {
       recordings.forEach((recording) => {
         URL.revokeObjectURL(recording.url);
       });
     };
   }, [recordings]);
-  return /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)("div", { className: "flex flex-col gap-4", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime83.jsxs)("div", { className: "flex flex-col gap-4", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
       Button,
       {
         onClick: isRecording ? stopRecording : startRecording,
@@ -160855,14 +163448,14 @@ var AudioRecorder = ({
         ),
         title: isProcessing ? "Processing audio..." : isRecording ? "Stop Recording" : "Start Recording",
         disabled: isProcessing,
-        children: isProcessing ? /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(import_lucide_react12.Loader2, { className: "w-4 h-4 animate-spin" }) : isRecording ? /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(import_lucide_react12.StopCircle, { className: "w-4 h-4" }) : /* @__PURE__ */ (0, import_jsx_runtime81.jsx)(import_lucide_react12.MicIcon, { className: "w-4 h-4" })
+        children: isProcessing ? /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(import_lucide_react13.Loader2, { className: "w-4 h-4 animate-spin" }) : isRecording ? /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(import_lucide_react13.StopCircle, { className: "w-4 h-4" }) : /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(import_lucide_react13.MicIcon, { className: "w-4 h-4" })
       }
     ),
-    debug && recordings.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)("div", { className: "flex flex-col gap-2 p-2 rounded bg-[--background-secondary]", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("h3", { className: "text-[--text-muted] text-sm", children: "Recording History" }),
-      recordings.map((recording, index2) => /* @__PURE__ */ (0, import_jsx_runtime81.jsxs)("div", { className: "flex items-center gap-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("span", { className: "text-xs text-[--text-muted]", children: recording.timestamp }),
-        /* @__PURE__ */ (0, import_jsx_runtime81.jsx)("audio", { controls: true, src: recording.url, className: "h-8" })
+    debug && recordings.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime83.jsxs)("div", { className: "flex flex-col gap-2 p-2 rounded bg-[--background-secondary]", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("h3", { className: "text-[--text-muted] text-sm", children: "Recording History" }),
+      recordings.map((recording, index2) => /* @__PURE__ */ (0, import_jsx_runtime83.jsxs)("div", { className: "flex items-center gap-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("span", { className: "text-xs text-[--text-muted]", children: recording.timestamp }),
+        /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("audio", { controls: true, src: recording.url, className: "h-8" })
       ] }, recording.timestamp))
     ] })
   ] });
@@ -160871,14 +163464,17 @@ var AudioRecorder = ({
 // views/assistant/ai-chat/chat.tsx
 init_logger();
 
+// views/assistant/ai-chat/components/context-items.tsx
+var import_react87 = __toESM(require_react());
+
 // views/assistant/ai-chat/selected-item.tsx
-var import_jsx_runtime82 = __toESM(require_jsx_runtime());
+var import_jsx_runtime84 = __toESM(require_jsx_runtime());
 var SelectedItem = ({
   item,
   prefix,
   onClick,
   onRemove
-}) => /* @__PURE__ */ (0, import_jsx_runtime82.jsxs)(
+}) => /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)(
   motion.div,
   {
     className: "bg-[--background-secondary] text-[--text-normal] rounded px-2 py-1 text-sm m-1 flex gap-1 min-w-fit h-fit",
@@ -160887,7 +163483,7 @@ var SelectedItem = ({
     exit: { opacity: 0, scale: 0.8 },
     transition: { duration: 0.2 },
     children: [
-      /* @__PURE__ */ (0, import_jsx_runtime82.jsxs)(
+      /* @__PURE__ */ (0, import_jsx_runtime84.jsxs)(
         "span",
         {
           onClick,
@@ -160898,7 +163494,7 @@ var SelectedItem = ({
           ]
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
         "div",
         {
           onClick: onRemove,
@@ -160911,8 +163507,9 @@ var SelectedItem = ({
 );
 
 // views/assistant/ai-chat/components/context-items.tsx
-var import_obsidian43 = require("obsidian");
-var import_jsx_runtime83 = __toESM(require_jsx_runtime());
+var import_obsidian47 = require("obsidian");
+var import_lucide_react14 = __toESM(require_lucide_react());
+var import_jsx_runtime85 = __toESM(require_jsx_runtime());
 var ContextItems = () => {
   const plugin = usePlugin();
   const app = plugin.app;
@@ -160926,8 +163523,21 @@ var ContextItems = () => {
     searchResults,
     removeByReference,
     toggleCurrentFile,
-    textSelections
+    textSelections,
+    clearAll
   } = useContextItems();
+  const [showClearConfirm, setShowClearConfirm] = (0, import_react87.useState)(false);
+  const hasContextItems = currentFile && includeCurrentFile || Object.keys(files).length > 0 || Object.keys(folders).length > 0 || Object.keys(tags).length > 0 || Object.keys(youtubeVideos).length > 0 || Object.keys(searchResults).length > 0 || Object.keys(textSelections).length > 0;
+  const handleClearAll = () => {
+    if (showClearConfirm) {
+      clearAll();
+      setShowClearConfirm(false);
+      new import_obsidian47.Notice("Context cleared");
+    } else {
+      setShowClearConfirm(true);
+      setTimeout(() => setShowClearConfirm(false), 3e3);
+    }
+  };
   const prefixMap = {
     file: "\u{1F4C4}",
     folder: "\u{1F4C1}",
@@ -160965,7 +163575,7 @@ var ContextItems = () => {
   };
   const handleOpenFolder = (folderPath) => {
     const folder = app.vault.getAbstractFileByPath(folderPath);
-    if (folder && folder instanceof import_obsidian43.TFolder) {
+    if (folder && folder instanceof import_obsidian47.TFolder) {
       const fileExplorerLeaf = app.workspace.getLeavesOfType("file-explorer")[0];
       if (fileExplorerLeaf) {
         app.workspace.revealLeaf(fileExplorerLeaf);
@@ -160987,8 +163597,54 @@ var ContextItems = () => {
       }
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("div", { className: "flex-grow overflow-x-auto", children: /* @__PURE__ */ (0, import_jsx_runtime83.jsxs)("div", { className: "flex flex-col space-y-2", children: [
-    currentFile && includeCurrentFile && /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("div", { className: "flex space-x-2", children: /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("div", { className: "flex-grow overflow-x-auto", children: /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)("div", { className: "flex flex-col space-y-2", children: [
+    hasContextItems && /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("div", { className: "flex items-center justify-end mb-1 gap-2", children: showClearConfirm ? /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)("div", { className: "flex items-center gap-1.5 text-xs", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("span", { className: "text-[--text-muted]", children: "Clear context?" }),
+      /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)(
+        "button",
+        {
+          onClick: handleClearAll,
+          className: tw(
+            "text-[--text-error] hover:text-[--text-error]",
+            "flex items-center gap-1 px-2 py-1 rounded",
+            "hover:bg-[--background-modifier-hover] transition-colors",
+            "font-medium"
+          ),
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(import_lucide_react14.Trash2, { className: "w-3 h-3" }),
+            /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("span", { children: "Yes, clear" })
+          ]
+        }
+      ),
+      /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
+        "button",
+        {
+          onClick: () => setShowClearConfirm(false),
+          className: tw(
+            "text-[--text-muted] hover:text-[--text-normal]",
+            "px-2 py-1 rounded",
+            "hover:bg-[--background-modifier-hover] transition-colors"
+          ),
+          children: "Cancel"
+        }
+      )
+    ] }) : /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)(
+      "button",
+      {
+        onClick: handleClearAll,
+        className: tw(
+          "text-xs text-[--text-muted] hover:text-[--text-normal]",
+          "flex items-center gap-1 px-2 py-1 rounded",
+          "hover:bg-[--background-modifier-hover] transition-colors"
+        ),
+        title: "Clear all context items (files, folders, tags, etc.)",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(import_lucide_react14.X, { className: "w-3 h-3" }),
+          /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("span", { children: "Clear context" })
+        ]
+      }
+    ) }),
+    currentFile && includeCurrentFile && /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("div", { className: "flex space-x-2", children: /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
       SelectedItem,
       {
         item: currentFile.title,
@@ -160998,7 +163654,7 @@ var ContextItems = () => {
       },
       "current-file"
     ) }),
-    Object.values(files).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("div", { className: "flex space-x-2", children: Object.values(files).map((file) => /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
+    Object.values(files).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("div", { className: "flex space-x-2", children: Object.values(files).map((file) => /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
       SelectedItem,
       {
         item: file.title,
@@ -161008,7 +163664,7 @@ var ContextItems = () => {
       },
       file.id
     )) }),
-    Object.values(folders).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("div", { className: "flex space-x-2", children: Object.values(folders).map((folder) => /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
+    Object.values(folders).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("div", { className: "flex space-x-2", children: Object.values(folders).map((folder) => /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
       SelectedItem,
       {
         item: folder.name,
@@ -161018,7 +163674,7 @@ var ContextItems = () => {
       },
       folder.id
     )) }),
-    Object.values(tags).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("div", { className: "flex space-x-2", children: Object.values(tags).map((tag) => /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
+    Object.values(tags).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("div", { className: "flex space-x-2", children: Object.values(tags).map((tag) => /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
       SelectedItem,
       {
         item: tag.name,
@@ -161028,7 +163684,7 @@ var ContextItems = () => {
       },
       tag.id
     )) }),
-    Object.values(youtubeVideos).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("div", { className: "flex space-x-2", children: Object.values(youtubeVideos).map((video) => /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
+    Object.values(youtubeVideos).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("div", { className: "flex space-x-2", children: Object.values(youtubeVideos).map((video) => /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
       SelectedItem,
       {
         item: video.title,
@@ -161038,7 +163694,7 @@ var ContextItems = () => {
       },
       video.id
     )) }),
-    Object.values(searchResults).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("div", { className: "flex space-x-2", children: Object.values(searchResults).map((search3) => /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
+    Object.values(searchResults).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("div", { className: "flex space-x-2", children: Object.values(searchResults).map((search3) => /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
       SelectedItem,
       {
         item: `"${search3.query}" (${search3.results.length} results)`,
@@ -161048,7 +163704,7 @@ var ContextItems = () => {
       },
       search3.id
     )) }),
-    Object.values(textSelections).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime83.jsx)("div", { className: "flex space-x-2", children: Object.values(textSelections).map((selection) => /* @__PURE__ */ (0, import_jsx_runtime83.jsx)(
+    Object.values(textSelections).length > 0 && /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("div", { className: "flex space-x-2", children: Object.values(textSelections).map((selection) => /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(
       SelectedItem,
       {
         item: `${selection.content.slice(0, 30)}...`,
@@ -161061,69 +163717,30 @@ var ContextItems = () => {
   ] }) });
 };
 
-// views/assistant/ai-chat/components/clear-all-button.tsx
-var import_jsx_runtime84 = __toESM(require_jsx_runtime());
-function ClearAllButton() {
-  const { clearAll } = useContextItems();
-  return /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
-    Button,
-    {
-      onClick: clearAll,
-      className: "bg-[--interactive-normal] hover:bg-[--interactive-hover] text-[--text-normal]",
-      children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
-        "svg",
-        {
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 0 24 24",
-          fill: "currentColor",
-          className: "w-4 h-4",
-          children: /* @__PURE__ */ (0, import_jsx_runtime84.jsx)(
-            "path",
-            {
-              fillRule: "evenodd",
-              d: "M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z",
-              clipRule: "evenodd"
-            }
-          )
-        }
-      )
-    }
-  );
-}
-
-// views/assistant/ai-chat/components/new-chat-button.tsx
-var import_lucide_react13 = __toESM(require_lucide_react());
-var import_jsx_runtime85 = __toESM(require_jsx_runtime());
-function NewChatButton({ onClick }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime85.jsxs)(
-    Button,
-    {
-      onClick,
-      className: "bg-[--interactive-normal] hover:bg-[--interactive-hover] text-[--text-normal] gap-1.5",
-      "aria-label": "Start new chat",
-      children: [
-        /* @__PURE__ */ (0, import_jsx_runtime85.jsx)(import_lucide_react13.Plus, { className: "w-4 h-4" }),
-        /* @__PURE__ */ (0, import_jsx_runtime85.jsx)("span", { className: "text-xs", children: "New" })
-      ]
-    }
-  );
-}
-
 // views/assistant/ai-chat/hooks/use-current-file.ts
-var import_react86 = __toESM(require_react());
+var import_react88 = __toESM(require_react());
 init_logger();
 init_constants();
 function useCurrentFile({
   app,
-  setCurrentFile
+  setCurrentFile,
+  chatHasStarted = false
 }) {
-  const [error, setError] = (0, import_react86.useState)(null);
-  const currentFile = (0, import_react86.useRef)(null);
+  const [error, setError] = (0, import_react88.useState)(null);
+  const currentFile = (0, import_react88.useRef)(null);
+  const chatHasStartedRef = (0, import_react88.useRef)(chatHasStarted);
+  (0, import_react88.useEffect)(() => {
+    chatHasStartedRef.current = chatHasStarted;
+  }, [chatHasStarted]);
   const isMediaFile = (file) => {
     const extension2 = file.extension.toLowerCase();
     return VALID_MEDIA_EXTENSIONS.includes(extension2);
   };
   const updateActiveFile = async () => {
+    if (chatHasStartedRef.current) {
+      logger.debug("Chat has started, skipping currentFile update");
+      return;
+    }
     logger.debug("Updating active file");
     try {
       const file = app.workspace.getActiveFile();
@@ -161160,8 +163777,10 @@ function useCurrentFile({
       currentFile.current = null;
     }
   };
-  (0, import_react86.useEffect)(() => {
-    updateActiveFile();
+  (0, import_react88.useEffect)(() => {
+    if (!chatHasStarted) {
+      updateActiveFile();
+    }
     const eventRefs = [
       app.workspace.on("file-open", updateActiveFile),
       app.workspace.on("active-leaf-change", updateActiveFile)
@@ -161169,7 +163788,7 @@ function useCurrentFile({
     return () => {
       eventRefs.forEach((ref) => app.workspace.offref(ref));
     };
-  }, [app]);
+  }, [app, chatHasStarted]);
   return {
     currentFile,
     error,
@@ -161178,7 +163797,7 @@ function useCurrentFile({
 }
 
 // views/assistant/ai-chat/tool-handlers/search-annotation-handler.tsx
-var import_react87 = __toESM(require_react());
+var import_react89 = __toESM(require_react());
 var import_jsx_runtime86 = __toESM(require_jsx_runtime());
 var SearchAnnotationHandler = ({
   annotation
@@ -161199,7 +163818,7 @@ var SearchAnnotationHandler = ({
           className: "flex flex-col gap-1 p-2 rounded bg-[--background-primary] border border-[--background-modifier-border]",
           children: [
             /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)("div", { className: "flex justify-between items-center", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("span", { className: "text-[--text-accent] text-sm", children: sources.map((source, i) => /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)(import_react87.default.Fragment, { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime86.jsx)("span", { className: "text-[--text-accent] text-sm", children: sources.map((source, i) => /* @__PURE__ */ (0, import_jsx_runtime86.jsxs)(import_react89.default.Fragment, { children: [
                 i > 0 && ", ",
                 /* @__PURE__ */ (0, import_jsx_runtime86.jsx)(
                   "a",
@@ -161233,8 +163852,8 @@ function isSearchResultsAnnotation(annotation) {
 }
 
 // views/assistant/ai-chat/use-editor-selection.ts
-var import_react88 = __toESM(require_react());
-var import_obsidian44 = require("obsidian");
+var import_react90 = __toESM(require_react());
+var import_obsidian48 = require("obsidian");
 var EMPTY_CONTEXT = {
   selectedText: "",
   cursorPosition: null,
@@ -161246,16 +163865,16 @@ var EMPTY_CONTEXT = {
   selection: null
 };
 function useEditorSelection(app) {
-  const [currentContext, setCurrentContext] = (0, import_react88.useState)(EMPTY_CONTEXT);
-  const [frozenContext, setFrozenContext] = (0, import_react88.useState)(EMPTY_CONTEXT);
-  const [isManuallyCleared, setIsManuallyCleared] = (0, import_react88.useState)(false);
+  const [currentContext, setCurrentContext] = (0, import_react90.useState)(EMPTY_CONTEXT);
+  const [frozenContext, setFrozenContext] = (0, import_react90.useState)(EMPTY_CONTEXT);
+  const [isManuallyCleared, setIsManuallyCleared] = (0, import_react90.useState)(false);
   const clearFrozen = () => {
     setFrozenContext(EMPTY_CONTEXT);
     setIsManuallyCleared(true);
   };
-  (0, import_react88.useEffect)(() => {
+  (0, import_react90.useEffect)(() => {
     const updateContext = () => {
-      const view2 = app.workspace.getActiveViewOfType(import_obsidian44.MarkdownView);
+      const view2 = app.workspace.getActiveViewOfType(import_obsidian48.MarkdownView);
       if (!view2 || !view2.editor) {
         setCurrentContext(EMPTY_CONTEXT);
         return;
@@ -161362,9 +163981,11 @@ function formatEditorContextForAI(context) {
 }
 
 // views/assistant/ai-chat/components/editor-context-badge.tsx
-var import_lucide_react14 = __toESM(require_lucide_react());
 var import_jsx_runtime87 = __toESM(require_jsx_runtime());
-function EditorContextBadge({ context, onClear }) {
+function EditorContextBadge({
+  context,
+  onClear
+}) {
   if (!context.hasSelection && !context.currentLine) {
     return null;
   }
@@ -161392,15 +164013,15 @@ function EditorContextBadge({ context, onClear }) {
           '"'
         ] }),
         onClear && /* @__PURE__ */ (0, import_jsx_runtime87.jsx)(
-          "button",
+          "div",
           {
             onClick: onClear,
             className: tw(
-              "ml-auto p-0.5 rounded hover:bg-[--background-modifier-hover] text-[--text-muted] hover:text-[--text-normal] transition-colors"
+              "ml-auto text-[--text-muted] hover:text-[--text-normal] cursor-pointer"
             ),
             title: "Clear selection context",
             "aria-label": "Clear selection context",
-            children: /* @__PURE__ */ (0, import_jsx_runtime87.jsx)(import_lucide_react14.X, { className: "w-3 h-3" })
+            children: "\xD7"
           }
         )
       ]
@@ -161408,21 +164029,479 @@ function EditorContextBadge({ context, onClear }) {
   ) });
 }
 
-// views/assistant/ai-chat/chat.tsx
+// views/assistant/ai-chat/services/chat-history-manager.ts
+var import_obsidian49 = require("obsidian");
+init_logger();
+var ChatHistoryManager = class _ChatHistoryManager {
+  // Track loading state
+  constructor(app) {
+    this.sessions = /* @__PURE__ */ new Map();
+    this.debounceTimeout = null;
+    this.CHAT_HISTORY_PATH = (0, import_obsidian49.normalizePath)("_NoteCompanion/.chat-history.json");
+    this.loadPromise = null;
+    this.app = app;
+    this.loadPromise = this.loadSessions();
+  }
+  static getInstance(app) {
+    if (!_ChatHistoryManager.instance) {
+      if (!app) {
+        throw new Error(
+          "ChatHistoryManager needs app for initialization"
+        );
+      }
+      _ChatHistoryManager.instance = new _ChatHistoryManager(app);
+    }
+    return _ChatHistoryManager.instance;
+  }
+  async loadSessions() {
+    try {
+      console.log("[ChatHistory] Loading sessions from:", this.CHAT_HISTORY_PATH);
+      const chatHistoryFileExists = await this.app.vault.adapter.exists(
+        this.CHAT_HISTORY_PATH
+      );
+      if (!chatHistoryFileExists) {
+        console.log("[ChatHistory] File does not exist, starting with empty history");
+        this.sessions = /* @__PURE__ */ new Map();
+        return;
+      }
+      const content3 = await this.app.vault.adapter.read(
+        this.CHAT_HISTORY_PATH
+      );
+      if (!content3 || content3.trim() === "") {
+        console.warn("[ChatHistory] File exists but is empty");
+        this.sessions = /* @__PURE__ */ new Map();
+        return;
+      }
+      let data;
+      try {
+        data = JSON.parse(content3);
+      } catch (parseError) {
+        console.error("[ChatHistory] \u274C JSON parse error:", parseError);
+        console.error("[ChatHistory] File content (first 500 chars):", content3.substring(0, 500));
+        try {
+          const backupPath = this.CHAT_HISTORY_PATH.replace(".chat-history.json", `.chat-history-corrupted-${Date.now()}.json`);
+          await this.app.vault.adapter.write(backupPath, content3);
+          console.log("[ChatHistory] Created backup of corrupted file at:", backupPath);
+        } catch (backupError) {
+          console.error("[ChatHistory] Failed to create backup:", backupError);
+        }
+        logger?.error("Failed to parse chat history JSON", parseError);
+        this.sessions = /* @__PURE__ */ new Map();
+        return;
+      }
+      console.log("[ChatHistory] Parsed data:", {
+        hasSessions: !!data.sessions,
+        sessionsType: Array.isArray(data.sessions) ? "array" : typeof data.sessions,
+        sessionsLength: data.sessions?.length || 0,
+        dataKeys: Object.keys(data)
+      });
+      if (data.sessions && Array.isArray(data.sessions)) {
+        this.sessions = new Map(data.sessions);
+        console.log("[ChatHistory] \u2705 Loaded", this.sessions.size, "sessions");
+      } else if (data && typeof data === "object" && !Array.isArray(data)) {
+        this.sessions = new Map(Object.entries(data));
+        console.log("[ChatHistory] \u2705 Loaded", this.sessions.size, "sessions (legacy format)");
+      } else {
+        console.warn("[ChatHistory] \u26A0\uFE0F Unexpected data format:", typeof data);
+        console.warn("[ChatHistory] Data content:", JSON.stringify(data).substring(0, 200));
+        this.sessions = /* @__PURE__ */ new Map();
+      }
+    } catch (error) {
+      console.error("[ChatHistory] \u274C Failed to load chat history:", error);
+      console.error("[ChatHistory] Error stack:", error instanceof Error ? error.stack : String(error));
+      logger?.error("Failed to load chat history", error);
+      this.sessions = /* @__PURE__ */ new Map();
+    }
+  }
+  debounceSave() {
+    if (this.debounceTimeout) {
+      clearTimeout(this.debounceTimeout);
+    }
+    this.debounceTimeout = setTimeout(() => this.saveSessions(), 1e3);
+  }
+  async saveSessions() {
+    try {
+      const sessionsArray = Array.from(this.sessions.entries());
+      const content3 = JSON.stringify({ sessions: sessionsArray }, null, 2);
+      const dirPath = this.CHAT_HISTORY_PATH.split("/").slice(0, -1).join("/");
+      if (dirPath) {
+        await this.app.vault.adapter.mkdir(dirPath);
+      }
+      const chatHistoryFileExists = await this.app.vault.adapter.exists(
+        this.CHAT_HISTORY_PATH
+      );
+      if (chatHistoryFileExists) {
+        await this.app.vault.adapter.write(
+          this.CHAT_HISTORY_PATH,
+          content3
+        );
+      } else {
+        await this.app.vault.create(this.CHAT_HISTORY_PATH, content3);
+      }
+    } catch (error) {
+      console.error("Failed to save chat history:", error);
+      logger?.error("Failed to save chat history", error);
+    }
+  }
+  createSession(title) {
+    const id3 = `chat-${Date.now()}-${Math.random().toString(36).substring(2, 11)}`;
+    const now3 = Date.now();
+    const session = {
+      id: id3,
+      title: title || "New Chat",
+      messages: [],
+      createdAt: now3,
+      updatedAt: now3
+    };
+    this.sessions.set(id3, session);
+    this.debounceSave();
+    return session;
+  }
+  updateSession(id3, updates) {
+    const session = this.sessions.get(id3);
+    if (session) {
+      Object.assign(session, updates, { updatedAt: Date.now() });
+      this.debounceSave();
+    }
+  }
+  deleteSession(id3) {
+    this.sessions.delete(id3);
+    this.debounceSave();
+  }
+  getSession(id3) {
+    return this.sessions.get(id3);
+  }
+  getAllSessions() {
+    const sessions = Array.from(this.sessions.values()).sort((a, b) => b.updatedAt - a.updatedAt);
+    console.log("[ChatHistory] getAllSessions() returning", sessions.length, "sessions");
+    return sessions;
+  }
+  /**
+   * Wait for initial load to complete (useful when component mounts)
+   */
+  async waitForLoad() {
+    if (this.loadPromise) {
+      await this.loadPromise;
+    }
+  }
+  /**
+   * Diagnostic method to check chat history file status
+   */
+  async diagnose() {
+    try {
+      const exists = await this.app.vault.adapter.exists(this.CHAT_HISTORY_PATH);
+      let fileSize;
+      if (exists) {
+        const content3 = await this.app.vault.adapter.read(this.CHAT_HISTORY_PATH);
+        fileSize = content3.length;
+      }
+      return {
+        fileExists: exists,
+        filePath: this.CHAT_HISTORY_PATH,
+        fileSize,
+        sessionsCount: this.sessions.size
+      };
+    } catch (error) {
+      return {
+        fileExists: false,
+        filePath: this.CHAT_HISTORY_PATH,
+        sessionsCount: this.sessions.size,
+        error: error instanceof Error ? error.message : String(error)
+      };
+    }
+  }
+  /**
+   * Manually reload sessions from disk (useful for debugging)
+   */
+  async reloadSessions() {
+    console.log("[ChatHistory] Manually reloading sessions...");
+    await this.loadSessions();
+  }
+  /**
+   * Auto-generate title from first user message
+   * Takes first 50 characters of the first user message
+   * Excludes file mentions entirely from the title
+   */
+  static generateTitleFromMessages(messages) {
+    const firstUserMessage = messages.find((m) => m.role === "user");
+    if (firstUserMessage && firstUserMessage.content) {
+      let title = firstUserMessage.content.trim();
+      title = title.replace(/@[a-zA-Z0-9_\-.]+(?:\s+[a-zA-Z0-9_\-.]+)*/g, "").trim();
+      title = title.replace(/@\S+/g, "").trim();
+      const filePattern = /^([a-zA-Z0-9_\-.]*[_.][a-zA-Z0-9_\-.]*|[a-zA-Z0-9_\-.]{20,})\s+/;
+      if (filePattern.test(title)) {
+        title = title.replace(/^[a-zA-Z0-9_\-.]+\s+/, "").trim();
+      }
+      title = title.replace(/\s+/g, " ").trim();
+      title = title.substring(0, 50).trim();
+      return title || "New Chat";
+    }
+    return "New Chat";
+  }
+};
+
+// views/assistant/ai-chat/components/chat-history-combobox.tsx
+var import_react91 = __toESM(require_react());
+var import_lucide_react15 = __toESM(require_lucide_react());
+var import_obsidian50 = require("obsidian");
 var import_jsx_runtime88 = __toESM(require_jsx_runtime());
+function ChatHistoryCombobox({
+  sessions: sessionsProp,
+  activeChatId,
+  onSelectChat,
+  onDeleteChat,
+  app
+}) {
+  const [isOpen, setIsOpen] = (0, import_react91.useState)(false);
+  const [searchQuery, setSearchQuery] = (0, import_react91.useState)("");
+  const [selectedIndex, setSelectedIndex] = (0, import_react91.useState)(0);
+  const inputRef = (0, import_react91.useRef)(null);
+  const containerRef = (0, import_react91.useRef)(null);
+  const [sessions, setSessions] = import_react91.default.useState(sessionsProp);
+  import_react91.default.useEffect(() => {
+    setSessions(sessionsProp);
+  }, [sessionsProp]);
+  import_react91.default.useEffect(() => {
+    if (isOpen && app) {
+      const manager = ChatHistoryManager.getInstance(app);
+      const freshSessions = manager.getAllSessions();
+      setSessions(freshSessions);
+    }
+  }, [isOpen, app]);
+  const activeSession = sessions.find((s) => s.id === activeChatId);
+  const fuse = (0, import_react91.useRef)(null);
+  (0, import_react91.useEffect)(() => {
+    if (sessions.length > 0) {
+      if (!fuse.current) {
+        fuse.current = new Fuse(sessions, {
+          keys: ["title"],
+          threshold: 0.3,
+          includeScore: true
+        });
+      } else {
+        fuse.current.setCollection(sessions);
+      }
+    } else {
+      fuse.current = null;
+    }
+  }, [sessions]);
+  const filteredSessions = searchQuery && fuse.current ? fuse.current.search(searchQuery).map((result) => result.item) : sessions;
+  (0, import_react91.useEffect)(() => {
+    setSelectedIndex(0);
+  }, [searchQuery, filteredSessions.length]);
+  (0, import_react91.useEffect)(() => {
+    if (!isOpen) return;
+    const handleKeyDown2 = (e2) => {
+      if (e2.key === "ArrowDown") {
+        e2.preventDefault();
+        setSelectedIndex(
+          (prev) => prev < filteredSessions.length - 1 ? prev + 1 : 0
+        );
+      } else if (e2.key === "ArrowUp") {
+        e2.preventDefault();
+        setSelectedIndex(
+          (prev) => prev > 0 ? prev - 1 : filteredSessions.length - 1
+        );
+      } else if (e2.key === "Enter") {
+        e2.preventDefault();
+        if (filteredSessions[selectedIndex]) {
+          onSelectChat(filteredSessions[selectedIndex].id);
+          setIsOpen(false);
+          setSearchQuery("");
+        }
+      } else if (e2.key === "Escape") {
+        setIsOpen(false);
+        setSearchQuery("");
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown2);
+    return () => document.removeEventListener("keydown", handleKeyDown2);
+  }, [isOpen, selectedIndex, filteredSessions, onSelectChat]);
+  (0, import_react91.useEffect)(() => {
+    if (!isOpen) return;
+    const handleClickOutside = (e2) => {
+      if (containerRef.current && !containerRef.current.contains(e2.target)) {
+        setIsOpen(false);
+        setSearchQuery("");
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isOpen]);
+  (0, import_react91.useEffect)(() => {
+    if (isOpen && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [isOpen]);
+  const getMessageCount = (session) => {
+    return session.messages.filter(
+      (m) => m.role === "user" || m.role === "assistant"
+    ).length;
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { ref: containerRef, className: tw("relative"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(
+      "button",
+      {
+        onClick: () => setIsOpen(!isOpen),
+        className: tw(
+          "flex items-center gap-2 px-3 py-1.5 text-xs rounded",
+          "bg-[--background-modifier-form-field] hover:bg-[--background-modifier-hover]",
+          "text-[--text-normal] border border-[--background-modifier-border]",
+          "min-w-[200px] justify-between"
+        ),
+        title: "Search chat history",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex items-center gap-2 flex-1 min-w-0"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(import_lucide_react15.Search, { className: "w-3 h-3 text-[--text-muted] flex-shrink-0" }),
+            /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { className: tw("truncate"), children: activeSession?.title || "Select chat..." })
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(import_lucide_react15.Clock, { className: "w-3 h-3 text-[--text-muted] flex-shrink-0" })
+        ]
+      }
+    ),
+    isOpen && /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(
+      "div",
+      {
+        className: tw(
+          "absolute top-full right-0 mt-1 w-[300px] max-h-[400px]",
+          "bg-[--background-primary] border border-[--background-modifier-border]",
+          "rounded shadow-lg z-50 overflow-hidden"
+        ),
+        style: {
+          maxWidth: "calc(100vw - 2rem)"
+          // Prevent overflow beyond viewport
+        },
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("p-2 border-b border-[--background-modifier-border]"), children: /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("relative"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(import_lucide_react15.Search, { className: tw("absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 text-[--text-muted]") }),
+            /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+              "input",
+              {
+                ref: inputRef,
+                type: "text",
+                value: searchQuery,
+                onChange: (e2) => setSearchQuery(e2.target.value),
+                placeholder: "Search chats...",
+                className: tw(
+                  "w-full pl-7 pr-2 py-1.5 text-xs rounded",
+                  "bg-[--background-modifier-form-field]",
+                  "text-[--text-normal] border border-[--background-modifier-border]",
+                  "focus:outline-none focus:ring-1 focus:ring-[--interactive-accent]"
+                )
+              }
+            )
+          ] }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("overflow-y-auto max-h-[350px]"), children: filteredSessions.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: tw("px-4 py-3 text-xs text-[--text-muted] text-center"), children: "No chats found" }) : filteredSessions.map((session, index2) => {
+            const messageCount = getMessageCount(session);
+            const relativeTime = (0, import_obsidian50.moment)(session.updatedAt).fromNow();
+            const isActive2 = activeChatId === session.id;
+            const isSelected = index2 === selectedIndex;
+            return /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+              "div",
+              {
+                className: tw(
+                  "group px-3 py-2 cursor-pointer transition-colors",
+                  "border-b border-[--background-modifier-border] last:border-b-0",
+                  isSelected && "bg-[--background-modifier-active-hover]",
+                  !isSelected && "hover:bg-[--background-modifier-hover]"
+                ),
+                onClick: () => {
+                  onSelectChat(session.id);
+                  setIsOpen(false);
+                  setSearchQuery("");
+                },
+                onMouseEnter: () => setSelectedIndex(index2),
+                children: /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex items-start justify-between gap-2"), children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: tw("flex-1 min-w-0"), children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+                      "div",
+                      {
+                        className: tw(
+                          "text-xs font-medium text-[--text-normal] truncate",
+                          isActive2 && "text-[--interactive-accent]"
+                        ),
+                        children: session.title
+                      }
+                    ),
+                    /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(
+                      "div",
+                      {
+                        className: tw(
+                          "text-[10px] text-[--text-muted] mt-0.5 flex items-center gap-1.5"
+                        ),
+                        children: [
+                          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { children: relativeTime }),
+                          messageCount > 0 && /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(import_jsx_runtime88.Fragment, { children: [
+                            /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { children: "\u2022" }),
+                            /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("span", { children: [
+                              messageCount,
+                              " messages"
+                            ] })
+                          ] })
+                        ]
+                      }
+                    )
+                  ] }),
+                  /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+                    "button",
+                    {
+                      onClick: (e2) => {
+                        e2.stopPropagation();
+                        onDeleteChat(session.id);
+                      },
+                      className: tw(
+                        "opacity-0 group-hover:opacity-100 transition-opacity",
+                        "hover:text-[--text-error] flex-shrink-0",
+                        "p-1 rounded hover:bg-[--background-modifier-hover]"
+                      ),
+                      "aria-label": "Delete chat",
+                      title: "Delete chat",
+                      children: /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(import_lucide_react15.X, { className: "w-3 h-3" })
+                    }
+                  )
+                ] })
+              },
+              session.id
+            );
+          }) })
+        ]
+      }
+    )
+  ] });
+}
+
+// views/assistant/ai-chat/chat.tsx
+var import_jsx_runtime89 = __toESM(require_jsx_runtime());
 var ChatComponent = ({
   apiKey,
   inputRef,
-  onTokenLimitError
+  onTokenLimitError,
+  activeChatId,
+  onSessionUpdate,
+  chatSessions = [],
+  onSelectChat,
+  onDeleteChat,
+  isChatTabActive
 }) => {
   const plugin = usePlugin();
   const app = plugin.app;
-  const [errorMessage, setErrorMessage] = (0, import_react89.useState)(null);
-  const tiptapEditorRef = (0, import_react89.useRef)(null);
-  const contextByAssistantIdRef = (0, import_react89.useRef)({});
-  const lastContextSentRef = (0, import_react89.useRef)("");
-  const forcedReloadBodyRef = (0, import_react89.useRef)(null);
-  const messagesRef = (0, import_react89.useRef)([]);
+  const [errorMessage, setErrorMessage] = (0, import_react92.useState)(null);
+  const chatHistoryManager = (0, import_react92.useMemo)(
+    () => ChatHistoryManager.getInstance(plugin.app),
+    [plugin.app]
+  );
+  const tiptapEditorRef = (0, import_react92.useRef)(null);
+  const contextByAssistantIdRef = (0, import_react92.useRef)({});
+  const lastContextSentRef = (0, import_react92.useRef)("");
+  const forcedReloadBodyRef = (0, import_react92.useRef)(null);
+  const messagesRef = (0, import_react92.useRef)([]);
+  const isLoadingSessionRef = (0, import_react92.useRef)(false);
+  const onSessionUpdateRef = (0, import_react92.useRef)(onSessionUpdate);
+  onSessionUpdateRef.current = onSessionUpdate;
+  const activeChatIdRef = (0, import_react92.useRef)(activeChatId);
+  (0, import_react92.useEffect)(() => {
+    activeChatIdRef.current = activeChatId;
+  }, [activeChatId]);
   const {
     setCurrentFile,
     files,
@@ -161451,11 +164530,8 @@ var ChatComponent = ({
     searchResults,
     textSelections
   };
-  useCurrentFile({
-    app,
-    setCurrentFile
-  });
-  const contextString = import_react89.default.useMemo(() => {
+  const [chatHasStarted, setChatHasStarted] = (0, import_react92.useState)(false);
+  const contextString = import_react92.default.useMemo(() => {
     if (isLightweightMode) {
       const lightweightContext = {
         files: Object.fromEntries(
@@ -161504,26 +164580,26 @@ var ChatComponent = ({
     return JSON.stringify(contextItems);
   }, [contextItems, isLightweightMode]);
   logger.debug("contextString", contextString);
-  const [selectedModel, setSelectedModel] = (0, import_react89.useState)(
+  const [selectedModel, setSelectedModel] = (0, import_react92.useState)(
     plugin.settings.selectedModel
   );
-  const editorContextString = import_react89.default.useMemo(
+  const editorContextString = import_react92.default.useMemo(
     () => formatEditorContextForAI(editorContext),
     [editorContext.selectedText, editorContext.filePath]
     // Only recalc when selection or file changes
   );
-  const fullContext = import_react89.default.useMemo(
+  const fullContext = import_react92.default.useMemo(
     () => editorContextString ? `${contextString}
 
 ${editorContextString}` : contextString,
     [contextString, editorContextString]
   );
-  const currentDatetime = import_react89.default.useMemo(
+  const currentDatetime = import_react92.default.useMemo(
     () => window.moment().format("YYYY-MM-DDTHH:mm:ssZ"),
     []
     // Empty deps = only calculate once
   );
-  const chatBody = import_react89.default.useMemo(
+  const chatBody = import_react92.default.useMemo(
     () => ({
       currentDatetime,
       newUnifiedContext: fullContext,
@@ -161540,7 +164616,7 @@ ${editorContextString}` : contextString,
       selectedModel
     ]
   );
-  const [groundingMetadata, setGroundingMetadata] = (0, import_react89.useState)(null);
+  const [groundingMetadata, setGroundingMetadata] = (0, import_react92.useState)(null);
   const {
     status,
     messages,
@@ -161635,7 +164711,7 @@ ${editorContextString}` : contextString,
       }) : JSON.stringify(freshContextItems);
       let freshEditorContext = "";
       try {
-        const view2 = app.workspace.getActiveViewOfType(import_obsidian45.MarkdownView);
+        const view2 = app.workspace.getActiveViewOfType(import_obsidian51.MarkdownView);
         if (view2 && view2.editor) {
           const editor = view2.editor;
           const file = view2.file;
@@ -161744,10 +164820,20 @@ ${freshEditorContext}` : freshContextString;
     maxSteps: 5,
     api: `${plugin.getServerUrl()}/api/chat`,
     experimental_throttle: 100,
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${plugin.getApiKey()}`
-    },
+    headers: (() => {
+      const apiKey2 = plugin.getApiKey()?.trim();
+      const headers = {
+        "Content-Type": "application/json"
+      };
+      if (apiKey2 && apiKey2.length > 0) {
+        headers.Authorization = `Bearer ${apiKey2}`;
+      } else {
+        console.warn(
+          "[Chat] API key is missing or empty, requests will fail authentication"
+        );
+      }
+      return headers;
+    })(),
     fetch: async (url, options) => {
       logMessage(plugin.settings.showLocalLLMInChat, "showLocalLLMInChat");
       logMessage(selectedModel, "selectedModel");
@@ -161784,6 +164870,21 @@ ${freshEditorContext}` : freshContextString;
         name: error2.name,
         stack: error2.stack
       });
+      if (error2.message?.includes("Unauthorized") || error2.message?.includes("401") || error2.message?.includes("Authorization")) {
+        const apiKey2 = plugin.getApiKey()?.trim();
+        if (!apiKey2 || apiKey2.length === 0) {
+          new import_obsidian51.Notice(
+            "Authentication failed: API key is missing. Please set your API key in plugin settings.",
+            5e3
+          );
+        } else {
+          new import_obsidian51.Notice(
+            "Authentication failed: Invalid API key. Please check your API key in plugin settings.",
+            5e3
+          );
+        }
+        return;
+      }
       const isToolError = error2.message?.includes(
         "ToolInvocation must have a result"
       );
@@ -161893,7 +164994,7 @@ ${freshEditorContext}` : freshContextString;
           }) : JSON.stringify(freshContextItems);
           let freshEditorContext = "";
           try {
-            const view2 = app.workspace.getActiveViewOfType(import_obsidian45.MarkdownView);
+            const view2 = app.workspace.getActiveViewOfType(import_obsidian51.MarkdownView);
             if (view2 && view2.editor) {
               const editor = view2.editor;
               const file = view2.file;
@@ -161943,6 +165044,99 @@ ${freshEditorContext}` : freshContextString;
             fallbackContextLength: contextToStore?.length ?? 0
           });
         }
+        setTimeout(() => {
+          const currentActiveChatId = activeChatIdRef.current;
+          if (!currentActiveChatId) {
+            console.warn(
+              "[Chat] onFinish: No activeChatId, cannot save messages"
+            );
+            return;
+          }
+          const currentMessages = messagesRef.current;
+          console.log("[Chat] onFinish: Attempting to save", {
+            activeChatId: currentActiveChatId,
+            messagesCount: currentMessages.length,
+            messageIds: currentMessages.map((m) => m.id)
+          });
+          if (currentMessages.length > 0) {
+            let session = chatHistoryManager.getSession(currentActiveChatId);
+            let sessionId = currentActiveChatId;
+            if (!session) {
+              console.warn(
+                "[Chat] onFinish: Session not found for activeChatId:",
+                currentActiveChatId,
+                "- checking for existing sessions"
+              );
+              const allSessions = chatHistoryManager.getAllSessions();
+              if (allSessions.length > 0) {
+                session = allSessions[0];
+                sessionId = session.id;
+                activeChatIdRef.current = sessionId;
+                console.log(
+                  "[Chat] onFinish: Using most recent session:",
+                  sessionId
+                );
+              } else {
+                console.warn(
+                  "[Chat] onFinish: No sessions found, creating new session"
+                );
+                session = chatHistoryManager.createSession();
+                sessionId = session.id;
+                activeChatIdRef.current = sessionId;
+                console.log("[Chat] onFinish: Created new session:", sessionId);
+              }
+            }
+            if (session) {
+              const messageContextSnapshots = {};
+              currentMessages.forEach((msg) => {
+                if (msg.role === "assistant" && msg.id && contextByAssistantIdRef.current[msg.id]) {
+                  messageContextSnapshots[msg.id] = contextByAssistantIdRef.current[msg.id];
+                }
+              });
+              let title = session.title;
+              if (title === "New Chat") {
+                title = ChatHistoryManager.generateTitleFromMessages(currentMessages);
+              }
+              const store = useContextItems.getState();
+              const contextItemsToStore = {
+                files: { ...store.files },
+                folders: { ...store.folders },
+                tags: { ...store.tags },
+                youtubeVideos: { ...store.youtubeVideos },
+                searchResults: { ...store.searchResults },
+                textSelections: { ...store.textSelections },
+                currentFile: store.currentFile ? { ...store.currentFile } : null
+              };
+              chatHistoryManager.updateSession(sessionId, {
+                messages: currentMessages,
+                messageContextSnapshots,
+                title,
+                contextItems: contextItemsToStore
+              });
+              lastSavedMessagesRef.current = "";
+              console.log("[Chat] \u2705 Force saved messages in onFinish:", {
+                sessionId,
+                messagesCount: currentMessages.length,
+                title,
+                contextSnapshotsCount: Object.keys(messageContextSnapshots).length
+              });
+              if (onSessionUpdateRef.current) {
+                const updatedSession = chatHistoryManager.getSession(sessionId);
+                if (updatedSession) {
+                  setTimeout(() => {
+                    onSessionUpdateRef.current?.(updatedSession);
+                  }, 0);
+                }
+              }
+            } else {
+              console.error(
+                "[Chat] \u274C onFinish: Failed to create or get session"
+              );
+            }
+          } else {
+            console.warn("[Chat] \u26A0\uFE0F onFinish: No messages to save");
+          }
+        }, 500);
       } else {
         console.warn(
           "[Chat] \u274C onFinish: message missing id or not assistant:",
@@ -161955,8 +165149,54 @@ ${freshEditorContext}` : freshContextString;
       }
     }
   });
+  (0, import_react92.useEffect)(() => {
+    messagesRef.current = messages;
+    setChatHasStarted(messages.length > 0);
+  }, [messages]);
+  useCurrentFile({
+    app,
+    setCurrentFile,
+    chatHasStarted
+  });
   const isGenerating = status === "streaming" || status === "submitted";
-  const showLoadingIndicator = status === "submitted";
+  const hasToolActivity = import_react92.default.useMemo(() => {
+    if (messages.length === 0) return false;
+    const lastMessage = messages[messages.length - 1];
+    if (lastMessage.role !== "assistant") return false;
+    const messageWithParts = lastMessage;
+    let toolInvocations = [];
+    if (messageWithParts.parts) {
+      toolInvocations = messageWithParts.parts.filter(
+        (part) => part.type?.startsWith("tool-") || part.toolInvocation
+      ).map((part) => {
+        if (part.toolInvocation) {
+          return {
+            toolCallId: part.toolInvocation.toolCallId,
+            result: part.toolInvocation.result,
+            state: part.toolInvocation.state || part.state
+          };
+        }
+        return {
+          toolCallId: part.toolCallId,
+          result: part.output,
+          state: part.state
+        };
+      }).filter((tool) => tool.toolCallId);
+    }
+    if (toolInvocations.length === 0 && messageWithParts.toolInvocations) {
+      toolInvocations = messageWithParts.toolInvocations;
+    }
+    if (toolInvocations.length === 0) return false;
+    const hasExecutingTools = toolInvocations.some(
+      (tool) => !("result" in tool) && tool.state !== "result"
+    );
+    const allToolsComplete = toolInvocations.every(
+      (tool) => "result" in tool || tool.state === "result"
+    );
+    const waitingForAI = allToolsComplete && (!lastMessage.content || lastMessage.content.length === 0);
+    return hasExecutingTools || waitingForAI;
+  }, [messages]);
+  const showLoadingIndicator = status === "submitted" || hasToolActivity && status !== "streaming";
   const normalizeMessage = (msg, existingTimestamp) => {
     const normalized = { ...msg };
     if (existingTimestamp) {
@@ -161970,8 +165210,8 @@ ${freshEditorContext}` : freshContextString;
     }
     return normalized;
   };
-  const [messagesWithTimestamps, setMessagesWithTimestamps] = (0, import_react89.useState)([]);
-  (0, import_react89.useEffect)(() => {
+  const [messagesWithTimestamps, setMessagesWithTimestamps] = (0, import_react92.useState)([]);
+  (0, import_react92.useEffect)(() => {
     setMessagesWithTimestamps((prev) => {
       return messages.map((msg) => {
         const existing = prev.find((m) => m.id === msg.id);
@@ -161979,8 +165219,229 @@ ${freshEditorContext}` : freshContextString;
       });
     });
   }, [messages]);
-  const [attachments, setAttachments] = (0, import_react89.useState)([]);
-  const handleAttachmentsChange = (0, import_react89.useCallback)(
+  (0, import_react92.useEffect)(() => {
+    if (activeChatId) {
+      isLoadingSessionRef.current = true;
+      const session = chatHistoryManager.getSession(activeChatId);
+      if (session && session.messages.length > 0) {
+        setMessages(session.messages);
+        if (session.messageContextSnapshots) {
+          Object.entries(session.messageContextSnapshots).forEach(
+            ([messageId, context]) => {
+              contextByAssistantIdRef.current[messageId] = context;
+            }
+          );
+        }
+        if (session.contextItems) {
+          const store = useContextItems.getState();
+          store.clearAll();
+          if (session.contextItems.files) {
+            Object.values(session.contextItems.files).forEach((file) => {
+              store.addFile(file);
+            });
+          }
+          if (session.contextItems.folders) {
+            Object.values(session.contextItems.folders).forEach((folder) => {
+              store.addFolder(folder);
+            });
+          }
+          if (session.contextItems.tags) {
+            Object.values(session.contextItems.tags).forEach((tag) => {
+              store.addTag(tag);
+            });
+          }
+          if (session.contextItems.youtubeVideos) {
+            Object.values(session.contextItems.youtubeVideos).forEach((video) => {
+              store.addYouTubeVideo(video);
+            });
+          }
+          if (session.contextItems.searchResults) {
+            Object.values(session.contextItems.searchResults).forEach(
+              (search3) => {
+                store.addSearchResults(search3);
+              }
+            );
+          }
+          if (session.contextItems.textSelections) {
+            Object.values(session.contextItems.textSelections).forEach(
+              (selection) => {
+                store.addTextSelection(selection);
+              }
+            );
+          }
+          if (session.contextItems.currentFile) {
+            useContextItems.setState({
+              currentFile: session.contextItems.currentFile,
+              includeCurrentFile: true
+              // Enable display of restored current file
+            });
+            console.log(
+              "[Chat] \u2705 Restored current file:",
+              session.contextItems.currentFile.title
+            );
+          }
+          console.log(
+            "[Chat] \u2705 Restored context items for session:",
+            activeChatId,
+            {
+              filesCount: Object.keys(session.contextItems.files || {}).length,
+              foldersCount: Object.keys(session.contextItems.folders || {}).length,
+              tagsCount: Object.keys(session.contextItems.tags || {}).length,
+              hasCurrentFile: !!session.contextItems.currentFile,
+              includeCurrentFile: useContextItems.getState().includeCurrentFile
+            }
+          );
+        }
+      } else {
+        const store = useContextItems.getState();
+        store.clearAll();
+        setMessages([]);
+        if (!session || !session.contextItems) {
+          const activeFile = app.workspace.getActiveFile();
+          if (activeFile && activeFile.extension === "md") {
+            app.vault.cachedRead(activeFile).then((content3) => {
+              const fileContextItem = {
+                id: activeFile.path,
+                type: "file",
+                path: activeFile.path,
+                title: activeFile.basename,
+                content: content3,
+                reference: "Current File",
+                createdAt: activeFile.stat.ctime
+              };
+              useContextItems.setState({
+                currentFile: fileContextItem,
+                includeCurrentFile: true
+                // Enable display of current file
+              });
+              console.log(
+                "[Chat] \u2705 Added current file to new chat context:",
+                {
+                  filename: activeFile.basename,
+                  includeCurrentFile: useContextItems.getState().includeCurrentFile,
+                  currentFile: useContextItems.getState().currentFile?.title
+                }
+              );
+            }).catch((error2) => {
+              console.warn(
+                "[Chat] Failed to read current file for new chat:",
+                error2
+              );
+            });
+          }
+        }
+      }
+      setTimeout(() => {
+        isLoadingSessionRef.current = false;
+      }, 100);
+    } else {
+      const store = useContextItems.getState();
+      store.clearAll();
+      setMessages([]);
+      isLoadingSessionRef.current = false;
+    }
+  }, [activeChatId, chatHistoryManager]);
+  const lastSavedMessagesRef = (0, import_react92.useRef)("");
+  (0, import_react92.useEffect)(() => {
+    if (isLoadingSessionRef.current) {
+      return;
+    }
+    if (activeChatId && messages.length > 0) {
+      const messagesKey = `${activeChatId}-${messages.length}-${messages.map((m) => m.id).join(",")}`;
+      if (lastSavedMessagesRef.current === messagesKey) {
+        return;
+      }
+      const session = chatHistoryManager.getSession(activeChatId);
+      if (session) {
+        let title = session.title;
+        if (title === "New Chat") {
+          const generatedTitle = ChatHistoryManager.generateTitleFromMessages(messages);
+          title = generatedTitle;
+        }
+        const contextMetadata = {
+          filesCount: Object.keys(files).length,
+          foldersCount: Object.keys(folders).length,
+          tagsCount: Object.keys(tags).length,
+          hasCurrentFile: !!currentFile,
+          currentFile: currentFile?.basename || null,
+          timestamp: Date.now()
+        };
+        const messageContextSnapshots = {};
+        messages.forEach((msg) => {
+          if (msg.role === "assistant" && msg.id && contextByAssistantIdRef.current[msg.id]) {
+            messageContextSnapshots[msg.id] = contextByAssistantIdRef.current[msg.id];
+          }
+        });
+        const contextItemsToStore = {
+          files: { ...files },
+          folders: { ...folders },
+          tags: { ...tags },
+          youtubeVideos: { ...youtubeVideos },
+          searchResults: { ...searchResults },
+          textSelections: { ...textSelections },
+          currentFile: currentFile ? { ...currentFile } : null
+        };
+        chatHistoryManager.updateSession(activeChatId, {
+          messages,
+          title,
+          contextSnapshot: JSON.stringify(contextMetadata),
+          messageContextSnapshots,
+          contextItems: contextItemsToStore
+        });
+        lastSavedMessagesRef.current = messagesKey;
+        if (onSessionUpdateRef.current) {
+          const updatedSession = chatHistoryManager.getSession(activeChatId);
+          if (updatedSession) {
+            setTimeout(() => {
+              onSessionUpdateRef.current?.(updatedSession);
+            }, 0);
+          }
+        }
+      }
+    }
+  }, [messages, activeChatId, chatHistoryManager]);
+  (0, import_react92.useEffect)(() => {
+    if (isLoadingSessionRef.current) {
+      return;
+    }
+    if (activeChatId) {
+      const session = chatHistoryManager.getSession(activeChatId);
+      if (session) {
+        const contextItemsToStore = {
+          files: { ...files },
+          folders: { ...folders },
+          tags: { ...tags },
+          youtubeVideos: { ...youtubeVideos },
+          searchResults: { ...searchResults },
+          textSelections: { ...textSelections },
+          currentFile: currentFile ? { ...currentFile } : null
+        };
+        const currentContextKey = JSON.stringify(contextItemsToStore);
+        const savedContextKey = session.contextItems ? JSON.stringify(session.contextItems) : "";
+        if (currentContextKey !== savedContextKey) {
+          chatHistoryManager.updateSession(activeChatId, {
+            contextItems: contextItemsToStore
+          });
+          console.log(
+            "[Chat] \u2705 Saved context items for session:",
+            activeChatId
+          );
+        }
+      }
+    }
+  }, [
+    files,
+    folders,
+    tags,
+    youtubeVideos,
+    searchResults,
+    textSelections,
+    currentFile,
+    activeChatId,
+    chatHistoryManager
+  ]);
+  const [attachments, setAttachments] = (0, import_react92.useState)([]);
+  const handleAttachmentsChange = (0, import_react92.useCallback)(
     (newAttachments) => {
       setAttachments(newAttachments);
     },
@@ -162001,6 +165462,14 @@ ${freshEditorContext}` : freshContextString;
       timeStamp: e2.timeStamp
     });
     if (!editorContent || editorContent.trim() === "") {
+      return;
+    }
+    const apiKey2 = plugin.getApiKey()?.trim();
+    if (!apiKey2 || apiKey2.length === 0) {
+      new import_obsidian51.Notice(
+        "API key is missing. Please set your API key in plugin settings.",
+        5e3
+      );
       return;
     }
     if (editorContent !== input) {
@@ -162037,15 +165506,25 @@ ${freshEditorContext}` : freshContextString;
       handleSendMessage(event);
     }
   };
-  const messagesEndRef = (0, import_react89.useRef)(null);
+  const messagesEndRef = (0, import_react92.useRef)(null);
+  const prevChatTabActiveRef = (0, import_react92.useRef)(void 0);
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-  (0, import_react89.useEffect)(() => {
+  (0, import_react92.useEffect)(() => {
     scrollToBottom();
   }, [messages, history]);
-  const [maxContextSize] = (0, import_react89.useState)(80 * 1e3);
-  (0, import_react89.useEffect)(() => {
+  (0, import_react92.useEffect)(() => {
+    const wasActive = prevChatTabActiveRef.current;
+    prevChatTabActiveRef.current = isChatTabActive;
+    if (isChatTabActive && wasActive === false) {
+      requestAnimationFrame(() => {
+        scrollToBottom();
+      });
+    }
+  }, [isChatTabActive]);
+  const [maxContextSize] = (0, import_react92.useState)(80 * 1e3);
+  (0, import_react92.useEffect)(() => {
     setSelectedModel(plugin.settings.selectedModel);
   }, [plugin.settings.selectedModel]);
   const handleTranscriptionComplete = (text6) => {
@@ -162070,8 +165549,8 @@ ${freshEditorContext}` : freshContextString;
     setMessagesWithTimestamps([]);
     setErrorMessage(null);
   };
-  const pendingReloadRef = (0, import_react89.useRef)(null);
-  (0, import_react89.useEffect)(() => {
+  const pendingReloadRef = (0, import_react92.useRef)(null);
+  (0, import_react92.useEffect)(() => {
     if (pendingReloadRef.current === null) return;
     if (messages.length !== pendingReloadRef.current) return;
     const targetCount = pendingReloadRef.current;
@@ -162095,17 +165574,29 @@ ${freshEditorContext}` : freshContextString;
     if (body.newUnifiedContext) {
       lastContextSentRef.current = body.newUnifiedContext;
     }
+    lastSavedMessagesRef.current = "";
   }, [messages.length, reload]);
-  const handleMessageRefresh = (0, import_react89.useCallback)(
+  const handleMessageRefresh = (0, import_react92.useCallback)(
     (messageId) => {
       const messageIndex = messages.findIndex((m) => m.id === messageId);
       if (messageIndex === -1) return;
       const messageToRefresh = messages[messageIndex];
       if (messageToRefresh.role !== "assistant") return;
-      const snapshot = contextByAssistantIdRef.current[messageId];
+      let snapshot = contextByAssistantIdRef.current[messageId];
+      if (!snapshot && activeChatId) {
+        const session = chatHistoryManager.getSession(activeChatId);
+        if (session?.messageContextSnapshots?.[messageId]) {
+          snapshot = session.messageContextSnapshots[messageId];
+          contextByAssistantIdRef.current[messageId] = snapshot;
+        }
+      }
       if (!snapshot) {
-        console.warn("[Chat] No snapshot for message:", messageId);
-        return;
+        console.warn(
+          "[Chat] No snapshot for message:",
+          messageId,
+          "- using current context as fallback"
+        );
+        snapshot = fullContext;
       }
       console.log("[Chat] refresh debug", {
         messageId,
@@ -162119,6 +165610,15 @@ ${freshEditorContext}` : freshContextString;
       const trimmed = messages.slice(0, messageIndex);
       setMessages(trimmed);
       setMessagesWithTimestamps(messagesWithTimestamps.slice(0, messageIndex));
+      lastSavedMessagesRef.current = "";
+      if (activeChatId && trimmed.length > 0) {
+        const session = chatHistoryManager.getSession(activeChatId);
+        if (session) {
+          chatHistoryManager.updateSession(activeChatId, {
+            messages: trimmed
+          });
+        }
+      }
       const currentDatetime2 = window.moment().format("YYYY-MM-DDTHH:mm:ssZ");
       forcedReloadBodyRef.current = {
         currentDatetime: currentDatetime2,
@@ -162142,7 +165642,7 @@ ${freshEditorContext}` : freshContextString;
       plugin.settings
     ]
   );
-  (0, import_react89.useEffect)(() => {
+  (0, import_react92.useEffect)(() => {
     const handleSlashCommand = (event) => {
       const customEvent = event;
       const { action, item } = customEvent.detail;
@@ -162157,7 +165657,7 @@ ${freshEditorContext}` : freshContextString;
           }
           const activeFile = app.workspace.getActiveFile();
           if (!activeFile) {
-            new import_obsidian45.Notice(
+            new import_obsidian51.Notice(
               "No file is currently open. Please open a file to format.",
               4e3
             );
@@ -162182,7 +165682,7 @@ ${freshEditorContext}` : freshContextString;
                 const videoId = extractYouTubeVideoId2(fileContent);
                 if (videoId) {
                   try {
-                    new import_obsidian45.Notice("Fetching YouTube transcript...", 2e3);
+                    new import_obsidian51.Notice("Fetching YouTube transcript...", 2e3);
                     const { title, transcript } = await getYouTubeContent2(
                       videoId,
                       plugin
@@ -162198,13 +165698,13 @@ Video ID: ${videoId}
 
 ${transcript}`;
                     fileContent = fileContent + videoInfo;
-                    new import_obsidian45.Notice("Transcript fetched, formatting...", 2e3);
+                    new import_obsidian51.Notice("Transcript fetched, formatting...", 2e3);
                   } catch (error2) {
                     logger.warn(
                       "Failed to fetch YouTube transcript, formatting without it:",
                       error2
                     );
-                    new import_obsidian45.Notice(
+                    new import_obsidian51.Notice(
                       `Could not fetch transcript: ${error2 instanceof Error ? error2.message : String(error2)}. Formatting with available content.`,
                       5e3
                     );
@@ -162219,7 +165719,7 @@ ${transcript}`;
               });
             } catch (error2) {
               logger.error("Error formatting file:", error2);
-              new import_obsidian45.Notice(
+              new import_obsidian51.Notice(
                 `Error formatting file: ${error2 instanceof Error ? error2.message : String(error2)}`,
                 6e3
               );
@@ -162284,33 +165784,72 @@ ${transcript}`;
     app,
     plugin
   ]);
-  return /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(StyledContainer, { className: "flex flex-col h-full w-full max-h-full overflow-hidden", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "flex-none border-b border-[--background-modifier-border] px-3 py-1.5 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex items-center justify-between", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex items-center gap-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("h2", { className: "text-sm font-medium text-[--text-normal]", children: "Chat" }),
-        isGenerating && /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex items-center gap-1.5 text-xs text-[--text-muted]", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { className: "inline-block w-1.5 h-1.5 bg-[--text-accent] rounded-full animate-pulse" }),
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("span", { children: "Thinking" })
-        ] })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex items-center gap-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(NewChatButton, { onClick: handleNewChat }),
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(ClearAllButton, {})
-      ] })
-    ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "flex-1 overflow-y-auto px-3 py-2 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex flex-col space-y-1", children: [
-      messages.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "flex flex-col items-center justify-center py-12" }) : messages.map((message) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)(StyledContainer, { className: "flex flex-col h-full w-full max-h-full overflow-hidden", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex-none border-b border-[--background-modifier-border] px-3 py-1.5 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex items-center justify-end", children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex items-center gap-2", children: onSelectChat && onDeleteChat && /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
+      ChatHistoryCombobox,
+      {
+        sessions: chatSessions || [],
+        activeChatId,
+        onSelectChat,
+        onDeleteChat,
+        app
+      }
+    ) }) }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex-1 overflow-y-auto px-3 py-2 bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: "flex flex-col space-y-1", children: [
+      messages.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex flex-col items-center justify-center py-12" }) : messages.map((message) => {
         const messageWithParts = message;
-        const toolInvocations = messageWithParts.parts?.filter((part) => part.type?.startsWith("tool-")).map((part) => ({
-          toolCallId: part.toolCallId,
-          toolName: part.type.replace("tool-", ""),
-          args: part.input,
-          result: part.output,
-          state: part.state === "output-available" ? "result" : part.state === "input-available" ? "call" : "partial-call"
-        })) || messageWithParts.toolInvocations || [];
-        return /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(import_react89.default.Fragment, { children: [
+        let toolInvocations = messageWithParts.toolInvocations || [];
+        if (toolInvocations.length === 0 && messageWithParts.parts) {
+          toolInvocations = messageWithParts.parts.filter((part) => {
+            return part.type?.startsWith("tool-") || part.toolInvocation;
+          }).map((part) => {
+            if (part.toolInvocation) {
+              console.log(
+                "[Chat] Using nested toolInvocation:",
+                part.toolInvocation
+              );
+              return {
+                toolCallId: part.toolInvocation.toolCallId,
+                toolName: part.toolInvocation.toolName,
+                args: part.toolInvocation.args || part.input,
+                result: part.toolInvocation.result || part.output,
+                state: part.toolInvocation.state || part.state || "call"
+              };
+            }
+            const toolName = part.type.replace("tool-", "");
+            console.log("[Chat] Extracting from part.type:", {
+              partType: part.type,
+              extractedToolName: toolName,
+              toolCallId: part.toolCallId
+            });
+            if (toolName === "invocation") {
+              console.warn(
+                "[Chat] Cannot extract tool name from part.type 'tool-invocation', skipping"
+              );
+              return null;
+            }
+            if (!part.toolCallId || String(part.toolCallId).trim() === "") {
+              console.warn(
+                "[Chat] Part missing toolCallId, skipping to avoid broken tool result matching"
+              );
+              return null;
+            }
+            return {
+              toolCallId: part.toolCallId,
+              toolName,
+              args: part.input,
+              result: part.output,
+              state: part.state === "output-available" ? "result" : part.state === "input-available" ? "call" : "partial-call"
+            };
+          }).filter((inv) => inv !== null);
+        }
+        toolInvocations = toolInvocations.filter(
+          (inv) => inv?.toolCallId != null && String(inv.toolCallId).trim() !== ""
+        );
+        console.log("[Chat] Final tool invocations:", toolInvocations);
+        return /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)(import_react92.default.Fragment, { children: [
           toolInvocations.map((toolInvocation) => {
-            return /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+            return /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
               tool_invocation_handler_default,
               {
                 toolInvocation,
@@ -162322,7 +165861,7 @@ ${transcript}`;
           }),
           message.annotations?.map((annotation, index2) => {
             if (isSearchResultsAnnotation(annotation)) {
-              return /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+              return /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
                 SearchAnnotationHandler,
                 {
                   annotation
@@ -162332,7 +165871,7 @@ ${transcript}`;
             }
             return null;
           }),
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
             MessageRenderer,
             {
               message: messagesWithTimestamps.find((m) => m.id === message.id) || normalizeMessage(message),
@@ -162341,24 +165880,24 @@ ${transcript}`;
           )
         ] }, message.id);
       }),
-      showLoadingIndicator && /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex items-center gap-3 py-2.5", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "flex-shrink-0 w-8 h-8 flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(import_lucide_react15.Bot, { size: 16, className: "text-[--interactive-accent]" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "h-8 flex items-center gap-0.5", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+      showLoadingIndicator && /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: "flex items-center gap-3 py-2.5", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex-shrink-0 w-8 h-8 flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(import_lucide_react16.Bot, { size: 16, className: "text-[--interactive-accent]" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: "h-8 flex items-center gap-0.5", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
             "span",
             {
               className: "w-1 h-1 bg-[--text-accent] rounded-full animate-bounce",
               style: { animationDelay: "0ms", animationDuration: "1.4s" }
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
             "span",
             {
               className: "w-1 h-1 bg-[--text-accent] rounded-full animate-bounce",
               style: { animationDelay: "200ms", animationDuration: "1.4s" }
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
             "span",
             {
               className: "w-1 h-1 bg-[--text-accent] rounded-full animate-bounce",
@@ -162367,12 +165906,12 @@ ${transcript}`;
           )
         ] })
       ] }),
-      errorMessage && /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex items-start gap-2 py-1.5 border-b border-[--background-modifier-border] pb-2", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "w-4 text-xs text-[--text-error]", children: "\u26A0" }),
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex-1 space-y-1", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex items-center justify-between", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "text-sm text-[--text-error] font-medium", children: "Error" }),
-            /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+      errorMessage && /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: "flex items-start gap-2 py-1.5 border-b border-[--background-modifier-border] pb-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "w-4 text-xs text-[--text-error]", children: "\u26A0" }),
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: "flex-1 space-y-1", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: "flex items-center justify-between", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "text-sm text-[--text-error] font-medium", children: "Error" }),
+            /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
               "button",
               {
                 onClick: handleDismissError,
@@ -162382,8 +165921,8 @@ ${transcript}`;
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "text-sm text-[--text-normal] whitespace-pre-wrap select-text", children: errorMessage }),
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)(
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "text-sm text-[--text-normal] whitespace-pre-wrap select-text", children: errorMessage }),
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)(
             Button2,
             {
               onClick: handleRetry,
@@ -162391,21 +165930,21 @@ ${transcript}`;
               size: "sm",
               className: "text-xs mt-1 hover:bg-[--background-modifier-hover]",
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(import_lucide_react15.RefreshCw, { className: "w-3 h-3 mr-1" }),
+                /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(import_lucide_react16.RefreshCw, { className: "w-3 h-3 mr-1" }),
                 "Retry"
               ]
             }
           )
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { ref: messagesEndRef }),
-      groundingMetadata && /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(SourcesSection, { groundingMetadata })
+      /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { ref: messagesEndRef }),
+      groundingMetadata && /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(SourcesSection, { groundingMetadata })
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "flex-none border-t border-[--background-modifier-border] bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("form", { onSubmit: handleSendMessage, className: "p-3", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "mb-2", children: /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(ContextItems, {}) }),
-      /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "relative", ref: inputRef, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(EditorContextBadge, { context: editorContext, onClear: clearFrozen }),
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex-none border-t border-[--background-modifier-border] bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("form", { onSubmit: handleSendMessage, className: "p-3", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "mb-2", children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(ContextItems, {}) }),
+      /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: "relative", ref: inputRef, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(EditorContextBadge, { context: editorContext, onClear: clearFrozen }),
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
           tiptap_default,
           {
             value: input,
@@ -162414,34 +165953,34 @@ ${transcript}`;
             editorRef: tiptapEditorRef
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "absolute bottom-2 right-2 flex items-center gap-1", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: "absolute bottom-2 right-2 flex items-center gap-1", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
             AudioRecorder,
             {
               onTranscriptionComplete: handleTranscriptionComplete
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
             "button",
             {
               type: "submit",
               disabled: isGenerating || !input.trim(),
               className: `flex items-center justify-center transition-all rounded-md w-8 h-8 ${isGenerating || !input.trim() ? "text-[--text-muted] cursor-not-allowed opacity-50" : "text-[--text-on-accent] bg-[--interactive-accent] hover:bg-[--interactive-accent-hover] shadow-sm hover:shadow"}`,
               title: isGenerating ? "Stop generating" : "Send message",
-              children: isGenerating ? /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(import_lucide_react15.Square, { className: "w-4 h-4", fill: "currentColor" }) : /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(import_lucide_react15.Send, { className: "w-4 h-4" })
+              children: isGenerating ? /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(import_lucide_react16.Square, { className: "w-4 h-4", fill: "currentColor" }) : /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(import_lucide_react16.Send, { className: "w-4 h-4" })
             }
           )
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime88.jsxs)("div", { className: "flex items-center justify-between mt-1.5 text-xs text-[--text-muted]", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime89.jsxs)("div", { className: "flex items-center justify-between mt-1.5 text-xs text-[--text-muted]", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
           ContextLimitIndicator,
           {
             unifiedContext: contextString,
             maxContextSize
           }
         ) }),
-        /* @__PURE__ */ (0, import_jsx_runtime88.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
           ModelSelector,
           {
             selectedModel,
@@ -162453,49 +165992,310 @@ ${transcript}`;
   ] });
 };
 
+// views/assistant/ai-chat/components/chat-tabs.tsx
+var import_react94 = __toESM(require_react());
+
+// views/assistant/ai-chat/components/chat-tab-item.tsx
+var import_lucide_react17 = __toESM(require_lucide_react());
+var import_obsidian52 = require("obsidian");
+var import_jsx_runtime90 = __toESM(require_jsx_runtime());
+function ChatTabItem({
+  session,
+  isActive: isActive2,
+  onSelect,
+  onDelete
+}) {
+  const handleDelete = (e2) => {
+    e2.stopPropagation();
+    onDelete();
+  };
+  const relativeTime = (0, import_obsidian52.moment)(session.updatedAt).fromNow();
+  return /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)(
+    "div",
+    {
+      className: tw(
+        "group flex items-center gap-1.5 px-2 py-1 rounded-t cursor-pointer transition-colors",
+        "border-b-2",
+        isActive2 ? "border-[--interactive-accent] bg-[--background-modifier-active-hover]" : "border-transparent hover:bg-[--background-modifier-hover]"
+      ),
+      onClick: onSelect,
+      title: `${session.title} - ${relativeTime}`,
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+          "span",
+          {
+            className: tw(
+              "text-[10px] text-[--text-normal] truncate max-w-[120px]",
+              isActive2 && "font-medium"
+            ),
+            children: session.title
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+          "button",
+          {
+            onClick: handleDelete,
+            className: tw(
+              "opacity-0 group-hover:opacity-100 transition-opacity",
+              "hover:text-[--text-error] flex-shrink-0",
+              "p-0.5 rounded hover:bg-[--background-modifier-hover]"
+            ),
+            "aria-label": "Delete chat",
+            title: "Delete chat",
+            children: /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react17.X, { className: "w-2.5 h-2.5" })
+          }
+        )
+      ]
+    }
+  );
+}
+
+// views/assistant/ai-chat/components/new-chat-button.tsx
+var import_lucide_react18 = __toESM(require_lucide_react());
+var import_jsx_runtime91 = __toESM(require_jsx_runtime());
+function NewChatButton({ onClick }) {
+  return /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+    "button",
+    {
+      onClick,
+      className: tw(
+        "flex items-center justify-center w-6 h-6 rounded",
+        "text-[--text-muted] hover:text-[--text-normal]",
+        "hover:border hover:border-[--background-modifier-border]",
+        "transition-colors"
+      ),
+      "aria-label": "Start new chat",
+      title: "New chat",
+      children: /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(import_lucide_react18.Plus, { className: "w-3.5 h-3.5 flex-shrink-0", strokeWidth: 2 })
+    }
+  );
+}
+
+// views/assistant/ai-chat/components/chat-tabs.tsx
+var import_jsx_runtime92 = __toESM(require_jsx_runtime());
+function ChatTabs({
+  sessions,
+  activeChatId,
+  onSelectChat,
+  onNewChat,
+  onDeleteChat
+}) {
+  import_react94.default.useEffect(() => {
+    console.log("[ChatTabs] Rendering with sessions:", sessions.length, "activeChatId:", activeChatId);
+  }, [sessions.length, activeChatId]);
+  return /* @__PURE__ */ (0, import_jsx_runtime92.jsxs)(
+    "div",
+    {
+      className: tw(
+        "flex-none flex items-center gap-0.5 border-b border-[--background-modifier-border]",
+        "px-1.5 py-1 bg-[--background-primary] min-h-[32px]",
+        "relative z-10 w-full"
+      ),
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime92.jsx)("div", { className: "flex-1 flex items-center gap-0.5 overflow-x-auto scrollbar-hide", children: sessions.map((session) => /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(
+          ChatTabItem,
+          {
+            session,
+            isActive: activeChatId === session.id,
+            onSelect: () => onSelectChat(session.id),
+            onDelete: () => onDeleteChat(session.id)
+          },
+          session.id
+        )) }),
+        /* @__PURE__ */ (0, import_jsx_runtime92.jsx)("div", { className: "flex-shrink-0 ml-1", children: /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(NewChatButton, { onClick: onNewChat }) })
+      ]
+    }
+  );
+}
+
 // views/assistant/ai-chat/container.tsx
-var import_jsx_runtime89 = __toESM(require_jsx_runtime());
+var import_jsx_runtime93 = __toESM(require_jsx_runtime());
 var AIChatSidebar = ({
   plugin,
   apiKey,
-  onTokenLimitError
+  onTokenLimitError,
+  isChatTabActive
 }) => {
-  const inputRef = (0, import_react91.useRef)(null);
-  return /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex flex-col h-full w-full bg-[--background-primary]", children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)("div", { className: "flex-1 min-h-0 w-full", children: /* @__PURE__ */ (0, import_jsx_runtime89.jsx)(
-    ChatComponent,
-    {
-      plugin,
-      apiKey,
-      inputRef,
-      onTokenLimitError
+  const inputRef = (0, import_react95.useRef)(null);
+  const [activeChatId, setActiveChatId] = (0, import_react95.useState)(null);
+  const [chatSessions, setChatSessions] = (0, import_react95.useState)([]);
+  const [allSessions, setAllSessions] = (0, import_react95.useState)([]);
+  const MAX_TABS = 10;
+  const chatHistoryManager = (0, import_react95.useMemo)(
+    () => ChatHistoryManager.getInstance(plugin.app),
+    [plugin.app]
+  );
+  const getVisibleSessions = (0, import_react95.useCallback)(
+    (all2, activeId) => {
+      if (all2.length === 0) return [];
+      if (!activeId) {
+        return all2.slice(0, MAX_TABS);
+      }
+      const activeIndex = all2.findIndex((s) => s.id === activeId);
+      if (activeIndex === -1) {
+        console.warn(
+          "[ChatTabs] Active chat not found in allSessions, refreshing..."
+        );
+        return all2.slice(0, MAX_TABS);
+      }
+      const halfTabs = Math.floor(MAX_TABS / 2);
+      let startIndex = Math.max(0, activeIndex - halfTabs);
+      let endIndex = Math.min(all2.length, startIndex + MAX_TABS);
+      if (endIndex - startIndex < MAX_TABS) {
+        startIndex = Math.max(0, endIndex - MAX_TABS);
+      }
+      const visible = all2.slice(startIndex, endIndex);
+      if (!visible.find((s) => s.id === activeId) && activeIndex >= 0) {
+        console.warn("[ChatTabs] Active chat not in visible tabs, adding it");
+        const activeSession = all2[activeIndex];
+        if (visible.length >= MAX_TABS) {
+          visible[visible.length - 1] = activeSession;
+        } else {
+          visible.push(activeSession);
+        }
+      }
+      return visible;
+    },
+    [MAX_TABS]
+  );
+  (0, import_react95.useEffect)(() => {
+    const loadSessions = async () => {
+      await chatHistoryManager.waitForLoad();
+      const sessions = chatHistoryManager.getAllSessions();
+      console.log(
+        "[ChatTabs] Initial load - sessions from manager:",
+        sessions.length
+      );
+      setAllSessions(sessions);
+      if (sessions.length === 0) {
+        const newSession = chatHistoryManager.createSession();
+        setActiveChatId(newSession.id);
+        setAllSessions([newSession]);
+        setChatSessions([newSession]);
+      } else {
+        const activeId = sessions[0].id;
+        console.log(
+          "[ChatTabs] Setting active chat:",
+          activeId,
+          "from",
+          sessions.length,
+          "sessions"
+        );
+        setActiveChatId(activeId);
+        const visible = getVisibleSessions(sessions, activeId);
+        console.log(
+          "[ChatTabs] Initial visible sessions:",
+          visible.length,
+          "ids:",
+          visible.map((s) => s.id)
+        );
+        setChatSessions(visible);
+      }
+    };
+    loadSessions();
+  }, [chatHistoryManager, getVisibleSessions]);
+  (0, import_react95.useEffect)(() => {
+    if (allSessions.length > 0) {
+      const visible = getVisibleSessions(allSessions, activeChatId);
+      console.log("[ChatTabs] Updating visible sessions:", {
+        allSessionsCount: allSessions.length,
+        activeChatId,
+        visibleCount: visible.length,
+        visibleIds: visible.map((s) => s.id)
+      });
+      setChatSessions(visible);
+    } else if (activeChatId) {
+      console.log("[ChatTabs] Active chat but no allSessions, refreshing...");
+      const refreshed = chatHistoryManager.getAllSessions();
+      setAllSessions(refreshed);
+      setChatSessions(getVisibleSessions(refreshed, activeChatId));
     }
-  ) }) });
+  }, [activeChatId, allSessions, getVisibleSessions, chatHistoryManager]);
+  const handleNewChat = () => {
+    const newSession = chatHistoryManager.createSession();
+    const updated = chatHistoryManager.getAllSessions();
+    setAllSessions(updated);
+    setActiveChatId(newSession.id);
+    setChatSessions(getVisibleSessions(updated, newSession.id));
+  };
+  const handleSelectChat = (id3) => {
+    const updated = chatHistoryManager.getAllSessions();
+    setAllSessions(updated);
+    setActiveChatId(id3);
+  };
+  const handleDeleteChat = (id3) => {
+    chatHistoryManager.deleteSession(id3);
+    const remaining = chatHistoryManager.getAllSessions();
+    setAllSessions(remaining);
+    if (activeChatId === id3) {
+      const newActiveId = remaining[0]?.id || null;
+      setActiveChatId(newActiveId);
+      setChatSessions(getVisibleSessions(remaining, newActiveId));
+    } else {
+      setChatSessions(getVisibleSessions(remaining, activeChatId));
+    }
+  };
+  const handleSessionUpdate = (0, import_react95.useCallback)(
+    (session) => {
+      const updated = chatHistoryManager.getAllSessions();
+      setAllSessions(updated);
+      setChatSessions(getVisibleSessions(updated, activeChatId));
+    },
+    [chatHistoryManager, activeChatId, getVisibleSessions]
+  );
+  return /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: "flex flex-col h-full w-full bg-[--background-primary]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+      ChatTabs,
+      {
+        sessions: chatSessions,
+        activeChatId,
+        onSelectChat: handleSelectChat,
+        onNewChat: handleNewChat,
+        onDeleteChat: handleDeleteChat
+      }
+    ),
+    /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("div", { className: "flex-1 min-h-0 w-full", children: /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+      ChatComponent,
+      {
+        plugin,
+        apiKey,
+        inputRef,
+        onTokenLimitError,
+        activeChatId,
+        onSessionUpdate: handleSessionUpdate,
+        chatSessions,
+        onSelectChat: handleSelectChat,
+        onDeleteChat: handleDeleteChat,
+        isChatTabActive
+      }
+    ) })
+  ] });
 };
 var container_default = AIChatSidebar;
 
 // views/assistant/synchronizer/sync-tab.tsx
-var import_react92 = __toESM(require_react());
-var import_obsidian46 = require("obsidian");
-var import_lucide_react16 = __toESM(require_lucide_react());
-var import_jsx_runtime90 = __toESM(require_jsx_runtime());
+var import_react96 = __toESM(require_react());
+var import_obsidian53 = require("obsidian");
+var import_lucide_react19 = __toESM(require_lucide_react());
+var import_jsx_runtime94 = __toESM(require_jsx_runtime());
 var DOWNLOADED_FILES_KEY = "file-organizer-downloaded-files";
 function SyncTab({
   plugin,
   onTokenLimitError
 }) {
-  const [files, setFiles] = (0, import_react92.useState)([]);
-  const [loading, setLoading] = (0, import_react92.useState)(true);
-  const [error, setError] = (0, import_react92.useState)(null);
-  const [page, setPage] = (0, import_react92.useState)(1);
-  const [totalPages, setTotalPages] = (0, import_react92.useState)(1);
-  const [downloading, setDownloading] = (0, import_react92.useState)({});
-  const [downloadedFiles, setDownloadedFiles] = (0, import_react92.useState)(
+  const [files, setFiles] = (0, import_react96.useState)([]);
+  const [loading, setLoading] = (0, import_react96.useState)(true);
+  const [error, setError] = (0, import_react96.useState)(null);
+  const [page, setPage] = (0, import_react96.useState)(1);
+  const [totalPages, setTotalPages] = (0, import_react96.useState)(1);
+  const [downloading, setDownloading] = (0, import_react96.useState)({});
+  const [downloadedFiles, setDownloadedFiles] = (0, import_react96.useState)(
     /* @__PURE__ */ new Set()
   );
-  const [syncingAll, setSyncingAll] = (0, import_react92.useState)(false);
-  const [previewCache, setPreviewCache] = (0, import_react92.useState)({});
-  const [loadingPreviews, setLoadingPreviews] = (0, import_react92.useState)({});
-  (0, import_react92.useEffect)(() => {
+  const [syncingAll, setSyncingAll] = (0, import_react96.useState)(false);
+  const [previewCache, setPreviewCache] = (0, import_react96.useState)({});
+  const [loadingPreviews, setLoadingPreviews] = (0, import_react96.useState)({});
+  (0, import_react96.useEffect)(() => {
     const loadDownloadedFiles = () => {
       try {
         const savedFiles = localStorage.getItem(DOWNLOADED_FILES_KEY);
@@ -162508,7 +166308,7 @@ function SyncTab({
     };
     loadDownloadedFiles();
   }, []);
-  (0, import_react92.useEffect)(() => {
+  (0, import_react96.useEffect)(() => {
     fetchFiles();
   }, [page, plugin]);
   async function fetchFiles() {
@@ -162520,7 +166320,7 @@ function SyncTab({
     try {
       setLoading(true);
       setError(null);
-      const urlResponse = await (0, import_obsidian46.requestUrl)({
+      const urlResponse = await (0, import_obsidian53.requestUrl)({
         url: `${plugin.getServerUrl()}/api/files?page=${page}`,
         method: "GET",
         headers: {
@@ -162571,7 +166371,7 @@ function SyncTab({
     }
     setLoadingPreviews((prev) => ({ ...prev, [file.id]: true }));
     try {
-      const response = await (0, import_obsidian46.requestUrl)({
+      const response = await (0, import_obsidian53.requestUrl)({
         url: file.blobUrl,
         method: "GET"
       });
@@ -162622,7 +166422,7 @@ function SyncTab({
     )) {
       setDownloadedFiles(/* @__PURE__ */ new Set());
       localStorage.removeItem(DOWNLOADED_FILES_KEY);
-      new import_obsidian46.Notice("Download history cleared");
+      new import_obsidian53.Notice("Download history cleared");
     }
   };
   const downloadAllMissingFiles = async () => {
@@ -162633,18 +166433,18 @@ function SyncTab({
         (file) => file.status === "completed" && !downloadedFiles.has(file.id)
       );
       if (filesToDownload.length === 0) {
-        new import_obsidian46.Notice("All files are already synchronized");
+        new import_obsidian53.Notice("All files are already synchronized");
         return;
       }
-      new import_obsidian46.Notice(`Syncing ${filesToDownload.length} file(s)...`);
+      new import_obsidian53.Notice(`Syncing ${filesToDownload.length} file(s)...`);
       for (const file of filesToDownload) {
         if (!downloading[file.id]) {
           await downloadFile(file);
         }
       }
-      new import_obsidian46.Notice(`Successfully synchronized ${filesToDownload.length} file(s)`);
+      new import_obsidian53.Notice(`Successfully synchronized ${filesToDownload.length} file(s)`);
     } catch (err) {
-      new import_obsidian46.Notice(
+      new import_obsidian53.Notice(
         `Error during bulk sync: ${err instanceof Error ? err.message : String(err)}`
       );
       console.error("Bulk sync error:", err);
@@ -162660,10 +166460,10 @@ function SyncTab({
       try {
         await plugin.ensureFolderExists(folderPath);
       } catch (err) {
-        new import_obsidian46.Notice(`Failed to create sync folder: ${folderPath}`);
+        new import_obsidian53.Notice(`Failed to create sync folder: ${folderPath}`);
         throw err;
       }
-      const fileResponse = await (0, import_obsidian46.requestUrl)({
+      const fileResponse = await (0, import_obsidian53.requestUrl)({
         url: file.blobUrl,
         method: "GET"
       });
@@ -162678,7 +166478,7 @@ function SyncTab({
       try {
         await plugin.ensureFolderExists(dateFolderPath);
       } catch (err) {
-        new import_obsidian46.Notice(`Failed to create date folder: ${dateFolderPath}`);
+        new import_obsidian53.Notice(`Failed to create date folder: ${dateFolderPath}`);
         throw err;
       }
       if (isImage2 || isPDF) {
@@ -162698,9 +166498,9 @@ ${file.textContent || ""}`;
           const mdFilePath = `${dateFolderPath}/${baseName}.md`;
           await plugin.app.vault.create(mdFilePath, markdownContent);
           markFileAsDownloaded(file.id);
-          new import_obsidian46.Notice(`Downloaded ${sanitizedFilename} to ${dateFolderPath}`);
+          new import_obsidian53.Notice(`Downloaded ${sanitizedFilename} to ${dateFolderPath}`);
         } catch (err) {
-          new import_obsidian46.Notice(`Failed to save file: ${sanitizedFilename}`);
+          new import_obsidian53.Notice(`Failed to save file: ${sanitizedFilename}`);
           throw err;
         }
       } else {
@@ -162715,14 +166515,14 @@ ${file.textContent || ""}`;
             content3
           );
           markFileAsDownloaded(file.id);
-          new import_obsidian46.Notice(`Downloaded ${finalName} to ${dateFolderPath}`);
+          new import_obsidian53.Notice(`Downloaded ${finalName} to ${dateFolderPath}`);
         } catch (err) {
-          new import_obsidian46.Notice(`Failed to save file: ${sanitizedFilename}`);
+          new import_obsidian53.Notice(`Failed to save file: ${sanitizedFilename}`);
           throw err;
         }
       }
     } catch (err) {
-      new import_obsidian46.Notice(
+      new import_obsidian53.Notice(
         `Error downloading file: ${err instanceof Error ? err.message : String(err)}`
       );
       console.error("Download error:", err);
@@ -162732,11 +166532,11 @@ ${file.textContent || ""}`;
   }
   function getFileIcon(fileType2, className = "w-4 h-4") {
     if (fileType2.startsWith("image/")) {
-      return /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.FileImage, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.FileImage, { className });
     } else if (fileType2 === "application/pdf") {
-      return /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.FileImage, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.FileImage, { className });
     } else {
-      return /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.FileText, { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.FileText, { className });
     }
   }
   function getStatusBadge(status) {
@@ -162745,62 +166545,62 @@ ${file.textContent || ""}`;
     switch (status) {
       case "completed":
         className += " bg-[--text-success] text-[--text-on-accent] border border-[--background-modifier-border]";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.Check, { className: "w-3 h-3" });
+        icon = /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.Check, { className: "w-3 h-3" });
         break;
       case "processing":
         className += " bg-[--interactive-accent] text-[--text-on-accent] border border-[--background-modifier-border]";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.RotateCw, { className: "w-3 h-3 animate-spin" });
+        icon = /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.RotateCw, { className: "w-3 h-3 animate-spin" });
         break;
       case "pending":
         className += " bg-[--text-warning] text-[--text-on-accent] border border-[--background-modifier-border]";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.Clock, { className: "w-3 h-3" });
+        icon = /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.Clock, { className: "w-3 h-3" });
         break;
       case "error":
         className += " bg-[--text-error] text-[--text-on-accent] border border-[--background-modifier-border]";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.AlertCircle, { className: "w-3 h-3" });
+        icon = /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.AlertCircle, { className: "w-3 h-3" });
         break;
       default:
         className += " bg-[--background-secondary] text-[--text-muted] border border-[--background-modifier-border]";
-        icon = /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.Cloud, { className: "w-3 h-3" });
+        icon = /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.Cloud, { className: "w-3 h-3" });
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("span", { className, children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("span", { className, children: [
       icon,
-      /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("span", { children: status })
+      /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("span", { children: status })
     ] });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)(StyledContainer, { className: tw("bg-[--background-primary] h-full flex flex-col"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("px-3 py-1.5 border-b border-[--background-modifier-border] flex items-center justify-between"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("h2", { className: tw("text-sm font-medium text-[--text-normal]"), children: "Sync Files" }),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("p", { className: tw("text-xs text-[--text-muted]"), children: [
+  return /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)(StyledContainer, { className: tw("bg-[--background-primary] h-full flex flex-col"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("px-3 py-1.5 border-b border-[--background-modifier-border] flex items-center justify-between"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("h2", { className: tw("text-sm font-medium text-[--text-normal]"), children: "Sync Files" }),
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("p", { className: tw("text-xs text-[--text-muted]"), children: [
           files.filter((f) => downloadedFiles.has(f.id)).length,
           " of ",
           files.length,
           " synced"
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("flex items-center gap-2"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("flex items-center gap-2"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(
           "button",
           {
             onClick: fetchFiles,
             disabled: loading,
             className: tw(`p-1.5 text-[--text-muted] hover:text-[--text-normal] transition-colors ${loading ? "cursor-wait" : ""}`),
             title: "Refresh file list",
-            children: /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.RefreshCw, { className: tw(`w-4 h-4 ${loading ? "animate-spin" : ""}`) })
+            children: /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.RefreshCw, { className: tw(`w-4 h-4 ${loading ? "animate-spin" : ""}`) })
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(
           "button",
           {
             onClick: downloadAllMissingFiles,
             disabled: loading || syncingAll || files.filter((f) => f.status === "completed" && !downloadedFiles.has(f.id)).length === 0,
             className: tw(`p-1.5 transition-colors ${files.filter((f) => f.status === "completed" && !downloadedFiles.has(f.id)).length > 0 ? "text-[--interactive-accent] hover:text-[--interactive-accent-hover]" : "text-[--text-muted] cursor-not-allowed"}`),
             title: `Sync all (${files.filter((f) => f.status === "completed" && !downloadedFiles.has(f.id)).length})`,
-            children: /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.DownloadCloud, { className: tw(`w-4 h-4 ${syncingAll ? "animate-pulse" : ""}`) })
+            children: /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.DownloadCloud, { className: tw(`w-4 h-4 ${syncingAll ? "animate-pulse" : ""}`) })
           }
         ),
-        downloadedFiles.size > 0 && /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+        downloadedFiles.size > 0 && /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(
           "button",
           {
             onClick: clearDownloadHistory,
@@ -162811,28 +166611,28 @@ ${file.textContent || ""}`;
         )
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("flex-1 overflow-y-auto"), children: [
-      error && /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("px-3 py-2 bg-[--background-modifier-error] border-l-2 border-[--text-error]"), children: /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("flex items-center gap-2 text-sm text-[--text-error]"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.AlertCircle, { className: tw("w-4 h-4") }),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("span", { children: error })
+    /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("flex-1 overflow-y-auto"), children: [
+      error && /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("px-3 py-2 bg-[--background-modifier-error] border-l-2 border-[--text-error]"), children: /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("flex items-center gap-2 text-sm text-[--text-error]"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.AlertCircle, { className: tw("w-4 h-4") }),
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("span", { children: error })
       ] }) }),
-      loading ? /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("border-t border-[--background-modifier-border]"), children: [1, 2, 3].map((i) => /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("flex items-center px-3 py-2 border-b border-[--background-modifier-border] animate-pulse"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("w-6 h-6 mr-3 bg-[--background-modifier-border]") }),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("flex-1"), children: /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("h-4 bg-[--background-modifier-border] w-2/3") }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("h-3 bg-[--background-modifier-border] w-16 mr-4") }),
-        /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("w-4 h-4 bg-[--background-modifier-border]") })
-      ] }, i)) }) : /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)(import_jsx_runtime90.Fragment, { children: [
-        files.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("flex flex-col items-center justify-center py-12 text-center"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.Cloud, { className: tw("w-12 h-12 text-[--text-faint] mb-4") }),
-          /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("p", { className: tw("text-sm text-[--text-muted]"), children: "No files yet. Upload via mobile or web app." })
-        ] }) : /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("border-t border-[--background-modifier-border]"), children: files.map((file) => /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)(
+      loading ? /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("border-t border-[--background-modifier-border]"), children: [1, 2, 3].map((i) => /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("flex items-center px-3 py-2 border-b border-[--background-modifier-border] animate-pulse"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("w-6 h-6 mr-3 bg-[--background-modifier-border]") }),
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("flex-1"), children: /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("h-4 bg-[--background-modifier-border] w-2/3") }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("h-3 bg-[--background-modifier-border] w-16 mr-4") }),
+        /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("w-4 h-4 bg-[--background-modifier-border]") })
+      ] }, i)) }) : /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)(import_jsx_runtime94.Fragment, { children: [
+        files.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("flex flex-col items-center justify-center py-12 text-center"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.Cloud, { className: tw("w-12 h-12 text-[--text-faint] mb-4") }),
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("p", { className: tw("text-sm text-[--text-muted]"), children: "No files yet. Upload via mobile or web app." })
+        ] }) : /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("border-t border-[--background-modifier-border]"), children: files.map((file) => /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)(
           "div",
           {
             onClick: () => file.status === "completed" && !downloading[file.id] && downloadFile(file),
             className: tw(`flex items-center gap-3 px-3 py-2 border-b border-[--background-modifier-border] transition-colors group ${file.status === "completed" && !downloading[file.id] ? "cursor-pointer hover:bg-[--background-modifier-hover]" : "cursor-default"}`),
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("mr-3 flex-shrink-0 overflow-hidden"), children: [
-                file.fileType.startsWith("image/") ? /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("mr-3 flex-shrink-0 overflow-hidden"), children: [
+                file.fileType.startsWith("image/") ? /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(
                   "img",
                   {
                     src: file.previewUrl || file.blobUrl,
@@ -162845,7 +166645,7 @@ ${file.textContent || ""}`;
                     }
                   }
                 ) : null,
-                /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(
+                /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(
                   "div",
                   {
                     className: tw("flex items-center justify-center w-6 h-6"),
@@ -162854,46 +166654,46 @@ ${file.textContent || ""}`;
                   }
                 )
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("flex-1 min-w-0 flex flex-col justify-center"), children: [
-                /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("text-sm text-[--text-normal] truncate font-medium"), children: file.originalName }),
-                /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("text-xs text-[--text-muted] flex items-center gap-2"), children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("span", { children: new Date(file.createdAt).toLocaleDateString() }),
-                  file.fileType.startsWith("image/") && /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("span", { className: tw("text-[--text-faint]"), children: "\u2022 Image" })
+              /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("flex-1 min-w-0 flex flex-col justify-center"), children: [
+                /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("text-sm text-[--text-normal] truncate font-medium"), children: file.originalName }),
+                /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("text-xs text-[--text-muted] flex items-center gap-2"), children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("span", { children: new Date(file.createdAt).toLocaleDateString() }),
+                  file.fileType.startsWith("image/") && /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("span", { className: tw("text-[--text-faint]"), children: "\u2022 Image" })
                 ] })
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("div", { className: tw("w-5 h-5 flex items-center justify-center flex-shrink-0"), children: downloading[file.id] ? /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.DownloadCloud, { className: tw("w-4 h-4 text-[--text-muted] animate-pulse") }) : downloadedFiles.has(file.id) ? /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.Check, { className: tw("w-4 h-4 text-[--text-success]") }) : file.status === "completed" ? /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.Download, { className: tw("w-4 h-4 text-[--text-muted] opacity-0 group-hover:opacity-100 transition-opacity") }) : /* @__PURE__ */ (0, import_jsx_runtime90.jsx)(import_lucide_react16.Clock, { className: tw("w-4 h-4 text-[--text-warning]") }) })
+              /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("div", { className: tw("w-5 h-5 flex items-center justify-center flex-shrink-0"), children: downloading[file.id] ? /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.DownloadCloud, { className: tw("w-4 h-4 text-[--text-muted] animate-pulse") }) : downloadedFiles.has(file.id) ? /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.Check, { className: tw("w-4 h-4 text-[--text-success]") }) : file.status === "completed" ? /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.Download, { className: tw("w-4 h-4 text-[--text-muted] opacity-0 group-hover:opacity-100 transition-opacity") }) : /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(import_lucide_react19.Clock, { className: tw("w-4 h-4 text-[--text-warning]") }) })
             ]
           },
           file.id
         )) }),
-        totalPages > 1 && /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("flex justify-between items-center mt-8 bg-[--background-primary] border border-[--background-modifier-border] p-4"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)(
+        totalPages > 1 && /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("flex justify-between items-center mt-8 bg-[--background-primary] border border-[--background-modifier-border] p-4"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)(
             Button2,
             {
               onClick: () => setPage((p) => Math.max(1, p - 1)),
               disabled: page === 1,
               className: tw(`px-4 py-2 h-auto transition-colors duration-200 flex items-center gap-2 ${page === 1 ? "bg-[--background-secondary] text-[--text-faint] cursor-not-allowed" : "bg-[--background-primary] border border-[--background-modifier-border] hover:bg-[--background-secondary] text-[--text-normal]"}`),
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: tw("w-4 h-4"), children: /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("path", { d: "M15 18l-6-6 6-6" }) }),
-                /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("span", { children: "Previous" })
+                /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: tw("w-4 h-4"), children: /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("path", { d: "M15 18l-6-6 6-6" }) }),
+                /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("span", { children: "Previous" })
               ]
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)("div", { className: tw("bg-[--background-secondary] border border-[--background-modifier-border] px-4 py-2 text-sm font-medium text-[--text-normal]"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("bg-[--background-secondary] border border-[--background-modifier-border] px-4 py-2 text-sm font-medium text-[--text-normal]"), children: [
             "Page ",
             page,
             " of ",
             totalPages
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime90.jsxs)(
+          /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)(
             Button2,
             {
               onClick: () => setPage((p) => Math.min(totalPages, p + 1)),
               disabled: page === totalPages,
               className: tw(`px-4 py-2 h-auto transition-colors duration-200 flex items-center gap-2 ${page === totalPages ? "bg-[--background-secondary] text-[--text-faint] cursor-not-allowed" : "bg-[--background-primary] border border-[--background-modifier-border] hover:bg-[--background-secondary] text-[--text-normal]"}`),
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("span", { children: "Next" }),
-                /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: tw("w-4 h-4"), children: /* @__PURE__ */ (0, import_jsx_runtime90.jsx)("path", { d: "M9 18l6-6-6-6" }) })
+                /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("span", { children: "Next" }),
+                /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className: tw("w-4 h-4"), children: /* @__PURE__ */ (0, import_jsx_runtime94.jsx)("path", { d: "M9 18l6-6-6-6" }) })
               ]
             }
           )
@@ -162904,22 +166704,22 @@ ${file.textContent || ""}`;
 }
 
 // views/assistant/meetings/meeting-recorder.tsx
-var import_react93 = __toESM(require_react());
-var import_lucide_react17 = __toESM(require_lucide_react());
+var import_react97 = __toESM(require_react());
+var import_lucide_react20 = __toESM(require_lucide_react());
 init_logger();
-var import_obsidian48 = require("obsidian");
+var import_obsidian55 = require("obsidian");
 init_meeting_metadata();
-var import_jsx_runtime91 = __toESM(require_jsx_runtime());
+var import_jsx_runtime95 = __toESM(require_jsx_runtime());
 var MeetingRecorder = ({ plugin }) => {
-  const [isRecording, setIsRecording] = (0, import_react93.useState)(false);
-  const [isSaving, setIsSaving] = (0, import_react93.useState)(false);
-  const [duration, setDuration] = (0, import_react93.useState)(0);
-  const mediaRecorderRef = (0, import_react93.useRef)(null);
-  const audioChunks = (0, import_react93.useRef)([]);
-  const streamRef = (0, import_react93.useRef)(null);
-  const intervalRef = (0, import_react93.useRef)(null);
-  const startTimeRef = (0, import_react93.useRef)(null);
-  const metadataManager = import_react93.default.useRef(
+  const [isRecording, setIsRecording] = (0, import_react97.useState)(false);
+  const [isSaving, setIsSaving] = (0, import_react97.useState)(false);
+  const [duration, setDuration] = (0, import_react97.useState)(0);
+  const mediaRecorderRef = (0, import_react97.useRef)(null);
+  const audioChunks = (0, import_react97.useRef)([]);
+  const streamRef = (0, import_react97.useRef)(null);
+  const intervalRef = (0, import_react97.useRef)(null);
+  const startTimeRef = (0, import_react97.useRef)(null);
+  const metadataManager = import_react97.default.useRef(
     new MeetingMetadataManager(plugin)
   ).current;
   const formatDuration = (seconds) => {
@@ -162963,7 +166763,7 @@ var MeetingRecorder = ({ plugin }) => {
       }, 1e3);
     } catch (error) {
       logger.error("Error accessing microphone:", error);
-      new import_obsidian48.Notice("Failed to access microphone. Please check permissions.");
+      new import_obsidian55.Notice("Failed to access microphone. Please check permissions.");
     }
   };
   const stopRecording = async () => {
@@ -163014,14 +166814,14 @@ var MeetingRecorder = ({ plugin }) => {
               discovered: false
             });
             const savedFileName = filePath.split("/").pop() || baseFileName;
-            new import_obsidian48.Notice(`Recording saved: ${savedFileName}`);
+            new import_obsidian55.Notice(`Recording saved: ${savedFileName}`);
             setDuration(0);
             audioChunks.current = [];
             window.dispatchEvent(new CustomEvent("meeting-recorded"));
             resolve2();
           } catch (error) {
             logger.error("Error saving recording:", error);
-            new import_obsidian48.Notice(
+            new import_obsidian55.Notice(
               `Failed to save recording: ${error instanceof Error ? error.message : "Unknown error"}`
             );
             resolve2();
@@ -163036,7 +166836,7 @@ var MeetingRecorder = ({ plugin }) => {
       setIsSaving(false);
     }
   };
-  (0, import_react93.useEffect)(() => {
+  (0, import_react97.useEffect)(() => {
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
@@ -163046,10 +166846,10 @@ var MeetingRecorder = ({ plugin }) => {
       }
     };
   }, []);
-  return /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)("div", { className: tw("border-b border-[--background-modifier-border] p-4"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)("div", { className: tw("flex items-center justify-between mb-4"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)("div", { className: tw("flex items-center gap-3"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)("div", { className: tw("border-b border-[--background-modifier-border] p-4"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)("div", { className: tw("flex items-center justify-between mb-4"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)("div", { className: tw("flex items-center gap-3"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
           "div",
           {
             className: tw(
@@ -163058,9 +166858,9 @@ var MeetingRecorder = ({ plugin }) => {
             )
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime91.jsx)("h3", { className: tw("text-lg font-medium text-[--text-normal]"), children: "Meeting Recorder" })
+        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)("h3", { className: tw("text-lg font-medium text-[--text-normal]"), children: "Meeting Recorder" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
         Button,
         {
           onClick: isRecording ? stopRecording : startRecording,
@@ -163069,24 +166869,24 @@ var MeetingRecorder = ({ plugin }) => {
             "flex items-center gap-2",
             isRecording && "bg-red-500 hover:bg-red-600"
           ),
-          children: isSaving ? /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)(import_jsx_runtime91.Fragment, { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(import_lucide_react17.Loader2, { className: "w-4 h-4 animate-spin" }),
+          children: isSaving ? /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)(import_jsx_runtime95.Fragment, { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(import_lucide_react20.Loader2, { className: "w-4 h-4 animate-spin" }),
             "Saving..."
-          ] }) : isRecording ? /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)(import_jsx_runtime91.Fragment, { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(import_lucide_react17.Square, { className: "w-4 h-4" }),
+          ] }) : isRecording ? /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)(import_jsx_runtime95.Fragment, { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(import_lucide_react20.Square, { className: "w-4 h-4" }),
             "Stop Recording"
-          ] }) : /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)(import_jsx_runtime91.Fragment, { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(import_lucide_react17.Mic, { className: "w-4 h-4" }),
+          ] }) : /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)(import_jsx_runtime95.Fragment, { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(import_lucide_react20.Mic, { className: "w-4 h-4" }),
             "Start Recording"
           ] })
         }
       )
     ] }),
-    isRecording && /* @__PURE__ */ (0, import_jsx_runtime91.jsx)(
+    isRecording && /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(
       "div",
       {
         className: tw("flex items-center gap-2 text-sm text-[--text-muted]"),
-        children: /* @__PURE__ */ (0, import_jsx_runtime91.jsxs)("span", { children: [
+        children: /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)("span", { children: [
           "Recording: ",
           formatDuration(duration)
         ] })
@@ -163096,22 +166896,22 @@ var MeetingRecorder = ({ plugin }) => {
 };
 
 // views/assistant/meetings/recent-meetings.tsx
-var import_react95 = __toESM(require_react());
-var import_obsidian52 = require("obsidian");
-var import_lucide_react19 = __toESM(require_lucide_react());
-var import_obsidian53 = require("obsidian");
+var import_react99 = __toESM(require_react());
+var import_obsidian59 = require("obsidian");
+var import_lucide_react22 = __toESM(require_lucide_react());
+var import_obsidian60 = require("obsidian");
 init_logger();
 init_meeting_metadata();
 
 // views/assistant/meetings/enhance-note-handler.tsx
-var import_react94 = __toESM(require_react());
-var import_lucide_react18 = __toESM(require_lucide_react());
-var import_obsidian50 = require("obsidian");
-var import_obsidian51 = require("obsidian");
+var import_react98 = __toESM(require_react());
+var import_lucide_react21 = __toESM(require_lucide_react());
+var import_obsidian57 = require("obsidian");
+var import_obsidian58 = require("obsidian");
 init_logger();
 
 // views/assistant/meetings/transcribe-handler.ts
-var import_obsidian49 = require("obsidian");
+var import_obsidian56 = require("obsidian");
 init_logger();
 var TranscribeHandler = class {
   static async transcribeRecording(plugin, recording, metadataManager) {
@@ -163155,7 +166955,7 @@ var TranscribeHandler = class {
       const transcript = data.text;
       const transcriptPath = `${recording.filePath.replace(/\.[^/.]+$/, "")}.txt`;
       const existingTranscriptFile = plugin.app.vault.getAbstractFileByPath(transcriptPath);
-      if (existingTranscriptFile && existingTranscriptFile instanceof import_obsidian49.TFile) {
+      if (existingTranscriptFile && existingTranscriptFile instanceof import_obsidian56.TFile) {
         await plugin.app.vault.modify(existingTranscriptFile, transcript);
       } else {
         await plugin.app.vault.create(transcriptPath, transcript);
@@ -163221,19 +167021,19 @@ var TranscribeHandler = class {
 };
 
 // views/assistant/meetings/enhance-note-handler.tsx
-var import_jsx_runtime92 = __toESM(require_jsx_runtime());
+var import_jsx_runtime96 = __toESM(require_jsx_runtime());
 var EnhanceNoteHandler = ({
   plugin,
   recording,
   metadataManager,
   onEnhanced
 }) => {
-  const [isEnhancing, setIsEnhancing] = (0, import_react94.useState)(false);
-  const [error, setError] = (0, import_react94.useState)(null);
+  const [isEnhancing, setIsEnhancing] = (0, import_react98.useState)(false);
+  const [error, setError] = (0, import_react98.useState)(null);
   const enhanceNote = async () => {
     const activeFile = plugin.app.workspace.getActiveFile();
     if (!activeFile) {
-      new import_obsidian51.Notice("Please open a note to enhance");
+      new import_obsidian58.Notice("Please open a note to enhance");
       return;
     }
     setIsEnhancing(true);
@@ -163245,7 +167045,7 @@ var EnhanceNoteHandler = ({
         const noteFile = plugin.app.vault.getAbstractFileByPath(
           recording.notePath
         );
-        if (noteFile && noteFile instanceof import_obsidian50.TFile) {
+        if (noteFile && noteFile instanceof import_obsidian57.TFile) {
           isSameRecordingReused = true;
         } else {
           logger.warn(
@@ -163288,7 +167088,7 @@ var EnhanceNoteHandler = ({
       for (const transcriptPath of transcriptPathsToCheck) {
         try {
           const transcriptFile = plugin.app.vault.getAbstractFileByPath(transcriptPath);
-          if (transcriptFile && transcriptFile instanceof import_obsidian50.TFile) {
+          if (transcriptFile && transcriptFile instanceof import_obsidian57.TFile) {
             const transcriptContent = await plugin.app.vault.read(
               transcriptFile
             );
@@ -163316,9 +167116,9 @@ var EnhanceNoteHandler = ({
           logger.warn(
             `Recording metadata indicates transcribed, but transcript file is missing or unreadable. Re-transcribing.`
           );
-          new import_obsidian51.Notice("Re-transcribing recording...");
+          new import_obsidian58.Notice("Re-transcribing recording...");
         } else {
-          new import_obsidian51.Notice("Transcribing recording...");
+          new import_obsidian58.Notice("Transcribing recording...");
         }
         const transcriptResult = await TranscribeHandler.transcribeRecording(
           plugin,
@@ -163341,12 +167141,12 @@ var EnhanceNoteHandler = ({
             transcriptPath: actualTranscriptPath
           });
         }
-        new import_obsidian51.Notice("Using existing transcript");
+        new import_obsidian58.Notice("Using existing transcript");
       }
       if (!transcript) {
         throw new Error("No transcript available");
       }
-      new import_obsidian51.Notice("Enhancing note...");
+      new import_obsidian58.Notice("Enhancing note...");
       const originalRecordingSectionPattern = /^(Recording[s]?:.*?)\n\n---\n\n/s;
       const originalMatch = currentNoteContent.match(
         originalRecordingSectionPattern
@@ -163481,42 +167281,42 @@ ${enhancedContent.trim()}`;
         transcriptPath: actualTranscriptPath || latestRecording?.transcriptPath || expectedTranscriptPath,
         notePath: activeFile.path
       });
-      new import_obsidian51.Notice("Note enhanced successfully!");
+      new import_obsidian58.Notice("Note enhanced successfully!");
       onEnhanced();
     } catch (error2) {
       const errorMessage = error2 instanceof Error ? error2.message : "Failed to enhance note";
       logger.error("Error enhancing note:", error2);
       setError(errorMessage);
-      new import_obsidian51.Notice(`Failed to enhance note: ${errorMessage}`);
+      new import_obsidian58.Notice(`Failed to enhance note: ${errorMessage}`);
     } finally {
       setIsEnhancing(false);
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime92.jsxs)("div", { className: tw("flex flex-col gap-2"), children: [
-    error && /* @__PURE__ */ (0, import_jsx_runtime92.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)("div", { className: tw("flex flex-col gap-2"), children: [
+    error && /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)(
       "div",
       {
         className: tw("flex items-center gap-2 text-xs text-[--text-error]"),
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(import_lucide_react18.AlertCircle, { className: "w-3 h-3" }),
-          /* @__PURE__ */ (0, import_jsx_runtime92.jsx)("span", { className: tw("flex-1"), children: error })
+          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(import_lucide_react21.AlertCircle, { className: "w-3 h-3" }),
+          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("span", { className: tw("flex-1"), children: error })
         ]
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
       Button,
       {
         onClick: enhanceNote,
         disabled: isEnhancing,
         className: tw("flex items-center gap-2 text-xs"),
-        children: isEnhancing ? /* @__PURE__ */ (0, import_jsx_runtime92.jsxs)(import_jsx_runtime92.Fragment, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(import_lucide_react18.Loader2, { className: "w-3 h-3 animate-spin" }),
+        children: isEnhancing ? /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)(import_jsx_runtime96.Fragment, { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(import_lucide_react21.Loader2, { className: "w-3 h-3 animate-spin" }),
           "Enhancing..."
-        ] }) : error ? /* @__PURE__ */ (0, import_jsx_runtime92.jsxs)(import_jsx_runtime92.Fragment, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(import_lucide_react18.RotateCcw, { className: "w-3 h-3" }),
+        ] }) : error ? /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)(import_jsx_runtime96.Fragment, { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(import_lucide_react21.RotateCcw, { className: "w-3 h-3" }),
           "Retry"
-        ] }) : /* @__PURE__ */ (0, import_jsx_runtime92.jsxs)(import_jsx_runtime92.Fragment, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime92.jsx)(import_lucide_react18.FileText, { className: "w-3 h-3" }),
+        ] }) : /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)(import_jsx_runtime96.Fragment, { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(import_lucide_react21.FileText, { className: "w-3 h-3" }),
           "Enhance Note"
         ] })
       }
@@ -163525,12 +167325,12 @@ ${enhancedContent.trim()}`;
 };
 
 // views/assistant/meetings/recent-meetings.tsx
-var import_jsx_runtime93 = __toESM(require_jsx_runtime());
+var import_jsx_runtime97 = __toESM(require_jsx_runtime());
 var RecentMeetings = ({ plugin }) => {
-  const [recordings, setRecordings] = (0, import_react95.useState)([]);
-  const [isLoading, setIsLoading] = (0, import_react95.useState)(true);
-  const [isScanning, setIsScanning] = (0, import_react95.useState)(false);
-  const metadataManager = import_react95.default.useRef(
+  const [recordings, setRecordings] = (0, import_react99.useState)([]);
+  const [isLoading, setIsLoading] = (0, import_react99.useState)(true);
+  const [isScanning, setIsScanning] = (0, import_react99.useState)(false);
+  const metadataManager = import_react99.default.useRef(
     new MeetingMetadataManager(plugin)
   ).current;
   const loadRecordings = async () => {
@@ -163555,15 +167355,15 @@ var RecentMeetings = ({ plugin }) => {
     try {
       await metadataManager.discoverRecordings();
       await loadRecordings();
-      new import_obsidian53.Notice("Scan complete. Found recordings added to list.");
+      new import_obsidian60.Notice("Scan complete. Found recordings added to list.");
     } catch (error) {
       logger.error("Failed to scan for recordings", error);
-      new import_obsidian53.Notice("Failed to scan for recordings");
+      new import_obsidian60.Notice("Failed to scan for recordings");
     } finally {
       setIsScanning(false);
     }
   };
-  (0, import_react95.useEffect)(() => {
+  (0, import_react99.useEffect)(() => {
     loadRecordings();
     const handleRecording = () => {
       loadRecordings();
@@ -163588,20 +167388,20 @@ var RecentMeetings = ({ plugin }) => {
     if (!confirm("Delete this recording?")) return;
     try {
       const file = plugin.app.vault.getAbstractFileByPath(filePath);
-      if (file && file instanceof import_obsidian52.TFile) {
+      if (file && file instanceof import_obsidian59.TFile) {
         await plugin.app.vault.delete(file);
       }
       await metadataManager.removeRecording(filePath);
       await loadRecordings();
-      new import_obsidian53.Notice("Recording deleted");
+      new import_obsidian60.Notice("Recording deleted");
     } catch (error) {
       logger.error("Failed to delete recording", error);
-      new import_obsidian53.Notice("Failed to delete recording");
+      new import_obsidian60.Notice("Failed to delete recording");
     }
   };
   const handleOpenInVault = (filePath) => {
     const file = plugin.app.vault.getAbstractFileByPath(filePath);
-    if (file && file instanceof import_obsidian52.TFile) {
+    if (file && file instanceof import_obsidian59.TFile) {
       plugin.app.workspace.openLinkText(filePath, "", true);
     }
   };
@@ -163633,13 +167433,13 @@ var RecentMeetings = ({ plugin }) => {
     return `${wholeMinutes} ${wholeMinutes === 1 ? "min" : "min"} ${remainingSeconds} ${remainingSeconds === 1 ? "sec" : "sec"}`;
   };
   if (isLoading) {
-    return /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("div", { className: tw("p-4 text-center text-[--text-muted]"), children: "Loading recordings..." });
+    return /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("div", { className: tw("p-4 text-center text-[--text-muted]"), children: "Loading recordings..." });
   }
   if (recordings.length === 0) {
-    return /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("p-4"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("flex items-center justify-between mb-4"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("h3", { className: tw("text-lg font-medium text-[--text-normal]"), children: "Recent Meetings" }),
-        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("p-4"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("flex items-center justify-between mb-4"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("h3", { className: tw("text-lg font-medium text-[--text-normal]"), children: "Recent Meetings" }),
+        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
           "button",
           {
             onClick: scanForRecordings,
@@ -163653,23 +167453,23 @@ var RecentMeetings = ({ plugin }) => {
               "transition-colors"
             ),
             title: "Scan vault for audio recordings",
-            children: isScanning ? /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(import_lucide_react19.RefreshCw, { className: "w-3.5 h-3.5 animate-spin" }) : /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)(import_jsx_runtime93.Fragment, { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(import_lucide_react19.Search, { className: "w-3.5 h-3.5" }),
-              /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("span", { children: "Scan" })
+            children: isScanning ? /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(import_lucide_react22.RefreshCw, { className: "w-3.5 h-3.5 animate-spin" }) : /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)(import_jsx_runtime97.Fragment, { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(import_lucide_react22.Search, { className: "w-3.5 h-3.5" }),
+              /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("span", { children: "Scan" })
             ] })
           }
         )
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("text-center py-8 text-[--text-muted]"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("p", { children: "No recordings yet." }),
-        /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("p", { className: tw("text-sm mt-2"), children: "Start recording to see meetings here." })
+      /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("text-center py-8 text-[--text-muted]"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("p", { children: "No recordings yet." }),
+        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("p", { className: tw("text-sm mt-2"), children: "Start recording to see meetings here." })
       ] })
     ] });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("p-4 flex-1 overflow-y-auto"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("flex items-center justify-between mb-4"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("h3", { className: tw("text-lg font-medium text-[--text-normal]"), children: "Recent Meetings" }),
-      /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("p-4 flex-1 overflow-y-auto"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("flex items-center justify-between mb-4"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("h3", { className: tw("text-lg font-medium text-[--text-normal]"), children: "Recent Meetings" }),
+      /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
         "button",
         {
           onClick: scanForRecordings,
@@ -163683,14 +167483,14 @@ var RecentMeetings = ({ plugin }) => {
             "transition-colors"
           ),
           title: "Scan vault for audio recordings",
-          children: isScanning ? /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(import_lucide_react19.RefreshCw, { className: "w-3.5 h-3.5 animate-spin" }) : /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)(import_jsx_runtime93.Fragment, { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(import_lucide_react19.Search, { className: "w-3.5 h-3.5" }),
-            /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("span", { children: "Scan" })
+          children: isScanning ? /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(import_lucide_react22.RefreshCw, { className: "w-3.5 h-3.5 animate-spin" }) : /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)(import_jsx_runtime97.Fragment, { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(import_lucide_react22.Search, { className: "w-3.5 h-3.5" }),
+            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("span", { children: "Scan" })
           ] })
         }
       )
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("div", { className: tw("space-y-2"), children: recordings.map((recording) => {
+    /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("div", { className: tw("space-y-2"), children: recordings.map((recording) => {
       const file = plugin.app.vault.getAbstractFileByPath(
         recording.filePath
       );
@@ -163698,17 +167498,17 @@ var RecentMeetings = ({ plugin }) => {
       const isInRecordingsFolder = recording.filePath.startsWith(
         plugin.settings.recordingsFolderPath
       );
-      return /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)(
+      return /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)(
         "div",
         {
           className: tw(
             "border border-[--background-modifier-border] rounded p-3 hover:bg-[--background-modifier-hover]"
           ),
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("flex items-start justify-between mb-2 gap-2"), children: [
-              /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("flex-1 min-w-0 pr-2"), children: [
-                /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("flex items-start gap-2 mb-1 flex-wrap"), children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("flex items-start justify-between mb-2 gap-2"), children: [
+              /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("flex-1 min-w-0 pr-2"), children: [
+                /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("flex items-start gap-2 mb-1 flex-wrap"), children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
                     "span",
                     {
                       className: tw("text-sm font-medium text-[--text-normal] break-all"),
@@ -163716,7 +167516,7 @@ var RecentMeetings = ({ plugin }) => {
                       children: recording.filePath.split("/").pop()
                     }
                   ),
-                  recording.discovered && /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+                  recording.discovered && /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
                     "span",
                     {
                       className: tw(
@@ -163725,7 +167525,7 @@ var RecentMeetings = ({ plugin }) => {
                       children: "Discovered"
                     }
                   ),
-                  !isInRecordingsFolder && /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+                  !isInRecordingsFolder && /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
                     "span",
                     {
                       className: tw(
@@ -163735,35 +167535,35 @@ var RecentMeetings = ({ plugin }) => {
                     }
                   )
                 ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("text-xs text-[--text-muted] space-x-3"), children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("span", { children: formatDate(recording.createdAt) }),
-                  fileSize > 0 && /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("span", { children: formatFileSize(fileSize) }),
-                  recording.duration && /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("span", { children: formatDuration(recording.duration) }),
-                  recording.transcribed && /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("span", { className: tw("text-[--text-accent]"), children: "Transcribed" })
+                /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("text-xs text-[--text-muted] space-x-3"), children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("span", { children: formatDate(recording.createdAt) }),
+                  fileSize > 0 && /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("span", { children: formatFileSize(fileSize) }),
+                  recording.duration && /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("span", { children: formatDuration(recording.duration) }),
+                  recording.transcribed && /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("span", { className: tw("text-[--text-accent]"), children: "Transcribed" })
                 ] })
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime93.jsxs)("div", { className: tw("flex items-center gap-1"), children: [
-                /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("flex items-center gap-1"), children: [
+                /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
                   Button,
                   {
                     onClick: () => handleOpenInVault(recording.filePath),
                     className: tw("p-1"),
                     title: "Open in vault",
-                    children: /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(import_lucide_react19.ExternalLink, { className: "w-3 h-3" })
+                    children: /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(import_lucide_react22.ExternalLink, { className: "w-3 h-3" })
                   }
                 ),
-                /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+                /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
                   Button,
                   {
                     onClick: () => handleDelete(recording.filePath),
                     className: tw("p-1 text-[--text-error]"),
                     title: "Delete",
-                    children: /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(import_lucide_react19.Trash2, { className: "w-3 h-3" })
+                    children: /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(import_lucide_react22.Trash2, { className: "w-3 h-3" })
                   }
                 )
               ] })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime93.jsx)("div", { className: tw("flex items-center gap-2 mt-2"), children: /* @__PURE__ */ (0, import_jsx_runtime93.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("div", { className: tw("flex items-center gap-2 mt-2"), children: /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
               EnhanceNoteHandler,
               {
                 plugin,
@@ -163780,21 +167580,412 @@ var RecentMeetings = ({ plugin }) => {
   ] });
 };
 
+// views/assistant/meetings/screenpipe-meetings.tsx
+var import_react100 = __toESM(require_react());
+var import_obsidian61 = require("obsidian");
+var import_lucide_react23 = __toESM(require_lucide_react());
+var import_obsidian62 = require("obsidian");
+init_logger();
+init_screenpipe_client();
+
+// views/assistant/meetings/meeting-predicate.ts
+var MEETING_APP_NAMES = /* @__PURE__ */ new Set([
+  "zoom.us",
+  "zoom",
+  "zoom meeting",
+  "slack",
+  "microsoft teams",
+  "teams",
+  "webex",
+  "cisco webex",
+  "google meet"
+]);
+var MEETING_WINDOW_KEYWORDS = [
+  "meet - ",
+  "zoom meeting",
+  "| call",
+  "in a call",
+  "webex",
+  "teams"
+  // Microsoft Teams in browser (e.g. "Microsoft Teams - Meeting" in Chrome)
+];
+function isMeetingLike(content3) {
+  const app = (content3.app_name ?? "").toLowerCase().trim();
+  if (MEETING_APP_NAMES.has(app)) return true;
+  const window2 = (content3.window_name ?? "").toLowerCase();
+  return MEETING_WINDOW_KEYWORDS.some((kw) => window2.includes(kw));
+}
+
+// views/assistant/meetings/screenpipe-meetings.tsx
+var import_jsx_runtime98 = __toESM(require_jsx_runtime());
+var ScreenpipeMeetings = ({
+  plugin
+}) => {
+  const [results, setResults] = (0, import_react100.useState)([]);
+  const [isLoading, setIsLoading] = (0, import_react100.useState)(true);
+  const [isRefreshing, setIsRefreshing] = (0, import_react100.useState)(false);
+  const [unavailable, setUnavailable] = (0, import_react100.useState)(false);
+  const fetchMeetings = (0, import_react100.useCallback)(
+    async (isRefresh = false) => {
+      if (isRefresh) setIsRefreshing(true);
+      else setIsLoading(true);
+      setUnavailable(false);
+      try {
+        const client = new ScreenpipeClient(plugin.settings.screenpipeApiUrl);
+        const available = await client.isAvailable();
+        if (!available) {
+          setUnavailable(true);
+          setResults([]);
+          return;
+        }
+        const hours = plugin.settings.screenpipeTimeRange || 2;
+        const end = /* @__PURE__ */ new Date();
+        const start2 = new Date(end.getTime() - hours * 60 * 60 * 1e3);
+        const searchResults = await client.search({
+          content_type: "audio",
+          limit: plugin.settings.queryScreenpipeLimit || 10,
+          start_time: start2.toISOString(),
+          end_time: end.toISOString()
+        });
+        const meetingOnly = searchResults.filter(
+          (r3) => isMeetingLike(r3.content ?? {})
+        );
+        setResults(meetingOnly);
+      } catch (error) {
+        logger.error("ScreenPipe meetings fetch failed", error);
+        setResults([]);
+      } finally {
+        setIsLoading(false);
+        setIsRefreshing(false);
+      }
+    },
+    [
+      plugin.settings.screenpipeApiUrl,
+      plugin.settings.screenpipeTimeRange,
+      plugin.settings.queryScreenpipeLimit
+    ]
+  );
+  (0, import_react100.useEffect)(() => {
+    if (!plugin.settings.enableScreenpipe) return;
+    fetchMeetings();
+  }, [plugin.settings.enableScreenpipe, fetchMeetings]);
+  if (!plugin.settings.enableScreenpipe) return null;
+  if (isLoading) {
+    return /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("div", { className: tw("p-4 text-center text-[--text-muted]"), children: "Loading from ScreenPipe..." });
+  }
+  if (unavailable) {
+    return /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("div", { className: tw("p-4"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("div", { className: tw("flex items-center justify-between mb-2"), children: [
+        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("h3", { className: tw("text-lg font-medium text-[--text-normal]"), children: "From ScreenPipe" }),
+        /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+          "button",
+          {
+            onClick: () => fetchMeetings(true),
+            disabled: isRefreshing,
+            className: tw(
+              "flex items-center gap-1.5 px-2 py-1 text-xs",
+              "bg-[--background-modifier-form-field] hover:bg-[--background-modifier-hover]",
+              "border border-[--background-modifier-border] rounded",
+              "text-[--text-normal]",
+              "disabled:opacity-50 disabled:cursor-not-allowed",
+              "transition-colors"
+            ),
+            title: "Retry after starting ScreenPipe",
+            children: isRefreshing ? /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(import_lucide_react23.RefreshCw, { className: tw("w-3.5 h-3.5 animate-spin") }) : /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)(import_jsx_runtime98.Fragment, { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(import_lucide_react23.RefreshCw, { className: tw("w-3.5 h-3.5") }),
+              /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("span", { children: "Retry" })
+            ] })
+          }
+        )
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("p", { className: tw("text-sm text-[--text-muted]"), children: "ScreenPipe unavailable. Start ScreenPipe (e.g. localhost:3030), then click Retry to load meetings\u2014no need to reload Obsidian." })
+    ] });
+  }
+  const formatDate = (timestamp) => {
+    try {
+      const d = parseScreenpipeTimestamp(timestamp);
+      const t2 = d.getTime();
+      if (Number.isNaN(t2)) return timestamp;
+      return d.toLocaleDateString() + " " + d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    } catch {
+      return timestamp;
+    }
+  };
+  const formatRecordingLabel = (result) => {
+    const c2 = result.content ?? {};
+    const app = c2.app_name ?? "Meeting";
+    const window2 = c2.window_name ? ` - ${c2.window_name}` : "";
+    const ts = c2.timestamp ? formatDate(c2.timestamp).split(" ")[0] : "";
+    return `ScreenPipe - ${app}${window2} - ${ts}`.slice(0, 80);
+  };
+  const enhanceFromScreenPipe = async (result, currentNoteContent, activeFile, recordingDate, recordingFileName) => {
+    const transcript = (result.content?.transcription ?? "").trim();
+    if (!transcript) {
+      new import_obsidian62.Notice("No transcript for this item");
+      return;
+    }
+    const originalRecordingSectionPattern = /^(Recording[s]?:.*?)\n\n---\n\n/s;
+    const cleanedNoteContent = currentNoteContent.replace(
+      originalRecordingSectionPattern,
+      ""
+    );
+    const response = await fetch(
+      `${plugin.getServerUrl()}/api/enhance-meeting-note`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${plugin.settings.API_KEY}`
+        },
+        body: JSON.stringify({
+          transcript,
+          currentNoteContent: cleanedNoteContent,
+          fileName: activeFile.basename,
+          recordingDate,
+          recordingFileName,
+          recordingFilePath: ""
+        })
+      }
+    );
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+      throw new Error(errorData.error ?? "Enhancement failed");
+    }
+    const reader = response.body?.getReader();
+    const decoder = new TextDecoder();
+    let enhancedContent = "";
+    if (!reader) throw new Error("No response body");
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      enhancedContent += decoder.decode(value, { stream: true });
+    }
+    enhancedContent = enhancedContent.replace(
+      /^Recording[s]?:.*?\n\n---\n\n/s,
+      ""
+    );
+    enhancedContent = enhancedContent.replace(
+      /\n\nRecording[s]?:.*?\n\n---\n\n/g,
+      "\n\n"
+    );
+    enhancedContent = enhancedContent.replace(
+      /^Recording[s]?:.*?(!?\[\[.*?\]\]).*?\n\n---\n\n/s,
+      ""
+    );
+    await plugin.app.vault.modify(activeFile, enhancedContent);
+    new import_obsidian62.Notice("Note enhanced successfully!");
+  };
+  const handleEnhanceNote = async (result) => {
+    const activeFile = plugin.app.workspace.getActiveFile();
+    if (!activeFile) {
+      new import_obsidian62.Notice("Please open a note to enhance");
+      return;
+    }
+    const transcript = (result.content?.transcription ?? "").trim();
+    if (!transcript) {
+      new import_obsidian62.Notice("No transcript for this item");
+      return;
+    }
+    try {
+      const currentNoteContent = await plugin.app.vault.read(activeFile);
+      const recordingDate = result.content?.timestamp ? parseScreenpipeTimestamp(result.content.timestamp).toLocaleDateString(
+        "en-US",
+        {
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        }
+      ) : null;
+      const recordingFileName = formatRecordingLabel(result);
+      await enhanceFromScreenPipe(
+        result,
+        currentNoteContent,
+        activeFile,
+        recordingDate,
+        recordingFileName
+      );
+    } catch (error) {
+      const msg = error instanceof Error ? error.message : "Enhance failed";
+      logger.error("Enhance from ScreenPipe failed", error);
+      new import_obsidian62.Notice(msg);
+    }
+  };
+  const handleCreateNote = async (result) => {
+    const transcript = (result.content?.transcription ?? "").trim();
+    if (!transcript) {
+      new import_obsidian62.Notice("No transcript for this item");
+      return;
+    }
+    try {
+      const folder = plugin.settings.recordingsFolderPath || "Recordings";
+      await plugin.app.vault.adapter.mkdir(folder);
+      const c2 = result.content ?? {};
+      const dateStr = c2.timestamp ? parseScreenpipeTimestamp(c2.timestamp).toISOString().slice(0, 10) : (/* @__PURE__ */ new Date()).toISOString().slice(0, 10);
+      const appName = (c2.app_name ?? "Meeting").replace(/[^\w\s-]/g, "").slice(0, 30) || "Meeting";
+      const baseFileName = `Meeting ${dateStr} ${appName}.md`;
+      const desiredPath = `${folder}/${baseFileName}`;
+      const filePath = await getAvailablePath(plugin.app, desiredPath);
+      await plugin.app.vault.create(filePath, "");
+      const newFile = plugin.app.vault.getAbstractFileByPath(filePath);
+      if (!newFile || !(newFile instanceof import_obsidian61.TFile))
+        throw new Error("Failed to create file");
+      const recordingDate = c2.timestamp ? parseScreenpipeTimestamp(c2.timestamp).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      }) : null;
+      const recordingFileName = formatRecordingLabel(result);
+      await enhanceFromScreenPipe(
+        result,
+        "",
+        newFile,
+        recordingDate,
+        recordingFileName
+      );
+      plugin.app.workspace.openLinkText(filePath, "", true);
+      new import_obsidian62.Notice("Note created and enhanced.");
+    } catch (error) {
+      const msg = error instanceof Error ? error.message : "Create note failed";
+      logger.error("Create note from ScreenPipe failed", error);
+      new import_obsidian62.Notice(msg);
+    }
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("div", { className: tw("p-4 flex-1 overflow-y-auto"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("div", { className: tw("flex items-center justify-between mb-4"), children: [
+      /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("h3", { className: tw("text-lg font-medium text-[--text-normal]"), children: "From ScreenPipe" }),
+      /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+        "button",
+        {
+          onClick: () => fetchMeetings(true),
+          disabled: isRefreshing,
+          className: tw(
+            "flex items-center gap-1.5 px-2 py-1 text-xs",
+            "bg-[--background-modifier-form-field] hover:bg-[--background-modifier-hover]",
+            "border border-[--background-modifier-border] rounded",
+            "text-[--text-normal]",
+            "disabled:opacity-50 disabled:cursor-not-allowed",
+            "transition-colors"
+          ),
+          title: "Refresh ScreenPipe meetings",
+          children: isRefreshing ? /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(import_lucide_react23.RefreshCw, { className: tw("w-3.5 h-3.5 animate-spin") }) : /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)(import_jsx_runtime98.Fragment, { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(import_lucide_react23.RefreshCw, { className: tw("w-3.5 h-3.5") }),
+            /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("span", { children: "Refresh" })
+          ] })
+        }
+      )
+    ] }),
+    results.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("p", { className: tw("text-sm text-[--text-muted]"), children: [
+      "No meeting audio in the last",
+      " ",
+      plugin.settings.screenpipeTimeRange ?? 2,
+      " hours."
+    ] }) : /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("div", { className: tw("space-y-2"), children: results.map((result, index2) => {
+      const c2 = result.content ?? {};
+      const transcript = (c2.transcription ?? "").trim();
+      const preview = transcript ? transcript.slice(0, 80) + (transcript.length > 80 ? "\u2026" : "") : "No transcript";
+      const hasTranscript = transcript.length > 0;
+      return /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)(
+        "div",
+        {
+          className: tw(
+            "border border-[--background-modifier-border] rounded p-3 hover:bg-[--background-modifier-hover]"
+          ),
+          children: [
+            /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+              "div",
+              {
+                className: tw("flex items-start justify-between mb-2 gap-2"),
+                children: /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("div", { className: tw("flex-1 min-w-0 pr-2"), children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+                    "div",
+                    {
+                      className: tw("flex items-start gap-2 mb-1 flex-wrap"),
+                      children: /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)(
+                        "span",
+                        {
+                          className: tw(
+                            "text-sm font-medium text-[--text-normal]"
+                          ),
+                          children: [
+                            c2.app_name ?? "Meeting",
+                            c2.window_name ? ` \u2014 ${c2.window_name}` : ""
+                          ]
+                        }
+                      )
+                    }
+                  ),
+                  /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+                    "div",
+                    {
+                      className: tw("text-xs text-[--text-muted] space-x-3"),
+                      children: /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("span", { title: "Time in your local timezone (from ScreenPipe)", children: c2.timestamp ? formatDate(c2.timestamp) : "\u2014" })
+                    }
+                  ),
+                  /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+                    "p",
+                    {
+                      className: tw(
+                        "text-xs text-[--text-muted] mt-1 truncate"
+                      ),
+                      title: transcript || void 0,
+                      children: preview
+                    }
+                  )
+                ] })
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("div", { className: tw("flex items-center gap-2 mt-2"), children: [
+              /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)(
+                Button,
+                {
+                  onClick: () => handleEnhanceNote(result),
+                  disabled: !hasTranscript,
+                  className: tw("flex items-center gap-2 text-xs"),
+                  title: hasTranscript ? "Enhance active note with this transcript" : "No transcript",
+                  children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(import_lucide_react23.FileText, { className: tw("w-3 h-3") }),
+                    "Enhance note"
+                  ]
+                }
+              ),
+              /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)(
+                Button,
+                {
+                  onClick: () => handleCreateNote(result),
+                  disabled: !hasTranscript,
+                  className: tw("flex items-center gap-2 text-xs"),
+                  title: hasTranscript ? "Create new note from this transcript" : "No transcript",
+                  children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(import_lucide_react23.FilePlus, { className: tw("w-3 h-3") }),
+                    "Create note"
+                  ]
+                }
+              )
+            ] })
+          ]
+        },
+        `${c2.timestamp ?? index2}-${c2.app_name ?? ""}`
+      );
+    }) })
+  ] });
+};
+
 // views/assistant/meetings/index.tsx
-var import_jsx_runtime94 = __toESM(require_jsx_runtime());
+var import_jsx_runtime99 = __toESM(require_jsx_runtime());
 var MeetingsTab = ({ plugin }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime94.jsxs)("div", { className: tw("flex flex-col h-full w-full"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(MeetingRecorder, { plugin }),
-    /* @__PURE__ */ (0, import_jsx_runtime94.jsx)(RecentMeetings, { plugin })
+  return /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime99.jsxs)("div", { className: tw("flex flex-col h-full w-full"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(MeetingRecorder, { plugin }),
+    /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(RecentMeetings, { plugin }),
+    plugin.settings.enableScreenpipe && /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(ScreenpipeMeetings, { plugin })
   ] }) });
 };
 
 // views/assistant/view.tsx
-var import_lucide_react21 = __toESM(require_lucide_react());
+var import_lucide_react25 = __toESM(require_lucide_react());
 
 // components/upgrade-button.tsx
-var import_lucide_react20 = __toESM(require_lucide_react());
-var import_jsx_runtime95 = __toESM(require_jsx_runtime());
+var import_lucide_react24 = __toESM(require_lucide_react());
+var import_jsx_runtime100 = __toESM(require_jsx_runtime());
 function UpgradeButton({
   plugin,
   variant = "default",
@@ -163842,7 +168033,7 @@ function UpgradeButton({
   const tooltip = getTooltip();
   const colorClasses = getColorClasses();
   if (variant === "compact") {
-    return /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)(
+    return /* @__PURE__ */ (0, import_jsx_runtime100.jsxs)(
       "button",
       {
         onClick: handleClick2,
@@ -163853,13 +168044,13 @@ function UpgradeButton({
         ),
         title: tooltip,
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(import_lucide_react20.ArrowUpCircle, { className: tw("w-3.5 h-3.5") }),
-          showMessage && /* @__PURE__ */ (0, import_jsx_runtime95.jsx)("span", { children: "Upgrade" })
+          /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(import_lucide_react24.ArrowUpCircle, { className: tw("w-3.5 h-3.5") }),
+          showMessage && /* @__PURE__ */ (0, import_jsx_runtime100.jsx)("span", { children: "Upgrade" })
         ]
       }
     );
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime95.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime100.jsxs)(
     "button",
     {
       onClick: handleClick2,
@@ -163870,15 +168061,16 @@ function UpgradeButton({
       ),
       title: tooltip,
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)(import_lucide_react20.ArrowUpCircle, { className: tw("w-4 h-4") }),
-        /* @__PURE__ */ (0, import_jsx_runtime95.jsx)("span", { children: "Upgrade Plan" })
+        /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(import_lucide_react24.ArrowUpCircle, { className: tw("w-4 h-4") }),
+        /* @__PURE__ */ (0, import_jsx_runtime100.jsx)("span", { children: "Upgrade Plan" })
       ]
     }
   );
 }
 
 // views/assistant/view.tsx
-var import_jsx_runtime96 = __toESM(require_jsx_runtime());
+init_constants();
+var import_jsx_runtime101 = __toESM(require_jsx_runtime());
 var ORGANIZER_VIEW_TYPE = "fo2k.assistant.sidebar2";
 function TabContent2({
   activeTab,
@@ -163887,10 +168079,10 @@ function TabContent2({
   showSyncTab,
   onTokenLimitError
 }) {
-  const [activeFile, setActiveFile] = React73.useState(null);
-  const [noteContent, setNoteContent] = React73.useState("");
-  const [refreshKey, setRefreshKey] = React73.useState(0);
-  React73.useEffect(() => {
+  const [activeFile, setActiveFile] = React79.useState(null);
+  const [noteContent, setNoteContent] = React79.useState("");
+  const [refreshKey, setRefreshKey] = React79.useState(0);
+  React79.useEffect(() => {
     const updateActiveFile = async () => {
       const file = plugin.app.workspace.getActiveFile();
       if (file) {
@@ -163911,20 +168103,27 @@ function TabContent2({
     };
   }, [plugin.app.workspace, plugin.app.vault]);
   function renderNoteContent(content3) {
-    return /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("div", { className: tw("markdown-preview"), children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(Markdown, { children: content3 }) });
+    return /* @__PURE__ */ (0, import_jsx_runtime101.jsx)("div", { className: tw("markdown-preview"), children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(Markdown, { children: content3 }) });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)("div", { className: tw("flex flex-col h-full w-full"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime101.jsxs)("div", { className: tw("flex flex-col h-full w-full"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
       "div",
       {
         className: tw(
           "flex-1 min-h-0 w-full",
           activeTab === "organizer" ? "block" : "hidden"
         ),
-        children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(AssistantView, { plugin, leaf })
+        children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
+          AssistantView,
+          {
+            plugin,
+            leaf,
+            onTokenLimitError
+          }
+        )
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)(
+    /* @__PURE__ */ (0, import_jsx_runtime101.jsxs)(
       "div",
       {
         className: tw(
@@ -163932,46 +168131,47 @@ function TabContent2({
           activeTab === "inbox" ? "block" : "hidden"
         ),
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(SectionHeader, { text: "Inbox Processing", icon: "\u{1F4E5} " }),
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(InboxLogs, {})
+          /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(SectionHeader, { text: "Inbox Processing", icon: "\u{1F4E5} " }),
+          /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(InboxLogs, {})
         ]
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
       "div",
       {
         className: tw(
           "flex-1 min-h-0 w-full",
           activeTab === "chat" ? "flex flex-col" : "hidden"
         ),
-        children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+        children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
           container_default,
           {
             plugin,
             apiKey: plugin.settings.API_KEY,
-            onTokenLimitError
+            onTokenLimitError,
+            isChatTabActive: activeTab === "chat"
           }
         )
       }
     ),
-    showSyncTab && /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+    showSyncTab && /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
       "div",
       {
         className: tw(
           "flex-1 min-h-0 w-full",
           activeTab === "sync" ? "block" : "hidden"
         ),
-        children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(SyncTab, { plugin, onTokenLimitError })
+        children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(SyncTab, { plugin, onTokenLimitError })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
       "div",
       {
         className: tw(
           "flex-1 min-h-0 w-full",
           activeTab === "meetings" ? "block" : "hidden"
         ),
-        children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(MeetingsTab, { plugin })
+        children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(MeetingsTab, { plugin })
       }
     )
   ] });
@@ -163983,7 +168183,7 @@ function TabButton2({
   children: children2,
   badge
 }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime101.jsxs)(
     "button",
     {
       onClick,
@@ -163996,9 +168196,9 @@ function TabButton2({
         marginBottom: "-1px"
       } : void 0,
       children: [
-        icon && /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("span", { className: tw("w-4 h-4 flex-shrink-0"), children: icon }),
+        icon && /* @__PURE__ */ (0, import_jsx_runtime101.jsx)("span", { className: tw("w-4 h-4 flex-shrink-0"), children: icon }),
         children2,
-        badge !== void 0 && badge > 0 && /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+        badge !== void 0 && badge > 0 && /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
           "span",
           {
             className: tw(
@@ -164017,14 +168217,14 @@ function AssistantContent({
   initialTab,
   onTabChange
 }) {
-  const [activeTab, setActiveTab] = React73.useState(initialTab);
-  const [usageData, setUsageData] = React73.useState(null);
-  const [forceShowUpgrade, setForceShowUpgrade] = React73.useState(false);
-  const [processingCount, setProcessingCount] = React73.useState(0);
-  React73.useEffect(() => {
+  const [activeTab, setActiveTab] = React79.useState(initialTab);
+  const [usageData, setUsageData] = React79.useState(null);
+  const [forceShowUpgrade, setForceShowUpgrade] = React79.useState(false);
+  const [processingCount, setProcessingCount] = React79.useState(0);
+  React79.useEffect(() => {
     onTabChange(setActiveTab);
   }, [onTabChange]);
-  React73.useEffect(() => {
+  React79.useEffect(() => {
     const fetchUsage = async () => {
       try {
         const data = await plugin.fetchUsageStats();
@@ -164039,7 +168239,7 @@ function AssistantContent({
       fetchUsage();
     }
   }, [plugin]);
-  React73.useEffect(() => {
+  React79.useEffect(() => {
     const updateProcessingCount = () => {
       try {
         const inbox = Inbox.getInstance();
@@ -164062,80 +168262,82 @@ function AssistantContent({
   const shouldShowUpgradeButton = () => {
     if (forceShowUpgrade) return true;
     if (!usageData) return false;
-    const isFreeTier = usageData.currentPlan === "Free Plan" || usageData.currentPlan === "Free" || usageData.maxTokenUsage === 1e5;
+    const isFreeTier = usageData.currentPlan === "Free Plan" || usageData.currentPlan === "Free" || usageData.maxTokenUsage === FREE_TIER_TOKEN_LIMIT;
     if (!isFreeTier) return false;
     const usagePercent = usageData.tokenUsage / usageData.maxTokenUsage;
     return usagePercent >= 0.8;
   };
-  const handleTokenLimitError = React73.useCallback(
-    (error) => {
-      setForceShowUpgrade(true);
+  const handleTokenLimitError = React79.useCallback(
+    (_error) => {
       plugin.fetchUsageStats().then((data) => {
         if (data) {
           setUsageData(data);
+          if (data.maxTokenUsage === FREE_TIER_TOKEN_LIMIT) {
+            setForceShowUpgrade(true);
+          }
         }
       }).catch(console.error);
     },
     [plugin]
   );
   const showSyncTab = plugin.settings.showSyncTab;
-  return /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)("div", { className: tw("flex flex-col h-full w-full"), children: [
-    /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime101.jsxs)("div", { className: tw("flex flex-col h-full w-full"), children: [
+    /* @__PURE__ */ (0, import_jsx_runtime101.jsxs)(
       "div",
       {
         className: tw(
           "flex gap-0 px-3 pt-2 pb-0 border-b border-[--background-modifier-border] bg-[--background-primary] items-center justify-between"
         ),
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime96.jsxs)("div", { className: tw("flex gap-0"), children: [
-            /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime101.jsxs)("div", { className: tw("flex gap-0"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
               TabButton2,
               {
                 isActive: activeTab === "organizer",
                 onClick: () => setActiveTab("organizer"),
-                icon: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(import_lucide_react21.Sparkles, { className: "w-4 h-4" }),
+                icon: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(import_lucide_react25.Sparkles, { className: "w-4 h-4" }),
                 children: "Organizer"
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
               TabButton2,
               {
                 isActive: activeTab === "inbox",
                 onClick: () => setActiveTab("inbox"),
-                icon: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(import_lucide_react21.Inbox, { className: "w-4 h-4" }),
+                icon: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(import_lucide_react25.Inbox, { className: "w-4 h-4" }),
                 badge: processingCount,
                 children: "Inbox"
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
               TabButton2,
               {
                 isActive: activeTab === "chat",
                 onClick: () => setActiveTab("chat"),
-                icon: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(import_lucide_react21.MessageSquare, { className: "w-4 h-4" }),
+                icon: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(import_lucide_react25.MessageSquare, { className: "w-4 h-4" }),
                 children: "Chat"
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
               TabButton2,
               {
                 isActive: activeTab === "meetings",
                 onClick: () => setActiveTab("meetings"),
-                icon: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(import_lucide_react21.Mic, { className: "w-4 h-4" }),
+                icon: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(import_lucide_react25.Mic, { className: "w-4 h-4" }),
                 children: "Meetings"
               }
             ),
-            showSyncTab && /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+            showSyncTab && /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
               TabButton2,
               {
                 isActive: activeTab === "sync",
                 onClick: () => setActiveTab("sync"),
-                icon: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(import_lucide_react21.Cloud, { className: "w-4 h-4" }),
+                icon: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(import_lucide_react25.Cloud, { className: "w-4 h-4" }),
                 children: "Sync"
               }
             )
           ] }),
-          shouldShowUpgradeButton() && /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("div", { className: tw("ml-auto"), children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+          shouldShowUpgradeButton() && /* @__PURE__ */ (0, import_jsx_runtime101.jsx)("div", { className: tw("ml-auto"), children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
             UpgradeButton,
             {
               plugin,
@@ -164148,7 +168350,7 @@ function AssistantContent({
         ]
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime96.jsx)("div", { className: tw("flex-1 min-h-0 w-full overflow-hidden"), children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime101.jsx)("div", { className: tw("flex-1 min-h-0 w-full overflow-hidden"), children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
       TabContent2,
       {
         activeTab,
@@ -164160,7 +168362,7 @@ function AssistantContent({
     ) })
   ] });
 }
-var AssistantViewWrapper = class extends import_obsidian54.ItemView {
+var AssistantViewWrapper = class extends import_obsidian63.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.root = null;
@@ -164218,7 +168420,7 @@ var AssistantViewWrapper = class extends import_obsidian54.ItemView {
   }
   render() {
     this.root?.render(
-      /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(AppContext.Provider, { value: { plugin: this.plugin, root: this.root }, children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(React73.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime96.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(AppContext.Provider, { value: { plugin: this.plugin, root: this.root }, children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(React79.StrictMode, { children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(
         AssistantContent,
         {
           plugin: this.plugin,
@@ -164238,25 +168440,25 @@ var AssistantViewWrapper = class extends import_obsidian54.ItemView {
 };
 
 // views/assistant/dashboard/view.tsx
-var import_obsidian57 = require("obsidian");
+var import_obsidian66 = require("obsidian");
 var import_client3 = __toESM(require_client());
 
 // views/assistant/dashboard/main-dashboard.tsx
-var import_react97 = __toESM(require_react());
-var import_obsidian56 = require("obsidian");
+var import_react102 = __toESM(require_react());
+var import_obsidian65 = require("obsidian");
 
 // views/assistant/dashboard/onboarding-wizard.tsx
-var import_react96 = __toESM(require_react());
-var import_obsidian55 = require("obsidian");
-var import_jsx_runtime97 = __toESM(require_jsx_runtime());
+var import_react101 = __toESM(require_react());
+var import_obsidian64 = require("obsidian");
+var import_jsx_runtime102 = __toESM(require_jsx_runtime());
 function OnboardingWizard({ plugin, onComplete }) {
-  const [step, setStep] = (0, import_react96.useState)(0);
-  const [email, setEmail] = (0, import_react96.useState)("");
-  const [password, setPassword] = (0, import_react96.useState)("");
-  const [confirmPassword, setConfirmPassword] = (0, import_react96.useState)("");
-  const [isSignup, setIsSignup] = (0, import_react96.useState)(true);
-  const [isLoading, setIsLoading] = (0, import_react96.useState)(false);
-  const [error, setError] = (0, import_react96.useState)("");
+  const [step, setStep] = (0, import_react101.useState)(0);
+  const [email, setEmail] = (0, import_react101.useState)("");
+  const [password, setPassword] = (0, import_react101.useState)("");
+  const [confirmPassword, setConfirmPassword] = (0, import_react101.useState)("");
+  const [isSignup, setIsSignup] = (0, import_react101.useState)(true);
+  const [isLoading, setIsLoading] = (0, import_react101.useState)(false);
+  const [error, setError] = (0, import_react101.useState)("");
   const handleSignup = async () => {
     if (isSignup && password !== confirmPassword) {
       setError("Passwords do not match");
@@ -164285,7 +168487,7 @@ function OnboardingWizard({ plugin, onComplete }) {
       }
       plugin.settings.API_KEY = data.licenseKey;
       await plugin.saveSettings();
-      new import_obsidian55.Notice(`Successfully ${isSignup ? "signed up" : "signed in"}! Your account is now connected.`, 5e3);
+      new import_obsidian64.Notice(`Successfully ${isSignup ? "signed up" : "signed in"}! Your account is now connected.`, 5e3);
       nextStep();
     } catch (error2) {
       console.error(`Error during ${isSignup ? "signup" : "login"}:`, error2);
@@ -164304,24 +168506,24 @@ function OnboardingWizard({ plugin, onComplete }) {
   const skipAccount = () => {
     nextStep();
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(StyledContainer, { children: /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)(
     motion.div,
     {
       className: tw("max-w-xl mx-auto bg-white p-6"),
       initial: { opacity: 0 },
       animate: { opacity: 1 },
       children: [
-        /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("h2", { className: tw("text-xl font-bold mb-6 text-[--text-accent]"), children: step === 0 ? "Welcome to Note Companion!" : step === 1 ? "Create Your Account" : "Set Up Your Workspace" }),
-        step === 0 && /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("p", { className: tw("text-[--text-normal]"), children: "Note Companion helps you organize your Obsidian vault with AI-powered features:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("ul", { className: tw("list-disc pl-5 space-y-2"), children: [
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("li", { children: "Automatically organize and format notes" }),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("li", { children: "Extract key concepts and suggest tags" }),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("li", { children: "Get AI assistance with your content" }),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("li", { children: "Sync across devices" })
+        /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("h2", { className: tw("text-xl font-bold mb-6 text-[--text-accent]"), children: step === 0 ? "Welcome to Note Companion!" : step === 1 ? "Create Your Account" : "Set Up Your Workspace" }),
+        step === 0 && /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("p", { className: tw("text-[--text-normal]"), children: "Note Companion helps you organize your Obsidian vault with AI-powered features:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("ul", { className: tw("list-disc pl-5 space-y-2"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("li", { children: "Automatically organize and format notes" }),
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("li", { children: "Extract key concepts and suggest tags" }),
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("li", { children: "Get AI assistance with your content" }),
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("li", { children: "Sync across devices" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("p", { className: tw("text-sm text-[--text-muted] mt-4"), children: "Let's get you set up in just a few steps!" }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("p", { className: tw("text-sm text-[--text-muted] mt-4"), children: "Let's get you set up in just a few steps!" }),
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
             Button2,
             {
               onClick: nextStep,
@@ -164330,9 +168532,9 @@ function OnboardingWizard({ plugin, onComplete }) {
             }
           )
         ] }),
-        step === 1 && /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("mb-4 flex items-center justify-center space-x-4"), children: [
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+        step === 1 && /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { className: tw("mb-4 flex items-center justify-center space-x-4"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
               "div",
               {
                 className: tw(`cursor-pointer px-4 py-2 font-medium ${isSignup ? "text-[--text-accent] border-b-2 border-[--text-accent]" : "text-[--text-muted]"}`),
@@ -164340,7 +168542,7 @@ function OnboardingWizard({ plugin, onComplete }) {
                 children: "Sign Up"
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
               "div",
               {
                 className: tw(`cursor-pointer px-4 py-2 font-medium ${!isSignup ? "text-[--text-accent] border-b-2 border-[--text-accent]" : "text-[--text-muted]"}`),
@@ -164349,10 +168551,10 @@ function OnboardingWizard({ plugin, onComplete }) {
               }
             )
           ] }),
-          error && /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("div", { className: tw("bg-red-50 text-red-700 p-3 text-sm"), children: error }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Email" }),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+          error && /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("div", { className: tw("bg-red-50 text-red-700 p-3 text-sm"), children: error }),
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Email" }),
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
               "input",
               {
                 type: "email",
@@ -164363,9 +168565,9 @@ function OnboardingWizard({ plugin, onComplete }) {
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Password" }),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Password" }),
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
               "input",
               {
                 type: "password",
@@ -164376,9 +168578,9 @@ function OnboardingWizard({ plugin, onComplete }) {
               }
             )
           ] }),
-          isSignup && /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Confirm Password" }),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+          isSignup && /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("label", { className: tw("block text-[--text-normal] mb-1 text-sm font-medium"), children: "Confirm Password" }),
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
               "input",
               {
                 type: "password",
@@ -164389,27 +168591,27 @@ function OnboardingWizard({ plugin, onComplete }) {
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
             Button2,
             {
               onClick: handleSignup,
               disabled: isLoading,
               className: tw("w-full mt-2"),
-              children: isLoading ? /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("span", { className: tw("flex items-center justify-center"), children: [
-                /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("svg", { className: tw("animate-spin -ml-1 mr-2 h-4 w-4"), xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 24 24", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("circle", { className: tw("opacity-25"), cx: "12", cy: "12", r: "10", stroke: "currentColor", strokeWidth: "4" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("path", { className: tw("opacity-75"), fill: "currentColor", d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" })
+              children: isLoading ? /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("span", { className: tw("flex items-center justify-center"), children: [
+                /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("svg", { className: tw("animate-spin -ml-1 mr-2 h-4 w-4"), xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 24 24", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("circle", { className: tw("opacity-25"), cx: "12", cy: "12", r: "10", stroke: "currentColor", strokeWidth: "4" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("path", { className: tw("opacity-75"), fill: "currentColor", d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" })
                 ] }),
                 "Processing..."
               ] }) : isSignup ? "Sign Up" : "Sign In"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("flex items-center justify-center my-4"), children: [
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("div", { className: tw("flex-grow border-t border-[--background-modifier-border]") }),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("span", { className: tw("mx-4 text-[--text-muted] text-sm"), children: "or" }),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("div", { className: tw("flex-grow border-t border-[--background-modifier-border]") })
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { className: tw("flex items-center justify-center my-4"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("div", { className: tw("flex-grow border-t border-[--background-modifier-border]") }),
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("span", { className: tw("mx-4 text-[--text-muted] text-sm"), children: "or" }),
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("div", { className: tw("flex-grow border-t border-[--background-modifier-border]") })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
             Button2,
             {
               onClick: skipAccount,
@@ -164419,28 +168621,28 @@ function OnboardingWizard({ plugin, onComplete }) {
             }
           )
         ] }),
-        step === 2 && /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("div", { className: tw("mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4"), children: /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("svg", { className: tw("w-8 h-8 text-green-600"), fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 13l4 4L19 7" }) }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("h4", { className: tw("text-lg font-medium text-center"), children: "You're ready to go!" }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("p", { className: tw("text-center"), children: "Note Companion is now set up and ready to help you organize your vault." }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("bg-[--background-primary-alt] p-4 border border-[--background-modifier-border]"), children: [
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("h4", { className: tw("font-medium text-sm mb-2"), children: "We'll create these folders for you:" }),
-            /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("ul", { className: tw("text-sm space-y-2"), children: [
-              /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("li", { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("strong", { children: "_NoteCompanion/Inbox" }),
+        step === 2 && /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { className: tw("mb-6 space-y-4"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("div", { className: tw("mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4"), children: /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("svg", { className: tw("w-8 h-8 text-green-600"), fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 13l4 4L19 7" }) }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("h4", { className: tw("text-lg font-medium text-center"), children: "You're ready to go!" }),
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("p", { className: tw("text-center"), children: "Note Companion is now set up and ready to help you organize your vault." }),
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { className: tw("bg-[--background-primary-alt] p-4 border border-[--background-modifier-border]"), children: [
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("h4", { className: tw("font-medium text-sm mb-2"), children: "We'll create these folders for you:" }),
+            /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("ul", { className: tw("text-sm space-y-2"), children: [
+              /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("li", { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("strong", { children: "_NoteCompanion/Inbox" }),
                 ": Files waiting to be processed"
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("li", { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("strong", { children: "_NoteCompanion/Processed" }),
+              /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("li", { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("strong", { children: "_NoteCompanion/Processed" }),
                 ": Organized files"
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("li", { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("strong", { children: "_NoteCompanion/References" }),
+              /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("li", { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("strong", { children: "_NoteCompanion/References" }),
                 ": Reference materials"
               ] })
             ] })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
             Button2,
             {
               onClick: finish,
@@ -164449,15 +168651,15 @@ function OnboardingWizard({ plugin, onComplete }) {
             }
           )
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("mt-6"), children: [
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsx)("div", { className: tw("w-full bg-[--background-modifier-border] rounded-full h-1.5"), children: /* @__PURE__ */ (0, import_jsx_runtime97.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { className: tw("mt-6"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsx)("div", { className: tw("w-full bg-[--background-modifier-border] rounded-full h-1.5"), children: /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
             "div",
             {
               className: tw("bg-[--text-accent] h-1.5 rounded-full"),
               style: { width: `${(step + 1) / 3 * 100}%` }
             }
           ) }),
-          /* @__PURE__ */ (0, import_jsx_runtime97.jsxs)("div", { className: tw("text-xs text-[--text-muted] text-right mt-1"), children: [
+          /* @__PURE__ */ (0, import_jsx_runtime102.jsxs)("div", { className: tw("text-xs text-[--text-muted] text-right mt-1"), children: [
             "Step ",
             step + 1,
             " of 3"
@@ -164469,28 +168671,28 @@ function OnboardingWizard({ plugin, onComplete }) {
 }
 
 // views/assistant/dashboard/collapsible-section.tsx
-var import_lucide_react22 = __toESM(require_lucide_react());
-var import_jsx_runtime98 = __toESM(require_jsx_runtime());
+var import_lucide_react26 = __toESM(require_lucide_react());
+var import_jsx_runtime103 = __toESM(require_jsx_runtime());
 function CollapsibleSection({
   title,
   isOpen,
   onToggle,
   children: children2
 }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("div", { className: "mb-2 border-b border-[--background-modifier-border]", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime103.jsxs)("div", { className: "mb-2 border-b border-[--background-modifier-border]", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime103.jsxs)(
       Button2,
       {
         className: "w-full flex justify-between items-center px-2 py-2 bg-[--background-primary] hover:bg-[--background-modifier-hover] transition-colors",
         onClick: onToggle,
         variant: "ghost",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("span", { className: "font-semibold text-[--text-normal]", children: title }),
-          isOpen ? /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(import_lucide_react22.ChevronUp, { className: "h-4 w-4" }) : /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(import_lucide_react22.ChevronDown, { className: "h-4 w-4" })
+          /* @__PURE__ */ (0, import_jsx_runtime103.jsx)("span", { className: "font-semibold text-[--text-normal]", children: title }),
+          isOpen ? /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(import_lucide_react26.ChevronUp, { className: "h-4 w-4" }) : /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(import_lucide_react26.ChevronDown, { className: "h-4 w-4" })
         ]
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(AnimatePresence, { children: isOpen && /* @__PURE__ */ (0, import_jsx_runtime98.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(AnimatePresence, { children: isOpen && /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
       motion.div,
       {
         className: "bg-[--background-primary-alt]",
@@ -164505,26 +168707,26 @@ function CollapsibleSection({
 }
 
 // views/assistant/dashboard/floating-action-button.tsx
-var import_lucide_react23 = __toESM(require_lucide_react());
-var import_jsx_runtime99 = __toESM(require_jsx_runtime());
+var import_lucide_react27 = __toESM(require_lucide_react());
+var import_jsx_runtime104 = __toESM(require_jsx_runtime());
 function FloatingActionButton({
   label,
   onClick
 }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime104.jsx)(
     motion.div,
     {
       className: "fixed bottom-4 right-4",
       whileHover: { scale: 1.05 },
       whileTap: { scale: 0.95 },
-      children: /* @__PURE__ */ (0, import_jsx_runtime99.jsxs)(
+      children: /* @__PURE__ */ (0, import_jsx_runtime104.jsxs)(
         Button2,
         {
           className: "rounded-full flex items-center gap-2",
           onClick,
           size: "lg",
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime99.jsx)(import_lucide_react23.Sparkles, { className: "h-4 w-4" }),
+            /* @__PURE__ */ (0, import_jsx_runtime104.jsx)(import_lucide_react27.Sparkles, { className: "h-4 w-4" }),
             label
           ]
         }
@@ -164534,30 +168736,30 @@ function FloatingActionButton({
 }
 
 // components/ui/progress.tsx
-var React78 = __toESM(require_react());
+var React84 = __toESM(require_react());
 
 // node_modules/@radix-ui/react-progress/dist/index.mjs
-var React77 = __toESM(require_react(), 1);
+var React83 = __toESM(require_react(), 1);
 
 // node_modules/@radix-ui/react-context/dist/index.mjs
-var React75 = __toESM(require_react(), 1);
-var import_jsx_runtime100 = __toESM(require_jsx_runtime(), 1);
+var React81 = __toESM(require_react(), 1);
+var import_jsx_runtime105 = __toESM(require_jsx_runtime(), 1);
 function createContextScope(scopeName, createContextScopeDeps = []) {
   let defaultContexts = [];
   function createContext32(rootComponentName, defaultContext) {
-    const BaseContext2 = React75.createContext(defaultContext);
+    const BaseContext2 = React81.createContext(defaultContext);
     const index2 = defaultContexts.length;
     defaultContexts = [...defaultContexts, defaultContext];
     const Provider = (props) => {
       const { scope, children: children2, ...context } = props;
       const Context = scope?.[scopeName]?.[index2] || BaseContext2;
-      const value = React75.useMemo(() => context, Object.values(context));
-      return /* @__PURE__ */ (0, import_jsx_runtime100.jsx)(Context.Provider, { value, children: children2 });
+      const value = React81.useMemo(() => context, Object.values(context));
+      return /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(Context.Provider, { value, children: children2 });
     };
     Provider.displayName = rootComponentName + "Provider";
     function useContext22(consumerName, scope) {
       const Context = scope?.[scopeName]?.[index2] || BaseContext2;
-      const context = React75.useContext(Context);
+      const context = React81.useContext(Context);
       if (context) return context;
       if (defaultContext !== void 0) return defaultContext;
       throw new Error(`\`${consumerName}\` must be used within \`${rootComponentName}\``);
@@ -164566,11 +168768,11 @@ function createContextScope(scopeName, createContextScopeDeps = []) {
   }
   const createScope = () => {
     const scopeContexts = defaultContexts.map((defaultContext) => {
-      return React75.createContext(defaultContext);
+      return React81.createContext(defaultContext);
     });
     return function useScope(scope) {
       const contexts = scope?.[scopeName] || scopeContexts;
-      return React75.useMemo(
+      return React81.useMemo(
         () => ({ [`__scope${scopeName}`]: { ...scope, [scopeName]: contexts } }),
         [scope, contexts]
       );
@@ -164593,7 +168795,7 @@ function composeContextScopes(...scopes) {
         const currentScope = scopeProps[`__scope${scopeName}`];
         return { ...nextScopes2, ...currentScope };
       }, {});
-      return React75.useMemo(() => ({ [`__scope${baseScope.scopeName}`]: nextScopes }), [nextScopes]);
+      return React81.useMemo(() => ({ [`__scope${baseScope.scopeName}`]: nextScopes }), [nextScopes]);
     };
   };
   createScope.scopeName = baseScope.scopeName;
@@ -164601,9 +168803,9 @@ function composeContextScopes(...scopes) {
 }
 
 // node_modules/@radix-ui/react-primitive/dist/index.mjs
-var React76 = __toESM(require_react(), 1);
+var React82 = __toESM(require_react(), 1);
 var ReactDOM2 = __toESM(require_react_dom(), 1);
-var import_jsx_runtime101 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime106 = __toESM(require_jsx_runtime(), 1);
 var NODES = [
   "a",
   "button",
@@ -164625,25 +168827,25 @@ var NODES = [
 ];
 var Primitive = NODES.reduce((primitive, node2) => {
   const Slot2 = createSlot(`Primitive.${node2}`);
-  const Node3 = React76.forwardRef((props, forwardedRef) => {
+  const Node3 = React82.forwardRef((props, forwardedRef) => {
     const { asChild, ...primitiveProps } = props;
     const Comp = asChild ? Slot2 : node2;
     if (typeof window !== "undefined") {
       window[Symbol.for("radix-ui")] = true;
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime101.jsx)(Comp, { ...primitiveProps, ref: forwardedRef });
+    return /* @__PURE__ */ (0, import_jsx_runtime106.jsx)(Comp, { ...primitiveProps, ref: forwardedRef });
   });
   Node3.displayName = `Primitive.${node2}`;
   return { ...primitive, [node2]: Node3 };
 }, {});
 
 // node_modules/@radix-ui/react-progress/dist/index.mjs
-var import_jsx_runtime102 = __toESM(require_jsx_runtime(), 1);
+var import_jsx_runtime107 = __toESM(require_jsx_runtime(), 1);
 var PROGRESS_NAME = "Progress";
 var DEFAULT_MAX = 100;
 var [createProgressContext, createProgressScope] = createContextScope(PROGRESS_NAME);
 var [ProgressProvider, useProgressContext] = createProgressContext(PROGRESS_NAME);
-var Progress = React77.forwardRef(
+var Progress = React83.forwardRef(
   (props, forwardedRef) => {
     const {
       __scopeProgress,
@@ -164661,7 +168863,7 @@ var Progress = React77.forwardRef(
     }
     const value = isValidValueNumber(valueProp, max) ? valueProp : null;
     const valueLabel = isNumber4(value) ? getValueLabel(value, max) : void 0;
-    return /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(ProgressProvider, { scope: __scopeProgress, value, max, children: /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime107.jsx)(ProgressProvider, { scope: __scopeProgress, value, max, children: /* @__PURE__ */ (0, import_jsx_runtime107.jsx)(
       Primitive.div,
       {
         "aria-valuemax": max,
@@ -164680,11 +168882,11 @@ var Progress = React77.forwardRef(
 );
 Progress.displayName = PROGRESS_NAME;
 var INDICATOR_NAME = "ProgressIndicator";
-var ProgressIndicator = React77.forwardRef(
+var ProgressIndicator = React83.forwardRef(
   (props, forwardedRef) => {
     const { __scopeProgress, ...indicatorProps } = props;
     const context = useProgressContext(INDICATOR_NAME, __scopeProgress);
-    return /* @__PURE__ */ (0, import_jsx_runtime102.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime107.jsx)(
       Primitive.div,
       {
         "data-state": getProgressState(context.value, context.max),
@@ -164727,8 +168929,8 @@ var Root3 = Progress;
 var Indicator = ProgressIndicator;
 
 // components/ui/progress.tsx
-var import_jsx_runtime103 = __toESM(require_jsx_runtime());
-var Progress2 = React78.forwardRef(({ className, value, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
+var import_jsx_runtime108 = __toESM(require_jsx_runtime());
+var Progress2 = React84.forwardRef(({ className, value, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime108.jsx)(
   Root3,
   {
     ref,
@@ -164737,7 +168939,7 @@ var Progress2 = React78.forwardRef(({ className, value, ...props }, ref) => /* @
       className
     ),
     ...props,
-    children: /* @__PURE__ */ (0, import_jsx_runtime103.jsx)(
+    children: /* @__PURE__ */ (0, import_jsx_runtime108.jsx)(
       Indicator,
       {
         className: "h-full w-full flex-1 bg-primary transition-all",
@@ -164749,27 +168951,27 @@ var Progress2 = React78.forwardRef(({ className, value, ...props }, ref) => /* @
 Progress2.displayName = Root3.displayName;
 
 // views/assistant/dashboard/progress-bar.tsx
-var import_jsx_runtime104 = __toESM(require_jsx_runtime());
+var import_jsx_runtime109 = __toESM(require_jsx_runtime());
 function ProgressBar({ value }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime104.jsx)(Progress2, { value, className: "w-full" });
+  return /* @__PURE__ */ (0, import_jsx_runtime109.jsx)(Progress2, { value, className: "w-full" });
 }
 
 // views/assistant/dashboard/main-dashboard.tsx
-var import_jsx_runtime105 = __toESM(require_jsx_runtime());
+var import_jsx_runtime110 = __toESM(require_jsx_runtime());
 function MainDashboard() {
   const plugin = usePlugin();
-  const [isOnboardingComplete, setIsOnboardingComplete] = (0, import_react97.useState)(
+  const [isOnboardingComplete, setIsOnboardingComplete] = (0, import_react102.useState)(
     plugin.settings.hasRunOnboarding ?? false
   );
-  const [expandedSections, setExpandedSections] = (0, import_react97.useState)([
+  const [expandedSections, setExpandedSections] = (0, import_react102.useState)([
     "organizer"
   ]);
-  const [isLongTaskRunning, setIsLongTaskRunning] = (0, import_react97.useState)(false);
-  const [longTaskProgress, setLongTaskProgress] = (0, import_react97.useState)(0);
-  const [activeFile, setActiveFile] = (0, import_react97.useState)(null);
-  const [activeContent, setActiveContent] = (0, import_react97.useState)("");
-  const [refreshKey, setRefreshKey] = (0, import_react97.useState)(0);
-  (0, import_react97.useEffect)(() => {
+  const [isLongTaskRunning, setIsLongTaskRunning] = (0, import_react102.useState)(false);
+  const [longTaskProgress, setLongTaskProgress] = (0, import_react102.useState)(0);
+  const [activeFile, setActiveFile] = (0, import_react102.useState)(null);
+  const [activeContent, setActiveContent] = (0, import_react102.useState)("");
+  const [refreshKey, setRefreshKey] = (0, import_react102.useState)(0);
+  (0, import_react102.useEffect)(() => {
     const handleFileOpen = async () => {
       const file = plugin.app.workspace.getActiveFile();
       if (file) {
@@ -164802,7 +169004,7 @@ function MainDashboard() {
       setLongTaskProgress(progress2);
     }
     setIsLongTaskRunning(false);
-    new import_obsidian56.Notice("Long task completed!");
+    new import_obsidian65.Notice("Long task completed!");
   };
   const toggleSection = (section) => {
     setExpandedSections((prev) => {
@@ -164827,27 +169029,27 @@ function MainDashboard() {
   };
   const handleFABAction = () => {
     if (!activeFile) {
-      new import_obsidian56.Notice("No active file to operate on!");
+      new import_obsidian65.Notice("No active file to operate on!");
       return;
     }
     if (activeFile.basename.toLowerCase().includes("meeting")) {
-      new import_obsidian56.Notice("Meeting note enhanced!");
+      new import_obsidian65.Notice("Meeting note enhanced!");
     } else {
-      new import_obsidian56.Notice(`Organized: ${activeFile.basename}`);
+      new import_obsidian65.Notice(`Organized: ${activeFile.basename}`);
     }
   };
   if (!isOnboardingComplete) {
-    return /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(OnboardingWizard, { plugin, onComplete: handleOnboardingComplete });
+    return /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(OnboardingWizard, { plugin, onComplete: handleOnboardingComplete });
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime105.jsxs)("div", { className: "flex flex-col h-full relative p-2", children: [
-    isLongTaskRunning && /* @__PURE__ */ (0, import_jsx_runtime105.jsx)("div", { className: "p-2 bg-[--background-secondary] mb-2 rounded", children: /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(ProgressBar, { value: longTaskProgress }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime110.jsxs)("div", { className: "flex flex-col h-full relative p-2", children: [
+    isLongTaskRunning && /* @__PURE__ */ (0, import_jsx_runtime110.jsx)("div", { className: "p-2 bg-[--background-secondary] mb-2 rounded", children: /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(ProgressBar, { value: longTaskProgress }) }),
+    /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(
       CollapsibleSection,
       {
         title: "Organizer",
         isOpen: expandedSections.includes("organizer"),
         onToggle: () => toggleSection("organizer"),
-        children: /* @__PURE__ */ (0, import_jsx_runtime105.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
+        children: /* @__PURE__ */ (0, import_jsx_runtime110.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(
           AssistantView,
           {
             plugin,
@@ -164856,25 +169058,25 @@ function MainDashboard() {
         ) })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(
       CollapsibleSection,
       {
         title: "Inbox",
         isOpen: expandedSections.includes("inbox"),
         onToggle: () => toggleSection("inbox"),
-        children: /* @__PURE__ */ (0, import_jsx_runtime105.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime105.jsx)("p", { children: "Inbox logs or quick file processing UI here." }) })
+        children: /* @__PURE__ */ (0, import_jsx_runtime110.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime110.jsx)("p", { children: "Inbox logs or quick file processing UI here." }) })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(
       CollapsibleSection,
       {
         title: "Chat",
         isOpen: expandedSections.includes("chat"),
         onToggle: () => toggleSection("chat"),
-        children: /* @__PURE__ */ (0, import_jsx_runtime105.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(container_default, { plugin, apiKey: plugin.getApiKey() }) })
+        children: /* @__PURE__ */ (0, import_jsx_runtime110.jsx)("div", { className: "p-2", children: /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(container_default, { plugin, apiKey: plugin.getApiKey() }) })
       }
     ),
-    /* @__PURE__ */ (0, import_jsx_runtime105.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime110.jsx)(
       FloatingActionButton,
       {
         label: getFloatingButtonLabel(),
@@ -164885,9 +169087,9 @@ function MainDashboard() {
 }
 
 // views/assistant/dashboard/view.tsx
-var import_jsx_runtime106 = __toESM(require_jsx_runtime());
+var import_jsx_runtime111 = __toESM(require_jsx_runtime());
 var DASHBOARD_VIEW_TYPE = "fo2k.dashboard";
-var DashboardView = class extends import_obsidian57.ItemView {
+var DashboardView = class extends import_obsidian66.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.root = null;
@@ -164906,7 +169108,7 @@ var DashboardView = class extends import_obsidian57.ItemView {
     const container = this.containerEl.children[1];
     this.root = (0, import_client3.createRoot)(container);
     this.root.render(
-      /* @__PURE__ */ (0, import_jsx_runtime106.jsx)(AppContext.Provider, { value: { plugin: this.plugin, root: this.root }, children: /* @__PURE__ */ (0, import_jsx_runtime106.jsx)(MainDashboard, {}) })
+      /* @__PURE__ */ (0, import_jsx_runtime111.jsx)(AppContext.Provider, { value: { plugin: this.plugin, root: this.root }, children: /* @__PURE__ */ (0, import_jsx_runtime111.jsx)(MainDashboard, {}) })
     );
   }
   async onClose() {
@@ -164924,14 +169126,14 @@ var es_default = (0, import_custom.default)({
 });
 
 // handlers/eventHandlers.ts
-var import_obsidian58 = require("obsidian");
+var import_obsidian67 = require("obsidian");
 function registerEventHandlers(plugin) {
   plugin.registerEvent(
     plugin.app.vault.on("create", async (file) => {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
       if (!file.path.includes(plugin.settings.pathToWatch)) return;
-      if (file instanceof import_obsidian58.TFile) {
-        new import_obsidian58.Notice("Inbox is looking at new file: " + file.basename);
+      if (file instanceof import_obsidian67.TFile) {
+        new import_obsidian67.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
       }
     })
@@ -164940,8 +169142,8 @@ function registerEventHandlers(plugin) {
     plugin.app.vault.on("rename", async (file, oldPath) => {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
       if (!file.path.includes(plugin.settings.pathToWatch)) return;
-      if (file instanceof import_obsidian58.TFile) {
-        new import_obsidian58.Notice("Inbox is looking at new file: " + file.basename);
+      if (file instanceof import_obsidian67.TFile) {
+        new import_obsidian67.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
       }
     })
@@ -164971,33 +169173,14 @@ function initializeFileOrganizationCommands(plugin) {
   });
 }
 
-// apiUtils.ts
-var import_obsidian59 = require("obsidian");
-init_logger();
-async function checkLicenseKey(serverUrl, key) {
-  try {
-    const response = await (0, import_obsidian59.requestUrl)({
-      url: `${serverUrl}/api/check-key`,
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${key}`
-      }
-    });
-    return response.status === 200;
-  } catch (error) {
-    logger.error("Error checking API key:", error);
-    return false;
-  }
-}
-
 // index.ts
+var import_ollama_ai_provider2 = __toESM(require_dist5());
 init_constants();
 init_logger();
 
 // components/processing-status-bar.tsx
-var React80 = __toESM(require_react());
-var import_jsx_runtime107 = __toESM(require_jsx_runtime());
+var React86 = __toESM(require_react());
+var import_jsx_runtime112 = __toESM(require_jsx_runtime());
 function calculateProgress2(record) {
   const totalSteps = [
     "Cleaning up file..." /* CLEANUP */,
@@ -165029,8 +169212,8 @@ function getCurrentAction(record, app) {
   }
 }
 function ProcessingStatusBar({ plugin }) {
-  const [status, setStatus] = React80.useState(null);
-  React80.useEffect(() => {
+  const [status, setStatus] = React86.useState(null);
+  React86.useEffect(() => {
     const interval = setInterval(() => {
       try {
         const inbox = Inbox.getInstance();
@@ -165079,7 +169262,7 @@ function ProcessingStatusBar({ plugin }) {
     return () => clearInterval(interval);
   }, [plugin]);
   if (!status) return null;
-  return /* @__PURE__ */ (0, import_jsx_runtime107.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime112.jsxs)(
     "div",
     {
       className: "processing-status-bar",
@@ -165091,17 +169274,17 @@ function ProcessingStatusBar({ plugin }) {
         color: "var(--text-muted)"
       },
       children: [
-        status.currentFile && /* @__PURE__ */ (0, import_jsx_runtime107.jsxs)("span", { children: [
+        status.currentFile && /* @__PURE__ */ (0, import_jsx_runtime112.jsxs)("span", { children: [
           "Processing: ",
           status.currentFile,
           status.currentAction && ` (${status.currentAction})`,
-          status.progress !== void 0 && status.progress > 0 && /* @__PURE__ */ (0, import_jsx_runtime107.jsxs)("span", { children: [
+          status.progress !== void 0 && status.progress > 0 && /* @__PURE__ */ (0, import_jsx_runtime112.jsxs)("span", { children: [
             " ",
             status.progress,
             "%"
           ] })
         ] }),
-        status.queuePosition && status.totalInQueue !== void 0 && status.totalInQueue > 1 && /* @__PURE__ */ (0, import_jsx_runtime107.jsxs)("span", { children: [
+        status.queuePosition && status.totalInQueue !== void 0 && status.totalInQueue > 1 && /* @__PURE__ */ (0, import_jsx_runtime112.jsxs)("span", { children: [
           "Queue: ",
           status.queuePosition,
           "/",
@@ -165113,9 +169296,9 @@ function ProcessingStatusBar({ plugin }) {
 }
 
 // index.ts
-var React81 = __toESM(require_react());
+var React87 = __toESM(require_react());
 var import_client4 = __toESM(require_client());
-var FileOrganizer = class extends import_obsidian60.Plugin {
+var FileOrganizer = class extends import_obsidian68.Plugin {
   constructor() {
     super(...arguments);
     this.statusBarItem = null;
@@ -165189,7 +169372,7 @@ var FileOrganizer = class extends import_obsidian60.Plugin {
       return concepts;
     } catch (error) {
       logger.error("Error in identifyConceptsAndFetchChunks:", error);
-      new import_obsidian60.Notice("An error occurred while processing the document.", 6e3);
+      new import_obsidian68.Notice("An error occurred while processing the document.", 6e3);
       throw error;
     }
   }
@@ -165221,29 +169404,31 @@ var FileOrganizer = class extends import_obsidian60.Plugin {
       return formattedContent;
     } catch (error) {
       logger.error("Error formatting content:", error);
-      new import_obsidian60.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian68.Notice("An error occurred while formatting the content.", 6e3);
       return "";
     }
   }
   async appendBackupLinkToCurrentFile(currentFile, backupFile) {
+    const backupPath = backupFile.path.replace(/\.md$/, "");
     const backupLink = `
 
 ---
-[[${backupFile.path} | Link to original file]]`;
+[[${backupPath} | Link to original file]]`;
     await this.app.vault.append(currentFile, backupLink);
   }
   async appendFormattedLinkToBackupFile(backupFile, formattedFile) {
+    const formattedPath = formattedFile.path.replace(/\.md$/, "");
     const formattedLink = `
 
 ---
-[[${formattedFile.path} | Link to formatted file]]`;
+[[${formattedPath} | Link to formatted file]]`;
     await this.app.vault.append(backupFile, formattedLink);
   }
   async getFormatInstruction(classification) {
     const templateFile = this.app.vault.getAbstractFileByPath(
       `${this.settings.templatePaths}/${classification}`
     );
-    if (!templateFile || !(templateFile instanceof import_obsidian60.TFile)) {
+    if (!templateFile || !(templateFile instanceof import_obsidian68.TFile)) {
       logger.error("Template file not found or is not a valid file.");
       return "";
     }
@@ -165255,7 +169440,7 @@ var FileOrganizer = class extends import_obsidian60.Plugin {
     content: content3
   }) {
     try {
-      new import_obsidian60.Notice("Formatting content in split view...", 3e3);
+      new import_obsidian68.Notice("Formatting content in split view...", 3e3);
       const newFileName = `${file.basename}-formatted-${Date.now()}.md`;
       const newFilePath = `${file.parent?.path}/${newFileName}`;
       const newFile = await this.app.vault.create(newFilePath, "");
@@ -165273,10 +169458,10 @@ var FileOrganizer = class extends import_obsidian60.Plugin {
         this.settings.API_KEY,
         updateCallback
       );
-      new import_obsidian60.Notice("Content formatted in split view successfully", 3e3);
+      new import_obsidian68.Notice("Content formatted in split view successfully", 3e3);
     } catch (error) {
       logger.error("Error formatting content in split view:", error);
-      new import_obsidian60.Notice(
+      new import_obsidian68.Notice(
         "An error occurred while formatting the content in split view.",
         6e3
       );
@@ -165313,7 +169498,9 @@ var FileOrganizer = class extends import_obsidian60.Plugin {
         (match, tagsContent) => {
           const tagMatches = tagsContent.match(/["']([^"']*)["']/g) || [];
           const cleanedTags = tagMatches.map((tagMatch) => {
-            const cleaned = tagMatch.replace(/^["']|["']$/g, "").replace(/^#+/, "");
+            let cleaned = tagMatch.replace(/^["']|["']$/g, "").replace(/^#+/, "");
+            cleaned = cleaned.replace(/\s+/g, "_");
+            cleaned = cleaned.replace(/^_+|_+$/g, "");
             return `"${cleaned}"`;
           });
           const isMultiline = tagsContent.includes("\n");
@@ -165359,7 +169546,7 @@ ${frontmatterContent}
     content: content3
   }) {
     try {
-      new import_obsidian60.Notice("Formatting content...", 3e3);
+      new import_obsidian68.Notice("Formatting content...", 3e3);
       const backupFile = await this.backupTheFileAndAddReferenceToCurrentFile(
         file
       );
@@ -165377,10 +169564,10 @@ ${frontmatterContent}
       );
       this.appendBackupLinkToCurrentFile(file, backupFile);
       await this.appendFormattedLinkToBackupFile(backupFile, file);
-      new import_obsidian60.Notice("Content formatted successfully", 3e3);
+      new import_obsidian68.Notice("Content formatted successfully", 3e3);
     } catch (error) {
       logger.error("Error formatting content:", error);
-      new import_obsidian60.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian68.Notice("An error occurred while formatting the content.", 6e3);
     }
   }
   async streamFormatAppendInCurrentNote({
@@ -165389,7 +169576,7 @@ ${frontmatterContent}
     content: content3
   }) {
     try {
-      new import_obsidian60.Notice("Appending formatted content...", 3e3);
+      new import_obsidian68.Notice("Appending formatted content...", 3e3);
       let formattedContent = "";
       const updateCallback = async (partialContent) => {
         formattedContent = partialContent;
@@ -165402,10 +169589,10 @@ ${frontmatterContent}
         updateCallback
       );
       await this.app.vault.append(file, "\n\n" + formattedContent);
-      new import_obsidian60.Notice("Content appended successfully", 3e3);
+      new import_obsidian68.Notice("Content appended successfully", 3e3);
     } catch (error) {
       logger.error("Error appending content:", error);
-      new import_obsidian60.Notice("An error occurred while appending content.", 6e3);
+      new import_obsidian68.Notice("An error occurred while appending content.", 6e3);
     }
   }
   async streamFormatInCurrentNoteLineByLine({
@@ -165415,7 +169602,7 @@ ${frontmatterContent}
     chunkMode = "line"
   }) {
     try {
-      new import_obsidian60.Notice("Formatting content line by line...", 3e3);
+      new import_obsidian68.Notice("Formatting content line by line...", 3e3);
       const backupFile = await this.backupTheFileAndAddReferenceToCurrentFile(
         file
       );
@@ -165444,10 +169631,10 @@ ${frontmatterContent}
       );
       await this.appendBackupLinkToCurrentFile(file, backupFile);
       await this.appendFormattedLinkToBackupFile(backupFile, file);
-      new import_obsidian60.Notice("Line-by-line update done!", 3e3);
+      new import_obsidian68.Notice("Line-by-line update done!", 3e3);
     } catch (error) {
       logger.error("Error formatting content line by line:", error);
-      new import_obsidian60.Notice("An error occurred while formatting the content.", 6e3);
+      new import_obsidian68.Notice("An error occurred while formatting the content.", 6e3);
       throw error;
     }
   }
@@ -165457,7 +169644,7 @@ ${frontmatterContent}
     await this.app.vault.create(filePath, content3);
   }
   async extractTextFromPDF(file) {
-    const pdfjsLib = await (0, import_obsidian60.loadPdfJs)();
+    const pdfjsLib = await (0, import_obsidian68.loadPdfJs)();
     try {
       const arrayBuffer = await this.app.vault.readBinary(file);
       const bytes = new Uint8Array(arrayBuffer);
@@ -165522,12 +169709,10 @@ ${frontmatterContent}
     }
     return formattedContent;
   }
-  async transcribeAudio(audioBuffer, fileExtension) {
-    const fileSizeInMB = audioBuffer.byteLength / (1024 * 1024);
-    const PRESIGNED_URL_THRESHOLD_MB = 4;
-    if (fileSizeInMB > PRESIGNED_URL_THRESHOLD_MB) {
-      return this.transcribeAudioViaPresignedUrl(audioBuffer, fileExtension);
-    }
+  /**
+   * Direct upload method for audio transcription (used for files < 4MB or as fallback when R2 is not configured)
+   */
+  async transcribeAudioDirectUpload(audioBuffer, fileExtension) {
     const formData = new FormData();
     const blob = new Blob([audioBuffer], { type: `audio/${fileExtension}` });
     formData.append("audio", blob, `audio.${fileExtension}`);
@@ -165544,67 +169729,91 @@ ${frontmatterContent}
     }
     return response;
   }
+  async transcribeAudio(audioBuffer, fileExtension) {
+    const fileSizeInMB = audioBuffer.byteLength / (1024 * 1024);
+    const PRESIGNED_URL_THRESHOLD_MB = 4;
+    if (fileSizeInMB > PRESIGNED_URL_THRESHOLD_MB) {
+      return this.transcribeAudioViaPresignedUrl(audioBuffer, fileExtension);
+    }
+    return this.transcribeAudioDirectUpload(audioBuffer, fileExtension);
+  }
   async transcribeAudioViaPresignedUrl(audioBuffer, fileExtension) {
     const fileName = `audio-${Date.now()}.${fileExtension}`;
     const mimeType = `audio/${fileExtension}`;
-    const presignedUrlResponse = await fetch(
-      `${this.getServerUrl()}/api/create-upload-url`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${this.settings.API_KEY}`
-        },
-        body: JSON.stringify({
-          filename: fileName,
-          contentType: mimeType
-        })
-      }
-    );
-    if (!presignedUrlResponse.ok) {
-      const errorData = await presignedUrlResponse.json();
-      throw new Error(
-        `Failed to get presigned URL: ${errorData.error || errorData.details || "Unknown error"}`
+    try {
+      const presignedUrlResponse = await fetch(
+        `${this.getServerUrl()}/api/create-upload-url`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${this.settings.API_KEY}`
+          },
+          body: JSON.stringify({
+            filename: fileName,
+            contentType: mimeType
+          })
+        }
       );
-    }
-    const { uploadUrl, key, publicUrl } = await presignedUrlResponse.json();
-    if (!uploadUrl || !key || !publicUrl) {
-      throw new Error("Invalid response from create-upload-url endpoint");
-    }
-    const uploadResponse = await fetch(uploadUrl, {
-      method: "PUT",
-      headers: {
-        "Content-Type": mimeType
-        // DO NOT include Authorization header - presigned URL handles auth
-      },
-      body: audioBuffer
-      // Send ArrayBuffer directly - no conversion needed
-    });
-    if (!uploadResponse.ok) {
-      throw new Error(
-        `Failed to upload audio to R2: ${uploadResponse.status} ${uploadResponse.statusText}`
-      );
-    }
-    const transcribeResponse = await fetch(
-      `${this.getServerUrl()}/api/transcribe`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${this.settings.API_KEY}`
-        },
-        body: JSON.stringify({
-          fileUrl: publicUrl,
-          key,
-          extension: fileExtension
-        })
+      if (!presignedUrlResponse.ok) {
+        const errorData = await presignedUrlResponse.json();
+        const errorMessage = errorData.error || errorData.details || "Unknown error";
+        if (errorMessage.includes("Missing R2 configuration") || errorMessage.includes("R2 storage is not properly configured") || errorMessage.includes("R2_PUBLIC_URL")) {
+          console.log(
+            "R2 not configured, falling back to direct upload for self-hosted instance"
+          );
+          return this.transcribeAudioDirectUpload(audioBuffer, fileExtension);
+        }
+        throw new Error(`Failed to get presigned URL: ${errorMessage}`);
       }
-    );
-    if (!transcribeResponse.ok) {
-      const errorData = await transcribeResponse.json();
-      throw new Error(`Transcription failed: ${errorData.error}`);
+      const { uploadUrl, key, publicUrl } = await presignedUrlResponse.json();
+      if (!uploadUrl || !key || !publicUrl) {
+        throw new Error("Invalid response from create-upload-url endpoint");
+      }
+      const uploadResponse = await fetch(uploadUrl, {
+        method: "PUT",
+        headers: {
+          "Content-Type": mimeType
+          // DO NOT include Authorization header - presigned URL handles auth
+        },
+        body: audioBuffer
+        // Send ArrayBuffer directly - no conversion needed
+      });
+      if (!uploadResponse.ok) {
+        throw new Error(
+          `Failed to upload audio to R2: ${uploadResponse.status} ${uploadResponse.statusText}`
+        );
+      }
+      const transcribeResponse = await fetch(
+        `${this.getServerUrl()}/api/transcribe`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${this.settings.API_KEY}`
+          },
+          body: JSON.stringify({
+            fileUrl: publicUrl,
+            key,
+            extension: fileExtension
+          })
+        }
+      );
+      if (!transcribeResponse.ok) {
+        const errorData = await transcribeResponse.json();
+        throw new Error(`Transcription failed: ${errorData.error}`);
+      }
+      return transcribeResponse;
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      if (errorMessage.includes("presigned URL") || errorMessage.includes("R2") || errorMessage.includes("Failed to upload audio to R2")) {
+        console.log(
+          "R2 upload failed, falling back to direct upload for self-hosted instance"
+        );
+        return this.transcribeAudioDirectUpload(audioBuffer, fileExtension);
+      }
+      throw error;
     }
-    return transcribeResponse;
   }
   async generateTranscriptFromAudio(file) {
     try {
@@ -165650,9 +169859,38 @@ ${frontmatterContent}
     }
   }
   async classifyContentV2(content3, classifications) {
-    const serverUrl = this.getServerUrl();
     const cutoff = this.settings.contentCutoffChars;
     const trimmedContent = content3.slice(0, cutoff);
+    const isCloudModel = this.settings.selectedModel === "gpt-4o-mini";
+    const shouldUseLocalLLM = this.settings.showLocalLLMInChat && !isCloudModel;
+    if (shouldUseLocalLLM) {
+      const modelName = this.settings.selectedModel === "llama3.2" ? "llama3.2" : this.settings.customModelName || "llama3.2";
+      try {
+        const response2 = await generateObject({
+          model: (0, import_ollama_ai_provider2.ollama)(modelName),
+          schema: external_exports.object({
+            documentType: external_exports.string().optional()
+          }),
+          system: "Only answer with the name of the document type if it matches one of the template types. Otherwise, answer with an empty string.",
+          prompt: `Given the text content:
+
+          "${trimmedContent}"
+
+          Please identify which of the following document types best matches the content:
+
+          Template Types:
+          ${classifications.join(", ")}
+
+          If the content clearly matches one of the provided template types, respond with the name of that document type. If the content does not clearly match any of the template types, respond with an empty string.`
+        });
+        return response2.object.documentType || "";
+      } catch (error) {
+        logger.error("Error classifying with local LLM:", error);
+        const errorMessage = error instanceof Error ? error.message : "Failed to classify document with local LLM";
+        throw new Error(errorMessage);
+      }
+    }
+    const serverUrl = this.getServerUrl();
     const response = await fetch(`${serverUrl}/api/classify1`, {
       method: "POST",
       headers: {
@@ -165665,6 +169903,20 @@ ${frontmatterContent}
       })
     });
     if (!response.ok) {
+      if (response.status === 429) {
+        let errorMessage2 = "Token limit exceeded. Please upgrade your plan for more tokens.";
+        try {
+          const errorData = await response.json();
+          if (errorData?.error) {
+            errorMessage2 = errorData.error;
+          }
+        } catch {
+        }
+        const error = new Error(errorMessage2);
+        error.status = 429;
+        error.isTokenLimitError = true;
+        throw error;
+      }
       let errorMessage = `HTTP error! status: ${response.status}`;
       try {
         const errorData = await response.json();
@@ -165725,6 +169977,18 @@ ${frontmatterContent}
   }
   async checkAndCreateTemplates() {
     await checkAndCreateTemplates(this.app, this.settings);
+  }
+  async restoreTemplates() {
+    try {
+      await restoreDefaultTemplates(this.app, this.settings);
+      new import_obsidian68.Notice("Default templates restored successfully", 3e3);
+      logger.info("Default templates restored");
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      new import_obsidian68.Notice(`Failed to restore templates: ${errorMessage}`, 5e3);
+      logger.error("Failed to restore templates:", error);
+      throw error;
+    }
   }
   async ensureFolderExists(folderPath) {
     await ensureFolderExists(this.app, folderPath);
@@ -165814,7 +170078,7 @@ ${frontmatterContent}
     return processedContent;
   }
   async extractTextFromImage(image3) {
-    const base64Image = (0, import_obsidian60.arrayBufferToBase64)(image3);
+    const base64Image = (0, import_obsidian68.arrayBufferToBase64)(image3);
     const response = await fetch(`${this.getServerUrl()}/api/vision`, {
       method: "POST",
       headers: {
@@ -165865,6 +170129,56 @@ ${frontmatterContent}
   async recommendTags(content3, filePath, existingTags) {
     const cutoff = this.settings.contentCutoffChars;
     const trimmedContent = content3.slice(0, cutoff);
+    const isCloudModel = this.settings.selectedModel === "gpt-4o-mini";
+    const shouldUseLocalLLM = this.settings.showLocalLLMInChat && !isCloudModel;
+    if (shouldUseLocalLLM) {
+      const modelName = this.settings.selectedModel === "llama3.2" ? "llama3.2" : this.settings.customModelName || "llama3.2";
+      try {
+        const count = 3;
+        const response2 = await generateObject({
+          model: (0, import_ollama_ai_provider2.ollama)(modelName),
+          schema: external_exports.object({
+            suggestedTags: external_exports.array(
+              external_exports.object({
+                score: external_exports.number().min(0).max(100),
+                isNew: external_exports.boolean(),
+                tag: external_exports.string(),
+                reason: external_exports.string().min(1)
+              })
+            )
+          }),
+          system: `You are a precise tag generator. Analyze content and suggest ${count} relevant tags.
+              ${existingTags.length ? `Consider existing tags: ${existingTags.join(", ")}` : "Create new tags if needed."}
+              ${this.settings.customTagInstructions ? `Follow these custom instructions: ${this.settings.customTagInstructions}` : ""}
+
+              Guidelines:
+              - Prefer existing tags when appropriate (score them higher)
+              - Create specific, meaningful new tags when needed
+              - Score based on relevance (0-100)
+              - REQUIRED: Each tag MUST include a "reason" field explaining why it's relevant
+              - The reason should be a brief sentence (1-2 sentences) explaining the tag's relevance
+              - Focus on key themes, topics, and document type
+
+              Response format: Each tag object must have: score (number), isNew (boolean), tag (string), and reason (string).`,
+          prompt: `File: "${filePath}"
+
+              Content: """
+              ${trimmedContent}
+              """`
+        });
+        const sortedTags = response2.object.suggestedTags.sort((a, b) => (b.score ?? 0) - (a.score ?? 0)).map((tag) => ({
+          score: tag.score ?? 0,
+          isNew: tag.isNew ?? false,
+          tag: tag.tag.startsWith("#") ? tag.tag : `#${tag.tag}`,
+          reason: tag.reason || "Relevant to content theme"
+        }));
+        return sortedTags;
+      } catch (error) {
+        logger.error("Error recommending tags with local LLM:", error);
+        const errorMessage = error instanceof Error ? error.message : "Failed to recommend tags with local LLM";
+        throw new Error(errorMessage);
+      }
+    }
     const response = await fetch(`${this.getServerUrl()}/api/tags/v2`, {
       method: "POST",
       headers: {
@@ -165879,6 +170193,20 @@ ${frontmatterContent}
       })
     });
     if (!response.ok) {
+      if (response.status === 429) {
+        let errorMessage2 = "Token limit exceeded. Please upgrade your plan for more tokens.";
+        try {
+          const errorData = await response.json();
+          if (errorData?.error) {
+            errorMessage2 = errorData.error;
+          }
+        } catch {
+        }
+        const error = new Error(errorMessage2);
+        error.status = 429;
+        error.isTokenLimitError = true;
+        throw error;
+      }
       let errorMessage = `HTTP error! status: ${response.status}`;
       try {
         const errorData = await response.json();
@@ -165897,6 +170225,42 @@ ${frontmatterContent}
     const cutoff = this.settings.contentCutoffChars;
     const trimmedContent = content3.slice(0, cutoff);
     const folders = this.getAllUserFolders();
+    const isCloudModel = this.settings.selectedModel === "gpt-4o-mini";
+    const shouldUseLocalLLM = this.settings.showLocalLLMInChat && !isCloudModel;
+    if (shouldUseLocalLLM) {
+      const modelName = this.settings.selectedModel === "llama3.2" ? "llama3.2" : this.settings.customModelName || "llama3.2";
+      try {
+        const count = 3;
+        const response2 = await generateObject({
+          model: (0, import_ollama_ai_provider2.ollama)(modelName),
+          schema: external_exports.object({
+            suggestedFolders: external_exports.array(
+              external_exports.object({
+                score: external_exports.number().min(0).max(100),
+                isNewFolder: external_exports.boolean(),
+                folder: external_exports.string(),
+                reason: external_exports.string()
+              })
+            ).min(1).max(count)
+          }),
+          system: `Given the content and file name: "${fileName}", suggest exactly ${count} folders. You can use: ${folders.join(
+            ", "
+          )}. If none are relevant, suggest new folders. ${customInstructions ? `Instructions: "${customInstructions}"` : ""}`,
+          prompt: `Content: "${trimmedContent}"`
+        });
+        const sortedFolders = response2.object.suggestedFolders.sort((a, b) => b.score - a.score).map((folder) => ({
+          score: folder.score ?? 0,
+          isNewFolder: folder.isNewFolder ?? false,
+          folder: folder.folder ?? "",
+          reason: folder.reason ?? ""
+        }));
+        return sortedFolders;
+      } catch (error) {
+        logger.error("Error recommending folders with local LLM:", error);
+        const errorMessage = error instanceof Error ? error.message : "Failed to recommend folders with local LLM";
+        throw new Error(errorMessage);
+      }
+    }
     const response = await fetch(`${this.getServerUrl()}/api/folders/v2`, {
       method: "POST",
       headers: {
@@ -165911,6 +170275,20 @@ ${frontmatterContent}
       })
     });
     if (!response.ok) {
+      if (response.status === 429) {
+        let errorMessage2 = "Token limit exceeded. Please upgrade your plan for more tokens.";
+        try {
+          const errorData = await response.json();
+          if (errorData?.error) {
+            errorMessage2 = errorData.error;
+          }
+        } catch {
+        }
+        const error = new Error(errorMessage2);
+        error.status = 429;
+        error.isTokenLimitError = true;
+        throw error;
+      }
       let errorMessage = `HTTP error! status: ${response.status}`;
       try {
         const errorData = await response.json();
@@ -166018,6 +170396,53 @@ ${formattedTag}`);
       }
     });
     this.addCommand({
+      id: "restore-default-templates",
+      name: "Restore default templates",
+      callback: async () => {
+        const confirmed = await new Promise((resolve2) => {
+          class RestoreTemplatesModal extends import_obsidian68.Modal {
+            onOpen() {
+              const { contentEl } = this;
+              contentEl.empty();
+              contentEl.createEl("h2", { text: "Restore Default Templates" });
+              contentEl.createEl("p", {
+                text: "This will restore the following templates to their original plugin versions:"
+              });
+              const list3 = contentEl.createEl("ul");
+              list3.createEl("li", { text: "meeting_note.md" });
+              list3.createEl("li", { text: "youtube_video.md" });
+              list3.createEl("li", { text: "enhance.md" });
+              list3.createEl("li", { text: "research_paper.md" });
+              list3.createEl("li", { text: "flash_cards.md" });
+              contentEl.createEl("p", {
+                text: "Your custom templates will not be affected.",
+                attr: { style: "margin-top: 1em; font-weight: bold;" }
+              });
+              const buttonContainer = contentEl.createDiv({
+                attr: { style: "display: flex; gap: 10px; margin-top: 1em;" }
+              });
+              buttonContainer.createEl("button", { text: "Cancel" }).addEventListener("click", () => {
+                resolve2(false);
+                this.close();
+              });
+              buttonContainer.createEl("button", {
+                text: "Restore",
+                attr: { style: "background: var(--interactive-accent);" }
+              }).addEventListener("click", () => {
+                resolve2(true);
+                this.close();
+              });
+            }
+          }
+          const modal = new RestoreTemplatesModal(this.app);
+          modal.open();
+        });
+        if (confirmed) {
+          await this.restoreTemplates();
+        }
+      }
+    });
+    this.addCommand({
       id: "view-meetings-metadata",
       name: "View Meetings Metadata (Debug)",
       callback: async () => {
@@ -166025,7 +170450,7 @@ ${formattedTag}`);
         const manager = new MeetingMetadataManager2(this);
         const metadata = await manager.loadMetadata();
         console.log("Meetings Metadata:", JSON.stringify(metadata, null, 2));
-        new import_obsidian60.Notice(
+        new import_obsidian68.Notice(
           "Meetings metadata logged to console. Check Developer Tools (Ctrl+Shift+I)"
         );
       }
@@ -166044,7 +170469,78 @@ ${formattedTag}`);
           });
           view2?.activateTab("chat");
         } else {
-          new import_obsidian60.Notice("No text selected");
+          new import_obsidian68.Notice("No text selected");
+        }
+      }
+    });
+    this.addCommand({
+      id: "test-screenpipe",
+      name: "Test ScreenPipe Connection",
+      callback: async () => {
+        const { ScreenpipeClient: ScreenpipeClient2 } = await Promise.resolve().then(() => (init_screenpipe_client(), screenpipe_client_exports));
+        const client = new ScreenpipeClient2(this.settings.screenpipeApiUrl);
+        const isAvailable = await client.isAvailable();
+        if (!isAvailable) {
+          new import_obsidian68.Notice(
+            "\u274C ScreenPipe not available on " + this.settings.screenpipeApiUrl,
+            5e3
+          );
+          return;
+        }
+        new import_obsidian68.Notice("\u2705 ScreenPipe connected!", 2e3);
+        try {
+          const results = await client.search({ limit: 5 });
+          new import_obsidian68.Notice(`\u2705 Found ${results.length} results`, 3e3);
+          console.log("ScreenPipe test results:", results);
+        } catch (error) {
+          new import_obsidian68.Notice(
+            "\u274C Search failed: " + (error instanceof Error ? error.message : "Unknown error"),
+            5e3
+          );
+        }
+      }
+    });
+    this.addCommand({
+      id: "test-screenpipe-search",
+      name: "Test ScreenPipe Search (Recent Activity)",
+      callback: async () => {
+        if (!this.settings.enableScreenpipe) {
+          new import_obsidian68.Notice("\u274C ScreenPipe is disabled. Enable it in Settings > Experiments > Integrations", 5e3);
+          return;
+        }
+        const { ScreenpipeClient: ScreenpipeClient2 } = await Promise.resolve().then(() => (init_screenpipe_client(), screenpipe_client_exports));
+        const client = new ScreenpipeClient2(this.settings.screenpipeApiUrl);
+        const isAvailable = await client.isAvailable();
+        if (!isAvailable) {
+          new import_obsidian68.Notice(
+            "\u274C ScreenPipe not available on " + this.settings.screenpipeApiUrl,
+            5e3
+          );
+          return;
+        }
+        new import_obsidian68.Notice("\u{1F50D} Searching recent activity...", 2e3);
+        try {
+          const thirtyMinutesAgo = new Date(Date.now() - 30 * 60 * 1e3).toISOString();
+          const results = await client.search({
+            limit: 10,
+            start_time: thirtyMinutesAgo,
+            content_type: "all"
+          });
+          if (results.length === 0) {
+            new import_obsidian68.Notice("\u2139\uFE0F No recent activity found in last 30 minutes", 3e3);
+          } else {
+            const apps = [...new Set(results.map((r3) => r3.content?.app_name || "Unknown"))];
+            new import_obsidian68.Notice(
+              `\u2705 Found ${results.length} result${results.length > 1 ? "s" : ""} from ${apps.length} app${apps.length > 1 ? "s" : ""}: ${apps.join(", ")}`,
+              5e3
+            );
+            console.log("ScreenPipe search results:", results);
+          }
+        } catch (error) {
+          new import_obsidian68.Notice(
+            "\u274C Search failed: " + (error instanceof Error ? error.message : "Unknown error"),
+            5e3
+          );
         }
       }
     });
@@ -166061,7 +170557,9 @@ ${formattedTag}`);
     });
     this.statusBarItem = this.addStatusBarItem();
     this.statusBarRoot = (0, import_client4.createRoot)(this.statusBarItem);
-    this.statusBarRoot.render(React81.createElement(ProcessingStatusBar, { plugin: this }));
+    this.statusBarRoot.render(
+      React87.createElement(ProcessingStatusBar, { plugin: this })
+    );
   }
   async saveSettings() {
     await this.saveData(this.settings);
@@ -166100,7 +170598,7 @@ ${formattedTag}`);
   async appendTranscriptToActiveFile(parentFile, audioFileName, transcriptIterator) {
     const fileContent = await this.app.vault.read(parentFile);
     if (this.hasExistingTranscript(fileContent, audioFileName)) {
-      new import_obsidian60.Notice(
+      new import_obsidian68.Notice(
         `Transcript already exists for ${audioFileName}. Skipping transcription.`,
         5e3
       );
@@ -166140,19 +170638,19 @@ ${formattedTag}`);
         );
       }
     }
-    new import_obsidian60.Notice(
+    new import_obsidian68.Notice(
       `Transcription completed for ${audioFileName} (${totalAppended} characters)`,
       5e3
     );
   }
   async generateUniqueBackupFileName(originalFile) {
-    const baseFileName = `${originalFile.basename}_backup_${(0, import_obsidian60.moment)().format(
+    const baseFileName = `${originalFile.basename}_backup_${(0, import_obsidian68.moment)().format(
       "YYYYMMDD_HHmmss"
     )}`;
     let fileName = `${baseFileName}.${originalFile.extension}`;
     let counter2 = 1;
     while (await this.app.vault.adapter.exists(
-      (0, import_obsidian60.normalizePath)(`${this.settings.backupFolderPath}/${fileName}`)
+      (0, import_obsidian68.normalizePath)(`${this.settings.backupFolderPath}/${fileName}`)
     )) {
       fileName = `${baseFileName}_${counter2}.${originalFile.extension}`;
       counter2++;
@@ -166161,24 +170659,28 @@ ${formattedTag}`);
   }
   async backupTheFileAndAddReferenceToCurrentFile(file) {
     const backupFileName = await this.generateUniqueBackupFileName(file);
-    const backupFilePath = (0, import_obsidian60.normalizePath)(
+    const backupFilePath = (0, import_obsidian68.normalizePath)(
       `${this.settings.backupFolderPath}/${backupFileName}`
     );
     const backupFile = await this.app.vault.copy(file, backupFilePath);
     return backupFile;
   }
   async getTemplateInstructions(templateName) {
-    const templateFolder = this.app.vault.getAbstractFileByPath(
-      this.settings.templatePaths
-    );
-    if (!templateFolder || !(templateFolder instanceof import_obsidian60.TFolder)) {
-      logger.error("Template folder not found or is not a valid folder.");
+    const normalizedPath = (0, import_obsidian68.normalizePath)(this.settings.templatePaths);
+    await ensureFolderExists(this.app, normalizedPath);
+    await this.checkAndCreateTemplates();
+    await new Promise((resolve2) => setTimeout(resolve2, 100));
+    const templateFolder = this.app.vault.getAbstractFileByPath(normalizedPath);
+    if (!templateFolder || !(templateFolder instanceof import_obsidian68.TFolder)) {
+      logger.error(
+        `Template folder not found or is not a valid folder. Path: ${normalizedPath}`
+      );
       return "";
     }
     const templateFile = templateFolder.children.find(
-      (file) => file instanceof import_obsidian60.TFile && file.basename === templateName
+      (file) => file instanceof import_obsidian68.TFile && file.basename === templateName
     );
-    if (!templateFile || !(templateFile instanceof import_obsidian60.TFile)) {
+    if (!templateFile || !(templateFile instanceof import_obsidian68.TFile)) {
       logger.error("Template file not found or is not a valid file.");
       return "";
     }
@@ -166187,15 +170689,19 @@ ${formattedTag}`);
   // create a getTemplatesV2 that returns a list of template names only
   // and doesn't reuse getTemplates()
   async getTemplateNames() {
-    const templateFolder = this.app.vault.getAbstractFileByPath(
-      this.settings.templatePaths
-    );
-    if (!templateFolder || !(templateFolder instanceof import_obsidian60.TFolder)) {
-      logger.error("Template folder not found or is not a valid folder.");
+    const normalizedPath = (0, import_obsidian68.normalizePath)(this.settings.templatePaths);
+    await ensureFolderExists(this.app, normalizedPath);
+    await this.checkAndCreateTemplates();
+    await new Promise((resolve2) => setTimeout(resolve2, 100));
+    const templateFolder = this.app.vault.getAbstractFileByPath(normalizedPath);
+    if (!templateFolder || !(templateFolder instanceof import_obsidian68.TFolder)) {
+      logger.error(
+        `Template folder not found or is not a valid folder. Path: ${normalizedPath}`
+      );
       return [];
     }
     const templateFiles = templateFolder.children.filter(
-      (file) => file instanceof import_obsidian60.TFile
+      (file) => file instanceof import_obsidian68.TFile
     );
     return templateFiles.map((file) => file.basename);
   }
@@ -166265,10 +170771,10 @@ ${formattedTag}`);
       for (const folderPath of folderPaths) {
         await ensureFolderExists(this.app, folderPath);
       }
-      new import_obsidian60.Notice("All required folders have been created successfully!", 3e3);
+      new import_obsidian68.Notice("All required folders have been created successfully!", 3e3);
     } catch (error) {
       console.error("Failed to create required folders:", error);
-      new import_obsidian60.Notice(
+      new import_obsidian68.Notice(
         "There was an error creating the required folders. Please check console for details.",
         5e3
       );

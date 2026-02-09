@@ -49,9 +49,10 @@
   "pdfPageLimit": 10,
   "enableProcessingNotifications": true,
   "showSyncTab": false,
-  "fabricPaths": "_NoteCompanion/Fabric",
-  "enableFabric": false,
   "enableScreenpipe": false,
+  "screenpipeApiUrl": "http://localhost:3030",
   "screenpipeTimeRange": 8,
-  "queryScreenpipeLimit": 250
+  "queryScreenpipeLimit": 250,
+  "fabricPaths": "_NoteCompanion/Fabric",
+  "enableFabric": false
 }
