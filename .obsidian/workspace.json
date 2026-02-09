@@ -235,9 +235,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Neue Base erstellen": false,
       "homepage:Open homepage": false,
       "graph:Graph-Ansicht öffnen": false,
-      "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "switcher:Schnellauswahl öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -255,7 +255,7 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "dfe52a084a7fe93d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Organisation_von_Obsidian/Home.md",
     "Recordings",
