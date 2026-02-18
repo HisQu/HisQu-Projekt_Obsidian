@@ -4,6 +4,28 @@
     "type": "split",
     "children": [
       {
+        "id": "80dfc7b3e402a635",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b7a48610e6d2158f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
+                "page": 1,
+                "left": -22,
+                "top": 845,
+                "zoom": 0.676578052160766
+              },
+              "icon": "lucide-file-text",
+              "title": "koenigFertigVorerstUnfertigkeit2026"
+            }
+          }
+        ]
+      },
+      {
         "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
@@ -13,7 +35,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Literatur/Fertig – vorerst. Unfertigkeit als epistemischer Wert in den digitalen Geisteswissenschaften Mareike König 2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +50,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Fertig – vorerst. Unfertigkeit als epistemischer Wert in den digitalen Geisteswissenschaften Mareike König 2026"
             }
           }
         ]
@@ -196,7 +218,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,7 +246,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Home"
+              "title": "Graph von koenigFertigVorerstUnfertigkeit2026"
             }
           }
         ]
@@ -255,8 +277,11 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "b7a48610e6d2158f",
   "lastOpenFiles": [
+    "Literatur/Fertig – vorerst. Unfertigkeit als epistemischer Wert in den digitalen Geisteswissenschaften Mareike König 2026.md",
+    "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
+    "Literatur/Autoren/Mareike König.md",
     "Organisation_von_Obsidian/Home.md",
     "Literatur/The Measure of the Archive. The Ro­bustness of Network Analysis in Early Modern Correspondence Yann C. Ryan, Sebastian E. Ahnert 2021.md",
     "PDFs/RyanMeasureArchiveRobustnessNetworkAnalysisEarlyModernCorrespondence.pdf",
@@ -288,11 +313,8 @@
     "excalibrain.md",
     "Literatur/Autoren/Hellmuth Rössler.md",
     "Literatur/Deutsches Patriziat 1430-1740 Hellmuth Rössler 1968.md",
-    "Literatur/Autoren/Thomas Bardelle.md",
-    "Highlights for BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.md",
     "Organisation_von_Obsidian/Bilder/logoBannerHisQu.png",
     "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
-    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",

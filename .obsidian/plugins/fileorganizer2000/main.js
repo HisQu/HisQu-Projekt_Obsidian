@@ -111925,7 +111925,7 @@ var FileOrganizerSettings = class {
     // Enable ScreenPipe integration for screen activity search
     this.screenpipeApiUrl = "http://localhost:3030";
     // ScreenPipe API URL
-    this.screenpipeTimeRange = 2;
+    this.screenpipeTimeRange = 6;
     // Default time range in hours for ScreenPipe searches (1-24)
     this.queryScreenpipeLimit = 10;
   }
@@ -112223,37 +112223,11 @@ var TranscriptionButton = ({
   content: content3
 }) => {
   const [transcribing, setTranscribing] = React18.useState(false);
-  const MAX_FILE_SIZE_MB = 25;
-  const MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024;
   const checkAudioFiles = () => {
     const audioRegex = /!\[\[(.*?\.(mp3|wav|m4a|ogg|webm))]]/gi;
     const matches2 = Array.from(content3.matchAll(audioRegex));
     if (matches2.length === 0) {
       return { valid: false, error: "No audio files found" };
-    }
-    const oversizedFiles = [];
-    for (const match of matches2) {
-      const audioFileName = match[1];
-      const audioFile = plugin.app.metadataCache.getFirstLinkpathDest(
-        audioFileName,
-        "."
-      );
-      if (!(audioFile instanceof import_obsidian15.TFile)) {
-        continue;
-      }
-      const fileSizeInBytes = audioFile.stat.size;
-      const fileSizeInMB = fileSizeInBytes / (1024 * 1024);
-      if (fileSizeInBytes > MAX_FILE_SIZE_BYTES) {
-        oversizedFiles.push(`${audioFileName} (${fileSizeInMB.toFixed(2)}MB)`);
-      }
-    }
-    if (oversizedFiles.length > 0) {
-      return {
-        valid: false,
-        error: `File(s) too large (>${MAX_FILE_SIZE_MB}MB): ${oversizedFiles.join(
-          ", "
-        )}. Please compress or split the audio file.`
-      };
     }
     return { valid: true };
   };
@@ -112312,22 +112286,21 @@ var TranscriptionButton = ({
     }
   };
   const validation = checkAudioFiles();
-  const hasOversizedFiles = !validation.valid && validation.error?.includes("too large");
   return /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)("div", { className: "flex flex-col gap-2", children: [
     /* @__PURE__ */ (0, import_jsx_runtime28.jsx)(
       "button",
       {
         className: "flex items-center gap-2 bg-[--interactive-accent] text-[--text-on-accent] px-4 py-2 hover:bg-[--interactive-accent-hover] disabled:opacity-50 disabled:cursor-not-allowed",
         onClick: handleTranscribe,
-        disabled: transcribing || hasOversizedFiles,
-        title: hasOversizedFiles ? validation.error : void 0,
+        disabled: transcribing || !validation.valid,
+        title: !validation.valid ? validation.error : void 0,
         children: transcribing ? /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)(import_jsx_runtime28.Fragment, { children: [
           /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("span", { className: "animate-spin", children: "\u27F3" }),
           /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("span", { children: "Transcribing..." })
         ] }) : "Transcribe Audio"
       }
     ),
-    hasOversizedFiles && /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("div", { className: "text-xs text-[--text-error] px-2", children: validation.error })
+    !validation.valid && validation.error && /* @__PURE__ */ (0, import_jsx_runtime28.jsx)("div", { className: "text-xs text-[--text-error] px-2", children: validation.error })
   ] });
 };
 
@@ -114035,6 +114008,7 @@ async function safeMove(app, file, destinationPath) {
   const desiredPath = `${destinationPath}/${file.name}`;
   const availablePath = await getAvailablePath(app, desiredPath);
   await app.fileManager.renameFile(file, availablePath);
+  return availablePath;
 }
 async function sanitizeContent(content3) {
   try {
@@ -114183,8 +114157,12 @@ var Inbox = class _Inbox {
       },
       onComplete: () => {
       },
-      onError: (error) => {
+      onError: (error, file) => {
         logger.error("Queue processing error:", error);
+        new import_obsidian20.Notice(
+          `Note Companion: Processing failed for ${file.basename}. ${error.message}`,
+          6e3
+        );
       }
     });
   }
@@ -114339,11 +114317,16 @@ var Inbox = class _Inbox {
 async function moveAttachmentFile(context) {
   if (VALID_MEDIA_EXTENSIONS.includes(context.inboxFile.extension)) {
     context.attachmentFile = context.inboxFile;
-    await safeMove(
+    const newPath = await safeMove(
       context.plugin.app,
       context.inboxFile,
       context.plugin.settings.attachmentsPath
     );
+    const movedFile = context.plugin.app.vault.getAbstractFileByPath(newPath);
+    if (movedFile instanceof import_obsidian20.TFile) {
+      context.attachmentFile = movedFile;
+      context.inboxFile = movedFile;
+    }
   }
   return context;
 }
@@ -114458,7 +114441,7 @@ async function getContentStep(context) {
   let finalContent = content3;
   if (VALID_AUDIO_EXTENSIONS.includes(context.inboxFile?.extension) && context.attachmentFile && context.containerFile) {
     const audioFileName = context.attachmentFile.name;
-    const audioLink = `![[${audioFileName}]]
+    const audioLink = `![[${context.attachmentFile.path}]]
 
 `;
     const transcriptHeader = `## Transcript for ${audioFileName}
@@ -157347,7 +157330,7 @@ function ScreenpipeHandler({
           }
         }
         const userLimit = currentPlugin.settings.queryScreenpipeLimit || 10;
-        const userTimeRange = currentPlugin.settings.screenpipeTimeRange || 2;
+        const userTimeRange = currentPlugin.settings.screenpipeTimeRange || 6;
         let startTime = rawArgs.start_time && rawArgs.start_time.trim() !== "" ? rawArgs.start_time : void 0;
         let endTime = rawArgs.end_time && rawArgs.end_time.trim() !== "" ? rawArgs.end_time : void 0;
         if (!startTime && !endTime) {
@@ -166925,13 +166908,6 @@ var TranscribeHandler = class {
           error: "Recording file not found"
         };
       }
-      const fileSizeInMB = file.stat.size / (1024 * 1024);
-      if (fileSizeInMB > 25) {
-        return {
-          success: false,
-          error: `Recording is too large (${fileSizeInMB.toFixed(2)} MB). Maximum is 25MB. Please record a shorter meeting or split into multiple recordings.`
-        };
-      }
       const quotaCheck = await this.checkQuota(plugin, file);
       if (!quotaCheck.allowed) {
         return {
@@ -167609,11 +167585,23 @@ var MEETING_WINDOW_KEYWORDS = [
   "teams"
   // Microsoft Teams in browser (e.g. "Microsoft Teams - Meeting" in Chrome)
 ];
+var MEETING_URL_PATTERNS = [
+  "meet.google.com",
+  "zoom.us/",
+  "zoom.us/j/",
+  "teams.microsoft.com",
+  "webex.com",
+  "meet.webex.com",
+  "slack.com/"
+];
 function isMeetingLike(content3) {
   const app = (content3.app_name ?? "").toLowerCase().trim();
   if (MEETING_APP_NAMES.has(app)) return true;
   const window2 = (content3.window_name ?? "").toLowerCase();
-  return MEETING_WINDOW_KEYWORDS.some((kw) => window2.includes(kw));
+  if (MEETING_WINDOW_KEYWORDS.some((kw) => window2.includes(kw))) return true;
+  const urlRaw = (content3.browser_url ?? content3.url ?? "").toLowerCase();
+  if (MEETING_URL_PATTERNS.some((p) => urlRaw.includes(p))) return true;
+  return false;
 }
 
 // views/assistant/meetings/screenpipe-meetings.tsx
@@ -167638,7 +167626,7 @@ var ScreenpipeMeetings = ({
           setResults([]);
           return;
         }
-        const hours = plugin.settings.screenpipeTimeRange || 2;
+        const hours = plugin.settings.screenpipeTimeRange || 6;
         const end = /* @__PURE__ */ new Date();
         const start2 = new Date(end.getTime() - hours * 60 * 60 * 1e3);
         const searchResults = await client.search({
@@ -167877,7 +167865,7 @@ var ScreenpipeMeetings = ({
     results.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime98.jsxs)("p", { className: tw("text-sm text-[--text-muted]"), children: [
       "No meeting audio in the last",
       " ",
-      plugin.settings.screenpipeTimeRange ?? 2,
+      plugin.settings.screenpipeTimeRange ?? 6,
       " hours."
     ] }) : /* @__PURE__ */ (0, import_jsx_runtime98.jsx)("div", { className: tw("space-y-2"), children: results.map((result, index2) => {
       const c2 = result.content ?? {};
@@ -169127,11 +169115,17 @@ var es_default = (0, import_custom.default)({
 
 // handlers/eventHandlers.ts
 var import_obsidian67 = require("obsidian");
+init_constants();
+function isInInboxFolder(filePath, pathToWatch) {
+  if (!pathToWatch) return false;
+  return filePath === pathToWatch || filePath.startsWith(pathToWatch + "/");
+}
 function registerEventHandlers(plugin) {
+  const pathToWatch = plugin.settings.pathToWatch;
   plugin.registerEvent(
     plugin.app.vault.on("create", async (file) => {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
-      if (!file.path.includes(plugin.settings.pathToWatch)) return;
+      if (!isInInboxFolder(file.path, pathToWatch)) return;
       if (file instanceof import_obsidian67.TFile) {
         new import_obsidian67.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
@@ -169139,13 +169133,21 @@ function registerEventHandlers(plugin) {
     })
   );
   plugin.registerEvent(
-    plugin.app.vault.on("rename", async (file, oldPath) => {
+    plugin.app.vault.on("rename", async (file, _oldPath) => {
       await new Promise((resolve2) => setTimeout(resolve2, 1e3));
-      if (!file.path.includes(plugin.settings.pathToWatch)) return;
+      if (!isInInboxFolder(file.path, pathToWatch)) return;
       if (file instanceof import_obsidian67.TFile) {
         new import_obsidian67.Notice("Inbox is looking at new file: " + file.basename);
         Inbox.getInstance().enqueueFiles([file]);
       }
+    })
+  );
+  plugin.registerEvent(
+    plugin.app.vault.on("modify", (file) => {
+      if (!(file instanceof import_obsidian67.TFile)) return;
+      if (!isInInboxFolder(file.path, pathToWatch)) return;
+      if (!VALID_MEDIA_EXTENSIONS.includes(file.extension)) return;
+      Inbox.getInstance().enqueueFiles([file]);
     })
   );
 }
@@ -169817,17 +169819,7 @@ ${frontmatterContent}
   }
   async generateTranscriptFromAudio(file) {
     try {
-      const fileSizeInBytes = file.stat.size;
-      const fileSizeInMB = fileSizeInBytes / (1024 * 1024);
-      const MAX_FILE_SIZE_MB = 25;
-      const MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024;
-      if (fileSizeInBytes > MAX_FILE_SIZE_BYTES) {
-        throw new Error(
-          `Audio file is too large (${fileSizeInMB.toFixed(
-            2
-          )}MB). Maximum size is ${MAX_FILE_SIZE_MB}MB. Please compress or split the audio file.`
-        );
-      }
+      const fileSizeInMB = file.stat.size / (1024 * 1024);
       const audioBuffer = await this.app.vault.readBinary(file);
       console.log(
         `[Plugin] Transcribing audio file: ${file.name}, size: ${fileSizeInMB.toFixed(2)}MB`
@@ -169958,7 +169950,7 @@ ${frontmatterContent}
       markdownFile,
       `
 
-![[${attachmentFile.name}]]`
+![[${attachmentFile.path}]]`
     );
   }
   async appendToFrontMatter(file, key, value) {
@@ -170105,9 +170097,11 @@ ${frontmatterContent}
     return text6;
   }
   async getBacklog() {
+    const pathToWatch = this.settings.pathToWatch;
+    if (!pathToWatch) return [];
     const allFiles = this.app.vault.getFiles();
     const pendingFiles = allFiles.filter(
-      (file) => file.path.includes(this.settings.pathToWatch)
+      (file) => file.path === pathToWatch || file.path.startsWith(pathToWatch + "/")
     );
     return pendingFiles;
   }
@@ -170115,6 +170109,11 @@ ${frontmatterContent}
     const pendingFiles = await this.getBacklog();
     logMessage("Enqueuing files from backlog V3");
     Inbox.getInstance().enqueueFiles(pendingFiles);
+    if (pendingFiles.length > 0) {
+      new import_obsidian68.Notice(
+        `Note Companion: Processing ${pendingFiles.length} file(s) from inbox`
+      );
+    }
     return;
   }
   async getAllVaultTags() {
@@ -170377,6 +170376,13 @@ ${formattedTag}`);
       callback: async () => {
         const view2 = await this.ensureAssistantView();
         view2?.activateTab("inbox");
+      }
+    });
+    this.addCommand({
+      id: "process-inbox-now",
+      name: "Process inbox now",
+      callback: async () => {
+        await this.processBacklog();
       }
     });
     this.addCommand({
