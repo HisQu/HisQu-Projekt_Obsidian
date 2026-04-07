@@ -256,7 +256,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 500.5
+    "width": 311.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -280,7 +280,7 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "410b79821228403b",
+  "active": "dfe52a084a7fe93d",
   "lastOpenFiles": [
     "Literatur/Autoren/Ulrich Schwarz.md",
     "Literatur/Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024.md",
