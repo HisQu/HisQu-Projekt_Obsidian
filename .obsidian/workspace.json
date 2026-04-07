@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Das Vatikanische Archiv und die niedersächsische Geschichte Friedrich Bock 1955.md",
+                "file": "Literatur/Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Das Vatikanische Archiv und die niedersächsische Geschichte Friedrich Bock 1955"
+              "title": "Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024"
             }
           }
         ],
@@ -221,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Das Vatikanische Archiv und die niedersächsische Geschichte Friedrich Bock 1955.md",
+                "file": "Literatur/Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -249,7 +249,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Das Vatikanische Archiv und die niedersächsische Geschichte Friedrich Bock 1955"
+              "title": "Graph von Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024"
             }
           }
         ]
@@ -282,8 +282,10 @@
   },
   "active": "410b79821228403b",
   "lastOpenFiles": [
-    "Unbenannt.md",
+    "PDFs/SchwarzRegestenauspaepstlichenRegisterserienAnmerkungenRepertoriumGermanicumonlineundofflinemitBeispielenausDioezesePassau.pdf",
     "Literatur/Das Vatikanische Archiv und die niedersächsische Geschichte Friedrich Bock 1955.md",
+    "Literatur/Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024.md",
+    "Unbenannt.md",
     "Organisation_von_Obsidian/Home.md",
     "Literatur/Autoren/Enno Bünz.md",
     "Test.md",
@@ -309,8 +311,6 @@
     "Literatur/Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001.md",
     "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
     "Literatur/Fertig – vorerst. Unfertigkeit als epistemischer Wert in den digitalen Geisteswissenschaften Mareike König 2026.md",
-    "Literatur/Autoren/Mareike König.md",
-    "Literatur/The Measure of the Archive. The Ro­bustness of Network Analysis in Early Modern Correspondence Yann C. Ryan, Sebastian E. Ahnert 2021.md",
     "PDFs/RyanMeasureArchiveRobustnessNetworkAnalysisEarlyModernCorrespondence.pdf",
     "Recordings",
     "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
