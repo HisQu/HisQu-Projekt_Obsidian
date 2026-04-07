@@ -1,7 +1,7 @@
 {
   "cssTheme": "Minimal",
   "theme": "obsidian",
-  "accentColor": "#741c06",
+  "accentColor": "#ffffff",
   "interfaceFontFamily": "American Typewriter",
   "enabledCssSnippets": [
     "Dashboard",

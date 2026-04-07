@@ -4,28 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "80dfc7b3e402a635",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b7a48610e6d2158f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
-                "page": 1,
-                "left": -22,
-                "top": 845,
-                "zoom": 0.676578052160766
-              },
-              "icon": "lucide-file-text",
-              "title": "koenigFertigVorerstUnfertigkeit2026"
-            }
-          }
-        ]
-      },
-      {
         "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
@@ -35,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literatur/Fertig – vorerst. Unfertigkeit als epistemischer Wert in den digitalen Geisteswissenschaften Mareike König 2026.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -50,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Fertig – vorerst. Unfertigkeit als epistemischer Wert in den digitalen Geisteswissenschaften Mareike König 2026"
+              "title": "Home"
             }
           }
         ]
@@ -106,7 +84,8 @@
               "title": "Lesezeichen"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -218,7 +197,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
+                "file": "Literatur/Autoren/Enno Bünz.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -246,14 +225,15 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von koenigFertigVorerstUnfertigkeit2026"
+              "title": "Graph von Enno Bünz"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 500.5
+    "width": 500.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -277,44 +257,44 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "b7a48610e6d2158f",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Literatur/Fertig – vorerst. Unfertigkeit als epistemischer Wert in den digitalen Geisteswissenschaften Mareike König 2026.md",
-    "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
-    "Literatur/Autoren/Mareike König.md",
+    "Literatur/Autoren/Enno Bünz.md",
+    "Test.md",
+    "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels.pdf",
+    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
+    "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
+    "excalibrain.md",
+    "Literatur/Autoren/Walter Deeters.md",
+    "Literatur/Uno spoglio moderno dette fonti vaticane. Il Repertorium Germanicum e il Repertorium Poenitentiariae Ludwig Schmugge, Jörg Hörnschemeyer 2015.md",
+    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+    "Literatur/Autoren/Gustav Droysen.md",
+    "Literatur/Autoren/Jörg Hörnschemeyer.md",
+    "Literatur/Der Beitrag des Repertorium Germanicum zur Kloster- und Stiftskirchenforschung in der Region. Schleswig-Holsteinische Beispiele Oliver Auge 2019.md",
+    "Literatur/Dithmarschen und die römische Kurie. Zum Nutzen des _Repertorium Germanicum_ für die Landesgeschichte Enno Bünz 2023.md",
+    "Literatur/Autoren/Robert Gramsch-Stehfest.md",
+    "Literatur/Spätmittelalterlicher deutscher Niederadel. Ein landschaftlicher Vergleich Joachim Schneider 2003.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
+    "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
+    "Literatur/Autoren/Georges Duby.md",
+    "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
+    "Literatur/Autoren/Hellmuth Rössler.md",
+    "Literatur/Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001.md",
     "Organisation_von_Obsidian/Home.md",
+    "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
+    "Literatur/Fertig – vorerst. Unfertigkeit als epistemischer Wert in den digitalen Geisteswissenschaften Mareike König 2026.md",
+    "Literatur/Autoren/Mareike König.md",
     "Literatur/The Measure of the Archive. The Ro­bustness of Network Analysis in Early Modern Correspondence Yann C. Ryan, Sebastian E. Ahnert 2021.md",
     "PDFs/RyanMeasureArchiveRobustnessNetworkAnalysisEarlyModernCorrespondence.pdf",
     "_NoteCompanion/Templates/flash_cards.md",
     "Recordings",
-    "Literatur/When it was 2024 – Generative AI in the field of digital scholarly editions Christopher Pollin, Franz Fischer, Patrick Sahle, Martina Scholger, Georg Vogeler 2025.md",
-    "Literatur/Bridging Digital History Methods and Source Criticism. A Research Agenda for the Study of Inquisition Records David Zbíral, Kaarel Sikk, Robert L. J. Shaw 2025.md",
-    "Literatur/Autoren/Franz Fischer.md",
-    "Literatur/Autoren/Patrick Sahle.md",
-    "Literatur/Autoren/Martina Scholger.md",
-    "Literatur/Autoren/Georg Vogeler.md",
-    "Literatur/Autoren/Christopher Pollin.md",
-    "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
-    "Literatur/Aschkenasische Juden vor der Kurie in Rom im 15. Jahrhundert Eine Auswertung des Repertorium Germanicum (mit Quellenanhang) Thomas Bardelle 2012.md",
-    "Literatur/Adelsherrschaft und Adelskultur in Deutschland Johannes Rogalla von Bieberstein 1988.md",
-    "Literatur/Adel und Buch. Studien zur Geisteswelt des fränkischen Adels am Beispiel seiner Bibliotheken vom 15. Bis zum 18. Jahrhundert Eva Pleticha 1983.md",
-    "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
     "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
     "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
     "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions 1.pdf",
     "PDFs/ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf",
     "PDFs/BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.pdf",
-    "PDFs/ZbiralBridgingDigitalHistoryMethodsSourceCriticismResearchAgendaStudyInquisitionRecords.pdf",
-    "Literatur/Autoren/David Zbíral.md",
-    "conflict-files-obsidian-git.md",
-    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
-    "RoesslerUniversitaetundGelehrtenstand14001800BuedingerVortr1966.pdf.md",
-    "BardelleAschkenasischeJudenvorKurieRomim15JahrhundertAuswertungRepertoriumGermanicummitQuellenanhang.pdf.md",
-    "excalibrain.md",
-    "Literatur/Autoren/Hellmuth Rössler.md",
-    "Literatur/Deutsches Patriziat 1430-1740 Hellmuth Rössler 1968.md",
     "Organisation_von_Obsidian/Bilder/logoBannerHisQu.png",
-    "PDFs/WernerAdelMehrzweckElitevorModerne.pdf",
     "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
     "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
     "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
