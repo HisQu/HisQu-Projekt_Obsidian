@@ -197,7 +197,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Autoren/Enno Bünz.md",
+                "file": "Organisation_von_Obsidian/Home.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -225,15 +225,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Enno Bünz"
+              "title": "Graph von Home"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 500.5,
-    "collapsed": true
+    "width": 500.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -257,7 +256,7 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "dfe52a084a7fe93d",
   "lastOpenFiles": [
     "Literatur/Autoren/Enno Bünz.md",
     "Test.md",

@@ -665,6 +665,9 @@
   -moz-user-select: text;
   user-select: text;
 }
+.resize {
+  resize: both;
+}
 .list-inside {
   list-style-position: inside;
 }
