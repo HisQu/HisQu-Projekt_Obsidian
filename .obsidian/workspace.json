@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Organisation_von_Obsidian/Home.md",
+                "file": "Vorlagen/Vorlage Autoren.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
-            }
-          },
-          {
-            "id": "410b79821228403b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Literatur/Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024"
+              "title": "Vorlage Autoren"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -221,7 +196,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Literatur/Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024.md",
+                "file": "Vorlagen/Vorlage Autoren.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -249,7 +224,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph von Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024"
+              "title": "Graph von Vorlage Autoren"
             }
           }
         ]
@@ -280,14 +255,14 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "dfe52a084a7fe93d",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Literatur/Autoren/Ulrich Schwarz.md",
+    "Organisation_von_Obsidian/Home.md",
     "Literatur/Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024.md",
+    "Literatur/Autoren/Ulrich Schwarz.md",
     "PDFs/SchwarzRegestenauspaepstlichenRegisterserienAnmerkungenRepertoriumGermanicumonlineundofflinemitBeispielenausDioezesePassau.pdf",
     "Literatur/Das Vatikanische Archiv und die niedersächsische Geschichte Friedrich Bock 1955.md",
     "Unbenannt.md",
-    "Organisation_von_Obsidian/Home.md",
     "Literatur/Autoren/Enno Bünz.md",
     "Test.md",
     "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels.pdf",
