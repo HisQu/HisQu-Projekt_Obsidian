@@ -254,11 +254,16 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-extract-pdf-highlights:PDF Highlights": false
+      "obsidian-extract-pdf-highlights:PDF Highlights": false,
+      "fileorganizer2000:Note companion": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "_NoteCompanion/Templates/youtube_timestamped_outline.md",
+    "_NoteCompanion/Templates/youtube_qa.md",
+    "_NoteCompanion/Templates/youtube_key_concepts.md",
+    "_NoteCompanion/Templates/youtube_summary.md",
     "Vorlagen/Vorlage Autoren.md",
     "Organisation_von_Obsidian/Home.md",
     "Literatur/Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024.md",
@@ -284,10 +289,6 @@
     "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
     "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
     "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
-    "Literatur/Autoren/Georges Duby.md",
-    "Literatur/Zwischen Nicht-Adel und Adel  2001.md",
-    "Literatur/Autoren/Hellmuth Rössler.md",
-    "Literatur/Kirchen, Karrieren und soziale Mobilität zwischen Nicht-Adel und Adel Rudolf Holbach 2001.md",
     "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
     "PDFs/RyanMeasureArchiveRobustnessNetworkAnalysisEarlyModernCorrespondence.pdf",
     "Recordings",
