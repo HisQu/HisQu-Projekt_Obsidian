@@ -1,0 +1,307 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Organisation_von_Obsidian/Home.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5ea3189d9c1c3613",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d4f8efffb3b1dbc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96410f8167f4437d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Dateiexplorer"
+            }
+          },
+          {
+            "id": "e3f2f1902891adf5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "kultur",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Suchen"
+            }
+          },
+          {
+            "id": "64fb2f08eedebe3d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Lesezeichen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "ca5c770b999f1f46",
+    "type": "split",
+    "children": [
+      {
+        "id": "69d8603f0ceed186",
+        "type": "tabs",
+        "dimension": 63.372093023255815,
+        "children": [
+          {
+            "id": "02bae269e85f4ac9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rückverweise für Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
+            }
+          },
+          {
+            "id": "75436465ede5fd91",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Ausgehende Links von Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994 öffnen"
+            }
+          },
+          {
+            "id": "dfe52a084a7fe93d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "ec3ce58542a70b38",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c81ff26c34039d94",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Literatur/Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Gliederung von Adel - „Mehrzweck-Elite“ vor der Moderne_ Karl Ferdinand Werner 1994"
+            }
+          },
+          {
+            "id": "39b086f61fe06ac9",
+            "type": "leaf",
+            "state": {
+              "type": "fo2k.assistant.sidebar2",
+              "state": {},
+              "icon": "sparkle",
+              "title": "Note Companion"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "90e5484812b210aa",
+        "type": "tabs",
+        "dimension": 36.627906976744185,
+        "children": [
+          {
+            "id": "e1423c20d1041a57",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Organisation_von_Obsidian/Home.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 4,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.18462326225858258,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Lokales Diagramm"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 311.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Neue Base erstellen": false,
+      "homepage:Open homepage": false,
+      "graph:Graph-Ansicht öffnen": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:Schnellauswahl öffnen": false,
+      "canvas:Neuen Canvas erstellen": false,
+      "daily-notes:Heutige Notiz öffnen": false,
+      "templates:Vorlage einfügen": false,
+      "command-palette:Befehlspalette öffnen": false,
+      "publish:Änderungen veröffentlichen": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian42-brat:BRAT": false,
+      "fileorganizer2000:Note Companion": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-extract-pdf-highlights:PDF Highlights": false,
+      "fileorganizer2000:Note companion": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "_NoteCompanion/Templates/youtube_timestamped_outline.md",
+    "_NoteCompanion/Templates/youtube_qa.md",
+    "_NoteCompanion/Templates/youtube_key_concepts.md",
+    "_NoteCompanion/Templates/youtube_summary.md",
+    "Organisation_von_Obsidian/Home.md",
+    "Vorlagen/Vorlage Autoren.md",
+    "Literatur/Regesten aus päpstlichen Registerserien. Anmerkungen zum Repertorium Germanicum online und offline (mit Beispielen aus der Diözese Passau) Ulrich Schwarz 2024.md",
+    "Literatur/Autoren/Ulrich Schwarz.md",
+    "PDFs/SchwarzRegestenauspaepstlichenRegisterserienAnmerkungenRepertoriumGermanicumonlineundofflinemitBeispielenausDioezesePassau.pdf",
+    "Literatur/Das Vatikanische Archiv und die niedersächsische Geschichte Friedrich Bock 1955.md",
+    "Unbenannt.md",
+    "Literatur/Autoren/Enno Bünz.md",
+    "Test.md",
+    "PDFs/FaysseColPaliEfficientDocumentRetrievalVisionLanguageModels.pdf",
+    "PDFs/DeetersUeberRepertoriumGermanicumalsGeschichtsquelleVersuchmethodischenAnleitung.pdf",
+    "Literatur/Über das Repertorium Germanicum als Geschichtsquelle. Versuch einer methodischen Anleitung Walter Deeters 1969.md",
+    "excalibrain.md",
+    "Literatur/Autoren/Walter Deeters.md",
+    "Literatur/Uno spoglio moderno dette fonti vaticane. Il Repertorium Germanicum e il Repertorium Poenitentiariae Ludwig Schmugge, Jörg Hörnschemeyer 2015.md",
+    "Literatur/Deutscher Adel 1430-1555 Hellmuth Rößler 1965.md",
+    "Literatur/Autoren/Gustav Droysen.md",
+    "Literatur/Autoren/Jörg Hörnschemeyer.md",
+    "Literatur/Der Beitrag des Repertorium Germanicum zur Kloster- und Stiftskirchenforschung in der Region. Schleswig-Holsteinische Beispiele Oliver Auge 2019.md",
+    "Literatur/Dithmarschen und die römische Kurie. Zum Nutzen des _Repertorium Germanicum_ für die Landesgeschichte Enno Bünz 2023.md",
+    "Literatur/Autoren/Robert Gramsch-Stehfest.md",
+    "Literatur/Spätmittelalterlicher deutscher Niederadel. Ein landschaftlicher Vergleich Joachim Schneider 2003.md",
+    "Literatur/Universität und Gelehrtenstand 1400 - 1800. Büdinger Vortr. 1966 Hellmuth Rössler 1970.md",
+    "Literatur/Beamtentum und Pfarrerstand 1400-1800 Günther Franz 1972.md",
+    "Literatur/Die drei Ordnungen. Das Weltbild des Feudalismus Georges Duby 1981.md",
+    "PDFs/koenigFertigVorerstUnfertigkeit2026.pdf",
+    "PDFs/RyanMeasureArchiveRobustnessNetworkAnalysisEarlyModernCorrespondence.pdf",
+    "Recordings",
+    "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions.pdf",
+    "PDFs/Samuelroleontologymatchingontologynetworkdevelopment.pdf",
+    "PDFs/PollinWhenitwas2024GenerativeAIfielddigitalscholarlyeditions 1.pdf",
+    "PDFs/ZbiralModelsourcefirstComputerAssistedSemanticTextModellingsourcecriticism20.pdf",
+    "Organisation_von_Obsidian/Bilder/logoBannerHisQu.png",
+    "Organisation_von_Obsidian/Bilder/BannerHisQu.png",
+    "Organisation_von_Obsidian/Bilder/Beispiel Autor.png",
+    "Organisation_von_Obsidian/Bilder/Verbesserung Fehler Autor mehrere Autoren.png",
+    "Organisation_von_Obsidian/Bilder/mögliche Fehler Autor.png",
+    "Organisation_von_Obsidian/Bilder/HisQU.png",
+    "cf07ae28-1054-4737-8ca6-9639d7ea2469.png"
+  ]
+}
